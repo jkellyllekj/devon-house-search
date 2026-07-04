@@ -1,0 +1,208 @@
+{
+  "lastUpdated": "2026-07-05",
+  "properties": [
+    {
+      "id": "sidmouth",
+      "section": "pinned",
+      "title": "Circular Thatched Cliff-top Cottage, Peak Hill Road, Sidmouth",
+      "price": "Guide price £250,000 (auction)",
+      "agent": "Bradleys Estate Agents",
+      "flags": [
+        {"text": "DREAM HOME", "color": "#C2185B"},
+        {"text": "IN BUDGET", "color": "#2E7D32"},
+        {"text": "AUCTION 21 JUL 2026, 12pm", "color": "#E65100"},
+        {"text": "KNOWN CLIFF EROSION RISK", "color": "#B71C1C"}
+      ],
+      "photos": ["Sidmouth_Gallery_1.jpg", "Sidmouth_Gallery_2.jpg", "Sidmouth_Gallery_3.jpg", "Sidmouth_Gallery_4.jpg"],
+      "map": "map_sidmouth.png",
+      "link": "https://www.rightmove.co.uk/properties/90027936",
+      "linkLabel": "rightmove.co.uk/properties/90027936",
+      "body": "A unique circular thatched house on a cliff-top position along the Jurassic Coast, designed in the 1960s for novelist R.F. Delderfield. Panoramic sea views over Ladram Bay, mature terraced gardens. Auction closes 21 July 2026 — just over two weeks out.",
+      "why": "Jesse's own words: \"my absolute dream home... I love a nice thatch cottage like that.\" The price reflects known cliff erosion — the garden is already losing ground — which is exactly why it's cheap. If the slope could be stabilised (caissons/cliff shoring), Jesse reckons that's worth roughly another £100k on top of the guide price to make it a safe long-term bet. Worth getting a structural/coastal engineer's view on feasibility and cost before bidding, alongside the standard legal searches.",
+      "dateAdded": "2026-07-03"
+    },
+    {
+      "id": "otterton",
+      "section": "new",
+      "title": "Thatched Cottage, The Green, Otterton",
+      "price": "£225,000 (guide price)",
+      "agent": "Rightmove listing",
+      "flags": [
+        {"text": "LIKED BY JESSE", "color": "#C2185B"},
+        {"text": "IN BUDGET", "color": "#2E7D32"},
+        {"text": "NO PARKING INFO", "color": "#757575"}
+      ],
+      "photos": ["Otterton_Gallery_1.jpg", "Otterton_Gallery_2.jpg", "Otterton_Gallery_3.jpg", "Otterton_Gallery_4.jpg"],
+      "map": "map_otterton.png",
+      "link": "https://www.rightmove.co.uk/properties/174232565",
+      "linkLabel": "rightmove.co.uk/properties/174232565",
+      "body": "Attractive three-bedroom thatched cottage right in the centre of Otterton village, close to the River Otter and Otterton Mill. South-facing rear garden, period stone fireplace and window seat. Needs modernising throughout — priced accordingly.",
+      "why": "Jesse flagged this one personally — near his brother, a lovely part of Devon. His one reservation: it's village-centre (on-street parking only) and he'd prefer something a bit more remote/rural. Worth weighing character + location against the more remote feel he's after.",
+      "dateAdded": "2026-07-04"
+    },
+    {
+      "id": "feniton",
+      "section": "new",
+      "title": "Barn at Whites Cottages, Feniton — AUCTION",
+      "price": "£65,000 (guide price)",
+      "agent": "Hall & Scott, Ottery St Mary",
+      "flags": [
+        {"text": "IN BUDGET", "color": "#2E7D32"},
+        {"text": "AUCTION 23 JUL 2026", "color": "#E65100"},
+        {"text": "HAS PARKING", "color": "#1565C0"}
+      ],
+      "photos": ["Feniton_Barn.jpg", "Feniton_Gallery_2.jpg", "Feniton_Gallery_3.jpg"],
+      "map": "map_feniton.png",
+      "link": "https://www.hallandscott.co.uk/details/?id=HSOTT_708623",
+      "linkLabel": "hallandscott.co.uk — HSOTT_708623",
+      "body": "Freehold barn on a 0.21-acre plot on the edge of Feniton village. Already has full planning permission (East Devon DC ref 25/0370/FUL, granted Sept 2025) to convert and extend into a 3-bedroom dwelling with parking and garden. Going to online auction 23 July 2026.",
+      "why": "The self-build/conversion-plot opportunity Jesse said he'd consider — cheap land with permission already in hand. Downside: inland near Honiton, off the coast/trails brief.",
+      "dateAdded": "2026-07-04"
+    },
+    {
+      "id": "yettington",
+      "section": "new",
+      "title": "The Threshing Barn, Yettington",
+      "price": "£375,000–£400,000 (guide price)",
+      "agent": "Wilkinson Grant & Co",
+      "flags": [
+        {"text": "OVER BUDGET", "color": "#B71C1C"},
+        {"text": "HAS PARKING", "color": "#1565C0"}
+      ],
+      "photos": [],
+      "map": "map_yettington.png",
+      "link": "https://www.exmouthjournal.co.uk/news/24440905.property-sale-near-budleigh-salterton-two-bedroom-house/",
+      "linkLabel": "exmouthjournal.co.uk (background coverage — agent's listing page no longer resolves)",
+      "body": "Two-bedroom barn conversion in the small hamlet of Yettington, directly on the walking/cycling routes linking Budleigh Salterton, East Budleigh, and Woodbury Common. Stable-style front door, vaulted ceilings, exposed beams, ~798 sq ft, gardens and allocated parking.",
+      "why": "About as close as a converted barn gets to the Woodbury Common trail network. Priced 25-33% over budget and compact for the money — a benchmark/inspiration piece unless Jesse wants to stretch for the location. No photo could be sourced this sweep; the agent's own page now redirects to a generic search.",
+      "dateAdded": "2026-07-04"
+    },
+    {
+      "id": "douglas",
+      "section": "still",
+      "title": "Douglas Avenue, Exmouth",
+      "price": "£235,000",
+      "agent": "Hall & Scott",
+      "flags": [
+        {"text": "IN BUDGET", "color": "#2E7D32"},
+        {"text": "HAS PARKING", "color": "#1565C0"}
+      ],
+      "photos": ["Douglas_Avenue__Exmouth_2.jpg", "Douglas_Gallery_2.jpg", "Douglas_Gallery_3.jpg"],
+      "map": "map_douglas_ave.png",
+      "link": "https://www.hallandscott.co.uk/details/?id=HSEXM_697185",
+      "linkLabel": "hallandscott.co.uk — HSEXM_697185",
+      "body": "Two-bed purpose-built apartment, balcony, allocated parking, near seafront/town centre, between town and the sea.",
+      "why": "Conventional but solid fallback if nothing more characterful turns up in budget. It's a flat, floor level unconfirmed.",
+      "dateAdded": "2026-07-03"
+    },
+    {
+      "id": "beacon",
+      "section": "background",
+      "title": "The Beacon, Exmouth (inspiration only)",
+      "price": "Offers over £400,000",
+      "agent": "Hall & Scott",
+      "flags": [
+        {"text": "OVER BUDGET", "color": "#B71C1C"},
+        {"text": "NEEDS RENOVATION", "color": "#8D6E63"}
+      ],
+      "photos": ["The_Beacon__Exmouth_1.jpg", "Beacon_Gallery_2.jpg", "Beacon_Gallery_3.jpg"],
+      "map": "map_beacon.png",
+      "link": "https://www.hallandscott.co.uk/details/?id=HSEXM_707936",
+      "linkLabel": "hallandscott.co.uk — HSEXM_707936",
+      "body": "Grade II-listed four-storey house needing renovation, sea views from the upper floors, private garden and garage, walking distance to town centre and seafront.",
+      "why": "Well over budget but kept as a benchmark for what full-renovation character stock costs locally.",
+      "dateAdded": "2026-07-03"
+    },
+    {
+      "id": "withycombe",
+      "section": "background",
+      "title": "Withycombe Village Road, Exmouth (former Methodist Church)",
+      "price": "Guide price £350,000 (as of first report, unconfirmed)",
+      "agent": "Hall & Scott",
+      "flags": [
+        {"text": "OVER BUDGET", "color": "#B71C1C"},
+        {"text": "STATUS UNCONFIRMED", "color": "#8D6E63"}
+      ],
+      "photos": ["Withycombe_Village_Road__Exmouth_3.jpg"],
+      "map": "map_withycombe.png",
+      "link": "https://hallandscott.co.uk/sales/",
+      "linkLabel": "hallandscott.co.uk/sales/ (specific listing not relocated)",
+      "body": "Former Methodist Church and adjoining Church Hall, gardens, conversion project subject to planning consent.",
+      "why": "Couldn't re-locate this exact listing this sweep — may have sold or been withdrawn. Kept as inspiration for the flavour of conversion opportunity this market does throw up.",
+      "dateAdded": "2026-07-03"
+    },
+    {
+      "id": "salterton",
+      "section": "background",
+      "title": "Salterton Road, Exmouth (ground-floor retirement flat)",
+      "price": "£150,000 (as of first report, unconfirmed)",
+      "agent": "Hall & Scott",
+      "flags": [
+        {"text": "IN BUDGET", "color": "#2E7D32"},
+        {"text": "STATUS UNCONFIRMED", "color": "#8D6E63"}
+      ],
+      "photos": [],
+      "map": "map_salterton_rd.png",
+      "link": "https://hallandscott.co.uk/sales/",
+      "linkLabel": "hallandscott.co.uk/sales/ (specific listing not relocated)",
+      "body": "Two-bedroom ground-floor retirement apartment, direct access to communal gardens, close to amenities and bus routes. Likely age-restricted.",
+      "why": "Cheapest option found originally; could not reconfirm this exact flat this sweep (a different Salterton Road retirement flat, Bronte Court, now shows instead). No photo included to avoid misattributing an image to the wrong flat.",
+      "dateAdded": "2026-07-03"
+    },
+    {
+      "id": "eastbudleigh",
+      "section": "background",
+      "title": "Grade II Thatched Cottage, High Street, East Budleigh",
+      "price": "£435,000",
+      "agent": "Pennys",
+      "flags": [
+        {"text": "OVER BUDGET", "color": "#B71C1C"},
+        {"text": "LIKELY SOLD/WITHDRAWN", "color": "#8D6E63"}
+      ],
+      "photos": ["East_Budleigh_Cottage.jpg"],
+      "map": "map_east_budleigh.png",
+      "link": "https://www.rightmove.co.uk/properties/165338390",
+      "linkLabel": "rightmove.co.uk/properties/165338390 (page now returns 410 Gone)",
+      "body": "Genuinely characterful double-fronted thatched cottage, 1600s core with a 1700s rear extension.",
+      "why": "45% over budget, kept as inspiration. The Rightmove listing now returns \"410 Gone\", suggesting it has sold or been withdrawn.",
+      "dateAdded": "2026-07-04"
+    },
+    {
+      "id": "clinton",
+      "section": "background",
+      "title": "Clinton Garage, Budleigh Salterton — AUCTION",
+      "price": "£375,000 (guide price)",
+      "agent": "Meadows / 247 Property Auctions",
+      "flags": [
+        {"text": "OVER BUDGET", "color": "#B71C1C"},
+        {"text": "AUCTION 16 JUL 2026, 12pm", "color": "#E65100"}
+      ],
+      "photos": ["Clinton_Garage.jpg"],
+      "map": "map_clinton_garage.png",
+      "link": "https://www.meadowsea.com/Property-For-Sale-Clinton-Garage-Budleigh-Salterton-pi-MEAD1265.htm",
+      "linkLabel": "meadowsea.com — MEAD1265",
+      "body": "Former commercial garage/MOT site right in Budleigh Salterton itself — conversion/redevelopment long-shot.",
+      "why": "Over budget and speculative, but flagged given the town-centre location and imminent auction date.",
+      "dateAdded": "2026-07-04"
+    },
+    {
+      "id": "leslie",
+      "section": "background",
+      "title": "The Coach House, Leslie Road, Exmouth",
+      "price": "£215,000",
+      "agent": "Pennys",
+      "flags": [
+        {"text": "IN BUDGET", "color": "#2E7D32"},
+        {"text": "NO PARKING INFO", "color": "#757575"},
+        {"text": "STATUS UNCONFIRMED", "color": "#8D6E63"}
+      ],
+      "photos": [],
+      "map": "map_leslie_road.png",
+      "link": "https://www.pennys.net/property-search",
+      "linkLabel": "pennys.net/property-search (specific listing not relocated)",
+      "body": "Freehold, no parking mentioned — originally sent over by Jesse rather than found by search.",
+      "why": "Could not reconfirm this exact listing this sweep; a different, pricier Leslie Road property now shows instead. Worth a direct call: 01395 264111.",
+      "dateAdded": "2026-07-03"
+    }
+  ]
+}
