@@ -2,6 +2,45 @@
   "lastUpdated": "2026-07-05",
   "properties": [
     {
+      "id": "farleys",
+      "section": "new",
+      "title": "Farleys, The Strand, Lympstone (Grade II cottage)",
+      "price": "£295,000",
+      "agent": "Hall & Scott, Exmouth",
+      "flags": [
+        {"text": "IN BUDGET", "color": "#2E7D32"},
+        {"text": "NO CHAIN", "color": "#EF6C00"},
+        {"text": "GRADE II LISTED", "color": "#6A1B9A"},
+        {"text": "NO PARKING (village car park permit)", "color": "#757575"}
+      ],
+      "photos": ["Farleys_Gallery_1.jpg", "Farleys_Gallery_2.png", "Farleys_Gallery_3.jpg", "Farleys_Gallery_4.jpg"],
+      "map": "map_farleys.png",
+      "link": "https://www.hallandscott.co.uk/details/?id=HSEXM_706793",
+      "linkLabel": "hallandscott.co.uk — HSEXM_706793",
+      "body": "Two-bedroom Grade II listed cottage in the heart of Lympstone village — exposed beams and stonework throughout, cosy sitting/dining room, well-appointed kitchen, family bathroom, two loft areas with Velux windows, gas central heating. Freehold and chain-free. No garden and no dedicated parking — permit parking is available at the village car park nearby. Two pubs, shop, post office, café, sailing club and the estuary all on the doorstep.",
+      "why": "Location-wise this is arguably the best-placed find yet: Lympstone sits on the Exe estuary directly between Exmouth and Woodbury Common — water one way, trails the other, and one of your brothers is in Woodbury just up the hill. Genuine period character (Grade II, beams, stonework), chain-free, and £5k under ceiling. The catches: no parking (the standing hard requirement — waived here only because it's genuinely characterful, with village car park permits as the workaround), no outdoor space, and listed-building consent applies to any alterations. Found via the Exmouth Journal property pages, not the portals.",
+      "dateAdded": "2026-07-05"
+    },
+    {
+      "id": "exeterroadflat",
+      "section": "new",
+      "title": "Exeter Road, Exmouth (ground-floor character flat)",
+      "price": "£130,000",
+      "agent": "Spring Estates, Exmouth",
+      "flags": [
+        {"text": "IN BUDGET", "color": "#2E7D32"},
+        {"text": "GROUND FLOOR", "color": "#5D4037"},
+        {"text": "HAS PARKING", "color": "#1565C0"}
+      ],
+      "photos": ["Exeter_Road_Flat.jpg"],
+      "map": "map_exeter_road_flat.png",
+      "link": "https://www.zoopla.co.uk/for-sale/details/72842267/",
+      "linkLabel": "zoopla.co.uk — listing 72842267",
+      "body": "One-bedroom apartment occupying the entire ground floor of a period building on Exeter Road — high ceilings, large windows overlooking the communal lawn and neighbouring church, generously proportioned living room, bedroom with double doors onto a rear courtyard, modern bathroom, galley kitchen. Allocated parking at the rear. Functional condition with scope for modernisation.",
+      "why": "This is the rare flat that actually passes your flat rules: genuinely cheap AND explicitly the whole ground floor, with a real allocated parking space on top. At £130k it's the cheapest confirmed-live option on the books — less than half budget, which leaves a lot of headroom if the Sidmouth auction dream came off later, or just very low stakes as a stop-gap off the narrowboat. Only one photo shown — Zoopla blocks photo scraping, so this is the single press image from the Exmouth Journal writeup.",
+      "dateAdded": "2026-07-05"
+    },
+    {
       "id": "bellstreet",
       "section": "new",
       "title": "3 Bell Street, Otterton",
