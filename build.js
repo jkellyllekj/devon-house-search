@@ -36,22 +36,57 @@ function reactionHtml(id) {
       <button class="react-btn" data-val="love" onclick="react('${id}','love')">♥ Love it</button>
       <button class="react-btn" data-val="maybe" onclick="react('${id}','maybe')">? Maybe</button>
       <button class="react-btn" data-val="pass" onclick="react('${id}','pass')">✕ Not for me</button>
-      <span class="react-note">(saved in this browser only, just a personal reminder — reply in chat with Jesse's account for it to actually steer future sweeps)</span>
+      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
     </div>
   `;
 }
 
 const REPO = "jkellyllekj/devon-house-search";
+const GISCUS_REPO_ID = "R_kgDOTN1h4w";
+const GISCUS_CATEGORY = "General";
+const GISCUS_CATEGORY_ID = "DIC_kwDOTN1h484DApI-";
 
 function githubIssueUrl(kind, p) {
-  const titles = { note: `Note: ${p.title}`, remove: `Remove: ${p.title}`, research: `Research: ${p.title}` };
+  const titles = { remove: `Remove: ${p.title}`, research: `Research: ${p.title}` };
   const bodies = {
-    note: `Property ID: ${p.id}\n\nYour name: \n\nNote: \n`,
     remove: `Property ID: ${p.id}\n\nReason (optional): \n`,
     research: `Property ID: ${p.id}\n\nYour name: \n\nWhat should Claude look into? (e.g. a specific risk, local news, planning history, why the price is what it is): \n`,
   };
-  const labels = { note: "note", remove: "removal-request", research: "research-request" };
+  const labels = { remove: "removal-request", research: "research-request" };
   return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(titles[kind])}&body=${encodeURIComponent(bodies[kind])}&labels=${labels[kind]}`;
+}
+
+function giscusHtml(p) {
+  return `
+    <div class="giscus-block">
+      <h3>Family discussion</h3>
+      <giscus-widget
+        repo="${REPO}"
+        repoid="${GISCUS_REPO_ID}"
+        category="${GISCUS_CATEGORY}"
+        categoryid="${GISCUS_CATEGORY_ID}"
+        mapping="specific"
+        term="${esc(p.id)}"
+        strict="1"
+        reactions-enabled="1"
+        emit-metadata="0"
+        input-position="top"
+        theme="light"
+        lang="en"
+        loading="lazy"
+      ></giscus-widget>
+    </div>
+  `;
+}
+
+function askClaudeHtml(p) {
+  return `
+    <div class="ask-claude-block">
+      <a href="${githubIssueUrl("research", p)}" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
+      <a href="${githubIssueUrl("remove", p)}" target="_blank" rel="noopener">Request removal</a>
+      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+    </div>
+  `;
 }
 
 function researchHtml(p) {
@@ -71,21 +106,19 @@ function researchHtml(p) {
   `;
 }
 
-function notesHtml(p) {
-  const notes = p.notes || [];
-  const list = notes.length
-    ? `<ul class="notes-list">${notes.map(n => `<li><strong>${esc(n.author)}</strong> (${esc(n.date)}): ${esc(n.text)}</li>`).join("")}</ul>`
-    : `<p class="notes-empty">No family notes yet.</p>`;
+function mapQuery(p) {
+  return p.title.replace(/\s*\([^)]*\)/g, "").trim() + ", Devon, UK";
+}
+
+function mapHtml(p) {
+  const q = encodeURIComponent(mapQuery(p));
   return `
-    <div class="notes-block">
-      <h3>Family notes</h3>
-      ${list}
-      <div class="notes-actions">
-        <a href="${githubIssueUrl("note", p)}" target="_blank" rel="noopener">+ Add a note</a>
-        <a href="${githubIssueUrl("research", p)}" target="_blank" rel="noopener">🔍 Ask for deeper research</a>
-        <a href="${githubIssueUrl("remove", p)}" target="_blank" rel="noopener">Request removal</a>
+    <div class="map">
+      <img src="images/${p.map}" alt="Map of ${esc(p.title)}">
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=${q}" target="_blank" rel="noopener">Directions ↗</a>
       </div>
-      <span class="notes-caveat">Opens a GitHub issue (free account needed) — Claude reads it and adds it here during the next daily sweep, not instantly.</span>
     </div>
   `;
 }
@@ -101,14 +134,15 @@ function propertyCard(p) {
     <div class="flags">${p.flags.map(flagHtml).join("")}</div>
     <div class="media-grid">
       <div class="photos">${photosHtml(p.id, p.photos)}</div>
-      <div class="map"><img src="images/${p.map}" alt="Map of ${esc(p.title)}"><div class="map-cap">Approximate location</div></div>
+      ${mapHtml(p)}
     </div>
     <p class="body">${esc(p.body)}</p>
     <p class="why"><strong>Why it's here:</strong> ${esc(p.why)}</p>
     <p class="source"><strong>Source:</strong> <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.linkLabel)}</a></p>
     ${researchHtml(p)}
-    ${notesHtml(p)}
     ${reactionHtml(p.id)}
+    ${askClaudeHtml(p)}
+    ${giscusHtml(p)}
     <div class="added">Added ${esc(p.dateAdded)}</div>
   </section>`;
 }
@@ -155,7 +189,9 @@ const html = `<!DOCTYPE html>
   .no-photo { background: #eee; border-radius: 8px; padding: 40px; text-align: center; color: #888; font-size: 13px; }
   .map { flex: 0 0 220px; }
   .map img { width: 100%; border-radius: 8px; display: block; }
-  .map-cap { font-size: 11px; color: #888; text-align: center; margin-top: 4px; }
+  .map-links { display: flex; justify-content: space-between; margin-top: 4px; }
+  .map-links a { font-size: 11px; color: #1155cc; text-decoration: none; }
+  .map-links a:hover { text-decoration: underline; }
   .body { line-height: 1.5; }
   .why { background: #fdf6e3; border-left: 4px solid #e6b800; padding: 10px 14px; border-radius: 4px; font-size: 14px; line-height: 1.5; }
   .source { font-size: 14px; }
@@ -168,12 +204,11 @@ const html = `<!DOCTYPE html>
   .research-a { margin: 0 0 6px; font-size: 14px; line-height: 1.5; }
   .research-sources { margin: 0; font-size: 12px; color: #666; }
   .research-sources a { color: #1155cc; }
-  .notes-block { margin-top: 14px; padding-top: 12px; border-top: 1px solid #eee; }
-  .notes-block h3 { margin: 0 0 8px; font-size: 14px; color: #1b3a2f; }
-  .notes-list { margin: 0 0 8px; padding-left: 18px; font-size: 14px; line-height: 1.5; }
-  .notes-empty { margin: 0 0 8px; font-size: 13px; color: #999; }
-  .notes-actions a { font-size: 13px; color: #1155cc; margin-right: 16px; text-decoration: none; }
-  .notes-actions a:hover { text-decoration: underline; }
+  .giscus-block { margin-top: 14px; padding-top: 12px; border-top: 1px solid #eee; }
+  .giscus-block h3 { margin: 0 0 8px; font-size: 14px; color: #1b3a2f; }
+  .ask-claude-block { margin-top: 10px; padding-top: 10px; }
+  .ask-claude-block a { font-size: 13px; color: #1155cc; margin-right: 16px; text-decoration: none; }
+  .ask-claude-block a:hover { text-decoration: underline; }
   .notes-caveat { display: block; font-size: 11px; color: #999; margin-top: 6px; }
   .reactions { margin-top: 14px; padding-top: 12px; border-top: 1px solid #eee; }
   .react-btn { border: 1px solid #ccc; background: #fafafa; border-radius: 20px; padding: 6px 14px; font-size: 13px; cursor: pointer; margin-right: 8px; }
@@ -186,6 +221,7 @@ const html = `<!DOCTYPE html>
 </style>
 </head>
 <body>
+<script type="module" src="https://giscus.app/client.js"></script>
 <header>
   <h1>Devon House Search</h1>
   <div class="sub">Exmouth · Woodbury · Budleigh Salterton · East Devon coast — last updated ${esc(data.lastUpdated)}</div>
