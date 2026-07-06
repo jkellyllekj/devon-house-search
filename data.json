@@ -50,7 +50,7 @@
           "color": "#5D4037"
         },
         {
-          "text": "GARAGE TO RENT NEARBY",
+          "text": "PARKING: GARAGE TO RENT NEARBY (not included)",
           "color": "#757575"
         }
       ],
@@ -275,6 +275,10 @@
         {
           "text": "KNOWN CLIFF EROSION RISK",
           "color": "#B71C1C"
+        },
+        {
+          "text": "PARKING UNKNOWN",
+          "color": "#9E9E9E"
         }
       ],
       "photos": [
@@ -425,6 +429,10 @@
         {
           "text": "NEEDS RENOVATION",
           "color": "#8D6E63"
+        },
+        {
+          "text": "HAS PARKING (garage)",
+          "color": "#1565C0"
         }
       ],
       "photos": [
@@ -453,6 +461,10 @@
         {
           "text": "STATUS UNCONFIRMED",
           "color": "#8D6E63"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
         }
       ],
       "photos": [
@@ -479,6 +491,10 @@
         {
           "text": "STATUS UNCONFIRMED",
           "color": "#8D6E63"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
         }
       ],
       "photos": [],
@@ -503,6 +519,10 @@
         {
           "text": "LIKELY SOLD/WITHDRAWN",
           "color": "#8D6E63"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
         }
       ],
       "photos": [
@@ -529,6 +549,10 @@
         {
           "text": "AUCTION 16 JUL 2026, 12pm",
           "color": "#E65100"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
         }
       ],
       "photos": [

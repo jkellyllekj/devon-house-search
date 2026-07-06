@@ -36,7 +36,36 @@ function reactionHtml(id) {
       <button class="react-btn" data-val="love" onclick="react('${id}','love')">♥ Love it</button>
       <button class="react-btn" data-val="maybe" onclick="react('${id}','maybe')">? Maybe</button>
       <button class="react-btn" data-val="pass" onclick="react('${id}','pass')">✕ Not for me</button>
-      <span class="react-note">(saved in this browser only — reply in chat with Jesse's account for it to actually steer future sweeps)</span>
+      <span class="react-note">(saved in this browser only, just a personal reminder — reply in chat with Jesse's account for it to actually steer future sweeps)</span>
+    </div>
+  `;
+}
+
+const REPO = "jkellyllekj/devon-house-search";
+
+function githubIssueUrl(kind, p) {
+  const title = kind === "note" ? `Note: ${p.title}` : `Remove: ${p.title}`;
+  const body = kind === "note"
+    ? `Property ID: ${p.id}\n\nYour name: \n\nNote: \n`
+    : `Property ID: ${p.id}\n\nReason (optional): \n`;
+  const label = kind === "note" ? "note" : "removal-request";
+  return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=${label}`;
+}
+
+function notesHtml(p) {
+  const notes = p.notes || [];
+  const list = notes.length
+    ? `<ul class="notes-list">${notes.map(n => `<li><strong>${esc(n.author)}</strong> (${esc(n.date)}): ${esc(n.text)}</li>`).join("")}</ul>`
+    : `<p class="notes-empty">No family notes yet.</p>`;
+  return `
+    <div class="notes-block">
+      <h3>Family notes</h3>
+      ${list}
+      <div class="notes-actions">
+        <a href="${githubIssueUrl("note", p)}" target="_blank" rel="noopener">+ Add a note</a>
+        <a href="${githubIssueUrl("remove", p)}" target="_blank" rel="noopener">Request removal</a>
+      </div>
+      <span class="notes-caveat">Opens a GitHub issue (free account needed) — Claude reads it and adds it here during the next daily sweep, not instantly.</span>
     </div>
   `;
 }
@@ -57,6 +86,7 @@ function propertyCard(p) {
     <p class="body">${esc(p.body)}</p>
     <p class="why"><strong>Why it's here:</strong> ${esc(p.why)}</p>
     <p class="source"><strong>Source:</strong> <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.linkLabel)}</a></p>
+    ${notesHtml(p)}
     ${reactionHtml(p.id)}
     <div class="added">Added ${esc(p.dateAdded)}</div>
   </section>`;
@@ -109,6 +139,13 @@ const html = `<!DOCTYPE html>
   .why { background: #fdf6e3; border-left: 4px solid #e6b800; padding: 10px 14px; border-radius: 4px; font-size: 14px; line-height: 1.5; }
   .source { font-size: 14px; }
   .source a { color: #1155cc; }
+  .notes-block { margin-top: 14px; padding-top: 12px; border-top: 1px solid #eee; }
+  .notes-block h3 { margin: 0 0 8px; font-size: 14px; color: #1b3a2f; }
+  .notes-list { margin: 0 0 8px; padding-left: 18px; font-size: 14px; line-height: 1.5; }
+  .notes-empty { margin: 0 0 8px; font-size: 13px; color: #999; }
+  .notes-actions a { font-size: 13px; color: #1155cc; margin-right: 16px; text-decoration: none; }
+  .notes-actions a:hover { text-decoration: underline; }
+  .notes-caveat { display: block; font-size: 11px; color: #999; margin-top: 6px; }
   .reactions { margin-top: 14px; padding-top: 12px; border-top: 1px solid #eee; }
   .react-btn { border: 1px solid #ccc; background: #fafafa; border-radius: 20px; padding: 6px 14px; font-size: 13px; cursor: pointer; margin-right: 8px; }
   .react-btn.active-love { background: #C2185B; color: #fff; border-color: #C2185B; }
