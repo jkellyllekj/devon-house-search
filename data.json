@@ -255,30 +255,22 @@
     },
     {
       "id": "sidmouth",
-      "section": "pinned",
+      "section": "background",
       "title": "Circular Thatched Cliff-top Cottage, Peak Hill Road, Sidmouth",
       "price": "Guide price £250,000 (auction)",
       "agent": "Bradleys Estate Agents",
       "flags": [
         {
-          "text": "DREAM HOME",
-          "color": "#C2185B"
-        },
-        {
-          "text": "IN BUDGET",
-          "color": "#2E7D32"
-        },
-        {
-          "text": "AUCTION 21 JUL 2026, 12pm",
-          "color": "#E65100"
+          "text": "DECLINED BY JESSE — EROSION/INSURANCE RISK",
+          "color": "#616161"
         },
         {
           "text": "KNOWN CLIFF EROSION RISK",
           "color": "#B71C1C"
         },
         {
-          "text": "PARKING UNKNOWN",
-          "color": "#9E9E9E"
+          "text": "AUCTION 21 JUL 2026, 12pm",
+          "color": "#E65100"
         }
       ],
       "photos": [
@@ -291,8 +283,20 @@
       "link": "https://www.rightmove.co.uk/properties/90027936",
       "linkLabel": "rightmove.co.uk/properties/90027936",
       "body": "A unique circular thatched house on a cliff-top position along the Jurassic Coast, designed in the 1960s for novelist R.F. Delderfield. Panoramic sea views over Ladram Bay, mature terraced gardens. Auction closes 21 July 2026 — just over two weeks out.",
-      "why": "Jesse's own words: \"my absolute dream home... I love a nice thatch cottage like that.\" The price reflects known cliff erosion — the garden is already losing ground — which is exactly why it's cheap. If the slope could be stabilised (caissons/cliff shoring), Jesse reckons that's worth roughly another £100k on top of the guide price to make it a safe long-term bet. Worth getting a structural/coastal engineer's view on feasibility and cost before bidding, alongside the standard legal searches.",
-      "dateAdded": "2026-07-03"
+      "why": "Was Jesse's stated dream home, dropped 2026-07-06 once the erosion risk was actually looked into. Local press confirms the garden has already lost ground to a cliff fall, not just theoretical risk, and that stretch of Peak Hill has a well-documented run of landslips. Separately, standard UK buildings insurance excludes coastal erosion outright, there's no government backstop for it like there is for flooding, and lenders increasingly treat erosion-risk properties as unmortgageable — the only public money available is a £6,000 demolition grant if it's ever condemned, nothing toward lost value. That combination is why the guide price is so low, and why Jesse walked away. Kept here for the record rather than deleted.",
+      "dateAdded": "2026-07-03",
+      "research": [
+        {
+          "date": "2026-07-06",
+          "question": "What do the papers/local chatter say about the cliff collapse and why this house is going so cheap, before dismissing it entirely?",
+          "findings": "The cottage lost part of its garden to a confirmed cliff fall in 2024 and now sits roughly 40ft (12m) from the edge of a 120m drop. The coastline here (Sidmouth Mudstone Formation, capped with Cretaceous Greensand at Peak Hill) is soft and fails unpredictably rather than eroding gradually — there's been a steady run of rockfalls along this stretch, including a large one in October 2024 and another as recently as late June 2026, serious enough that East Devon council has closed several nearby cliff-top paths as a precaution. A full cliff survey exists in the auction legal pack. All the press coverage traces back to the same wire story (Sidmouth Herald/Midweek Herald/Exmouth Journal all ran it) — none of it quotes an engineer, the council, or a neighbour on the specific risk, and no Facebook/community-forum chatter about this particular house turned up; it doesn't appear to be a locally-discussed listing. On whether stabilising the cliff (Jesse's caisson idea) is even feasible: no Peak-Hill-specific policy was found, but this is open, undeveloped cliff west of the harbour — the kind of coastline Shoreline Management Plans typically mark 'no active intervention', meaning little chance of public money or planning support for private hard defences. That's an inference from how these plans usually treat isolated clifftop properties, not a confirmed answer for this plot — worth a direct call to East Devon's coastal protection team before spending anything on engineering feasibility.",
+          "sources": [
+            {"label": "Sidmouth Herald — cliff fall coverage", "url": "https://www.sidmouthherald.co.uk/news/26241413.cottage-sidmouth-jurassic-coast-cliff-sale-250k/"},
+            {"label": "Sidmouth Herald — auction/legal pack details", "url": "https://www.sidmouthherald.co.uk/news/26225308.sidmouth-home-panoramic-views-auction/"},
+            {"label": "Sidmouth Herald — recent rockfall/council closures", "url": "https://www.sidmouthherald.co.uk/news/26236723.new-sidmouth-rockfall-prompts-renewed-safety-warning/"}
+          ]
+        }
+      ]
     },
     {
       "id": "otterton",

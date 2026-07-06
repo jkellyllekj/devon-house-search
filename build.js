@@ -44,12 +44,31 @@ function reactionHtml(id) {
 const REPO = "jkellyllekj/devon-house-search";
 
 function githubIssueUrl(kind, p) {
-  const title = kind === "note" ? `Note: ${p.title}` : `Remove: ${p.title}`;
-  const body = kind === "note"
-    ? `Property ID: ${p.id}\n\nYour name: \n\nNote: \n`
-    : `Property ID: ${p.id}\n\nReason (optional): \n`;
-  const label = kind === "note" ? "note" : "removal-request";
-  return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=${label}`;
+  const titles = { note: `Note: ${p.title}`, remove: `Remove: ${p.title}`, research: `Research: ${p.title}` };
+  const bodies = {
+    note: `Property ID: ${p.id}\n\nYour name: \n\nNote: \n`,
+    remove: `Property ID: ${p.id}\n\nReason (optional): \n`,
+    research: `Property ID: ${p.id}\n\nYour name: \n\nWhat should Claude look into? (e.g. a specific risk, local news, planning history, why the price is what it is): \n`,
+  };
+  const labels = { note: "note", remove: "removal-request", research: "research-request" };
+  return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(titles[kind])}&body=${encodeURIComponent(bodies[kind])}&labels=${labels[kind]}`;
+}
+
+function researchHtml(p) {
+  const items = p.research || [];
+  if (!items.length) return "";
+  return `
+    <div class="research-block">
+      <h3>Research findings</h3>
+      ${items.map(r => `
+        <div class="research-item">
+          <p class="research-q"><strong>Asked:</strong> ${esc(r.question)} <span class="research-date">(${esc(r.date)})</span></p>
+          <p class="research-a">${esc(r.findings)}</p>
+          ${(r.sources || []).length ? `<p class="research-sources">Sources: ${r.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join(" · ")}</p>` : ""}
+        </div>
+      `).join("")}
+    </div>
+  `;
 }
 
 function notesHtml(p) {
@@ -63,6 +82,7 @@ function notesHtml(p) {
       ${list}
       <div class="notes-actions">
         <a href="${githubIssueUrl("note", p)}" target="_blank" rel="noopener">+ Add a note</a>
+        <a href="${githubIssueUrl("research", p)}" target="_blank" rel="noopener">🔍 Ask for deeper research</a>
         <a href="${githubIssueUrl("remove", p)}" target="_blank" rel="noopener">Request removal</a>
       </div>
       <span class="notes-caveat">Opens a GitHub issue (free account needed) — Claude reads it and adds it here during the next daily sweep, not instantly.</span>
@@ -86,6 +106,7 @@ function propertyCard(p) {
     <p class="body">${esc(p.body)}</p>
     <p class="why"><strong>Why it's here:</strong> ${esc(p.why)}</p>
     <p class="source"><strong>Source:</strong> <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.linkLabel)}</a></p>
+    ${researchHtml(p)}
     ${notesHtml(p)}
     ${reactionHtml(p.id)}
     <div class="added">Added ${esc(p.dateAdded)}</div>
@@ -139,6 +160,14 @@ const html = `<!DOCTYPE html>
   .why { background: #fdf6e3; border-left: 4px solid #e6b800; padding: 10px 14px; border-radius: 4px; font-size: 14px; line-height: 1.5; }
   .source { font-size: 14px; }
   .source a { color: #1155cc; }
+  .research-block { margin-top: 14px; padding: 12px 14px; background: #eef4fb; border-left: 4px solid #1565C0; border-radius: 4px; }
+  .research-block h3 { margin: 0 0 8px; font-size: 14px; color: #1b3a2f; }
+  .research-item + .research-item { margin-top: 12px; padding-top: 12px; border-top: 1px solid #d6e4f2; }
+  .research-q { margin: 0 0 6px; font-size: 13px; color: #444; }
+  .research-date { color: #888; font-weight: 400; }
+  .research-a { margin: 0 0 6px; font-size: 14px; line-height: 1.5; }
+  .research-sources { margin: 0; font-size: 12px; color: #666; }
+  .research-sources a { color: #1155cc; }
   .notes-block { margin-top: 14px; padding-top: 12px; border-top: 1px solid #eee; }
   .notes-block h3 { margin: 0 0 8px; font-size: 14px; color: #1b3a2f; }
   .notes-list { margin: 0 0 8px; padding-left: 18px; font-size: 14px; line-height: 1.5; }
