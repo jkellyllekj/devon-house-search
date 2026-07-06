@@ -60,9 +60,36 @@ function giscusHtml(p) {
   return `
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
+      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
       <iframe class="giscus-frame-outer" data-term="${esc(p.id)}" src="giscus-embed.html?term=${encodeURIComponent(p.id)}" loading="lazy" title="Family comments on ${esc(p.title)}"></iframe>
     </div>
   `;
+}
+
+function sourceBadgeHtml(p) {
+  let domain;
+  try { domain = new URL(p.link).hostname.replace(/^www\./, ""); } catch (e) { domain = p.linkLabel; }
+  return `<a class="source-badge" href="${esc(p.link)}" target="_blank" rel="noopener">View on ${esc(domain.toUpperCase())} ↗</a>`;
+}
+
+function ratingsHtml(p) {
+  const ratings = p.ratings || {};
+  const entries = Object.entries(ratings);
+  if (!entries.length) return `<div class="ratings-block"><span class="rating-empty">No ratings yet</span></div>`;
+  const avg = entries.reduce((s, [, r]) => s + r.score, 0) / entries.length;
+  const badges = entries.map(([who, r]) => `<span class="rating-badge">${esc(who)}: ${esc(r.score)}/10</span>`).join("");
+  return `
+    <div class="ratings-block">
+      <span class="rating-avg">Average ${avg.toFixed(1)}/10</span>
+      ${badges}
+    </div>
+  `;
+}
+
+function avgRating(p) {
+  const entries = Object.entries(p.ratings || {});
+  if (!entries.length) return null;
+  return entries.reduce((s, [, r]) => s + r.score, 0) / entries.length;
 }
 
 function askClaudeHtml(p) {
@@ -116,19 +143,21 @@ function mapEmbedHtml(p) {
 }
 
 function propertyCard(p) {
+  const avg = avgRating(p);
   return `
-  <section class="card" id="${esc(p.id)}">
+  <section class="card" id="${esc(p.id)}" data-avg-rating="${avg !== null ? avg.toFixed(2) : ""}">
     <h2>${esc(p.title)}</h2>
     <div class="price-row">
       <span class="price">${esc(p.price)}</span>
       <span class="agent">${esc(p.agent)}</span>
     </div>
+    ${sourceBadgeHtml(p)}
     <div class="flags">${p.flags.map(flagHtml).join("")}</div>
+    ${ratingsHtml(p)}
     <div class="photos">${photosHtml(p.id, p.photos)}</div>
     ${mapEmbedHtml(p)}
     <p class="body">${esc(p.body)}</p>
     <p class="why"><strong>Why it's here:</strong> ${esc(p.why)}</p>
-    <p class="source"><strong>Source:</strong> <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.linkLabel)}</a></p>
     ${researchHtml(p)}
     ${reactionHtml(p.id)}
     ${askClaudeHtml(p)}
@@ -159,10 +188,13 @@ const html = `<!DOCTYPE html>
   header { background: #1b3a2f; color: #fff; padding: 28px 20px 20px; }
   header h1 { margin: 0 0 4px; font-size: 28px; }
   header .sub { color: #cfe0d6; font-size: 14px; }
+  .sort-row { margin-top: 12px; font-size: 13px; }
+  .sort-row label { color: #cfe0d6; margin-right: 8px; }
+  .sort-row select { font-size: 13px; padding: 4px 8px; border-radius: 4px; border: 1px solid #3f6a55; background: #23483a; color: #fff; }
   nav { background: #23483a; padding: 10px 20px; overflow-x: auto; white-space: nowrap; position: sticky; top: 0; z-index: 10; }
   nav a { color: #d9ecdf; text-decoration: none; font-size: 13px; margin-right: 16px; }
   nav a:hover { text-decoration: underline; }
-  main { max-width: 880px; margin: 0 auto; padding: 20px; }
+  main { max-width: 880px; margin: 0 auto; padding: 20px; display: flex; flex-direction: column; }
   .section-title { margin-top: 48px; border-bottom: 3px solid #1b3a2f; padding-bottom: 8px; font-size: 22px; color: #1b3a2f; }
   .card { background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.12); padding: 24px; margin: 20px 0; scroll-margin-top: 60px; }
   .card h2 { margin: 0 0 8px; font-size: 20px; }
@@ -183,8 +215,14 @@ const html = `<!DOCTYPE html>
   .map-links a:hover { text-decoration: underline; }
   .body { line-height: 1.5; }
   .why { background: #fdf6e3; border-left: 4px solid #e6b800; padding: 10px 14px; border-radius: 4px; font-size: 14px; line-height: 1.5; }
-  .source { font-size: 14px; }
-  .source a { color: #1155cc; }
+  .source-badge { display: inline-block; background: #1b3a2f; color: #fff !important; font-weight: 700; font-size: 13px; letter-spacing: 0.4px; padding: 7px 14px; border-radius: 20px; text-decoration: none; margin-bottom: 12px; }
+  .source-badge:hover { background: #23483a; }
+  .ratings-block { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .rating-avg { background: #C2185B; color: #fff; font-weight: 700; font-size: 13px; padding: 4px 10px; border-radius: 4px; }
+  .rating-badge { background: #f0f0f0; color: #444; font-size: 12px; padding: 4px 10px; border-radius: 4px; }
+  .rating-empty { font-size: 12px; color: #999; }
+  .rating-hint { font-size: 12px; color: #8a5a00; background: #fff3cd; border-radius: 4px; padding: 6px 10px; margin: 0 0 10px; }
+  .rating-hint code { background: #fff; padding: 1px 5px; border-radius: 3px; }
   .research-block { margin-top: 14px; padding: 12px 14px; background: #eef4fb; border-left: 4px solid #1565C0; border-radius: 4px; }
   .research-block h3 { margin: 0 0 8px; font-size: 14px; color: #1b3a2f; }
   .research-item + .research-item { margin-top: 12px; padding-top: 12px; border-top: 1px solid #d6e4f2; }
@@ -214,6 +252,14 @@ const html = `<!DOCTYPE html>
 <header>
   <h1>Devon House Search</h1>
   <div class="sub">Exmouth · Woodbury · Budleigh Salterton · East Devon coast — last updated ${esc(data.lastUpdated)}</div>
+  <div class="sort-row">
+    <label for="sortControl">Sort:</label>
+    <select id="sortControl">
+      <option value="default">Default (newest first)</option>
+      <option value="highest">Highest rated first</option>
+      <option value="lowest">Lowest rated first</option>
+    </select>
+  </div>
 </header>
 <nav>${navLinks}</nav>
 <main>
@@ -244,6 +290,28 @@ window.addEventListener('message', function (e) {
     if (frame) frame.style.height = e.data.giscusEmbedResize + 'px';
   }
 });
+
+(function () {
+  var sortCards = Array.from(document.querySelectorAll('.card'));
+  var headers = Array.from(document.querySelectorAll('.section-title'));
+  var select = document.getElementById('sortControl');
+  if (!select) return;
+  select.addEventListener('change', function () {
+    var mode = select.value;
+    if (mode === 'default') {
+      sortCards.forEach(function (c) { c.style.order = ''; });
+      headers.forEach(function (h) { h.style.display = ''; });
+      return;
+    }
+    headers.forEach(function (h) { h.style.display = 'none'; });
+    var ranked = sortCards.slice().sort(function (a, b) {
+      var av = a.dataset.avgRating ? parseFloat(a.dataset.avgRating) : -1;
+      var bv = b.dataset.avgRating ? parseFloat(b.dataset.avgRating) : -1;
+      return mode === 'highest' ? bv - av : av - bv;
+    });
+    ranked.forEach(function (c, i) { c.style.order = i; });
+  });
+})();
 </script>
 </body>
 </html>`;
