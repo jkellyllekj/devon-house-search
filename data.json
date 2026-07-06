@@ -1,19 +1,101 @@
 {
-  "lastUpdated": "2026-07-05",
+  "lastUpdated": "2026-07-06",
   "properties": [
     {
-      "id": "farleys",
+      "id": "eastbudleighhighst",
       "section": "new",
+      "title": "High Street, East Budleigh (Grade II cottage)",
+      "price": "£239,950",
+      "agent": "Pennys, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO PARKING MENTIONED",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "EastBudleigh_Gallery_1.jpg",
+        "EastBudleigh_Gallery_2.jpg",
+        "EastBudleigh_Gallery_3.jpg",
+        "EastBudleigh_Gallery_4.jpg"
+      ],
+      "map": "map_eastbudleigh_highst.png",
+      "link": "https://www.pennys.net/for-sale/exmouth/high-street/2-bedroom-terraced-for-sale-in-high-street-ex9-7ed/263959",
+      "linkLabel": "pennys.net — listing 263959",
+      "body": "Double-fronted Grade II listed cottage on the High Street in East Budleigh village. Living room with fireplace, separate dining room, good-sized kitchen, two first-floor double bedrooms, spacious bathroom, cloakroom, feature ceiling beams throughout, enclosed rear garden, gas central heating.",
+      "why": "Not to be confused with the £435,000 East Budleigh thatched cottage already on file below (likely sold/withdrawn) — this is a separate, much cheaper Grade II cottage in the same village, well under budget with genuine period features (beams, fireplace). East Budleigh itself is inland of Budleigh Salterton by about 2 miles, still within easy reach of the coast. No parking mentioned in the listing, so treat as absent rather than just unconfirmed — worth checking if the High Street has resident permits.",
+      "dateAdded": "2026-07-06"
+    },
+    {
+      "id": "marlesflat",
+      "section": "new",
+      "title": "The Marles, Exmouth (ground-floor flat)",
+      "price": "£200,000",
+      "agent": "Pennys, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GROUND FLOOR",
+          "color": "#5D4037"
+        },
+        {
+          "text": "GARAGE TO RENT NEARBY",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "Marles_Gallery_1.jpg",
+        "Marles_Gallery_2.jpg",
+        "Marles_Gallery_3.jpg"
+      ],
+      "map": "map_marles.png",
+      "link": "https://www.pennys.net/for-sale/exmouth/the-marles/2-bedroom-groundfloorflat-for-sale-in-the-marles-ex8-4ne/269531",
+      "linkLabel": "pennys.net — listing 269531",
+      "body": "Spacious purpose-built ground-floor flat undergoing extensive modernisation — new flooring, refurbished kitchen and shower room, full redecoration. Entrance hall with utilities cupboard, large lounge/diner, two double bedrooms, shower room/WC, surrounded by communal gardens. Leasehold with an extended lease granted on completion. Service charge £1,440/year.",
+      "why": "Passes the ground-floor test for a flat and is well under budget, but the parking is soft: the listing only says a garage is understood to be available to rent close by, not an allocated space that comes with the sale — weaker than Exeter Road or Douglas Avenue below, which both have confirmed allocated parking.",
+      "dateAdded": "2026-07-06"
+    },
+    {
+      "id": "farleys",
+      "section": "still",
       "title": "Farleys, The Strand, Lympstone (Grade II cottage)",
       "price": "£295,000",
       "agent": "Hall & Scott, Exmouth",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "NO CHAIN", "color": "#EF6C00"},
-        {"text": "GRADE II LISTED", "color": "#6A1B9A"},
-        {"text": "NO PARKING (village car park permit)", "color": "#757575"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO PARKING (village car park permit)",
+          "color": "#757575"
+        }
       ],
-      "photos": ["Farleys_Gallery_1.jpg", "Farleys_Gallery_2.png", "Farleys_Gallery_3.jpg", "Farleys_Gallery_4.jpg"],
+      "photos": [
+        "Farleys_Gallery_1.jpg",
+        "Farleys_Gallery_2.png",
+        "Farleys_Gallery_3.jpg",
+        "Farleys_Gallery_4.jpg"
+      ],
       "map": "map_farleys.png",
       "link": "https://www.hallandscott.co.uk/details/?id=HSEXM_706793",
       "linkLabel": "hallandscott.co.uk — HSEXM_706793",
@@ -23,35 +105,61 @@
     },
     {
       "id": "exeterroadflat",
-      "section": "new",
+      "section": "still",
       "title": "Exeter Road, Exmouth (ground-floor character flat)",
-      "price": "£130,000",
+      "price": "£110,000",
       "agent": "Spring Estates, Exmouth",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "GROUND FLOOR", "color": "#5D4037"},
-        {"text": "HAS PARKING", "color": "#1565C0"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "PRICE REDUCED",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "GROUND FLOOR",
+          "color": "#5D4037"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#1565C0"
+        }
       ],
-      "photos": ["Exeter_Road_Flat.jpg"],
+      "photos": [
+        "Exeter_Road_Flat.jpg"
+      ],
       "map": "map_exeter_road_flat.png",
       "link": "https://www.zoopla.co.uk/for-sale/details/72842267/",
       "linkLabel": "zoopla.co.uk — listing 72842267",
-      "body": "One-bedroom apartment occupying the entire ground floor of a period building on Exeter Road — high ceilings, large windows overlooking the communal lawn and neighbouring church, generously proportioned living room, bedroom with double doors onto a rear courtyard, modern bathroom, galley kitchen. Allocated parking at the rear. Functional condition with scope for modernisation.",
-      "why": "This is the rare flat that actually passes your flat rules: genuinely cheap AND explicitly the whole ground floor, with a real allocated parking space on top. At £130k it's the cheapest confirmed-live option on the books — less than half budget, which leaves a lot of headroom if the Sidmouth auction dream came off later, or just very low stakes as a stop-gap off the narrowboat. Only one photo shown — Zoopla blocks photo scraping, so this is the single press image from the Exmouth Journal writeup.",
+      "body": "One-bedroom apartment occupying the entire ground floor of a period building on Exeter Road — high ceilings, large windows overlooking the communal lawn and neighbouring church, generously proportioned living room, bedroom with double doors onto a rear courtyard, modern bathroom, galley kitchen. Allocated parking at the rear. Functional condition with scope for modernisation. 52 years remaining on the lease.",
+      "why": "Still the rare flat that actually passes your flat rules: genuinely cheap AND explicitly the whole ground floor, with a real allocated parking space on top. Reduced a further £20,000 on 24/06/2026, now just £110k — under half of what it was quoted at when first tracked. Worth a sense check on the short (52-year) lease and extension cost before getting excited about the price. Only one photo shown — Zoopla blocks photo scraping, so this is the single press image from the Exmouth Journal writeup.",
       "dateAdded": "2026-07-05"
     },
     {
       "id": "bellstreet",
-      "section": "new",
+      "section": "still",
       "title": "3 Bell Street, Otterton",
       "price": "£220,000",
       "agent": "Pennys, Exmouth",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "NO CHAIN", "color": "#EF6C00"},
-        {"text": "ON-STREET PARKING ONLY", "color": "#757575"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY",
+          "color": "#757575"
+        }
       ],
-      "photos": ["Bell_Street_Otterton.jpg"],
+      "photos": [
+        "Bell_Street_Otterton.jpg"
+      ],
       "map": "map_bell_street.png",
       "link": "https://www.pennys.net/for-sale/exmouth/bell-street/2-bedroom-terraced-for-sale-in-bell-street-ex9-7hs/270110",
       "linkLabel": "pennys.net — listing 270110",
@@ -61,15 +169,23 @@
     },
     {
       "id": "flexton",
-      "section": "new",
+      "section": "still",
       "title": "The Flexton, Ottery St Mary",
       "price": "Guide Price £220,000",
       "agent": "Hall & Scott, Ottery St Mary",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "NO PARKING INFO", "color": "#757575"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
       ],
-      "photos": ["The_Flexton_Ottery.jpg"],
+      "photos": [
+        "The_Flexton_Ottery.jpg"
+      ],
       "map": "map_flexton.png",
       "link": "https://www.hallandscott.co.uk/details/?id=HSOTT_708139",
       "linkLabel": "hallandscott.co.uk — HSOTT_708139",
@@ -79,16 +195,27 @@
     },
     {
       "id": "beaconflat",
-      "section": "new",
+      "section": "still",
       "title": "The Beacon, Exmouth (ground-floor flat)",
       "price": "£309,950",
       "agent": "Pennys, Exmouth",
       "flags": [
-        {"text": "OVER BUDGET (+£9,950)", "color": "#B71C1C"},
-        {"text": "HAS PARKING", "color": "#1565C0"},
-        {"text": "GROUND FLOOR", "color": "#5D4037"}
+        {
+          "text": "OVER BUDGET (+£9,950)",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#1565C0"
+        },
+        {
+          "text": "GROUND FLOOR",
+          "color": "#5D4037"
+        }
       ],
-      "photos": ["Beacon_Flat_Exmouth.jpg"],
+      "photos": [
+        "Beacon_Flat_Exmouth.jpg"
+      ],
       "map": "map_beacon_flat.png",
       "link": "https://www.pennys.net/for-sale/exmouth/the-beacon/2-bedroom-groundfloorflat-for-sale-in-the-beacon-ex8-2ag/270212",
       "linkLabel": "pennys.net — listing 270212",
@@ -98,16 +225,27 @@
     },
     {
       "id": "cranford",
-      "section": "new",
+      "section": "still",
       "title": "Cranford Avenue, Exmouth (ground-floor flat)",
       "price": "£250,000",
       "agent": "Hall & Scott, Exmouth",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "NO CHAIN", "color": "#EF6C00"},
-        {"text": "PARKING UNKNOWN", "color": "#9E9E9E"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "PARKING UNKNOWN",
+          "color": "#9E9E9E"
+        }
       ],
-      "photos": ["Cranford_Avenue_Exmouth.jpg"],
+      "photos": [
+        "Cranford_Avenue_Exmouth.jpg"
+      ],
       "map": "map_cranford.png",
       "link": "https://www.hallandscott.co.uk/details/?id=HSEXM_708054",
       "linkLabel": "hallandscott.co.uk — HSEXM_708054",
@@ -122,12 +260,29 @@
       "price": "Guide price £250,000 (auction)",
       "agent": "Bradleys Estate Agents",
       "flags": [
-        {"text": "DREAM HOME", "color": "#C2185B"},
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "AUCTION 21 JUL 2026, 12pm", "color": "#E65100"},
-        {"text": "KNOWN CLIFF EROSION RISK", "color": "#B71C1C"}
+        {
+          "text": "DREAM HOME",
+          "color": "#C2185B"
+        },
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "AUCTION 21 JUL 2026, 12pm",
+          "color": "#E65100"
+        },
+        {
+          "text": "KNOWN CLIFF EROSION RISK",
+          "color": "#B71C1C"
+        }
       ],
-      "photos": ["Sidmouth_Gallery_1.jpg", "Sidmouth_Gallery_2.jpg", "Sidmouth_Gallery_3.jpg", "Sidmouth_Gallery_4.jpg"],
+      "photos": [
+        "Sidmouth_Gallery_1.jpg",
+        "Sidmouth_Gallery_2.jpg",
+        "Sidmouth_Gallery_3.jpg",
+        "Sidmouth_Gallery_4.jpg"
+      ],
       "map": "map_sidmouth.png",
       "link": "https://www.rightmove.co.uk/properties/90027936",
       "linkLabel": "rightmove.co.uk/properties/90027936",
@@ -142,11 +297,25 @@
       "price": "£225,000 (guide price)",
       "agent": "Rightmove listing",
       "flags": [
-        {"text": "LIKED BY JESSE", "color": "#C2185B"},
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "NO PARKING INFO", "color": "#757575"}
+        {
+          "text": "LIKED BY JESSE",
+          "color": "#C2185B"
+        },
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
       ],
-      "photos": ["Otterton_Gallery_1.jpg", "Otterton_Gallery_2.jpg", "Otterton_Gallery_3.jpg", "Otterton_Gallery_4.jpg"],
+      "photos": [
+        "Otterton_Gallery_1.jpg",
+        "Otterton_Gallery_2.jpg",
+        "Otterton_Gallery_3.jpg",
+        "Otterton_Gallery_4.jpg"
+      ],
       "map": "map_otterton.png",
       "link": "https://www.rightmove.co.uk/properties/174232565",
       "linkLabel": "rightmove.co.uk/properties/174232565",
@@ -161,11 +330,24 @@
       "price": "£65,000 (guide price)",
       "agent": "Hall & Scott, Ottery St Mary",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "AUCTION 23 JUL 2026", "color": "#E65100"},
-        {"text": "HAS PARKING", "color": "#1565C0"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "AUCTION 23 JUL 2026",
+          "color": "#E65100"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#1565C0"
+        }
       ],
-      "photos": ["Feniton_Barn.jpg", "Feniton_Gallery_2.jpg", "Feniton_Gallery_3.jpg"],
+      "photos": [
+        "Feniton_Barn.jpg",
+        "Feniton_Gallery_2.jpg",
+        "Feniton_Gallery_3.jpg"
+      ],
       "map": "map_feniton.png",
       "link": "https://www.hallandscott.co.uk/details/?id=HSOTT_708623",
       "linkLabel": "hallandscott.co.uk — HSOTT_708623",
@@ -180,9 +362,18 @@
       "price": "£375,000–£400,000 (guide price)",
       "agent": "Wilkinson Grant & Co",
       "flags": [
-        {"text": "OVER BUDGET", "color": "#B71C1C"},
-        {"text": "HAS PARKING", "color": "#1565C0"},
-        {"text": "LIKELY SOLD", "color": "#8D6E63"}
+        {
+          "text": "OVER BUDGET",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#1565C0"
+        },
+        {
+          "text": "LIKELY SOLD",
+          "color": "#8D6E63"
+        }
       ],
       "photos": [],
       "map": "map_yettington.png",
@@ -199,10 +390,20 @@
       "price": "£235,000",
       "agent": "Hall & Scott",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "HAS PARKING", "color": "#1565C0"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#1565C0"
+        }
       ],
-      "photos": ["Douglas_Avenue__Exmouth_2.jpg", "Douglas_Gallery_2.jpg", "Douglas_Gallery_3.jpg"],
+      "photos": [
+        "Douglas_Avenue__Exmouth_2.jpg",
+        "Douglas_Gallery_2.jpg",
+        "Douglas_Gallery_3.jpg"
+      ],
       "map": "map_douglas_ave.png",
       "link": "https://www.hallandscott.co.uk/details/?id=HSEXM_697185",
       "linkLabel": "hallandscott.co.uk — HSEXM_697185",
@@ -217,10 +418,20 @@
       "price": "Offers over £400,000",
       "agent": "Hall & Scott",
       "flags": [
-        {"text": "OVER BUDGET", "color": "#B71C1C"},
-        {"text": "NEEDS RENOVATION", "color": "#8D6E63"}
+        {
+          "text": "OVER BUDGET",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "NEEDS RENOVATION",
+          "color": "#8D6E63"
+        }
       ],
-      "photos": ["The_Beacon__Exmouth_1.jpg", "Beacon_Gallery_2.jpg", "Beacon_Gallery_3.jpg"],
+      "photos": [
+        "The_Beacon__Exmouth_1.jpg",
+        "Beacon_Gallery_2.jpg",
+        "Beacon_Gallery_3.jpg"
+      ],
       "map": "map_beacon.png",
       "link": "https://www.hallandscott.co.uk/details/?id=HSEXM_707936",
       "linkLabel": "hallandscott.co.uk — HSEXM_707936",
@@ -235,10 +446,18 @@
       "price": "Guide price £350,000 (as of first report, unconfirmed)",
       "agent": "Hall & Scott",
       "flags": [
-        {"text": "OVER BUDGET", "color": "#B71C1C"},
-        {"text": "STATUS UNCONFIRMED", "color": "#8D6E63"}
+        {
+          "text": "OVER BUDGET",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "STATUS UNCONFIRMED",
+          "color": "#8D6E63"
+        }
       ],
-      "photos": ["Withycombe_Village_Road__Exmouth_3.jpg"],
+      "photos": [
+        "Withycombe_Village_Road__Exmouth_3.jpg"
+      ],
       "map": "map_withycombe.png",
       "link": "https://hallandscott.co.uk/sales/",
       "linkLabel": "hallandscott.co.uk/sales/ (specific listing not relocated)",
@@ -253,8 +472,14 @@
       "price": "£150,000 (as of first report, unconfirmed)",
       "agent": "Hall & Scott",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "STATUS UNCONFIRMED", "color": "#8D6E63"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "STATUS UNCONFIRMED",
+          "color": "#8D6E63"
+        }
       ],
       "photos": [],
       "map": "map_salterton_rd.png",
@@ -271,10 +496,18 @@
       "price": "£435,000",
       "agent": "Pennys",
       "flags": [
-        {"text": "OVER BUDGET", "color": "#B71C1C"},
-        {"text": "LIKELY SOLD/WITHDRAWN", "color": "#8D6E63"}
+        {
+          "text": "OVER BUDGET",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "LIKELY SOLD/WITHDRAWN",
+          "color": "#8D6E63"
+        }
       ],
-      "photos": ["East_Budleigh_Cottage.jpg"],
+      "photos": [
+        "East_Budleigh_Cottage.jpg"
+      ],
       "map": "map_east_budleigh.png",
       "link": "https://www.rightmove.co.uk/properties/165338390",
       "linkLabel": "rightmove.co.uk/properties/165338390 (page now returns 410 Gone)",
@@ -289,10 +522,18 @@
       "price": "£375,000 (guide price)",
       "agent": "Meadows / 247 Property Auctions",
       "flags": [
-        {"text": "OVER BUDGET", "color": "#B71C1C"},
-        {"text": "AUCTION 16 JUL 2026, 12pm", "color": "#E65100"}
+        {
+          "text": "OVER BUDGET",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "AUCTION 16 JUL 2026, 12pm",
+          "color": "#E65100"
+        }
       ],
-      "photos": ["Clinton_Garage.jpg"],
+      "photos": [
+        "Clinton_Garage.jpg"
+      ],
       "map": "map_clinton_garage.png",
       "link": "https://www.meadowsea.com/Property-For-Sale-Clinton-Garage-Budleigh-Salterton-pi-MEAD1265.htm",
       "linkLabel": "meadowsea.com — MEAD1265",
@@ -307,9 +548,18 @@
       "price": "£215,000",
       "agent": "Pennys",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "NO PARKING INFO", "color": "#757575"},
-        {"text": "STATUS UNCONFIRMED", "color": "#8D6E63"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        },
+        {
+          "text": "STATUS UNCONFIRMED",
+          "color": "#8D6E63"
+        }
       ],
       "photos": [],
       "map": "map_leslie_road.png",
