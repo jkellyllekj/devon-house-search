@@ -30,17 +30,6 @@ function photosHtml(id, photos) {
   `;
 }
 
-function reactionHtml(id) {
-  return `
-    <div class="reactions" data-id="${id}">
-      <button class="react-btn" data-val="love" onclick="react('${id}','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('${id}','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('${id}','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
-    </div>
-  `;
-}
-
 const REPO = "jkellyllekj/devon-house-search";
 const GISCUS_REPO_ID = "R_kgDOTN1h4w";
 const GISCUS_CATEGORY = "General";
@@ -54,6 +43,12 @@ function githubIssueUrl(kind, p) {
   };
   const labels = { remove: "removal-request", research: "research-request" };
   return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(titles[kind])}&body=${encodeURIComponent(bodies[kind])}&labels=${labels[kind]}`;
+}
+
+function submitPropertyUrl() {
+  const title = "Submit: (edit this — paste the address or listing site name)";
+  const body = "Listing URL (paste the exact page): \n\nWhat do you like about it: \n";
+  return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=property-submission`;
 }
 
 function giscusHtml(p) {
@@ -73,22 +68,49 @@ function sourceBadgeHtml(p) {
 }
 
 const RATER_LABELS = data.raterLabels || {};
+const BROTHER_SLOTS = ["Brother 1", "Brother 2", "Brother 3"];
+
+function ratingBarColor(score) {
+  const pct = Math.max(0, Math.min(10, score)) / 10;
+  const r = Math.round(211 - pct * (211 - 46));
+  const g = Math.round(47 + pct * (125 - 47));
+  const b = 60;
+  return `rgb(${r},${g},${b})`;
+}
+
+function ratingRowHtml(label, score, cls) {
+  if (score === null) {
+    return `
+      <div class="rating-row rating-row-empty ${cls}">
+        <span class="rating-row-label">${esc(label)}</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    `;
+  }
+  const flames = "🔥".repeat(Math.round(score)) || "";
+  return `
+    <div class="rating-row ${cls}">
+      <span class="rating-row-label">${esc(label)}</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:${score * 10}%;background:${ratingBarColor(score)}"></div></div>
+      <span class="rating-row-score">${esc(score)}/10</span>
+      <span class="rating-row-flames">${flames}</span>
+    </div>
+  `;
+}
 
 function ratingsHtml(p) {
   const ratings = p.ratings || {};
-  const entries = Object.entries(ratings);
-  const familyBadges = entries.length
-    ? entries.map(([who, r]) => `<span class="rating-badge">${esc(RATER_LABELS[who] || "Unknown rater")}: ${esc(r.score)}/10</span>`).join("")
-    : `<span class="rating-empty">No family ratings yet</span>`;
-  const avg = entries.length ? entries.reduce((s, [, r]) => s + r.score, 0) / entries.length : null;
-  const aiBadge = (p.aiRating !== undefined && p.aiRating !== null) ? `<span class="rating-ai">🤖 AI Rating: ${esc(p.aiRating)}/10</span>` : "";
-  return `
-    <div class="ratings-block">
-      ${aiBadge}
-      ${avg !== null ? `<span class="rating-avg">Family avg ${avg.toFixed(1)}/10</span>` : ""}
-      ${familyBadges}
-    </div>
-  `;
+  const byLabel = {};
+  Object.entries(ratings).forEach(([login, r]) => {
+    const label = RATER_LABELS[login];
+    if (label) byLabel[label] = r.score;
+  });
+  const rows = [
+    ratingRowHtml("🤖 AI Rating", (p.aiRating !== undefined && p.aiRating !== null) ? p.aiRating : null, "rating-row-ai"),
+    ...BROTHER_SLOTS.map(label => ratingRowHtml(label, byLabel[label] !== undefined ? byLabel[label] : null, "")),
+  ].join("");
+  return `<div class="ratings-block"><h3>Ratings</h3>${rows}</div>`;
 }
 
 function avgRating(p) {
@@ -106,35 +128,42 @@ const CHECKLIST_ITEMS = [
   { key: "character", label: "✨ Has character" },
   { key: "garden", label: "🌳 Has a garden" },
   { key: "garageWorkspace", label: "🔧 Garage/shed/workspace" },
+  { key: "closeToFamily", label: "👨‍👩‍👦 Close to Exmouth/brothers" },
 ];
 
-function checklistIcon(val) {
-  if (val === "yes") return { icon: "✓", cls: "cl-yes" };
-  if (val === "partial" || val === "adaptable") return { icon: "~", cls: "cl-partial" };
-  if (val === "no") return { icon: "✕", cls: "cl-no" };
-  return { icon: "?", cls: "cl-unknown" };
+const GROUND_FLOOR_LABELS = {
+  yes: "♿ Already ground-floor livable",
+  adaptable: "♿ Could adapt to ground-floor living",
+  no: "♿ Not realistically ground-floor adaptable",
+};
+
+function normalizeChecklistVal(raw) {
+  if (raw === "yes") return "good";
+  if (raw === "no") return "bad";
+  if (raw === "partial" || raw === "adaptable") return "indifferent";
+  return "indifferent";
+}
+
+function clItemHtml(p, key, label, rawVal) {
+  const norm = normalizeChecklistVal(rawVal);
+  return `<div class="cl-item" data-cl-key="${esc(key)}" data-cl-default="${norm}" data-prop="${esc(p.id)}" onclick="cycleChecklist(this)">${esc(label)}</div>`;
 }
 
 function checklistHtml(p) {
   const c = p.checklist || {};
-  const rows = CHECKLIST_ITEMS.map(item => {
-    const { icon, cls } = checklistIcon(c[item.key]);
-    return `<span class="cl-item ${cls}"><span class="cl-icon">${icon}</span>${esc(item.label)}</span>`;
-  }).join("");
-  const gfVal = c.groundFloorLongTerm === "yes" ? "yes" : c.groundFloorLongTerm === "adaptable" ? "partial" : c.groundFloorLongTerm === "no" ? "no" : null;
-  const gf = checklistIcon(gfVal);
-  const gfLabel = c.groundFloorLongTerm === "yes" ? "♿ Already ground-floor livable"
-    : c.groundFloorLongTerm === "adaptable" ? "♿ Could adapt to ground-floor living"
-    : c.groundFloorLongTerm === "no" ? "♿ Not realistically ground-floor adaptable"
-    : "♿ Ground-floor adaptability unknown";
+  const items = CHECKLIST_ITEMS.map(item => ({ key: item.key, label: item.label, raw: c[item.key] }));
+  items.push({ key: "groundFloorLongTerm", label: GROUND_FLOOR_LABELS[c.groundFloorLongTerm] || "♿ Ground-floor adaptability unknown", raw: c.groundFloorLongTerm === "yes" ? "yes" : c.groundFloorLongTerm === "no" ? "no" : "partial" });
+  const rowsHtml = items.map(item => clItemHtml(p, item.key, item.label, item.raw)).join("");
   const unique = c.uniqueFeature ? `<div class="cl-unique">🎁 <strong>Unique:</strong> ${esc(c.uniqueFeature)}</div>` : "";
   return `
     <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        ${rows}
-        <span class="cl-item ${gf.cls}"><span class="cl-icon">${gf.icon}</span>${esc(gfLabel)}</span>
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
       </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none">${rowsHtml}</div>
       ${unique}
     </div>
   `;
@@ -207,15 +236,14 @@ function propertyCard(p) {
     </div>
     ${sourceBadgeHtml(p)}
     <div class="flags">${p.flags.map(flagHtml).join("")}</div>
-    ${ratingsHtml(p)}
-    ${checklistHtml(p)}
     <div class="photos">${photosHtml(p.id, p.photos)}</div>
     ${mapEmbedHtml(p)}
     <p class="body">${esc(p.body)}</p>
     <p class="why"><strong>Why it's here:</strong> ${esc(p.why)}</p>
     ${aiTakeHtml(p)}
     ${researchHtml(p)}
-    ${reactionHtml(p.id)}
+    ${ratingsHtml(p)}
+    ${checklistHtml(p)}
     ${askClaudeHtml(p)}
     ${giscusHtml(p)}
     <div class="added">Added ${esc(p.dateAdded)}</div>
@@ -244,6 +272,8 @@ const html = `<!DOCTYPE html>
   header { background: #1b3a2f; color: #fff; padding: 28px 20px 20px; }
   header h1 { margin: 0 0 4px; font-size: 28px; }
   header .sub { color: #cfe0d6; font-size: 14px; }
+  .submit-link { display: inline-block; margin-top: 14px; background: #E65100; color: #fff; font-weight: 700; font-size: 13px; padding: 8px 16px; border-radius: 20px; text-decoration: none; }
+  .submit-link:hover { background: #ff6f1a; }
   .sort-row { margin-top: 12px; font-size: 13px; }
   .sort-row label { color: #cfe0d6; margin-right: 8px; }
   .sort-row select { font-size: 13px; padding: 4px 8px; border-radius: 4px; border: 1px solid #3f6a55; background: #23483a; color: #fff; }
@@ -273,23 +303,35 @@ const html = `<!DOCTYPE html>
   .why { background: #fdf6e3; border-left: 4px solid #e6b800; padding: 10px 14px; border-radius: 4px; font-size: 14px; line-height: 1.5; }
   .source-badge { display: inline-block; background: #1b3a2f; color: #fff !important; font-weight: 700; font-size: 13px; letter-spacing: 0.4px; padding: 7px 14px; border-radius: 20px; text-decoration: none; margin-bottom: 12px; }
   .source-badge:hover { background: #23483a; }
-  .ratings-block { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
-  .rating-ai { background: #6A1B9A; color: #fff; font-weight: 700; font-size: 13px; padding: 4px 10px; border-radius: 4px; }
-  .rating-avg { background: #C2185B; color: #fff; font-weight: 700; font-size: 13px; padding: 4px 10px; border-radius: 4px; }
-  .rating-badge { background: #f0f0f0; color: #444; font-size: 12px; padding: 4px 10px; border-radius: 4px; }
-  .rating-empty { font-size: 12px; color: #999; }
+  .ratings-block { margin: 14px 0; padding: 14px; background: #fafafa; border-radius: 8px; }
+  .ratings-block h3 { margin: 0 0 10px; font-size: 13px; color: #1b3a2f; text-transform: uppercase; letter-spacing: 0.5px; }
+  .rating-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 13px; }
+  .rating-row-label { flex: 0 0 130px; font-weight: 600; color: #333; }
+  .rating-row-ai .rating-row-label { color: #6A1B9A; }
+  .rating-bar-track { flex: 1 1 auto; height: 14px; background: #e6e6e6; border-radius: 8px; overflow: hidden; }
+  .rating-bar-fill { height: 100%; border-radius: 8px; transition: width 0.3s; }
+  .rating-row-score { flex: 0 0 50px; font-weight: 700; color: #444; text-align: right; }
+  .rating-row-flames { flex: 0 0 auto; font-size: 12px; }
+  .rating-row-empty .rating-row-score { color: #999; font-weight: 400; }
   .rating-hint { font-size: 12px; color: #8a5a00; background: #fff3cd; border-radius: 4px; padding: 6px 10px; margin: 0 0 10px; }
   .rating-hint code { background: #fff; padding: 1px 5px; border-radius: 3px; }
-  .checklist-block { margin-bottom: 14px; padding: 12px 14px; background: #f4f8f5; border-radius: 6px; }
-  .checklist-block h3 { margin: 0 0 8px; font-size: 13px; color: #1b3a2f; text-transform: uppercase; letter-spacing: 0.5px; }
-  .checklist-grid { display: flex; flex-wrap: wrap; gap: 6px 16px; }
-  .cl-item { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; }
-  .cl-icon { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; font-size: 11px; font-weight: 700; color: #fff; flex-shrink: 0; }
-  .cl-yes .cl-icon { background: #2E7D32; }
-  .cl-partial .cl-icon { background: #E65100; }
-  .cl-no .cl-icon { background: #9E9E9E; }
-  .cl-unknown .cl-icon { background: #ccc; color: #777; }
-  .cl-unique { margin-top: 8px; font-size: 13px; }
+  .checklist-block { margin-bottom: 14px; padding: 14px; background: #f4f8f5; border-radius: 8px; }
+  .checklist-block h3 { margin: 0 0 10px; font-size: 13px; color: #1b3a2f; text-transform: uppercase; letter-spacing: 0.5px; }
+  .cl-hint { text-transform: none; font-weight: 400; font-size: 11px; color: #888; letter-spacing: normal; }
+  .cl-columns { display: flex; gap: 16px; flex-wrap: wrap; }
+  .cl-col { flex: 1 1 200px; min-width: 180px; }
+  .cl-col h4 { margin: 0 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; }
+  .cl-col-good h4 { color: #2E7D32; }
+  .cl-col-bad h4 { color: #B71C1C; }
+  .cl-col-body { display: flex; flex-direction: column; gap: 4px; min-height: 20px; }
+  .cl-item { font-size: 13px; padding: 5px 10px; border-radius: 6px; cursor: pointer; user-select: none; }
+  .cl-item.cl-good { background: #e6f4ea; color: #1b5e20; }
+  .cl-item.cl-bad { background: #fdeaea; color: #8e1c1c; }
+  .cl-item.cl-overridden { border: 1px dashed #999; }
+  .cl-indifferent { margin-top: 10px; font-size: 12px; color: #999; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+  .cl-indifferent-label { font-weight: 600; }
+  .cl-indifferent .cl-item { background: none; padding: 2px 4px; font-size: 12px; color: #999; }
+  .cl-unique { margin-top: 10px; font-size: 13px; }
   .ai-take { background: #f3e5f5; border-left: 4px solid #6A1B9A; padding: 10px 14px; border-radius: 4px; font-size: 14px; line-height: 1.5; margin-top: 10px; }
   .research-block { margin-top: 14px; padding: 12px 14px; background: #eef4fb; border-left: 4px solid #1565C0; border-radius: 4px; }
   .research-block h3 { margin: 0 0 8px; font-size: 14px; color: #1b3a2f; }
@@ -306,12 +348,6 @@ const html = `<!DOCTYPE html>
   .ask-claude-block a { font-size: 13px; color: #1155cc; margin-right: 16px; text-decoration: none; }
   .ask-claude-block a:hover { text-decoration: underline; }
   .notes-caveat { display: block; font-size: 11px; color: #999; margin-top: 6px; }
-  .reactions { margin-top: 14px; padding-top: 12px; border-top: 1px solid #eee; }
-  .react-btn { border: 1px solid #ccc; background: #fafafa; border-radius: 20px; padding: 6px 14px; font-size: 13px; cursor: pointer; margin-right: 8px; }
-  .react-btn.active-love { background: #C2185B; color: #fff; border-color: #C2185B; }
-  .react-btn.active-maybe { background: #E65100; color: #fff; border-color: #E65100; }
-  .react-btn.active-pass { background: #757575; color: #fff; border-color: #757575; }
-  .react-note { font-size: 11px; color: #999; display: block; margin-top: 6px; }
   .added { font-size: 11px; color: #aaa; margin-top: 10px; }
   footer { max-width: 880px; margin: 0 auto; padding: 20px; color: #555; font-size: 13px; }
 </style>
@@ -320,6 +356,7 @@ const html = `<!DOCTYPE html>
 <header>
   <h1>Devon House Search</h1>
   <div class="sub">Exmouth · Woodbury · Budleigh Salterton · East Devon coast — last updated ${esc(data.lastUpdated)}</div>
+  <a class="submit-link" href="${submitPropertyUrl()}" target="_blank" rel="noopener">📮 Spotted one yourself? Submit a property</a>
   <div class="sort-row">
     <label for="sortControl">Sort:</label>
     <select id="sortControl">
@@ -336,23 +373,35 @@ const html = `<!DOCTYPE html>
 ${sections}
 </main>
 <footer>
-  <p>This page is rebuilt daily. New finds are added to the top of their section; nothing already here is removed unless it's confirmed gone. Reactions typed here are stored only in your browser (localStorage) as a personal memory aid — to actually change what future sweeps prioritise, reply in chat.</p>
+  <p>This page is rebuilt daily. New finds are added to the top of their section; nothing already here is removed unless it's confirmed gone. Checklist overrides (clicking an item) are stored only in your own browser — to actually change what future sweeps prioritise, leave a comment or reply in chat.</p>
 </footer>
 <script>
-function react(id, val) {
-  localStorage.setItem('devon-react-' + id, val);
-  render(id);
+function clStorageKey(prop, key) { return 'devon-cl-' + prop + '-' + key; }
+
+function getClState(el) {
+  var saved = localStorage.getItem(clStorageKey(el.dataset.prop, el.dataset.clKey));
+  return saved || el.dataset.clDefault;
 }
-function render(id) {
-  const el = document.querySelector('.reactions[data-id="' + id + '"]');
-  if (!el) return;
-  const saved = localStorage.getItem('devon-react-' + id);
-  el.querySelectorAll('.react-btn').forEach(b => {
-    b.classList.remove('active-love', 'active-maybe', 'active-pass');
-    if (saved && b.dataset.val === saved) b.classList.add('active-' + saved);
-  });
+
+function placeClItem(el) {
+  var state = getClState(el);
+  var overridden = state !== el.dataset.clDefault;
+  el.className = 'cl-item cl-' + state + (overridden ? ' cl-overridden' : '');
+  var block = el.closest('.checklist-block');
+  var target = state === 'good' ? block.querySelector('.cl-col-body[data-col="good"]')
+    : state === 'bad' ? block.querySelector('.cl-col-body[data-col="bad"]')
+    : block.querySelector('.cl-indifferent[data-col="indifferent"]');
+  target.appendChild(el);
 }
-document.querySelectorAll('.reactions').forEach(el => render(el.dataset.id));
+
+function cycleChecklist(el) {
+  var current = getClState(el);
+  var next = current === 'good' ? 'bad' : current === 'bad' ? 'indifferent' : 'good';
+  localStorage.setItem(clStorageKey(el.dataset.prop, el.dataset.clKey), next);
+  placeClItem(el);
+}
+
+document.querySelectorAll('.cl-source .cl-item').forEach(placeClItem);
 
 window.addEventListener('message', function (e) {
   if (e.data && e.data.giscusEmbedResize && e.data.term) {

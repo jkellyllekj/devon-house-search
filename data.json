@@ -43,7 +43,8 @@
         "character": "yes",
         "garden": "yes",
         "garageWorkspace": "no",
-        "uniqueFeature": null
+        "uniqueFeature": null,
+        "closeToFamily": "partial"
       },
       "aiRating": 6,
       "aiTake": "Solid character and price, but no parking, and the ocean/station/pool are all a drive away rather than walkable — a village-life trade rather than a coast-or-trail-adjacent one."
@@ -89,7 +90,8 @@
         "character": "no",
         "garden": "no",
         "garageWorkspace": "partial",
-        "uniqueFeature": null
+        "uniqueFeature": null,
+        "closeToFamily": "yes"
       },
       "aiRating": 6,
       "aiTake": "Ticks the practical boxes (ground floor, cheap, close to everything in Exmouth) but has none of the character you respond to, and the garage is only a maybe."
@@ -140,10 +142,11 @@
         "character": "yes",
         "garden": "no",
         "garageWorkspace": "no",
-        "uniqueFeature": null
+        "uniqueFeature": null,
+        "closeToFamily": "partial"
       },
       "aiRating": 7,
-      "aiTake": "Best location fit yet — estuary, its own station, and Woodbury Common all on the doorstep — but no garden, no parking, and Grade II status likely rules out a ground-floor retrofit."
+      "aiTake": "Best location fit yet — estuary, its own station, and Woodbury Common all on the doorstep — but no garden, no parking, and Grade II status likely rules out a ground-floor retrofit. One honest caveat: by your own read, Lympstone isn't especially close to either brother (Woodbury or Otterton) — worth it only if the deal/character is exceptional enough to outweigh that, which arguably it already is (Grade II, chain-free, £5k under budget). Your call."
     },
     {
       "id": "exeterroadflat",
@@ -188,7 +191,8 @@
         "character": "partial",
         "garden": "no",
         "garageWorkspace": "no",
-        "uniqueFeature": null
+        "uniqueFeature": null,
+        "closeToFamily": "yes"
       },
       "aiRating": 7,
       "aiTake": "Cheapest genuinely ground-floor-with-parking option on the list, right in the middle of everything — the short 52-year lease is the one number worth checking before getting attached."
@@ -232,7 +236,8 @@
         "character": "yes",
         "garden": "yes",
         "garageWorkspace": "no",
-        "uniqueFeature": null
+        "uniqueFeature": null,
+        "closeToFamily": "yes"
       },
       "aiRating": 5,
       "aiTake": "Cheapest confirmed option, but exactly the village-centre/no-real-parking profile you said you'd want to avoid if you have a choice."
@@ -272,7 +277,8 @@
         "character": "yes",
         "garden": "partial",
         "garageWorkspace": "no",
-        "uniqueFeature": null
+        "uniqueFeature": null,
+        "closeToFamily": "no"
       },
       "aiRating": 4,
       "aiTake": "Most finished and characterful of the cheap options, but it's the one furthest from the coast/trails brief of anything on the list."
@@ -316,7 +322,8 @@
         "character": "partial",
         "garden": "no",
         "garageWorkspace": "partial",
-        "uniqueFeature": null
+        "uniqueFeature": null,
+        "closeToFamily": "yes"
       },
       "aiRating": 6,
       "aiTake": "Real ground-floor parking and an estuary view are rare for a flat, but it's over budget and still just a flat, not the characterful find you're really after."
@@ -360,7 +367,8 @@
         "character": "no",
         "garden": "no",
         "garageWorkspace": "no",
-        "uniqueFeature": null
+        "uniqueFeature": null,
+        "closeToFamily": "yes"
       },
       "aiRating": 5,
       "aiTake": "Safe, ready-to-move-into fallback in the right town, but no character and parking is unconfirmed rather than guaranteed."
@@ -428,7 +436,8 @@
         "character": "yes",
         "garden": "yes",
         "garageWorkspace": "no",
-        "uniqueFeature": "Circular 1960s design built for novelist R.F. Delderfield — architecturally one-of-a-kind"
+        "uniqueFeature": "Circular 1960s design built for novelist R.F. Delderfield — architecturally one-of-a-kind",
+        "closeToFamily": "no"
       },
       "aiRating": 5,
       "aiTake": "Character and privacy are off the charts, but declined for good reason — the erosion/insurance/mortgage problem is real, and it's the least practical for trains, pools, or trails of anything on the list."
@@ -475,7 +484,8 @@
         "character": "yes",
         "garden": "yes",
         "garageWorkspace": "no",
-        "uniqueFeature": null
+        "uniqueFeature": null,
+        "closeToFamily": "yes"
       },
       "aiRating": 6,
       "aiTake": "The thatched-cottage character you love, near your brother, but it's the exact village-centre/on-street-parking trade-off you flagged not wanting — you said as much yourself."
@@ -521,7 +531,8 @@
         "character": "yes",
         "garden": "yes",
         "garageWorkspace": "yes",
-        "uniqueFeature": "Already has planning permission in hand — rare for this price"
+        "uniqueFeature": "Already has planning permission in hand — rare for this price",
+        "closeToFamily": "no"
       },
       "aiRating": 6,
       "aiTake": "Cheapest, most flexible option — you could design in ground-floor living and a workshop from scratch — but it's inland, off the coast and trails brief entirely."
@@ -563,7 +574,8 @@
         "character": "yes",
         "garden": "yes",
         "garageWorkspace": "partial",
-        "uniqueFeature": null
+        "uniqueFeature": null,
+        "closeToFamily": "partial"
       },
       "aiRating": 6,
       "aiTake": "About the best trail-network location of anything found, and has real character, but likely gone and was already 25-33% over budget."
@@ -605,7 +617,8 @@
         "character": "no",
         "garden": "no",
         "garageWorkspace": "no",
-        "uniqueFeature": null
+        "uniqueFeature": null,
+        "closeToFamily": "yes"
       },
       "aiRating": 5,
       "aiTake": "Solid, safe fallback with real parking in the right town, but no character and no garden — a placeholder rather than an exciting option."
@@ -651,7 +664,8 @@
         "character": "yes",
         "garden": "yes",
         "garageWorkspace": "yes",
-        "uniqueFeature": "Grade II four-storey renovation project with sea views"
+        "uniqueFeature": "Grade II four-storey renovation project with sea views",
+        "closeToFamily": "yes"
       },
       "aiRating": 5,
       "aiTake": "Character and garage boxes are both ticked hard, but it's 33%+ over budget and a full four-storey renovation project, not a quick move-in."
@@ -695,7 +709,8 @@
         "character": "yes",
         "garden": null,
         "garageWorkspace": null,
-        "uniqueFeature": "Former Methodist Church + Church Hall — a genuine conversion rarity"
+        "uniqueFeature": "Former Methodist Church + Church Hall — a genuine conversion rarity",
+        "closeToFamily": "yes"
       },
       "aiRating": 5,
       "aiTake": "The most unusual conversion flavour found so far, but too much of the listing (price, status, layout) is unconfirmed to rate it with real confidence."
@@ -737,7 +752,8 @@
         "character": "no",
         "garden": "partial",
         "garageWorkspace": "no",
-        "uniqueFeature": null
+        "uniqueFeature": null,
+        "closeToFamily": "yes"
       },
       "aiRating": 4,
       "aiTake": "Ticks ground-floor and location boxes cheaply, but likely age-restricted and has none of the character you're after — a fallback, not a favourite."
@@ -781,7 +797,8 @@
         "character": "yes",
         "garden": null,
         "garageWorkspace": null,
-        "uniqueFeature": null
+        "uniqueFeature": null,
+        "closeToFamily": "partial"
       },
       "aiRating": 4,
       "aiTake": "Genuinely characterful but 45% over budget and likely already gone — kept only as a benchmark."
@@ -825,7 +842,8 @@
         "character": "yes",
         "garden": "no",
         "garageWorkspace": "yes",
-        "uniqueFeature": "Former commercial garage/MOT site in the town centre — could plausibly be run as a hireable workshop, exactly the kind of oddball find you said you wanted flagged"
+        "uniqueFeature": "Former commercial garage/MOT site in the town centre — could plausibly be run as a hireable workshop, exactly the kind of oddball find you said you wanted flagged",
+        "closeToFamily": "partial"
       },
       "aiRating": 5,
       "aiTake": "The most literal 'workshop you could hire out' find yet, right in Budleigh itself, but it's speculative, over budget, and a redevelopment project rather than a move-in-ready home."
@@ -867,7 +885,8 @@
         "character": "partial",
         "garden": null,
         "garageWorkspace": null,
-        "uniqueFeature": null
+        "uniqueFeature": null,
+        "closeToFamily": "yes"
       },
       "aiRating": 4,
       "aiTake": "Could be a good, cheap, characterful find in the right town, but the listing couldn't be reconfirmed this sweep — worth a direct call before reading too much into it."

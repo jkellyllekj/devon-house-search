@@ -11,6 +11,8 @@
   header { background: #1b3a2f; color: #fff; padding: 28px 20px 20px; }
   header h1 { margin: 0 0 4px; font-size: 28px; }
   header .sub { color: #cfe0d6; font-size: 14px; }
+  .submit-link { display: inline-block; margin-top: 14px; background: #E65100; color: #fff; font-weight: 700; font-size: 13px; padding: 8px 16px; border-radius: 20px; text-decoration: none; }
+  .submit-link:hover { background: #ff6f1a; }
   .sort-row { margin-top: 12px; font-size: 13px; }
   .sort-row label { color: #cfe0d6; margin-right: 8px; }
   .sort-row select { font-size: 13px; padding: 4px 8px; border-radius: 4px; border: 1px solid #3f6a55; background: #23483a; color: #fff; }
@@ -40,23 +42,35 @@
   .why { background: #fdf6e3; border-left: 4px solid #e6b800; padding: 10px 14px; border-radius: 4px; font-size: 14px; line-height: 1.5; }
   .source-badge { display: inline-block; background: #1b3a2f; color: #fff !important; font-weight: 700; font-size: 13px; letter-spacing: 0.4px; padding: 7px 14px; border-radius: 20px; text-decoration: none; margin-bottom: 12px; }
   .source-badge:hover { background: #23483a; }
-  .ratings-block { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
-  .rating-ai { background: #6A1B9A; color: #fff; font-weight: 700; font-size: 13px; padding: 4px 10px; border-radius: 4px; }
-  .rating-avg { background: #C2185B; color: #fff; font-weight: 700; font-size: 13px; padding: 4px 10px; border-radius: 4px; }
-  .rating-badge { background: #f0f0f0; color: #444; font-size: 12px; padding: 4px 10px; border-radius: 4px; }
-  .rating-empty { font-size: 12px; color: #999; }
+  .ratings-block { margin: 14px 0; padding: 14px; background: #fafafa; border-radius: 8px; }
+  .ratings-block h3 { margin: 0 0 10px; font-size: 13px; color: #1b3a2f; text-transform: uppercase; letter-spacing: 0.5px; }
+  .rating-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 13px; }
+  .rating-row-label { flex: 0 0 130px; font-weight: 600; color: #333; }
+  .rating-row-ai .rating-row-label { color: #6A1B9A; }
+  .rating-bar-track { flex: 1 1 auto; height: 14px; background: #e6e6e6; border-radius: 8px; overflow: hidden; }
+  .rating-bar-fill { height: 100%; border-radius: 8px; transition: width 0.3s; }
+  .rating-row-score { flex: 0 0 50px; font-weight: 700; color: #444; text-align: right; }
+  .rating-row-flames { flex: 0 0 auto; font-size: 12px; }
+  .rating-row-empty .rating-row-score { color: #999; font-weight: 400; }
   .rating-hint { font-size: 12px; color: #8a5a00; background: #fff3cd; border-radius: 4px; padding: 6px 10px; margin: 0 0 10px; }
   .rating-hint code { background: #fff; padding: 1px 5px; border-radius: 3px; }
-  .checklist-block { margin-bottom: 14px; padding: 12px 14px; background: #f4f8f5; border-radius: 6px; }
-  .checklist-block h3 { margin: 0 0 8px; font-size: 13px; color: #1b3a2f; text-transform: uppercase; letter-spacing: 0.5px; }
-  .checklist-grid { display: flex; flex-wrap: wrap; gap: 6px 16px; }
-  .cl-item { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; }
-  .cl-icon { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; font-size: 11px; font-weight: 700; color: #fff; flex-shrink: 0; }
-  .cl-yes .cl-icon { background: #2E7D32; }
-  .cl-partial .cl-icon { background: #E65100; }
-  .cl-no .cl-icon { background: #9E9E9E; }
-  .cl-unknown .cl-icon { background: #ccc; color: #777; }
-  .cl-unique { margin-top: 8px; font-size: 13px; }
+  .checklist-block { margin-bottom: 14px; padding: 14px; background: #f4f8f5; border-radius: 8px; }
+  .checklist-block h3 { margin: 0 0 10px; font-size: 13px; color: #1b3a2f; text-transform: uppercase; letter-spacing: 0.5px; }
+  .cl-hint { text-transform: none; font-weight: 400; font-size: 11px; color: #888; letter-spacing: normal; }
+  .cl-columns { display: flex; gap: 16px; flex-wrap: wrap; }
+  .cl-col { flex: 1 1 200px; min-width: 180px; }
+  .cl-col h4 { margin: 0 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; }
+  .cl-col-good h4 { color: #2E7D32; }
+  .cl-col-bad h4 { color: #B71C1C; }
+  .cl-col-body { display: flex; flex-direction: column; gap: 4px; min-height: 20px; }
+  .cl-item { font-size: 13px; padding: 5px 10px; border-radius: 6px; cursor: pointer; user-select: none; }
+  .cl-item.cl-good { background: #e6f4ea; color: #1b5e20; }
+  .cl-item.cl-bad { background: #fdeaea; color: #8e1c1c; }
+  .cl-item.cl-overridden { border: 1px dashed #999; }
+  .cl-indifferent { margin-top: 10px; font-size: 12px; color: #999; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+  .cl-indifferent-label { font-weight: 600; }
+  .cl-indifferent .cl-item { background: none; padding: 2px 4px; font-size: 12px; color: #999; }
+  .cl-unique { margin-top: 10px; font-size: 13px; }
   .ai-take { background: #f3e5f5; border-left: 4px solid #6A1B9A; padding: 10px 14px; border-radius: 4px; font-size: 14px; line-height: 1.5; margin-top: 10px; }
   .research-block { margin-top: 14px; padding: 12px 14px; background: #eef4fb; border-left: 4px solid #1565C0; border-radius: 4px; }
   .research-block h3 { margin: 0 0 8px; font-size: 14px; color: #1b3a2f; }
@@ -73,12 +87,6 @@
   .ask-claude-block a { font-size: 13px; color: #1155cc; margin-right: 16px; text-decoration: none; }
   .ask-claude-block a:hover { text-decoration: underline; }
   .notes-caveat { display: block; font-size: 11px; color: #999; margin-top: 6px; }
-  .reactions { margin-top: 14px; padding-top: 12px; border-top: 1px solid #eee; }
-  .react-btn { border: 1px solid #ccc; background: #fafafa; border-radius: 20px; padding: 6px 14px; font-size: 13px; cursor: pointer; margin-right: 8px; }
-  .react-btn.active-love { background: #C2185B; color: #fff; border-color: #C2185B; }
-  .react-btn.active-maybe { background: #E65100; color: #fff; border-color: #E65100; }
-  .react-btn.active-pass { background: #757575; color: #fff; border-color: #757575; }
-  .react-note { font-size: 11px; color: #999; display: block; margin-top: 6px; }
   .added { font-size: 11px; color: #aaa; margin-top: 10px; }
   footer { max-width: 880px; margin: 0 auto; padding: 20px; color: #555; font-size: 13px; }
 </style>
@@ -87,6 +95,7 @@
 <header>
   <h1>Devon House Search</h1>
   <div class="sub">Exmouth · Woodbury · Budleigh Salterton · East Devon coast — last updated 2026-07-06</div>
+  <a class="submit-link" href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Submit%3A%20(edit%20this%20%E2%80%94%20paste%20the%20address%20or%20listing%20site%20name)&body=Listing%20URL%20(paste%20the%20exact%20page)%3A%20%0A%0AWhat%20do%20you%20like%20about%20it%3A%20%0A&labels=property-submission" target="_blank" rel="noopener">📮 Spotted one yourself? Submit a property</a>
   <div class="sort-row">
     <label for="sortControl">Sort:</label>
     <select id="sortControl">
@@ -109,23 +118,6 @@
     </div>
     <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/high-street/2-bedroom-terraced-for-sale-in-high-street-ex9-7ed/263959" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">NO PARKING (village on-street only)</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 6/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-partial"><span class="cl-icon">~</span>🌊 Close to ocean</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🚉 Close to train station</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>✨ Has character</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌳 Has a garden</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-unknown"><span class="cl-icon">?</span>♿ Ground-floor adaptability unknown</span>
-      </div>
-      
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/EastBudleigh_Gallery_1.jpg" alt="eastbudleighhighst main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/EastBudleigh_Gallery_2.jpg" alt="eastbudleighhighst photo" loading="lazy"><img src="images/EastBudleigh_Gallery_3.jpg" alt="eastbudleighhighst photo" loading="lazy"><img src="images/EastBudleigh_Gallery_4.jpg" alt="eastbudleighhighst photo" loading="lazy"></div>
@@ -149,12 +141,42 @@
     <p class="why"><strong>Why it's here:</strong> Not to be confused with the £435,000 East Budleigh thatched cottage already on file below (likely sold/withdrawn) — this is a separate, much cheaper Grade II cottage in the same village, well under budget with genuine period features (beams, fireplace). East Budleigh itself is inland of Budleigh Salterton by about 2 miles, still within easy reach of the coast. Checked the full listing text directly — genuinely no parking, garage, or space mentioned anywhere, not just an omission in the summary. On the street itself: High Street has limited on-street parking with a 30-minute free limit on one side, so it isn't realistic for a resident's own car; the practical option is a small free 17-space car park just off the High Street (2-hour limit) plus the larger Hayes Lane car park a short walk away. East Budleigh is a small village and doesn't appear to run a formal residents' permit scheme (those are typically only in larger towns like Exmouth/Sidmouth) — so day-to-day parking would likely mean walking a couple of minutes from a car park rather than permit-based street parking outside the door.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> Solid character and price, but no parking, and the ocean/station/pool are all a drive away rather than walkable — a village-life trade rather than a coast-or-trail-adjacent one.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="eastbudleighhighst">
-      <button class="react-btn" data-val="love" onclick="react('eastbudleighhighst','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('eastbudleighhighst','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('eastbudleighhighst','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="indifferent" data-prop="eastbudleighhighst" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="bad" data-prop="eastbudleighhighst" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="bad" data-prop="eastbudleighhighst" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="eastbudleighhighst" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="eastbudleighhighst" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="eastbudleighhighst" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="good" data-prop="eastbudleighhighst" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="eastbudleighhighst" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="eastbudleighhighst" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="eastbudleighhighst" onclick="cycleChecklist(this)">♿ Ground-floor adaptability unknown</div></div>
+      
     </div>
   
     
@@ -182,23 +204,6 @@
     </div>
     <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/the-marles/2-bedroom-groundfloorflat-for-sale-in-the-marles-ex8-4ne/269531" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span><span class="flag" style="background:#757575">PARKING: GARAGE TO RENT NEARBY (not included)</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 6/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌊 Close to ocean</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🚉 Close to train station</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>✨ Has character</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🌳 Has a garden</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>♿ Already ground-floor livable</span>
-      </div>
-      
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/Marles_Gallery_1.jpg" alt="marlesflat main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/Marles_Gallery_2.jpg" alt="marlesflat photo" loading="lazy"><img src="images/Marles_Gallery_3.jpg" alt="marlesflat photo" loading="lazy"></div>
@@ -222,12 +227,42 @@
     <p class="why"><strong>Why it's here:</strong> Passes the ground-floor test for a flat and is well under budget, but the parking is soft: the listing only says a garage is understood to be available to rent close by, not an allocated space that comes with the sale — weaker than Exeter Road or Douglas Avenue below, which both have confirmed allocated parking.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> Ticks the practical boxes (ground floor, cheap, close to everything in Exmouth) but has none of the character you respond to, and the garage is only a maybe.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="marlesflat">
-      <button class="react-btn" data-val="love" onclick="react('marlesflat','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('marlesflat','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('marlesflat','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="marlesflat" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="marlesflat" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="bad" data-prop="marlesflat" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="bad" data-prop="marlesflat" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="indifferent" data-prop="marlesflat" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">♿ Already ground-floor livable</div></div>
+      
     </div>
   
     
@@ -255,23 +290,6 @@
     </div>
     <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_706793" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">NO PARKING (village car park permit)</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 7/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌊 Close to ocean</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🚉 Close to train station</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>✨ Has character</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🌳 Has a garden</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-unknown"><span class="cl-icon">?</span>♿ Ground-floor adaptability unknown</span>
-      </div>
-      
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/Farleys_Gallery_1.jpg" alt="farleys main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/Farleys_Gallery_2.png" alt="farleys photo" loading="lazy"><img src="images/Farleys_Gallery_3.jpg" alt="farleys photo" loading="lazy"><img src="images/Farleys_Gallery_4.jpg" alt="farleys photo" loading="lazy"></div>
@@ -293,14 +311,44 @@
   
     <p class="body">Two-bedroom Grade II listed cottage in the heart of Lympstone village — exposed beams and stonework throughout, cosy sitting/dining room, well-appointed kitchen, family bathroom, two loft areas with Velux windows, gas central heating. Freehold and chain-free. No garden and no dedicated parking — permit parking is available at the village car park nearby. Two pubs, shop, post office, café, sailing club and the estuary all on the doorstep.</p>
     <p class="why"><strong>Why it's here:</strong> Location-wise this is arguably the best-placed find yet: Lympstone sits on the Exe estuary directly between Exmouth and Woodbury Common — water one way, trails the other, and one of your brothers is in Woodbury just up the hill. Genuine period character (Grade II, beams, stonework), chain-free, and £5k under ceiling. The catches: no parking (the standing hard requirement — waived here only because it's genuinely characterful, with village car park permits as the workaround), no outdoor space, and listed-building consent applies to any alterations. Found via the Exmouth Journal property pages, not the portals.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Best location fit yet — estuary, its own station, and Woodbury Common all on the doorstep — but no garden, no parking, and Grade II status likely rules out a ground-floor retrofit.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Best location fit yet — estuary, its own station, and Woodbury Common all on the doorstep — but no garden, no parking, and Grade II status likely rules out a ground-floor retrofit. One honest caveat: by your own read, Lympstone isn't especially close to either brother (Woodbury or Otterton) — worth it only if the deal/character is exceptional enough to outweigh that, which arguably it already is (Grade II, chain-free, £5k under budget). Your call.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
+      <span class="rating-row-score">7/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="farleys">
-      <button class="react-btn" data-val="love" onclick="react('farleys','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('farleys','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('farleys','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="farleys" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="farleys" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="farleys" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="farleys" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="good" data-prop="farleys" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="farleys" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="bad" data-prop="farleys" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="farleys" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="farleys" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="farleys" onclick="cycleChecklist(this)">♿ Ground-floor adaptability unknown</div></div>
+      
     </div>
   
     
@@ -328,23 +376,6 @@
     </div>
     <a class="source-badge" href="https://www.zoopla.co.uk/for-sale/details/72842267/" target="_blank" rel="noopener">View on ZOOPLA.CO.UK ↗</a>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">PRICE REDUCED</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 7/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌊 Close to ocean</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🚉 Close to train station</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>✨ Has character</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🌳 Has a garden</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>♿ Already ground-floor livable</span>
-      </div>
-      
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/Exeter_Road_Flat.jpg" alt="exeterroadflat main photo" loading="lazy"></div>
     
@@ -368,12 +399,42 @@
     <p class="why"><strong>Why it's here:</strong> Still the rare flat that actually passes your flat rules: genuinely cheap AND explicitly the whole ground floor, with a real allocated parking space on top. Reduced a further £20,000 on 24/06/2026, now just £110k — under half of what it was quoted at when first tracked. Worth a sense check on the short (52-year) lease and extension cost before getting excited about the price. Only one photo shown — Zoopla blocks photo scraping, so this is the single press image from the Exmouth Journal writeup.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest genuinely ground-floor-with-parking option on the list, right in the middle of everything — the short 52-year lease is the one number worth checking before getting attached.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
+      <span class="rating-row-score">7/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="exeterroadflat">
-      <button class="react-btn" data-val="love" onclick="react('exeterroadflat','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('exeterroadflat','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('exeterroadflat','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="exeterroadflat" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="exeterroadflat" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="good" data-prop="exeterroadflat" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="exeterroadflat" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="exeterroadflat" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="indifferent" data-prop="exeterroadflat" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="bad" data-prop="exeterroadflat" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="exeterroadflat" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="exeterroadflat" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="good" data-prop="exeterroadflat" onclick="cycleChecklist(this)">♿ Already ground-floor livable</div></div>
+      
     </div>
   
     
@@ -401,23 +462,6 @@
     </div>
     <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/bell-street/2-bedroom-terraced-for-sale-in-bell-street-ex9-7hs/270110" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 5/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-partial"><span class="cl-icon">~</span>🌊 Close to ocean</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🚉 Close to train station</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>✨ Has character</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌳 Has a garden</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-unknown"><span class="cl-icon">?</span>♿ Ground-floor adaptability unknown</span>
-      </div>
-      
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/Bell_Street_Otterton.jpg" alt="bellstreet main photo" loading="lazy"></div>
     
@@ -441,12 +485,42 @@
     <p class="why"><strong>Why it's here:</strong> Cheapest confirmed in-budget option this sweep, and it's in the same village as the Otterton thatched cottage you already liked. But it's even more squarely the thing you flagged a reservation about there: village-centre, on-street parking only, not the remote/rural feel you said you'd prefer. Worth it only if the price and no-chain status outweigh that.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest confirmed option, but exactly the village-centre/no-real-parking profile you said you'd want to avoid if you have a choice.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="bellstreet">
-      <button class="react-btn" data-val="love" onclick="react('bellstreet','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('bellstreet','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('bellstreet','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="indifferent" data-prop="bellstreet" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="bad" data-prop="bellstreet" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="bad" data-prop="bellstreet" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="bellstreet" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="bellstreet" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="bellstreet" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="good" data-prop="bellstreet" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="bellstreet" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="bellstreet" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="bellstreet" onclick="cycleChecklist(this)">♿ Ground-floor adaptability unknown</div></div>
+      
     </div>
   
     
@@ -474,23 +548,6 @@
     </div>
     <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSOTT_708139" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 4/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-no"><span class="cl-icon">✕</span>🌊 Close to ocean</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🚉 Close to train station</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>✨ Has character</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🌳 Has a garden</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-unknown"><span class="cl-icon">?</span>♿ Ground-floor adaptability unknown</span>
-      </div>
-      
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/The_Flexton_Ottery.jpg" alt="flexton main photo" loading="lazy"></div>
     
@@ -514,12 +571,42 @@
     <p class="why"><strong>Why it's here:</strong> Same price as the Bell Street cottage above but reads as more finished and genuinely characterful — an open brick fireplace and three floors of period detail rather than a fixer-upper. The trade-off: Ottery St Mary is inland, away from both the coast and Woodbury Common, and the courtyard access described sounds pedestrian-only, so parking is probably absent.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> Most finished and characterful of the cheap options, but it's the one furthest from the coast/trails brief of anything on the list.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="flexton">
-      <button class="react-btn" data-val="love" onclick="react('flexton','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('flexton','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('flexton','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="bad" data-prop="flexton" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="bad" data-prop="flexton" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="flexton" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="flexton" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="bad" data-prop="flexton" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="flexton" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="indifferent" data-prop="flexton" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="flexton" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="bad" data-prop="flexton" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="flexton" onclick="cycleChecklist(this)">♿ Ground-floor adaptability unknown</div></div>
+      
     </div>
   
     
@@ -547,23 +634,6 @@
     </div>
     <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/the-beacon/2-bedroom-groundfloorflat-for-sale-in-the-beacon-ex8-2ag/270212" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET (+£9,950)</span><span class="flag" style="background:#1565C0">HAS PARKING</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 6/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌊 Close to ocean</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🚉 Close to train station</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>✨ Has character</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🌳 Has a garden</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>♿ Already ground-floor livable</span>
-      </div>
-      
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/Beacon_Flat_Exmouth.jpg" alt="beaconflat main photo" loading="lazy"></div>
     
@@ -587,12 +657,42 @@
     <p class="why"><strong>Why it's here:</strong> Note: this is a different property from the over-budget Beacon house already on file below — same building name, unrelated listing. This one is genuinely ground-floor with a real allocated parking space (not just street parking) plus an estuary view, which is unusual for a flat at this price. But it's £9,950 (3%) over your £300k ceiling and it's a flat, so only worth a look if you'd flex the ceiling slightly for a genuine parking bay and the view.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> Real ground-floor parking and an estuary view are rare for a flat, but it's over budget and still just a flat, not the characterful find you're really after.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="beaconflat">
-      <button class="react-btn" data-val="love" onclick="react('beaconflat','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('beaconflat','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('beaconflat','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="beaconflat" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="beaconflat" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="good" data-prop="beaconflat" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="beaconflat" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="beaconflat" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="indifferent" data-prop="beaconflat" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="bad" data-prop="beaconflat" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="indifferent" data-prop="beaconflat" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="beaconflat" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="good" data-prop="beaconflat" onclick="cycleChecklist(this)">♿ Already ground-floor livable</div></div>
+      
     </div>
   
     
@@ -620,23 +720,6 @@
     </div>
     <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_708054" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#9E9E9E">PARKING UNKNOWN</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 5/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌊 Close to ocean</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🚉 Close to train station</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>✨ Has character</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🌳 Has a garden</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>♿ Already ground-floor livable</span>
-      </div>
-      
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/Cranford_Avenue_Exmouth.jpg" alt="cranford main photo" loading="lazy"></div>
     
@@ -660,12 +743,42 @@
     <p class="why"><strong>Why it's here:</strong> A safely-in-budget, ready-to-go fallback flat if nothing more characterful turns up — similar in spirit to the Douglas Avenue flat already on file, but £15,000 cheaper. No parking mentioned in the listing, so treat as unconfirmed rather than absent (Douglas Avenue has confirmed allocated parking).</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> Safe, ready-to-move-into fallback in the right town, but no character and parking is unconfirmed rather than guaranteed.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="cranford">
-      <button class="react-btn" data-val="love" onclick="react('cranford','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('cranford','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('cranford','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="cranford" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="cranford" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="good" data-prop="cranford" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="cranford" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="cranford" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="bad" data-prop="cranford" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="bad" data-prop="cranford" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="cranford" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="cranford" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="good" data-prop="cranford" onclick="cycleChecklist(this)">♿ Already ground-floor livable</div></div>
+      
     </div>
   
     
@@ -693,23 +806,6 @@
     </div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/174232565" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="flags"><span class="flag" style="background:#C2185B">LIKED BY JESSE</span><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 6/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-partial"><span class="cl-icon">~</span>🌊 Close to ocean</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🚉 Close to train station</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>✨ Has character</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌳 Has a garden</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-unknown"><span class="cl-icon">?</span>♿ Ground-floor adaptability unknown</span>
-      </div>
-      
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/Otterton_Gallery_1.jpg" alt="otterton main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/Otterton_Gallery_2.jpg" alt="otterton photo" loading="lazy"><img src="images/Otterton_Gallery_3.jpg" alt="otterton photo" loading="lazy"><img src="images/Otterton_Gallery_4.jpg" alt="otterton photo" loading="lazy"></div>
@@ -733,12 +829,42 @@
     <p class="why"><strong>Why it's here:</strong> Jesse flagged this one personally — near his brother, a lovely part of Devon. His one reservation: it's village-centre (on-street parking only) and he'd prefer something a bit more remote/rural. Worth weighing character + location against the more remote feel he's after. See 3 Bell Street above — a cheaper fixer-upper in the same village if this one's too finished/pricey.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> The thatched-cottage character you love, near your brother, but it's the exact village-centre/on-street-parking trade-off you flagged not wanting — you said as much yourself.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="otterton">
-      <button class="react-btn" data-val="love" onclick="react('otterton','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('otterton','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('otterton','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="indifferent" data-prop="otterton" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="bad" data-prop="otterton" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="bad" data-prop="otterton" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="otterton" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="otterton" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="otterton" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="good" data-prop="otterton" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="otterton" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="otterton" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="otterton" onclick="cycleChecklist(this)">♿ Ground-floor adaptability unknown</div></div>
+      
     </div>
   
     
@@ -766,23 +892,6 @@
     </div>
     <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSOTT_708623" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#E65100">AUCTION 23 JUL 2026</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 6/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-no"><span class="cl-icon">✕</span>🌊 Close to ocean</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🚉 Close to train station</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🏊 Close to pool/swim team</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🔒 Private/secluded</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>✨ Has character</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌳 Has a garden</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>♿ Already ground-floor livable</span>
-      </div>
-      <div class="cl-unique">🎁 <strong>Unique:</strong> Already has planning permission in hand — rare for this price</div>
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/Feniton_Barn.jpg" alt="feniton main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/Feniton_Gallery_2.jpg" alt="feniton photo" loading="lazy"><img src="images/Feniton_Gallery_3.jpg" alt="feniton photo" loading="lazy"></div>
@@ -806,12 +915,42 @@
     <p class="why"><strong>Why it's here:</strong> The self-build/conversion-plot opportunity Jesse said he'd consider — cheap land with permission already in hand. Downside: inland near Honiton, off the coast/trails brief.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest, most flexible option — you could design in ground-floor living and a workshop from scratch — but it's inland, off the coast and trails brief entirely.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="feniton">
-      <button class="react-btn" data-val="love" onclick="react('feniton','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('feniton','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('feniton','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="bad" data-prop="feniton" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="feniton" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="bad" data-prop="feniton" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="indifferent" data-prop="feniton" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="bad" data-prop="feniton" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="feniton" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="good" data-prop="feniton" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="good" data-prop="feniton" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="bad" data-prop="feniton" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="good" data-prop="feniton" onclick="cycleChecklist(this)">♿ Already ground-floor livable</div></div>
+      <div class="cl-unique">🎁 <strong>Unique:</strong> Already has planning permission in hand — rare for this price</div>
     </div>
   
     
@@ -839,23 +978,6 @@
     </div>
     <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_697185" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 5/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌊 Close to ocean</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🚉 Close to train station</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>✨ Has character</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🌳 Has a garden</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-unknown"><span class="cl-icon">?</span>♿ Ground-floor adaptability unknown</span>
-      </div>
-      
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/Douglas_Avenue__Exmouth_2.jpg" alt="douglas main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/Douglas_Gallery_2.jpg" alt="douglas photo" loading="lazy"><img src="images/Douglas_Gallery_3.jpg" alt="douglas photo" loading="lazy"></div>
@@ -879,12 +1001,42 @@
     <p class="why"><strong>Why it's here:</strong> Conventional but solid fallback if nothing more characterful turns up in budget. It's a flat, floor level unconfirmed.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> Solid, safe fallback with real parking in the right town, but no character and no garden — a placeholder rather than an exciting option.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="douglas">
-      <button class="react-btn" data-val="love" onclick="react('douglas','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('douglas','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('douglas','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="douglas" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="douglas" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="good" data-prop="douglas" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="douglas" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="douglas" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="bad" data-prop="douglas" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="bad" data-prop="douglas" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="douglas" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="douglas" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="douglas" onclick="cycleChecklist(this)">♿ Ground-floor adaptability unknown</div></div>
+      
     </div>
   
     
@@ -912,23 +1064,6 @@
     </div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/90027936" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="flags"><span class="flag" style="background:#616161">DECLINED BY JESSE — EROSION/INSURANCE RISK</span><span class="flag" style="background:#B71C1C">KNOWN CLIFF EROSION RISK</span><span class="flag" style="background:#E65100">AUCTION 21 JUL 2026, 12pm</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 5/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌊 Close to ocean</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🚉 Close to train station</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🏊 Close to pool/swim team</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🔒 Private/secluded</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>✨ Has character</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌳 Has a garden</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-no"><span class="cl-icon">✕</span>♿ Not realistically ground-floor adaptable</span>
-      </div>
-      <div class="cl-unique">🎁 <strong>Unique:</strong> Circular 1960s design built for novelist R.F. Delderfield — architecturally one-of-a-kind</div>
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/Sidmouth_Gallery_1.jpg" alt="sidmouth main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/Sidmouth_Gallery_2.jpg" alt="sidmouth photo" loading="lazy"><img src="images/Sidmouth_Gallery_3.jpg" alt="sidmouth photo" loading="lazy"><img src="images/Sidmouth_Gallery_4.jpg" alt="sidmouth photo" loading="lazy"></div>
@@ -963,12 +1098,42 @@
       
     </div>
   
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="sidmouth">
-      <button class="react-btn" data-val="love" onclick="react('sidmouth','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('sidmouth','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('sidmouth','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="sidmouth" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="bad" data-prop="sidmouth" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="sidmouth" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="good" data-prop="sidmouth" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="bad" data-prop="sidmouth" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="sidmouth" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="good" data-prop="sidmouth" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="sidmouth" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="bad" data-prop="sidmouth" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="bad" data-prop="sidmouth" onclick="cycleChecklist(this)">♿ Not realistically ground-floor adaptable</div></div>
+      <div class="cl-unique">🎁 <strong>Unique:</strong> Circular 1960s design built for novelist R.F. Delderfield — architecturally one-of-a-kind</div>
     </div>
   
     
@@ -996,23 +1161,6 @@
     </div>
     <a class="source-badge" href="https://www.exmouthjournal.co.uk/news/24440905.property-sale-near-budleigh-salterton-two-bedroom-house/" target="_blank" rel="noopener">View on EXMOUTHJOURNAL.CO.UK ↗</a>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#1565C0">HAS PARKING</span><span class="flag" style="background:#8D6E63">LIKELY SOLD</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 6/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-partial"><span class="cl-icon">~</span>🌊 Close to ocean</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🚉 Close to train station</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🏊 Close to pool/swim team</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🔒 Private/secluded</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>✨ Has character</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌳 Has a garden</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-unknown"><span class="cl-icon">?</span>♿ Ground-floor adaptability unknown</span>
-      </div>
-      
-    </div>
-  
     <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
     
     <div class="map-embed">
@@ -1033,12 +1181,42 @@
     <p class="why"><strong>Why it's here:</strong> About as close as a converted barn gets to the Woodbury Common trail network. Priced 25-33% over budget and compact for the money. Downgraded to likely sold this sweep: on top of the agent's own listing page redirecting to a generic search, a Rightmove mirror for a similar 3-bed Yettington barn conversion now also returns 410 Gone. Kept only as a benchmark/inspiration piece unless Jesse wants it chased further.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> About the best trail-network location of anything found, and has real character, but likely gone and was already 25-33% over budget.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="yettington">
-      <button class="react-btn" data-val="love" onclick="react('yettington','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('yettington','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('yettington','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="indifferent" data-prop="yettington" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="bad" data-prop="yettington" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="bad" data-prop="yettington" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="good" data-prop="yettington" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="good" data-prop="yettington" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="yettington" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="good" data-prop="yettington" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="indifferent" data-prop="yettington" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="yettington" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="yettington" onclick="cycleChecklist(this)">♿ Ground-floor adaptability unknown</div></div>
+      
     </div>
   
     
@@ -1066,23 +1244,6 @@
     </div>
     <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_707936" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">NEEDS RENOVATION</span><span class="flag" style="background:#1565C0">HAS PARKING (garage)</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 5/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌊 Close to ocean</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🚉 Close to train station</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>✨ Has character</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌳 Has a garden</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-no"><span class="cl-icon">✕</span>♿ Not realistically ground-floor adaptable</span>
-      </div>
-      <div class="cl-unique">🎁 <strong>Unique:</strong> Grade II four-storey renovation project with sea views</div>
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/The_Beacon__Exmouth_1.jpg" alt="beacon main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/Beacon_Gallery_2.jpg" alt="beacon photo" loading="lazy"><img src="images/Beacon_Gallery_3.jpg" alt="beacon photo" loading="lazy"></div>
@@ -1106,12 +1267,42 @@
     <p class="why"><strong>Why it's here:</strong> Well over budget but kept as a benchmark for what full-renovation character stock costs locally.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> Character and garage boxes are both ticked hard, but it's 33%+ over budget and a full four-storey renovation project, not a quick move-in.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="beacon">
-      <button class="react-btn" data-val="love" onclick="react('beacon','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('beacon','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('beacon','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="beacon" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="beacon" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="good" data-prop="beacon" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="beacon" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="beacon" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="beacon" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="good" data-prop="beacon" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="good" data-prop="beacon" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="beacon" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="bad" data-prop="beacon" onclick="cycleChecklist(this)">♿ Not realistically ground-floor adaptable</div></div>
+      <div class="cl-unique">🎁 <strong>Unique:</strong> Grade II four-storey renovation project with sea views</div>
     </div>
   
     
@@ -1139,23 +1330,6 @@
     </div>
     <a class="source-badge" href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 5/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌊 Close to ocean</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🚉 Close to train station</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>✨ Has character</span><span class="cl-item cl-unknown"><span class="cl-icon">?</span>🌳 Has a garden</span><span class="cl-item cl-unknown"><span class="cl-icon">?</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-unknown"><span class="cl-icon">?</span>♿ Ground-floor adaptability unknown</span>
-      </div>
-      <div class="cl-unique">🎁 <strong>Unique:</strong> Former Methodist Church + Church Hall — a genuine conversion rarity</div>
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/Withycombe_Village_Road__Exmouth_3.jpg" alt="withycombe main photo" loading="lazy"></div>
     
@@ -1179,12 +1353,42 @@
     <p class="why"><strong>Why it's here:</strong> Couldn't re-locate this exact listing this sweep — may have sold or been withdrawn. Kept as inspiration for the flavour of conversion opportunity this market does throw up.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> The most unusual conversion flavour found so far, but too much of the listing (price, status, layout) is unconfirmed to rate it with real confidence.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="withycombe">
-      <button class="react-btn" data-val="love" onclick="react('withycombe','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('withycombe','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('withycombe','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="withycombe" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="withycombe" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="good" data-prop="withycombe" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="withycombe" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="withycombe" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="withycombe" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="indifferent" data-prop="withycombe" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="indifferent" data-prop="withycombe" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="withycombe" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="withycombe" onclick="cycleChecklist(this)">♿ Ground-floor adaptability unknown</div></div>
+      <div class="cl-unique">🎁 <strong>Unique:</strong> Former Methodist Church + Church Hall — a genuine conversion rarity</div>
     </div>
   
     
@@ -1212,23 +1416,6 @@
     </div>
     <a class="source-badge" href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 4/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌊 Close to ocean</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🚉 Close to train station</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>✨ Has character</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🌳 Has a garden</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>♿ Already ground-floor livable</span>
-      </div>
-      
-    </div>
-  
     <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
     
     <div class="map-embed">
@@ -1249,12 +1436,42 @@
     <p class="why"><strong>Why it's here:</strong> Cheapest option found originally; could not reconfirm this exact flat this sweep (a different Salterton Road retirement flat, Bronte Court, now shows instead). No photo included to avoid misattributing an image to the wrong flat.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> Ticks ground-floor and location boxes cheaply, but likely age-restricted and has none of the character you're after — a fallback, not a favourite.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="salterton">
-      <button class="react-btn" data-val="love" onclick="react('salterton','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('salterton','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('salterton','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="salterton" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="salterton" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="good" data-prop="salterton" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="salterton" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="salterton" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="bad" data-prop="salterton" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="indifferent" data-prop="salterton" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="salterton" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="salterton" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="good" data-prop="salterton" onclick="cycleChecklist(this)">♿ Already ground-floor livable</div></div>
+      
     </div>
   
     
@@ -1282,23 +1499,6 @@
     </div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/165338390" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">LIKELY SOLD/WITHDRAWN</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 4/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-partial"><span class="cl-icon">~</span>🌊 Close to ocean</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🚉 Close to train station</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>✨ Has character</span><span class="cl-item cl-unknown"><span class="cl-icon">?</span>🌳 Has a garden</span><span class="cl-item cl-unknown"><span class="cl-icon">?</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-unknown"><span class="cl-icon">?</span>♿ Ground-floor adaptability unknown</span>
-      </div>
-      
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/East_Budleigh_Cottage.jpg" alt="eastbudleigh main photo" loading="lazy"></div>
     
@@ -1322,12 +1522,42 @@
     <p class="why"><strong>Why it's here:</strong> 45% over budget, kept as inspiration. The Rightmove listing now returns "410 Gone", suggesting it has sold or been withdrawn.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> Genuinely characterful but 45% over budget and likely already gone — kept only as a benchmark.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="eastbudleigh">
-      <button class="react-btn" data-val="love" onclick="react('eastbudleigh','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('eastbudleigh','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('eastbudleigh','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="indifferent" data-prop="eastbudleigh" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="bad" data-prop="eastbudleigh" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="bad" data-prop="eastbudleigh" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="eastbudleigh" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="eastbudleigh" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="eastbudleigh" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="indifferent" data-prop="eastbudleigh" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="indifferent" data-prop="eastbudleigh" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="eastbudleigh" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="eastbudleigh" onclick="cycleChecklist(this)">♿ Ground-floor adaptability unknown</div></div>
+      
     </div>
   
     
@@ -1355,23 +1585,6 @@
     </div>
     <a class="source-badge" href="https://www.meadowsea.com/Property-For-Sale-Clinton-Garage-Budleigh-Salterton-pi-MEAD1265.htm" target="_blank" rel="noopener">View on MEADOWSEA.COM ↗</a>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#E65100">AUCTION 16 JUL 2026, 12pm</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 5/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌊 Close to ocean</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🚉 Close to train station</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>✨ Has character</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🌳 Has a garden</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-unknown"><span class="cl-icon">?</span>♿ Ground-floor adaptability unknown</span>
-      </div>
-      <div class="cl-unique">🎁 <strong>Unique:</strong> Former commercial garage/MOT site in the town centre — could plausibly be run as a hireable workshop, exactly the kind of oddball find you said you wanted flagged</div>
-    </div>
-  
     <div class="photos">
     <div class="photo-main"><img src="images/Clinton_Garage.jpg" alt="clinton main photo" loading="lazy"></div>
     
@@ -1395,12 +1608,42 @@
     <p class="why"><strong>Why it's here:</strong> Over budget and speculative, but flagged given the town-centre location and imminent auction date.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> The most literal 'workshop you could hire out' find yet, right in Budleigh itself, but it's speculative, over budget, and a redevelopment project rather than a move-in-ready home.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="clinton">
-      <button class="react-btn" data-val="love" onclick="react('clinton','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('clinton','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('clinton','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="clinton" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="bad" data-prop="clinton" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="clinton" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="clinton" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="clinton" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="clinton" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="bad" data-prop="clinton" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="good" data-prop="clinton" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="clinton" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="clinton" onclick="cycleChecklist(this)">♿ Ground-floor adaptability unknown</div></div>
+      <div class="cl-unique">🎁 <strong>Unique:</strong> Former commercial garage/MOT site in the town centre — could plausibly be run as a hireable workshop, exactly the kind of oddball find you said you wanted flagged</div>
     </div>
   
     
@@ -1428,23 +1671,6 @@
     </div>
     <a class="source-badge" href="https://www.pennys.net/property-search" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span></div>
-    
-    <div class="ratings-block">
-      <span class="rating-ai">🤖 AI Rating: 4/10</span>
-      
-      <span class="rating-empty">No family ratings yet</span>
-    </div>
-  
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist</h3>
-      <div class="checklist-grid">
-        <span class="cl-item cl-yes"><span class="cl-icon">✓</span>🌊 Close to ocean</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🚉 Close to train station</span><span class="cl-item cl-yes"><span class="cl-icon">✓</span>🏊 Close to pool/swim team</span><span class="cl-item cl-no"><span class="cl-icon">✕</span>🔒 Private/secluded</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>🚵 Close to Woodbury Common/MTB trails</span><span class="cl-item cl-partial"><span class="cl-icon">~</span>✨ Has character</span><span class="cl-item cl-unknown"><span class="cl-icon">?</span>🌳 Has a garden</span><span class="cl-item cl-unknown"><span class="cl-icon">?</span>🔧 Garage/shed/workspace</span>
-        <span class="cl-item cl-unknown"><span class="cl-icon">?</span>♿ Ground-floor adaptability unknown</span>
-      </div>
-      
-    </div>
-  
     <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
     
     <div class="map-embed">
@@ -1465,12 +1691,42 @@
     <p class="why"><strong>Why it's here:</strong> Could not reconfirm this exact listing this sweep; a different, pricier Leslie Road property now shows instead. Worth a direct call: 01395 264111.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> Could be a good, cheap, characterful find in the right town, but the listing couldn't be reconfirmed this sweep — worth a direct call before reading too much into it.</p>
     
+    <div class="ratings-block"><h3>Ratings</h3>
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
     
-    <div class="reactions" data-id="leslie">
-      <button class="react-btn" data-val="love" onclick="react('leslie','love')">♥ Love it</button>
-      <button class="react-btn" data-val="maybe" onclick="react('leslie','maybe')">? Maybe</button>
-      <button class="react-btn" data-val="pass" onclick="react('leslie','pass')">✕ Not for me</button>
-      <span class="react-note">(a quick private reminder saved only in your own browser — for a real comment your brothers can see, use the discussion box below)</span>
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty ">
+        <span class="rating-row-label">Brother 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="leslie" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="leslie" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="good" data-prop="leslie" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="leslie" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="leslie" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="indifferent" data-prop="leslie" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="indifferent" data-prop="leslie" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="indifferent" data-prop="leslie" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="leslie" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="leslie" onclick="cycleChecklist(this)">♿ Ground-floor adaptability unknown</div></div>
+      
     </div>
   
     
@@ -1491,23 +1747,35 @@
   </section>
 </main>
 <footer>
-  <p>This page is rebuilt daily. New finds are added to the top of their section; nothing already here is removed unless it's confirmed gone. Reactions typed here are stored only in your browser (localStorage) as a personal memory aid — to actually change what future sweeps prioritise, reply in chat.</p>
+  <p>This page is rebuilt daily. New finds are added to the top of their section; nothing already here is removed unless it's confirmed gone. Checklist overrides (clicking an item) are stored only in your own browser — to actually change what future sweeps prioritise, leave a comment or reply in chat.</p>
 </footer>
 <script>
-function react(id, val) {
-  localStorage.setItem('devon-react-' + id, val);
-  render(id);
+function clStorageKey(prop, key) { return 'devon-cl-' + prop + '-' + key; }
+
+function getClState(el) {
+  var saved = localStorage.getItem(clStorageKey(el.dataset.prop, el.dataset.clKey));
+  return saved || el.dataset.clDefault;
 }
-function render(id) {
-  const el = document.querySelector('.reactions[data-id="' + id + '"]');
-  if (!el) return;
-  const saved = localStorage.getItem('devon-react-' + id);
-  el.querySelectorAll('.react-btn').forEach(b => {
-    b.classList.remove('active-love', 'active-maybe', 'active-pass');
-    if (saved && b.dataset.val === saved) b.classList.add('active-' + saved);
-  });
+
+function placeClItem(el) {
+  var state = getClState(el);
+  var overridden = state !== el.dataset.clDefault;
+  el.className = 'cl-item cl-' + state + (overridden ? ' cl-overridden' : '');
+  var block = el.closest('.checklist-block');
+  var target = state === 'good' ? block.querySelector('.cl-col-body[data-col="good"]')
+    : state === 'bad' ? block.querySelector('.cl-col-body[data-col="bad"]')
+    : block.querySelector('.cl-indifferent[data-col="indifferent"]');
+  target.appendChild(el);
 }
-document.querySelectorAll('.reactions').forEach(el => render(el.dataset.id));
+
+function cycleChecklist(el) {
+  var current = getClState(el);
+  var next = current === 'good' ? 'bad' : current === 'bad' ? 'indifferent' : 'good';
+  localStorage.setItem(clStorageKey(el.dataset.prop, el.dataset.clKey), next);
+  placeClItem(el);
+}
+
+document.querySelectorAll('.cl-source .cl-item').forEach(placeClItem);
 
 window.addEventListener('message', function (e) {
   if (e.data && e.data.giscusEmbedResize && e.data.term) {
