@@ -62,7 +62,9 @@ function propertyCard(p) {
   </section>`;
 }
 
-const navLinks = props.map(p => `<a href="#${esc(p.id)}">${esc(p.title.split(",")[0].split(" (")[0])}</a>`).join("");
+const orderedProps = SECTION_ORDER.flatMap(sec => props.filter(p => p.section === sec));
+
+const navLinks = orderedProps.map(p => `<a href="#${esc(p.id)}">${esc(p.title.split(",")[0].split(" (")[0])}</a>`).join("");
 
 const sections = SECTION_ORDER.filter(s => props.some(p => p.section === s)).map(sec => {
   const items = props.filter(p => p.section === sec);
