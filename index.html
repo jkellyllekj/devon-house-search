@@ -23,16 +23,15 @@
   .agent { color: #666; font-style: italic; font-size: 14px; }
   .flags { margin-bottom: 14px; }
   .flag { display: inline-block; color: #fff; font-weight: 700; font-size: 11px; padding: 4px 8px; border-radius: 4px; margin: 0 6px 6px 0; }
-  .media-grid { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
-  .photos { flex: 1 1 320px; min-width: 260px; }
-  .photo-main img { width: 100%; border-radius: 8px; display: block; max-height: 320px; object-fit: cover; }
-  .photo-strip { display: flex; gap: 6px; margin-top: 6px; }
-  .photo-strip img { width: 33%; border-radius: 6px; height: 80px; object-fit: cover; }
+  .photos { margin-bottom: 14px; }
+  .photo-main img { width: 100%; border-radius: 8px; display: block; max-height: 380px; object-fit: cover; }
+  .photo-strip { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+  .photo-strip img { flex: 1 1 140px; max-width: 200px; border-radius: 6px; height: 110px; object-fit: cover; }
   .no-photo { background: #eee; border-radius: 8px; padding: 40px; text-align: center; color: #888; font-size: 13px; }
-  .map { flex: 0 0 220px; }
-  .map img { width: 100%; border-radius: 8px; display: block; }
-  .map-links { display: flex; justify-content: space-between; margin-top: 4px; }
-  .map-links a { font-size: 11px; color: #1155cc; text-decoration: none; }
+  .map-embed { margin-bottom: 14px; }
+  .map-embed iframe { width: 100%; border-radius: 8px; display: block; }
+  .map-links { display: flex; justify-content: flex-end; gap: 20px; margin-top: 6px; }
+  .map-links a { font-size: 13px; color: #1155cc; text-decoration: none; font-weight: 600; }
   .map-links a:hover { text-decoration: underline; }
   .body { line-height: 1.5; }
   .why { background: #fdf6e3; border-left: 4px solid #e6b800; padding: 10px 14px; border-radius: 4px; font-size: 14px; line-height: 1.5; }
@@ -46,8 +45,9 @@
   .research-a { margin: 0 0 6px; font-size: 14px; line-height: 1.5; }
   .research-sources { margin: 0; font-size: 12px; color: #666; }
   .research-sources a { color: #1155cc; }
-  .giscus-block { margin-top: 14px; padding-top: 12px; border-top: 1px solid #eee; }
-  .giscus-block h3 { margin: 0 0 8px; font-size: 14px; color: #1b3a2f; }
+  .giscus-block { margin-top: 18px; padding: 16px; background: #fff8f0; border: 3px solid #E65100; border-radius: 8px; }
+  .giscus-block h3 { margin: 0 0 10px; font-size: 18px; font-weight: 800; color: #E65100; letter-spacing: 0.3px; }
+  .giscus-frame-outer { width: 100%; border: 0; min-height: 400px; }
   .ask-claude-block { margin-top: 10px; padding-top: 10px; }
   .ask-claude-block a { font-size: 13px; color: #1155cc; margin-right: 16px; text-decoration: none; }
   .ask-claude-block a:hover { text-decoration: underline; }
@@ -63,7 +63,6 @@
 </style>
 </head>
 <body>
-<script type="module" src="https://giscus.app/client.js"></script>
 <header>
   <h1>Devon House Search</h1>
   <div class="sub">Exmouth · Woodbury · Budleigh Salterton · East Devon coast — last updated 2026-07-06</div>
@@ -78,21 +77,25 @@
       <span class="agent">Pennys, Exmouth</span>
     </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">NO PARKING MENTIONED</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/EastBudleigh_Gallery_1.jpg" alt="eastbudleighhighst main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/EastBudleigh_Gallery_2.jpg" alt="eastbudleighhighst photo" loading="lazy"><img src="images/EastBudleigh_Gallery_3.jpg" alt="eastbudleighhighst photo" loading="lazy"><img src="images/EastBudleigh_Gallery_4.jpg" alt="eastbudleighhighst photo" loading="lazy"></div>
   </div>
-      
-    <div class="map">
-      <img src="images/map_eastbudleigh_highst.png" alt="Map of High Street, East Budleigh (Grade II cottage)">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Double-fronted Grade II listed cottage on the High Street in East Budleigh village. Living room with fireplace, separate dining room, good-sized kitchen, two first-floor double bedrooms, spacious bathroom, cloakroom, feature ceiling beams throughout, enclosed rear garden, gas central heating.</p>
     <p class="why"><strong>Why it's here:</strong> Not to be confused with the £435,000 East Budleigh thatched cottage already on file below (likely sold/withdrawn) — this is a separate, much cheaper Grade II cottage in the same village, well under budget with genuine period features (beams, fireplace). East Budleigh itself is inland of Budleigh Salterton by about 2 miles, still within easy reach of the coast. No parking mentioned in the listing, so treat as absent rather than just unconfirmed — worth checking if the High Street has resident permits.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.pennys.net/for-sale/exmouth/high-street/2-bedroom-terraced-for-sale-in-high-street-ex9-7ed/263959" target="_blank" rel="noopener">pennys.net — listing 263959</a></p>
@@ -114,22 +117,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="eastbudleighhighst"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="eastbudleighhighst" src="giscus-embed.html?term=eastbudleighhighst" loading="lazy" title="Family comments on High Street, East Budleigh (Grade II cottage)"></iframe>
     </div>
   
     <div class="added">Added 2026-07-06</div>
@@ -142,21 +131,25 @@
       <span class="agent">Pennys, Exmouth</span>
     </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span><span class="flag" style="background:#757575">PARKING: GARAGE TO RENT NEARBY (not included)</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/Marles_Gallery_1.jpg" alt="marlesflat main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/Marles_Gallery_2.jpg" alt="marlesflat photo" loading="lazy"><img src="images/Marles_Gallery_3.jpg" alt="marlesflat photo" loading="lazy"></div>
   </div>
-      
-    <div class="map">
-      <img src="images/map_marles.png" alt="Map of The Marles, Exmouth (ground-floor flat)">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=The%20Marles%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=The%20Marles%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=The%20Marles%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Marles%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Spacious purpose-built ground-floor flat undergoing extensive modernisation — new flooring, refurbished kitchen and shower room, full redecoration. Entrance hall with utilities cupboard, large lounge/diner, two double bedrooms, shower room/WC, surrounded by communal gardens. Leasehold with an extended lease granted on completion. Service charge £1,440/year.</p>
     <p class="why"><strong>Why it's here:</strong> Passes the ground-floor test for a flat and is well under budget, but the parking is soft: the listing only says a garage is understood to be available to rent close by, not an allocated space that comes with the sale — weaker than Exeter Road or Douglas Avenue below, which both have confirmed allocated parking.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.pennys.net/for-sale/exmouth/the-marles/2-bedroom-groundfloorflat-for-sale-in-the-marles-ex8-4ne/269531" target="_blank" rel="noopener">pennys.net — listing 269531</a></p>
@@ -178,22 +171,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="marlesflat"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="marlesflat" src="giscus-embed.html?term=marlesflat" loading="lazy" title="Family comments on The Marles, Exmouth (ground-floor flat)"></iframe>
     </div>
   
     <div class="added">Added 2026-07-06</div>
@@ -206,21 +185,25 @@
       <span class="agent">Hall &amp; Scott, Exmouth</span>
     </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">NO PARKING (village car park permit)</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/Farleys_Gallery_1.jpg" alt="farleys main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/Farleys_Gallery_2.png" alt="farleys photo" loading="lazy"><img src="images/Farleys_Gallery_3.jpg" alt="farleys photo" loading="lazy"><img src="images/Farleys_Gallery_4.jpg" alt="farleys photo" loading="lazy"></div>
   </div>
-      
-    <div class="map">
-      <img src="images/map_farleys.png" alt="Map of Farleys, The Strand, Lympstone (Grade II cottage)">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Farleys%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Farleys%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Farleys%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=Farleys%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Two-bedroom Grade II listed cottage in the heart of Lympstone village — exposed beams and stonework throughout, cosy sitting/dining room, well-appointed kitchen, family bathroom, two loft areas with Velux windows, gas central heating. Freehold and chain-free. No garden and no dedicated parking — permit parking is available at the village car park nearby. Two pubs, shop, post office, café, sailing club and the estuary all on the doorstep.</p>
     <p class="why"><strong>Why it's here:</strong> Location-wise this is arguably the best-placed find yet: Lympstone sits on the Exe estuary directly between Exmouth and Woodbury Common — water one way, trails the other, and one of your brothers is in Woodbury just up the hill. Genuine period character (Grade II, beams, stonework), chain-free, and £5k under ceiling. The catches: no parking (the standing hard requirement — waived here only because it's genuinely characterful, with village car park permits as the workaround), no outdoor space, and listed-building consent applies to any alterations. Found via the Exmouth Journal property pages, not the portals.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.hallandscott.co.uk/details/?id=HSEXM_706793" target="_blank" rel="noopener">hallandscott.co.uk — HSEXM_706793</a></p>
@@ -242,22 +225,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="farleys"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="farleys" src="giscus-embed.html?term=farleys" loading="lazy" title="Family comments on Farleys, The Strand, Lympstone (Grade II cottage)"></iframe>
     </div>
   
     <div class="added">Added 2026-07-05</div>
@@ -270,21 +239,25 @@
       <span class="agent">Spring Estates, Exmouth</span>
     </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">PRICE REDUCED</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/Exeter_Road_Flat.jpg" alt="exeterroadflat main photo" loading="lazy"></div>
     
   </div>
-      
-    <div class="map">
-      <img src="images/map_exeter_road_flat.png" alt="Map of Exeter Road, Exmouth (ground-floor character flat)">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Exeter%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Exeter%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Exeter%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=Exeter%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">One-bedroom apartment occupying the entire ground floor of a period building on Exeter Road — high ceilings, large windows overlooking the communal lawn and neighbouring church, generously proportioned living room, bedroom with double doors onto a rear courtyard, modern bathroom, galley kitchen. Allocated parking at the rear. Functional condition with scope for modernisation. 52 years remaining on the lease.</p>
     <p class="why"><strong>Why it's here:</strong> Still the rare flat that actually passes your flat rules: genuinely cheap AND explicitly the whole ground floor, with a real allocated parking space on top. Reduced a further £20,000 on 24/06/2026, now just £110k — under half of what it was quoted at when first tracked. Worth a sense check on the short (52-year) lease and extension cost before getting excited about the price. Only one photo shown — Zoopla blocks photo scraping, so this is the single press image from the Exmouth Journal writeup.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.zoopla.co.uk/for-sale/details/72842267/" target="_blank" rel="noopener">zoopla.co.uk — listing 72842267</a></p>
@@ -306,22 +279,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="exeterroadflat"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="exeterroadflat" src="giscus-embed.html?term=exeterroadflat" loading="lazy" title="Family comments on Exeter Road, Exmouth (ground-floor character flat)"></iframe>
     </div>
   
     <div class="added">Added 2026-07-05</div>
@@ -334,21 +293,25 @@
       <span class="agent">Pennys, Exmouth</span>
     </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/Bell_Street_Otterton.jpg" alt="bellstreet main photo" loading="lazy"></div>
     
   </div>
-      
-    <div class="map">
-      <img src="images/map_bell_street.png" alt="Map of 3 Bell Street, Otterton">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=3%20Bell%20Street%2C%20Otterton%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=3%20Bell%20Street%2C%20Otterton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=3%20Bell%20Street%2C%20Otterton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=3%20Bell%20Street%2C%20Otterton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Two-bedroom terraced cottage: sitting room, kitchen/breakfast room, ground-floor shower room, two first-floor bedrooms with a bathroom, enclosed rear garden with raised beds and a timber store. Roof renewed 2023 but the rest would benefit from general refurbishment. Freehold, Council Tax Band C, no onward chain.</p>
     <p class="why"><strong>Why it's here:</strong> Cheapest confirmed in-budget option this sweep, and it's in the same village as the Otterton thatched cottage you already liked. But it's even more squarely the thing you flagged a reservation about there: village-centre, on-street parking only, not the remote/rural feel you said you'd prefer. Worth it only if the price and no-chain status outweigh that.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.pennys.net/for-sale/exmouth/bell-street/2-bedroom-terraced-for-sale-in-bell-street-ex9-7hs/270110" target="_blank" rel="noopener">pennys.net — listing 270110</a></p>
@@ -370,22 +333,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="bellstreet"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="bellstreet" src="giscus-embed.html?term=bellstreet" loading="lazy" title="Family comments on 3 Bell Street, Otterton"></iframe>
     </div>
   
     <div class="added">Added 2026-07-05</div>
@@ -398,21 +347,25 @@
       <span class="agent">Hall &amp; Scott, Ottery St Mary</span>
     </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/The_Flexton_Ottery.jpg" alt="flexton main photo" loading="lazy"></div>
     
   </div>
-      
-    <div class="map">
-      <img src="images/map_flexton.png" alt="Map of The Flexton, Ottery St Mary">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=The%20Flexton%2C%20Ottery%20St%20Mary%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=The%20Flexton%2C%20Ottery%20St%20Mary%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=The%20Flexton%2C%20Ottery%20St%20Mary%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Flexton%2C%20Ottery%20St%20Mary%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Deceptively spacious period cottage over three floors: ground-floor kitchen/dining room and a living room built around an open brick fireplace, bathroom with both bath and shower, three bedrooms upstairs (two doubles, one single). Private courtyard with gravel landscaping and pedestrian rear access. Near town-centre amenities, schools, and commuter links (A30, M5, London rail).</p>
     <p class="why"><strong>Why it's here:</strong> Same price as the Bell Street cottage above but reads as more finished and genuinely characterful — an open brick fireplace and three floors of period detail rather than a fixer-upper. The trade-off: Ottery St Mary is inland, away from both the coast and Woodbury Common, and the courtyard access described sounds pedestrian-only, so parking is probably absent.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.hallandscott.co.uk/details/?id=HSOTT_708139" target="_blank" rel="noopener">hallandscott.co.uk — HSOTT_708139</a></p>
@@ -434,22 +387,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="flexton"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="flexton" src="giscus-embed.html?term=flexton" loading="lazy" title="Family comments on The Flexton, Ottery St Mary"></iframe>
     </div>
   
     <div class="added">Added 2026-07-05</div>
@@ -462,21 +401,25 @@
       <span class="agent">Pennys, Exmouth</span>
     </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET (+£9,950)</span><span class="flag" style="background:#1565C0">HAS PARKING</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/Beacon_Flat_Exmouth.jpg" alt="beaconflat main photo" loading="lazy"></div>
     
   </div>
-      
-    <div class="map">
-      <img src="images/map_beacon_flat.png" alt="Map of The Beacon, Exmouth (ground-floor flat)">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Two-double-bedroom ground-floor flat, a quarter-share of the freehold on a 999-year lease in a self-managed building of four apartments (£120/month maintenance). Bay-window sitting room overlooking the estuary, modern kitchen, bathroom with rainfall shower plus a separate cloakroom, stone fireplace. A secure parking space (up-and-over door) is included at the rear.</p>
     <p class="why"><strong>Why it's here:</strong> Note: this is a different property from the over-budget Beacon house already on file below — same building name, unrelated listing. This one is genuinely ground-floor with a real allocated parking space (not just street parking) plus an estuary view, which is unusual for a flat at this price. But it's £9,950 (3%) over your £300k ceiling and it's a flat, so only worth a look if you'd flex the ceiling slightly for a genuine parking bay and the view.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.pennys.net/for-sale/exmouth/the-beacon/2-bedroom-groundfloorflat-for-sale-in-the-beacon-ex8-2ag/270212" target="_blank" rel="noopener">pennys.net — listing 270212</a></p>
@@ -498,22 +441,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="beaconflat"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="beaconflat" src="giscus-embed.html?term=beaconflat" loading="lazy" title="Family comments on The Beacon, Exmouth (ground-floor flat)"></iframe>
     </div>
   
     <div class="added">Added 2026-07-05</div>
@@ -526,21 +455,25 @@
       <span class="agent">Hall &amp; Scott, Exmouth</span>
     </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#9E9E9E">PARKING UNKNOWN</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/Cranford_Avenue_Exmouth.jpg" alt="cranford main photo" loading="lazy"></div>
     
   </div>
-      
-    <div class="map">
-      <img src="images/map_cranford.png" alt="Map of Cranford Avenue, Exmouth (ground-floor flat)">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Cranford%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Cranford%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Cranford%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=Cranford%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Two-double-bedroom ground-floor apartment in the Avenues area of Exmouth, beautifully modernised throughout, sold with no onward chain and ready to move into.</p>
     <p class="why"><strong>Why it's here:</strong> A safely-in-budget, ready-to-go fallback flat if nothing more characterful turns up — similar in spirit to the Douglas Avenue flat already on file, but £15,000 cheaper. No parking mentioned in the listing, so treat as unconfirmed rather than absent (Douglas Avenue has confirmed allocated parking).</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.hallandscott.co.uk/details/?id=HSEXM_708054" target="_blank" rel="noopener">hallandscott.co.uk — HSEXM_708054</a></p>
@@ -562,22 +495,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="cranford"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="cranford" src="giscus-embed.html?term=cranford" loading="lazy" title="Family comments on Cranford Avenue, Exmouth (ground-floor flat)"></iframe>
     </div>
   
     <div class="added">Added 2026-07-05</div>
@@ -590,21 +509,25 @@
       <span class="agent">Rightmove listing</span>
     </div>
     <div class="flags"><span class="flag" style="background:#C2185B">LIKED BY JESSE</span><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/Otterton_Gallery_1.jpg" alt="otterton main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/Otterton_Gallery_2.jpg" alt="otterton photo" loading="lazy"><img src="images/Otterton_Gallery_3.jpg" alt="otterton photo" loading="lazy"><img src="images/Otterton_Gallery_4.jpg" alt="otterton photo" loading="lazy"></div>
   </div>
-      
-    <div class="map">
-      <img src="images/map_otterton.png" alt="Map of Thatched Cottage, The Green, Otterton">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Thatched%20Cottage%2C%20The%20Green%2C%20Otterton%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Thatched%20Cottage%2C%20The%20Green%2C%20Otterton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Thatched%20Cottage%2C%20The%20Green%2C%20Otterton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=Thatched%20Cottage%2C%20The%20Green%2C%20Otterton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Attractive three-bedroom thatched cottage right in the centre of Otterton village, close to the River Otter and Otterton Mill. South-facing rear garden, period stone fireplace and window seat. Needs modernising throughout — priced accordingly.</p>
     <p class="why"><strong>Why it's here:</strong> Jesse flagged this one personally — near his brother, a lovely part of Devon. His one reservation: it's village-centre (on-street parking only) and he'd prefer something a bit more remote/rural. Worth weighing character + location against the more remote feel he's after. See 3 Bell Street above — a cheaper fixer-upper in the same village if this one's too finished/pricey.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.rightmove.co.uk/properties/174232565" target="_blank" rel="noopener">rightmove.co.uk/properties/174232565</a></p>
@@ -626,22 +549,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="otterton"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="otterton" src="giscus-embed.html?term=otterton" loading="lazy" title="Family comments on Thatched Cottage, The Green, Otterton"></iframe>
     </div>
   
     <div class="added">Added 2026-07-04</div>
@@ -654,21 +563,25 @@
       <span class="agent">Hall &amp; Scott, Ottery St Mary</span>
     </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#E65100">AUCTION 23 JUL 2026</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/Feniton_Barn.jpg" alt="feniton main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/Feniton_Gallery_2.jpg" alt="feniton photo" loading="lazy"><img src="images/Feniton_Gallery_3.jpg" alt="feniton photo" loading="lazy"></div>
   </div>
-      
-    <div class="map">
-      <img src="images/map_feniton.png" alt="Map of Barn at Whites Cottages, Feniton — AUCTION">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Barn%20at%20Whites%20Cottages%2C%20Feniton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Barn%20at%20Whites%20Cottages%2C%20Feniton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Barn%20at%20Whites%20Cottages%2C%20Feniton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=Barn%20at%20Whites%20Cottages%2C%20Feniton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Freehold barn on a 0.21-acre plot on the edge of Feniton village. Already has full planning permission (East Devon DC ref 25/0370/FUL, granted Sept 2025) to convert and extend into a 3-bedroom dwelling with parking and garden. Going to online auction 23 July 2026.</p>
     <p class="why"><strong>Why it's here:</strong> The self-build/conversion-plot opportunity Jesse said he'd consider — cheap land with permission already in hand. Downside: inland near Honiton, off the coast/trails brief.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.hallandscott.co.uk/details/?id=HSOTT_708623" target="_blank" rel="noopener">hallandscott.co.uk — HSOTT_708623</a></p>
@@ -690,22 +603,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="feniton"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="feniton" src="giscus-embed.html?term=feniton" loading="lazy" title="Family comments on Barn at Whites Cottages, Feniton — AUCTION"></iframe>
     </div>
   
     <div class="added">Added 2026-07-04</div>
@@ -718,21 +617,25 @@
       <span class="agent">Hall &amp; Scott</span>
     </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/Douglas_Avenue__Exmouth_2.jpg" alt="douglas main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/Douglas_Gallery_2.jpg" alt="douglas photo" loading="lazy"><img src="images/Douglas_Gallery_3.jpg" alt="douglas photo" loading="lazy"></div>
   </div>
-      
-    <div class="map">
-      <img src="images/map_douglas_ave.png" alt="Map of Douglas Avenue, Exmouth">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Douglas%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Douglas%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Douglas%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=Douglas%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Two-bed purpose-built apartment, balcony, allocated parking, near seafront/town centre, between town and the sea.</p>
     <p class="why"><strong>Why it's here:</strong> Conventional but solid fallback if nothing more characterful turns up in budget. It's a flat, floor level unconfirmed.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.hallandscott.co.uk/details/?id=HSEXM_697185" target="_blank" rel="noopener">hallandscott.co.uk — HSEXM_697185</a></p>
@@ -754,22 +657,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="douglas"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="douglas" src="giscus-embed.html?term=douglas" loading="lazy" title="Family comments on Douglas Avenue, Exmouth"></iframe>
     </div>
   
     <div class="added">Added 2026-07-03</div>
@@ -782,21 +671,25 @@
       <span class="agent">Bradleys Estate Agents</span>
     </div>
     <div class="flags"><span class="flag" style="background:#616161">DECLINED BY JESSE — EROSION/INSURANCE RISK</span><span class="flag" style="background:#B71C1C">KNOWN CLIFF EROSION RISK</span><span class="flag" style="background:#E65100">AUCTION 21 JUL 2026, 12pm</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/Sidmouth_Gallery_1.jpg" alt="sidmouth main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/Sidmouth_Gallery_2.jpg" alt="sidmouth photo" loading="lazy"><img src="images/Sidmouth_Gallery_3.jpg" alt="sidmouth photo" loading="lazy"><img src="images/Sidmouth_Gallery_4.jpg" alt="sidmouth photo" loading="lazy"></div>
   </div>
-      
-    <div class="map">
-      <img src="images/map_sidmouth.png" alt="Map of Circular Thatched Cliff-top Cottage, Peak Hill Road, Sidmouth">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Circular%20Thatched%20Cliff-top%20Cottage%2C%20Peak%20Hill%20Road%2C%20Sidmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Circular%20Thatched%20Cliff-top%20Cottage%2C%20Peak%20Hill%20Road%2C%20Sidmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Circular%20Thatched%20Cliff-top%20Cottage%2C%20Peak%20Hill%20Road%2C%20Sidmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=Circular%20Thatched%20Cliff-top%20Cottage%2C%20Peak%20Hill%20Road%2C%20Sidmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">A unique circular thatched house on a cliff-top position along the Jurassic Coast, designed in the 1960s for novelist R.F. Delderfield. Panoramic sea views over Ladram Bay, mature terraced gardens. Auction closes 21 July 2026 — just over two weeks out.</p>
     <p class="why"><strong>Why it's here:</strong> Was Jesse's stated dream home, dropped 2026-07-06 once the erosion risk was actually looked into. Local press confirms the garden has already lost ground to a cliff fall, not just theoretical risk, and that stretch of Peak Hill has a well-documented run of landslips. Separately, standard UK buildings insurance excludes coastal erosion outright, there's no government backstop for it like there is for flooding, and lenders increasingly treat erosion-risk properties as unmortgageable — the only public money available is a £6,000 demolition grant if it's ever condemned, nothing toward lost value. That combination is why the guide price is so low, and why Jesse walked away. Kept here for the record rather than deleted.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.rightmove.co.uk/properties/90027936" target="_blank" rel="noopener">rightmove.co.uk/properties/90027936</a></p>
@@ -829,22 +722,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="sidmouth"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="sidmouth" src="giscus-embed.html?term=sidmouth" loading="lazy" title="Family comments on Circular Thatched Cliff-top Cottage, Peak Hill Road, Sidmouth"></iframe>
     </div>
   
     <div class="added">Added 2026-07-03</div>
@@ -857,18 +736,22 @@
       <span class="agent">Wilkinson Grant &amp; Co</span>
     </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#1565C0">HAS PARKING</span><span class="flag" style="background:#8D6E63">LIKELY SOLD</span></div>
-    <div class="media-grid">
-      <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
-      
-    <div class="map">
-      <img src="images/map_yettington.png" alt="Map of The Threshing Barn, Yettington">
+    <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=The%20Threshing%20Barn%2C%20Yettington%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=The%20Threshing%20Barn%2C%20Yettington%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=The%20Threshing%20Barn%2C%20Yettington%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Threshing%20Barn%2C%20Yettington%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Two-bedroom barn conversion in the small hamlet of Yettington, directly on the walking/cycling routes linking Budleigh Salterton, East Budleigh, and Woodbury Common. Stable-style front door, vaulted ceilings, exposed beams, ~798 sq ft, gardens and allocated parking.</p>
     <p class="why"><strong>Why it's here:</strong> About as close as a converted barn gets to the Woodbury Common trail network. Priced 25-33% over budget and compact for the money. Downgraded to likely sold this sweep: on top of the agent's own listing page redirecting to a generic search, a Rightmove mirror for a similar 3-bed Yettington barn conversion now also returns 410 Gone. Kept only as a benchmark/inspiration piece unless Jesse wants it chased further.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.exmouthjournal.co.uk/news/24440905.property-sale-near-budleigh-salterton-two-bedroom-house/" target="_blank" rel="noopener">exmouthjournal.co.uk (background coverage — agent's listing page no longer resolves)</a></p>
@@ -890,22 +773,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="yettington"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="yettington" src="giscus-embed.html?term=yettington" loading="lazy" title="Family comments on The Threshing Barn, Yettington"></iframe>
     </div>
   
     <div class="added">Added 2026-07-04</div>
@@ -918,21 +787,25 @@
       <span class="agent">Hall &amp; Scott</span>
     </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">NEEDS RENOVATION</span><span class="flag" style="background:#1565C0">HAS PARKING (garage)</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/The_Beacon__Exmouth_1.jpg" alt="beacon main photo" loading="lazy"></div>
     <div class="photo-strip"><img src="images/Beacon_Gallery_2.jpg" alt="beacon photo" loading="lazy"><img src="images/Beacon_Gallery_3.jpg" alt="beacon photo" loading="lazy"></div>
   </div>
-      
-    <div class="map">
-      <img src="images/map_beacon.png" alt="Map of The Beacon, Exmouth (inspiration only)">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Grade II-listed four-storey house needing renovation, sea views from the upper floors, private garden and garage, walking distance to town centre and seafront.</p>
     <p class="why"><strong>Why it's here:</strong> Well over budget but kept as a benchmark for what full-renovation character stock costs locally.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.hallandscott.co.uk/details/?id=HSEXM_707936" target="_blank" rel="noopener">hallandscott.co.uk — HSEXM_707936</a></p>
@@ -954,22 +827,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="beacon"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="beacon" src="giscus-embed.html?term=beacon" loading="lazy" title="Family comments on The Beacon, Exmouth (inspiration only)"></iframe>
     </div>
   
     <div class="added">Added 2026-07-03</div>
@@ -982,21 +841,25 @@
       <span class="agent">Hall &amp; Scott</span>
     </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/Withycombe_Village_Road__Exmouth_3.jpg" alt="withycombe main photo" loading="lazy"></div>
     
   </div>
-      
-    <div class="map">
-      <img src="images/map_withycombe.png" alt="Map of Withycombe Village Road, Exmouth (former Methodist Church)">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Withycombe%20Village%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Withycombe%20Village%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Withycombe%20Village%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=Withycombe%20Village%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Former Methodist Church and adjoining Church Hall, gardens, conversion project subject to planning consent.</p>
     <p class="why"><strong>Why it's here:</strong> Couldn't re-locate this exact listing this sweep — may have sold or been withdrawn. Kept as inspiration for the flavour of conversion opportunity this market does throw up.</p>
     <p class="source"><strong>Source:</strong> <a href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">hallandscott.co.uk/sales/ (specific listing not relocated)</a></p>
@@ -1018,22 +881,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="withycombe"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="withycombe" src="giscus-embed.html?term=withycombe" loading="lazy" title="Family comments on Withycombe Village Road, Exmouth (former Methodist Church)"></iframe>
     </div>
   
     <div class="added">Added 2026-07-03</div>
@@ -1046,18 +895,22 @@
       <span class="agent">Hall &amp; Scott</span>
     </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    <div class="media-grid">
-      <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
-      
-    <div class="map">
-      <img src="images/map_salterton_rd.png" alt="Map of Salterton Road, Exmouth (ground-floor retirement flat)">
+    <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Salterton%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Salterton%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Salterton%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=Salterton%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Two-bedroom ground-floor retirement apartment, direct access to communal gardens, close to amenities and bus routes. Likely age-restricted.</p>
     <p class="why"><strong>Why it's here:</strong> Cheapest option found originally; could not reconfirm this exact flat this sweep (a different Salterton Road retirement flat, Bronte Court, now shows instead). No photo included to avoid misattributing an image to the wrong flat.</p>
     <p class="source"><strong>Source:</strong> <a href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">hallandscott.co.uk/sales/ (specific listing not relocated)</a></p>
@@ -1079,22 +932,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="salterton"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="salterton" src="giscus-embed.html?term=salterton" loading="lazy" title="Family comments on Salterton Road, Exmouth (ground-floor retirement flat)"></iframe>
     </div>
   
     <div class="added">Added 2026-07-03</div>
@@ -1107,21 +946,25 @@
       <span class="agent">Pennys</span>
     </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">LIKELY SOLD/WITHDRAWN</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/East_Budleigh_Cottage.jpg" alt="eastbudleigh main photo" loading="lazy"></div>
     
   </div>
-      
-    <div class="map">
-      <img src="images/map_east_budleigh.png" alt="Map of Grade II Thatched Cottage, High Street, East Budleigh">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Grade%20II%20Thatched%20Cottage%2C%20High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Grade%20II%20Thatched%20Cottage%2C%20High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Grade%20II%20Thatched%20Cottage%2C%20High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=Grade%20II%20Thatched%20Cottage%2C%20High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Genuinely characterful double-fronted thatched cottage, 1600s core with a 1700s rear extension.</p>
     <p class="why"><strong>Why it's here:</strong> 45% over budget, kept as inspiration. The Rightmove listing now returns "410 Gone", suggesting it has sold or been withdrawn.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.rightmove.co.uk/properties/165338390" target="_blank" rel="noopener">rightmove.co.uk/properties/165338390 (page now returns 410 Gone)</a></p>
@@ -1143,22 +986,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="eastbudleigh"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="eastbudleigh" src="giscus-embed.html?term=eastbudleigh" loading="lazy" title="Family comments on Grade II Thatched Cottage, High Street, East Budleigh"></iframe>
     </div>
   
     <div class="added">Added 2026-07-04</div>
@@ -1171,21 +1000,25 @@
       <span class="agent">Meadows / 247 Property Auctions</span>
     </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#E65100">AUCTION 16 JUL 2026, 12pm</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    <div class="media-grid">
-      <div class="photos">
+    <div class="photos">
     <div class="photo-main"><img src="images/Clinton_Garage.jpg" alt="clinton main photo" loading="lazy"></div>
     
   </div>
-      
-    <div class="map">
-      <img src="images/map_clinton_garage.png" alt="Map of Clinton Garage, Budleigh Salterton — AUCTION">
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Clinton%20Garage%2C%20Budleigh%20Salterton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Clinton%20Garage%2C%20Budleigh%20Salterton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Clinton%20Garage%2C%20Budleigh%20Salterton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=Clinton%20Garage%2C%20Budleigh%20Salterton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Former commercial garage/MOT site right in Budleigh Salterton itself — conversion/redevelopment long-shot.</p>
     <p class="why"><strong>Why it's here:</strong> Over budget and speculative, but flagged given the town-centre location and imminent auction date.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.meadowsea.com/Property-For-Sale-Clinton-Garage-Budleigh-Salterton-pi-MEAD1265.htm" target="_blank" rel="noopener">meadowsea.com — MEAD1265</a></p>
@@ -1207,22 +1040,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="clinton"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="clinton" src="giscus-embed.html?term=clinton" loading="lazy" title="Family comments on Clinton Garage, Budleigh Salterton — AUCTION"></iframe>
     </div>
   
     <div class="added">Added 2026-07-04</div>
@@ -1235,18 +1054,22 @@
       <span class="agent">Pennys</span>
     </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span></div>
-    <div class="media-grid">
-      <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
-      
-    <div class="map">
-      <img src="images/map_leslie_road.png" alt="Map of The Coach House, Leslie Road, Exmouth">
+    <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=The%20Coach%20House%2C%20Leslie%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=The%20Coach%20House%2C%20Leslie%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=The%20Coach%20House%2C%20Leslie%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Coach%20House%2C%20Leslie%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
-    </div>
     <p class="body">Freehold, no parking mentioned — originally sent over by Jesse rather than found by search.</p>
     <p class="why"><strong>Why it's here:</strong> Could not reconfirm this exact listing this sweep; a different, pricier Leslie Road property now shows instead. Worth a direct call: 01395 264111.</p>
     <p class="source"><strong>Source:</strong> <a href="https://www.pennys.net/property-search" target="_blank" rel="noopener">pennys.net/property-search (specific listing not relocated)</a></p>
@@ -1268,22 +1091,8 @@
   
     
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="jkellyllekj/devon-house-search"
-        repoid="R_kgDOTN1h4w"
-        category="General"
-        categoryid="DIC_kwDOTN1h484DApI-"
-        mapping="specific"
-        term="leslie"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="leslie" src="giscus-embed.html?term=leslie" loading="lazy" title="Family comments on The Coach House, Leslie Road, Exmouth"></iframe>
     </div>
   
     <div class="added">Added 2026-07-03</div>
@@ -1307,6 +1116,13 @@ function render(id) {
   });
 }
 document.querySelectorAll('.reactions').forEach(el => render(el.dataset.id));
+
+window.addEventListener('message', function (e) {
+  if (e.data && e.data.giscusEmbedResize && e.data.term) {
+    var frame = document.querySelector('iframe.giscus-frame-outer[data-term="' + e.data.term + '"]');
+    if (frame) frame.style.height = e.data.giscusEmbedResize + 'px';
+  }
+});
 </script>
 </body>
 </html>

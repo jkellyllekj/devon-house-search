@@ -59,22 +59,8 @@ function githubIssueUrl(kind, p) {
 function giscusHtml(p) {
   return `
     <div class="giscus-block">
-      <h3>Family discussion</h3>
-      <giscus-widget
-        repo="${REPO}"
-        repoid="${GISCUS_REPO_ID}"
-        category="${GISCUS_CATEGORY}"
-        categoryid="${GISCUS_CATEGORY_ID}"
-        mapping="specific"
-        term="${esc(p.id)}"
-        strict="1"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
-      ></giscus-widget>
+      <h3>💬 Family Comments</h3>
+      <iframe class="giscus-frame-outer" data-term="${esc(p.id)}" src="giscus-embed.html?term=${encodeURIComponent(p.id)}" loading="lazy" title="Family comments on ${esc(p.title)}"></iframe>
     </div>
   `;
 }
@@ -110,13 +96,19 @@ function mapQuery(p) {
   return p.title.replace(/\s*\([^)]*\)/g, "").trim() + ", Devon, UK";
 }
 
-function mapHtml(p) {
+function mapEmbedHtml(p) {
   const q = encodeURIComponent(mapQuery(p));
   return `
-    <div class="map">
-      <img src="images/${p.map}" alt="Map of ${esc(p.title)}">
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=${q}&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener">Open full Google Maps ↗</a>
         <a href="https://www.google.com/maps/dir/?api=1&destination=${q}" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
@@ -132,10 +124,8 @@ function propertyCard(p) {
       <span class="agent">${esc(p.agent)}</span>
     </div>
     <div class="flags">${p.flags.map(flagHtml).join("")}</div>
-    <div class="media-grid">
-      <div class="photos">${photosHtml(p.id, p.photos)}</div>
-      ${mapHtml(p)}
-    </div>
+    <div class="photos">${photosHtml(p.id, p.photos)}</div>
+    ${mapEmbedHtml(p)}
     <p class="body">${esc(p.body)}</p>
     <p class="why"><strong>Why it's here:</strong> ${esc(p.why)}</p>
     <p class="source"><strong>Source:</strong> <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.linkLabel)}</a></p>
@@ -181,16 +171,15 @@ const html = `<!DOCTYPE html>
   .agent { color: #666; font-style: italic; font-size: 14px; }
   .flags { margin-bottom: 14px; }
   .flag { display: inline-block; color: #fff; font-weight: 700; font-size: 11px; padding: 4px 8px; border-radius: 4px; margin: 0 6px 6px 0; }
-  .media-grid { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
-  .photos { flex: 1 1 320px; min-width: 260px; }
-  .photo-main img { width: 100%; border-radius: 8px; display: block; max-height: 320px; object-fit: cover; }
-  .photo-strip { display: flex; gap: 6px; margin-top: 6px; }
-  .photo-strip img { width: 33%; border-radius: 6px; height: 80px; object-fit: cover; }
+  .photos { margin-bottom: 14px; }
+  .photo-main img { width: 100%; border-radius: 8px; display: block; max-height: 380px; object-fit: cover; }
+  .photo-strip { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+  .photo-strip img { flex: 1 1 140px; max-width: 200px; border-radius: 6px; height: 110px; object-fit: cover; }
   .no-photo { background: #eee; border-radius: 8px; padding: 40px; text-align: center; color: #888; font-size: 13px; }
-  .map { flex: 0 0 220px; }
-  .map img { width: 100%; border-radius: 8px; display: block; }
-  .map-links { display: flex; justify-content: space-between; margin-top: 4px; }
-  .map-links a { font-size: 11px; color: #1155cc; text-decoration: none; }
+  .map-embed { margin-bottom: 14px; }
+  .map-embed iframe { width: 100%; border-radius: 8px; display: block; }
+  .map-links { display: flex; justify-content: flex-end; gap: 20px; margin-top: 6px; }
+  .map-links a { font-size: 13px; color: #1155cc; text-decoration: none; font-weight: 600; }
   .map-links a:hover { text-decoration: underline; }
   .body { line-height: 1.5; }
   .why { background: #fdf6e3; border-left: 4px solid #e6b800; padding: 10px 14px; border-radius: 4px; font-size: 14px; line-height: 1.5; }
@@ -204,8 +193,9 @@ const html = `<!DOCTYPE html>
   .research-a { margin: 0 0 6px; font-size: 14px; line-height: 1.5; }
   .research-sources { margin: 0; font-size: 12px; color: #666; }
   .research-sources a { color: #1155cc; }
-  .giscus-block { margin-top: 14px; padding-top: 12px; border-top: 1px solid #eee; }
-  .giscus-block h3 { margin: 0 0 8px; font-size: 14px; color: #1b3a2f; }
+  .giscus-block { margin-top: 18px; padding: 16px; background: #fff8f0; border: 3px solid #E65100; border-radius: 8px; }
+  .giscus-block h3 { margin: 0 0 10px; font-size: 18px; font-weight: 800; color: #E65100; letter-spacing: 0.3px; }
+  .giscus-frame-outer { width: 100%; border: 0; min-height: 400px; }
   .ask-claude-block { margin-top: 10px; padding-top: 10px; }
   .ask-claude-block a { font-size: 13px; color: #1155cc; margin-right: 16px; text-decoration: none; }
   .ask-claude-block a:hover { text-decoration: underline; }
@@ -221,7 +211,6 @@ const html = `<!DOCTYPE html>
 </style>
 </head>
 <body>
-<script type="module" src="https://giscus.app/client.js"></script>
 <header>
   <h1>Devon House Search</h1>
   <div class="sub">Exmouth · Woodbury · Budleigh Salterton · East Devon coast — last updated ${esc(data.lastUpdated)}</div>
@@ -248,6 +237,13 @@ function render(id) {
   });
 }
 document.querySelectorAll('.reactions').forEach(el => render(el.dataset.id));
+
+window.addEventListener('message', function (e) {
+  if (e.data && e.data.giscusEmbedResize && e.data.term) {
+    var frame = document.querySelector('iframe.giscus-frame-outer[data-term="' + e.data.term + '"]');
+    if (frame) frame.style.height = e.data.giscusEmbedResize + 'px';
+  }
+});
 </script>
 </body>
 </html>`;
