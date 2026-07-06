@@ -32,7 +32,21 @@
       "linkLabel": "pennys.net — listing 263959",
       "body": "Double-fronted Grade II listed cottage on the High Street in East Budleigh village. Living room with fireplace, separate dining room, good-sized kitchen, two first-floor double bedrooms, spacious bathroom, cloakroom, feature ceiling beams throughout, enclosed rear garden, gas central heating.",
       "why": "Not to be confused with the £435,000 East Budleigh thatched cottage already on file below (likely sold/withdrawn) — this is a separate, much cheaper Grade II cottage in the same village, well under budget with genuine period features (beams, fireplace). East Budleigh itself is inland of Budleigh Salterton by about 2 miles, still within easy reach of the coast. Checked the full listing text directly — genuinely no parking, garage, or space mentioned anywhere, not just an omission in the summary. On the street itself: High Street has limited on-street parking with a 30-minute free limit on one side, so it isn't realistic for a resident's own car; the practical option is a small free 17-space car park just off the High Street (2-hour limit) plus the larger Hayes Lane car park a short walk away. East Budleigh is a small village and doesn't appear to run a formal residents' permit scheme (those are typically only in larger towns like Exmouth/Sidmouth) — so day-to-day parking would likely mean walking a couple of minutes from a car park rather than permit-based street parking outside the door.",
-      "dateAdded": "2026-07-06"
+      "dateAdded": "2026-07-06",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": null
+      },
+      "aiRating": 6,
+      "aiTake": "Solid character and price, but no parking, and the ocean/station/pool are all a drive away rather than walkable — a village-life trade rather than a coast-or-trail-adjacent one."
     },
     {
       "id": "marlesflat",
@@ -64,7 +78,21 @@
       "linkLabel": "pennys.net — listing 269531",
       "body": "Spacious purpose-built ground-floor flat undergoing extensive modernisation — new flooring, refurbished kitchen and shower room, full redecoration. Entrance hall with utilities cupboard, large lounge/diner, two double bedrooms, shower room/WC, surrounded by communal gardens. Leasehold with an extended lease granted on completion. Service charge £1,440/year.",
       "why": "Passes the ground-floor test for a flat and is well under budget, but the parking is soft: the listing only says a garage is understood to be available to rent close by, not an allocated space that comes with the sale — weaker than Exeter Road or Douglas Avenue below, which both have confirmed allocated parking.",
-      "dateAdded": "2026-07-06"
+      "dateAdded": "2026-07-06",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "no",
+        "garageWorkspace": "partial",
+        "uniqueFeature": null
+      },
+      "aiRating": 6,
+      "aiTake": "Ticks the practical boxes (ground floor, cheap, close to everything in Exmouth) but has none of the character you respond to, and the garage is only a maybe."
     },
     {
       "id": "farleys",
@@ -101,7 +129,21 @@
       "linkLabel": "hallandscott.co.uk — HSEXM_706793",
       "body": "Two-bedroom Grade II listed cottage in the heart of Lympstone village — exposed beams and stonework throughout, cosy sitting/dining room, well-appointed kitchen, family bathroom, two loft areas with Velux windows, gas central heating. Freehold and chain-free. No garden and no dedicated parking — permit parking is available at the village car park nearby. Two pubs, shop, post office, café, sailing club and the estuary all on the doorstep.",
       "why": "Location-wise this is arguably the best-placed find yet: Lympstone sits on the Exe estuary directly between Exmouth and Woodbury Common — water one way, trails the other, and one of your brothers is in Woodbury just up the hill. Genuine period character (Grade II, beams, stonework), chain-free, and £5k under ceiling. The catches: no parking (the standing hard requirement — waived here only because it's genuinely characterful, with village car park permits as the workaround), no outdoor space, and listed-building consent applies to any alterations. Found via the Exmouth Journal property pages, not the portals.",
-      "dateAdded": "2026-07-05"
+      "dateAdded": "2026-07-05",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "partial",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "uniqueFeature": null
+      },
+      "aiRating": 7,
+      "aiTake": "Best location fit yet — estuary, its own station, and Woodbury Common all on the doorstep — but no garden, no parking, and Grade II status likely rules out a ground-floor retrofit."
     },
     {
       "id": "exeterroadflat",
@@ -135,7 +177,21 @@
       "linkLabel": "zoopla.co.uk — listing 72842267",
       "body": "One-bedroom apartment occupying the entire ground floor of a period building on Exeter Road — high ceilings, large windows overlooking the communal lawn and neighbouring church, generously proportioned living room, bedroom with double doors onto a rear courtyard, modern bathroom, galley kitchen. Allocated parking at the rear. Functional condition with scope for modernisation. 52 years remaining on the lease.",
       "why": "Still the rare flat that actually passes your flat rules: genuinely cheap AND explicitly the whole ground floor, with a real allocated parking space on top. Reduced a further £20,000 on 24/06/2026, now just £110k — under half of what it was quoted at when first tracked. Worth a sense check on the short (52-year) lease and extension cost before getting excited about the price. Only one photo shown — Zoopla blocks photo scraping, so this is the single press image from the Exmouth Journal writeup.",
-      "dateAdded": "2026-07-05"
+      "dateAdded": "2026-07-05",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "partial",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "uniqueFeature": null
+      },
+      "aiRating": 7,
+      "aiTake": "Cheapest genuinely ground-floor-with-parking option on the list, right in the middle of everything — the short 52-year lease is the one number worth checking before getting attached."
     },
     {
       "id": "bellstreet",
@@ -165,7 +221,21 @@
       "linkLabel": "pennys.net — listing 270110",
       "body": "Two-bedroom terraced cottage: sitting room, kitchen/breakfast room, ground-floor shower room, two first-floor bedrooms with a bathroom, enclosed rear garden with raised beds and a timber store. Roof renewed 2023 but the rest would benefit from general refurbishment. Freehold, Council Tax Band C, no onward chain.",
       "why": "Cheapest confirmed in-budget option this sweep, and it's in the same village as the Otterton thatched cottage you already liked. But it's even more squarely the thing you flagged a reservation about there: village-centre, on-street parking only, not the remote/rural feel you said you'd prefer. Worth it only if the price and no-chain status outweigh that.",
-      "dateAdded": "2026-07-05"
+      "dateAdded": "2026-07-05",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": null
+      },
+      "aiRating": 5,
+      "aiTake": "Cheapest confirmed option, but exactly the village-centre/no-real-parking profile you said you'd want to avoid if you have a choice."
     },
     {
       "id": "flexton",
@@ -191,7 +261,21 @@
       "linkLabel": "hallandscott.co.uk — HSOTT_708139",
       "body": "Deceptively spacious period cottage over three floors: ground-floor kitchen/dining room and a living room built around an open brick fireplace, bathroom with both bath and shower, three bedrooms upstairs (two doubles, one single). Private courtyard with gravel landscaping and pedestrian rear access. Near town-centre amenities, schools, and commuter links (A30, M5, London rail).",
       "why": "Same price as the Bell Street cottage above but reads as more finished and genuinely characterful — an open brick fireplace and three floors of period detail rather than a fixer-upper. The trade-off: Ottery St Mary is inland, away from both the coast and Woodbury Common, and the courtyard access described sounds pedestrian-only, so parking is probably absent.",
-      "dateAdded": "2026-07-05"
+      "dateAdded": "2026-07-05",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "partial",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "no",
+        "character": "yes",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "uniqueFeature": null
+      },
+      "aiRating": 4,
+      "aiTake": "Most finished and characterful of the cheap options, but it's the one furthest from the coast/trails brief of anything on the list."
     },
     {
       "id": "beaconflat",
@@ -221,7 +305,21 @@
       "linkLabel": "pennys.net — listing 270212",
       "body": "Two-double-bedroom ground-floor flat, a quarter-share of the freehold on a 999-year lease in a self-managed building of four apartments (£120/month maintenance). Bay-window sitting room overlooking the estuary, modern kitchen, bathroom with rainfall shower plus a separate cloakroom, stone fireplace. A secure parking space (up-and-over door) is included at the rear.",
       "why": "Note: this is a different property from the over-budget Beacon house already on file below — same building name, unrelated listing. This one is genuinely ground-floor with a real allocated parking space (not just street parking) plus an estuary view, which is unusual for a flat at this price. But it's £9,950 (3%) over your £300k ceiling and it's a flat, so only worth a look if you'd flex the ceiling slightly for a genuine parking bay and the view.",
-      "dateAdded": "2026-07-05"
+      "dateAdded": "2026-07-05",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "partial",
+        "garden": "no",
+        "garageWorkspace": "partial",
+        "uniqueFeature": null
+      },
+      "aiRating": 6,
+      "aiTake": "Real ground-floor parking and an estuary view are rare for a flat, but it's over budget and still just a flat, not the characterful find you're really after."
     },
     {
       "id": "cranford",
@@ -251,7 +349,21 @@
       "linkLabel": "hallandscott.co.uk — HSEXM_708054",
       "body": "Two-double-bedroom ground-floor apartment in the Avenues area of Exmouth, beautifully modernised throughout, sold with no onward chain and ready to move into.",
       "why": "A safely-in-budget, ready-to-go fallback flat if nothing more characterful turns up — similar in spirit to the Douglas Avenue flat already on file, but £15,000 cheaper. No parking mentioned in the listing, so treat as unconfirmed rather than absent (Douglas Avenue has confirmed allocated parking).",
-      "dateAdded": "2026-07-05"
+      "dateAdded": "2026-07-05",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "uniqueFeature": null
+      },
+      "aiRating": 5,
+      "aiTake": "Safe, ready-to-move-into fallback in the right town, but no character and parking is unconfirmed rather than guaranteed."
     },
     {
       "id": "sidmouth",
@@ -291,12 +403,35 @@
           "question": "What do the papers/local chatter say about the cliff collapse and why this house is going so cheap, before dismissing it entirely?",
           "findings": "The cottage lost part of its garden to a confirmed cliff fall in 2024 and now sits roughly 40ft (12m) from the edge of a 120m drop. The coastline here (Sidmouth Mudstone Formation, capped with Cretaceous Greensand at Peak Hill) is soft and fails unpredictably rather than eroding gradually — there's been a steady run of rockfalls along this stretch, including a large one in October 2024 and another as recently as late June 2026, serious enough that East Devon council has closed several nearby cliff-top paths as a precaution. A full cliff survey exists in the auction legal pack. All the press coverage traces back to the same wire story (Sidmouth Herald/Midweek Herald/Exmouth Journal all ran it) — none of it quotes an engineer, the council, or a neighbour on the specific risk, and no Facebook/community-forum chatter about this particular house turned up; it doesn't appear to be a locally-discussed listing. On whether stabilising the cliff (Jesse's caisson idea) is even feasible: no Peak-Hill-specific policy was found, but this is open, undeveloped cliff west of the harbour — the kind of coastline Shoreline Management Plans typically mark 'no active intervention', meaning little chance of public money or planning support for private hard defences. That's an inference from how these plans usually treat isolated clifftop properties, not a confirmed answer for this plot — worth a direct call to East Devon's coastal protection team before spending anything on engineering feasibility.",
           "sources": [
-            {"label": "Sidmouth Herald — cliff fall coverage", "url": "https://www.sidmouthherald.co.uk/news/26241413.cottage-sidmouth-jurassic-coast-cliff-sale-250k/"},
-            {"label": "Sidmouth Herald — auction/legal pack details", "url": "https://www.sidmouthherald.co.uk/news/26225308.sidmouth-home-panoramic-views-auction/"},
-            {"label": "Sidmouth Herald — recent rockfall/council closures", "url": "https://www.sidmouthherald.co.uk/news/26236723.new-sidmouth-rockfall-prompts-renewed-safety-warning/"}
+            {
+              "label": "Sidmouth Herald — cliff fall coverage",
+              "url": "https://www.sidmouthherald.co.uk/news/26241413.cottage-sidmouth-jurassic-coast-cliff-sale-250k/"
+            },
+            {
+              "label": "Sidmouth Herald — auction/legal pack details",
+              "url": "https://www.sidmouthherald.co.uk/news/26225308.sidmouth-home-panoramic-views-auction/"
+            },
+            {
+              "label": "Sidmouth Herald — recent rockfall/council closures",
+              "url": "https://www.sidmouthherald.co.uk/news/26236723.new-sidmouth-rockfall-prompts-renewed-safety-warning/"
+            }
           ]
         }
-      ]
+      ],
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "no",
+        "poolSwimTeam": "partial",
+        "private": "yes",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "no",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": "Circular 1960s design built for novelist R.F. Delderfield — architecturally one-of-a-kind"
+      },
+      "aiRating": 5,
+      "aiTake": "Character and privacy are off the charts, but declined for good reason — the erosion/insurance/mortgage problem is real, and it's the least practical for trains, pools, or trails of anything on the list."
     },
     {
       "id": "otterton",
@@ -329,7 +464,21 @@
       "linkLabel": "rightmove.co.uk/properties/174232565",
       "body": "Attractive three-bedroom thatched cottage right in the centre of Otterton village, close to the River Otter and Otterton Mill. South-facing rear garden, period stone fireplace and window seat. Needs modernising throughout — priced accordingly.",
       "why": "Jesse flagged this one personally — near his brother, a lovely part of Devon. His one reservation: it's village-centre (on-street parking only) and he'd prefer something a bit more remote/rural. Worth weighing character + location against the more remote feel he's after. See 3 Bell Street above — a cheaper fixer-upper in the same village if this one's too finished/pricey.",
-      "dateAdded": "2026-07-04"
+      "dateAdded": "2026-07-04",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": null
+      },
+      "aiRating": 6,
+      "aiTake": "The thatched-cottage character you love, near your brother, but it's the exact village-centre/on-street-parking trade-off you flagged not wanting — you said as much yourself."
     },
     {
       "id": "feniton",
@@ -361,7 +510,21 @@
       "linkLabel": "hallandscott.co.uk — HSOTT_708623",
       "body": "Freehold barn on a 0.21-acre plot on the edge of Feniton village. Already has full planning permission (East Devon DC ref 25/0370/FUL, granted Sept 2025) to convert and extend into a 3-bedroom dwelling with parking and garden. Going to online auction 23 July 2026.",
       "why": "The self-build/conversion-plot opportunity Jesse said he'd consider — cheap land with permission already in hand. Downside: inland near Honiton, off the coast/trails brief.",
-      "dateAdded": "2026-07-04"
+      "dateAdded": "2026-07-04",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "yes",
+        "poolSwimTeam": "no",
+        "private": "partial",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "no",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "uniqueFeature": "Already has planning permission in hand — rare for this price"
+      },
+      "aiRating": 6,
+      "aiTake": "Cheapest, most flexible option — you could design in ground-floor living and a workshop from scratch — but it's inland, off the coast and trails brief entirely."
     },
     {
       "id": "yettington",
@@ -389,7 +552,21 @@
       "linkLabel": "exmouthjournal.co.uk (background coverage — agent's listing page no longer resolves)",
       "body": "Two-bedroom barn conversion in the small hamlet of Yettington, directly on the walking/cycling routes linking Budleigh Salterton, East Budleigh, and Woodbury Common. Stable-style front door, vaulted ceilings, exposed beams, ~798 sq ft, gardens and allocated parking.",
       "why": "About as close as a converted barn gets to the Woodbury Common trail network. Priced 25-33% over budget and compact for the money. Downgraded to likely sold this sweep: on top of the agent's own listing page redirecting to a generic search, a Rightmove mirror for a similar 3-bed Yettington barn conversion now also returns 410 Gone. Kept only as a benchmark/inspiration piece unless Jesse wants it chased further.",
-      "dateAdded": "2026-07-04"
+      "dateAdded": "2026-07-04",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "yes",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "partial",
+        "uniqueFeature": null
+      },
+      "aiRating": 6,
+      "aiTake": "About the best trail-network location of anything found, and has real character, but likely gone and was already 25-33% over budget."
     },
     {
       "id": "douglas",
@@ -417,7 +594,21 @@
       "linkLabel": "hallandscott.co.uk — HSEXM_697185",
       "body": "Two-bed purpose-built apartment, balcony, allocated parking, near seafront/town centre, between town and the sea.",
       "why": "Conventional but solid fallback if nothing more characterful turns up in budget. It's a flat, floor level unconfirmed.",
-      "dateAdded": "2026-07-03"
+      "dateAdded": "2026-07-03",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "uniqueFeature": null
+      },
+      "aiRating": 5,
+      "aiTake": "Solid, safe fallback with real parking in the right town, but no character and no garden — a placeholder rather than an exciting option."
     },
     {
       "id": "beacon",
@@ -449,7 +640,21 @@
       "linkLabel": "hallandscott.co.uk — HSEXM_707936",
       "body": "Grade II-listed four-storey house needing renovation, sea views from the upper floors, private garden and garage, walking distance to town centre and seafront.",
       "why": "Well over budget but kept as a benchmark for what full-renovation character stock costs locally.",
-      "dateAdded": "2026-07-03"
+      "dateAdded": "2026-07-03",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "uniqueFeature": "Grade II four-storey renovation project with sea views"
+      },
+      "aiRating": 5,
+      "aiTake": "Character and garage boxes are both ticked hard, but it's 33%+ over budget and a full four-storey renovation project, not a quick move-in."
     },
     {
       "id": "withycombe",
@@ -479,7 +684,21 @@
       "linkLabel": "hallandscott.co.uk/sales/ (specific listing not relocated)",
       "body": "Former Methodist Church and adjoining Church Hall, gardens, conversion project subject to planning consent.",
       "why": "Couldn't re-locate this exact listing this sweep — may have sold or been withdrawn. Kept as inspiration for the flavour of conversion opportunity this market does throw up.",
-      "dateAdded": "2026-07-03"
+      "dateAdded": "2026-07-03",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": null,
+        "garageWorkspace": null,
+        "uniqueFeature": "Former Methodist Church + Church Hall — a genuine conversion rarity"
+      },
+      "aiRating": 5,
+      "aiTake": "The most unusual conversion flavour found so far, but too much of the listing (price, status, layout) is unconfirmed to rate it with real confidence."
     },
     {
       "id": "salterton",
@@ -507,7 +726,21 @@
       "linkLabel": "hallandscott.co.uk/sales/ (specific listing not relocated)",
       "body": "Two-bedroom ground-floor retirement apartment, direct access to communal gardens, close to amenities and bus routes. Likely age-restricted.",
       "why": "Cheapest option found originally; could not reconfirm this exact flat this sweep (a different Salterton Road retirement flat, Bronte Court, now shows instead). No photo included to avoid misattributing an image to the wrong flat.",
-      "dateAdded": "2026-07-03"
+      "dateAdded": "2026-07-03",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "uniqueFeature": null
+      },
+      "aiRating": 4,
+      "aiTake": "Ticks ground-floor and location boxes cheaply, but likely age-restricted and has none of the character you're after — a fallback, not a favourite."
     },
     {
       "id": "eastbudleigh",
@@ -537,7 +770,21 @@
       "linkLabel": "rightmove.co.uk/properties/165338390 (page now returns 410 Gone)",
       "body": "Genuinely characterful double-fronted thatched cottage, 1600s core with a 1700s rear extension.",
       "why": "45% over budget, kept as inspiration. The Rightmove listing now returns \"410 Gone\", suggesting it has sold or been withdrawn.",
-      "dateAdded": "2026-07-04"
+      "dateAdded": "2026-07-04",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": null,
+        "garageWorkspace": null,
+        "uniqueFeature": null
+      },
+      "aiRating": 4,
+      "aiTake": "Genuinely characterful but 45% over budget and likely already gone — kept only as a benchmark."
     },
     {
       "id": "clinton",
@@ -567,7 +814,21 @@
       "linkLabel": "meadowsea.com — MEAD1265",
       "body": "Former commercial garage/MOT site right in Budleigh Salterton itself — conversion/redevelopment long-shot.",
       "why": "Over budget and speculative, but flagged given the town-centre location and imminent auction date.",
-      "dateAdded": "2026-07-04"
+      "dateAdded": "2026-07-04",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "no",
+        "poolSwimTeam": "partial",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "no",
+        "garageWorkspace": "yes",
+        "uniqueFeature": "Former commercial garage/MOT site in the town centre — could plausibly be run as a hireable workshop, exactly the kind of oddball find you said you wanted flagged"
+      },
+      "aiRating": 5,
+      "aiTake": "The most literal 'workshop you could hire out' find yet, right in Budleigh itself, but it's speculative, over budget, and a redevelopment project rather than a move-in-ready home."
     },
     {
       "id": "leslie",
@@ -595,7 +856,24 @@
       "linkLabel": "pennys.net/property-search (specific listing not relocated)",
       "body": "Freehold, no parking mentioned — originally sent over by Jesse rather than found by search.",
       "why": "Could not reconfirm this exact listing this sweep; a different, pricier Leslie Road property now shows instead. Worth a direct call: 01395 264111.",
-      "dateAdded": "2026-07-03"
+      "dateAdded": "2026-07-03",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "partial",
+        "garden": null,
+        "garageWorkspace": null,
+        "uniqueFeature": null
+      },
+      "aiRating": 4,
+      "aiTake": "Could be a good, cheap, characterful find in the right town, but the listing couldn't be reconfirmed this sweep — worth a direct call before reading too much into it."
     }
-  ]
+  ],
+  "raterLabels": {
+    "jkellyllekj": "Brother 3"
+  }
 }

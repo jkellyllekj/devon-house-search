@@ -72,16 +72,21 @@ function sourceBadgeHtml(p) {
   return `<a class="source-badge" href="${esc(p.link)}" target="_blank" rel="noopener">View on ${esc(domain.toUpperCase())} ↗</a>`;
 }
 
+const RATER_LABELS = data.raterLabels || {};
+
 function ratingsHtml(p) {
   const ratings = p.ratings || {};
   const entries = Object.entries(ratings);
-  if (!entries.length) return `<div class="ratings-block"><span class="rating-empty">No ratings yet</span></div>`;
-  const avg = entries.reduce((s, [, r]) => s + r.score, 0) / entries.length;
-  const badges = entries.map(([who, r]) => `<span class="rating-badge">${esc(who)}: ${esc(r.score)}/10</span>`).join("");
+  const familyBadges = entries.length
+    ? entries.map(([who, r]) => `<span class="rating-badge">${esc(RATER_LABELS[who] || "Unknown rater")}: ${esc(r.score)}/10</span>`).join("")
+    : `<span class="rating-empty">No family ratings yet</span>`;
+  const avg = entries.length ? entries.reduce((s, [, r]) => s + r.score, 0) / entries.length : null;
+  const aiBadge = (p.aiRating !== undefined && p.aiRating !== null) ? `<span class="rating-ai">🤖 AI Rating: ${esc(p.aiRating)}/10</span>` : "";
   return `
     <div class="ratings-block">
-      <span class="rating-avg">Average ${avg.toFixed(1)}/10</span>
-      ${badges}
+      ${aiBadge}
+      ${avg !== null ? `<span class="rating-avg">Family avg ${avg.toFixed(1)}/10</span>` : ""}
+      ${familyBadges}
     </div>
   `;
 }
@@ -90,6 +95,54 @@ function avgRating(p) {
   const entries = Object.entries(p.ratings || {});
   if (!entries.length) return null;
   return entries.reduce((s, [, r]) => s + r.score, 0) / entries.length;
+}
+
+const CHECKLIST_ITEMS = [
+  { key: "ocean", label: "🌊 Close to ocean" },
+  { key: "trainStation", label: "🚉 Close to train station" },
+  { key: "poolSwimTeam", label: "🏊 Close to pool/swim team" },
+  { key: "private", label: "🔒 Private/secluded" },
+  { key: "mtbTrails", label: "🚵 Close to Woodbury Common/MTB trails" },
+  { key: "character", label: "✨ Has character" },
+  { key: "garden", label: "🌳 Has a garden" },
+  { key: "garageWorkspace", label: "🔧 Garage/shed/workspace" },
+];
+
+function checklistIcon(val) {
+  if (val === "yes") return { icon: "✓", cls: "cl-yes" };
+  if (val === "partial" || val === "adaptable") return { icon: "~", cls: "cl-partial" };
+  if (val === "no") return { icon: "✕", cls: "cl-no" };
+  return { icon: "?", cls: "cl-unknown" };
+}
+
+function checklistHtml(p) {
+  const c = p.checklist || {};
+  const rows = CHECKLIST_ITEMS.map(item => {
+    const { icon, cls } = checklistIcon(c[item.key]);
+    return `<span class="cl-item ${cls}"><span class="cl-icon">${icon}</span>${esc(item.label)}</span>`;
+  }).join("");
+  const gfVal = c.groundFloorLongTerm === "yes" ? "yes" : c.groundFloorLongTerm === "adaptable" ? "partial" : c.groundFloorLongTerm === "no" ? "no" : null;
+  const gf = checklistIcon(gfVal);
+  const gfLabel = c.groundFloorLongTerm === "yes" ? "♿ Already ground-floor livable"
+    : c.groundFloorLongTerm === "adaptable" ? "♿ Could adapt to ground-floor living"
+    : c.groundFloorLongTerm === "no" ? "♿ Not realistically ground-floor adaptable"
+    : "♿ Ground-floor adaptability unknown";
+  const unique = c.uniqueFeature ? `<div class="cl-unique">🎁 <strong>Unique:</strong> ${esc(c.uniqueFeature)}</div>` : "";
+  return `
+    <div class="checklist-block">
+      <h3>Jesse's Checklist</h3>
+      <div class="checklist-grid">
+        ${rows}
+        <span class="cl-item ${gf.cls}"><span class="cl-icon">${gf.icon}</span>${esc(gfLabel)}</span>
+      </div>
+      ${unique}
+    </div>
+  `;
+}
+
+function aiTakeHtml(p) {
+  if (!p.aiTake) return "";
+  return `<p class="ai-take">🤖 <strong>AI's take:</strong> ${esc(p.aiTake)}</p>`;
 }
 
 function askClaudeHtml(p) {
@@ -144,8 +197,9 @@ function mapEmbedHtml(p) {
 
 function propertyCard(p) {
   const avg = avgRating(p);
+  const aiR = (p.aiRating !== undefined && p.aiRating !== null) ? p.aiRating : "";
   return `
-  <section class="card" id="${esc(p.id)}" data-avg-rating="${avg !== null ? avg.toFixed(2) : ""}">
+  <section class="card" id="${esc(p.id)}" data-avg-rating="${avg !== null ? avg.toFixed(2) : ""}" data-ai-rating="${aiR}">
     <h2>${esc(p.title)}</h2>
     <div class="price-row">
       <span class="price">${esc(p.price)}</span>
@@ -154,10 +208,12 @@ function propertyCard(p) {
     ${sourceBadgeHtml(p)}
     <div class="flags">${p.flags.map(flagHtml).join("")}</div>
     ${ratingsHtml(p)}
+    ${checklistHtml(p)}
     <div class="photos">${photosHtml(p.id, p.photos)}</div>
     ${mapEmbedHtml(p)}
     <p class="body">${esc(p.body)}</p>
     <p class="why"><strong>Why it's here:</strong> ${esc(p.why)}</p>
+    ${aiTakeHtml(p)}
     ${researchHtml(p)}
     ${reactionHtml(p.id)}
     ${askClaudeHtml(p)}
@@ -218,11 +274,23 @@ const html = `<!DOCTYPE html>
   .source-badge { display: inline-block; background: #1b3a2f; color: #fff !important; font-weight: 700; font-size: 13px; letter-spacing: 0.4px; padding: 7px 14px; border-radius: 20px; text-decoration: none; margin-bottom: 12px; }
   .source-badge:hover { background: #23483a; }
   .ratings-block { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .rating-ai { background: #6A1B9A; color: #fff; font-weight: 700; font-size: 13px; padding: 4px 10px; border-radius: 4px; }
   .rating-avg { background: #C2185B; color: #fff; font-weight: 700; font-size: 13px; padding: 4px 10px; border-radius: 4px; }
   .rating-badge { background: #f0f0f0; color: #444; font-size: 12px; padding: 4px 10px; border-radius: 4px; }
   .rating-empty { font-size: 12px; color: #999; }
   .rating-hint { font-size: 12px; color: #8a5a00; background: #fff3cd; border-radius: 4px; padding: 6px 10px; margin: 0 0 10px; }
   .rating-hint code { background: #fff; padding: 1px 5px; border-radius: 3px; }
+  .checklist-block { margin-bottom: 14px; padding: 12px 14px; background: #f4f8f5; border-radius: 6px; }
+  .checklist-block h3 { margin: 0 0 8px; font-size: 13px; color: #1b3a2f; text-transform: uppercase; letter-spacing: 0.5px; }
+  .checklist-grid { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+  .cl-item { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; }
+  .cl-icon { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; font-size: 11px; font-weight: 700; color: #fff; flex-shrink: 0; }
+  .cl-yes .cl-icon { background: #2E7D32; }
+  .cl-partial .cl-icon { background: #E65100; }
+  .cl-no .cl-icon { background: #9E9E9E; }
+  .cl-unknown .cl-icon { background: #ccc; color: #777; }
+  .cl-unique { margin-top: 8px; font-size: 13px; }
+  .ai-take { background: #f3e5f5; border-left: 4px solid #6A1B9A; padding: 10px 14px; border-radius: 4px; font-size: 14px; line-height: 1.5; margin-top: 10px; }
   .research-block { margin-top: 14px; padding: 12px 14px; background: #eef4fb; border-left: 4px solid #1565C0; border-radius: 4px; }
   .research-block h3 { margin: 0 0 8px; font-size: 14px; color: #1b3a2f; }
   .research-item + .research-item { margin-top: 12px; padding-top: 12px; border-top: 1px solid #d6e4f2; }
@@ -256,8 +324,10 @@ const html = `<!DOCTYPE html>
     <label for="sortControl">Sort:</label>
     <select id="sortControl">
       <option value="default">Default (newest first)</option>
-      <option value="highest">Highest rated first</option>
-      <option value="lowest">Lowest rated first</option>
+      <option value="ai-high">Highest AI rating first</option>
+      <option value="ai-low">Lowest AI rating first</option>
+      <option value="family-high">Highest family rating first</option>
+      <option value="family-low">Lowest family rating first</option>
     </select>
   </div>
 </header>
@@ -304,10 +374,12 @@ window.addEventListener('message', function (e) {
       return;
     }
     headers.forEach(function (h) { h.style.display = 'none'; });
+    var attr = mode.indexOf('ai') === 0 ? 'aiRating' : 'avgRating';
+    var asc = mode.indexOf('low') !== -1;
     var ranked = sortCards.slice().sort(function (a, b) {
-      var av = a.dataset.avgRating ? parseFloat(a.dataset.avgRating) : -1;
-      var bv = b.dataset.avgRating ? parseFloat(b.dataset.avgRating) : -1;
-      return mode === 'highest' ? bv - av : av - bv;
+      var av = a.dataset[attr] !== '' && a.dataset[attr] != null ? parseFloat(a.dataset[attr]) : -1;
+      var bv = b.dataset[attr] !== '' && b.dataset[attr] != null ? parseFloat(b.dataset[attr]) : -1;
+      return asc ? av - bv : bv - av;
     });
     ranked.forEach(function (c, i) { c.style.order = i; });
   });
