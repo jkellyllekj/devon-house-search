@@ -26,6 +26,13 @@
   main { max-width: 880px; margin: 0 auto; padding: 20px; display: flex; flex-direction: column; }
   .section-title { margin-top: 48px; border-bottom: 3px solid #1b3a2f; padding-bottom: 8px; font-size: 22px; color: #1b3a2f; }
   .card { background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.12); padding: 24px; margin: 20px 0; scroll-margin-top: 60px; }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
+  .card-top-left { flex: 1 1 300px; min-width: 0; }
+  .card-top-right { flex: 0 0 280px; max-width: 100%; }
+  .card-top-right .ratings-block { margin: 0; }
+  .card-top-right .rating-row-label { flex-basis: 66px; font-size: 12px; }
+  .card-top-right .rating-row-flames { display: none; }
+  .card-top-right .cl-hint { display: none; }
   .card h2 { margin: 0 0 8px; font-size: 20px; }
   .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
   .price { font-size: 20px; font-weight: 700; color: #1b5e20; }
@@ -51,6 +58,7 @@
   .rating-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 13px; }
   .rating-row-label { flex: 0 0 130px; font-weight: 600; color: #333; }
   .rating-row-ai .rating-row-label { color: #6A1B9A; }
+  .rating-row-overall .rating-row-label { color: #E65100; font-weight: 800; }
   .rating-bar-track { flex: 1 1 auto; height: 14px; background: #e6e6e6; border-radius: 8px; overflow: hidden; }
   .rating-bar-fill { height: 100%; border-radius: 8px; transition: width 0.3s; }
   .rating-row-score { flex: 0 0 50px; font-weight: 700; color: #444; text-align: right; }
@@ -152,37 +160,24 @@
 <main>
 <h1 class="section-title">New This Sweep</h1>
   <section class="card" id="haynes" data-avg-rating="" data-ai-rating="7">
-    <h2>Haynes Cottages, Lympstone</h2>
-    <div class="price-row">
-      <span class="price">£264,500</span>
-      <span class="agent">Pennys, Exmouth</span>
-    </div>
-    <a class="source-badge" href="https://www.pennys.net/for-sale/lympstone/haynes-cottages/2-bedroom-terraced-for-sale-in-haynes-cottages-ex8-5lx/266524" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#1565C0">HAS PARKING (3 cars, gravelled bay + electric sockets)</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Haynes_Gallery_1.jpeg" alt="haynes main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Haynes_Gallery_2.jpg" alt="haynes photo" loading="lazy"><img src="images/Haynes_Gallery_3.jpg" alt="haynes photo" loading="lazy"><img src="images/Haynes_Gallery_4.jpeg" alt="haynes photo" loading="lazy"></div>
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Haynes%20Cottages%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Haynes%20Cottages%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Haynes%20Cottages%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Haynes Cottages, Lympstone</h2>
+        <div class="price-row">
+          <span class="price">£264,500</span>
+          <span class="agent">Pennys, Exmouth</span>
+        </div>
+        <a class="source-badge" href="https://www.pennys.net/for-sale/lympstone/haynes-cottages/2-bedroom-terraced-for-sale-in-haynes-cottages-ex8-5lx/266524" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
+      <span class="rating-row-score">7/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Two-bedroom terraced cottage in Lympstone with a modern kitchen/diner, a ground-floor shower room, and a new gas boiler (Feb 2026). Sold with no onward chain. The standout feature is outside: a gravelled parking bay for up to 3 cars with outside electric sockets, a large private garden, a substantial timber cabin/studio (15'8" x 12'5") usable as an office or hobby space, a potting shed, and three further storage sheds.</p>
-    <p class="why"><strong>Why it's here:</strong> The best parking situation found in Lympstone all sweep, by a wide margin — most of the village's cottages have on-street parking only, and this one has a proper 3-car gravelled bay with electric hookups. Add a big garden, a genuine garden studio, and no chain, and this is a strong all-rounder in the village that arguably has the best location fit of anywhere on the list (estuary, own station, Woodbury Common all close by).</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> The find of the sweep — real 3-car parking with electric hookups, a big garden, a garden studio, no chain, and comfortably under your real budget target. Only real caveat is the same one every Lympstone property carries: not especially close to either brother despite being near Exmouth itself.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
@@ -208,6 +203,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#1565C0">HAS PARKING (3 cars, gravelled bay + electric sockets)</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Haynes_Gallery_1.jpeg" alt="haynes main photo" loading="lazy"></div>
+    <div class="photo-strip"><img src="images/Haynes_Gallery_2.jpg" alt="haynes photo" loading="lazy"><img src="images/Haynes_Gallery_3.jpg" alt="haynes photo" loading="lazy"><img src="images/Haynes_Gallery_4.jpeg" alt="haynes photo" loading="lazy"></div>
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Haynes%20Cottages%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Haynes%20Cottages%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Haynes%20Cottages%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Two-bedroom terraced cottage in Lympstone with a modern kitchen/diner, a ground-floor shower room, and a new gas boiler (Feb 2026). Sold with no onward chain. The standout feature is outside: a gravelled parking bay for up to 3 cars with outside electric sockets, a large private garden, a substantial timber cabin/studio (15'8" x 12'5") usable as an office or hobby space, a potting shed, and three further storage sheds.</p>
+    <p class="why"><strong>Why it's here:</strong> The best parking situation found in Lympstone all sweep, by a wide margin — most of the village's cottages have on-street parking only, and this one has a proper 3-car gravelled bay with electric hookups. Add a big garden, a genuine garden studio, and no chain, and this is a strong all-rounder in the village that arguably has the best location fit of anywhere on the list (estuary, own station, Woodbury Common all close by).</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> The find of the sweep — real 3-car parking with electric hookups, a big garden, a garden studio, no chain, and comfortably under your real budget target. Only real caveat is the same one every Lympstone property carries: not especially close to either brother despite being near Exmouth itself.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -292,37 +313,24 @@
   </section>
 
   <section class="card" id="longmeadow" data-avg-rating="" data-ai-rating="6">
-    <h2>Longmeadow Road, Lympstone (Grade II 17th-century cottage)</h2>
-    <div class="price-row">
-      <span class="price">Guide Price £250,000</span>
-      <span class="agent">Stags, Exeter</span>
-    </div>
-    <a class="source-badge" href="https://www.rightmove.co.uk/properties/89711112" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span><span class="flag" style="background:#EF6C00">KNOTWEED DISCLOSED (treated, 10-yr guarantee)</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Longmeadow_Gallery_1.jpg" alt="longmeadow main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Longmeadow_Gallery_2.jpg" alt="longmeadow photo" loading="lazy"><img src="images/Longmeadow_Gallery_3.jpg" alt="longmeadow photo" loading="lazy"><img src="images/Longmeadow_Gallery_4.jpg" alt="longmeadow photo" loading="lazy"></div>
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Longmeadow%20Road%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Longmeadow%20Road%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Longmeadow%20Road%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Longmeadow Road, Lympstone (Grade II 17th-century cottage)</h2>
+        <div class="price-row">
+          <span class="price">Guide Price £250,000</span>
+          <span class="agent">Stags, Exeter</span>
+        </div>
+        <a class="source-badge" href="https://www.rightmove.co.uk/properties/89711112" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">One-bedroom Grade II listed 17th-century cottage in Lympstone with exposed beams, an inglenook fireplace with a log-effect stove, and an ensuite. South-facing garden borders a spring-fed stream, with a detached oak-framed garden studio (power and water connected). Vendor has disclosed Japanese knotweed at the garden perimeter (spring 2026), now under a 10-year insurance-backed treatment guarantee.</p>
-    <p class="why"><strong>Why it's here:</strong> Genuine period character in the same top-tier village as Farleys and Haynes below, with a lovely bonus garden studio by a stream. The knotweed disclosure is a real negotiating point rather than a dealbreaker given the guarantee is already in place, but worth a solicitor/surveyor's eye. Only one bedroom and no real parking (on-street only) are the practical trade-offs.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Genuine Grade II character with a lovely garden studio by a stream, but only one bedroom, no real parking, and a disclosed knotweed issue worth getting a surveyor's eye on before getting attached.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
@@ -348,6 +356,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span><span class="flag" style="background:#EF6C00">KNOTWEED DISCLOSED (treated, 10-yr guarantee)</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Longmeadow_Gallery_1.jpg" alt="longmeadow main photo" loading="lazy"></div>
+    <div class="photo-strip"><img src="images/Longmeadow_Gallery_2.jpg" alt="longmeadow photo" loading="lazy"><img src="images/Longmeadow_Gallery_3.jpg" alt="longmeadow photo" loading="lazy"><img src="images/Longmeadow_Gallery_4.jpg" alt="longmeadow photo" loading="lazy"></div>
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Longmeadow%20Road%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Longmeadow%20Road%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Longmeadow%20Road%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">One-bedroom Grade II listed 17th-century cottage in Lympstone with exposed beams, an inglenook fireplace with a log-effect stove, and an ensuite. South-facing garden borders a spring-fed stream, with a detached oak-framed garden studio (power and water connected). Vendor has disclosed Japanese knotweed at the garden perimeter (spring 2026), now under a 10-year insurance-backed treatment guarantee.</p>
+    <p class="why"><strong>Why it's here:</strong> Genuine period character in the same top-tier village as Farleys and Haynes below, with a lovely bonus garden studio by a stream. The knotweed disclosure is a real negotiating point rather than a dealbreaker given the guarantee is already in place, but worth a solicitor/surveyor's eye. Only one bedroom and no real parking (on-street only) are the practical trade-offs.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Genuine Grade II character with a lovely garden studio by a stream, but only one bedroom, no real parking, and a disclosed knotweed issue worth getting a surveyor's eye on before getting attached.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -432,37 +466,24 @@
   </section>
 
   <section class="card" id="brookside" data-avg-rating="" data-ai-rating="5">
-    <h2>Brookside Cottage, Lympstone</h2>
-    <div class="price-row">
-      <span class="price">Guide Price £275,000</span>
-      <span class="agent">Pennys, Exmouth</span>
-    </div>
-    <a class="source-badge" href="https://www.rightmove.co.uk/properties/162176444" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#9E9E9E">PARKING UNKNOWN</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Brookside_Gallery_1.jpg" alt="brookside main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Brookside_Gallery_2.jpg" alt="brookside photo" loading="lazy"><img src="images/Brookside_Gallery_3.jpg" alt="brookside photo" loading="lazy"><img src="images/Brookside_Gallery_4.jpg" alt="brookside photo" loading="lazy"></div>
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Brookside%20Cottage%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Brookside%20Cottage%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Brookside%20Cottage%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Brookside Cottage, Lympstone</h2>
+        <div class="price-row">
+          <span class="price">Guide Price £275,000</span>
+          <span class="agent">Pennys, Exmouth</span>
+        </div>
+        <a class="source-badge" href="https://www.rightmove.co.uk/properties/162176444" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Two-bedroom freehold cottage in Lympstone, no onward chain, reduced to guide price £275,000. Open-plan sitting/dining/kitchen downstairs, first-floor bedrooms with exposed beams, wood burner. Currently run as a successful Airbnb. Rear courtyard with a shed rather than a full garden.</p>
-    <p class="why"><strong>Why it's here:</strong> Chain-free with a genuine rental track record if you wanted to keep letting it out, in the same desirable village as the other Lympstone finds this sweep. Parking isn't stated either way (listing says ask agent) and there's a courtyard rather than a real garden, so it's a notch below Haynes on practicality.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> No-chain cottage with a genuine rental track record as an Airbnb, but parking is unconfirmed and there's only a courtyard rather than a real garden.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
@@ -488,6 +509,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#9E9E9E">PARKING UNKNOWN</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Brookside_Gallery_1.jpg" alt="brookside main photo" loading="lazy"></div>
+    <div class="photo-strip"><img src="images/Brookside_Gallery_2.jpg" alt="brookside photo" loading="lazy"><img src="images/Brookside_Gallery_3.jpg" alt="brookside photo" loading="lazy"><img src="images/Brookside_Gallery_4.jpg" alt="brookside photo" loading="lazy"></div>
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Brookside%20Cottage%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Brookside%20Cottage%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Brookside%20Cottage%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Two-bedroom freehold cottage in Lympstone, no onward chain, reduced to guide price £275,000. Open-plan sitting/dining/kitchen downstairs, first-floor bedrooms with exposed beams, wood burner. Currently run as a successful Airbnb. Rear courtyard with a shed rather than a full garden.</p>
+    <p class="why"><strong>Why it's here:</strong> Chain-free with a genuine rental track record if you wanted to keep letting it out, in the same desirable village as the other Lympstone finds this sweep. Parking isn't stated either way (listing says ask agent) and there's a courtyard rather than a real garden, so it's a notch below Haynes on practicality.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> No-chain cottage with a genuine rental track record as an Airbnb, but parking is unconfirmed and there's only a courtyard rather than a real garden.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -572,37 +619,24 @@
   </section>
 
   <section class="card" id="morcote" data-avg-rating="" data-ai-rating="5">
-    <h2>Morcote, The Strand, Lympstone</h2>
-    <div class="price-row">
-      <span class="price">Offers in Excess of £225,000</span>
-      <span class="agent">East of Exe Ltd, Topsham</span>
-    </div>
-    <a class="source-badge" href="https://www.rightmove.co.uk/properties/159668282" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Morcote_Gallery_1.jpg" alt="morcote main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Morcote_Gallery_2.jpg" alt="morcote photo" loading="lazy"><img src="images/Morcote_Gallery_3.jpg" alt="morcote photo" loading="lazy"><img src="images/Morcote_Gallery_4.jpg" alt="morcote photo" loading="lazy"></div>
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Morcote%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Morcote%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Morcote%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Morcote, The Strand, Lympstone</h2>
+        <div class="price-row">
+          <span class="price">Offers in Excess of £225,000</span>
+          <span class="agent">East of Exe Ltd, Topsham</span>
+        </div>
+        <a class="source-badge" href="https://www.rightmove.co.uk/properties/159668282" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">One-bedroom period cottage in the heart of Lympstone village, near the estuary. Solid wood flooring, an inset wood stove on a slate hearth, sash windows with shutters, solid wood doors with iron ironmongery. No garden or outside space at all. On-street parking only.</p>
-    <p class="why"><strong>Why it's here:</strong> Cheap and genuinely characterful, right in the middle of the village, but it's the weakest of this sweep's Lympstone finds on practicality — no garden whatsoever and no dedicated parking. Worth a look only if the interior character outweighs having zero outdoor space.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Cheap, characterful, and right in the heart of Lympstone, but zero outdoor space and street parking only make it the weakest of this sweep's Lympstone finds.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
@@ -628,6 +662,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Morcote_Gallery_1.jpg" alt="morcote main photo" loading="lazy"></div>
+    <div class="photo-strip"><img src="images/Morcote_Gallery_2.jpg" alt="morcote photo" loading="lazy"><img src="images/Morcote_Gallery_3.jpg" alt="morcote photo" loading="lazy"><img src="images/Morcote_Gallery_4.jpg" alt="morcote photo" loading="lazy"></div>
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Morcote%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Morcote%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Morcote%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">One-bedroom period cottage in the heart of Lympstone village, near the estuary. Solid wood flooring, an inset wood stove on a slate hearth, sash windows with shutters, solid wood doors with iron ironmongery. No garden or outside space at all. On-street parking only.</p>
+    <p class="why"><strong>Why it's here:</strong> Cheap and genuinely characterful, right in the middle of the village, but it's the weakest of this sweep's Lympstone finds on practicality — no garden whatsoever and no dedicated parking. Worth a look only if the interior character outweighs having zero outdoor space.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Cheap, characterful, and right in the heart of Lympstone, but zero outdoor space and street parking only make it the weakest of this sweep's Lympstone finds.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -712,37 +772,24 @@
   </section>
 
   <section class="card" id="butterchurn" data-avg-rating="" data-ai-rating="5">
-    <h2>Butterchurn Cottage, Knowle, Crediton (thatched cob cottage)</h2>
-    <div class="price-row">
-      <span class="price">Guide Price £325,000</span>
-      <span class="agent">Helmores, Crediton</span>
-    </div>
-    <a class="source-badge" href="https://www.rightmove.co.uk/properties/174920456" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET (+£25,000)</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED / THATCHED</span><span class="flag" style="background:#1565C0">HAS PARKING (gated, 3-4 cars)</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Butterchurn_Gallery_1.jpg" alt="butterchurn main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Butterchurn_Gallery_2.jpg" alt="butterchurn photo" loading="lazy"><img src="images/Butterchurn_Gallery_3.jpg" alt="butterchurn photo" loading="lazy"><img src="images/Butterchurn_Gallery_4.jpg" alt="butterchurn photo" loading="lazy"></div>
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Butterchurn%20Cottage%2C%20Knowle%2C%20Crediton%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Butterchurn%20Cottage%2C%20Knowle%2C%20Crediton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Butterchurn%20Cottage%2C%20Knowle%2C%20Crediton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Butterchurn Cottage, Knowle, Crediton (thatched cob cottage)</h2>
+        <div class="price-row">
+          <span class="price">Guide Price £325,000</span>
+          <span class="agent">Helmores, Crediton</span>
+        </div>
+        <a class="source-badge" href="https://www.rightmove.co.uk/properties/174920456" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Grade II listed, cob-built and thatched cottage in the hamlet of Knowle, near Crediton — ridge re-thatched November 2025. Two bedrooms (expandable to three), inglenook fireplace, multi-level gardens with ponds bordering farmland. Off-road parking for 3-4 cars behind electric gates.</p>
-    <p class="why"><strong>Why it's here:</strong> Exactly the kind of exceptional thatched find worth flagging even over the ceiling — genuine cob-and-thatch Grade II character with secure gated parking for several cars, which is rare to find together at any price. The catch is location: Knowle is inland near Crediton, roughly 35-40 minutes from Exmouth and from both brothers, well outside the coast/trails brief.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> A genuinely exceptional thatched cob cottage with secure gated parking for several cars — the character/parking combination alone makes it worth flagging — but it's over your ceiling and a 35-40 minute drive from the coast, the trails, and both brothers.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
@@ -768,6 +815,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET (+£25,000)</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED / THATCHED</span><span class="flag" style="background:#1565C0">HAS PARKING (gated, 3-4 cars)</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Butterchurn_Gallery_1.jpg" alt="butterchurn main photo" loading="lazy"></div>
+    <div class="photo-strip"><img src="images/Butterchurn_Gallery_2.jpg" alt="butterchurn photo" loading="lazy"><img src="images/Butterchurn_Gallery_3.jpg" alt="butterchurn photo" loading="lazy"><img src="images/Butterchurn_Gallery_4.jpg" alt="butterchurn photo" loading="lazy"></div>
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Butterchurn%20Cottage%2C%20Knowle%2C%20Crediton%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Butterchurn%20Cottage%2C%20Knowle%2C%20Crediton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Butterchurn%20Cottage%2C%20Knowle%2C%20Crediton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Grade II listed, cob-built and thatched cottage in the hamlet of Knowle, near Crediton — ridge re-thatched November 2025. Two bedrooms (expandable to three), inglenook fireplace, multi-level gardens with ponds bordering farmland. Off-road parking for 3-4 cars behind electric gates.</p>
+    <p class="why"><strong>Why it's here:</strong> Exactly the kind of exceptional thatched find worth flagging even over the ceiling — genuine cob-and-thatch Grade II character with secure gated parking for several cars, which is rare to find together at any price. The catch is location: Knowle is inland near Crediton, roughly 35-40 minutes from Exmouth and from both brothers, well outside the coast/trails brief.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> A genuinely exceptional thatched cob cottage with secure gated parking for several cars — the character/parking combination alone makes it worth flagging — but it's over your ceiling and a 35-40 minute drive from the coast, the trails, and both brothers.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -852,37 +925,24 @@
   </section>
 <h1 class="section-title">Still Listed</h1>
   <section class="card" id="eastbudleighhighst" data-avg-rating="" data-ai-rating="6">
-    <h2>High Street, East Budleigh (Grade II cottage)</h2>
-    <div class="price-row">
-      <span class="price">£239,950</span>
-      <span class="agent">Pennys, Exmouth</span>
-    </div>
-    <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/high-street/2-bedroom-terraced-for-sale-in-high-street-ex9-7ed/263959" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">NO PARKING (village on-street only)</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/EastBudleigh_Gallery_1.jpg" alt="eastbudleighhighst main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/EastBudleigh_Gallery_2.jpg" alt="eastbudleighhighst photo" loading="lazy"><img src="images/EastBudleigh_Gallery_3.jpg" alt="eastbudleighhighst photo" loading="lazy"><img src="images/EastBudleigh_Gallery_4.jpg" alt="eastbudleighhighst photo" loading="lazy"></div>
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>High Street, East Budleigh (Grade II cottage)</h2>
+        <div class="price-row">
+          <span class="price">£239,950</span>
+          <span class="agent">Pennys, Exmouth</span>
+        </div>
+        <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/high-street/2-bedroom-terraced-for-sale-in-high-street-ex9-7ed/263959" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Double-fronted Grade II listed cottage on the High Street in East Budleigh village. Living room with fireplace, separate dining room, good-sized kitchen, two first-floor double bedrooms, spacious bathroom, cloakroom, feature ceiling beams throughout, enclosed rear garden, gas central heating.</p>
-    <p class="why"><strong>Why it's here:</strong> Not to be confused with the £435,000 East Budleigh thatched cottage already on file below (likely sold/withdrawn) — this is a separate, much cheaper Grade II cottage in the same village, well under budget with genuine period features (beams, fireplace). East Budleigh itself is inland of Budleigh Salterton by about 2 miles, still within easy reach of the coast. Checked the full listing text directly — genuinely no parking, garage, or space mentioned anywhere, not just an omission in the summary. On the street itself: High Street has limited on-street parking with a 30-minute free limit on one side, so it isn't realistic for a resident's own car; the practical option is a small free 17-space car park just off the High Street (2-hour limit) plus the larger Hayes Lane car park a short walk away. East Budleigh is a small village and doesn't appear to run a formal residents' permit scheme (those are typically only in larger towns like Exmouth/Sidmouth) — so day-to-day parking would likely mean walking a couple of minutes from a car park rather than permit-based street parking outside the door.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Solid character and price, but no parking, and the ocean/station/pool are all a drive away rather than walkable — a village-life trade rather than a coast-or-trail-adjacent one.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
@@ -908,6 +968,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">NO PARKING (village on-street only)</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/EastBudleigh_Gallery_1.jpg" alt="eastbudleighhighst main photo" loading="lazy"></div>
+    <div class="photo-strip"><img src="images/EastBudleigh_Gallery_2.jpg" alt="eastbudleighhighst photo" loading="lazy"><img src="images/EastBudleigh_Gallery_3.jpg" alt="eastbudleighhighst photo" loading="lazy"><img src="images/EastBudleigh_Gallery_4.jpg" alt="eastbudleighhighst photo" loading="lazy"></div>
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Double-fronted Grade II listed cottage on the High Street in East Budleigh village. Living room with fireplace, separate dining room, good-sized kitchen, two first-floor double bedrooms, spacious bathroom, cloakroom, feature ceiling beams throughout, enclosed rear garden, gas central heating.</p>
+    <p class="why"><strong>Why it's here:</strong> Not to be confused with the £435,000 East Budleigh thatched cottage already on file below (likely sold/withdrawn) — this is a separate, much cheaper Grade II cottage in the same village, well under budget with genuine period features (beams, fireplace). East Budleigh itself is inland of Budleigh Salterton by about 2 miles, still within easy reach of the coast. Checked the full listing text directly — genuinely no parking, garage, or space mentioned anywhere, not just an omission in the summary. On the street itself: High Street has limited on-street parking with a 30-minute free limit on one side, so it isn't realistic for a resident's own car; the practical option is a small free 17-space car park just off the High Street (2-hour limit) plus the larger Hayes Lane car park a short walk away. East Budleigh is a small village and doesn't appear to run a formal residents' permit scheme (those are typically only in larger towns like Exmouth/Sidmouth) — so day-to-day parking would likely mean walking a couple of minutes from a car park rather than permit-based street parking outside the door.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Solid character and price, but no parking, and the ocean/station/pool are all a drive away rather than walkable — a village-life trade rather than a coast-or-trail-adjacent one.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -992,37 +1078,24 @@
   </section>
 
   <section class="card" id="marlesflat" data-avg-rating="" data-ai-rating="7">
-    <h2>The Marles, Exmouth (ground-floor flat)</h2>
-    <div class="price-row">
-      <span class="price">£200,000</span>
-      <span class="agent">Pennys, Exmouth</span>
-    </div>
-    <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/the-marles/2-bedroom-groundfloorflat-for-sale-in-the-marles-ex8-4ne/269531" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span><span class="flag" style="background:#757575">PARKING: GARAGE TO RENT NEARBY (not included)</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Marles_Gallery_1.jpg" alt="marlesflat main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Marles_Gallery_2.jpg" alt="marlesflat photo" loading="lazy"><img src="images/Marles_Gallery_3.jpg" alt="marlesflat photo" loading="lazy"></div>
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=The%20Marles%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=The%20Marles%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Marles%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>The Marles, Exmouth (ground-floor flat)</h2>
+        <div class="price-row">
+          <span class="price">£200,000</span>
+          <span class="agent">Pennys, Exmouth</span>
+        </div>
+        <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/the-marles/2-bedroom-groundfloorflat-for-sale-in-the-marles-ex8-4ne/269531" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
+      <span class="rating-row-score">7/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Spacious purpose-built ground-floor flat undergoing extensive modernisation — new flooring, refurbished kitchen and shower room, full redecoration. Entrance hall with utilities cupboard, large lounge/diner, two double bedrooms, shower room/WC, surrounded by communal gardens. Leasehold with an extended lease granted on completion. Service charge £1,440/year.</p>
-    <p class="why"><strong>Why it's here:</strong> Passes the ground-floor test for a flat and is well under budget, but the parking is soft: the listing only says a garage is understood to be available to rent close by, not an allocated space that comes with the sale — weaker than Exeter Road or Douglas Avenue below, which both have confirmed allocated parking.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Ticks the practical boxes (ground floor, cheap, close to everything in Exmouth) but has none of the character you respond to, and the garage is only a maybe. Right at your £200k comfort line, which helps its case.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
@@ -1048,6 +1121,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span><span class="flag" style="background:#757575">PARKING: GARAGE TO RENT NEARBY (not included)</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Marles_Gallery_1.jpg" alt="marlesflat main photo" loading="lazy"></div>
+    <div class="photo-strip"><img src="images/Marles_Gallery_2.jpg" alt="marlesflat photo" loading="lazy"><img src="images/Marles_Gallery_3.jpg" alt="marlesflat photo" loading="lazy"></div>
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=The%20Marles%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=The%20Marles%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Marles%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Spacious purpose-built ground-floor flat undergoing extensive modernisation — new flooring, refurbished kitchen and shower room, full redecoration. Entrance hall with utilities cupboard, large lounge/diner, two double bedrooms, shower room/WC, surrounded by communal gardens. Leasehold with an extended lease granted on completion. Service charge £1,440/year.</p>
+    <p class="why"><strong>Why it's here:</strong> Passes the ground-floor test for a flat and is well under budget, but the parking is soft: the listing only says a garage is understood to be available to rent close by, not an allocated space that comes with the sale — weaker than Exeter Road or Douglas Avenue below, which both have confirmed allocated parking.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Ticks the practical boxes (ground floor, cheap, close to everything in Exmouth) but has none of the character you respond to, and the garage is only a maybe. Right at your £200k comfort line, which helps its case.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -1132,37 +1231,24 @@
   </section>
 
   <section class="card" id="farleys" data-avg-rating="" data-ai-rating="6">
-    <h2>Farleys, The Strand, Lympstone (Grade II cottage)</h2>
-    <div class="price-row">
-      <span class="price">£295,000</span>
-      <span class="agent">Hall &amp; Scott, Exmouth</span>
-    </div>
-    <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_706793" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">NO PARKING (village car park permit)</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Farleys_Gallery_1.jpg" alt="farleys main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Farleys_Gallery_2.png" alt="farleys photo" loading="lazy"><img src="images/Farleys_Gallery_3.jpg" alt="farleys photo" loading="lazy"><img src="images/Farleys_Gallery_4.jpg" alt="farleys photo" loading="lazy"></div>
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Farleys%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Farleys%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Farleys%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Farleys, The Strand, Lympstone (Grade II cottage)</h2>
+        <div class="price-row">
+          <span class="price">£295,000</span>
+          <span class="agent">Hall &amp; Scott, Exmouth</span>
+        </div>
+        <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_706793" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Two-bedroom Grade II listed cottage in the heart of Lympstone village — exposed beams and stonework throughout, cosy sitting/dining room, well-appointed kitchen, family bathroom, two loft areas with Velux windows, gas central heating. Freehold and chain-free. No garden and no dedicated parking — permit parking is available at the village car park nearby. Two pubs, shop, post office, café, sailing club and the estuary all on the doorstep.</p>
-    <p class="why"><strong>Why it's here:</strong> Location-wise this is arguably the best-placed find yet: Lympstone sits on the Exe estuary directly between Exmouth and Woodbury Common — water one way, trails the other, and one of your brothers is in Woodbury just up the hill. Genuine period character (Grade II, beams, stonework), chain-free, and £5k under ceiling. The catches: no parking (the standing hard requirement — waived here only because it's genuinely characterful, with village car park permits as the workaround), no outdoor space, and listed-building consent applies to any alterations. Found via the Exmouth Journal property pages, not the portals.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Best location fit yet — estuary, its own station, and Woodbury Common all on the doorstep — but no garden, no parking, and Grade II status likely rules out a ground-floor retrofit. One honest caveat: by your own read, Lympstone isn't especially close to either brother (Woodbury or Otterton) — worth it only if the deal/character is exceptional enough to outweigh that, which arguably it already is (Grade II, chain-free, £5k under budget). Your call. Also nudged down slightly for price — £295k is into the range you'd call over budget even though it's under the £300k hard ceiling.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
@@ -1188,6 +1274,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">NO PARKING (village car park permit)</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Farleys_Gallery_1.jpg" alt="farleys main photo" loading="lazy"></div>
+    <div class="photo-strip"><img src="images/Farleys_Gallery_2.png" alt="farleys photo" loading="lazy"><img src="images/Farleys_Gallery_3.jpg" alt="farleys photo" loading="lazy"><img src="images/Farleys_Gallery_4.jpg" alt="farleys photo" loading="lazy"></div>
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Farleys%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Farleys%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Farleys%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Two-bedroom Grade II listed cottage in the heart of Lympstone village — exposed beams and stonework throughout, cosy sitting/dining room, well-appointed kitchen, family bathroom, two loft areas with Velux windows, gas central heating. Freehold and chain-free. No garden and no dedicated parking — permit parking is available at the village car park nearby. Two pubs, shop, post office, café, sailing club and the estuary all on the doorstep.</p>
+    <p class="why"><strong>Why it's here:</strong> Location-wise this is arguably the best-placed find yet: Lympstone sits on the Exe estuary directly between Exmouth and Woodbury Common — water one way, trails the other, and one of your brothers is in Woodbury just up the hill. Genuine period character (Grade II, beams, stonework), chain-free, and £5k under ceiling. The catches: no parking (the standing hard requirement — waived here only because it's genuinely characterful, with village car park permits as the workaround), no outdoor space, and listed-building consent applies to any alterations. Found via the Exmouth Journal property pages, not the portals.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Best location fit yet — estuary, its own station, and Woodbury Common all on the doorstep — but no garden, no parking, and Grade II status likely rules out a ground-floor retrofit. One honest caveat: by your own read, Lympstone isn't especially close to either brother (Woodbury or Otterton) — worth it only if the deal/character is exceptional enough to outweigh that, which arguably it already is (Grade II, chain-free, £5k under budget). Your call. Also nudged down slightly for price — £295k is into the range you'd call over budget even though it's under the £300k hard ceiling.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -1272,37 +1384,24 @@
   </section>
 
   <section class="card" id="exeterroadflat" data-avg-rating="" data-ai-rating="9">
-    <h2>Exeter Road, Exmouth (ground-floor character flat)</h2>
-    <div class="price-row">
-      <span class="price">£110,000</span>
-      <span class="agent">Spring Estates, Exmouth</span>
-    </div>
-    <a class="source-badge" href="https://www.zoopla.co.uk/for-sale/details/72842267/" target="_blank" rel="noopener">View on ZOOPLA.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">PRICE REDUCED</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Exeter_Road_Flat.jpg" alt="exeterroadflat main photo" loading="lazy"></div>
-    
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Exeter%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Exeter%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Exeter%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Exeter Road, Exmouth (ground-floor character flat)</h2>
+        <div class="price-row">
+          <span class="price">£110,000</span>
+          <span class="agent">Spring Estates, Exmouth</span>
+        </div>
+        <a class="source-badge" href="https://www.zoopla.co.uk/for-sale/details/72842267/" target="_blank" rel="noopener">View on ZOOPLA.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:90%;background:rgb(63,117,60)"></div></div>
+      <span class="rating-row-score">9/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">One-bedroom apartment occupying the entire ground floor of a period building on Exeter Road — high ceilings, large windows overlooking the communal lawn and neighbouring church, generously proportioned living room, bedroom with double doors onto a rear courtyard, modern bathroom, galley kitchen. Allocated parking at the rear. Functional condition with scope for modernisation. 52 years remaining on the lease.</p>
-    <p class="why"><strong>Why it's here:</strong> Still the rare flat that actually passes your flat rules: genuinely cheap AND explicitly the whole ground floor, with a real allocated parking space on top. Reduced a further £20,000 on 24/06/2026, now just £110k — under half of what it was quoted at when first tracked. Worth a sense check on the short (52-year) lease and extension cost before getting excited about the price. Only one photo shown — Zoopla blocks photo scraping, so this is the single press image from the Exmouth Journal writeup.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest genuinely ground-floor-with-parking option on the list, right in the middle of everything — the short 52-year lease is the one number worth checking before getting attached. Comfortably under your real £170k target too, which is worth more to you than the headline £300k ceiling suggests.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:90%;background:rgb(63,117,60)"></div></div>
@@ -1328,6 +1427,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">PRICE REDUCED</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Exeter_Road_Flat.jpg" alt="exeterroadflat main photo" loading="lazy"></div>
+    
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Exeter%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Exeter%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Exeter%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">One-bedroom apartment occupying the entire ground floor of a period building on Exeter Road — high ceilings, large windows overlooking the communal lawn and neighbouring church, generously proportioned living room, bedroom with double doors onto a rear courtyard, modern bathroom, galley kitchen. Allocated parking at the rear. Functional condition with scope for modernisation. 52 years remaining on the lease.</p>
+    <p class="why"><strong>Why it's here:</strong> Still the rare flat that actually passes your flat rules: genuinely cheap AND explicitly the whole ground floor, with a real allocated parking space on top. Reduced a further £20,000 on 24/06/2026, now just £110k — under half of what it was quoted at when first tracked. Worth a sense check on the short (52-year) lease and extension cost before getting excited about the price. Only one photo shown — Zoopla blocks photo scraping, so this is the single press image from the Exmouth Journal writeup.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest genuinely ground-floor-with-parking option on the list, right in the middle of everything — the short 52-year lease is the one number worth checking before getting attached. Comfortably under your real £170k target too, which is worth more to you than the headline £300k ceiling suggests.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -1412,37 +1537,24 @@
   </section>
 
   <section class="card" id="bellstreet" data-avg-rating="" data-ai-rating="5">
-    <h2>3 Bell Street, Otterton</h2>
-    <div class="price-row">
-      <span class="price">£220,000</span>
-      <span class="agent">Pennys, Exmouth</span>
-    </div>
-    <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/bell-street/2-bedroom-terraced-for-sale-in-bell-street-ex9-7hs/270110" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Bell_Street_Otterton.jpg" alt="bellstreet main photo" loading="lazy"></div>
-    
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=3%20Bell%20Street%2C%20Otterton%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=3%20Bell%20Street%2C%20Otterton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=3%20Bell%20Street%2C%20Otterton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>3 Bell Street, Otterton</h2>
+        <div class="price-row">
+          <span class="price">£220,000</span>
+          <span class="agent">Pennys, Exmouth</span>
+        </div>
+        <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/bell-street/2-bedroom-terraced-for-sale-in-bell-street-ex9-7hs/270110" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Two-bedroom terraced cottage: sitting room, kitchen/breakfast room, ground-floor shower room, two first-floor bedrooms with a bathroom, enclosed rear garden with raised beds and a timber store. Roof renewed 2023 but the rest would benefit from general refurbishment. Freehold, Council Tax Band C, no onward chain.</p>
-    <p class="why"><strong>Why it's here:</strong> Cheapest confirmed in-budget option this sweep, and it's in the same village as the Otterton thatched cottage you already liked. But it's even more squarely the thing you flagged a reservation about there: village-centre, on-street parking only, not the remote/rural feel you said you'd prefer. Worth it only if the price and no-chain status outweigh that.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest confirmed option, but exactly the village-centre/no-real-parking profile you said you'd want to avoid if you have a choice.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
@@ -1468,6 +1580,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Bell_Street_Otterton.jpg" alt="bellstreet main photo" loading="lazy"></div>
+    
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=3%20Bell%20Street%2C%20Otterton%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=3%20Bell%20Street%2C%20Otterton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=3%20Bell%20Street%2C%20Otterton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Two-bedroom terraced cottage: sitting room, kitchen/breakfast room, ground-floor shower room, two first-floor bedrooms with a bathroom, enclosed rear garden with raised beds and a timber store. Roof renewed 2023 but the rest would benefit from general refurbishment. Freehold, Council Tax Band C, no onward chain.</p>
+    <p class="why"><strong>Why it's here:</strong> Cheapest confirmed in-budget option this sweep, and it's in the same village as the Otterton thatched cottage you already liked. But it's even more squarely the thing you flagged a reservation about there: village-centre, on-street parking only, not the remote/rural feel you said you'd prefer. Worth it only if the price and no-chain status outweigh that.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest confirmed option, but exactly the village-centre/no-real-parking profile you said you'd want to avoid if you have a choice.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -1552,37 +1690,24 @@
   </section>
 
   <section class="card" id="flexton" data-avg-rating="" data-ai-rating="4">
-    <h2>The Flexton, Ottery St Mary</h2>
-    <div class="price-row">
-      <span class="price">Guide Price £220,000</span>
-      <span class="agent">Hall &amp; Scott, Ottery St Mary</span>
-    </div>
-    <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSOTT_708139" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/The_Flexton_Ottery.jpg" alt="flexton main photo" loading="lazy"></div>
-    
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=The%20Flexton%2C%20Ottery%20St%20Mary%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=The%20Flexton%2C%20Ottery%20St%20Mary%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Flexton%2C%20Ottery%20St%20Mary%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>The Flexton, Ottery St Mary</h2>
+        <div class="price-row">
+          <span class="price">Guide Price £220,000</span>
+          <span class="agent">Hall &amp; Scott, Ottery St Mary</span>
+        </div>
+        <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSOTT_708139" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Deceptively spacious period cottage over three floors: ground-floor kitchen/dining room and a living room built around an open brick fireplace, bathroom with both bath and shower, three bedrooms upstairs (two doubles, one single). Private courtyard with gravel landscaping and pedestrian rear access. Near town-centre amenities, schools, and commuter links (A30, M5, London rail).</p>
-    <p class="why"><strong>Why it's here:</strong> Same price as the Bell Street cottage above but reads as more finished and genuinely characterful — an open brick fireplace and three floors of period detail rather than a fixer-upper. The trade-off: Ottery St Mary is inland, away from both the coast and Woodbury Common, and the courtyard access described sounds pedestrian-only, so parking is probably absent.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Most finished and characterful of the cheap options, but it's the one furthest from the coast/trails brief of anything on the list.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
@@ -1608,6 +1733,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/The_Flexton_Ottery.jpg" alt="flexton main photo" loading="lazy"></div>
+    
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=The%20Flexton%2C%20Ottery%20St%20Mary%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=The%20Flexton%2C%20Ottery%20St%20Mary%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Flexton%2C%20Ottery%20St%20Mary%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Deceptively spacious period cottage over three floors: ground-floor kitchen/dining room and a living room built around an open brick fireplace, bathroom with both bath and shower, three bedrooms upstairs (two doubles, one single). Private courtyard with gravel landscaping and pedestrian rear access. Near town-centre amenities, schools, and commuter links (A30, M5, London rail).</p>
+    <p class="why"><strong>Why it's here:</strong> Same price as the Bell Street cottage above but reads as more finished and genuinely characterful — an open brick fireplace and three floors of period detail rather than a fixer-upper. The trade-off: Ottery St Mary is inland, away from both the coast and Woodbury Common, and the courtyard access described sounds pedestrian-only, so parking is probably absent.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Most finished and characterful of the cheap options, but it's the one furthest from the coast/trails brief of anything on the list.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -1692,37 +1843,24 @@
   </section>
 
   <section class="card" id="beaconflat" data-avg-rating="" data-ai-rating="4">
-    <h2>The Beacon, Exmouth (ground-floor flat)</h2>
-    <div class="price-row">
-      <span class="price">£309,950</span>
-      <span class="agent">Pennys, Exmouth</span>
-    </div>
-    <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/the-beacon/2-bedroom-groundfloorflat-for-sale-in-the-beacon-ex8-2ag/270212" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
-    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET (+£9,950)</span><span class="flag" style="background:#1565C0">HAS PARKING</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Beacon_Flat_Exmouth.jpg" alt="beaconflat main photo" loading="lazy"></div>
-    
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>The Beacon, Exmouth (ground-floor flat)</h2>
+        <div class="price-row">
+          <span class="price">£309,950</span>
+          <span class="agent">Pennys, Exmouth</span>
+        </div>
+        <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/the-beacon/2-bedroom-groundfloorflat-for-sale-in-the-beacon-ex8-2ag/270212" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Two-double-bedroom ground-floor flat, a quarter-share of the freehold on a 999-year lease in a self-managed building of four apartments (£120/month maintenance). Bay-window sitting room overlooking the estuary, modern kitchen, bathroom with rainfall shower plus a separate cloakroom, stone fireplace. A secure parking space (up-and-over door) is included at the rear.</p>
-    <p class="why"><strong>Why it's here:</strong> Note: this is a different property from the over-budget Beacon house already on file below — same building name, unrelated listing. This one is genuinely ground-floor with a real allocated parking space (not just street parking) plus an estuary view, which is unusual for a flat at this price. But it's £9,950 (3%) over your £300k ceiling and it's a flat, so only worth a look if you'd flex the ceiling slightly for a genuine parking bay and the view.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Real ground-floor parking and an estuary view are rare for a flat, but it's over budget and still just a flat, not the characterful find you're really after. Already over the £300k hard ceiling, which the price alone makes hard to justify given your real ~£170-200k target.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
@@ -1748,6 +1886,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET (+£9,950)</span><span class="flag" style="background:#1565C0">HAS PARKING</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Beacon_Flat_Exmouth.jpg" alt="beaconflat main photo" loading="lazy"></div>
+    
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Two-double-bedroom ground-floor flat, a quarter-share of the freehold on a 999-year lease in a self-managed building of four apartments (£120/month maintenance). Bay-window sitting room overlooking the estuary, modern kitchen, bathroom with rainfall shower plus a separate cloakroom, stone fireplace. A secure parking space (up-and-over door) is included at the rear.</p>
+    <p class="why"><strong>Why it's here:</strong> Note: this is a different property from the over-budget Beacon house already on file below — same building name, unrelated listing. This one is genuinely ground-floor with a real allocated parking space (not just street parking) plus an estuary view, which is unusual for a flat at this price. But it's £9,950 (3%) over your £300k ceiling and it's a flat, so only worth a look if you'd flex the ceiling slightly for a genuine parking bay and the view.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Real ground-floor parking and an estuary view are rare for a flat, but it's over budget and still just a flat, not the characterful find you're really after. Already over the £300k hard ceiling, which the price alone makes hard to justify given your real ~£170-200k target.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -1832,37 +1996,24 @@
   </section>
 
   <section class="card" id="cranford" data-avg-rating="" data-ai-rating="5">
-    <h2>Cranford Avenue, Exmouth (ground-floor flat)</h2>
-    <div class="price-row">
-      <span class="price">£250,000</span>
-      <span class="agent">Hall &amp; Scott, Exmouth</span>
-    </div>
-    <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_708054" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#9E9E9E">PARKING UNKNOWN</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Cranford_Avenue_Exmouth.jpg" alt="cranford main photo" loading="lazy"></div>
-    
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Cranford%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Cranford%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Cranford%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Cranford Avenue, Exmouth (ground-floor flat)</h2>
+        <div class="price-row">
+          <span class="price">£250,000</span>
+          <span class="agent">Hall &amp; Scott, Exmouth</span>
+        </div>
+        <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_708054" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Two-double-bedroom ground-floor apartment in the Avenues area of Exmouth, beautifully modernised throughout, sold with no onward chain and ready to move into.</p>
-    <p class="why"><strong>Why it's here:</strong> A safely-in-budget, ready-to-go fallback flat if nothing more characterful turns up — similar in spirit to the Douglas Avenue flat already on file, but £15,000 cheaper. No parking mentioned in the listing, so treat as unconfirmed rather than absent (Douglas Avenue has confirmed allocated parking).</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Safe, ready-to-move-into fallback in the right town, but no character and parking is unconfirmed rather than guaranteed.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
@@ -1888,6 +2039,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#9E9E9E">PARKING UNKNOWN</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Cranford_Avenue_Exmouth.jpg" alt="cranford main photo" loading="lazy"></div>
+    
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Cranford%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Cranford%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Cranford%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Two-double-bedroom ground-floor apartment in the Avenues area of Exmouth, beautifully modernised throughout, sold with no onward chain and ready to move into.</p>
+    <p class="why"><strong>Why it's here:</strong> A safely-in-budget, ready-to-go fallback flat if nothing more characterful turns up — similar in spirit to the Douglas Avenue flat already on file, but £15,000 cheaper. No parking mentioned in the listing, so treat as unconfirmed rather than absent (Douglas Avenue has confirmed allocated parking).</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Safe, ready-to-move-into fallback in the right town, but no character and parking is unconfirmed rather than guaranteed.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -1972,37 +2149,24 @@
   </section>
 
   <section class="card" id="otterton" data-avg-rating="" data-ai-rating="6">
-    <h2>Thatched Cottage, The Green, Otterton</h2>
-    <div class="price-row">
-      <span class="price">£225,000 (guide price)</span>
-      <span class="agent">Rightmove listing</span>
-    </div>
-    <a class="source-badge" href="https://www.rightmove.co.uk/properties/174232565" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#C2185B">LIKED BY JESSE</span><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Otterton_Gallery_1.jpg" alt="otterton main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Otterton_Gallery_2.jpg" alt="otterton photo" loading="lazy"><img src="images/Otterton_Gallery_3.jpg" alt="otterton photo" loading="lazy"><img src="images/Otterton_Gallery_4.jpg" alt="otterton photo" loading="lazy"></div>
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Thatched%20Cottage%2C%20The%20Green%2C%20Otterton%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Thatched%20Cottage%2C%20The%20Green%2C%20Otterton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Thatched%20Cottage%2C%20The%20Green%2C%20Otterton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Thatched Cottage, The Green, Otterton</h2>
+        <div class="price-row">
+          <span class="price">£225,000 (guide price)</span>
+          <span class="agent">Rightmove listing</span>
+        </div>
+        <a class="source-badge" href="https://www.rightmove.co.uk/properties/174232565" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Attractive three-bedroom thatched cottage right in the centre of Otterton village, close to the River Otter and Otterton Mill. South-facing rear garden, period stone fireplace and window seat. Needs modernising throughout — priced accordingly.</p>
-    <p class="why"><strong>Why it's here:</strong> Jesse flagged this one personally — near his brother, a lovely part of Devon. His one reservation: it's village-centre (on-street parking only) and he'd prefer something a bit more remote/rural. Worth weighing character + location against the more remote feel he's after. See 3 Bell Street above — a cheaper fixer-upper in the same village if this one's too finished/pricey.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> The thatched-cottage character you love, near your brother, but it's the exact village-centre/on-street-parking trade-off you flagged not wanting — you said as much yourself.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
@@ -2028,6 +2192,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#C2185B">LIKED BY JESSE</span><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Otterton_Gallery_1.jpg" alt="otterton main photo" loading="lazy"></div>
+    <div class="photo-strip"><img src="images/Otterton_Gallery_2.jpg" alt="otterton photo" loading="lazy"><img src="images/Otterton_Gallery_3.jpg" alt="otterton photo" loading="lazy"><img src="images/Otterton_Gallery_4.jpg" alt="otterton photo" loading="lazy"></div>
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Thatched%20Cottage%2C%20The%20Green%2C%20Otterton%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Thatched%20Cottage%2C%20The%20Green%2C%20Otterton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Thatched%20Cottage%2C%20The%20Green%2C%20Otterton%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Attractive three-bedroom thatched cottage right in the centre of Otterton village, close to the River Otter and Otterton Mill. South-facing rear garden, period stone fireplace and window seat. Needs modernising throughout — priced accordingly.</p>
+    <p class="why"><strong>Why it's here:</strong> Jesse flagged this one personally — near his brother, a lovely part of Devon. His one reservation: it's village-centre (on-street parking only) and he'd prefer something a bit more remote/rural. Worth weighing character + location against the more remote feel he's after. See 3 Bell Street above — a cheaper fixer-upper in the same village if this one's too finished/pricey.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> The thatched-cottage character you love, near your brother, but it's the exact village-centre/on-street-parking trade-off you flagged not wanting — you said as much yourself.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -2112,37 +2302,24 @@
   </section>
 
   <section class="card" id="feniton" data-avg-rating="" data-ai-rating="8">
-    <h2>Barn at Whites Cottages, Feniton — AUCTION</h2>
-    <div class="price-row">
-      <span class="price">£65,000 (guide price)</span>
-      <span class="agent">Hall &amp; Scott, Ottery St Mary</span>
-    </div>
-    <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSOTT_708623" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#E65100">AUCTION 23 JUL 2026</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Feniton_Barn.jpg" alt="feniton main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Feniton_Gallery_2.jpg" alt="feniton photo" loading="lazy"><img src="images/Feniton_Gallery_3.jpg" alt="feniton photo" loading="lazy"></div>
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Barn%20at%20Whites%20Cottages%2C%20Feniton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Barn%20at%20Whites%20Cottages%2C%20Feniton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Barn%20at%20Whites%20Cottages%2C%20Feniton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Barn at Whites Cottages, Feniton — AUCTION</h2>
+        <div class="price-row">
+          <span class="price">£65,000 (guide price)</span>
+          <span class="agent">Hall &amp; Scott, Ottery St Mary</span>
+        </div>
+        <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSOTT_708623" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:80%;background:rgb(79,109,60)"></div></div>
+      <span class="rating-row-score">8/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Freehold barn on a 0.21-acre plot on the edge of Feniton village. Already has full planning permission (East Devon DC ref 25/0370/FUL, granted Sept 2025) to convert and extend into a 3-bedroom dwelling with parking and garden. Going to online auction 23 July 2026.</p>
-    <p class="why"><strong>Why it's here:</strong> The self-build/conversion-plot opportunity Jesse said he'd consider — cheap land with permission already in hand. Downside: inland near Honiton, off the coast/trails brief.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest, most flexible option — you could design in ground-floor living and a workshop from scratch — but it's inland, off the coast and trails brief entirely. Also comfortably under your real £170k target — the cheapest thing on the list by a wide margin.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:80%;background:rgb(79,109,60)"></div></div>
@@ -2168,6 +2345,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#E65100">AUCTION 23 JUL 2026</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Feniton_Barn.jpg" alt="feniton main photo" loading="lazy"></div>
+    <div class="photo-strip"><img src="images/Feniton_Gallery_2.jpg" alt="feniton photo" loading="lazy"><img src="images/Feniton_Gallery_3.jpg" alt="feniton photo" loading="lazy"></div>
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Barn%20at%20Whites%20Cottages%2C%20Feniton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Barn%20at%20Whites%20Cottages%2C%20Feniton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Barn%20at%20Whites%20Cottages%2C%20Feniton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Freehold barn on a 0.21-acre plot on the edge of Feniton village. Already has full planning permission (East Devon DC ref 25/0370/FUL, granted Sept 2025) to convert and extend into a 3-bedroom dwelling with parking and garden. Going to online auction 23 July 2026.</p>
+    <p class="why"><strong>Why it's here:</strong> The self-build/conversion-plot opportunity Jesse said he'd consider — cheap land with permission already in hand. Downside: inland near Honiton, off the coast/trails brief.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest, most flexible option — you could design in ground-floor living and a workshop from scratch — but it's inland, off the coast and trails brief entirely. Also comfortably under your real £170k target — the cheapest thing on the list by a wide margin.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -2252,37 +2455,24 @@
   </section>
 
   <section class="card" id="douglas" data-avg-rating="" data-ai-rating="5">
-    <h2>Douglas Avenue, Exmouth</h2>
-    <div class="price-row">
-      <span class="price">£235,000</span>
-      <span class="agent">Hall &amp; Scott</span>
-    </div>
-    <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_697185" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Douglas_Avenue__Exmouth_2.jpg" alt="douglas main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Douglas_Gallery_2.jpg" alt="douglas photo" loading="lazy"><img src="images/Douglas_Gallery_3.jpg" alt="douglas photo" loading="lazy"></div>
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Douglas%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Douglas%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Douglas%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Douglas Avenue, Exmouth</h2>
+        <div class="price-row">
+          <span class="price">£235,000</span>
+          <span class="agent">Hall &amp; Scott</span>
+        </div>
+        <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_697185" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Two-bed purpose-built apartment, balcony, allocated parking, near seafront/town centre, between town and the sea.</p>
-    <p class="why"><strong>Why it's here:</strong> Conventional but solid fallback if nothing more characterful turns up in budget. It's a flat, floor level unconfirmed.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Solid, safe fallback with real parking in the right town, but no character and no garden — a placeholder rather than an exciting option.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
@@ -2308,6 +2498,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Douglas_Avenue__Exmouth_2.jpg" alt="douglas main photo" loading="lazy"></div>
+    <div class="photo-strip"><img src="images/Douglas_Gallery_2.jpg" alt="douglas photo" loading="lazy"><img src="images/Douglas_Gallery_3.jpg" alt="douglas photo" loading="lazy"></div>
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Douglas%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Douglas%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Douglas%20Avenue%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Two-bed purpose-built apartment, balcony, allocated parking, near seafront/town centre, between town and the sea.</p>
+    <p class="why"><strong>Why it's here:</strong> Conventional but solid fallback if nothing more characterful turns up in budget. It's a flat, floor level unconfirmed.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Solid, safe fallback with real parking in the right town, but no character and no garden — a placeholder rather than an exciting option.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -2392,12 +2608,51 @@
   </section>
 <h1 class="section-title">Also On File (background)</h1>
   <section class="card" id="sidmouth" data-avg-rating="" data-ai-rating="5">
-    <h2>Circular Thatched Cliff-top Cottage, Peak Hill Road, Sidmouth</h2>
-    <div class="price-row">
-      <span class="price">Guide price £250,000 (auction)</span>
-      <span class="agent">Bradleys Estate Agents</span>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Circular Thatched Cliff-top Cottage, Peak Hill Road, Sidmouth</h2>
+        <div class="price-row">
+          <span class="price">Guide price £250,000 (auction)</span>
+          <span class="agent">Bradleys Estate Agents</span>
+        </div>
+        <a class="source-badge" href="https://www.rightmove.co.uk/properties/90027936" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
+      </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
     </div>
-    <a class="source-badge" href="https://www.rightmove.co.uk/properties/90027936" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
+  
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty " data-property="sidmouth" data-bro="Bro 1">
+        <span class="rating-row-label">Bro 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty " data-property="sidmouth" data-bro="Bro 2">
+        <span class="rating-row-label">Bro 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty " data-property="sidmouth" data-bro="Bro 3">
+        <span class="rating-row-label">Bro 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    </div>
+      </div>
+    </div>
     <div class="flags"><span class="flag" style="background:#616161">DECLINED BY JESSE — EROSION/INSURANCE RISK</span><span class="flag" style="background:#B71C1C">KNOWN CLIFF EROSION RISK</span><span class="flag" style="background:#E65100">AUCTION 21 JUL 2026, 12pm</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Sidmouth_Gallery_1.jpg" alt="sidmouth main photo" loading="lazy"></div>
@@ -2433,32 +2688,6 @@
       
     </div>
   
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
-      <span class="rating-row-score">5/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
-    </div>
-  
-      <div class="rating-row rating-row-empty " data-property="sidmouth" data-bro="Bro 1">
-        <span class="rating-row-label">Bro 1</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
-        <span class="rating-row-score">not yet rated</span>
-      </div>
-    
-      <div class="rating-row rating-row-empty " data-property="sidmouth" data-bro="Bro 2">
-        <span class="rating-row-label">Bro 2</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
-        <span class="rating-row-score">not yet rated</span>
-      </div>
-    
-      <div class="rating-row rating-row-empty " data-property="sidmouth" data-bro="Bro 3">
-        <span class="rating-row-label">Bro 3</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
-        <span class="rating-row-score">not yet rated</span>
-      </div>
-    </div>
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -2543,34 +2772,24 @@
   </section>
 
   <section class="card" id="yettington" data-avg-rating="" data-ai-rating="4">
-    <h2>The Threshing Barn, Yettington</h2>
-    <div class="price-row">
-      <span class="price">£375,000–£400,000 (guide price)</span>
-      <span class="agent">Wilkinson Grant &amp; Co</span>
-    </div>
-    <a class="source-badge" href="https://www.exmouthjournal.co.uk/news/24440905.property-sale-near-budleigh-salterton-two-bedroom-house/" target="_blank" rel="noopener">View on EXMOUTHJOURNAL.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#1565C0">HAS PARKING</span><span class="flag" style="background:#8D6E63">LIKELY SOLD</span></div>
-    <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=The%20Threshing%20Barn%2C%20Yettington%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=The%20Threshing%20Barn%2C%20Yettington%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Threshing%20Barn%2C%20Yettington%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>The Threshing Barn, Yettington</h2>
+        <div class="price-row">
+          <span class="price">£375,000–£400,000 (guide price)</span>
+          <span class="agent">Wilkinson Grant &amp; Co</span>
+        </div>
+        <a class="source-badge" href="https://www.exmouthjournal.co.uk/news/24440905.property-sale-near-budleigh-salterton-two-bedroom-house/" target="_blank" rel="noopener">View on EXMOUTHJOURNAL.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Two-bedroom barn conversion in the small hamlet of Yettington, directly on the walking/cycling routes linking Budleigh Salterton, East Budleigh, and Woodbury Common. Stable-style front door, vaulted ceilings, exposed beams, ~798 sq ft, gardens and allocated parking.</p>
-    <p class="why"><strong>Why it's here:</strong> About as close as a converted barn gets to the Woodbury Common trail network. Priced 25-33% over budget and compact for the money. Downgraded to likely sold this sweep: on top of the agent's own listing page redirecting to a generic search, a Rightmove mirror for a similar 3-bed Yettington barn conversion now also returns 410 Gone. Kept only as a benchmark/inspiration piece unless Jesse wants it chased further.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> About the best trail-network location of anything found, and has real character, but likely gone and was already 25-33% over budget. Already well past the £300k ceiling — a benchmark piece, not a real contender on price alone.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
@@ -2596,6 +2815,29 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#1565C0">HAS PARKING</span><span class="flag" style="background:#8D6E63">LIKELY SOLD</span></div>
+    <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=The%20Threshing%20Barn%2C%20Yettington%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=The%20Threshing%20Barn%2C%20Yettington%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Threshing%20Barn%2C%20Yettington%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Two-bedroom barn conversion in the small hamlet of Yettington, directly on the walking/cycling routes linking Budleigh Salterton, East Budleigh, and Woodbury Common. Stable-style front door, vaulted ceilings, exposed beams, ~798 sq ft, gardens and allocated parking.</p>
+    <p class="why"><strong>Why it's here:</strong> About as close as a converted barn gets to the Woodbury Common trail network. Priced 25-33% over budget and compact for the money. Downgraded to likely sold this sweep: on top of the agent's own listing page redirecting to a generic search, a Rightmove mirror for a similar 3-bed Yettington barn conversion now also returns 410 Gone. Kept only as a benchmark/inspiration piece unless Jesse wants it chased further.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> About the best trail-network location of anything found, and has real character, but likely gone and was already 25-33% over budget. Already well past the £300k ceiling — a benchmark piece, not a real contender on price alone.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -2680,37 +2922,24 @@
   </section>
 
   <section class="card" id="beacon" data-avg-rating="" data-ai-rating="3">
-    <h2>The Beacon, Exmouth (inspiration only)</h2>
-    <div class="price-row">
-      <span class="price">Offers over £400,000</span>
-      <span class="agent">Hall &amp; Scott</span>
-    </div>
-    <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_707936" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">NEEDS RENOVATION</span><span class="flag" style="background:#1565C0">HAS PARKING (garage)</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/The_Beacon__Exmouth_1.jpg" alt="beacon main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Beacon_Gallery_2.jpg" alt="beacon photo" loading="lazy"><img src="images/Beacon_Gallery_3.jpg" alt="beacon photo" loading="lazy"></div>
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>The Beacon, Exmouth (inspiration only)</h2>
+        <div class="price-row">
+          <span class="price">Offers over £400,000</span>
+          <span class="agent">Hall &amp; Scott</span>
+        </div>
+        <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_707936" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
+      <span class="rating-row-score">3/10</span>
+      <span class="rating-row-flames">🔥🔥🔥</span>
     </div>
   
-    <p class="body">Grade II-listed four-storey house needing renovation, sea views from the upper floors, private garden and garage, walking distance to town centre and seafront.</p>
-    <p class="why"><strong>Why it's here:</strong> Well over budget but kept as a benchmark for what full-renovation character stock costs locally.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Character and garage boxes are both ticked hard, but it's 33%+ over budget and a full four-storey renovation project, not a quick move-in. Already well past the £300k ceiling, on top of being a major renovation project.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
@@ -2736,6 +2965,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">NEEDS RENOVATION</span><span class="flag" style="background:#1565C0">HAS PARKING (garage)</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/The_Beacon__Exmouth_1.jpg" alt="beacon main photo" loading="lazy"></div>
+    <div class="photo-strip"><img src="images/Beacon_Gallery_2.jpg" alt="beacon photo" loading="lazy"><img src="images/Beacon_Gallery_3.jpg" alt="beacon photo" loading="lazy"></div>
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Beacon%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Grade II-listed four-storey house needing renovation, sea views from the upper floors, private garden and garage, walking distance to town centre and seafront.</p>
+    <p class="why"><strong>Why it's here:</strong> Well over budget but kept as a benchmark for what full-renovation character stock costs locally.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Character and garage boxes are both ticked hard, but it's 33%+ over budget and a full four-storey renovation project, not a quick move-in. Already well past the £300k ceiling, on top of being a major renovation project.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -2820,37 +3075,24 @@
   </section>
 
   <section class="card" id="withycombe" data-avg-rating="" data-ai-rating="3">
-    <h2>Withycombe Village Road, Exmouth (former Methodist Church)</h2>
-    <div class="price-row">
-      <span class="price">Guide price £350,000 (as of first report, unconfirmed)</span>
-      <span class="agent">Hall &amp; Scott</span>
-    </div>
-    <a class="source-badge" href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Withycombe_Village_Road__Exmouth_3.jpg" alt="withycombe main photo" loading="lazy"></div>
-    
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Withycombe%20Village%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Withycombe%20Village%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Withycombe%20Village%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Withycombe Village Road, Exmouth (former Methodist Church)</h2>
+        <div class="price-row">
+          <span class="price">Guide price £350,000 (as of first report, unconfirmed)</span>
+          <span class="agent">Hall &amp; Scott</span>
+        </div>
+        <a class="source-badge" href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
+      <span class="rating-row-score">3/10</span>
+      <span class="rating-row-flames">🔥🔥🔥</span>
     </div>
   
-    <p class="body">Former Methodist Church and adjoining Church Hall, gardens, conversion project subject to planning consent.</p>
-    <p class="why"><strong>Why it's here:</strong> Couldn't re-locate this exact listing this sweep — may have sold or been withdrawn. Kept as inspiration for the flavour of conversion opportunity this market does throw up.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> The most unusual conversion flavour found so far, but too much of the listing (price, status, layout) is unconfirmed to rate it with real confidence. Already well past the £300k ceiling on top of everything else unconfirmed.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
@@ -2876,6 +3118,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Withycombe_Village_Road__Exmouth_3.jpg" alt="withycombe main photo" loading="lazy"></div>
+    
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Withycombe%20Village%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Withycombe%20Village%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Withycombe%20Village%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Former Methodist Church and adjoining Church Hall, gardens, conversion project subject to planning consent.</p>
+    <p class="why"><strong>Why it's here:</strong> Couldn't re-locate this exact listing this sweep — may have sold or been withdrawn. Kept as inspiration for the flavour of conversion opportunity this market does throw up.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> The most unusual conversion flavour found so far, but too much of the listing (price, status, layout) is unconfirmed to rate it with real confidence. Already well past the £300k ceiling on top of everything else unconfirmed.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -2960,34 +3228,24 @@
   </section>
 
   <section class="card" id="salterton" data-avg-rating="" data-ai-rating="6">
-    <h2>Salterton Road, Exmouth (ground-floor retirement flat)</h2>
-    <div class="price-row">
-      <span class="price">£150,000 (as of first report, unconfirmed)</span>
-      <span class="agent">Hall &amp; Scott</span>
-    </div>
-    <a class="source-badge" href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Salterton%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Salterton%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Salterton%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Salterton Road, Exmouth (ground-floor retirement flat)</h2>
+        <div class="price-row">
+          <span class="price">£150,000 (as of first report, unconfirmed)</span>
+          <span class="agent">Hall &amp; Scott</span>
+        </div>
+        <a class="source-badge" href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Two-bedroom ground-floor retirement apartment, direct access to communal gardens, close to amenities and bus routes. Likely age-restricted.</p>
-    <p class="why"><strong>Why it's here:</strong> Cheapest option found originally; could not reconfirm this exact flat this sweep (a different Salterton Road retirement flat, Bronte Court, now shows instead). No photo included to avoid misattributing an image to the wrong flat.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Ticks ground-floor and location boxes cheaply, but likely age-restricted and has none of the character you're after — a fallback, not a favourite. Also under your real £170k target, which counts for more than the £300k ceiling implies.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
@@ -3013,6 +3271,29 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Salterton%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Salterton%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Salterton%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Two-bedroom ground-floor retirement apartment, direct access to communal gardens, close to amenities and bus routes. Likely age-restricted.</p>
+    <p class="why"><strong>Why it's here:</strong> Cheapest option found originally; could not reconfirm this exact flat this sweep (a different Salterton Road retirement flat, Bronte Court, now shows instead). No photo included to avoid misattributing an image to the wrong flat.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Ticks ground-floor and location boxes cheaply, but likely age-restricted and has none of the character you're after — a fallback, not a favourite. Also under your real £170k target, which counts for more than the £300k ceiling implies.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -3097,37 +3378,24 @@
   </section>
 
   <section class="card" id="eastbudleigh" data-avg-rating="" data-ai-rating="2">
-    <h2>Grade II Thatched Cottage, High Street, East Budleigh</h2>
-    <div class="price-row">
-      <span class="price">£435,000</span>
-      <span class="agent">Pennys</span>
-    </div>
-    <a class="source-badge" href="https://www.rightmove.co.uk/properties/165338390" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
-    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">LIKELY SOLD/WITHDRAWN</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/East_Budleigh_Cottage.jpg" alt="eastbudleigh main photo" loading="lazy"></div>
-    
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Grade%20II%20Thatched%20Cottage%2C%20High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Grade%20II%20Thatched%20Cottage%2C%20High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Grade%20II%20Thatched%20Cottage%2C%20High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Grade II Thatched Cottage, High Street, East Budleigh</h2>
+        <div class="price-row">
+          <span class="price">£435,000</span>
+          <span class="agent">Pennys</span>
+        </div>
+        <a class="source-badge" href="https://www.rightmove.co.uk/properties/165338390" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:20%;background:rgb(178,63,60)"></div></div>
+      <span class="rating-row-score">2/10</span>
+      <span class="rating-row-flames">🔥🔥</span>
     </div>
   
-    <p class="body">Genuinely characterful double-fronted thatched cottage, 1600s core with a 1700s rear extension.</p>
-    <p class="why"><strong>Why it's here:</strong> 45% over budget, kept as inspiration. The Rightmove listing now returns "410 Gone", suggesting it has sold or been withdrawn.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Genuinely characterful but 45% over budget and likely already gone — kept only as a benchmark. Already well past the £300k ceiling, on top of likely being sold.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:20%;background:rgb(178,63,60)"></div></div>
@@ -3153,6 +3421,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">LIKELY SOLD/WITHDRAWN</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/East_Budleigh_Cottage.jpg" alt="eastbudleigh main photo" loading="lazy"></div>
+    
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Grade%20II%20Thatched%20Cottage%2C%20High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Grade%20II%20Thatched%20Cottage%2C%20High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Grade%20II%20Thatched%20Cottage%2C%20High%20Street%2C%20East%20Budleigh%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Genuinely characterful double-fronted thatched cottage, 1600s core with a 1700s rear extension.</p>
+    <p class="why"><strong>Why it's here:</strong> 45% over budget, kept as inspiration. The Rightmove listing now returns "410 Gone", suggesting it has sold or been withdrawn.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Genuinely characterful but 45% over budget and likely already gone — kept only as a benchmark. Already well past the £300k ceiling, on top of likely being sold.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -3237,37 +3531,24 @@
   </section>
 
   <section class="card" id="clinton" data-avg-rating="" data-ai-rating="3">
-    <h2>Clinton Garage, Budleigh Salterton — AUCTION</h2>
-    <div class="price-row">
-      <span class="price">£375,000 (guide price)</span>
-      <span class="agent">Meadows / 247 Property Auctions</span>
-    </div>
-    <a class="source-badge" href="https://www.meadowsea.com/Property-For-Sale-Clinton-Garage-Budleigh-Salterton-pi-MEAD1265.htm" target="_blank" rel="noopener">View on MEADOWSEA.COM ↗</a>
-    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#E65100">AUCTION 16 JUL 2026, 12pm</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Clinton_Garage.jpg" alt="clinton main photo" loading="lazy"></div>
-    
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Clinton%20Garage%2C%20Budleigh%20Salterton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Clinton%20Garage%2C%20Budleigh%20Salterton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Clinton%20Garage%2C%20Budleigh%20Salterton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>Clinton Garage, Budleigh Salterton — AUCTION</h2>
+        <div class="price-row">
+          <span class="price">£375,000 (guide price)</span>
+          <span class="agent">Meadows / 247 Property Auctions</span>
+        </div>
+        <a class="source-badge" href="https://www.meadowsea.com/Property-For-Sale-Clinton-Garage-Budleigh-Salterton-pi-MEAD1265.htm" target="_blank" rel="noopener">View on MEADOWSEA.COM ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
+      <span class="rating-row-score">3/10</span>
+      <span class="rating-row-flames">🔥🔥🔥</span>
     </div>
   
-    <p class="body">Former commercial garage/MOT site right in Budleigh Salterton itself — conversion/redevelopment long-shot.</p>
-    <p class="why"><strong>Why it's here:</strong> Over budget and speculative, but flagged given the town-centre location and imminent auction date.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> The most literal 'workshop you could hire out' find yet, right in Budleigh itself, but it's speculative, over budget, and a redevelopment project rather than a move-in-ready home. Already well past the £300k ceiling on top of being speculative.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
@@ -3293,6 +3574,32 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#E65100">AUCTION 16 JUL 2026, 12pm</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Clinton_Garage.jpg" alt="clinton main photo" loading="lazy"></div>
+    
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Clinton%20Garage%2C%20Budleigh%20Salterton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Clinton%20Garage%2C%20Budleigh%20Salterton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Clinton%20Garage%2C%20Budleigh%20Salterton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Former commercial garage/MOT site right in Budleigh Salterton itself — conversion/redevelopment long-shot.</p>
+    <p class="why"><strong>Why it's here:</strong> Over budget and speculative, but flagged given the town-centre location and imminent auction date.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> The most literal 'workshop you could hire out' find yet, right in Budleigh itself, but it's speculative, over budget, and a redevelopment project rather than a move-in-ready home. Already well past the £300k ceiling on top of being speculative.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -3377,34 +3684,24 @@
   </section>
 
   <section class="card" id="leslie" data-avg-rating="" data-ai-rating="4">
-    <h2>The Coach House, Leslie Road, Exmouth</h2>
-    <div class="price-row">
-      <span class="price">£215,000</span>
-      <span class="agent">Pennys</span>
-    </div>
-    <a class="source-badge" href="https://www.pennys.net/property-search" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span></div>
-    <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=The%20Coach%20House%2C%20Leslie%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=The%20Coach%20House%2C%20Leslie%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Coach%20House%2C%20Leslie%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>The Coach House, Leslie Road, Exmouth</h2>
+        <div class="price-row">
+          <span class="price">£215,000</span>
+          <span class="agent">Pennys</span>
+        </div>
+        <a class="source-badge" href="https://www.pennys.net/property-search" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
       </div>
+      <div class="card-top-right">
+        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
     </div>
   
-    <p class="body">Freehold, no parking mentioned — originally sent over by Jesse rather than found by search.</p>
-    <p class="why"><strong>Why it's here:</strong> Could not reconfirm this exact listing this sweep; a different, pricier Leslie Road property now shows instead. Worth a direct call: 01395 264111.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Could be a good, cheap, characterful find in the right town, but the listing couldn't be reconfirmed this sweep — worth a direct call before reading too much into it.</p>
-    
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
@@ -3430,6 +3727,29 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     </div>
+      </div>
+    </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span></div>
+    <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=The%20Coach%20House%2C%20Leslie%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=The%20Coach%20House%2C%20Leslie%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Coach%20House%2C%20Leslie%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Freehold, no parking mentioned — originally sent over by Jesse rather than found by search.</p>
+    <p class="why"><strong>Why it's here:</strong> Could not reconfirm this exact listing this sweep; a different, pricier Leslie Road property now shows instead. Worth a direct call: 01395 264111.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Could be a good, cheap, characterful find in the right town, but the listing couldn't be reconfirmed this sweep — worth a direct call before reading too much into it.</p>
+    
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -3578,6 +3898,33 @@ function ratingBarColorJs(score) {
   return 'rgb(' + r + ',' + g + ',60)';
 }
 
+var BRO_WEIGHTS_JS = { 'Bro 1': 1, 'Bro 2': 1, 'Bro 3': 2 };
+
+function recomputeOverall(card) {
+  var overallRow = card.querySelector('.rating-row-overall');
+  if (!overallRow) return;
+  var total = 0, weight = 0;
+  var aiScoreEl = card.querySelector('.rating-row-ai .rating-row-score');
+  var aiScore = aiScoreEl ? parseFloat(aiScoreEl.textContent) : NaN;
+  if (!isNaN(aiScore)) { total += aiScore * 1; weight += 1; }
+  card.querySelectorAll('.rating-row[data-bro]:not(.rating-row-empty)').forEach(function (row) {
+    var scoreEl = row.querySelector('.rating-row-score');
+    var score = scoreEl ? parseFloat(scoreEl.textContent) : NaN;
+    if (isNaN(score)) return;
+    var w = BRO_WEIGHTS_JS[row.dataset.bro] || 1;
+    total += score * w;
+    weight += w;
+  });
+  if (!weight) return;
+  var overall = total / weight;
+  overallRow.classList.remove('rating-row-empty');
+  overallRow.querySelector('.rating-bar-fill').style.width = (overall * 10) + '%';
+  overallRow.querySelector('.rating-bar-fill').style.background = ratingBarColorJs(overall);
+  overallRow.querySelector('.rating-row-score').textContent = overall.toFixed(1) + '/10';
+  var flamesEl = overallRow.querySelector('.rating-row-flames');
+  if (flamesEl) flamesEl.textContent = '🔥'.repeat(Math.round(overall));
+}
+
 function updateRatingRow(propertyId, bro, score) {
   var row = document.querySelector('.rating-row[data-property="' + propertyId + '"][data-bro="' + bro + '"]');
   if (!row) return;
@@ -3589,12 +3936,17 @@ function updateRatingRow(propertyId, bro, score) {
   if (flamesEl) flamesEl.textContent = '🔥'.repeat(Math.round(score));
   var card = row.closest('.card');
   if (card) {
-    var scores = Array.from(card.querySelectorAll('.rating-row:not(.rating-row-ai):not(.rating-row-empty) .rating-row-score'))
-      .map(function (el) { return parseFloat(el.textContent); })
-      .filter(function (n) { return !isNaN(n); });
-    if (scores.length) {
-      card.dataset.avgRating = (scores.reduce(function (a, b) { return a + b; }, 0) / scores.length).toFixed(2);
-    }
+    var total = 0, weight = 0;
+    card.querySelectorAll('.rating-row[data-bro]:not(.rating-row-empty)').forEach(function (r) {
+      var scoreEl = r.querySelector('.rating-row-score');
+      var v = scoreEl ? parseFloat(scoreEl.textContent) : NaN;
+      if (isNaN(v)) return;
+      var w = BRO_WEIGHTS_JS[r.dataset.bro] || 1;
+      total += v * w;
+      weight += w;
+    });
+    if (weight) card.dataset.avgRating = (total / weight).toFixed(2);
+    recomputeOverall(card);
   }
 }
 

@@ -113,20 +113,32 @@ function ratingRowHtml(label, score, cls, propertyId, bro) {
       </div>
     `;
   }
+  const scoreLabel = Number.isInteger(score) ? score : score.toFixed(1);
   const flames = "🔥".repeat(Math.round(score)) || "";
   return `
     <div class="rating-row ${cls}"${dataAttrs}>
       <span class="rating-row-label">${esc(label)}</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:${score * 10}%;background:${ratingBarColor(score)}"></div></div>
-      <span class="rating-row-score">${esc(score)}/10</span>
+      <span class="rating-row-score">${esc(scoreLabel)}/10</span>
       <span class="rating-row-flames">${flames}</span>
     </div>
   `;
 }
 
+function computeOverall(p) {
+  const ratings = p.ratings || {};
+  let total = 0, weight = 0;
+  if (p.aiRating !== undefined && p.aiRating !== null) { total += p.aiRating * 1; weight += 1; }
+  BROTHER_SLOTS.forEach(label => {
+    if (ratings[label] !== undefined) { total += ratings[label].score * BROTHER_WEIGHTS[label]; weight += BROTHER_WEIGHTS[label]; }
+  });
+  return weight ? total / weight : null;
+}
+
 function ratingsHtml(p) {
   const ratings = p.ratings || {};
   const rows = [
+    ratingRowHtml("⭐ Overall", computeOverall(p), "rating-row-overall"),
     ratingRowHtml("🤖 AI Rating", (p.aiRating !== undefined && p.aiRating !== null) ? p.aiRating : null, "rating-row-ai"),
     ...BROTHER_SLOTS.map(label => ratingRowHtml(label, ratings[label] !== undefined ? ratings[label].score : null, "", p.id, label)),
   ].join("");
@@ -136,7 +148,13 @@ function ratingsHtml(p) {
 function avgRating(p) {
   const entries = Object.entries(p.ratings || {});
   if (!entries.length) return null;
-  return entries.reduce((s, [, r]) => s + r.score, 0) / entries.length;
+  let total = 0, weight = 0;
+  entries.forEach(([label, r]) => {
+    const w = BROTHER_WEIGHTS[label] || 1;
+    total += r.score * w;
+    weight += w;
+  });
+  return weight ? total / weight : null;
 }
 
 const CHECKLIST_ITEMS = [
@@ -239,12 +257,19 @@ function propertyCard(p) {
   const aiR = (p.aiRating !== undefined && p.aiRating !== null) ? p.aiRating : "";
   return `
   <section class="card" id="${esc(p.id)}" data-avg-rating="${avg !== null ? avg.toFixed(2) : ""}" data-ai-rating="${aiR}">
-    <h2>${esc(p.title)}</h2>
-    <div class="price-row">
-      <span class="price">${esc(p.price)}</span>
-      <span class="agent">${esc(p.agent)}</span>
+    <div class="card-top">
+      <div class="card-top-left">
+        <h2>${esc(p.title)}</h2>
+        <div class="price-row">
+          <span class="price">${esc(p.price)}</span>
+          <span class="agent">${esc(p.agent)}</span>
+        </div>
+        ${sourceBadgeHtml(p)}
+      </div>
+      <div class="card-top-right">
+        ${ratingsHtml(p)}
+      </div>
     </div>
-    ${sourceBadgeHtml(p)}
     <div class="flags">${p.flags.map(flagHtml).join("")}</div>
     <div class="photos">${photosHtml(p.id, p.photos)}</div>
     ${mapEmbedHtml(p)}
@@ -252,7 +277,6 @@ function propertyCard(p) {
     <p class="why"><strong>Why it's here:</strong> ${esc(p.why)}</p>
     ${aiTakeHtml(p)}
     ${researchHtml(p)}
-    ${ratingsHtml(p)}
     ${checklistHtml(p)}
     ${askClaudeHtml(p)}
     ${commentsBlockHtml(p)}
@@ -297,6 +321,13 @@ const html = `<!DOCTYPE html>
   main { max-width: 880px; margin: 0 auto; padding: 20px; display: flex; flex-direction: column; }
   .section-title { margin-top: 48px; border-bottom: 3px solid #1b3a2f; padding-bottom: 8px; font-size: 22px; color: #1b3a2f; }
   .card { background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.12); padding: 24px; margin: 20px 0; scroll-margin-top: 60px; }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
+  .card-top-left { flex: 1 1 300px; min-width: 0; }
+  .card-top-right { flex: 0 0 280px; max-width: 100%; }
+  .card-top-right .ratings-block { margin: 0; }
+  .card-top-right .rating-row-label { flex-basis: 66px; font-size: 12px; }
+  .card-top-right .rating-row-flames { display: none; }
+  .card-top-right .cl-hint { display: none; }
   .card h2 { margin: 0 0 8px; font-size: 20px; }
   .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
   .price { font-size: 20px; font-weight: 700; color: #1b5e20; }
@@ -322,6 +353,7 @@ const html = `<!DOCTYPE html>
   .rating-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 13px; }
   .rating-row-label { flex: 0 0 130px; font-weight: 600; color: #333; }
   .rating-row-ai .rating-row-label { color: #6A1B9A; }
+  .rating-row-overall .rating-row-label { color: #E65100; font-weight: 800; }
   .rating-bar-track { flex: 1 1 auto; height: 14px; background: #e6e6e6; border-radius: 8px; overflow: hidden; }
   .rating-bar-fill { height: 100%; border-radius: 8px; transition: width 0.3s; }
   .rating-row-score { flex: 0 0 50px; font-weight: 700; color: #444; text-align: right; }
@@ -488,6 +520,33 @@ function ratingBarColorJs(score) {
   return 'rgb(' + r + ',' + g + ',60)';
 }
 
+var BRO_WEIGHTS_JS = { 'Bro 1': 1, 'Bro 2': 1, 'Bro 3': 2 };
+
+function recomputeOverall(card) {
+  var overallRow = card.querySelector('.rating-row-overall');
+  if (!overallRow) return;
+  var total = 0, weight = 0;
+  var aiScoreEl = card.querySelector('.rating-row-ai .rating-row-score');
+  var aiScore = aiScoreEl ? parseFloat(aiScoreEl.textContent) : NaN;
+  if (!isNaN(aiScore)) { total += aiScore * 1; weight += 1; }
+  card.querySelectorAll('.rating-row[data-bro]:not(.rating-row-empty)').forEach(function (row) {
+    var scoreEl = row.querySelector('.rating-row-score');
+    var score = scoreEl ? parseFloat(scoreEl.textContent) : NaN;
+    if (isNaN(score)) return;
+    var w = BRO_WEIGHTS_JS[row.dataset.bro] || 1;
+    total += score * w;
+    weight += w;
+  });
+  if (!weight) return;
+  var overall = total / weight;
+  overallRow.classList.remove('rating-row-empty');
+  overallRow.querySelector('.rating-bar-fill').style.width = (overall * 10) + '%';
+  overallRow.querySelector('.rating-bar-fill').style.background = ratingBarColorJs(overall);
+  overallRow.querySelector('.rating-row-score').textContent = overall.toFixed(1) + '/10';
+  var flamesEl = overallRow.querySelector('.rating-row-flames');
+  if (flamesEl) flamesEl.textContent = '🔥'.repeat(Math.round(overall));
+}
+
 function updateRatingRow(propertyId, bro, score) {
   var row = document.querySelector('.rating-row[data-property="' + propertyId + '"][data-bro="' + bro + '"]');
   if (!row) return;
@@ -499,12 +558,17 @@ function updateRatingRow(propertyId, bro, score) {
   if (flamesEl) flamesEl.textContent = '🔥'.repeat(Math.round(score));
   var card = row.closest('.card');
   if (card) {
-    var scores = Array.from(card.querySelectorAll('.rating-row:not(.rating-row-ai):not(.rating-row-empty) .rating-row-score'))
-      .map(function (el) { return parseFloat(el.textContent); })
-      .filter(function (n) { return !isNaN(n); });
-    if (scores.length) {
-      card.dataset.avgRating = (scores.reduce(function (a, b) { return a + b; }, 0) / scores.length).toFixed(2);
-    }
+    var total = 0, weight = 0;
+    card.querySelectorAll('.rating-row[data-bro]:not(.rating-row-empty)').forEach(function (r) {
+      var scoreEl = r.querySelector('.rating-row-score');
+      var v = scoreEl ? parseFloat(scoreEl.textContent) : NaN;
+      if (isNaN(v)) return;
+      var w = BRO_WEIGHTS_JS[r.dataset.bro] || 1;
+      total += v * w;
+      weight += w;
+    });
+    if (weight) card.dataset.avgRating = (total / weight).toFixed(2);
+    recomputeOverall(card);
   }
 }
 
