@@ -102,10 +102,11 @@ function ratingBarColor(score) {
   return `rgb(${r},${g},${b})`;
 }
 
-function ratingRowHtml(label, score, cls) {
-  if (score === null) {
+function ratingRowHtml(label, score, cls, propertyId, bro) {
+  const dataAttrs = (propertyId && bro) ? ` data-property="${esc(propertyId)}" data-bro="${esc(bro)}"` : "";
+  if (score === null || score === undefined) {
     return `
-      <div class="rating-row rating-row-empty ${cls}">
+      <div class="rating-row rating-row-empty ${cls}"${dataAttrs}>
         <span class="rating-row-label">${esc(label)}</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
@@ -114,7 +115,7 @@ function ratingRowHtml(label, score, cls) {
   }
   const flames = "🔥".repeat(Math.round(score)) || "";
   return `
-    <div class="rating-row ${cls}">
+    <div class="rating-row ${cls}"${dataAttrs}>
       <span class="rating-row-label">${esc(label)}</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:${score * 10}%;background:${ratingBarColor(score)}"></div></div>
       <span class="rating-row-score">${esc(score)}/10</span>
@@ -127,9 +128,9 @@ function ratingsHtml(p) {
   const ratings = p.ratings || {};
   const rows = [
     ratingRowHtml("🤖 AI Rating", (p.aiRating !== undefined && p.aiRating !== null) ? p.aiRating : null, "rating-row-ai"),
-    ...BROTHER_SLOTS.map(label => ratingRowHtml(label, ratings[label] !== undefined ? ratings[label].score : null, "")),
+    ...BROTHER_SLOTS.map(label => ratingRowHtml(label, ratings[label] !== undefined ? ratings[label].score : null, "", p.id, label)),
   ].join("");
-  return `<div class="ratings-block"><h3>Ratings</h3>${rows}</div>`;
+  return `<div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>${rows}</div>`;
 }
 
 function avgRating(p) {
@@ -465,10 +466,52 @@ function loadBroComments(el) {
       el.innerHTML = data.comments.map(function (c) {
         return '<div class="bro-comment">' + escText(c.body) + '</div>';
       }).join('');
+      applyLiveRating(el.dataset.term, data.comments);
     })
     .catch(function () {
       el.innerHTML = '<p class="bro-empty">Couldn\\'t load comments right now — try reloading the page.</p>';
     });
+}
+
+function ratingBarColorJs(score) {
+  var pct = Math.max(0, Math.min(10, score)) / 10;
+  var r = Math.round(211 - pct * (211 - 46));
+  var g = Math.round(47 + pct * (125 - 47));
+  return 'rgb(' + r + ',' + g + ',60)';
+}
+
+function updateRatingRow(propertyId, bro, score) {
+  var row = document.querySelector('.rating-row[data-property="' + propertyId + '"][data-bro="' + bro + '"]');
+  if (!row) return;
+  row.classList.remove('rating-row-empty');
+  row.querySelector('.rating-bar-fill').style.width = (score * 10) + '%';
+  row.querySelector('.rating-bar-fill').style.background = ratingBarColorJs(score);
+  row.querySelector('.rating-row-score').textContent = score + '/10';
+  var flamesEl = row.querySelector('.rating-row-flames');
+  if (flamesEl) flamesEl.textContent = '🔥'.repeat(Math.round(score));
+  var card = row.closest('.card');
+  if (card) {
+    var scores = Array.from(card.querySelectorAll('.rating-row:not(.rating-row-ai):not(.rating-row-empty) .rating-row-score'))
+      .map(function (el) { return parseFloat(el.textContent); })
+      .filter(function (n) { return !isNaN(n); });
+    if (scores.length) {
+      card.dataset.avgRating = (scores.reduce(function (a, b) { return a + b; }, 0) / scores.length).toFixed(2);
+    }
+  }
+}
+
+function applyLiveRating(term, comments) {
+  var m = term.match(/^(.+)-bro([123])$/);
+  if (!m) return;
+  var propertyId = m[1], bro = 'Bro ' + m[2];
+  for (var i = comments.length - 1; i >= 0; i--) {
+    var match = comments[i].body.match(/Rating:\\s*(\\d{1,2})\\s*\\/\\s*10/i) || comments[i].body.match(/^\\s*(\\d{1,2})\\s*\\/\\s*10/);
+    if (match) {
+      var score = Math.max(1, Math.min(10, parseInt(match[1], 10)));
+      updateRatingRow(propertyId, bro, score);
+      return;
+    }
+  }
 }
 
 document.querySelectorAll('.bro-comments').forEach(loadBroComments);
