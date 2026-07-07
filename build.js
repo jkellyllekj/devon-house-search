@@ -139,8 +139,8 @@ function ratingsHtml(p) {
   const ratings = p.ratings || {};
   const rows = [
     ratingRowHtml("⭐ Overall", computeOverall(p), "rating-row-overall"),
-    ratingRowHtml("🤖 AI Rating", (p.aiRating !== undefined && p.aiRating !== null) ? p.aiRating : null, "rating-row-ai"),
     ...BROTHER_SLOTS.map(label => ratingRowHtml(label, ratings[label] !== undefined ? ratings[label].score : null, "", p.id, label)),
+    ratingRowHtml("🤖 AI Rating", (p.aiRating !== undefined && p.aiRating !== null) ? p.aiRating : null, "rating-row-ai"),
   ].join("");
   return `<div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>${rows}</div>`;
 }
@@ -257,19 +257,13 @@ function propertyCard(p) {
   const aiR = (p.aiRating !== undefined && p.aiRating !== null) ? p.aiRating : "";
   return `
   <section class="card" id="${esc(p.id)}" data-avg-rating="${avg !== null ? avg.toFixed(2) : ""}" data-ai-rating="${aiR}">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>${esc(p.title)}</h2>
-        <div class="price-row">
-          <span class="price">${esc(p.price)}</span>
-          <span class="agent">${esc(p.agent)}</span>
-        </div>
-        ${sourceBadgeHtml(p)}
-      </div>
-      <div class="card-top-right">
-        ${ratingsHtml(p)}
-      </div>
+    <h2>${esc(p.title)}</h2>
+    <div class="price-row">
+      <span class="price">${esc(p.price)}</span>
+      <span class="agent">${esc(p.agent)}</span>
     </div>
+    ${sourceBadgeHtml(p)}
+    ${ratingsHtml(p)}
     <div class="flags">${p.flags.map(flagHtml).join("")}</div>
     <div class="photos">${photosHtml(p.id, p.photos)}</div>
     ${mapEmbedHtml(p)}
@@ -321,13 +315,6 @@ const html = `<!DOCTYPE html>
   main { max-width: 880px; margin: 0 auto; padding: 20px; display: flex; flex-direction: column; }
   .section-title { margin-top: 48px; border-bottom: 3px solid #1b3a2f; padding-bottom: 8px; font-size: 22px; color: #1b3a2f; }
   .card { background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.12); padding: 24px; margin: 20px 0; scroll-margin-top: 60px; }
-  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
-  .card-top-left { flex: 1 1 300px; min-width: 0; }
-  .card-top-right { flex: 0 0 280px; max-width: 100%; }
-  .card-top-right .ratings-block { margin: 0; }
-  .card-top-right .rating-row-label { flex-basis: 66px; font-size: 12px; }
-  .card-top-right .rating-row-flames { display: none; }
-  .card-top-right .cl-hint { display: none; }
   .card h2 { margin: 0 0 8px; font-size: 20px; }
   .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
   .price { font-size: 20px; font-weight: 700; color: #1b5e20; }
@@ -350,11 +337,11 @@ const html = `<!DOCTYPE html>
   .source-badge:hover { background: #23483a; }
   .ratings-block { margin: 14px 0; padding: 14px; background: #fafafa; border-radius: 8px; }
   .ratings-block h3 { margin: 0 0 10px; font-size: 13px; color: #1b3a2f; text-transform: uppercase; letter-spacing: 0.5px; }
-  .rating-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 13px; }
-  .rating-row-label { flex: 0 0 130px; font-weight: 600; color: #333; }
+  .rating-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; font-size: 13px; }
+  .rating-row-label { flex: 0 0 110px; font-weight: 600; color: #333; }
   .rating-row-ai .rating-row-label { color: #6A1B9A; }
   .rating-row-overall .rating-row-label { color: #E65100; font-weight: 800; }
-  .rating-bar-track { flex: 1 1 auto; height: 14px; background: #e6e6e6; border-radius: 8px; overflow: hidden; }
+  .rating-bar-track { flex: 1 1 auto; height: 10px; background: #e6e6e6; border-radius: 6px; overflow: hidden; }
   .rating-bar-fill { height: 100%; border-radius: 8px; transition: width 0.3s; }
   .rating-row-score { flex: 0 0 50px; font-weight: 700; color: #444; text-align: right; }
   .rating-row-flames { flex: 0 0 auto; font-size: 12px; }

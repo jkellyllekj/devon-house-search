@@ -26,13 +26,6 @@
   main { max-width: 880px; margin: 0 auto; padding: 20px; display: flex; flex-direction: column; }
   .section-title { margin-top: 48px; border-bottom: 3px solid #1b3a2f; padding-bottom: 8px; font-size: 22px; color: #1b3a2f; }
   .card { background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.12); padding: 24px; margin: 20px 0; scroll-margin-top: 60px; }
-  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
-  .card-top-left { flex: 1 1 300px; min-width: 0; }
-  .card-top-right { flex: 0 0 280px; max-width: 100%; }
-  .card-top-right .ratings-block { margin: 0; }
-  .card-top-right .rating-row-label { flex-basis: 66px; font-size: 12px; }
-  .card-top-right .rating-row-flames { display: none; }
-  .card-top-right .cl-hint { display: none; }
   .card h2 { margin: 0 0 8px; font-size: 20px; }
   .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
   .price { font-size: 20px; font-weight: 700; color: #1b5e20; }
@@ -55,11 +48,11 @@
   .source-badge:hover { background: #23483a; }
   .ratings-block { margin: 14px 0; padding: 14px; background: #fafafa; border-radius: 8px; }
   .ratings-block h3 { margin: 0 0 10px; font-size: 13px; color: #1b3a2f; text-transform: uppercase; letter-spacing: 0.5px; }
-  .rating-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 13px; }
-  .rating-row-label { flex: 0 0 130px; font-weight: 600; color: #333; }
+  .rating-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; font-size: 13px; }
+  .rating-row-label { flex: 0 0 110px; font-weight: 600; color: #333; }
   .rating-row-ai .rating-row-label { color: #6A1B9A; }
   .rating-row-overall .rating-row-label { color: #E65100; font-weight: 800; }
-  .rating-bar-track { flex: 1 1 auto; height: 14px; background: #e6e6e6; border-radius: 8px; overflow: hidden; }
+  .rating-bar-track { flex: 1 1 auto; height: 10px; background: #e6e6e6; border-radius: 6px; overflow: hidden; }
   .rating-bar-fill { height: 100%; border-radius: 8px; transition: width 0.3s; }
   .rating-row-score { flex: 0 0 50px; font-weight: 700; color: #444; text-align: right; }
   .rating-row-flames { flex: 0 0 auto; font-size: 12px; }
@@ -160,26 +153,15 @@
 <main>
 <h1 class="section-title">New This Sweep</h1>
   <section class="card" id="haynes" data-avg-rating="" data-ai-rating="7">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Haynes Cottages, Lympstone</h2>
-        <div class="price-row">
-          <span class="price">£264,500</span>
-          <span class="agent">Pennys, Exmouth</span>
-        </div>
-        <a class="source-badge" href="https://www.pennys.net/for-sale/lympstone/haynes-cottages/2-bedroom-terraced-for-sale-in-haynes-cottages-ex8-5lx/266524" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Haynes Cottages, Lympstone</h2>
+    <div class="price-row">
+      <span class="price">£264,500</span>
+      <span class="agent">Pennys, Exmouth</span>
+    </div>
+    <a class="source-badge" href="https://www.pennys.net/for-sale/lympstone/haynes-cottages/2-bedroom-terraced-for-sale-in-haynes-cottages-ex8-5lx/266524" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
-      <span class="rating-row-score">7/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
       <span class="rating-row-score">7/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
@@ -202,9 +184,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
+      <span class="rating-row-score">7/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#1565C0">HAS PARKING (3 cars, gravelled bay + electric sockets)</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Haynes_Gallery_1.jpeg" alt="haynes main photo" loading="lazy"></div>
@@ -313,26 +300,15 @@
   </section>
 
   <section class="card" id="longmeadow" data-avg-rating="" data-ai-rating="6">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Longmeadow Road, Lympstone (Grade II 17th-century cottage)</h2>
-        <div class="price-row">
-          <span class="price">Guide Price £250,000</span>
-          <span class="agent">Stags, Exeter</span>
-        </div>
-        <a class="source-badge" href="https://www.rightmove.co.uk/properties/89711112" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Longmeadow Road, Lympstone (Grade II 17th-century cottage)</h2>
+    <div class="price-row">
+      <span class="price">Guide Price £250,000</span>
+      <span class="agent">Stags, Exeter</span>
+    </div>
+    <a class="source-badge" href="https://www.rightmove.co.uk/properties/89711112" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
-      <span class="rating-row-score">6/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
       <span class="rating-row-score">6/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
@@ -355,9 +331,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span><span class="flag" style="background:#EF6C00">KNOTWEED DISCLOSED (treated, 10-yr guarantee)</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Longmeadow_Gallery_1.jpg" alt="longmeadow main photo" loading="lazy"></div>
@@ -466,26 +447,15 @@
   </section>
 
   <section class="card" id="brookside" data-avg-rating="" data-ai-rating="5">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Brookside Cottage, Lympstone</h2>
-        <div class="price-row">
-          <span class="price">Guide Price £275,000</span>
-          <span class="agent">Pennys, Exmouth</span>
-        </div>
-        <a class="source-badge" href="https://www.rightmove.co.uk/properties/162176444" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Brookside Cottage, Lympstone</h2>
+    <div class="price-row">
+      <span class="price">Guide Price £275,000</span>
+      <span class="agent">Pennys, Exmouth</span>
+    </div>
+    <a class="source-badge" href="https://www.rightmove.co.uk/properties/162176444" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
-      <span class="rating-row-score">5/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
       <span class="rating-row-score">5/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
@@ -508,9 +478,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#9E9E9E">PARKING UNKNOWN</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Brookside_Gallery_1.jpg" alt="brookside main photo" loading="lazy"></div>
@@ -619,26 +594,15 @@
   </section>
 
   <section class="card" id="morcote" data-avg-rating="" data-ai-rating="5">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Morcote, The Strand, Lympstone</h2>
-        <div class="price-row">
-          <span class="price">Offers in Excess of £225,000</span>
-          <span class="agent">East of Exe Ltd, Topsham</span>
-        </div>
-        <a class="source-badge" href="https://www.rightmove.co.uk/properties/159668282" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Morcote, The Strand, Lympstone</h2>
+    <div class="price-row">
+      <span class="price">Offers in Excess of £225,000</span>
+      <span class="agent">East of Exe Ltd, Topsham</span>
+    </div>
+    <a class="source-badge" href="https://www.rightmove.co.uk/properties/159668282" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
-      <span class="rating-row-score">5/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
       <span class="rating-row-score">5/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
@@ -661,9 +625,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Morcote_Gallery_1.jpg" alt="morcote main photo" loading="lazy"></div>
@@ -772,26 +741,15 @@
   </section>
 
   <section class="card" id="butterchurn" data-avg-rating="" data-ai-rating="5">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Butterchurn Cottage, Knowle, Crediton (thatched cob cottage)</h2>
-        <div class="price-row">
-          <span class="price">Guide Price £325,000</span>
-          <span class="agent">Helmores, Crediton</span>
-        </div>
-        <a class="source-badge" href="https://www.rightmove.co.uk/properties/174920456" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Butterchurn Cottage, Knowle, Crediton (thatched cob cottage)</h2>
+    <div class="price-row">
+      <span class="price">Guide Price £325,000</span>
+      <span class="agent">Helmores, Crediton</span>
+    </div>
+    <a class="source-badge" href="https://www.rightmove.co.uk/properties/174920456" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
-      <span class="rating-row-score">5/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
       <span class="rating-row-score">5/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
@@ -814,9 +772,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET (+£25,000)</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED / THATCHED</span><span class="flag" style="background:#1565C0">HAS PARKING (gated, 3-4 cars)</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Butterchurn_Gallery_1.jpg" alt="butterchurn main photo" loading="lazy"></div>
@@ -925,26 +888,15 @@
   </section>
 <h1 class="section-title">Still Listed</h1>
   <section class="card" id="eastbudleighhighst" data-avg-rating="" data-ai-rating="6">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>High Street, East Budleigh (Grade II cottage)</h2>
-        <div class="price-row">
-          <span class="price">£239,950</span>
-          <span class="agent">Pennys, Exmouth</span>
-        </div>
-        <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/high-street/2-bedroom-terraced-for-sale-in-high-street-ex9-7ed/263959" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>High Street, East Budleigh (Grade II cottage)</h2>
+    <div class="price-row">
+      <span class="price">£239,950</span>
+      <span class="agent">Pennys, Exmouth</span>
+    </div>
+    <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/high-street/2-bedroom-terraced-for-sale-in-high-street-ex9-7ed/263959" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
-      <span class="rating-row-score">6/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
       <span class="rating-row-score">6/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
@@ -967,9 +919,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">NO PARKING (village on-street only)</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/EastBudleigh_Gallery_1.jpg" alt="eastbudleighhighst main photo" loading="lazy"></div>
@@ -1078,26 +1035,15 @@
   </section>
 
   <section class="card" id="marlesflat" data-avg-rating="" data-ai-rating="7">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>The Marles, Exmouth (ground-floor flat)</h2>
-        <div class="price-row">
-          <span class="price">£200,000</span>
-          <span class="agent">Pennys, Exmouth</span>
-        </div>
-        <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/the-marles/2-bedroom-groundfloorflat-for-sale-in-the-marles-ex8-4ne/269531" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>The Marles, Exmouth (ground-floor flat)</h2>
+    <div class="price-row">
+      <span class="price">£200,000</span>
+      <span class="agent">Pennys, Exmouth</span>
+    </div>
+    <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/the-marles/2-bedroom-groundfloorflat-for-sale-in-the-marles-ex8-4ne/269531" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
-      <span class="rating-row-score">7/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
       <span class="rating-row-score">7/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
@@ -1120,9 +1066,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
+      <span class="rating-row-score">7/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span><span class="flag" style="background:#757575">PARKING: GARAGE TO RENT NEARBY (not included)</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Marles_Gallery_1.jpg" alt="marlesflat main photo" loading="lazy"></div>
@@ -1231,26 +1182,15 @@
   </section>
 
   <section class="card" id="farleys" data-avg-rating="" data-ai-rating="6">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Farleys, The Strand, Lympstone (Grade II cottage)</h2>
-        <div class="price-row">
-          <span class="price">£295,000</span>
-          <span class="agent">Hall &amp; Scott, Exmouth</span>
-        </div>
-        <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_706793" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Farleys, The Strand, Lympstone (Grade II cottage)</h2>
+    <div class="price-row">
+      <span class="price">£295,000</span>
+      <span class="agent">Hall &amp; Scott, Exmouth</span>
+    </div>
+    <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_706793" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
-      <span class="rating-row-score">6/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
       <span class="rating-row-score">6/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
@@ -1273,9 +1213,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">NO PARKING (village car park permit)</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Farleys_Gallery_1.jpg" alt="farleys main photo" loading="lazy"></div>
@@ -1384,26 +1329,15 @@
   </section>
 
   <section class="card" id="exeterroadflat" data-avg-rating="" data-ai-rating="9">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Exeter Road, Exmouth (ground-floor character flat)</h2>
-        <div class="price-row">
-          <span class="price">£110,000</span>
-          <span class="agent">Spring Estates, Exmouth</span>
-        </div>
-        <a class="source-badge" href="https://www.zoopla.co.uk/for-sale/details/72842267/" target="_blank" rel="noopener">View on ZOOPLA.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Exeter Road, Exmouth (ground-floor character flat)</h2>
+    <div class="price-row">
+      <span class="price">£110,000</span>
+      <span class="agent">Spring Estates, Exmouth</span>
+    </div>
+    <a class="source-badge" href="https://www.zoopla.co.uk/for-sale/details/72842267/" target="_blank" rel="noopener">View on ZOOPLA.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:90%;background:rgb(63,117,60)"></div></div>
-      <span class="rating-row-score">9/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:90%;background:rgb(63,117,60)"></div></div>
       <span class="rating-row-score">9/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥🔥🔥</span>
@@ -1426,9 +1360,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:90%;background:rgb(63,117,60)"></div></div>
+      <span class="rating-row-score">9/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">PRICE REDUCED</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Exeter_Road_Flat.jpg" alt="exeterroadflat main photo" loading="lazy"></div>
@@ -1537,26 +1476,15 @@
   </section>
 
   <section class="card" id="bellstreet" data-avg-rating="" data-ai-rating="5">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>3 Bell Street, Otterton</h2>
-        <div class="price-row">
-          <span class="price">£220,000</span>
-          <span class="agent">Pennys, Exmouth</span>
-        </div>
-        <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/bell-street/2-bedroom-terraced-for-sale-in-bell-street-ex9-7hs/270110" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>3 Bell Street, Otterton</h2>
+    <div class="price-row">
+      <span class="price">£220,000</span>
+      <span class="agent">Pennys, Exmouth</span>
+    </div>
+    <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/bell-street/2-bedroom-terraced-for-sale-in-bell-street-ex9-7hs/270110" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
-      <span class="rating-row-score">5/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
       <span class="rating-row-score">5/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
@@ -1579,9 +1507,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Bell_Street_Otterton.jpg" alt="bellstreet main photo" loading="lazy"></div>
@@ -1690,26 +1623,15 @@
   </section>
 
   <section class="card" id="flexton" data-avg-rating="" data-ai-rating="4">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>The Flexton, Ottery St Mary</h2>
-        <div class="price-row">
-          <span class="price">Guide Price £220,000</span>
-          <span class="agent">Hall &amp; Scott, Ottery St Mary</span>
-        </div>
-        <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSOTT_708139" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>The Flexton, Ottery St Mary</h2>
+    <div class="price-row">
+      <span class="price">Guide Price £220,000</span>
+      <span class="agent">Hall &amp; Scott, Ottery St Mary</span>
+    </div>
+    <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSOTT_708139" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
-      <span class="rating-row-score">4/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
       <span class="rating-row-score">4/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥</span>
@@ -1732,9 +1654,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/The_Flexton_Ottery.jpg" alt="flexton main photo" loading="lazy"></div>
@@ -1843,26 +1770,15 @@
   </section>
 
   <section class="card" id="beaconflat" data-avg-rating="" data-ai-rating="4">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>The Beacon, Exmouth (ground-floor flat)</h2>
-        <div class="price-row">
-          <span class="price">£309,950</span>
-          <span class="agent">Pennys, Exmouth</span>
-        </div>
-        <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/the-beacon/2-bedroom-groundfloorflat-for-sale-in-the-beacon-ex8-2ag/270212" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>The Beacon, Exmouth (ground-floor flat)</h2>
+    <div class="price-row">
+      <span class="price">£309,950</span>
+      <span class="agent">Pennys, Exmouth</span>
+    </div>
+    <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/the-beacon/2-bedroom-groundfloorflat-for-sale-in-the-beacon-ex8-2ag/270212" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
-      <span class="rating-row-score">4/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
       <span class="rating-row-score">4/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥</span>
@@ -1885,9 +1801,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET (+£9,950)</span><span class="flag" style="background:#1565C0">HAS PARKING</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Beacon_Flat_Exmouth.jpg" alt="beaconflat main photo" loading="lazy"></div>
@@ -1996,26 +1917,15 @@
   </section>
 
   <section class="card" id="cranford" data-avg-rating="" data-ai-rating="5">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Cranford Avenue, Exmouth (ground-floor flat)</h2>
-        <div class="price-row">
-          <span class="price">£250,000</span>
-          <span class="agent">Hall &amp; Scott, Exmouth</span>
-        </div>
-        <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_708054" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Cranford Avenue, Exmouth (ground-floor flat)</h2>
+    <div class="price-row">
+      <span class="price">£250,000</span>
+      <span class="agent">Hall &amp; Scott, Exmouth</span>
+    </div>
+    <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_708054" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
-      <span class="rating-row-score">5/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
       <span class="rating-row-score">5/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
@@ -2038,9 +1948,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#9E9E9E">PARKING UNKNOWN</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Cranford_Avenue_Exmouth.jpg" alt="cranford main photo" loading="lazy"></div>
@@ -2149,26 +2064,15 @@
   </section>
 
   <section class="card" id="otterton" data-avg-rating="" data-ai-rating="6">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Thatched Cottage, The Green, Otterton</h2>
-        <div class="price-row">
-          <span class="price">£225,000 (guide price)</span>
-          <span class="agent">Rightmove listing</span>
-        </div>
-        <a class="source-badge" href="https://www.rightmove.co.uk/properties/174232565" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Thatched Cottage, The Green, Otterton</h2>
+    <div class="price-row">
+      <span class="price">£225,000 (guide price)</span>
+      <span class="agent">Rightmove listing</span>
+    </div>
+    <a class="source-badge" href="https://www.rightmove.co.uk/properties/174232565" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
-      <span class="rating-row-score">6/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
       <span class="rating-row-score">6/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
@@ -2191,9 +2095,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#C2185B">LIKED BY JESSE</span><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Otterton_Gallery_1.jpg" alt="otterton main photo" loading="lazy"></div>
@@ -2302,26 +2211,15 @@
   </section>
 
   <section class="card" id="feniton" data-avg-rating="" data-ai-rating="8">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Barn at Whites Cottages, Feniton — AUCTION</h2>
-        <div class="price-row">
-          <span class="price">£65,000 (guide price)</span>
-          <span class="agent">Hall &amp; Scott, Ottery St Mary</span>
-        </div>
-        <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSOTT_708623" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Barn at Whites Cottages, Feniton — AUCTION</h2>
+    <div class="price-row">
+      <span class="price">£65,000 (guide price)</span>
+      <span class="agent">Hall &amp; Scott, Ottery St Mary</span>
+    </div>
+    <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSOTT_708623" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:80%;background:rgb(79,109,60)"></div></div>
-      <span class="rating-row-score">8/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:80%;background:rgb(79,109,60)"></div></div>
       <span class="rating-row-score">8/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥🔥</span>
@@ -2344,9 +2242,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:80%;background:rgb(79,109,60)"></div></div>
+      <span class="rating-row-score">8/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#E65100">AUCTION 23 JUL 2026</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Feniton_Barn.jpg" alt="feniton main photo" loading="lazy"></div>
@@ -2455,26 +2358,15 @@
   </section>
 
   <section class="card" id="douglas" data-avg-rating="" data-ai-rating="5">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Douglas Avenue, Exmouth</h2>
-        <div class="price-row">
-          <span class="price">£235,000</span>
-          <span class="agent">Hall &amp; Scott</span>
-        </div>
-        <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_697185" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Douglas Avenue, Exmouth</h2>
+    <div class="price-row">
+      <span class="price">£235,000</span>
+      <span class="agent">Hall &amp; Scott</span>
+    </div>
+    <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_697185" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
-      <span class="rating-row-score">5/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
       <span class="rating-row-score">5/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
@@ -2497,9 +2389,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Douglas_Avenue__Exmouth_2.jpg" alt="douglas main photo" loading="lazy"></div>
@@ -2608,26 +2505,15 @@
   </section>
 <h1 class="section-title">Also On File (background)</h1>
   <section class="card" id="sidmouth" data-avg-rating="" data-ai-rating="5">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Circular Thatched Cliff-top Cottage, Peak Hill Road, Sidmouth</h2>
-        <div class="price-row">
-          <span class="price">Guide price £250,000 (auction)</span>
-          <span class="agent">Bradleys Estate Agents</span>
-        </div>
-        <a class="source-badge" href="https://www.rightmove.co.uk/properties/90027936" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Circular Thatched Cliff-top Cottage, Peak Hill Road, Sidmouth</h2>
+    <div class="price-row">
+      <span class="price">Guide price £250,000 (auction)</span>
+      <span class="agent">Bradleys Estate Agents</span>
+    </div>
+    <a class="source-badge" href="https://www.rightmove.co.uk/properties/90027936" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
-      <span class="rating-row-score">5/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
       <span class="rating-row-score">5/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
@@ -2650,9 +2536,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
+      <span class="rating-row-score">5/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#616161">DECLINED BY JESSE — EROSION/INSURANCE RISK</span><span class="flag" style="background:#B71C1C">KNOWN CLIFF EROSION RISK</span><span class="flag" style="background:#E65100">AUCTION 21 JUL 2026, 12pm</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Sidmouth_Gallery_1.jpg" alt="sidmouth main photo" loading="lazy"></div>
@@ -2772,26 +2663,15 @@
   </section>
 
   <section class="card" id="yettington" data-avg-rating="" data-ai-rating="4">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>The Threshing Barn, Yettington</h2>
-        <div class="price-row">
-          <span class="price">£375,000–£400,000 (guide price)</span>
-          <span class="agent">Wilkinson Grant &amp; Co</span>
-        </div>
-        <a class="source-badge" href="https://www.exmouthjournal.co.uk/news/24440905.property-sale-near-budleigh-salterton-two-bedroom-house/" target="_blank" rel="noopener">View on EXMOUTHJOURNAL.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>The Threshing Barn, Yettington</h2>
+    <div class="price-row">
+      <span class="price">£375,000–£400,000 (guide price)</span>
+      <span class="agent">Wilkinson Grant &amp; Co</span>
+    </div>
+    <a class="source-badge" href="https://www.exmouthjournal.co.uk/news/24440905.property-sale-near-budleigh-salterton-two-bedroom-house/" target="_blank" rel="noopener">View on EXMOUTHJOURNAL.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
-      <span class="rating-row-score">4/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
       <span class="rating-row-score">4/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥</span>
@@ -2814,9 +2694,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#1565C0">HAS PARKING</span><span class="flag" style="background:#8D6E63">LIKELY SOLD</span></div>
     <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
     
@@ -2922,26 +2807,15 @@
   </section>
 
   <section class="card" id="beacon" data-avg-rating="" data-ai-rating="3">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>The Beacon, Exmouth (inspiration only)</h2>
-        <div class="price-row">
-          <span class="price">Offers over £400,000</span>
-          <span class="agent">Hall &amp; Scott</span>
-        </div>
-        <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_707936" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>The Beacon, Exmouth (inspiration only)</h2>
+    <div class="price-row">
+      <span class="price">Offers over £400,000</span>
+      <span class="agent">Hall &amp; Scott</span>
+    </div>
+    <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_707936" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
-      <span class="rating-row-score">3/10</span>
-      <span class="rating-row-flames">🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
       <span class="rating-row-score">3/10</span>
       <span class="rating-row-flames">🔥🔥🔥</span>
@@ -2964,9 +2838,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
+      <span class="rating-row-score">3/10</span>
+      <span class="rating-row-flames">🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">NEEDS RENOVATION</span><span class="flag" style="background:#1565C0">HAS PARKING (garage)</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/The_Beacon__Exmouth_1.jpg" alt="beacon main photo" loading="lazy"></div>
@@ -3075,26 +2954,15 @@
   </section>
 
   <section class="card" id="withycombe" data-avg-rating="" data-ai-rating="3">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Withycombe Village Road, Exmouth (former Methodist Church)</h2>
-        <div class="price-row">
-          <span class="price">Guide price £350,000 (as of first report, unconfirmed)</span>
-          <span class="agent">Hall &amp; Scott</span>
-        </div>
-        <a class="source-badge" href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Withycombe Village Road, Exmouth (former Methodist Church)</h2>
+    <div class="price-row">
+      <span class="price">Guide price £350,000 (as of first report, unconfirmed)</span>
+      <span class="agent">Hall &amp; Scott</span>
+    </div>
+    <a class="source-badge" href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
-      <span class="rating-row-score">3/10</span>
-      <span class="rating-row-flames">🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
       <span class="rating-row-score">3/10</span>
       <span class="rating-row-flames">🔥🔥🔥</span>
@@ -3117,9 +2985,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
+      <span class="rating-row-score">3/10</span>
+      <span class="rating-row-flames">🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Withycombe_Village_Road__Exmouth_3.jpg" alt="withycombe main photo" loading="lazy"></div>
@@ -3228,26 +3101,15 @@
   </section>
 
   <section class="card" id="salterton" data-avg-rating="" data-ai-rating="6">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Salterton Road, Exmouth (ground-floor retirement flat)</h2>
-        <div class="price-row">
-          <span class="price">£150,000 (as of first report, unconfirmed)</span>
-          <span class="agent">Hall &amp; Scott</span>
-        </div>
-        <a class="source-badge" href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Salterton Road, Exmouth (ground-floor retirement flat)</h2>
+    <div class="price-row">
+      <span class="price">£150,000 (as of first report, unconfirmed)</span>
+      <span class="agent">Hall &amp; Scott</span>
+    </div>
+    <a class="source-badge" href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
-      <span class="rating-row-score">6/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
       <span class="rating-row-score">6/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
@@ -3270,9 +3132,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
     <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
     
@@ -3378,26 +3245,15 @@
   </section>
 
   <section class="card" id="eastbudleigh" data-avg-rating="" data-ai-rating="2">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Grade II Thatched Cottage, High Street, East Budleigh</h2>
-        <div class="price-row">
-          <span class="price">£435,000</span>
-          <span class="agent">Pennys</span>
-        </div>
-        <a class="source-badge" href="https://www.rightmove.co.uk/properties/165338390" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Grade II Thatched Cottage, High Street, East Budleigh</h2>
+    <div class="price-row">
+      <span class="price">£435,000</span>
+      <span class="agent">Pennys</span>
+    </div>
+    <a class="source-badge" href="https://www.rightmove.co.uk/properties/165338390" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:20%;background:rgb(178,63,60)"></div></div>
-      <span class="rating-row-score">2/10</span>
-      <span class="rating-row-flames">🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:20%;background:rgb(178,63,60)"></div></div>
       <span class="rating-row-score">2/10</span>
       <span class="rating-row-flames">🔥🔥</span>
@@ -3420,9 +3276,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:20%;background:rgb(178,63,60)"></div></div>
+      <span class="rating-row-score">2/10</span>
+      <span class="rating-row-flames">🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">LIKELY SOLD/WITHDRAWN</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/East_Budleigh_Cottage.jpg" alt="eastbudleigh main photo" loading="lazy"></div>
@@ -3531,26 +3392,15 @@
   </section>
 
   <section class="card" id="clinton" data-avg-rating="" data-ai-rating="3">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>Clinton Garage, Budleigh Salterton — AUCTION</h2>
-        <div class="price-row">
-          <span class="price">£375,000 (guide price)</span>
-          <span class="agent">Meadows / 247 Property Auctions</span>
-        </div>
-        <a class="source-badge" href="https://www.meadowsea.com/Property-For-Sale-Clinton-Garage-Budleigh-Salterton-pi-MEAD1265.htm" target="_blank" rel="noopener">View on MEADOWSEA.COM ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>Clinton Garage, Budleigh Salterton — AUCTION</h2>
+    <div class="price-row">
+      <span class="price">£375,000 (guide price)</span>
+      <span class="agent">Meadows / 247 Property Auctions</span>
+    </div>
+    <a class="source-badge" href="https://www.meadowsea.com/Property-For-Sale-Clinton-Garage-Budleigh-Salterton-pi-MEAD1265.htm" target="_blank" rel="noopener">View on MEADOWSEA.COM ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
-      <span class="rating-row-score">3/10</span>
-      <span class="rating-row-flames">🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
       <span class="rating-row-score">3/10</span>
       <span class="rating-row-flames">🔥🔥🔥</span>
@@ -3573,9 +3423,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
+      <span class="rating-row-score">3/10</span>
+      <span class="rating-row-flames">🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#E65100">AUCTION 16 JUL 2026, 12pm</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Clinton_Garage.jpg" alt="clinton main photo" loading="lazy"></div>
@@ -3684,26 +3539,15 @@
   </section>
 
   <section class="card" id="leslie" data-avg-rating="" data-ai-rating="4">
-    <div class="card-top">
-      <div class="card-top-left">
-        <h2>The Coach House, Leslie Road, Exmouth</h2>
-        <div class="price-row">
-          <span class="price">£215,000</span>
-          <span class="agent">Pennys</span>
-        </div>
-        <a class="source-badge" href="https://www.pennys.net/property-search" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
-      </div>
-      <div class="card-top-right">
-        <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <h2>The Coach House, Leslie Road, Exmouth</h2>
+    <div class="price-row">
+      <span class="price">£215,000</span>
+      <span class="agent">Pennys</span>
+    </div>
+    <a class="source-badge" href="https://www.pennys.net/property-search" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
-      <span class="rating-row-score">4/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥</span>
-    </div>
-  
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
       <span class="rating-row-score">4/10</span>
       <span class="rating-row-flames">🔥🔥🔥🔥</span>
@@ -3726,9 +3570,14 @@
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
     </div>
-      </div>
-    </div>
+  </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span></div>
     <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
     
