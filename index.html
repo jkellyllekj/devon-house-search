@@ -8,14 +8,18 @@
 <style>
   :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
   body { margin: 0; background: #f4f1ea; color: #222; }
-  header { background: #1b3a2f; color: #fff; padding: 28px 20px 20px; }
-  header h1 { margin: 0 0 4px; font-size: 28px; }
-  header .sub { color: #cfe0d6; font-size: 14px; }
-  .submit-link { display: inline-block; margin-top: 14px; background: #E65100; color: #fff; font-weight: 700; font-size: 13px; padding: 8px 16px; border-radius: 20px; text-decoration: none; border: none; font-family: inherit; cursor: pointer; }
+  header { background: #1b3a2f; color: #fff; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .header-left { min-width: 0; }
+  header h1 { margin: 0; font-size: 20px; }
+  header .sub { color: #cfe0d6; font-size: 12px; margin-top: 2px; }
+  .header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; flex-shrink: 0; }
+  .submit-form { position: relative; }
+  #submitPanel { position: absolute; right: 0; top: 100%; background: #fff; border-radius: 8px; padding: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); z-index: 20; width: 260px; }
+  .submit-link { display: inline-block; background: #E65100; color: #fff; font-weight: 700; font-size: 12px; padding: 6px 14px; border-radius: 16px; text-decoration: none; border: none; font-family: inherit; cursor: pointer; white-space: nowrap; }
   .submit-link:hover { background: #ff6f1a; }
-  .sort-row { margin-top: 12px; font-size: 13px; }
-  .sort-row label { color: #cfe0d6; margin-right: 8px; }
-  .sort-row select { font-size: 13px; padding: 4px 8px; border-radius: 4px; border: 1px solid #3f6a55; background: #23483a; color: #fff; }
+  .sort-row { font-size: 12px; display: flex; align-items: center; gap: 6px; }
+  .sort-row label { color: #cfe0d6; }
+  .sort-row select { font-size: 12px; padding: 3px 6px; border-radius: 4px; border: 1px solid #3f6a55; background: #23483a; color: #fff; }
   nav { background: #23483a; padding: 10px 20px; overflow-x: auto; white-space: nowrap; position: sticky; top: 0; z-index: 10; }
   nav a { color: #d9ecdf; text-decoration: none; font-size: 13px; margin-right: 16px; }
   nav a:hover { text-decoration: underline; }
@@ -118,26 +122,30 @@
 </head>
 <body>
 <header>
-  <h1>Devon House Search</h1>
-  <div class="sub">Exmouth · Woodbury · Budleigh Salterton · East Devon coast — last updated 2026-07-07</div>
-  <div class="submit-form">
-    <button id="submitToggle" class="submit-link" type="button">📮 Spotted one yourself? Submit a property</button>
-    <div id="submitPanel" class="mini-form" style="display:none">
-      <input id="submitUrl" type="text" placeholder="Paste the listing URL here">
-      <textarea id="submitNotes" placeholder="What do you like about it? (optional)"></textarea>
-      <button id="submitPostBtn" type="button">Submit</button>
-      <span id="submitStatus" class="mini-status"></span>
-    </div>
+  <div class="header-left">
+    <h1>Devon House Search</h1>
+    <div class="sub">Exmouth · Woodbury · Budleigh Salterton · East Devon coast — last updated 2026-07-07</div>
   </div>
-  <div class="sort-row">
-    <label for="sortControl">Sort:</label>
-    <select id="sortControl">
-      <option value="default">Default (newest first)</option>
-      <option value="ai-high">Highest AI rating first</option>
-      <option value="ai-low">Lowest AI rating first</option>
-      <option value="family-high">Highest family rating first</option>
-      <option value="family-low">Lowest family rating first</option>
-    </select>
+  <div class="header-right">
+    <div class="submit-form">
+      <button id="submitToggle" class="submit-link" type="button">📮 Spotted one yourself? Submit a property</button>
+      <div id="submitPanel" class="mini-form" style="display:none">
+        <input id="submitUrl" type="text" placeholder="Paste the listing URL here">
+        <textarea id="submitNotes" placeholder="What do you like about it? (optional)"></textarea>
+        <button id="submitPostBtn" type="button">Submit</button>
+        <span id="submitStatus" class="mini-status"></span>
+      </div>
+    </div>
+    <div class="sort-row">
+      <label for="sortControl">Sort:</label>
+      <select id="sortControl">
+        <option value="default">Default (newest first)</option>
+        <option value="ai-high">Highest AI rating first</option>
+        <option value="ai-low">Lowest AI rating first</option>
+        <option value="family-high">Highest family rating first</option>
+        <option value="family-low">Lowest family rating first</option>
+      </select>
+    </div>
   </div>
 </header>
 <nav><a href="#haynes">Haynes Cottages</a><a href="#longmeadow">Longmeadow Road</a><a href="#brookside">Brookside Cottage</a><a href="#morcote">Morcote</a><a href="#butterchurn">Butterchurn Cottage</a><a href="#eastbudleighhighst">High Street</a><a href="#marlesflat">The Marles</a><a href="#farleys">Farleys</a><a href="#exeterroadflat">Exeter Road</a><a href="#bellstreet">3 Bell Street</a><a href="#flexton">The Flexton</a><a href="#beaconflat">The Beacon</a><a href="#cranford">Cranford Avenue</a><a href="#otterton">Thatched Cottage</a><a href="#feniton">Barn at Whites Cottages</a><a href="#douglas">Douglas Avenue</a><a href="#sidmouth">Circular Thatched Cliff-top Cottage</a><a href="#yettington">The Threshing Barn</a><a href="#beacon">The Beacon</a><a href="#withycombe">Withycombe Village Road</a><a href="#salterton">Salterton Road</a><a href="#eastbudleigh">Grade II Thatched Cottage</a><a href="#clinton">Clinton Garage</a><a href="#leslie">The Coach House</a></nav>
