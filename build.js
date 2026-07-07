@@ -31,32 +31,56 @@ function photosHtml(id, photos) {
 }
 
 const REPO = "jkellyllekj/devon-house-search";
-const GISCUS_REPO_ID = "R_kgDOTN1h4w";
-const GISCUS_CATEGORY = "General";
-const GISCUS_CATEGORY_ID = "DIC_kwDOTN1h484DApI-";
+const WORKER_URL = "https://devon-house-worker.jessekellyuk.workers.dev";
 
-function githubIssueUrl(kind, p) {
-  const titles = { remove: `Remove: ${p.title}`, research: `Research: ${p.title}` };
-  const bodies = {
-    remove: `Property ID: ${p.id}\n\nReason (optional): \n`,
-    research: `Property ID: ${p.id}\n\nYour name: \n\nWhat should Claude look into? (e.g. a specific risk, local news, planning history, why the price is what it is): \n`,
-  };
-  const labels = { remove: "removal-request", research: "research-request" };
-  return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(titles[kind])}&body=${encodeURIComponent(bodies[kind])}&labels=${labels[kind]}`;
-}
-
-function submitPropertyUrl() {
-  const title = "Submit: (edit this — paste the address or listing site name)";
-  const body = "Listing URL (paste the exact page): \n\nWhat do you like about it: \n";
-  return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=property-submission`;
+function brotherBoxHtml(p, n) {
+  const bro = `Bro ${n}`;
+  const term = `${p.id}-bro${n}`;
+  return `
+    <div class="brother-box brother-box-${n}">
+      <h4>Bro ${n}</h4>
+      <div class="bro-comments" data-term="${esc(term)}">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          ${[1,2,3,4,5,6,7,8,9,10].map(n2 => `<option value="${n2}">${n2}/10</option>`).join("")}
+        </select>
+        <button class="bro-post-btn" data-property="${esc(p.id)}" data-bro="${esc(bro)}">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  `;
 }
 
 function giscusHtml(p) {
   return `
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="${esc(p.id)}" src="giscus-embed.html?term=${encodeURIComponent(p.id)}" loading="lazy" title="Family comments on ${esc(p.title)}"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        ${brotherBoxHtml(p, 1)}
+        ${brotherBoxHtml(p, 2)}
+        ${brotherBoxHtml(p, 3)}
+      </div>
+    </div>
+  `;
+}
+
+function askClaudeHtml(p) {
+  return `
+    <div class="ask-claude-block">
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="${esc(p.id)}" data-title="${esc(p.title)}">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="${esc(p.id)}" data-title="${esc(p.title)}">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   `;
 }
@@ -67,8 +91,8 @@ function sourceBadgeHtml(p) {
   return `<a class="source-badge" href="${esc(p.link)}" target="_blank" rel="noopener">View on ${esc(domain.toUpperCase())} ↗</a>`;
 }
 
-const RATER_LABELS = data.raterLabels || {};
-const BROTHER_SLOTS = ["Brother 1", "Brother 2", "Brother 3"];
+const BROTHER_SLOTS = ["Bro 1", "Bro 2", "Bro 3"];
+const BROTHER_WEIGHTS = { "Bro 1": 1, "Bro 2": 1, "Bro 3": 2 };
 
 function ratingBarColor(score) {
   const pct = Math.max(0, Math.min(10, score)) / 10;
@@ -101,14 +125,9 @@ function ratingRowHtml(label, score, cls) {
 
 function ratingsHtml(p) {
   const ratings = p.ratings || {};
-  const byLabel = {};
-  Object.entries(ratings).forEach(([login, r]) => {
-    const label = RATER_LABELS[login];
-    if (label) byLabel[label] = r.score;
-  });
   const rows = [
     ratingRowHtml("🤖 AI Rating", (p.aiRating !== undefined && p.aiRating !== null) ? p.aiRating : null, "rating-row-ai"),
-    ...BROTHER_SLOTS.map(label => ratingRowHtml(label, byLabel[label] !== undefined ? byLabel[label] : null, "")),
+    ...BROTHER_SLOTS.map(label => ratingRowHtml(label, ratings[label] !== undefined ? ratings[label].score : null, "")),
   ].join("");
   return `<div class="ratings-block"><h3>Ratings</h3>${rows}</div>`;
 }
@@ -172,16 +191,6 @@ function checklistHtml(p) {
 function aiTakeHtml(p) {
   if (!p.aiTake) return "";
   return `<p class="ai-take">🤖 <strong>AI's take:</strong> ${esc(p.aiTake)}</p>`;
-}
-
-function askClaudeHtml(p) {
-  return `
-    <div class="ask-claude-block">
-      <a href="${githubIssueUrl("research", p)}" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="${githubIssueUrl("remove", p)}" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
-    </div>
-  `;
 }
 
 function researchHtml(p) {
@@ -272,7 +281,7 @@ const html = `<!DOCTYPE html>
   header { background: #1b3a2f; color: #fff; padding: 28px 20px 20px; }
   header h1 { margin: 0 0 4px; font-size: 28px; }
   header .sub { color: #cfe0d6; font-size: 14px; }
-  .submit-link { display: inline-block; margin-top: 14px; background: #E65100; color: #fff; font-weight: 700; font-size: 13px; padding: 8px 16px; border-radius: 20px; text-decoration: none; }
+  .submit-link { display: inline-block; margin-top: 14px; background: #E65100; color: #fff; font-weight: 700; font-size: 13px; padding: 8px 16px; border-radius: 20px; text-decoration: none; border: none; font-family: inherit; cursor: pointer; }
   .submit-link:hover { background: #ff6f1a; }
   .sort-row { margin-top: 12px; font-size: 13px; }
   .sort-row label { color: #cfe0d6; margin-right: 8px; }
@@ -343,10 +352,35 @@ const html = `<!DOCTYPE html>
   .research-sources a { color: #1155cc; }
   .giscus-block { margin-top: 18px; padding: 16px; background: #fff8f0; border: 3px solid #E65100; border-radius: 8px; }
   .giscus-block h3 { margin: 0 0 10px; font-size: 18px; font-weight: 800; color: #E65100; letter-spacing: 0.3px; }
-  .giscus-frame-outer { width: 100%; border: 0; min-height: 400px; }
+  .brother-boxes { display: flex; gap: 12px; flex-wrap: wrap; }
+  .brother-box { flex: 1 1 260px; min-width: 240px; background: #fff; border-radius: 8px; padding: 10px; border-top: 4px solid #999; }
+  .brother-box h4 { margin: 0 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.4px; color: #666; }
+  .brother-box-1 { border-top-color: #1565C0; }
+  .brother-box-1 h4 { color: #1565C0; }
+  .brother-box-2 { border-top-color: #2E7D32; }
+  .brother-box-2 h4 { color: #2E7D32; }
+  .brother-box-3 { border-top-color: #C2185B; }
+  .brother-box-3 h4 { color: #C2185B; }
+  .bro-comments { font-size: 13px; margin-bottom: 8px; max-height: 160px; overflow-y: auto; }
+  .bro-comment { background: #f4f4f4; border-radius: 6px; padding: 6px 8px; margin-bottom: 6px; white-space: pre-wrap; }
+  .bro-empty { color: #999; font-size: 12px; }
+  .bro-input { width: 100%; box-sizing: border-box; min-height: 60px; font-family: inherit; font-size: 13px; padding: 6px 8px; border: 1px solid #ccc; border-radius: 6px; resize: vertical; }
+  .bro-controls { display: flex; gap: 8px; margin-top: 6px; align-items: center; }
+  .bro-rating { font-size: 12px; padding: 4px 6px; border-radius: 4px; border: 1px solid #ccc; }
+  .bro-post-btn { background: #1b3a2f; color: #fff; border: none; border-radius: 16px; padding: 6px 14px; font-size: 12px; font-weight: 600; cursor: pointer; }
+  .bro-post-btn:hover { background: #23483a; }
+  .bro-post-btn:disabled { opacity: 0.6; cursor: default; }
+  .bro-status { display: block; font-size: 11px; color: #888; margin-top: 4px; min-height: 14px; }
   .ask-claude-block { margin-top: 10px; padding-top: 10px; }
-  .ask-claude-block a { font-size: 13px; color: #1155cc; margin-right: 16px; text-decoration: none; }
-  .ask-claude-block a:hover { text-decoration: underline; }
+  .mini-form { margin-bottom: 12px; }
+  .mini-form textarea, .mini-form input[type="text"] { width: 100%; box-sizing: border-box; font-family: inherit; font-size: 13px; padding: 6px 8px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 6px; }
+  .mini-form textarea { min-height: 50px; resize: vertical; }
+  .mini-form button { background: #1155cc; color: #fff; border: none; border-radius: 16px; padding: 6px 14px; font-size: 12px; font-weight: 600; cursor: pointer; }
+  .mini-form button:hover { background: #0d3f99; }
+  .mini-form button:disabled { opacity: 0.6; cursor: default; }
+  .mini-status { display: block; font-size: 11px; color: #888; margin-top: 4px; min-height: 14px; }
+  .submit-form { margin-top: 14px; }
+  #submitPanel { margin-top: 10px; max-width: 420px; }
   .notes-caveat { display: block; font-size: 11px; color: #999; margin-top: 6px; }
   .added { font-size: 11px; color: #aaa; margin-top: 10px; }
   footer { max-width: 880px; margin: 0 auto; padding: 20px; color: #555; font-size: 13px; }
@@ -356,7 +390,15 @@ const html = `<!DOCTYPE html>
 <header>
   <h1>Devon House Search</h1>
   <div class="sub">Exmouth · Woodbury · Budleigh Salterton · East Devon coast — last updated ${esc(data.lastUpdated)}</div>
-  <a class="submit-link" href="${submitPropertyUrl()}" target="_blank" rel="noopener">📮 Spotted one yourself? Submit a property</a>
+  <div class="submit-form">
+    <button id="submitToggle" class="submit-link" type="button">📮 Spotted one yourself? Submit a property</button>
+    <div id="submitPanel" class="mini-form" style="display:none">
+      <input id="submitUrl" type="text" placeholder="Paste the listing URL here">
+      <textarea id="submitNotes" placeholder="What do you like about it? (optional)"></textarea>
+      <button id="submitPostBtn" type="button">Submit</button>
+      <span id="submitStatus" class="mini-status"></span>
+    </div>
+  </div>
   <div class="sort-row">
     <label for="sortControl">Sort:</label>
     <select id="sortControl">
@@ -403,12 +445,151 @@ function cycleChecklist(el) {
 
 document.querySelectorAll('.cl-source .cl-item').forEach(placeClItem);
 
-window.addEventListener('message', function (e) {
-  if (e.data && e.data.giscusEmbedResize && e.data.term) {
-    var frame = document.querySelector('iframe.giscus-frame-outer[data-term="' + e.data.term + '"]');
-    if (frame) frame.style.height = e.data.giscusEmbedResize + 'px';
-  }
+var WORKER_URL = 'https://devon-house-worker.jessekellyuk.workers.dev';
+
+function escText(s) {
+  var d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function loadBroComments(el) {
+  var term = el.dataset.term;
+  fetch(WORKER_URL + '/comments?term=' + encodeURIComponent(term))
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      if (!data.comments || !data.comments.length) {
+        el.innerHTML = '<p class="bro-empty">No comment yet.</p>';
+        return;
+      }
+      el.innerHTML = data.comments.map(function (c) {
+        return '<div class="bro-comment">' + escText(c.body) + '</div>';
+      }).join('');
+    })
+    .catch(function () {
+      el.innerHTML = '<p class="bro-empty">Couldn\\'t load comments right now — try reloading the page.</p>';
+    });
+}
+
+document.querySelectorAll('.bro-comments').forEach(loadBroComments);
+
+document.querySelectorAll('.bro-post-btn').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var box = btn.closest('.brother-box');
+    var textarea = box.querySelector('.bro-input');
+    var select = box.querySelector('.bro-rating');
+    var status = box.querySelector('.bro-status');
+    var commentsEl = box.querySelector('.bro-comments');
+    if (!textarea.value.trim() && !select.value) {
+      status.textContent = 'Write a comment or pick a rating first.';
+      return;
+    }
+    btn.disabled = true;
+    status.textContent = 'Posting…';
+    fetch(WORKER_URL + '/comment', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        propertyId: btn.dataset.property,
+        bro: btn.dataset.bro,
+        rating: select.value || null,
+        comment: textarea.value,
+      }),
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        btn.disabled = false;
+        if (data.ok) {
+          status.textContent = 'Posted!';
+          textarea.value = '';
+          select.value = '';
+          loadBroComments(commentsEl);
+        } else {
+          status.textContent = 'Something went wrong — try again in a bit.';
+        }
+      })
+      .catch(function () {
+        btn.disabled = false;
+        status.textContent = 'Could not reach the server — try again in a bit.';
+      });
+  });
 });
+
+function wireMiniForm(inputSel, btnSel, endpoint, buildBody) {
+  document.querySelectorAll(btnSel).forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var block = btn.closest('.ask-claude-block') || document;
+      var textarea = block.querySelector(inputSel);
+      var status = btn.parentElement.querySelector('.mini-status');
+      btn.disabled = true;
+      if (status) status.textContent = 'Sending…';
+      fetch(WORKER_URL + endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(buildBody(btn, textarea)),
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          btn.disabled = false;
+          if (status) status.textContent = data.ok ? 'Sent — thanks!' : 'Something went wrong, try again.';
+          if (data.ok && textarea) textarea.value = '';
+        })
+        .catch(function () {
+          btn.disabled = false;
+          if (status) status.textContent = 'Could not reach the server — try again in a bit.';
+        });
+    });
+  });
+}
+
+wireMiniForm('.research-input', '.research-post-btn', '/research', function (btn, textarea) {
+  return { propertyId: btn.dataset.property, propertyTitle: btn.dataset.title, question: textarea.value };
+});
+
+wireMiniForm('.remove-input', '.remove-post-btn', '/remove', function (btn, textarea) {
+  return { propertyId: btn.dataset.property, propertyTitle: btn.dataset.title, reason: textarea.value };
+});
+
+(function () {
+  var toggle = document.getElementById('submitToggle');
+  var panel = document.getElementById('submitPanel');
+  if (!toggle) return;
+  toggle.addEventListener('click', function () {
+    panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+  });
+  document.getElementById('submitPostBtn').addEventListener('click', function () {
+    var urlInput = document.getElementById('submitUrl');
+    var notes = document.getElementById('submitNotes');
+    var status = document.getElementById('submitStatus');
+    var btn = this;
+    if (!urlInput.value.trim()) {
+      status.textContent = 'Paste a listing URL first.';
+      return;
+    }
+    btn.disabled = true;
+    status.textContent = 'Sending…';
+    fetch(WORKER_URL + '/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ listingUrl: urlInput.value, notes: notes.value }),
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        btn.disabled = false;
+        if (data.ok) {
+          status.textContent = 'Sent — Claude will pick it up on the next sweep!';
+          urlInput.value = '';
+          notes.value = '';
+        } else {
+          status.textContent = 'Something went wrong, try again.';
+        }
+      })
+      .catch(function () {
+        btn.disabled = false;
+        status.textContent = 'Could not reach the server — try again in a bit.';
+      });
+  });
+})();
 
 (function () {
   var sortCards = Array.from(document.querySelectorAll('.card'));

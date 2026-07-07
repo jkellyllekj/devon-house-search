@@ -11,7 +11,7 @@
   header { background: #1b3a2f; color: #fff; padding: 28px 20px 20px; }
   header h1 { margin: 0 0 4px; font-size: 28px; }
   header .sub { color: #cfe0d6; font-size: 14px; }
-  .submit-link { display: inline-block; margin-top: 14px; background: #E65100; color: #fff; font-weight: 700; font-size: 13px; padding: 8px 16px; border-radius: 20px; text-decoration: none; }
+  .submit-link { display: inline-block; margin-top: 14px; background: #E65100; color: #fff; font-weight: 700; font-size: 13px; padding: 8px 16px; border-radius: 20px; text-decoration: none; border: none; font-family: inherit; cursor: pointer; }
   .submit-link:hover { background: #ff6f1a; }
   .sort-row { margin-top: 12px; font-size: 13px; }
   .sort-row label { color: #cfe0d6; margin-right: 8px; }
@@ -82,10 +82,35 @@
   .research-sources a { color: #1155cc; }
   .giscus-block { margin-top: 18px; padding: 16px; background: #fff8f0; border: 3px solid #E65100; border-radius: 8px; }
   .giscus-block h3 { margin: 0 0 10px; font-size: 18px; font-weight: 800; color: #E65100; letter-spacing: 0.3px; }
-  .giscus-frame-outer { width: 100%; border: 0; min-height: 400px; }
+  .brother-boxes { display: flex; gap: 12px; flex-wrap: wrap; }
+  .brother-box { flex: 1 1 260px; min-width: 240px; background: #fff; border-radius: 8px; padding: 10px; border-top: 4px solid #999; }
+  .brother-box h4 { margin: 0 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.4px; color: #666; }
+  .brother-box-1 { border-top-color: #1565C0; }
+  .brother-box-1 h4 { color: #1565C0; }
+  .brother-box-2 { border-top-color: #2E7D32; }
+  .brother-box-2 h4 { color: #2E7D32; }
+  .brother-box-3 { border-top-color: #C2185B; }
+  .brother-box-3 h4 { color: #C2185B; }
+  .bro-comments { font-size: 13px; margin-bottom: 8px; max-height: 160px; overflow-y: auto; }
+  .bro-comment { background: #f4f4f4; border-radius: 6px; padding: 6px 8px; margin-bottom: 6px; white-space: pre-wrap; }
+  .bro-empty { color: #999; font-size: 12px; }
+  .bro-input { width: 100%; box-sizing: border-box; min-height: 60px; font-family: inherit; font-size: 13px; padding: 6px 8px; border: 1px solid #ccc; border-radius: 6px; resize: vertical; }
+  .bro-controls { display: flex; gap: 8px; margin-top: 6px; align-items: center; }
+  .bro-rating { font-size: 12px; padding: 4px 6px; border-radius: 4px; border: 1px solid #ccc; }
+  .bro-post-btn { background: #1b3a2f; color: #fff; border: none; border-radius: 16px; padding: 6px 14px; font-size: 12px; font-weight: 600; cursor: pointer; }
+  .bro-post-btn:hover { background: #23483a; }
+  .bro-post-btn:disabled { opacity: 0.6; cursor: default; }
+  .bro-status { display: block; font-size: 11px; color: #888; margin-top: 4px; min-height: 14px; }
   .ask-claude-block { margin-top: 10px; padding-top: 10px; }
-  .ask-claude-block a { font-size: 13px; color: #1155cc; margin-right: 16px; text-decoration: none; }
-  .ask-claude-block a:hover { text-decoration: underline; }
+  .mini-form { margin-bottom: 12px; }
+  .mini-form textarea, .mini-form input[type="text"] { width: 100%; box-sizing: border-box; font-family: inherit; font-size: 13px; padding: 6px 8px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 6px; }
+  .mini-form textarea { min-height: 50px; resize: vertical; }
+  .mini-form button { background: #1155cc; color: #fff; border: none; border-radius: 16px; padding: 6px 14px; font-size: 12px; font-weight: 600; cursor: pointer; }
+  .mini-form button:hover { background: #0d3f99; }
+  .mini-form button:disabled { opacity: 0.6; cursor: default; }
+  .mini-status { display: block; font-size: 11px; color: #888; margin-top: 4px; min-height: 14px; }
+  .submit-form { margin-top: 14px; }
+  #submitPanel { margin-top: 10px; max-width: 420px; }
   .notes-caveat { display: block; font-size: 11px; color: #999; margin-top: 6px; }
   .added { font-size: 11px; color: #aaa; margin-top: 10px; }
   footer { max-width: 880px; margin: 0 auto; padding: 20px; color: #555; font-size: 13px; }
@@ -95,7 +120,15 @@
 <header>
   <h1>Devon House Search</h1>
   <div class="sub">Exmouth · Woodbury · Budleigh Salterton · East Devon coast — last updated 2026-07-06</div>
-  <a class="submit-link" href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Submit%3A%20(edit%20this%20%E2%80%94%20paste%20the%20address%20or%20listing%20site%20name)&body=Listing%20URL%20(paste%20the%20exact%20page)%3A%20%0A%0AWhat%20do%20you%20like%20about%20it%3A%20%0A&labels=property-submission" target="_blank" rel="noopener">📮 Spotted one yourself? Submit a property</a>
+  <div class="submit-form">
+    <button id="submitToggle" class="submit-link" type="button">📮 Spotted one yourself? Submit a property</button>
+    <div id="submitPanel" class="mini-form" style="display:none">
+      <input id="submitUrl" type="text" placeholder="Paste the listing URL here">
+      <textarea id="submitNotes" placeholder="What do you like about it? (optional)"></textarea>
+      <button id="submitPostBtn" type="button">Submit</button>
+      <span id="submitStatus" class="mini-status"></span>
+    </div>
+  </div>
   <div class="sort-row">
     <label for="sortControl">Sort:</label>
     <select id="sortControl">
@@ -150,19 +183,19 @@
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -181,22 +214,76 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20High%20Street%2C%20East%20Budleigh%20(Grade%20II%20cottage)&body=Property%20ID%3A%20eastbudleighhighst%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20High%20Street%2C%20East%20Budleigh%20(Grade%20II%20cottage)&body=Property%20ID%3A%20eastbudleighhighst%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="eastbudleighhighst" data-title="High Street, East Budleigh (Grade II cottage)">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="eastbudleighhighst" data-title="High Street, East Budleigh (Grade II cottage)">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="eastbudleighhighst" src="giscus-embed.html?term=eastbudleighhighst" loading="lazy" title="Family comments on High Street, East Budleigh (Grade II cottage)"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="eastbudleighhighst-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="eastbudleighhighst" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="eastbudleighhighst-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="eastbudleighhighst" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="eastbudleighhighst-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="eastbudleighhighst" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-06</div>
   </section>
 
-  <section class="card" id="marlesflat" data-avg-rating="" data-ai-rating="6">
+  <section class="card" id="marlesflat" data-avg-rating="" data-ai-rating="7">
     <h2>The Marles, Exmouth (ground-floor flat)</h2>
     <div class="price-row">
       <span class="price">£200,000</span>
@@ -225,30 +312,30 @@
   
     <p class="body">Spacious purpose-built ground-floor flat undergoing extensive modernisation — new flooring, refurbished kitchen and shower room, full redecoration. Entrance hall with utilities cupboard, large lounge/diner, two double bedrooms, shower room/WC, surrounded by communal gardens. Leasehold with an extended lease granted on completion. Service charge £1,440/year.</p>
     <p class="why"><strong>Why it's here:</strong> Passes the ground-floor test for a flat and is well under budget, but the parking is soft: the listing only says a garage is understood to be available to rent close by, not an allocated space that comes with the sale — weaker than Exeter Road or Douglas Avenue below, which both have confirmed allocated parking.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Ticks the practical boxes (ground floor, cheap, close to everything in Exmouth) but has none of the character you respond to, and the garage is only a maybe.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Ticks the practical boxes (ground floor, cheap, close to everything in Exmouth) but has none of the character you respond to, and the garage is only a maybe. Right at your £200k comfort line, which helps its case.</p>
     
     <div class="ratings-block"><h3>Ratings</h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
-      <span class="rating-row-score">6/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
+      <span class="rating-row-score">7/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -267,22 +354,76 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20The%20Marles%2C%20Exmouth%20(ground-floor%20flat)&body=Property%20ID%3A%20marlesflat%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20The%20Marles%2C%20Exmouth%20(ground-floor%20flat)&body=Property%20ID%3A%20marlesflat%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="marlesflat" data-title="The Marles, Exmouth (ground-floor flat)">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="marlesflat" data-title="The Marles, Exmouth (ground-floor flat)">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="marlesflat" src="giscus-embed.html?term=marlesflat" loading="lazy" title="Family comments on The Marles, Exmouth (ground-floor flat)"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="marlesflat-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="marlesflat" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="marlesflat-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="marlesflat" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="marlesflat-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="marlesflat" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-06</div>
   </section>
 <h1 class="section-title">Still Listed</h1>
-  <section class="card" id="farleys" data-avg-rating="" data-ai-rating="7">
+  <section class="card" id="farleys" data-avg-rating="" data-ai-rating="6">
     <h2>Farleys, The Strand, Lympstone (Grade II cottage)</h2>
     <div class="price-row">
       <span class="price">£295,000</span>
@@ -311,30 +452,30 @@
   
     <p class="body">Two-bedroom Grade II listed cottage in the heart of Lympstone village — exposed beams and stonework throughout, cosy sitting/dining room, well-appointed kitchen, family bathroom, two loft areas with Velux windows, gas central heating. Freehold and chain-free. No garden and no dedicated parking — permit parking is available at the village car park nearby. Two pubs, shop, post office, café, sailing club and the estuary all on the doorstep.</p>
     <p class="why"><strong>Why it's here:</strong> Location-wise this is arguably the best-placed find yet: Lympstone sits on the Exe estuary directly between Exmouth and Woodbury Common — water one way, trails the other, and one of your brothers is in Woodbury just up the hill. Genuine period character (Grade II, beams, stonework), chain-free, and £5k under ceiling. The catches: no parking (the standing hard requirement — waived here only because it's genuinely characterful, with village car park permits as the workaround), no outdoor space, and listed-building consent applies to any alterations. Found via the Exmouth Journal property pages, not the portals.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Best location fit yet — estuary, its own station, and Woodbury Common all on the doorstep — but no garden, no parking, and Grade II status likely rules out a ground-floor retrofit. One honest caveat: by your own read, Lympstone isn't especially close to either brother (Woodbury or Otterton) — worth it only if the deal/character is exceptional enough to outweigh that, which arguably it already is (Grade II, chain-free, £5k under budget). Your call.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Best location fit yet — estuary, its own station, and Woodbury Common all on the doorstep — but no garden, no parking, and Grade II status likely rules out a ground-floor retrofit. One honest caveat: by your own read, Lympstone isn't especially close to either brother (Woodbury or Otterton) — worth it only if the deal/character is exceptional enough to outweigh that, which arguably it already is (Grade II, chain-free, £5k under budget). Your call. Also nudged down slightly for price — £295k is into the range you'd call over budget even though it's under the £300k hard ceiling.</p>
     
     <div class="ratings-block"><h3>Ratings</h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
-      <span class="rating-row-score">7/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -353,22 +494,76 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20Farleys%2C%20The%20Strand%2C%20Lympstone%20(Grade%20II%20cottage)&body=Property%20ID%3A%20farleys%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20Farleys%2C%20The%20Strand%2C%20Lympstone%20(Grade%20II%20cottage)&body=Property%20ID%3A%20farleys%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="farleys" data-title="Farleys, The Strand, Lympstone (Grade II cottage)">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="farleys" data-title="Farleys, The Strand, Lympstone (Grade II cottage)">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="farleys" src="giscus-embed.html?term=farleys" loading="lazy" title="Family comments on Farleys, The Strand, Lympstone (Grade II cottage)"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="farleys-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="farleys" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="farleys-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="farleys" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="farleys-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="farleys" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-05</div>
   </section>
 
-  <section class="card" id="exeterroadflat" data-avg-rating="" data-ai-rating="7">
+  <section class="card" id="exeterroadflat" data-avg-rating="" data-ai-rating="9">
     <h2>Exeter Road, Exmouth (ground-floor character flat)</h2>
     <div class="price-row">
       <span class="price">£110,000</span>
@@ -397,30 +592,30 @@
   
     <p class="body">One-bedroom apartment occupying the entire ground floor of a period building on Exeter Road — high ceilings, large windows overlooking the communal lawn and neighbouring church, generously proportioned living room, bedroom with double doors onto a rear courtyard, modern bathroom, galley kitchen. Allocated parking at the rear. Functional condition with scope for modernisation. 52 years remaining on the lease.</p>
     <p class="why"><strong>Why it's here:</strong> Still the rare flat that actually passes your flat rules: genuinely cheap AND explicitly the whole ground floor, with a real allocated parking space on top. Reduced a further £20,000 on 24/06/2026, now just £110k — under half of what it was quoted at when first tracked. Worth a sense check on the short (52-year) lease and extension cost before getting excited about the price. Only one photo shown — Zoopla blocks photo scraping, so this is the single press image from the Exmouth Journal writeup.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest genuinely ground-floor-with-parking option on the list, right in the middle of everything — the short 52-year lease is the one number worth checking before getting attached.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest genuinely ground-floor-with-parking option on the list, right in the middle of everything — the short 52-year lease is the one number worth checking before getting attached. Comfortably under your real £170k target too, which is worth more to you than the headline £300k ceiling suggests.</p>
     
     <div class="ratings-block"><h3>Ratings</h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
-      <span class="rating-row-score">7/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:90%;background:rgb(63,117,60)"></div></div>
+      <span class="rating-row-score">9/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -439,16 +634,70 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20Exeter%20Road%2C%20Exmouth%20(ground-floor%20character%20flat)&body=Property%20ID%3A%20exeterroadflat%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20Exeter%20Road%2C%20Exmouth%20(ground-floor%20character%20flat)&body=Property%20ID%3A%20exeterroadflat%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="exeterroadflat" data-title="Exeter Road, Exmouth (ground-floor character flat)">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="exeterroadflat" data-title="Exeter Road, Exmouth (ground-floor character flat)">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="exeterroadflat" src="giscus-embed.html?term=exeterroadflat" loading="lazy" title="Family comments on Exeter Road, Exmouth (ground-floor character flat)"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="exeterroadflat-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="exeterroadflat" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="exeterroadflat-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="exeterroadflat" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="exeterroadflat-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="exeterroadflat" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-05</div>
@@ -494,19 +743,19 @@
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -525,16 +774,70 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%203%20Bell%20Street%2C%20Otterton&body=Property%20ID%3A%20bellstreet%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%203%20Bell%20Street%2C%20Otterton&body=Property%20ID%3A%20bellstreet%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="bellstreet" data-title="3 Bell Street, Otterton">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="bellstreet" data-title="3 Bell Street, Otterton">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="bellstreet" src="giscus-embed.html?term=bellstreet" loading="lazy" title="Family comments on 3 Bell Street, Otterton"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="bellstreet-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="bellstreet" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="bellstreet-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="bellstreet" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="bellstreet-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="bellstreet" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-05</div>
@@ -580,19 +883,19 @@
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -611,22 +914,76 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20The%20Flexton%2C%20Ottery%20St%20Mary&body=Property%20ID%3A%20flexton%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20The%20Flexton%2C%20Ottery%20St%20Mary&body=Property%20ID%3A%20flexton%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="flexton" data-title="The Flexton, Ottery St Mary">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="flexton" data-title="The Flexton, Ottery St Mary">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="flexton" src="giscus-embed.html?term=flexton" loading="lazy" title="Family comments on The Flexton, Ottery St Mary"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="flexton-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="flexton" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="flexton-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="flexton" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="flexton-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="flexton" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-05</div>
   </section>
 
-  <section class="card" id="beaconflat" data-avg-rating="" data-ai-rating="6">
+  <section class="card" id="beaconflat" data-avg-rating="" data-ai-rating="4">
     <h2>The Beacon, Exmouth (ground-floor flat)</h2>
     <div class="price-row">
       <span class="price">£309,950</span>
@@ -655,30 +1012,30 @@
   
     <p class="body">Two-double-bedroom ground-floor flat, a quarter-share of the freehold on a 999-year lease in a self-managed building of four apartments (£120/month maintenance). Bay-window sitting room overlooking the estuary, modern kitchen, bathroom with rainfall shower plus a separate cloakroom, stone fireplace. A secure parking space (up-and-over door) is included at the rear.</p>
     <p class="why"><strong>Why it's here:</strong> Note: this is a different property from the over-budget Beacon house already on file below — same building name, unrelated listing. This one is genuinely ground-floor with a real allocated parking space (not just street parking) plus an estuary view, which is unusual for a flat at this price. But it's £9,950 (3%) over your £300k ceiling and it's a flat, so only worth a look if you'd flex the ceiling slightly for a genuine parking bay and the view.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Real ground-floor parking and an estuary view are rare for a flat, but it's over budget and still just a flat, not the characterful find you're really after.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Real ground-floor parking and an estuary view are rare for a flat, but it's over budget and still just a flat, not the characterful find you're really after. Already over the £300k hard ceiling, which the price alone makes hard to justify given your real ~£170-200k target.</p>
     
     <div class="ratings-block"><h3>Ratings</h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
-      <span class="rating-row-score">6/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -697,16 +1054,70 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20The%20Beacon%2C%20Exmouth%20(ground-floor%20flat)&body=Property%20ID%3A%20beaconflat%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20The%20Beacon%2C%20Exmouth%20(ground-floor%20flat)&body=Property%20ID%3A%20beaconflat%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="beaconflat" data-title="The Beacon, Exmouth (ground-floor flat)">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="beaconflat" data-title="The Beacon, Exmouth (ground-floor flat)">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="beaconflat" src="giscus-embed.html?term=beaconflat" loading="lazy" title="Family comments on The Beacon, Exmouth (ground-floor flat)"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="beaconflat-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="beaconflat" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="beaconflat-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="beaconflat" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="beaconflat-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="beaconflat" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-05</div>
@@ -752,19 +1163,19 @@
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -783,16 +1194,70 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20Cranford%20Avenue%2C%20Exmouth%20(ground-floor%20flat)&body=Property%20ID%3A%20cranford%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20Cranford%20Avenue%2C%20Exmouth%20(ground-floor%20flat)&body=Property%20ID%3A%20cranford%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="cranford" data-title="Cranford Avenue, Exmouth (ground-floor flat)">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="cranford" data-title="Cranford Avenue, Exmouth (ground-floor flat)">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="cranford" src="giscus-embed.html?term=cranford" loading="lazy" title="Family comments on Cranford Avenue, Exmouth (ground-floor flat)"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="cranford-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="cranford" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="cranford-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="cranford" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="cranford-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="cranford" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-05</div>
@@ -838,19 +1303,19 @@
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -869,22 +1334,76 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20Thatched%20Cottage%2C%20The%20Green%2C%20Otterton&body=Property%20ID%3A%20otterton%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20Thatched%20Cottage%2C%20The%20Green%2C%20Otterton&body=Property%20ID%3A%20otterton%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="otterton" data-title="Thatched Cottage, The Green, Otterton">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="otterton" data-title="Thatched Cottage, The Green, Otterton">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="otterton" src="giscus-embed.html?term=otterton" loading="lazy" title="Family comments on Thatched Cottage, The Green, Otterton"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="otterton-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="otterton" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="otterton-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="otterton" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="otterton-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="otterton" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-04</div>
   </section>
 
-  <section class="card" id="feniton" data-avg-rating="" data-ai-rating="6">
+  <section class="card" id="feniton" data-avg-rating="" data-ai-rating="8">
     <h2>Barn at Whites Cottages, Feniton — AUCTION</h2>
     <div class="price-row">
       <span class="price">£65,000 (guide price)</span>
@@ -913,30 +1432,30 @@
   
     <p class="body">Freehold barn on a 0.21-acre plot on the edge of Feniton village. Already has full planning permission (East Devon DC ref 25/0370/FUL, granted Sept 2025) to convert and extend into a 3-bedroom dwelling with parking and garden. Going to online auction 23 July 2026.</p>
     <p class="why"><strong>Why it's here:</strong> The self-build/conversion-plot opportunity Jesse said he'd consider — cheap land with permission already in hand. Downside: inland near Honiton, off the coast/trails brief.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest, most flexible option — you could design in ground-floor living and a workshop from scratch — but it's inland, off the coast and trails brief entirely.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest, most flexible option — you could design in ground-floor living and a workshop from scratch — but it's inland, off the coast and trails brief entirely. Also comfortably under your real £170k target — the cheapest thing on the list by a wide margin.</p>
     
     <div class="ratings-block"><h3>Ratings</h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
-      <span class="rating-row-score">6/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:80%;background:rgb(79,109,60)"></div></div>
+      <span class="rating-row-score">8/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -955,16 +1474,70 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20Barn%20at%20Whites%20Cottages%2C%20Feniton%20%E2%80%94%20AUCTION&body=Property%20ID%3A%20feniton%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20Barn%20at%20Whites%20Cottages%2C%20Feniton%20%E2%80%94%20AUCTION&body=Property%20ID%3A%20feniton%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="feniton" data-title="Barn at Whites Cottages, Feniton — AUCTION">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="feniton" data-title="Barn at Whites Cottages, Feniton — AUCTION">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="feniton" src="giscus-embed.html?term=feniton" loading="lazy" title="Family comments on Barn at Whites Cottages, Feniton — AUCTION"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="feniton-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="feniton" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="feniton-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="feniton" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="feniton-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="feniton" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-04</div>
@@ -1010,19 +1583,19 @@
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -1041,16 +1614,70 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20Douglas%20Avenue%2C%20Exmouth&body=Property%20ID%3A%20douglas%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20Douglas%20Avenue%2C%20Exmouth&body=Property%20ID%3A%20douglas%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="douglas" data-title="Douglas Avenue, Exmouth">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="douglas" data-title="Douglas Avenue, Exmouth">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="douglas" src="giscus-embed.html?term=douglas" loading="lazy" title="Family comments on Douglas Avenue, Exmouth"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="douglas-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="douglas" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="douglas-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="douglas" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="douglas-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="douglas" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-03</div>
@@ -1107,19 +1734,19 @@
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -1138,22 +1765,76 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20Circular%20Thatched%20Cliff-top%20Cottage%2C%20Peak%20Hill%20Road%2C%20Sidmouth&body=Property%20ID%3A%20sidmouth%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20Circular%20Thatched%20Cliff-top%20Cottage%2C%20Peak%20Hill%20Road%2C%20Sidmouth&body=Property%20ID%3A%20sidmouth%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="sidmouth" data-title="Circular Thatched Cliff-top Cottage, Peak Hill Road, Sidmouth">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="sidmouth" data-title="Circular Thatched Cliff-top Cottage, Peak Hill Road, Sidmouth">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="sidmouth" src="giscus-embed.html?term=sidmouth" loading="lazy" title="Family comments on Circular Thatched Cliff-top Cottage, Peak Hill Road, Sidmouth"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="sidmouth-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="sidmouth" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="sidmouth-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="sidmouth" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="sidmouth-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="sidmouth" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-03</div>
   </section>
 
-  <section class="card" id="yettington" data-avg-rating="" data-ai-rating="6">
+  <section class="card" id="yettington" data-avg-rating="" data-ai-rating="4">
     <h2>The Threshing Barn, Yettington</h2>
     <div class="price-row">
       <span class="price">£375,000–£400,000 (guide price)</span>
@@ -1179,30 +1860,30 @@
   
     <p class="body">Two-bedroom barn conversion in the small hamlet of Yettington, directly on the walking/cycling routes linking Budleigh Salterton, East Budleigh, and Woodbury Common. Stable-style front door, vaulted ceilings, exposed beams, ~798 sq ft, gardens and allocated parking.</p>
     <p class="why"><strong>Why it's here:</strong> About as close as a converted barn gets to the Woodbury Common trail network. Priced 25-33% over budget and compact for the money. Downgraded to likely sold this sweep: on top of the agent's own listing page redirecting to a generic search, a Rightmove mirror for a similar 3-bed Yettington barn conversion now also returns 410 Gone. Kept only as a benchmark/inspiration piece unless Jesse wants it chased further.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> About the best trail-network location of anything found, and has real character, but likely gone and was already 25-33% over budget.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> About the best trail-network location of anything found, and has real character, but likely gone and was already 25-33% over budget. Already well past the £300k ceiling — a benchmark piece, not a real contender on price alone.</p>
     
     <div class="ratings-block"><h3>Ratings</h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
-      <span class="rating-row-score">6/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -1221,22 +1902,76 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20The%20Threshing%20Barn%2C%20Yettington&body=Property%20ID%3A%20yettington%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20The%20Threshing%20Barn%2C%20Yettington&body=Property%20ID%3A%20yettington%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="yettington" data-title="The Threshing Barn, Yettington">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="yettington" data-title="The Threshing Barn, Yettington">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="yettington" src="giscus-embed.html?term=yettington" loading="lazy" title="Family comments on The Threshing Barn, Yettington"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="yettington-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="yettington" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="yettington-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="yettington" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="yettington-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="yettington" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-04</div>
   </section>
 
-  <section class="card" id="beacon" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="beacon" data-avg-rating="" data-ai-rating="3">
     <h2>The Beacon, Exmouth (inspiration only)</h2>
     <div class="price-row">
       <span class="price">Offers over £400,000</span>
@@ -1265,30 +2000,30 @@
   
     <p class="body">Grade II-listed four-storey house needing renovation, sea views from the upper floors, private garden and garage, walking distance to town centre and seafront.</p>
     <p class="why"><strong>Why it's here:</strong> Well over budget but kept as a benchmark for what full-renovation character stock costs locally.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Character and garage boxes are both ticked hard, but it's 33%+ over budget and a full four-storey renovation project, not a quick move-in.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Character and garage boxes are both ticked hard, but it's 33%+ over budget and a full four-storey renovation project, not a quick move-in. Already well past the £300k ceiling, on top of being a major renovation project.</p>
     
     <div class="ratings-block"><h3>Ratings</h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
-      <span class="rating-row-score">5/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
+      <span class="rating-row-score">3/10</span>
+      <span class="rating-row-flames">🔥🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -1307,22 +2042,76 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20The%20Beacon%2C%20Exmouth%20(inspiration%20only)&body=Property%20ID%3A%20beacon%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20The%20Beacon%2C%20Exmouth%20(inspiration%20only)&body=Property%20ID%3A%20beacon%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="beacon" data-title="The Beacon, Exmouth (inspiration only)">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="beacon" data-title="The Beacon, Exmouth (inspiration only)">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="beacon" src="giscus-embed.html?term=beacon" loading="lazy" title="Family comments on The Beacon, Exmouth (inspiration only)"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="beacon-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="beacon" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="beacon-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="beacon" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="beacon-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="beacon" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-03</div>
   </section>
 
-  <section class="card" id="withycombe" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="withycombe" data-avg-rating="" data-ai-rating="3">
     <h2>Withycombe Village Road, Exmouth (former Methodist Church)</h2>
     <div class="price-row">
       <span class="price">Guide price £350,000 (as of first report, unconfirmed)</span>
@@ -1351,30 +2140,30 @@
   
     <p class="body">Former Methodist Church and adjoining Church Hall, gardens, conversion project subject to planning consent.</p>
     <p class="why"><strong>Why it's here:</strong> Couldn't re-locate this exact listing this sweep — may have sold or been withdrawn. Kept as inspiration for the flavour of conversion opportunity this market does throw up.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> The most unusual conversion flavour found so far, but too much of the listing (price, status, layout) is unconfirmed to rate it with real confidence.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> The most unusual conversion flavour found so far, but too much of the listing (price, status, layout) is unconfirmed to rate it with real confidence. Already well past the £300k ceiling on top of everything else unconfirmed.</p>
     
     <div class="ratings-block"><h3>Ratings</h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
-      <span class="rating-row-score">5/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
+      <span class="rating-row-score">3/10</span>
+      <span class="rating-row-flames">🔥🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -1393,22 +2182,76 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20Withycombe%20Village%20Road%2C%20Exmouth%20(former%20Methodist%20Church)&body=Property%20ID%3A%20withycombe%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20Withycombe%20Village%20Road%2C%20Exmouth%20(former%20Methodist%20Church)&body=Property%20ID%3A%20withycombe%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="withycombe" data-title="Withycombe Village Road, Exmouth (former Methodist Church)">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="withycombe" data-title="Withycombe Village Road, Exmouth (former Methodist Church)">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="withycombe" src="giscus-embed.html?term=withycombe" loading="lazy" title="Family comments on Withycombe Village Road, Exmouth (former Methodist Church)"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="withycombe-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="withycombe" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="withycombe-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="withycombe" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="withycombe-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="withycombe" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-03</div>
   </section>
 
-  <section class="card" id="salterton" data-avg-rating="" data-ai-rating="4">
+  <section class="card" id="salterton" data-avg-rating="" data-ai-rating="6">
     <h2>Salterton Road, Exmouth (ground-floor retirement flat)</h2>
     <div class="price-row">
       <span class="price">£150,000 (as of first report, unconfirmed)</span>
@@ -1434,30 +2277,30 @@
   
     <p class="body">Two-bedroom ground-floor retirement apartment, direct access to communal gardens, close to amenities and bus routes. Likely age-restricted.</p>
     <p class="why"><strong>Why it's here:</strong> Cheapest option found originally; could not reconfirm this exact flat this sweep (a different Salterton Road retirement flat, Bronte Court, now shows instead). No photo included to avoid misattributing an image to the wrong flat.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Ticks ground-floor and location boxes cheaply, but likely age-restricted and has none of the character you're after — a fallback, not a favourite.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Ticks ground-floor and location boxes cheaply, but likely age-restricted and has none of the character you're after — a fallback, not a favourite. Also under your real £170k target, which counts for more than the £300k ceiling implies.</p>
     
     <div class="ratings-block"><h3>Ratings</h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
-      <span class="rating-row-score">4/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -1476,22 +2319,76 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20Salterton%20Road%2C%20Exmouth%20(ground-floor%20retirement%20flat)&body=Property%20ID%3A%20salterton%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20Salterton%20Road%2C%20Exmouth%20(ground-floor%20retirement%20flat)&body=Property%20ID%3A%20salterton%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="salterton" data-title="Salterton Road, Exmouth (ground-floor retirement flat)">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="salterton" data-title="Salterton Road, Exmouth (ground-floor retirement flat)">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="salterton" src="giscus-embed.html?term=salterton" loading="lazy" title="Family comments on Salterton Road, Exmouth (ground-floor retirement flat)"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="salterton-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="salterton" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="salterton-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="salterton" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="salterton-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="salterton" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-03</div>
   </section>
 
-  <section class="card" id="eastbudleigh" data-avg-rating="" data-ai-rating="4">
+  <section class="card" id="eastbudleigh" data-avg-rating="" data-ai-rating="2">
     <h2>Grade II Thatched Cottage, High Street, East Budleigh</h2>
     <div class="price-row">
       <span class="price">£435,000</span>
@@ -1520,30 +2417,30 @@
   
     <p class="body">Genuinely characterful double-fronted thatched cottage, 1600s core with a 1700s rear extension.</p>
     <p class="why"><strong>Why it's here:</strong> 45% over budget, kept as inspiration. The Rightmove listing now returns "410 Gone", suggesting it has sold or been withdrawn.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Genuinely characterful but 45% over budget and likely already gone — kept only as a benchmark.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Genuinely characterful but 45% over budget and likely already gone — kept only as a benchmark. Already well past the £300k ceiling, on top of likely being sold.</p>
     
     <div class="ratings-block"><h3>Ratings</h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
-      <span class="rating-row-score">4/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:20%;background:rgb(178,63,60)"></div></div>
+      <span class="rating-row-score">2/10</span>
+      <span class="rating-row-flames">🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -1562,22 +2459,76 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20Grade%20II%20Thatched%20Cottage%2C%20High%20Street%2C%20East%20Budleigh&body=Property%20ID%3A%20eastbudleigh%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20Grade%20II%20Thatched%20Cottage%2C%20High%20Street%2C%20East%20Budleigh&body=Property%20ID%3A%20eastbudleigh%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="eastbudleigh" data-title="Grade II Thatched Cottage, High Street, East Budleigh">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="eastbudleigh" data-title="Grade II Thatched Cottage, High Street, East Budleigh">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="eastbudleigh" src="giscus-embed.html?term=eastbudleigh" loading="lazy" title="Family comments on Grade II Thatched Cottage, High Street, East Budleigh"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="eastbudleigh-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="eastbudleigh" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="eastbudleigh-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="eastbudleigh" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="eastbudleigh-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="eastbudleigh" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-04</div>
   </section>
 
-  <section class="card" id="clinton" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="clinton" data-avg-rating="" data-ai-rating="3">
     <h2>Clinton Garage, Budleigh Salterton — AUCTION</h2>
     <div class="price-row">
       <span class="price">£375,000 (guide price)</span>
@@ -1606,30 +2557,30 @@
   
     <p class="body">Former commercial garage/MOT site right in Budleigh Salterton itself — conversion/redevelopment long-shot.</p>
     <p class="why"><strong>Why it's here:</strong> Over budget and speculative, but flagged given the town-centre location and imminent auction date.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> The most literal 'workshop you could hire out' find yet, right in Budleigh itself, but it's speculative, over budget, and a redevelopment project rather than a move-in-ready home.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> The most literal 'workshop you could hire out' find yet, right in Budleigh itself, but it's speculative, over budget, and a redevelopment project rather than a move-in-ready home. Already well past the £300k ceiling on top of being speculative.</p>
     
     <div class="ratings-block"><h3>Ratings</h3>
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
-      <span class="rating-row-score">5/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
+      <span class="rating-row-score">3/10</span>
+      <span class="rating-row-flames">🔥🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -1648,16 +2599,70 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20Clinton%20Garage%2C%20Budleigh%20Salterton%20%E2%80%94%20AUCTION&body=Property%20ID%3A%20clinton%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20Clinton%20Garage%2C%20Budleigh%20Salterton%20%E2%80%94%20AUCTION&body=Property%20ID%3A%20clinton%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="clinton" data-title="Clinton Garage, Budleigh Salterton — AUCTION">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="clinton" data-title="Clinton Garage, Budleigh Salterton — AUCTION">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="clinton" src="giscus-embed.html?term=clinton" loading="lazy" title="Family comments on Clinton Garage, Budleigh Salterton — AUCTION"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="clinton-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="clinton" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="clinton-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="clinton" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="clinton-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="clinton" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-04</div>
@@ -1700,19 +2705,19 @@
     </div>
   
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 1</span>
+        <span class="rating-row-label">Bro 1</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 2</span>
+        <span class="rating-row-label">Bro 2</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
     
       <div class="rating-row rating-row-empty ">
-        <span class="rating-row-label">Brother 3</span>
+        <span class="rating-row-label">Bro 3</span>
         <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
         <span class="rating-row-score">not yet rated</span>
       </div>
@@ -1731,16 +2736,70 @@
   
     
     <div class="ask-claude-block">
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Research%3A%20The%20Coach%20House%2C%20Leslie%20Road%2C%20Exmouth&body=Property%20ID%3A%20leslie%0A%0AYour%20name%3A%20%0A%0AWhat%20should%20Claude%20look%20into%3F%20(e.g.%20a%20specific%20risk%2C%20local%20news%2C%20planning%20history%2C%20why%20the%20price%20is%20what%20it%20is)%3A%20%0A&labels=research-request" target="_blank" rel="noopener">🔍 Ask Claude to research this further</a>
-      <a href="https://github.com/jkellyllekj/devon-house-search/issues/new?title=Remove%3A%20The%20Coach%20House%2C%20Leslie%20Road%2C%20Exmouth&body=Property%20ID%3A%20leslie%0A%0AReason%20(optional)%3A%20%0A&labels=removal-request" target="_blank" rel="noopener">Request removal</a>
-      <span class="notes-caveat">These open a GitHub issue (free account needed) — Claude actions them on the next daily sweep, not instantly.</span>
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="leslie" data-title="The Coach House, Leslie Road, Exmouth">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="leslie" data-title="The Coach House, Leslie Road, Exmouth">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
     </div>
   
     
     <div class="giscus-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Tip: include <code>Rating: 7/10</code> (or any number 1-10) in your comment and it'll show up as a rating badge above after tomorrow's sweep.</p>
-      <iframe class="giscus-frame-outer" data-term="leslie" src="giscus-embed.html?term=leslie" loading="lazy" title="Family comments on The Coach House, Leslie Road, Exmouth"></iframe>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="leslie-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="leslie" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="leslie-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="leslie" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="leslie-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="leslie" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
     </div>
   
     <div class="added">Added 2026-07-03</div>
@@ -1777,12 +2836,151 @@ function cycleChecklist(el) {
 
 document.querySelectorAll('.cl-source .cl-item').forEach(placeClItem);
 
-window.addEventListener('message', function (e) {
-  if (e.data && e.data.giscusEmbedResize && e.data.term) {
-    var frame = document.querySelector('iframe.giscus-frame-outer[data-term="' + e.data.term + '"]');
-    if (frame) frame.style.height = e.data.giscusEmbedResize + 'px';
-  }
+var WORKER_URL = 'https://devon-house-worker.jessekellyuk.workers.dev';
+
+function escText(s) {
+  var d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function loadBroComments(el) {
+  var term = el.dataset.term;
+  fetch(WORKER_URL + '/comments?term=' + encodeURIComponent(term))
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      if (!data.comments || !data.comments.length) {
+        el.innerHTML = '<p class="bro-empty">No comment yet.</p>';
+        return;
+      }
+      el.innerHTML = data.comments.map(function (c) {
+        return '<div class="bro-comment">' + escText(c.body) + '</div>';
+      }).join('');
+    })
+    .catch(function () {
+      el.innerHTML = '<p class="bro-empty">Couldn\'t load comments right now — try reloading the page.</p>';
+    });
+}
+
+document.querySelectorAll('.bro-comments').forEach(loadBroComments);
+
+document.querySelectorAll('.bro-post-btn').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var box = btn.closest('.brother-box');
+    var textarea = box.querySelector('.bro-input');
+    var select = box.querySelector('.bro-rating');
+    var status = box.querySelector('.bro-status');
+    var commentsEl = box.querySelector('.bro-comments');
+    if (!textarea.value.trim() && !select.value) {
+      status.textContent = 'Write a comment or pick a rating first.';
+      return;
+    }
+    btn.disabled = true;
+    status.textContent = 'Posting…';
+    fetch(WORKER_URL + '/comment', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        propertyId: btn.dataset.property,
+        bro: btn.dataset.bro,
+        rating: select.value || null,
+        comment: textarea.value,
+      }),
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        btn.disabled = false;
+        if (data.ok) {
+          status.textContent = 'Posted!';
+          textarea.value = '';
+          select.value = '';
+          loadBroComments(commentsEl);
+        } else {
+          status.textContent = 'Something went wrong — try again in a bit.';
+        }
+      })
+      .catch(function () {
+        btn.disabled = false;
+        status.textContent = 'Could not reach the server — try again in a bit.';
+      });
+  });
 });
+
+function wireMiniForm(inputSel, btnSel, endpoint, buildBody) {
+  document.querySelectorAll(btnSel).forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var block = btn.closest('.ask-claude-block') || document;
+      var textarea = block.querySelector(inputSel);
+      var status = btn.parentElement.querySelector('.mini-status');
+      btn.disabled = true;
+      if (status) status.textContent = 'Sending…';
+      fetch(WORKER_URL + endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(buildBody(btn, textarea)),
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          btn.disabled = false;
+          if (status) status.textContent = data.ok ? 'Sent — thanks!' : 'Something went wrong, try again.';
+          if (data.ok && textarea) textarea.value = '';
+        })
+        .catch(function () {
+          btn.disabled = false;
+          if (status) status.textContent = 'Could not reach the server — try again in a bit.';
+        });
+    });
+  });
+}
+
+wireMiniForm('.research-input', '.research-post-btn', '/research', function (btn, textarea) {
+  return { propertyId: btn.dataset.property, propertyTitle: btn.dataset.title, question: textarea.value };
+});
+
+wireMiniForm('.remove-input', '.remove-post-btn', '/remove', function (btn, textarea) {
+  return { propertyId: btn.dataset.property, propertyTitle: btn.dataset.title, reason: textarea.value };
+});
+
+(function () {
+  var toggle = document.getElementById('submitToggle');
+  var panel = document.getElementById('submitPanel');
+  if (!toggle) return;
+  toggle.addEventListener('click', function () {
+    panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+  });
+  document.getElementById('submitPostBtn').addEventListener('click', function () {
+    var urlInput = document.getElementById('submitUrl');
+    var notes = document.getElementById('submitNotes');
+    var status = document.getElementById('submitStatus');
+    var btn = this;
+    if (!urlInput.value.trim()) {
+      status.textContent = 'Paste a listing URL first.';
+      return;
+    }
+    btn.disabled = true;
+    status.textContent = 'Sending…';
+    fetch(WORKER_URL + '/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ listingUrl: urlInput.value, notes: notes.value }),
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        btn.disabled = false;
+        if (data.ok) {
+          status.textContent = 'Sent — Claude will pick it up on the next sweep!';
+          urlInput.value = '';
+          notes.value = '';
+        } else {
+          status.textContent = 'Something went wrong, try again.';
+        }
+      })
+      .catch(function () {
+        btn.disabled = false;
+        status.textContent = 'Could not reach the server — try again in a bit.';
+      });
+  });
+})();
 
 (function () {
   var sortCards = Array.from(document.querySelectorAll('.card'));
