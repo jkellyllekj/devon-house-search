@@ -2,17 +2,84 @@
   "lastUpdated": "2026-07-07",
   "properties": [
     {
+      "id": "mountainclose",
+      "section": "new",
+      "title": "Mountain Close, Exmouth",
+      "price": "£200,000",
+      "agent": "Purplebricks, Exeter",
+      "flags": [
+        {
+          "text": "🌟 JESSE SPOTTED THIS",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "LEASEHOLD (114 YRS, £0 GROUND RENT)",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "MountainClose_Gallery_1.jpg",
+        "MountainClose_Gallery_2.jpg",
+        "MountainClose_Gallery_3.jpg",
+        "MountainClose_Gallery_4.jpg",
+        "MountainClose_Gallery_5.jpg"
+      ],
+      "map": "map_mountainclose.png",
+      "link": "https://www.onthemarket.com/details/19874547/",
+      "linkLabel": "onthemarket.com — listing 19874547",
+      "body": "Two-bedroom leasehold maisonette in a quiet residential cul-de-sac in Littleham, Exmouth (EX8 2PJ). Spacious lounge, fitted kitchen, two bedrooms upstairs, family bathroom, and a private balcony with outdoor seating. A small patch of land adjoining the property offers a rare chance to add proper outdoor space. 114 years left on the lease, £0 ground rent, council tax band A. Needs modernisation throughout.",
+      "why": "Jesse spotted this one himself while testing the family submission flow — it's the cheapest property on the whole list at £200,000, and it's genuinely in Exmouth (Littleham), close to the brothers. Worth a look for that price point alone, but it needs real scrutiny: parking isn't mentioned at all, it's leasehold, and the bedrooms being 'upstairs' raises a question mark over long-term ground-floor living.",
+      "dateAdded": "2026-07-07",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "partial",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "uniqueFeature": "A small patch of land adjoining the property that could potentially be annexed to create a proper garden — worth asking the agent/freeholder whether it's included or purchasable.",
+        "closeToFamily": "yes"
+      },
+      "aiRating": 5,
+      "aiTake": "The cheapest thing on the list by a wide margin, and it's genuinely in Exmouth near the brothers — but the price reflects real gaps: no parking mentioned at all, needs modernising throughout, it's leasehold (114 years is fine, not a dealbreaker), and 'bedrooms upstairs' makes the ground-floor-long-term question uncertain. Worth a viewing to check parking and layout in person before ruling in or out — this is more a starter/investment-shaped property than a forever-home shape."
+    },
+    {
       "id": "haynes",
       "section": "new",
       "title": "Haynes Cottages, Lympstone",
       "price": "£264,500",
       "agent": "Pennys, Exmouth",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "NO CHAIN", "color": "#EF6C00"},
-        {"text": "HAS PARKING (3 cars, gravelled bay + electric sockets)", "color": "#1565C0"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "HAS PARKING (3 cars, gravelled bay + electric sockets)",
+          "color": "#1565C0"
+        }
       ],
-      "photos": ["Haynes_Gallery_1.jpeg", "Haynes_Gallery_2.jpg", "Haynes_Gallery_3.jpg", "Haynes_Gallery_4.jpeg"],
+      "photos": [
+        "Haynes_Gallery_1.jpeg",
+        "Haynes_Gallery_2.jpg",
+        "Haynes_Gallery_3.jpg",
+        "Haynes_Gallery_4.jpeg"
+      ],
       "map": "map_haynes.png",
       "link": "https://www.pennys.net/for-sale/lympstone/haynes-cottages/2-bedroom-terraced-for-sale-in-haynes-cottages-ex8-5lx/266524",
       "linkLabel": "pennys.net — listing 266524",
@@ -42,12 +109,29 @@
       "price": "Guide Price £250,000",
       "agent": "Stags, Exeter",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "GRADE II LISTED", "color": "#6A1B9A"},
-        {"text": "ON-STREET PARKING ONLY", "color": "#757575"},
-        {"text": "KNOTWEED DISCLOSED (treated, 10-yr guarantee)", "color": "#EF6C00"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY",
+          "color": "#757575"
+        },
+        {
+          "text": "KNOTWEED DISCLOSED (treated, 10-yr guarantee)",
+          "color": "#EF6C00"
+        }
       ],
-      "photos": ["Longmeadow_Gallery_1.jpg", "Longmeadow_Gallery_2.jpg", "Longmeadow_Gallery_3.jpg", "Longmeadow_Gallery_4.jpg"],
+      "photos": [
+        "Longmeadow_Gallery_1.jpg",
+        "Longmeadow_Gallery_2.jpg",
+        "Longmeadow_Gallery_3.jpg",
+        "Longmeadow_Gallery_4.jpg"
+      ],
       "map": "map_longmeadow.png",
       "link": "https://www.rightmove.co.uk/properties/89711112",
       "linkLabel": "rightmove.co.uk/properties/89711112",
@@ -77,11 +161,25 @@
       "price": "Guide Price £275,000",
       "agent": "Pennys, Exmouth",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "NO CHAIN", "color": "#EF6C00"},
-        {"text": "PARKING UNKNOWN", "color": "#9E9E9E"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "PARKING UNKNOWN",
+          "color": "#9E9E9E"
+        }
       ],
-      "photos": ["Brookside_Gallery_1.jpg", "Brookside_Gallery_2.jpg", "Brookside_Gallery_3.jpg", "Brookside_Gallery_4.jpg"],
+      "photos": [
+        "Brookside_Gallery_1.jpg",
+        "Brookside_Gallery_2.jpg",
+        "Brookside_Gallery_3.jpg",
+        "Brookside_Gallery_4.jpg"
+      ],
       "map": "map_brookside.png",
       "link": "https://www.rightmove.co.uk/properties/162176444",
       "linkLabel": "rightmove.co.uk/properties/162176444",
@@ -111,10 +209,21 @@
       "price": "Offers in Excess of £225,000",
       "agent": "East of Exe Ltd, Topsham",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "ON-STREET PARKING ONLY", "color": "#757575"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY",
+          "color": "#757575"
+        }
       ],
-      "photos": ["Morcote_Gallery_1.jpg", "Morcote_Gallery_2.jpg", "Morcote_Gallery_3.jpg", "Morcote_Gallery_4.jpg"],
+      "photos": [
+        "Morcote_Gallery_1.jpg",
+        "Morcote_Gallery_2.jpg",
+        "Morcote_Gallery_3.jpg",
+        "Morcote_Gallery_4.jpg"
+      ],
       "map": "map_morcote.png",
       "link": "https://www.rightmove.co.uk/properties/159668282",
       "linkLabel": "rightmove.co.uk/properties/159668282",
@@ -144,11 +253,25 @@
       "price": "Guide Price £325,000",
       "agent": "Helmores, Crediton",
       "flags": [
-        {"text": "OVER BUDGET (+£25,000)", "color": "#B71C1C"},
-        {"text": "GRADE II LISTED / THATCHED", "color": "#6A1B9A"},
-        {"text": "HAS PARKING (gated, 3-4 cars)", "color": "#1565C0"}
+        {
+          "text": "OVER BUDGET (+£25,000)",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "GRADE II LISTED / THATCHED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "HAS PARKING (gated, 3-4 cars)",
+          "color": "#1565C0"
+        }
       ],
-      "photos": ["Butterchurn_Gallery_1.jpg", "Butterchurn_Gallery_2.jpg", "Butterchurn_Gallery_3.jpg", "Butterchurn_Gallery_4.jpg"],
+      "photos": [
+        "Butterchurn_Gallery_1.jpg",
+        "Butterchurn_Gallery_2.jpg",
+        "Butterchurn_Gallery_3.jpg",
+        "Butterchurn_Gallery_4.jpg"
+      ],
       "map": "map_butterchurn.png",
       "link": "https://www.rightmove.co.uk/properties/174920456",
       "linkLabel": "rightmove.co.uk/properties/174920456 (Helmores listing)",
