@@ -53,9 +53,9 @@ function brotherBoxHtml(p, n) {
   `;
 }
 
-function giscusHtml(p) {
+function commentsBlockHtml(p) {
   return `
-    <div class="giscus-block">
+    <div class="comments-block">
       <h3>💬 Family Comments</h3>
       <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
       <div class="brother-boxes">
@@ -254,7 +254,7 @@ function propertyCard(p) {
     ${ratingsHtml(p)}
     ${checklistHtml(p)}
     ${askClaudeHtml(p)}
-    ${giscusHtml(p)}
+    ${commentsBlockHtml(p)}
     <div class="added">Added ${esc(p.dateAdded)}</div>
   </section>`;
 }
@@ -350,8 +350,8 @@ const html = `<!DOCTYPE html>
   .research-a { margin: 0 0 6px; font-size: 14px; line-height: 1.5; }
   .research-sources { margin: 0; font-size: 12px; color: #666; }
   .research-sources a { color: #1155cc; }
-  .giscus-block { margin-top: 18px; padding: 16px; background: #fff8f0; border: 3px solid #E65100; border-radius: 8px; }
-  .giscus-block h3 { margin: 0 0 10px; font-size: 18px; font-weight: 800; color: #E65100; letter-spacing: 0.3px; }
+  .comments-block { margin-top: 18px; padding: 16px; background: #fff8f0; border: 3px solid #E65100; border-radius: 8px; }
+  .comments-block h3 { margin: 0 0 10px; font-size: 18px; font-weight: 800; color: #E65100; letter-spacing: 0.3px; }
   .brother-boxes { display: flex; gap: 12px; flex-wrap: wrap; }
   .brother-box { flex: 1 1 260px; min-width: 240px; background: #fff; border-radius: 8px; padding: 10px; border-top: 4px solid #999; }
   .brother-box h4 { margin: 0 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.4px; color: #666; }
