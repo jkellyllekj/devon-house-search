@@ -247,55 +247,6 @@
       "aiTake": "Cheap, characterful, and right in the heart of Lympstone, but zero outdoor space and street parking only make it the weakest of this sweep's Lympstone finds."
     },
     {
-      "id": "butterchurn",
-      "section": "new",
-      "title": "Butterchurn Cottage, Knowle, Crediton (thatched cob cottage)",
-      "price": "Guide Price £325,000",
-      "agent": "Helmores, Crediton",
-      "flags": [
-        {
-          "text": "OVER BUDGET (+£25,000)",
-          "color": "#B71C1C"
-        },
-        {
-          "text": "GRADE II LISTED / THATCHED",
-          "color": "#6A1B9A"
-        },
-        {
-          "text": "HAS PARKING (gated, 3-4 cars)",
-          "color": "#1565C0"
-        }
-      ],
-      "photos": [
-        "Butterchurn_Gallery_1.jpg",
-        "Butterchurn_Gallery_2.jpg",
-        "Butterchurn_Gallery_3.jpg",
-        "Butterchurn_Gallery_4.jpg"
-      ],
-      "map": "map_butterchurn.png",
-      "link": "https://www.rightmove.co.uk/properties/174920456",
-      "linkLabel": "rightmove.co.uk/properties/174920456 (Helmores listing)",
-      "body": "Grade II listed, cob-built and thatched cottage in the hamlet of Knowle, near Crediton — ridge re-thatched November 2025. Two bedrooms (expandable to three), inglenook fireplace, multi-level gardens with ponds bordering farmland. Off-road parking for 3-4 cars behind electric gates.",
-      "why": "Exactly the kind of exceptional thatched find worth flagging even over the ceiling — genuine cob-and-thatch Grade II character with secure gated parking for several cars, which is rare to find together at any price. The catch is location: Knowle is inland near Crediton, roughly 35-40 minutes from Exmouth and from both brothers, well outside the coast/trails brief.",
-      "dateAdded": "2026-07-07",
-      "checklist": {
-        "ocean": "no",
-        "trainStation": "no",
-        "poolSwimTeam": "no",
-        "private": "yes",
-        "groundFloorLongTerm": "no",
-        "mtbTrails": "no",
-        "character": "yes",
-        "garden": "yes",
-        "garageWorkspace": "yes",
-        "uniqueFeature": "Cob-built, thatched Grade II cottage with electric-gated parking for 3-4 cars — rare to find secure multi-car parking at a thatched property",
-        "closeToFamily": "no",
-        "notes": "Inland near Crediton — roughly 35-40 minutes from the coast, ~35-40 min to Exmouth and both brothers"
-      },
-      "aiRating": 5,
-      "aiTake": "A genuinely exceptional thatched cob cottage with secure gated parking for several cars — the character/parking combination alone makes it worth flagging — but it's over your ceiling and a 35-40 minute drive from the coast, the trails, and both brothers."
-    },
-    {
       "id": "eastbudleighhighst",
       "section": "still",
       "title": "High Street, East Budleigh (Grade II cottage)",
