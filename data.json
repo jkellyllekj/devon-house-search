@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-07-07",
+  "lastUpdated": "2026-07-08",
   "properties": [
     {
       "id": "mountainclose",
-      "section": "new",
+      "section": "still",
       "title": "Mountain Close, Exmouth",
       "price": "£200,000",
       "agent": "Purplebricks, Exeter",
@@ -52,11 +52,17 @@
         "closeToFamily": "yes"
       },
       "aiRating": 5,
-      "aiTake": "The cheapest thing on the list by a wide margin, and it's genuinely in Exmouth near the brothers — but the price reflects real gaps: no parking mentioned at all, needs modernising throughout, it's leasehold (114 years is fine, not a dealbreaker), and 'bedrooms upstairs' makes the ground-floor-long-term question uncertain. Worth a viewing to check parking and layout in person before ruling in or out — this is more a starter/investment-shaped property than a forever-home shape."
+      "aiTake": "The cheapest thing on the list by a wide margin, and it's genuinely in Exmouth near the brothers — but the price reflects real gaps: no parking mentioned at all, needs modernising throughout, it's leasehold (114 years is fine, not a dealbreaker), and 'bedrooms upstairs' makes the ground-floor-long-term question uncertain. Worth a viewing to check parking and layout in person before ruling in or out — this is more a starter/investment-shaped property than a forever-home shape.",
+      "ratings": {
+        "Bro 3": {
+          "score": 2,
+          "date": "2026-07-07"
+        }
+      }
     },
     {
       "id": "haynes",
-      "section": "new",
+      "section": "still",
       "title": "Haynes Cottages, Lympstone",
       "price": "£264,500",
       "agent": "Pennys, Exmouth",
@@ -100,11 +106,17 @@
         "closeToFamily": "partial"
       },
       "aiRating": 7,
-      "aiTake": "The find of the sweep — real 3-car parking with electric hookups, a big garden, a garden studio, no chain, and comfortably under your real budget target. Only real caveat is the same one every Lympstone property carries: not especially close to either brother despite being near Exmouth itself."
+      "aiTake": "The find of the sweep — real 3-car parking with electric hookups, a big garden, a garden studio, no chain, and comfortably under your real budget target. Only real caveat is the same one every Lympstone property carries: not especially close to either brother despite being near Exmouth itself.",
+      "ratings": {
+        "Bro 3": {
+          "score": 6,
+          "date": "2026-07-07"
+        }
+      }
     },
     {
       "id": "longmeadow",
-      "section": "new",
+      "section": "still",
       "title": "Longmeadow Road, Lympstone (Grade II 17th-century cottage)",
       "price": "Guide Price £250,000",
       "agent": "Stags, Exeter",
@@ -152,11 +164,17 @@
         "closeToFamily": "partial"
       },
       "aiRating": 6,
-      "aiTake": "Genuine Grade II character with a lovely garden studio by a stream, but only one bedroom, no real parking, and a disclosed knotweed issue worth getting a surveyor's eye on before getting attached."
+      "aiTake": "Genuine Grade II character with a lovely garden studio by a stream, but only one bedroom, no real parking, and a disclosed knotweed issue worth getting a surveyor's eye on before getting attached.",
+      "ratings": {
+        "Bro 3": {
+          "score": 3,
+          "date": "2026-07-07"
+        }
+      }
     },
     {
       "id": "brookside",
-      "section": "new",
+      "section": "still",
       "title": "Brookside Cottage, Lympstone",
       "price": "Guide Price £275,000",
       "agent": "Pennys, Exmouth",
@@ -204,7 +222,7 @@
     },
     {
       "id": "morcote",
-      "section": "new",
+      "section": "still",
       "title": "Morcote, The Strand, Lympstone",
       "price": "Offers in Excess of £225,000",
       "agent": "East of Exe Ltd, Topsham",
@@ -292,7 +310,13 @@
         "closeToFamily": "partial"
       },
       "aiRating": 6,
-      "aiTake": "Solid character and price, but no parking, and the ocean/station/pool are all a drive away rather than walkable — a village-life trade rather than a coast-or-trail-adjacent one."
+      "aiTake": "Solid character and price, but no parking, and the ocean/station/pool are all a drive away rather than walkable — a village-life trade rather than a coast-or-trail-adjacent one.",
+      "ratings": {
+        "Bro 3": {
+          "score": 6,
+          "date": "2026-07-07"
+        }
+      }
     },
     {
       "id": "marlesflat",
@@ -391,56 +415,28 @@
         "closeToFamily": "partial"
       },
       "aiRating": 6,
-      "aiTake": "Best location fit yet — estuary, its own station, and Woodbury Common all on the doorstep — but no garden, no parking, and Grade II status likely rules out a ground-floor retrofit. One honest caveat: by your own read, Lympstone isn't especially close to either brother (Woodbury or Otterton) — worth it only if the deal/character is exceptional enough to outweigh that, which arguably it already is (Grade II, chain-free, £5k under budget). Your call. Also nudged down slightly for price — £295k is into the range you'd call over budget even though it's under the £300k hard ceiling."
-    },
-    {
-      "id": "exeterroadflat",
-      "section": "still",
-      "title": "Exeter Road, Exmouth (ground-floor character flat)",
-      "price": "£110,000",
-      "agent": "Spring Estates, Exmouth",
-      "flags": [
+      "aiTake": "Best location fit yet — estuary, its own station, and Woodbury Common all on the doorstep — but no garden, no parking, and Grade II status likely rules out a ground-floor retrofit. One honest caveat: by your own read, Lympstone isn't especially close to either brother (Woodbury or Otterton) — worth it only if the deal/character is exceptional enough to outweigh that, which arguably it already is (Grade II, chain-free, £5k under budget). Your call. Also nudged down slightly for price — £295k is into the range you'd call over budget even though it's under the £300k hard ceiling.",
+      "research": [
         {
-          "text": "IN BUDGET",
-          "color": "#2E7D32"
-        },
-        {
-          "text": "PRICE REDUCED",
-          "color": "#EF6C00"
-        },
-        {
-          "text": "GROUND FLOOR",
-          "color": "#5D4037"
-        },
-        {
-          "text": "HAS PARKING",
-          "color": "#1565C0"
+          "date": "2026-07-08",
+          "question": "Look further into what you actually do for parking on The Strand, Lympstone.",
+          "findings": "The Strand itself has no dedicated resident bays — parking there is on-street with no confirmed residents' zone. Two car parks serve the immediate area: the free Lympstone Village Station car park right on The Strand (13 spaces, no permit needed, first-come-first-served, but can fill up with rail commuters), and Underhill Car Park a short walk away. Underhill's management has been unsettled for a while — East Devon District Council was in talks with Lympstone Parish Council years ago about the Parish taking it over and potentially issuing permits, and I couldn't confirm what, if anything, was finalised or whether a strict residents' scheme runs there now. Beyond that, East Devon District Council sells modular monthly/annual town permits for its pay-and-display car parks generally, but I couldn't confirm Lympstone is one of the towns those permits cover, nor find a price. Devon County Council handles on-street residents' permit zones separately and I couldn't confirm one exists for The Strand either. Bottom line: there's workable free/cheap parking nearby (the station car park is the best bet), but nothing deeded to the property and nothing guaranteed — worth a direct call to Lympstone Parish Council or East Devon's parking team before relying on it.",
+          "sources": [
+            {
+              "label": "Lympstone Village Website — Underhill Car Park",
+              "url": "https://www.lympstone.org/the-village/underhill-car-park-2"
+            },
+            {
+              "label": "East Devon District Council — Car park permits",
+              "url": "https://eastdevon.gov.uk/parking/car-park-permits/car-park-permits-we-offer/parking-permits/"
+            },
+            {
+              "label": "Devon County Council — Residents' parking permits",
+              "url": "https://www.devon.gov.uk/roads-and-transport/parking/parking-permits/residents-parking/"
+            }
+          ]
         }
-      ],
-      "photos": [
-        "Exeter_Road_Flat.jpg"
-      ],
-      "map": "map_exeter_road_flat.png",
-      "link": "https://www.zoopla.co.uk/for-sale/details/72842267/",
-      "linkLabel": "zoopla.co.uk — listing 72842267",
-      "body": "One-bedroom apartment occupying the entire ground floor of a period building on Exeter Road — high ceilings, large windows overlooking the communal lawn and neighbouring church, generously proportioned living room, bedroom with double doors onto a rear courtyard, modern bathroom, galley kitchen. Allocated parking at the rear. Functional condition with scope for modernisation. 52 years remaining on the lease.",
-      "why": "Still the rare flat that actually passes your flat rules: genuinely cheap AND explicitly the whole ground floor, with a real allocated parking space on top. Reduced a further £20,000 on 24/06/2026, now just £110k — under half of what it was quoted at when first tracked. Worth a sense check on the short (52-year) lease and extension cost before getting excited about the price. Only one photo shown — Zoopla blocks photo scraping, so this is the single press image from the Exmouth Journal writeup.",
-      "dateAdded": "2026-07-05",
-      "checklist": {
-        "ocean": "yes",
-        "trainStation": "yes",
-        "poolSwimTeam": "yes",
-        "private": "no",
-        "groundFloorLongTerm": "yes",
-        "mtbTrails": "partial",
-        "character": "partial",
-        "garden": "no",
-        "garageWorkspace": "no",
-        "uniqueFeature": null,
-        "closeToFamily": "yes"
-      },
-      "aiRating": 9,
-      "aiTake": "Cheapest genuinely ground-floor-with-parking option on the list, right in the middle of everything — the short 52-year lease is the one number worth checking before getting attached. Comfortably under your real £170k target too, which is worth more to you than the headline £300k ceiling suggests."
+      ]
     },
     {
       "id": "bellstreet",
@@ -571,7 +567,13 @@
         "closeToFamily": "yes"
       },
       "aiRating": 4,
-      "aiTake": "Real ground-floor parking and an estuary view are rare for a flat, but it's over budget and still just a flat, not the characterful find you're really after. Already over the £300k hard ceiling, which the price alone makes hard to justify given your real ~£170-200k target."
+      "aiTake": "Real ground-floor parking and an estuary view are rare for a flat, but it's over budget and still just a flat, not the characterful find you're really after. Already over the £300k hard ceiling, which the price alone makes hard to justify given your real ~£170-200k target.",
+      "ratings": {
+        "Bro 3": {
+          "score": 7,
+          "date": "2026-07-07"
+        }
+      }
     },
     {
       "id": "cranford",
@@ -927,12 +929,12 @@
           "color": "#B71C1C"
         },
         {
-          "text": "STATUS UNCONFIRMED",
-          "color": "#8D6E63"
-        },
-        {
           "text": "NO PARKING INFO",
           "color": "#757575"
+        },
+        {
+          "text": "LIKELY SOLD/WITHDRAWN",
+          "color": "#8D6E63"
         }
       ],
       "photos": [
@@ -972,12 +974,12 @@
           "color": "#2E7D32"
         },
         {
-          "text": "STATUS UNCONFIRMED",
-          "color": "#8D6E63"
-        },
-        {
           "text": "NO PARKING INFO",
           "color": "#757575"
+        },
+        {
+          "text": "LIKELY SOLD/WITHDRAWN",
+          "color": "#8D6E63"
         }
       ],
       "photos": [],
@@ -1135,6 +1137,53 @@
       },
       "aiRating": 4,
       "aiTake": "Could be a good, cheap, characterful find in the right town, but the listing couldn't be reconfirmed this sweep — worth a direct call before reading too much into it."
+    },
+    {
+      "id": "greenwaywoodbury",
+      "section": "new",
+      "title": "Greenway, Woodbury (character cottage)",
+      "price": "£265,000",
+      "agent": "Samuels Estate Agents, Exeter",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "Greenway_Gallery_1.jpg",
+        "Greenway_Gallery_2.jpg",
+        "Greenway_Gallery_3.jpg",
+        "Greenway_Gallery_4.jpg"
+      ],
+      "link": "https://www.onthemarket.com/details/17798644/",
+      "linkLabel": "onthemarket.com/details/17798644",
+      "body": "Two-bedroom character cottage (527 sq ft) in a pedestrianised position in the heart of Woodbury village. Exposed ceiling beams and an inglenook fireplace with wood-burning stove, lounge/dining room, modern kitchen, first-floor bathroom, gas central heating. Front and rear gardens — the rear tiered across three levels with stone chippings, paving and two wood stores. Freehold, no chain.",
+      "why": "This is the first find actually IN Woodbury itself — meaning your brother is a short walk away and Woodbury Common's trails are effectively on the doorstep, which nothing else on the list can claim as directly. Genuine character (beams, inglenook, wood burner), real gardens, freehold, no chain, and £35k under the hard ceiling. The catch is the same village-centre trade-off as the Otterton/Bell Street/Flexton cottages: the listing doesn't mention parking at all, and a pedestrianised position makes that a real question mark rather than a formality. Found via a general portal search, not one of the usual agents.",
+      "dateAdded": "2026-07-08",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "yes"
+      },
+      "aiRating": 6,
+      "aiTake": "Right in Woodbury itself, so closer to a brother and to the Common's trails than anything else tracked — but no parking mentioned in a pedestrianised spot, and no coast, train, or pool nearby."
     }
   ]
 }

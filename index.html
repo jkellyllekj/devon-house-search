@@ -26,14 +26,12 @@
   main { max-width: 880px; margin: 0 auto; padding: 20px; display: flex; flex-direction: column; }
   .section-title { margin-top: 48px; border-bottom: 3px solid #1b3a2f; padding-bottom: 8px; font-size: 22px; color: #1b3a2f; }
   .card { background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.12); padding: 24px; margin: 20px 0; scroll-margin-top: 60px; }
-  .card h2 { margin: 0 0 6px; font-size: 20px; }
-  .header-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-  .header-left { flex: 1 1 260px; min-width: 220px; }
-  .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 6px; flex-wrap: wrap; }
+  .card h2 { margin: 0 0 8px; font-size: 20px; }
+  .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
   .price { font-size: 20px; font-weight: 700; color: #1b5e20; }
   .agent { color: #666; font-style: italic; font-size: 14px; }
-  .flags { margin: 6px 0 10px; }
-  .flag { display: inline-block; color: #fff; font-weight: 700; font-size: 10px; padding: 3px 7px; border-radius: 4px; margin: 0 4px 4px 0; }
+  .flags { margin-bottom: 14px; }
+  .flag { display: inline-block; color: #fff; font-weight: 700; font-size: 11px; padding: 4px 8px; border-radius: 4px; margin: 0 6px 6px 0; }
   .photos { margin-bottom: 14px; }
   .photo-main img { width: 100%; border-radius: 8px; display: block; max-height: 380px; object-fit: cover; }
   .photo-strip { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
@@ -48,21 +46,19 @@
   .why { background: #fdf6e3; border-left: 4px solid #e6b800; padding: 10px 14px; border-radius: 4px; font-size: 14px; line-height: 1.5; }
   .source-badge { display: inline-block; background: #1b3a2f; color: #fff !important; font-weight: 700; font-size: 13px; letter-spacing: 0.4px; padding: 7px 14px; border-radius: 20px; text-decoration: none; margin-bottom: 12px; }
   .source-badge:hover { background: #23483a; }
-  .ratings-block { flex: 0 0 300px; max-width: 320px; margin: 0; padding: 8px 10px; background: #fafafa; border-radius: 8px; }
-  .ratings-block h3 { margin: 0 0 4px; font-size: 10px; color: #1b3a2f; text-transform: uppercase; letter-spacing: 0.5px; }
-  .rating-row { display: flex; align-items: center; gap: 6px; margin-bottom: 3px; font-size: 11px; }
-  .rating-row-label { flex: 0 0 76px; font-weight: 600; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ratings-block { margin: 14px 0; padding: 14px; background: #fafafa; border-radius: 8px; }
+  .ratings-block h3 { margin: 0 0 10px; font-size: 13px; color: #1b3a2f; text-transform: uppercase; letter-spacing: 0.5px; }
+  .rating-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; font-size: 13px; }
+  .rating-row-label { flex: 0 0 110px; font-weight: 600; color: #333; }
   .rating-row-ai .rating-row-label { color: #6A1B9A; }
   .rating-row-overall .rating-row-label { color: #E65100; font-weight: 800; }
-  .rating-bar-track { flex: 1 1 auto; height: 8px; background: #e6e6e6; border-radius: 6px; overflow: hidden; }
-  .rating-row[data-bro] .rating-bar-track { cursor: pointer; height: 14px; }
-  .rating-row[data-bro] .rating-bar-track:hover { outline: 2px solid #1b3a2f; outline-offset: 1px; }
-  .rating-bar-fill { height: 100%; border-radius: 8px; transition: width 0.15s; }
-  .rating-row-score { flex: 0 0 40px; font-weight: 700; color: #444; text-align: right; font-size: 11px; }
-  .rating-row-flames { display: none; }
+  .rating-bar-track { flex: 1 1 auto; height: 10px; background: #e6e6e6; border-radius: 6px; overflow: hidden; }
+  .rating-bar-fill { height: 100%; border-radius: 8px; transition: width 0.3s; }
+  .rating-row-score { flex: 0 0 50px; font-weight: 700; color: #444; text-align: right; }
+  .rating-row-flames { flex: 0 0 auto; font-size: 12px; }
   .rating-row-empty .rating-row-score { color: #999; font-weight: 400; }
-  .rating-row-savestatus { flex: 0 0 12px; font-size: 11px; }
-  .rating-hint { display: none; }
+  .rating-hint { font-size: 12px; color: #8a5a00; background: #fff3cd; border-radius: 4px; padding: 6px 10px; margin: 0 0 10px; }
+  .rating-hint code { background: #fff; padding: 1px 5px; border-radius: 3px; }
   .checklist-block { margin-bottom: 14px; padding: 14px; background: #f4f8f5; border-radius: 8px; }
   .checklist-block h3 { margin: 0 0 10px; font-size: 13px; color: #1b3a2f; text-transform: uppercase; letter-spacing: 0.5px; }
   .cl-hint { text-transform: none; font-weight: 400; font-size: 11px; color: #888; letter-spacing: normal; }
@@ -89,37 +85,38 @@
   .research-a { margin: 0 0 6px; font-size: 14px; line-height: 1.5; }
   .research-sources { margin: 0; font-size: 12px; color: #666; }
   .research-sources a { color: #1155cc; }
-  .comments-block { margin-top: 12px; padding: 8px 10px; background: #fff8f0; border: 1px solid #E65100; border-radius: 8px; }
-  .comments-block h3 { margin: 0 0 4px; font-size: 12px; font-weight: 800; color: #E65100; letter-spacing: 0.3px; }
-  .brother-boxes { display: flex; flex-direction: column; gap: 2px; }
-  .brother-box { display: flex; align-items: center; gap: 6px; background: #fff; border-radius: 5px; padding: 3px 6px; border-left: 3px solid #999; }
-  .brother-box h4 { margin: 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.3px; color: #666; flex: 0 0 40px; }
-  .brother-box-1 { border-left-color: #1565C0; }
+  .comments-block { margin-top: 18px; padding: 16px; background: #fff8f0; border: 3px solid #E65100; border-radius: 8px; }
+  .comments-block h3 { margin: 0 0 10px; font-size: 18px; font-weight: 800; color: #E65100; letter-spacing: 0.3px; }
+  .brother-boxes { display: flex; gap: 12px; flex-wrap: wrap; }
+  .brother-box { flex: 1 1 260px; min-width: 240px; background: #fff; border-radius: 8px; padding: 10px; border-top: 4px solid #999; }
+  .brother-box h4 { margin: 0 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.4px; color: #666; }
+  .brother-box-1 { border-top-color: #1565C0; }
   .brother-box-1 h4 { color: #1565C0; }
-  .brother-box-2 { border-left-color: #2E7D32; }
+  .brother-box-2 { border-top-color: #2E7D32; }
   .brother-box-2 h4 { color: #2E7D32; }
-  .brother-box-3 { border-left-color: #C2185B; }
+  .brother-box-3 { border-top-color: #C2185B; }
   .brother-box-3 h4 { color: #C2185B; }
-  .bro-comments { font-size: 11px; flex: 1 1 auto; max-height: 36px; overflow-y: auto; }
-  .bro-comment { padding: 1px 0; white-space: pre-wrap; }
-  .bro-empty { color: #bbb; font-size: 11px; }
-  .bro-input { flex: 1 1 auto; box-sizing: border-box; font-family: inherit; font-size: 12px; padding: 3px 6px; border: 1px solid #ccc; border-radius: 5px; height: 24px; min-height: 24px; resize: none; }
-  .bro-controls { display: flex; align-items: center; gap: 4px; margin: 0; flex: 0 0 auto; }
-  .bro-rating { display: none; }
-  .bro-post-btn { background: #1b3a2f; color: #fff; border: none; border-radius: 12px; padding: 3px 10px; font-size: 11px; font-weight: 600; cursor: pointer; flex: 0 0 auto; }
+  .bro-comments { font-size: 13px; margin-bottom: 8px; max-height: 160px; overflow-y: auto; }
+  .bro-comment { background: #f4f4f4; border-radius: 6px; padding: 6px 8px; margin-bottom: 6px; white-space: pre-wrap; }
+  .bro-empty { color: #999; font-size: 12px; }
+  .bro-input { width: 100%; box-sizing: border-box; min-height: 60px; font-family: inherit; font-size: 13px; padding: 6px 8px; border: 1px solid #ccc; border-radius: 6px; resize: vertical; }
+  .bro-controls { display: flex; gap: 8px; margin-top: 6px; align-items: center; }
+  .bro-rating { font-size: 12px; padding: 4px 6px; border-radius: 4px; border: 1px solid #ccc; }
+  .bro-post-btn { background: #1b3a2f; color: #fff; border: none; border-radius: 16px; padding: 6px 14px; font-size: 12px; font-weight: 600; cursor: pointer; }
   .bro-post-btn:hover { background: #23483a; }
   .bro-post-btn:disabled { opacity: 0.6; cursor: default; }
-  .bro-status { flex: 0 0 auto; font-size: 10px; color: #888; min-width: 50px; }
-  .ask-claude-block { margin-top: 4px; padding-top: 4px; display: flex; flex-direction: column; gap: 2px; }
-  .mini-form { margin-bottom: 0; display: flex; align-items: center; gap: 6px; }
-  .mini-form textarea, .mini-form input[type="text"] { flex: 1 1 auto; box-sizing: border-box; font-family: inherit; font-size: 12px; padding: 3px 6px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 0; height: 24px; min-height: 24px; resize: none; }
-  .mini-form button { background: #1155cc; color: #fff; border: none; border-radius: 12px; padding: 3px 10px; font-size: 11px; font-weight: 600; cursor: pointer; flex: 0 0 auto; white-space: nowrap; }
+  .bro-status { display: block; font-size: 11px; color: #888; margin-top: 4px; min-height: 14px; }
+  .ask-claude-block { margin-top: 10px; padding-top: 10px; }
+  .mini-form { margin-bottom: 12px; }
+  .mini-form textarea, .mini-form input[type="text"] { width: 100%; box-sizing: border-box; font-family: inherit; font-size: 13px; padding: 6px 8px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 6px; }
+  .mini-form textarea { min-height: 50px; resize: vertical; }
+  .mini-form button { background: #1155cc; color: #fff; border: none; border-radius: 16px; padding: 6px 14px; font-size: 12px; font-weight: 600; cursor: pointer; }
   .mini-form button:hover { background: #0d3f99; }
   .mini-form button:disabled { opacity: 0.6; cursor: default; }
-  .mini-status { flex: 0 0 auto; font-size: 10px; color: #888; min-width: 60px; }
+  .mini-status { display: block; font-size: 11px; color: #888; margin-top: 4px; min-height: 14px; }
   .submit-form { margin-top: 14px; }
   #submitPanel { margin-top: 10px; max-width: 420px; }
-  .notes-caveat { display: none; }
+  .notes-caveat { display: block; font-size: 11px; color: #999; margin-top: 6px; }
   .added { font-size: 11px; color: #aaa; margin-top: 10px; }
   footer { max-width: 880px; margin: 0 auto; padding: 20px; color: #555; font-size: 13px; }
 </style>
@@ -128,7 +125,7 @@
 <header>
   <div class="header-left">
     <h1>Devon House Search</h1>
-    <div class="sub">Exmouth · Woodbury · Budleigh Salterton · East Devon coast — last updated 2026-07-07</div>
+    <div class="sub">Exmouth · Woodbury · Budleigh Salterton · East Devon coast — last updated 2026-07-08</div>
   </div>
   <div class="header-right">
     <div class="submit-form">
@@ -152,10 +149,157 @@
     </div>
   </div>
 </header>
-<nav><a href="#mountainclose">Mountain Close</a><a href="#haynes">Haynes Cottages</a><a href="#longmeadow">Longmeadow Road</a><a href="#brookside">Brookside Cottage</a><a href="#morcote">Morcote</a><a href="#eastbudleighhighst">High Street</a><a href="#marlesflat">The Marles</a><a href="#farleys">Farleys</a><a href="#exeterroadflat">Exeter Road</a><a href="#bellstreet">3 Bell Street</a><a href="#flexton">The Flexton</a><a href="#beaconflat">The Beacon</a><a href="#cranford">Cranford Avenue</a><a href="#otterton">Thatched Cottage</a><a href="#feniton">Barn at Whites Cottages</a><a href="#douglas">Douglas Avenue</a><a href="#sidmouth">Circular Thatched Cliff-top Cottage</a><a href="#yettington">The Threshing Barn</a><a href="#beacon">The Beacon</a><a href="#withycombe">Withycombe Village Road</a><a href="#salterton">Salterton Road</a><a href="#eastbudleigh">Grade II Thatched Cottage</a><a href="#clinton">Clinton Garage</a><a href="#leslie">The Coach House</a></nav>
+<nav><a href="#greenwaywoodbury">Greenway</a><a href="#mountainclose">Mountain Close</a><a href="#haynes">Haynes Cottages</a><a href="#longmeadow">Longmeadow Road</a><a href="#brookside">Brookside Cottage</a><a href="#morcote">Morcote</a><a href="#eastbudleighhighst">High Street</a><a href="#marlesflat">The Marles</a><a href="#farleys">Farleys</a><a href="#bellstreet">3 Bell Street</a><a href="#flexton">The Flexton</a><a href="#beaconflat">The Beacon</a><a href="#cranford">Cranford Avenue</a><a href="#otterton">Thatched Cottage</a><a href="#feniton">Barn at Whites Cottages</a><a href="#douglas">Douglas Avenue</a><a href="#sidmouth">Circular Thatched Cliff-top Cottage</a><a href="#yettington">The Threshing Barn</a><a href="#beacon">The Beacon</a><a href="#withycombe">Withycombe Village Road</a><a href="#salterton">Salterton Road</a><a href="#eastbudleigh">Grade II Thatched Cottage</a><a href="#clinton">Clinton Garage</a><a href="#leslie">The Coach House</a></nav>
 <main>
 <h1 class="section-title">New This Sweep</h1>
-  <section class="card" id="mountainclose" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="greenwaywoodbury" data-avg-rating="" data-ai-rating="6">
+    <h2>Greenway, Woodbury (character cottage)</h2>
+    <div class="price-row">
+      <span class="price">£265,000</span>
+      <span class="agent">Samuels Estate Agents, Exeter</span>
+    </div>
+    <a class="source-badge" href="https://www.onthemarket.com/details/17798644/" target="_blank" rel="noopener">View on ONTHEMARKET.COM ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty " data-property="greenwaywoodbury" data-bro="Bro 1">
+        <span class="rating-row-label">Bro 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty " data-property="greenwaywoodbury" data-bro="Bro 2">
+        <span class="rating-row-label">Bro 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty " data-property="greenwaywoodbury" data-bro="Bro 3">
+        <span class="rating-row-label">Bro 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+    </div>
+  </div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="photos">
+    <div class="photo-main"><img src="images/Greenway_Gallery_1.jpg" alt="greenwaywoodbury main photo" loading="lazy"></div>
+    <div class="photo-strip"><img src="images/Greenway_Gallery_2.jpg" alt="greenwaywoodbury photo" loading="lazy"><img src="images/Greenway_Gallery_3.jpg" alt="greenwaywoodbury photo" loading="lazy"><img src="images/Greenway_Gallery_4.jpg" alt="greenwaywoodbury photo" loading="lazy"></div>
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Greenway%2C%20Woodbury%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Greenway%2C%20Woodbury%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Greenway%2C%20Woodbury%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">Two-bedroom character cottage (527 sq ft) in a pedestrianised position in the heart of Woodbury village. Exposed ceiling beams and an inglenook fireplace with wood-burning stove, lounge/dining room, modern kitchen, first-floor bathroom, gas central heating. Front and rear gardens — the rear tiered across three levels with stone chippings, paving and two wood stores. Freehold, no chain.</p>
+    <p class="why"><strong>Why it's here:</strong> This is the first find actually IN Woodbury itself — meaning your brother is a short walk away and Woodbury Common's trails are effectively on the doorstep, which nothing else on the list can claim as directly. Genuine character (beams, inglenook, wood burner), real gardens, freehold, no chain, and £35k under the hard ceiling. The catch is the same village-centre trade-off as the Otterton/Bell Street/Flexton cottages: the listing doesn't mention parking at all, and a pedestrianised position makes that a real question mark rather than a formality. Found via a general portal search, not one of the usual agents.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Right in Woodbury itself, so closer to a brother and to the Common's trails than anything else tracked — but no parking mentioned in a pedestrianised spot, and no coast, train, or pool nearby.</p>
+    
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="bad" data-prop="greenwaywoodbury" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="bad" data-prop="greenwaywoodbury" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="bad" data-prop="greenwaywoodbury" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="greenwaywoodbury" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="good" data-prop="greenwaywoodbury" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="greenwaywoodbury" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="good" data-prop="greenwaywoodbury" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="greenwaywoodbury" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="greenwaywoodbury" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="greenwaywoodbury" onclick="cycleChecklist(this)">♿ Ground-floor adaptability unknown</div></div>
+      
+    </div>
+  
+    
+    <div class="ask-claude-block">
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="greenwaywoodbury" data-title="Greenway, Woodbury (character cottage)">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="greenwaywoodbury" data-title="Greenway, Woodbury (character cottage)">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
+    </div>
+  
+    
+    <div class="comments-block">
+      <h3>💬 Family Comments</h3>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="greenwaywoodbury-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="greenwaywoodbury" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="greenwaywoodbury-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="greenwaywoodbury" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="greenwaywoodbury-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="greenwaywoodbury" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
+    </div>
+  
+    <div class="added">Added 2026-07-08</div>
+  </section>
+<h1 class="section-title">Still Listed</h1>
+  <section class="card" id="mountainclose" data-avg-rating="2.00" data-ai-rating="5">
     <h2>Mountain Close, Exmouth</h2>
     <div class="price-row">
       <span class="price">£200,000</span>
@@ -165,9 +309,9 @@
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
-      <span class="rating-row-score">5/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
+      <span class="rating-row-score">3/10</span>
+      <span class="rating-row-flames">🔥🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty " data-property="mountainclose" data-bro="Bro 1">
@@ -182,12 +326,13 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     
-      <div class="rating-row rating-row-empty " data-property="mountainclose" data-bro="Bro 3">
-        <span class="rating-row-label">Bro 3</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
-        <span class="rating-row-score">not yet rated</span>
-      </div>
-    
+    <div class="rating-row " data-property="mountainclose" data-bro="Bro 3">
+      <span class="rating-row-label">Bro 3</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:20%;background:rgb(178,63,60)"></div></div>
+      <span class="rating-row-score">2/10</span>
+      <span class="rating-row-flames">🔥🔥</span>
+    </div>
+  
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:50%;background:rgb(129,86,60)"></div></div>
@@ -302,7 +447,7 @@
     <div class="added">Added 2026-07-07</div>
   </section>
 
-  <section class="card" id="haynes" data-avg-rating="" data-ai-rating="7">
+  <section class="card" id="haynes" data-avg-rating="6.00" data-ai-rating="7">
     <h2>Haynes Cottages, Lympstone</h2>
     <div class="price-row">
       <span class="price">£264,500</span>
@@ -312,9 +457,9 @@
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
-      <span class="rating-row-score">7/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:63.33333333333333%;background:rgb(107,96,60)"></div></div>
+      <span class="rating-row-score">6.3/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty " data-property="haynes" data-bro="Bro 1">
@@ -329,12 +474,13 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     
-      <div class="rating-row rating-row-empty " data-property="haynes" data-bro="Bro 3">
-        <span class="rating-row-label">Bro 3</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
-        <span class="rating-row-score">not yet rated</span>
-      </div>
-    
+    <div class="rating-row " data-property="haynes" data-bro="Bro 3">
+      <span class="rating-row-label">Bro 3</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+    </div>
+  
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
@@ -350,15 +496,15 @@
     
     <div class="map-embed">
       <iframe
-        src="https://www.google.com/maps?q=EX8%205LX%2C%20UK&z=16&output=embed"
+        src="https://www.google.com/maps?q=Haynes%20Cottages%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
         width="100%" height="380" style="border:0"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
         allowfullscreen
       ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=EX8%205LX%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=EX8%205LX%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Haynes%20Cottages%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Haynes%20Cottages%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
@@ -374,7 +520,7 @@
         <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
       </div>
       <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
-      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="haynes" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="haynes" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="haynes" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="haynes" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="good" data-prop="haynes" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="haynes" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="good" data-prop="haynes" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="good" data-prop="haynes" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="haynes" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="haynes" onclick="cycleChecklist(this)">♿ Could adapt to ground-floor living</div><div class="cl-item" data-cl-key="freehold" data-cl-default="indifferent" data-prop="haynes" onclick="cycleChecklist(this)">🏠 Freehold (not a leasehold under 200yr) — unconfirmed, check listing</div></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="haynes" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="haynes" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="haynes" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="haynes" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="good" data-prop="haynes" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="haynes" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="good" data-prop="haynes" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="good" data-prop="haynes" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="haynes" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="haynes" onclick="cycleChecklist(this)">♿ Could adapt to ground-floor living</div></div>
       <div class="cl-unique">🎁 <strong>Unique:</strong> Timber cabin/studio (15'8"x12'5") in the garden plus a rare 3-car parking bay with electric sockets — most Lympstone cottages have none of this</div>
     </div>
   
@@ -449,7 +595,7 @@
     <div class="added">Added 2026-07-07</div>
   </section>
 
-  <section class="card" id="longmeadow" data-avg-rating="" data-ai-rating="6">
+  <section class="card" id="longmeadow" data-avg-rating="3.00" data-ai-rating="6">
     <h2>Longmeadow Road, Lympstone (Grade II 17th-century cottage)</h2>
     <div class="price-row">
       <span class="price">Guide Price £250,000</span>
@@ -459,9 +605,9 @@
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
-      <span class="rating-row-score">6/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty " data-property="longmeadow" data-bro="Bro 1">
@@ -476,12 +622,13 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     
-      <div class="rating-row rating-row-empty " data-property="longmeadow" data-bro="Bro 3">
-        <span class="rating-row-label">Bro 3</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
-        <span class="rating-row-score">not yet rated</span>
-      </div>
-    
+    <div class="rating-row " data-property="longmeadow" data-bro="Bro 3">
+      <span class="rating-row-label">Bro 3</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:30%;background:rgb(162,70,60)"></div></div>
+      <span class="rating-row-score">3/10</span>
+      <span class="rating-row-flames">🔥🔥🔥</span>
+    </div>
+  
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
@@ -521,7 +668,7 @@
         <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
       </div>
       <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
-      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="longmeadow" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="longmeadow" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="longmeadow" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="longmeadow" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="good" data-prop="longmeadow" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="longmeadow" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="good" data-prop="longmeadow" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="good" data-prop="longmeadow" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="longmeadow" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="bad" data-prop="longmeadow" onclick="cycleChecklist(this)">♿ Not realistically ground-floor adaptable</div><div class="cl-item" data-cl-key="freehold" data-cl-default="indifferent" data-prop="longmeadow" onclick="cycleChecklist(this)">🏠 Freehold (not a leasehold under 200yr) — unconfirmed, check listing</div></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="longmeadow" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="longmeadow" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="longmeadow" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="longmeadow" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="good" data-prop="longmeadow" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="longmeadow" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="good" data-prop="longmeadow" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="good" data-prop="longmeadow" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="longmeadow" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="bad" data-prop="longmeadow" onclick="cycleChecklist(this)">♿ Not realistically ground-floor adaptable</div></div>
       <div class="cl-unique">🎁 <strong>Unique:</strong> Detached oak-framed garden studio beside a spring-fed stream</div>
     </div>
   
@@ -644,15 +791,15 @@
     
     <div class="map-embed">
       <iframe
-        src="https://www.google.com/maps?q=Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
+        src="https://www.google.com/maps?q=Brookside%20Cottage%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
         width="100%" height="380" style="border:0"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
         allowfullscreen
       ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Brookside%20Cottage%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Brookside%20Cottage%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
@@ -668,7 +815,7 @@
         <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
       </div>
       <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
-      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="brookside" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="brookside" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="brookside" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="brookside" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="good" data-prop="brookside" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="brookside" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="indifferent" data-prop="brookside" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="brookside" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="brookside" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="bad" data-prop="brookside" onclick="cycleChecklist(this)">♿ Not realistically ground-floor adaptable</div><div class="cl-item" data-cl-key="freehold" data-cl-default="good" data-prop="brookside" onclick="cycleChecklist(this)">🏠 Freehold (confirmed in listing)</div></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="brookside" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="brookside" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="brookside" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="brookside" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="good" data-prop="brookside" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="brookside" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="indifferent" data-prop="brookside" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="brookside" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="brookside" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="bad" data-prop="brookside" onclick="cycleChecklist(this)">♿ Not realistically ground-floor adaptable</div></div>
       <div class="cl-unique">🎁 <strong>Unique:</strong> Currently run as a successful Airbnb — could continue as an income-generating let</div>
     </div>
   
@@ -791,15 +938,15 @@
     
     <div class="map-embed">
       <iframe
-        src="https://www.google.com/maps?q=The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK&z=16&output=embed"
+        src="https://www.google.com/maps?q=Morcote%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
         width="100%" height="380" style="border:0"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
         allowfullscreen
       ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Morcote%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Morcote%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
@@ -815,7 +962,7 @@
         <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
       </div>
       <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
-      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="morcote" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="morcote" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="morcote" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="morcote" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="good" data-prop="morcote" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="morcote" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="bad" data-prop="morcote" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="morcote" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="morcote" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="bad" data-prop="morcote" onclick="cycleChecklist(this)">♿ Not realistically ground-floor adaptable</div><div class="cl-item" data-cl-key="freehold" data-cl-default="indifferent" data-prop="morcote" onclick="cycleChecklist(this)">🏠 Freehold (not a leasehold under 200yr) — unconfirmed, check listing</div></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="morcote" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="morcote" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="morcote" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="morcote" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="good" data-prop="morcote" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="morcote" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="bad" data-prop="morcote" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="morcote" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="morcote" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="bad" data-prop="morcote" onclick="cycleChecklist(this)">♿ Not realistically ground-floor adaptable</div></div>
       
     </div>
   
@@ -890,8 +1037,7 @@
     <div class="added">Added 2026-07-07</div>
   </section>
 
-<h1 class="section-title">Still Listed</h1>
-  <section class="card" id="eastbudleighhighst" data-avg-rating="" data-ai-rating="6">
+  <section class="card" id="eastbudleighhighst" data-avg-rating="6.00" data-ai-rating="6">
     <h2>High Street, East Budleigh (Grade II cottage)</h2>
     <div class="price-row">
       <span class="price">£239,950</span>
@@ -918,12 +1064,13 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     
-      <div class="rating-row rating-row-empty " data-property="eastbudleighhighst" data-bro="Bro 3">
-        <span class="rating-row-label">Bro 3</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
-        <span class="rating-row-score">not yet rated</span>
-      </div>
-    
+    <div class="rating-row " data-property="eastbudleighhighst" data-bro="Bro 3">
+      <span class="rating-row-label">Bro 3</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
+    </div>
+  
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
@@ -1233,15 +1380,15 @@
     
     <div class="map-embed">
       <iframe
-        src="https://www.google.com/maps?q=The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK&z=16&output=embed"
+        src="https://www.google.com/maps?q=Farleys%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK&z=15&output=embed"
         width="100%" height="380" style="border:0"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
         allowfullscreen
       ></iframe>
       <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Farleys%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Farleys%2C%20The%20Strand%2C%20Lympstone%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
       </div>
     </div>
   
@@ -1249,6 +1396,17 @@
     <p class="why"><strong>Why it's here:</strong> Location-wise this is arguably the best-placed find yet: Lympstone sits on the Exe estuary directly between Exmouth and Woodbury Common — water one way, trails the other, and one of your brothers is in Woodbury just up the hill. Genuine period character (Grade II, beams, stonework), chain-free, and £5k under ceiling. The catches: no parking (the standing hard requirement — waived here only because it's genuinely characterful, with village car park permits as the workaround), no outdoor space, and listed-building consent applies to any alterations. Found via the Exmouth Journal property pages, not the portals.</p>
     <p class="ai-take">🤖 <strong>AI's take:</strong> Best location fit yet — estuary, its own station, and Woodbury Common all on the doorstep — but no garden, no parking, and Grade II status likely rules out a ground-floor retrofit. One honest caveat: by your own read, Lympstone isn't especially close to either brother (Woodbury or Otterton) — worth it only if the deal/character is exceptional enough to outweigh that, which arguably it already is (Grade II, chain-free, £5k under budget). Your call. Also nudged down slightly for price — £295k is into the range you'd call over budget even though it's under the £300k hard ceiling.</p>
     
+    <div class="research-block">
+      <h3>Research findings</h3>
+      
+        <div class="research-item">
+          <p class="research-q"><strong>Asked:</strong> Look further into what you actually do for parking on The Strand, Lympstone. <span class="research-date">(2026-07-08)</span></p>
+          <p class="research-a">The Strand itself has no dedicated resident bays — parking there is on-street with no confirmed residents' zone. Two car parks serve the immediate area: the free Lympstone Village Station car park right on The Strand (13 spaces, no permit needed, first-come-first-served, but can fill up with rail commuters), and Underhill Car Park a short walk away. Underhill's management has been unsettled for a while — East Devon District Council was in talks with Lympstone Parish Council years ago about the Parish taking it over and potentially issuing permits, and I couldn't confirm what, if anything, was finalised or whether a strict residents' scheme runs there now. Beyond that, East Devon District Council sells modular monthly/annual town permits for its pay-and-display car parks generally, but I couldn't confirm Lympstone is one of the towns those permits cover, nor find a price. Devon County Council handles on-street residents' permit zones separately and I couldn't confirm one exists for The Strand either. Bottom line: there's workable free/cheap parking nearby (the station car park is the best bet), but nothing deeded to the property and nothing guaranteed — worth a direct call to Lympstone Parish Council or East Devon's parking team before relying on it.</p>
+          <p class="research-sources">Sources: <a href="https://www.lympstone.org/the-village/underhill-car-park-2" target="_blank" rel="noopener">Lympstone Village Website — Underhill Car Park</a> · <a href="https://eastdevon.gov.uk/parking/car-park-permits/car-park-permits-we-offer/parking-permits/" target="_blank" rel="noopener">East Devon District Council — Car park permits</a> · <a href="https://www.devon.gov.uk/roads-and-transport/parking/parking-permits/residents-parking/" target="_blank" rel="noopener">Devon County Council — Residents' parking permits</a></p>
+        </div>
+      
+    </div>
+  
     
     <div class="checklist-block">
       <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
@@ -1257,7 +1415,7 @@
         <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
       </div>
       <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
-      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="farleys" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="farleys" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="farleys" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="farleys" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="good" data-prop="farleys" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="farleys" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="bad" data-prop="farleys" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="farleys" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="farleys" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="farleys" onclick="cycleChecklist(this)">♿ Ground-floor adaptability unknown</div><div class="cl-item" data-cl-key="freehold" data-cl-default="good" data-prop="farleys" onclick="cycleChecklist(this)">🏠 Freehold (confirmed in listing)</div></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="farleys" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="farleys" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="farleys" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="farleys" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="good" data-prop="farleys" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="good" data-prop="farleys" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="bad" data-prop="farleys" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="farleys" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="indifferent" data-prop="farleys" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="indifferent" data-prop="farleys" onclick="cycleChecklist(this)">♿ Ground-floor adaptability unknown</div></div>
       
     </div>
   
@@ -1322,153 +1480,6 @@
           <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
         </select>
         <button class="bro-post-btn" data-property="farleys" data-bro="Bro 3">Post</button>
-      </div>
-      <span class="bro-status"></span>
-    </div>
-  
-      </div>
-    </div>
-  
-    <div class="added">Added 2026-07-05</div>
-  </section>
-
-  <section class="card" id="exeterroadflat" data-avg-rating="" data-ai-rating="9">
-    <h2>Exeter Road, Exmouth (ground-floor character flat)</h2>
-    <div class="price-row">
-      <span class="price">£110,000</span>
-      <span class="agent">Spring Estates, Exmouth</span>
-    </div>
-    <a class="source-badge" href="https://www.zoopla.co.uk/for-sale/details/72842267/" target="_blank" rel="noopener">View on ZOOPLA.CO.UK ↗</a>
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
-    <div class="rating-row rating-row-overall">
-      <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:90%;background:rgb(63,117,60)"></div></div>
-      <span class="rating-row-score">9/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥🔥🔥</span>
-    </div>
-  
-      <div class="rating-row rating-row-empty " data-property="exeterroadflat" data-bro="Bro 1">
-        <span class="rating-row-label">Bro 1</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
-        <span class="rating-row-score">not yet rated</span>
-      </div>
-    
-      <div class="rating-row rating-row-empty " data-property="exeterroadflat" data-bro="Bro 2">
-        <span class="rating-row-label">Bro 2</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
-        <span class="rating-row-score">not yet rated</span>
-      </div>
-    
-      <div class="rating-row rating-row-empty " data-property="exeterroadflat" data-bro="Bro 3">
-        <span class="rating-row-label">Bro 3</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
-        <span class="rating-row-score">not yet rated</span>
-      </div>
-    
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:90%;background:rgb(63,117,60)"></div></div>
-      <span class="rating-row-score">9/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥🔥🔥</span>
-    </div>
-  </div>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">PRICE REDUCED</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
-    <div class="photos">
-    <div class="photo-main"><img src="images/Exeter_Road_Flat.jpg" alt="exeterroadflat main photo" loading="lazy"></div>
-    
-  </div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Exeter%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Exeter%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Exeter%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
-      </div>
-    </div>
-  
-    <p class="body">One-bedroom apartment occupying the entire ground floor of a period building on Exeter Road — high ceilings, large windows overlooking the communal lawn and neighbouring church, generously proportioned living room, bedroom with double doors onto a rear courtyard, modern bathroom, galley kitchen. Allocated parking at the rear. Functional condition with scope for modernisation. 52 years remaining on the lease.</p>
-    <p class="why"><strong>Why it's here:</strong> Still the rare flat that actually passes your flat rules: genuinely cheap AND explicitly the whole ground floor, with a real allocated parking space on top. Reduced a further £20,000 on 24/06/2026, now just £110k — under half of what it was quoted at when first tracked. Worth a sense check on the short (52-year) lease and extension cost before getting excited about the price. Only one photo shown — Zoopla blocks photo scraping, so this is the single press image from the Exmouth Journal writeup.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest genuinely ground-floor-with-parking option on the list, right in the middle of everything — the short 52-year lease is the one number worth checking before getting attached. Comfortably under your real £170k target too, which is worth more to you than the headline £300k ceiling suggests.</p>
-    
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
-      <div class="cl-columns">
-        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
-        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
-      </div>
-      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
-      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="exeterroadflat" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="exeterroadflat" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="good" data-prop="exeterroadflat" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="exeterroadflat" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="exeterroadflat" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="indifferent" data-prop="exeterroadflat" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="bad" data-prop="exeterroadflat" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="exeterroadflat" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="exeterroadflat" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="good" data-prop="exeterroadflat" onclick="cycleChecklist(this)">♿ Already ground-floor livable</div></div>
-      
-    </div>
-  
-    
-    <div class="ask-claude-block">
-      <div class="mini-form">
-        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
-        <button class="research-post-btn" data-property="exeterroadflat" data-title="Exeter Road, Exmouth (ground-floor character flat)">🔍 Ask Claude to research this</button>
-        <span class="mini-status"></span>
-      </div>
-      <div class="mini-form">
-        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
-        <button class="remove-post-btn" data-property="exeterroadflat" data-title="Exeter Road, Exmouth (ground-floor character flat)">Request removal</button>
-        <span class="mini-status"></span>
-      </div>
-      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
-    </div>
-  
-    
-    <div class="comments-block">
-      <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
-      <div class="brother-boxes">
-        
-    <div class="brother-box brother-box-1">
-      <h4>Bro 1</h4>
-      <div class="bro-comments" data-term="exeterroadflat-bro1">Loading…</div>
-      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
-      <div class="bro-controls">
-        <select class="bro-rating">
-          <option value="">No rating</option>
-          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
-        </select>
-        <button class="bro-post-btn" data-property="exeterroadflat" data-bro="Bro 1">Post</button>
-      </div>
-      <span class="bro-status"></span>
-    </div>
-  
-        
-    <div class="brother-box brother-box-2">
-      <h4>Bro 2</h4>
-      <div class="bro-comments" data-term="exeterroadflat-bro2">Loading…</div>
-      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
-      <div class="bro-controls">
-        <select class="bro-rating">
-          <option value="">No rating</option>
-          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
-        </select>
-        <button class="bro-post-btn" data-property="exeterroadflat" data-bro="Bro 2">Post</button>
-      </div>
-      <span class="bro-status"></span>
-    </div>
-  
-        
-    <div class="brother-box brother-box-3">
-      <h4>Bro 3</h4>
-      <div class="bro-comments" data-term="exeterroadflat-bro3">Loading…</div>
-      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
-      <div class="bro-controls">
-        <select class="bro-rating">
-          <option value="">No rating</option>
-          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
-        </select>
-        <button class="bro-post-btn" data-property="exeterroadflat" data-bro="Bro 3">Post</button>
       </div>
       <span class="bro-status"></span>
     </div>
@@ -1773,7 +1784,7 @@
     <div class="added">Added 2026-07-05</div>
   </section>
 
-  <section class="card" id="beaconflat" data-avg-rating="" data-ai-rating="4">
+  <section class="card" id="beaconflat" data-avg-rating="7.00" data-ai-rating="4">
     <h2>The Beacon, Exmouth (ground-floor flat)</h2>
     <div class="price-row">
       <span class="price">£309,950</span>
@@ -1783,9 +1794,9 @@
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
       <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
-      <span class="rating-row-score">4/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
+      <span class="rating-row-score">6/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
   
       <div class="rating-row rating-row-empty " data-property="beaconflat" data-bro="Bro 1">
@@ -1800,12 +1811,13 @@
         <span class="rating-row-score">not yet rated</span>
       </div>
     
-      <div class="rating-row rating-row-empty " data-property="beaconflat" data-bro="Bro 3">
-        <span class="rating-row-label">Bro 3</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
-        <span class="rating-row-score">not yet rated</span>
-      </div>
-    
+    <div class="rating-row " data-property="beaconflat" data-bro="Bro 3">
+      <span class="rating-row-label">Bro 3</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:70%;background:rgb(96,102,60)"></div></div>
+      <span class="rating-row-score">7/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥🔥</span>
+    </div>
+  
     <div class="rating-row rating-row-ai">
       <span class="rating-row-label">🤖 AI Rating</span>
       <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
@@ -2997,7 +3009,7 @@
       <span class="rating-row-flames">🔥🔥🔥</span>
     </div>
   </div>
-    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span><span class="flag" style="background:#8D6E63">LIKELY SOLD/WITHDRAWN</span></div>
     <div class="photos">
     <div class="photo-main"><img src="images/Withycombe_Village_Road__Exmouth_3.jpg" alt="withycombe main photo" loading="lazy"></div>
     
@@ -3144,7 +3156,7 @@
       <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
     </div>
   </div>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span><span class="flag" style="background:#8D6E63">LIKELY SOLD/WITHDRAWN</span></div>
     <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
     
     <div class="map-embed">
@@ -3808,79 +3820,14 @@ function applyLiveRating(term, comments) {
   if (!m) return;
   var propertyId = m[1], bro = 'Bro ' + m[2];
   for (var i = comments.length - 1; i >= 0; i--) {
-    var match = comments[i].body.match(/Rating:\s*(\d{1,2}(?:\.\d)?)\s*\/\s*10/i) || comments[i].body.match(/^\s*(\d{1,2}(?:\.\d)?)\s*\/\s*10/);
+    var match = comments[i].body.match(/Rating:\s*(\d{1,2})\s*\/\s*10/i) || comments[i].body.match(/^\s*(\d{1,2})\s*\/\s*10/);
     if (match) {
-      var score = Math.max(1, Math.min(10, Math.round(parseFloat(match[1]) * 2) / 2));
+      var score = Math.max(1, Math.min(10, parseInt(match[1], 10)));
       updateRatingRow(propertyId, bro, score);
       return;
     }
   }
 }
-
-function ratingFromPointerX(track, clientX) {
-  var rect = track.getBoundingClientRect();
-  var pct = (clientX - rect.left) / rect.width;
-  pct = Math.max(0, Math.min(1, pct));
-  var raw = 1 + pct * 9;
-  return Math.max(1, Math.min(10, Math.round(raw * 2) / 2));
-}
-
-function postRatingOnly(propertyId, bro, score) {
-  return fetch(WORKER_URL + '/comment', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ propertyId: propertyId, bro: bro, rating: score, comment: '' }),
-  }).then(function (r) { return r.json(); }).catch(function () { return { ok: false }; });
-}
-
-function wireDragRating(row) {
-  var track = row.querySelector('.rating-bar-track');
-  if (!track) return;
-  var propertyId = row.dataset.property, bro = row.dataset.bro;
-  var dragging = false, pending = null, saveStatus = document.createElement('span');
-  saveStatus.className = 'rating-row-savestatus';
-  row.appendChild(saveStatus);
-
-  function move(clientX) {
-    pending = ratingFromPointerX(track, clientX);
-    updateRatingRow(propertyId, bro, pending);
-  }
-  function commit() {
-    if (pending == null) return;
-    saveStatus.textContent = '…';
-    postRatingOnly(propertyId, bro, pending).then(function (data) {
-      saveStatus.textContent = data && data.ok ? '✓' : '⚠';
-      setTimeout(function () { saveStatus.textContent = ''; }, 1500);
-    });
-    pending = null;
-  }
-  track.addEventListener('mousedown', function (e) { dragging = true; move(e.clientX); e.preventDefault(); });
-  document.addEventListener('mousemove', function (e) { if (dragging) move(e.clientX); });
-  document.addEventListener('mouseup', function () { if (dragging) { dragging = false; commit(); } });
-  track.addEventListener('touchstart', function (e) { dragging = true; move(e.touches[0].clientX); }, { passive: true });
-  track.addEventListener('touchmove', function (e) { if (dragging) move(e.touches[0].clientX); }, { passive: true });
-  track.addEventListener('touchend', function () { if (dragging) { dragging = false; commit(); } });
-}
-document.querySelectorAll('.rating-row[data-bro]').forEach(wireDragRating);
-
-function restyleCard(card) {
-  var h2 = card.querySelector('h2');
-  var priceRow = card.querySelector('.price-row');
-  var sourceBadge = card.querySelector('.source-badge');
-  var ratingsBlock = card.querySelector('.ratings-block');
-  if (!h2 || !ratingsBlock) return;
-  var headerLeft = document.createElement('div');
-  headerLeft.className = 'header-left';
-  headerLeft.appendChild(h2);
-  if (priceRow) headerLeft.appendChild(priceRow);
-  if (sourceBadge) headerLeft.appendChild(sourceBadge);
-  var headerTop = document.createElement('div');
-  headerTop.className = 'header-top';
-  headerTop.appendChild(headerLeft);
-  headerTop.appendChild(ratingsBlock);
-  card.insertBefore(headerTop, card.firstChild);
-}
-document.querySelectorAll('.card').forEach(restyleCard);
 
 document.querySelectorAll('.bro-comments').forEach(loadBroComments);
 
