@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-09",
+  "lastUpdated": "2026-07-10",
   "properties": [
     {
       "id": "mountainclose",
@@ -1187,7 +1187,7 @@
     },
     {
       "id": "townlanewoodbury",
-      "section": "new",
+      "section": "still",
       "title": "Town Lane, Woodbury (period cottage)",
       "price": "Offers Over £280,000",
       "agent": "Village agent, Woodbury",
@@ -1211,7 +1211,7 @@
     },
     {
       "id": "woodburyconservation",
-      "section": "new",
+      "section": "still",
       "title": "Woodbury (Conservation Area cottage)",
       "price": "Guide Price £279,950",
       "agent": "Rightmove listing",
@@ -1235,7 +1235,7 @@
     },
     {
       "id": "queenstreetbudleigh",
-      "section": "new",
+      "section": "still",
       "title": "Queen Street, Budleigh Salterton (former fisherman's cottage)",
       "price": "£280,000",
       "agent": "Hall & Scott / David Rhys (dual-listed)",
@@ -1259,7 +1259,7 @@
     },
     {
       "id": "longbrooklympstone",
-      "section": "new",
+      "section": "still",
       "title": "Longbrook Lane, Lympstone (fixer-upper)",
       "price": "Guide Price £240,000",
       "agent": "Rightmove listing",
@@ -1284,7 +1284,7 @@
     },
     {
       "id": "allsaintseastbudleigh",
-      "section": "new",
+      "section": "still",
       "title": "All Saints Close, East Budleigh (modern terrace)",
       "price": "£290,000",
       "agent": "Rightmove listing",
@@ -1309,7 +1309,7 @@
     },
     {
       "id": "vansittartexmouth",
-      "section": "new",
+      "section": "still",
       "title": "Vansittart Drive, Exmouth",
       "price": "£249,950",
       "agent": "Rightmove listing",
@@ -1334,7 +1334,7 @@
     },
     {
       "id": "normancrescentbudleigh",
-      "section": "new",
+      "section": "still",
       "title": "Norman Crescent, Budleigh Salterton",
       "price": "Guide Price £289,950",
       "agent": "Rightmove listing",
@@ -1358,7 +1358,7 @@
     },
     {
       "id": "horseshoebarnknowle",
-      "section": "new",
+      "section": "still",
       "title": "Horseshoe Barn, Knowle (near Crediton — stone barn conversion)",
       "price": "£275,000",
       "agent": "Helmores, Crediton",
@@ -1380,6 +1380,32 @@
       },
       "aiRating": 5,
       "aiTake": "The best barn-conversion character and real parking of the whole sweep, but Knowle is well inland near Crediton — a proper drive from the coast and both brothers, so the distance has to outweigh the character for this one to make sense."
+    },
+    {
+      "id": "churchstilewoodbury",
+      "section": "new",
+      "title": "Church Stile Lane, Woodbury (Grade II cottage)",
+      "price": "£155,000",
+      "agent": "East of Exe, Topsham",
+      "flags": [
+        {"text": "IN BUDGET", "color": "#2E7D32"},
+        {"text": "GRADE II LISTED", "color": "#6A1B9A"},
+        {"text": "NO CHAIN", "color": "#EF6C00"},
+        {"text": "ON-STREET PARKING ONLY", "color": "#757575"}
+      ],
+      "photos": ["ChurchStileWoodbury_Gallery_1.jpg", "ChurchStileWoodbury_Gallery_2.jpg", "ChurchStileWoodbury_Gallery_3.jpg", "ChurchStileWoodbury_Gallery_4.jpg"],
+      "link": "https://www.onthemarket.com/details/19822482/",
+      "linkLabel": "onthemarket.com/details/19822482",
+      "body": "Grade II listed one-double-bedroom cottage on Church Stile Lane in the heart of Woodbury village. Sitting room with exposed beams and fireplace, a flexible study space, a recently installed kitchen with integrated appliances, ground-floor bathroom, and a first-floor bedroom with a walk-in wardrobe. Enclosed rear garden with a patio and raised decking. Electric heating (no mains gas), fibre broadband available. Freehold, chain-free, Council Tax Band B.",
+      "why": "By far the cheapest genuinely characterful find of the whole search — a real Grade II cottage, freehold and chain-free, at less than half the price ceiling. It's right in Woodbury itself, so a brother is a short walk away and Woodbury Common's trails are effectively on the doorstep, same as the other two Woodbury cottages already on file, but this one is £100k+ cheaper than either. The trade-offs are size (just one double bedroom plus a study) and parking, which the listing confirms is on-street only rather than unstated.",
+      "dateAdded": "2026-07-10",
+      "checklist": {
+        "ocean": "no", "trainStation": "no", "poolSwimTeam": "no", "private": "no",
+        "groundFloorLongTerm": "no", "mtbTrails": "yes", "character": "yes", "garden": "yes",
+        "garageWorkspace": "no", "uniqueFeature": null, "closeToFamily": "yes"
+      },
+      "aiRating": 7,
+      "aiTake": "The cheapest genuinely characterful property found all search — Grade II, freehold, chain-free, and close to a brother and the Common's trails — but it's compact (one double bedroom plus a study) with on-street parking only and a first-floor bedroom that rules out easy ground-floor adaptation."
     }
   ]
 }
