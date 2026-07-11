@@ -30,7 +30,22 @@
         "MountainClose_Gallery_2.jpg",
         "MountainClose_Gallery_3.jpg",
         "MountainClose_Gallery_4.jpg",
-        "MountainClose_Gallery_5.jpg"
+        "MountainClose_Gallery_5.jpg",
+        "MountainClose_Gallery_6.jpg",
+        "MountainClose_Gallery_7.jpg",
+        "MountainClose_Gallery_8.jpg",
+        "MountainClose_Gallery_9.jpg",
+        "MountainClose_Gallery_10.jpg",
+        "MountainClose_Gallery_11.jpg",
+        "MountainClose_Gallery_12.jpg",
+        "MountainClose_Gallery_13.jpg",
+        "MountainClose_Gallery_14.jpg",
+        "MountainClose_Gallery_15.jpg",
+        "MountainClose_Gallery_16.jpg",
+        "MountainClose_Gallery_17.jpg",
+        "MountainClose_Gallery_18.jpg",
+        "MountainClose_Gallery_19.jpg",
+        "MountainClose_Gallery_20.jpg"
       ],
       "map": "map_mountainclose.png",
       "link": "https://www.onthemarket.com/details/19874547/",
@@ -49,7 +64,9 @@
         "garden": "partial",
         "garageWorkspace": "no",
         "uniqueFeature": "A small patch of land adjoining the property that could potentially be annexed to create a proper garden — worth asking the agent/freeholder whether it's included or purchasable.",
-        "closeToFamily": "yes"
+        "closeToFamily": "yes",
+        "tenure": "leasehold",
+        "leaseYears": 114
       },
       "aiRating": 5,
       "aiTake": "The cheapest thing on the list by a wide margin, and it's genuinely in Exmouth near the brothers — but the price reflects real gaps: no parking mentioned at all, needs modernising throughout, it's leasehold (114 years is fine, not a dealbreaker), and 'bedrooms upstairs' makes the ground-floor-long-term question uncertain. Worth a viewing to check parking and layout in person before ruling in or out — this is more a starter/investment-shaped property than a forever-home shape.",
@@ -58,6 +75,12 @@
           "score": 2,
           "date": "2026-07-07"
         }
+      },
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "unknown",
+        "note": "Listing doesn't mention parking either way — no drive, garage, or space referenced anywhere in the description."
       }
     },
     {
@@ -81,10 +104,19 @@
         }
       ],
       "photos": [
-        "Haynes_Gallery_1.jpeg",
+        "Haynes_Gallery_1.jpg",
         "Haynes_Gallery_2.jpg",
         "Haynes_Gallery_3.jpg",
-        "Haynes_Gallery_4.jpeg"
+        "Haynes_Gallery_4.jpg",
+        "Haynes_Gallery_5.jpg",
+        "Haynes_Gallery_6.jpg",
+        "Haynes_Gallery_7.jpg",
+        "Haynes_Gallery_8.jpg",
+        "Haynes_Gallery_9.jpg",
+        "Haynes_Gallery_10.jpg",
+        "Haynes_Gallery_11.jpg",
+        "Haynes_Gallery_12.jpg",
+        "Haynes_Gallery_13.jpg"
       ],
       "map": "map_haynes.png",
       "link": "https://www.pennys.net/for-sale/lympstone/haynes-cottages/2-bedroom-terraced-for-sale-in-haynes-cottages-ex8-5lx/266524",
@@ -112,6 +144,11 @@
           "score": 6,
           "date": "2026-07-07"
         }
+      },
+      "bedrooms": 2,
+      "parking": {
+        "status": "has",
+        "note": "Gravelled parking bay for up to 3 cars with outside electric sockets — the best parking on the whole list."
       }
     },
     {
@@ -142,7 +179,21 @@
         "Longmeadow_Gallery_1.jpg",
         "Longmeadow_Gallery_2.jpg",
         "Longmeadow_Gallery_3.jpg",
-        "Longmeadow_Gallery_4.jpg"
+        "Longmeadow_Gallery_4.jpg",
+        "Longmeadow_Gallery_5.jpg",
+        "Longmeadow_Gallery_6.jpg",
+        "Longmeadow_Gallery_7.jpg",
+        "Longmeadow_Gallery_8.jpg",
+        "Longmeadow_Gallery_9.jpg",
+        "Longmeadow_Gallery_10.jpg",
+        "Longmeadow_Gallery_11.jpg",
+        "Longmeadow_Gallery_12.jpg",
+        "Longmeadow_Gallery_13.jpg",
+        "Longmeadow_Gallery_14.jpg",
+        "Longmeadow_Gallery_15.jpg",
+        "Longmeadow_Gallery_16.jpg",
+        "Longmeadow_Gallery_17.jpg",
+        "Longmeadow_Gallery_18.jpg"
       ],
       "map": "map_longmeadow.png",
       "link": "https://www.rightmove.co.uk/properties/89711112",
@@ -170,6 +221,12 @@
           "score": 3,
           "date": "2026-07-07"
         }
+      },
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "parking": {
+        "status": "onstreet",
+        "note": "No off-street parking; on-street only in Lympstone village."
       }
     },
     {
@@ -196,7 +253,23 @@
         "Brookside_Gallery_1.jpg",
         "Brookside_Gallery_2.jpg",
         "Brookside_Gallery_3.jpg",
-        "Brookside_Gallery_4.jpg"
+        "Brookside_Gallery_4.jpg",
+        "Brookside_Gallery_5.jpg",
+        "Brookside_Gallery_6.jpg",
+        "Brookside_Gallery_7.jpg",
+        "Brookside_Gallery_8.jpg",
+        "Brookside_Gallery_9.jpg",
+        "Brookside_Gallery_10.jpg",
+        "Brookside_Gallery_11.jpg",
+        "Brookside_Gallery_12.jpg",
+        "Brookside_Gallery_13.jpg",
+        "Brookside_Gallery_14.jpg",
+        "Brookside_Gallery_15.jpg",
+        "Brookside_Gallery_16.jpg",
+        "Brookside_Gallery_17.jpg",
+        "Brookside_Gallery_18.jpg",
+        "Brookside_Gallery_19.jpg",
+        "Brookside_Gallery_20.jpg"
       ],
       "map": "map_brookside.png",
       "link": "https://www.rightmove.co.uk/properties/162176444",
@@ -215,10 +288,16 @@
         "garden": "partial",
         "garageWorkspace": "no",
         "uniqueFeature": "Currently run as a successful Airbnb — could continue as an income-generating let",
-        "closeToFamily": "partial"
+        "closeToFamily": "partial",
+        "tenure": "freehold"
       },
       "aiRating": 5,
-      "aiTake": "No-chain cottage with a genuine rental track record as an Airbnb, but parking is unconfirmed and there's only a courtyard rather than a real garden."
+      "aiTake": "No-chain cottage with a genuine rental track record as an Airbnb, but parking is unconfirmed and there's only a courtyard rather than a real garden.",
+      "bedrooms": 2,
+      "parking": {
+        "status": "unknown",
+        "note": "Listing says \"ask agent\" rather than confirming either way."
+      }
     },
     {
       "id": "morcote",
@@ -240,7 +319,15 @@
         "Morcote_Gallery_1.jpg",
         "Morcote_Gallery_2.jpg",
         "Morcote_Gallery_3.jpg",
-        "Morcote_Gallery_4.jpg"
+        "Morcote_Gallery_4.jpg",
+        "Morcote_Gallery_5.jpg",
+        "Morcote_Gallery_6.jpg",
+        "Morcote_Gallery_7.jpg",
+        "Morcote_Gallery_8.jpg",
+        "Morcote_Gallery_9.jpg",
+        "Morcote_Gallery_10.jpg",
+        "Morcote_Gallery_11.jpg",
+        "Morcote_Gallery_12.jpg"
       ],
       "map": "map_morcote.png",
       "link": "https://www.rightmove.co.uk/properties/159668282",
@@ -262,7 +349,12 @@
         "closeToFamily": "partial"
       },
       "aiRating": 5,
-      "aiTake": "Cheap, characterful, and right in the heart of Lympstone, but zero outdoor space and street parking only make it the weakest of this sweep's Lympstone finds."
+      "aiTake": "Cheap, characterful, and right in the heart of Lympstone, but zero outdoor space and street parking only make it the weakest of this sweep's Lympstone finds.",
+      "bedrooms": 1,
+      "parking": {
+        "status": "onstreet",
+        "note": "No garden or off-street parking; on-street only, right in the village centre."
+      }
     },
     {
       "id": "eastbudleighhighst",
@@ -288,7 +380,13 @@
         "EastBudleigh_Gallery_1.jpg",
         "EastBudleigh_Gallery_2.jpg",
         "EastBudleigh_Gallery_3.jpg",
-        "EastBudleigh_Gallery_4.jpg"
+        "EastBudleigh_Gallery_4.jpg",
+        "EastBudleigh_Gallery_5.jpg",
+        "EastBudleigh_Gallery_6.jpg",
+        "EastBudleigh_Gallery_7.jpg",
+        "EastBudleigh_Gallery_8.jpg",
+        "EastBudleigh_Gallery_9.jpg",
+        "EastBudleigh_Gallery_10.jpg"
       ],
       "map": "map_eastbudleigh_highst.png",
       "link": "https://www.pennys.net/for-sale/exmouth/high-street/2-bedroom-terraced-for-sale-in-high-street-ex9-7ed/263959",
@@ -316,6 +414,12 @@
           "score": 6,
           "date": "2026-07-07"
         }
+      },
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "none",
+        "note": "No parking, garage, or space of any kind — confirmed directly from the full listing text. High Street has limited 30-min on-street parking; the practical option is a free 17-space car park just off the High Street (2-hr limit) or the larger Hayes Lane car park nearby. No formal residents' permit scheme in this small village."
       }
     },
     {
@@ -360,10 +464,18 @@
         "garden": "no",
         "garageWorkspace": "partial",
         "uniqueFeature": null,
-        "closeToFamily": "yes"
+        "closeToFamily": "yes",
+        "tenure": "leasehold",
+        "leaseYears": null
       },
       "aiRating": 7,
-      "aiTake": "Ticks the practical boxes (ground floor, cheap, close to everything in Exmouth) but has none of the character you respond to, and the garage is only a maybe. Right at your £200k comfort line, which helps its case."
+      "aiTake": "Ticks the practical boxes (ground floor, cheap, close to everything in Exmouth) but has none of the character you respond to, and the garage is only a maybe. Right at your £200k comfort line, which helps its case.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "unknown",
+        "note": "A garage is understood to be available to rent nearby, but it's not included with the sale — not a guaranteed space."
+      }
     },
     {
       "id": "farleys",
@@ -391,9 +503,13 @@
       ],
       "photos": [
         "Farleys_Gallery_1.jpg",
-        "Farleys_Gallery_2.png",
+        "Farleys_Gallery_2.jpg",
         "Farleys_Gallery_3.jpg",
-        "Farleys_Gallery_4.jpg"
+        "Farleys_Gallery_4.jpg",
+        "Farleys_Gallery_5.jpg",
+        "Farleys_Gallery_6.jpg",
+        "Farleys_Gallery_7.jpg",
+        "Farleys_Gallery_8.jpg"
       ],
       "map": "map_farleys.png",
       "link": "https://www.hallandscott.co.uk/details/?id=HSEXM_706793",
@@ -412,7 +528,8 @@
         "garden": "no",
         "garageWorkspace": "no",
         "uniqueFeature": null,
-        "closeToFamily": "partial"
+        "closeToFamily": "partial",
+        "tenure": "freehold"
       },
       "aiRating": 6,
       "aiTake": "Best location fit yet — estuary, its own station, and Woodbury Common all on the doorstep — but no garden, no parking, and Grade II status likely rules out a ground-floor retrofit. One honest caveat: by your own read, Lympstone isn't especially close to either brother (Woodbury or Otterton) — worth it only if the deal/character is exceptional enough to outweigh that, which arguably it already is (Grade II, chain-free, £5k under budget). Your call. Also nudged down slightly for price — £295k is into the range you'd call over budget even though it's under the £300k hard ceiling.",
@@ -436,7 +553,13 @@
             }
           ]
         }
-      ]
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "none",
+        "note": "No dedicated parking; nearest options are the free Lympstone Village Station car park (13 spaces, first-come-first-served) or Underhill Car Park nearby — nothing deeded to the property. See research findings below for the full picture."
+      }
     },
     {
       "id": "bellstreet",
@@ -459,7 +582,14 @@
         }
       ],
       "photos": [
-        "Bell_Street_Otterton.jpg"
+        "BellStreet_Gallery_1.jpg",
+        "BellStreet_Gallery_2.jpg",
+        "BellStreet_Gallery_3.jpg",
+        "BellStreet_Gallery_4.jpg",
+        "BellStreet_Gallery_5.jpg",
+        "BellStreet_Gallery_6.jpg",
+        "BellStreet_Gallery_7.jpg",
+        "BellStreet_Gallery_8.jpg"
       ],
       "map": "map_bell_street.png",
       "link": "https://www.pennys.net/for-sale/exmouth/bell-street/2-bedroom-terraced-for-sale-in-bell-street-ex9-7hs/270110",
@@ -478,10 +608,16 @@
         "garden": "yes",
         "garageWorkspace": "no",
         "uniqueFeature": null,
-        "closeToFamily": "yes"
+        "closeToFamily": "yes",
+        "tenure": "freehold"
       },
       "aiRating": 5,
-      "aiTake": "Cheapest confirmed option, but exactly the village-centre/no-real-parking profile you said you'd want to avoid if you have a choice."
+      "aiTake": "Cheapest confirmed option, but exactly the village-centre/no-real-parking profile you said you'd want to avoid if you have a choice.",
+      "bedrooms": 2,
+      "parking": {
+        "status": "onstreet",
+        "note": "On-street parking only, in the same village as the Otterton thatched cottage."
+      }
     },
     {
       "id": "flexton",
@@ -500,7 +636,13 @@
         }
       ],
       "photos": [
-        "The_Flexton_Ottery.jpg"
+        "Flexton_Gallery_1.jpg",
+        "Flexton_Gallery_2.jpg",
+        "Flexton_Gallery_3.jpg",
+        "Flexton_Gallery_4.jpg",
+        "Flexton_Gallery_5.jpg",
+        "Flexton_Gallery_6.jpg",
+        "Flexton_Gallery_7.jpg"
       ],
       "map": "map_flexton.png",
       "link": "https://www.hallandscott.co.uk/details/?id=HSOTT_708139",
@@ -522,7 +664,13 @@
         "closeToFamily": "no"
       },
       "aiRating": 4,
-      "aiTake": "Most finished and characterful of the cheap options, but it's the one furthest from the coast/trails brief of anything on the list."
+      "aiTake": "Most finished and characterful of the cheap options, but it's the one furthest from the coast/trails brief of anything on the list.",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "parking": {
+        "status": "unknown",
+        "note": "Courtyard access described sounds pedestrian-only; parking isn't mentioned and seems unlikely given the access description."
+      }
     },
     {
       "id": "beaconflat",
@@ -545,7 +693,15 @@
         }
       ],
       "photos": [
-        "Beacon_Flat_Exmouth.jpg"
+        "BeaconFlat_Gallery_1.jpg",
+        "BeaconFlat_Gallery_2.jpg",
+        "BeaconFlat_Gallery_3.jpg",
+        "BeaconFlat_Gallery_4.jpg",
+        "BeaconFlat_Gallery_5.jpg",
+        "BeaconFlat_Gallery_6.jpg",
+        "BeaconFlat_Gallery_7.jpg",
+        "BeaconFlat_Gallery_8.jpg",
+        "BeaconFlat_Gallery_9.jpg"
       ],
       "map": "map_beacon_flat.png",
       "link": "https://www.pennys.net/for-sale/exmouth/the-beacon/2-bedroom-groundfloorflat-for-sale-in-the-beacon-ex8-2ag/270212",
@@ -564,7 +720,8 @@
         "garden": "no",
         "garageWorkspace": "partial",
         "uniqueFeature": null,
-        "closeToFamily": "yes"
+        "closeToFamily": "yes",
+        "tenure": "freehold"
       },
       "aiRating": 4,
       "aiTake": "Real ground-floor parking and an estuary view are rare for a flat, but it's over budget and still just a flat, not the characterful find you're really after. Already over the £300k hard ceiling, which the price alone makes hard to justify given your real ~£170-200k target.",
@@ -573,6 +730,12 @@
           "score": 7,
           "date": "2026-07-07"
         }
+      },
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "has",
+        "note": "A secure allocated parking space (up-and-over door) is included at the rear — a real space, not just street parking."
       }
     },
     {
@@ -596,7 +759,14 @@
         }
       ],
       "photos": [
-        "Cranford_Avenue_Exmouth.jpg"
+        "Cranford_Gallery_1.jpg",
+        "Cranford_Gallery_2.jpg",
+        "Cranford_Gallery_3.jpg",
+        "Cranford_Gallery_4.jpg",
+        "Cranford_Gallery_5.jpg",
+        "Cranford_Gallery_6.jpg",
+        "Cranford_Gallery_7.jpg",
+        "Cranford_Gallery_8.jpg"
       ],
       "map": "map_cranford.png",
       "link": "https://www.hallandscott.co.uk/details/?id=HSEXM_708054",
@@ -618,7 +788,12 @@
         "closeToFamily": "yes"
       },
       "aiRating": 5,
-      "aiTake": "Safe, ready-to-move-into fallback in the right town, but no character and parking is unconfirmed rather than guaranteed."
+      "aiTake": "Safe, ready-to-move-into fallback in the right town, but no character and parking is unconfirmed rather than guaranteed.",
+      "bedrooms": 2,
+      "parking": {
+        "status": "unknown",
+        "note": "Not mentioned in the listing either way."
+      }
     },
     {
       "id": "sidmouth",
@@ -644,7 +819,23 @@
         "Sidmouth_Gallery_1.jpg",
         "Sidmouth_Gallery_2.jpg",
         "Sidmouth_Gallery_3.jpg",
-        "Sidmouth_Gallery_4.jpg"
+        "Sidmouth_Gallery_4.jpg",
+        "Sidmouth_Gallery_5.jpg",
+        "Sidmouth_Gallery_6.jpg",
+        "Sidmouth_Gallery_7.jpg",
+        "Sidmouth_Gallery_8.jpg",
+        "Sidmouth_Gallery_9.jpg",
+        "Sidmouth_Gallery_10.jpg",
+        "Sidmouth_Gallery_11.jpg",
+        "Sidmouth_Gallery_12.jpg",
+        "Sidmouth_Gallery_13.jpg",
+        "Sidmouth_Gallery_14.jpg",
+        "Sidmouth_Gallery_15.jpg",
+        "Sidmouth_Gallery_16.jpg",
+        "Sidmouth_Gallery_17.jpg",
+        "Sidmouth_Gallery_18.jpg",
+        "Sidmouth_Gallery_19.jpg",
+        "Sidmouth_Gallery_20.jpg"
       ],
       "map": "map_sidmouth.png",
       "link": "https://www.rightmove.co.uk/properties/90027936",
@@ -687,7 +878,11 @@
         "closeToFamily": "no"
       },
       "aiRating": 5,
-      "aiTake": "Character and privacy are off the charts, but declined for good reason — the erosion/insurance/mortgage problem is real, and it's the least practical for trains, pools, or trails of anything on the list."
+      "aiTake": "Character and privacy are off the charts, but declined for good reason — the erosion/insurance/mortgage problem is real, and it's the least practical for trains, pools, or trails of anything on the list.",
+      "parking": {
+        "status": "unknown",
+        "note": "Not specifically checked — a cliff-top position suggests limited space, but this wasn't confirmed either way. Moot given the property was declined for erosion/insurance reasons."
+      }
     },
     {
       "id": "otterton",
@@ -713,7 +908,21 @@
         "Otterton_Gallery_1.jpg",
         "Otterton_Gallery_2.jpg",
         "Otterton_Gallery_3.jpg",
-        "Otterton_Gallery_4.jpg"
+        "Otterton_Gallery_4.jpg",
+        "Otterton_Gallery_5.jpg",
+        "Otterton_Gallery_6.jpg",
+        "Otterton_Gallery_7.jpg",
+        "Otterton_Gallery_8.jpg",
+        "Otterton_Gallery_9.jpg",
+        "Otterton_Gallery_10.jpg",
+        "Otterton_Gallery_11.jpg",
+        "Otterton_Gallery_12.jpg",
+        "Otterton_Gallery_13.jpg",
+        "Otterton_Gallery_14.jpg",
+        "Otterton_Gallery_15.jpg",
+        "Otterton_Gallery_16.jpg",
+        "Otterton_Gallery_17.jpg",
+        "Otterton_Gallery_18.jpg"
       ],
       "map": "map_otterton.png",
       "link": "https://www.rightmove.co.uk/properties/174232565",
@@ -735,7 +944,12 @@
         "closeToFamily": "yes"
       },
       "aiRating": 6,
-      "aiTake": "The thatched-cottage character you love, near your brother, but it's the exact village-centre/on-street-parking trade-off you flagged not wanting — you said as much yourself."
+      "aiTake": "The thatched-cottage character you love, near your brother, but it's the exact village-centre/on-street-parking trade-off you flagged not wanting — you said as much yourself.",
+      "bedrooms": 3,
+      "parking": {
+        "status": "unknown",
+        "note": "Village-centre position; on-street parking is the practical reality even though the listing doesn't confirm it explicitly."
+      }
     },
     {
       "id": "feniton",
@@ -758,9 +972,13 @@
         }
       ],
       "photos": [
-        "Feniton_Barn.jpg",
+        "Feniton_Gallery_1.jpg",
         "Feniton_Gallery_2.jpg",
-        "Feniton_Gallery_3.jpg"
+        "Feniton_Gallery_3.jpg",
+        "Feniton_Gallery_4.jpg",
+        "Feniton_Gallery_5.jpg",
+        "Feniton_Gallery_6.jpg",
+        "Feniton_Gallery_7.jpg"
       ],
       "map": "map_feniton.png",
       "link": "https://www.hallandscott.co.uk/details/?id=HSOTT_708623",
@@ -782,7 +1000,11 @@
         "closeToFamily": "no"
       },
       "aiRating": 8,
-      "aiTake": "Cheapest, most flexible option — you could design in ground-floor living and a workshop from scratch — but it's inland, off the coast and trails brief entirely. Also comfortably under your real £170k target — the cheapest thing on the list by a wide margin."
+      "aiTake": "Cheapest, most flexible option — you could design in ground-floor living and a workshop from scratch — but it's inland, off the coast and trails brief entirely. Also comfortably under your real £170k target — the cheapest thing on the list by a wide margin.",
+      "parking": {
+        "status": "has",
+        "note": "Parking is included in the already-granted planning permission for the converted dwelling."
+      }
     },
     {
       "id": "yettington",
@@ -825,7 +1047,12 @@
         "closeToFamily": "partial"
       },
       "aiRating": 4,
-      "aiTake": "About the best trail-network location of anything found, and has real character, but likely gone and was already 25-33% over budget. Already well past the £300k ceiling — a benchmark piece, not a real contender on price alone."
+      "aiTake": "About the best trail-network location of anything found, and has real character, but likely gone and was already 25-33% over budget. Already well past the £300k ceiling — a benchmark piece, not a real contender on price alone.",
+      "bedrooms": 2,
+      "parking": {
+        "status": "has",
+        "note": "Gardens and allocated parking were confirmed in the original listing (property is likely sold)."
+      }
     },
     {
       "id": "douglas",
@@ -844,9 +1071,13 @@
         }
       ],
       "photos": [
-        "Douglas_Avenue__Exmouth_2.jpg",
+        "Douglas_Gallery_1.jpg",
         "Douglas_Gallery_2.jpg",
-        "Douglas_Gallery_3.jpg"
+        "Douglas_Gallery_3.jpg",
+        "Douglas_Gallery_4.jpg",
+        "Douglas_Gallery_5.jpg",
+        "Douglas_Gallery_6.jpg",
+        "Douglas_Gallery_7.jpg"
       ],
       "map": "map_douglas_ave.png",
       "link": "https://www.hallandscott.co.uk/details/?id=HSEXM_697185",
@@ -868,7 +1099,12 @@
         "closeToFamily": "yes"
       },
       "aiRating": 5,
-      "aiTake": "Solid, safe fallback with real parking in the right town, but no character and no garden — a placeholder rather than an exciting option."
+      "aiTake": "Solid, safe fallback with real parking in the right town, but no character and no garden — a placeholder rather than an exciting option.",
+      "bedrooms": 2,
+      "parking": {
+        "status": "has",
+        "note": "Allocated parking confirmed in the listing."
+      }
     },
     {
       "id": "beacon",
@@ -891,9 +1127,23 @@
         }
       ],
       "photos": [
-        "The_Beacon__Exmouth_1.jpg",
+        "Beacon_Gallery_1.jpg",
         "Beacon_Gallery_2.jpg",
-        "Beacon_Gallery_3.jpg"
+        "Beacon_Gallery_3.jpg",
+        "Beacon_Gallery_4.jpg",
+        "Beacon_Gallery_5.jpg",
+        "Beacon_Gallery_6.jpg",
+        "Beacon_Gallery_7.jpg",
+        "Beacon_Gallery_8.jpg",
+        "Beacon_Gallery_9.jpg",
+        "Beacon_Gallery_10.jpg",
+        "Beacon_Gallery_11.jpg",
+        "Beacon_Gallery_12.jpg",
+        "Beacon_Gallery_13.jpg",
+        "Beacon_Gallery_14.jpg",
+        "Beacon_Gallery_15.jpg",
+        "Beacon_Gallery_16.jpg",
+        "Beacon_Gallery_17.jpg"
       ],
       "map": "map_beacon.png",
       "link": "https://www.hallandscott.co.uk/details/?id=HSEXM_707936",
@@ -915,7 +1165,11 @@
         "closeToFamily": "yes"
       },
       "aiRating": 3,
-      "aiTake": "Character and garage boxes are both ticked hard, but it's 33%+ over budget and a full four-storey renovation project, not a quick move-in. Already well past the £300k ceiling, on top of being a major renovation project."
+      "aiTake": "Character and garage boxes are both ticked hard, but it's 33%+ over budget and a full four-storey renovation project, not a quick move-in. Already well past the £300k ceiling, on top of being a major renovation project.",
+      "parking": {
+        "status": "has",
+        "note": "Private garage included."
+      }
     },
     {
       "id": "withycombe",
@@ -960,7 +1214,11 @@
         "closeToFamily": "yes"
       },
       "aiRating": 3,
-      "aiTake": "The most unusual conversion flavour found so far, but too much of the listing (price, status, layout) is unconfirmed to rate it with real confidence. Already well past the £300k ceiling on top of everything else unconfirmed."
+      "aiTake": "The most unusual conversion flavour found so far, but too much of the listing (price, status, layout) is unconfirmed to rate it with real confidence. Already well past the £300k ceiling on top of everything else unconfirmed.",
+      "parking": {
+        "status": "unknown",
+        "note": "Not confirmed either way — the specific listing couldn't be relocated this sweep."
+      }
     },
     {
       "id": "salterton",
@@ -1003,7 +1261,12 @@
         "closeToFamily": "yes"
       },
       "aiRating": 6,
-      "aiTake": "Ticks ground-floor and location boxes cheaply, but likely age-restricted and has none of the character you're after — a fallback, not a favourite. Also under your real £170k target, which counts for more than the £300k ceiling implies."
+      "aiTake": "Ticks ground-floor and location boxes cheaply, but likely age-restricted and has none of the character you're after — a fallback, not a favourite. Also under your real £170k target, which counts for more than the £300k ceiling implies.",
+      "bedrooms": 2,
+      "parking": {
+        "status": "unknown",
+        "note": "Not confirmed either way."
+      }
     },
     {
       "id": "eastbudleigh",
@@ -1048,7 +1311,11 @@
         "closeToFamily": "partial"
       },
       "aiRating": 2,
-      "aiTake": "Genuinely characterful but 45% over budget and likely already gone — kept only as a benchmark. Already well past the £300k ceiling, on top of likely being sold."
+      "aiTake": "Genuinely characterful but 45% over budget and likely already gone — kept only as a benchmark. Already well past the £300k ceiling, on top of likely being sold.",
+      "parking": {
+        "status": "unknown",
+        "note": "Not confirmed either way; listing has since gone (410)."
+      }
     },
     {
       "id": "clinton",
@@ -1071,7 +1338,12 @@
         }
       ],
       "photos": [
-        "Clinton_Garage.jpg"
+        "ClintonGarage_Gallery_1.jpg",
+        "ClintonGarage_Gallery_2.jpg",
+        "ClintonGarage_Gallery_3.jpg",
+        "ClintonGarage_Gallery_4.jpg",
+        "ClintonGarage_Gallery_5.jpg",
+        "ClintonGarage_Gallery_6.jpg"
       ],
       "map": "map_clinton_garage.png",
       "link": "https://www.meadowsea.com/Property-For-Sale-Clinton-Garage-Budleigh-Salterton-pi-MEAD1265.htm",
@@ -1093,7 +1365,11 @@
         "closeToFamily": "partial"
       },
       "aiRating": 3,
-      "aiTake": "The most literal 'workshop you could hire out' find yet, right in Budleigh itself, but it's speculative, over budget, and a redevelopment project rather than a move-in-ready home. Already well past the £300k ceiling on top of being speculative."
+      "aiTake": "The most literal 'workshop you could hire out' find yet, right in Budleigh itself, but it's speculative, over budget, and a redevelopment project rather than a move-in-ready home. Already well past the £300k ceiling on top of being speculative.",
+      "parking": {
+        "status": "unknown",
+        "note": "Not confirmed either way — former commercial garage site, own parking situation unclear."
+      }
     },
     {
       "id": "leslie",
@@ -1136,7 +1412,11 @@
         "closeToFamily": "yes"
       },
       "aiRating": 4,
-      "aiTake": "Could be a good, cheap, characterful find in the right town, but the listing couldn't be reconfirmed this sweep — worth a direct call before reading too much into it."
+      "aiTake": "Could be a good, cheap, characterful find in the right town, but the listing couldn't be reconfirmed this sweep — worth a direct call before reading too much into it.",
+      "parking": {
+        "status": "unknown",
+        "note": "Not confirmed either way — exact listing couldn't be relocated this sweep."
+      }
     },
     {
       "id": "greenwaywoodbury",
@@ -1162,7 +1442,17 @@
         "Greenway_Gallery_1.jpg",
         "Greenway_Gallery_2.jpg",
         "Greenway_Gallery_3.jpg",
-        "Greenway_Gallery_4.jpg"
+        "Greenway_Gallery_4.jpg",
+        "Greenway_Gallery_5.jpg",
+        "Greenway_Gallery_6.jpg",
+        "Greenway_Gallery_7.jpg",
+        "Greenway_Gallery_8.jpg",
+        "Greenway_Gallery_9.jpg",
+        "Greenway_Gallery_10.jpg",
+        "Greenway_Gallery_11.jpg",
+        "Greenway_Gallery_12.jpg",
+        "Greenway_Gallery_13.jpg",
+        "Greenway_Gallery_14.jpg"
       ],
       "link": "https://www.onthemarket.com/details/17798644/",
       "linkLabel": "onthemarket.com/details/17798644",
@@ -1180,10 +1470,16 @@
         "garden": "yes",
         "garageWorkspace": "no",
         "uniqueFeature": null,
-        "closeToFamily": "yes"
+        "closeToFamily": "yes",
+        "tenure": "freehold"
       },
       "aiRating": 6,
-      "aiTake": "Right in Woodbury itself, so closer to a brother and to the Common's trails than anything else tracked — but no parking mentioned in a pedestrianised spot, and no coast, train, or pool nearby."
+      "aiTake": "Right in Woodbury itself, so closer to a brother and to the Common's trails than anything else tracked — but no parking mentioned in a pedestrianised spot, and no coast, train, or pool nearby.",
+      "bedrooms": 2,
+      "parking": {
+        "status": "unknown",
+        "note": "Pedestrianised position in the village centre makes off-street parking unlikely, though the listing doesn't confirm either way."
+      }
     },
     {
       "id": "townlanewoodbury",
@@ -1192,22 +1488,63 @@
       "price": "Offers Over £280,000",
       "agent": "Village agent, Woodbury",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "NO PARKING INFO", "color": "#757575"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
       ],
-      "photos": ["TownLane_1.jpeg", "TownLane_2.jpeg", "TownLane_3.jpeg", "TownLane_4.jpeg"],
+      "photos": [
+        "TownLane_Gallery_1.jpg",
+        "TownLane_Gallery_2.jpg",
+        "TownLane_Gallery_3.jpg",
+        "TownLane_Gallery_4.jpg",
+        "TownLane_Gallery_5.jpg",
+        "TownLane_Gallery_6.jpg",
+        "TownLane_Gallery_7.jpg",
+        "TownLane_Gallery_8.jpg",
+        "TownLane_Gallery_9.jpg",
+        "TownLane_Gallery_10.jpg",
+        "TownLane_Gallery_11.jpg",
+        "TownLane_Gallery_12.jpg",
+        "TownLane_Gallery_13.jpg",
+        "TownLane_Gallery_14.jpg",
+        "TownLane_Gallery_15.jpg",
+        "TownLane_Gallery_16.jpg",
+        "TownLane_Gallery_17.jpg",
+        "TownLane_Gallery_18.jpg",
+        "TownLane_Gallery_19.jpg",
+        "TownLane_Gallery_20.jpg"
+      ],
       "link": "https://www.rightmove.co.uk/properties/166444475",
       "linkLabel": "rightmove.co.uk/properties/166444475",
       "body": "Double-fronted period cottage in Woodbury with a picturesque frontage and traditional features. Sitting room with fireplace, separate dining room, south-facing rear garden, and outbuildings for storage. Freehold, Council Tax Band A. Three bedrooms.",
       "why": "A second genuine Woodbury find this sweep, right alongside Greenway — meaning a brother a short walk away and Woodbury Common's trails effectively on the doorstep. Real period character (fireplace, separate dining room) and storage outbuildings, but £15k pricier than Greenway and parking isn't mentioned at all.",
       "dateAdded": "2026-07-09",
       "checklist": {
-        "ocean": "no", "trainStation": "no", "poolSwimTeam": "no", "private": "no",
-        "groundFloorLongTerm": null, "mtbTrails": "yes", "character": "yes", "garden": "yes",
-        "garageWorkspace": "partial", "uniqueFeature": null, "closeToFamily": "yes"
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "partial",
+        "uniqueFeature": null,
+        "closeToFamily": "yes",
+        "tenure": "freehold"
       },
       "aiRating": 6,
-      "aiTake": "Genuine Woodbury cottage character and close to a brother/the Common's trails, but no parking mentioned and pricier than the other Woodbury find on file — outbuildings for storage are a small consolation."
+      "aiTake": "Genuine Woodbury cottage character and close to a brother/the Common's trails, but no parking mentioned and pricier than the other Woodbury find on file — outbuildings for storage are a small consolation.",
+      "bedrooms": 3,
+      "parking": {
+        "status": "unknown",
+        "note": "Not confirmed either way."
+      }
     },
     {
       "id": "woodburyconservation",
@@ -1216,22 +1553,52 @@
       "price": "Guide Price £279,950",
       "agent": "Rightmove listing",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "NO PARKING INFO", "color": "#757575"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
       ],
-      "photos": ["WoodburyCottage_1.jpeg", "WoodburyCottage_2.jpeg", "WoodburyCottage_3.jpeg", "WoodburyCottage_4.jpeg"],
+      "photos": [
+        "WoodburyCottage_Gallery_1.jpg",
+        "WoodburyCottage_Gallery_2.jpg",
+        "WoodburyCottage_Gallery_3.jpg",
+        "WoodburyCottage_Gallery_4.jpg",
+        "WoodburyCottage_Gallery_5.jpg",
+        "WoodburyCottage_Gallery_6.jpg",
+        "WoodburyCottage_Gallery_7.jpg",
+        "WoodburyCottage_Gallery_8.jpg",
+        "WoodburyCottage_Gallery_9.jpg"
+      ],
       "link": "https://www.rightmove.co.uk/properties/88785042",
       "linkLabel": "rightmove.co.uk/properties/88785042",
       "body": "Double-fronted two-bedroom cottage in the Woodbury Conservation Area, with exposed beams, a wood-burning stove, and a modern kitchen with solid wood worktops. Enclosed courtyard garden. Freehold.",
       "why": "A third Woodbury cottage now on file — this one specifically within the village's Conservation Area, with genuine beams and a wood burner. Only a courtyard rather than a full garden, and parking is unmentioned, same trade-off as the other two Woodbury finds.",
       "dateAdded": "2026-07-09",
       "checklist": {
-        "ocean": "no", "trainStation": "no", "poolSwimTeam": "no", "private": "no",
-        "groundFloorLongTerm": null, "mtbTrails": "yes", "character": "yes", "garden": "partial",
-        "garageWorkspace": "no", "uniqueFeature": "Sits within the Woodbury Conservation Area", "closeToFamily": "yes"
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "uniqueFeature": "Sits within the Woodbury Conservation Area",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
       },
       "aiRating": 5,
-      "aiTake": "Conservation-area character with beams and a wood burner, close to a brother and the Common, but only a courtyard rather than a real garden and no parking mentioned."
+      "aiTake": "Conservation-area character with beams and a wood burner, close to a brother and the Common, but only a courtyard rather than a real garden and no parking mentioned.",
+      "bedrooms": 2,
+      "parking": {
+        "status": "unknown",
+        "note": "Not confirmed either way; only a courtyard garden is mentioned."
+      }
     },
     {
       "id": "queenstreetbudleigh",
@@ -1240,22 +1607,61 @@
       "price": "£280,000",
       "agent": "Hall & Scott / David Rhys (dual-listed)",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "ON-STREET PARKING ONLY", "color": "#757575"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY",
+          "color": "#757575"
+        }
       ],
-      "photos": ["QueenStreet_1.jpeg", "QueenStreet_2.jpeg", "QueenStreet_3.jpeg", "QueenStreet_4.jpeg"],
+      "photos": [
+        "QueenStreet_Gallery_1.jpg",
+        "QueenStreet_Gallery_2.jpg",
+        "QueenStreet_Gallery_3.jpg",
+        "QueenStreet_Gallery_4.jpg",
+        "QueenStreet_Gallery_5.jpg",
+        "QueenStreet_Gallery_6.jpg",
+        "QueenStreet_Gallery_7.jpg",
+        "QueenStreet_Gallery_8.jpg",
+        "QueenStreet_Gallery_9.jpg",
+        "QueenStreet_Gallery_10.jpg",
+        "QueenStreet_Gallery_11.jpg",
+        "QueenStreet_Gallery_12.jpg",
+        "QueenStreet_Gallery_13.jpg",
+        "QueenStreet_Gallery_14.jpg",
+        "QueenStreet_Gallery_15.jpg",
+        "QueenStreet_Gallery_16.jpg",
+        "QueenStreet_Gallery_17.jpg",
+        "QueenStreet_Gallery_18.jpg"
+      ],
       "link": "https://www.rightmove.co.uk/properties/173444597",
       "linkLabel": "rightmove.co.uk/properties/173444597",
       "body": "Thoroughly modernised former fisherman's cottage, two bedrooms, two bathrooms. Sitting room with a bay window, new kitchen with bi-fold doors, en-suite, and an enclosed rear courtyard with an outside shower. Walking distance to the high street and beach.",
       "why": "Genuinely characterful (a former fisherman's cottage) and a short walk from Budleigh's beach and high street — the most walkable-to-the-sea find of the sweep. On-street parking only and a courtyard rather than a real garden are the trade-offs.",
       "dateAdded": "2026-07-09",
       "checklist": {
-        "ocean": "yes", "trainStation": "no", "poolSwimTeam": "no", "private": "no",
-        "groundFloorLongTerm": null, "mtbTrails": "partial", "character": "yes", "garden": "no",
-        "garageWorkspace": "no", "uniqueFeature": "Former fisherman's cottage with an outside shower off the courtyard", "closeToFamily": "partial"
+        "ocean": "yes",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "uniqueFeature": "Former fisherman's cottage with an outside shower off the courtyard",
+        "closeToFamily": "partial"
       },
       "aiRating": 6,
-      "aiTake": "Nicely modernised former fisherman's cottage a short walk from Budleigh's beach and high street, but on-street parking only and just a courtyard, not a real garden."
+      "aiTake": "Nicely modernised former fisherman's cottage a short walk from Budleigh's beach and high street, but on-street parking only and just a courtyard, not a real garden.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "parking": {
+        "status": "onstreet",
+        "note": "On-street parking only; walking distance to the high street and beach instead."
+      }
     },
     {
       "id": "longbrooklympstone",
@@ -1264,23 +1670,60 @@
       "price": "Guide Price £240,000",
       "agent": "Rightmove listing",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "NEEDS MODERNISATION THROUGHOUT", "color": "#8D6E63"},
-        {"text": "NO PARKING INFO", "color": "#757575"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NEEDS MODERNISATION THROUGHOUT",
+          "color": "#8D6E63"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
       ],
-      "photos": ["Longbrook_1.jpeg", "Longbrook_2.jpeg", "Longbrook_3.jpeg"],
+      "photos": [
+        "Longbrook_Gallery_1.jpg",
+        "Longbrook_Gallery_2.jpg",
+        "Longbrook_Gallery_3.jpg",
+        "Longbrook_Gallery_4.jpg",
+        "Longbrook_Gallery_5.jpg",
+        "Longbrook_Gallery_6.jpg",
+        "Longbrook_Gallery_7.jpg",
+        "Longbrook_Gallery_8.jpg",
+        "Longbrook_Gallery_9.jpg",
+        "Longbrook_Gallery_10.jpg",
+        "Longbrook_Gallery_11.jpg",
+        "Longbrook_Gallery_12.jpg",
+        "Longbrook_Gallery_13.jpg",
+        "Longbrook_Gallery_14.jpg"
+      ],
       "link": "https://www.rightmove.co.uk/properties/90454254",
       "linkLabel": "rightmove.co.uk/properties/90454254",
       "body": "Two-bedroom terraced cottage in Lympstone needing modernisation throughout — \"put your own stamp on it.\" Utility room leading to a paved courtyard. Village location near the Exe Estuary with rail access.",
       "why": "The cheapest Lympstone find this sweep — a genuine blank-canvas fixer-upper in the best-located village on the list (estuary, own station, Woodbury Common all close). Needs work throughout, parking is unconfirmed, and there's a courtyard rather than a garden.",
       "dateAdded": "2026-07-09",
       "checklist": {
-        "ocean": "yes", "trainStation": "yes", "poolSwimTeam": "partial", "private": "no",
-        "groundFloorLongTerm": null, "mtbTrails": "yes", "character": "partial", "garden": "no",
-        "garageWorkspace": "no", "uniqueFeature": null, "closeToFamily": "partial"
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "partial",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "yes",
+        "character": "partial",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "partial"
       },
       "aiRating": 5,
-      "aiTake": "Cheapest Lympstone option this sweep and a genuine fixer-upper opportunity in the best-located village on the list, but needs work throughout and parking is unconfirmed."
+      "aiTake": "Cheapest Lympstone option this sweep and a genuine fixer-upper opportunity in the best-located village on the list, but needs work throughout and parking is unconfirmed.",
+      "bedrooms": 2,
+      "parking": {
+        "status": "unknown",
+        "note": "Not confirmed either way; a paved courtyard is mentioned but no parking."
+      }
     },
     {
       "id": "allsaintseastbudleigh",
@@ -1289,23 +1732,63 @@
       "price": "£290,000",
       "agent": "Rightmove listing",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "NO CHAIN", "color": "#EF6C00"},
-        {"text": "HAS PARKING (allocated + visitor space)", "color": "#1565C0"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "HAS PARKING (allocated + visitor space)",
+          "color": "#1565C0"
+        }
       ],
-      "photos": ["AllSaints_1.jpeg", "AllSaints_2.jpeg", "AllSaints_3.jpeg"],
+      "photos": [
+        "AllSaints_Gallery_1.jpg",
+        "AllSaints_Gallery_2.jpg",
+        "AllSaints_Gallery_3.jpg",
+        "AllSaints_Gallery_4.jpg",
+        "AllSaints_Gallery_5.jpg",
+        "AllSaints_Gallery_6.jpg",
+        "AllSaints_Gallery_7.jpg",
+        "AllSaints_Gallery_8.jpg",
+        "AllSaints_Gallery_9.jpg",
+        "AllSaints_Gallery_10.jpg",
+        "AllSaints_Gallery_11.jpg",
+        "AllSaints_Gallery_12.jpg",
+        "AllSaints_Gallery_13.jpg",
+        "AllSaints_Gallery_14.jpg",
+        "AllSaints_Gallery_15.jpg",
+        "AllSaints_Gallery_16.jpg",
+        "AllSaints_Gallery_17.jpg"
+      ],
       "link": "https://www.rightmove.co.uk/properties/172719284",
       "linkLabel": "rightmove.co.uk/properties/172719284",
       "body": "Modern, low-maintenance three-bedroom terrace in East Budleigh with allocated off-street parking plus a visitor space. No onward chain.",
       "why": "No period character to speak of, but genuine allocated parking plus a visitor space is unusual at this price point in the area, and it's chain-free and ready to go.",
       "dateAdded": "2026-07-09",
       "checklist": {
-        "ocean": "partial", "trainStation": "no", "poolSwimTeam": "no", "private": "no",
-        "groundFloorLongTerm": null, "mtbTrails": "partial", "character": "no", "garden": "partial",
-        "garageWorkspace": "no", "uniqueFeature": null, "closeToFamily": "partial"
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "partial"
       },
       "aiRating": 5,
-      "aiTake": "No character to speak of, but genuine allocated parking plus a visitor space is rare at this price point, and it's chain-free."
+      "aiTake": "No character to speak of, but genuine allocated parking plus a visitor space is rare at this price point, and it's chain-free.",
+      "bedrooms": 3,
+      "parking": {
+        "status": "has",
+        "note": "Allocated off-street parking plus a visitor space."
+      }
     },
     {
       "id": "vansittartexmouth",
@@ -1314,23 +1797,58 @@
       "price": "£249,950",
       "agent": "Rightmove listing",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "NO CHAIN", "color": "#EF6C00"},
-        {"text": "HAS PARKING (garage in nearby block)", "color": "#1565C0"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "HAS PARKING (garage in nearby block)",
+          "color": "#1565C0"
+        }
       ],
-      "photos": ["Vansittart_1.jpeg", "Vansittart_2.jpeg", "Vansittart_3.jpeg"],
+      "photos": [
+        "Vansittart_Gallery_1.jpg",
+        "Vansittart_Gallery_2.jpg",
+        "Vansittart_Gallery_3.jpg",
+        "Vansittart_Gallery_4.jpg",
+        "Vansittart_Gallery_5.jpg",
+        "Vansittart_Gallery_6.jpg",
+        "Vansittart_Gallery_7.jpg",
+        "Vansittart_Gallery_8.jpg",
+        "Vansittart_Gallery_9.jpg",
+        "Vansittart_Gallery_10.jpg",
+        "Vansittart_Gallery_11.jpg",
+        "Vansittart_Gallery_12.jpg"
+      ],
       "link": "https://www.rightmove.co.uk/properties/89475438",
       "linkLabel": "rightmove.co.uk/properties/89475438",
       "body": "Plain two-bedroom terraced house in Exmouth with a conservatory and a garage in a nearby block. No onward chain.",
       "why": "Nothing characterful about it, but it's a real garage (not just a maybe, unlike The Marles above), chain-free, and squarely in Exmouth near the brothers.",
       "dateAdded": "2026-07-09",
       "checklist": {
-        "ocean": "partial", "trainStation": "yes", "poolSwimTeam": "yes", "private": "no",
-        "groundFloorLongTerm": null, "mtbTrails": "partial", "character": "no", "garden": "partial",
-        "garageWorkspace": "yes", "uniqueFeature": null, "closeToFamily": "yes"
+        "ocean": "partial",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "yes",
+        "uniqueFeature": null,
+        "closeToFamily": "yes"
       },
       "aiRating": 5,
-      "aiTake": "Plain and unexciting, but a real garage (not just a maybe), chain-free, and squarely in Exmouth near the brothers — a solid practical fallback."
+      "aiTake": "Plain and unexciting, but a real garage (not just a maybe), chain-free, and squarely in Exmouth near the brothers — a solid practical fallback.",
+      "bedrooms": 2,
+      "parking": {
+        "status": "has",
+        "note": "A real garage in a nearby block — not just a maybe."
+      }
     },
     {
       "id": "normancrescentbudleigh",
@@ -1339,22 +1857,54 @@
       "price": "Guide Price £289,950",
       "agent": "Rightmove listing",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "HAS PARKING (allocated, off-road, behind property)", "color": "#1565C0"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (allocated, off-road, behind property)",
+          "color": "#1565C0"
+        }
       ],
-      "photos": ["NormanCrescent_1.jpeg", "NormanCrescent_2.jpeg", "NormanCrescent_3.jpeg"],
+      "photos": [
+        "NormanCrescent_Gallery_1.jpg",
+        "NormanCrescent_Gallery_2.jpg",
+        "NormanCrescent_Gallery_3.jpg",
+        "NormanCrescent_Gallery_4.jpg",
+        "NormanCrescent_Gallery_5.jpg",
+        "NormanCrescent_Gallery_6.jpg",
+        "NormanCrescent_Gallery_7.jpg",
+        "NormanCrescent_Gallery_8.jpg",
+        "NormanCrescent_Gallery_9.jpg",
+        "NormanCrescent_Gallery_10.jpg",
+        "NormanCrescent_Gallery_11.jpg"
+      ],
       "link": "https://www.rightmove.co.uk/properties/90486738",
       "linkLabel": "rightmove.co.uk/properties/90486738",
       "body": "2004-built two-bedroom terrace in Budleigh Salterton with allocated off-road parking behind the property. En-suite to both bedrooms.",
       "why": "Modern and characterless, but real allocated parking behind the property in a genuinely coastal town — a practical rather than exciting option.",
       "dateAdded": "2026-07-09",
       "checklist": {
-        "ocean": "yes", "trainStation": "no", "poolSwimTeam": "no", "private": "no",
-        "groundFloorLongTerm": null, "mtbTrails": "partial", "character": "no", "garden": "partial",
-        "garageWorkspace": "no", "uniqueFeature": null, "closeToFamily": "partial"
+        "ocean": "yes",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "partial"
       },
       "aiRating": 5,
-      "aiTake": "Modern and characterless, but real allocated parking behind the property in a genuinely coastal town — a practical rather than exciting option."
+      "aiTake": "Modern and characterless, but real allocated parking behind the property in a genuinely coastal town — a practical rather than exciting option.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "parking": {
+        "status": "has",
+        "note": "Allocated off-road parking directly behind the property."
+      }
     },
     {
       "id": "horseshoebarnknowle",
@@ -1363,23 +1913,58 @@
       "price": "£275,000",
       "agent": "Helmores, Crediton",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "HAS PARKING (off-street + double car port)", "color": "#1565C0"},
-        {"text": "INLAND — ~30-40 MIN FROM COAST", "color": "#616161"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (off-street + double car port)",
+          "color": "#1565C0"
+        },
+        {
+          "text": "INLAND — ~30-40 MIN FROM COAST",
+          "color": "#616161"
+        }
       ],
-      "photos": ["HorseshoeBarn_1.jpeg", "HorseshoeBarn_2.jpg", "HorseshoeBarn_3.jpg", "HorseshoeBarn_4.jpg"],
+      "photos": [
+        "HorseshoeBarn_Gallery_1.jpg",
+        "HorseshoeBarn_Gallery_2.jpg",
+        "HorseshoeBarn_Gallery_3.jpg",
+        "HorseshoeBarn_Gallery_4.jpg",
+        "HorseshoeBarn_Gallery_5.jpg",
+        "HorseshoeBarn_Gallery_6.jpg",
+        "HorseshoeBarn_Gallery_7.jpg",
+        "HorseshoeBarn_Gallery_8.jpg",
+        "HorseshoeBarn_Gallery_9.jpg",
+        "HorseshoeBarn_Gallery_10.jpg",
+        "HorseshoeBarn_Gallery_11.jpg"
+      ],
       "link": "https://helmores.com/property/2-bed-barn-conversion-for-sale-in-knowle-crediton/701288",
       "linkLabel": "helmores.com — property 701288",
       "body": "Two-bedroom stone barn conversion (converted c.2011) in a rural farm courtyard near Knowle, 3 miles from Crediton. Vaulted ceilings, exposed roof timbers, oak flooring, open-plan living, rear garden with open countryside views. Off-street parking plus a double open-fronted car port. Freehold, with a modest management-committee contribution for the shared courtyard and treatment plant.",
       "why": "The most genuine barn-conversion character and real parking (including a double car port) found anywhere this sweep — but Knowle is well inland near Crediton, a proper drive from both the coast and either brother, which is a real trade-off against your core brief. Included from Helmores' unique stock specifically because the character/parking combination is rare; weigh the distance honestly.",
       "dateAdded": "2026-07-09",
       "checklist": {
-        "ocean": "no", "trainStation": "no", "poolSwimTeam": "no", "private": "yes",
-        "groundFloorLongTerm": "adaptable", "mtbTrails": "no", "character": "yes", "garden": "yes",
-        "garageWorkspace": "yes", "uniqueFeature": "Genuine c.2011 stone barn conversion with vaulted ceilings and exposed roof timbers, plus a double open-fronted car port — a rare finished character+parking combination", "closeToFamily": "no"
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "yes",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "no",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "uniqueFeature": "Genuine c.2011 stone barn conversion with vaulted ceilings and exposed roof timbers, plus a double open-fronted car port — a rare finished character+parking combination",
+        "closeToFamily": "no",
+        "tenure": "freehold"
       },
       "aiRating": 5,
-      "aiTake": "The best barn-conversion character and real parking of the whole sweep, but Knowle is well inland near Crediton — a proper drive from the coast and both brothers, so the distance has to outweigh the character for this one to make sense."
+      "aiTake": "The best barn-conversion character and real parking of the whole sweep, but Knowle is well inland near Crediton — a proper drive from the coast and both brothers, so the distance has to outweigh the character for this one to make sense.",
+      "bedrooms": 2,
+      "parking": {
+        "status": "has",
+        "note": "Off-street parking plus a double open-fronted car port — the best parking/character combination of the sweep, offset by the inland location."
+      }
     },
     {
       "id": "churchstilewoodbury",
@@ -1388,21 +1973,52 @@
       "price": "£155,000",
       "agent": "East of Exe, Topsham",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "GRADE II LISTED", "color": "#6A1B9A"},
-        {"text": "NO CHAIN", "color": "#EF6C00"},
-        {"text": "ON-STREET PARKING ONLY", "color": "#757575"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY",
+          "color": "#757575"
+        }
       ],
-      "photos": ["ChurchStileWoodbury_Gallery_1.jpg", "ChurchStileWoodbury_Gallery_2.jpg", "ChurchStileWoodbury_Gallery_3.jpg", "ChurchStileWoodbury_Gallery_4.jpg"],
+      "photos": [
+        "ChurchStileWoodbury_Gallery_1.jpg",
+        "ChurchStileWoodbury_Gallery_2.jpg",
+        "ChurchStileWoodbury_Gallery_3.jpg",
+        "ChurchStileWoodbury_Gallery_4.jpg",
+        "ChurchStileWoodbury_Gallery_5.jpg",
+        "ChurchStileWoodbury_Gallery_6.jpg",
+        "ChurchStileWoodbury_Gallery_7.jpg",
+        "ChurchStileWoodbury_Gallery_8.jpg",
+        "ChurchStileWoodbury_Gallery_9.jpg"
+      ],
       "link": "https://www.onthemarket.com/details/19822482/",
       "linkLabel": "onthemarket.com/details/19822482",
       "body": "Grade II listed one-double-bedroom cottage on Church Stile Lane in the heart of Woodbury village. Sitting room with exposed beams and fireplace, a flexible study space, a recently installed kitchen with integrated appliances, ground-floor bathroom, and a first-floor bedroom with a walk-in wardrobe. Enclosed rear garden with a patio and raised decking. Electric heating (no mains gas), fibre broadband available. Freehold, chain-free, Council Tax Band B.",
       "why": "By far the cheapest genuinely characterful find of the whole search — a real Grade II cottage, freehold and chain-free, at less than half the price ceiling. It's right in Woodbury itself, so a brother is a short walk away and Woodbury Common's trails are effectively on the doorstep, same as the other two Woodbury cottages already on file, but this one is £100k+ cheaper than either. The trade-offs are size (just one double bedroom plus a study) and parking, which the listing confirms is on-street only rather than unstated.",
       "dateAdded": "2026-07-10",
       "checklist": {
-        "ocean": "no", "trainStation": "no", "poolSwimTeam": "no", "private": "no",
-        "groundFloorLongTerm": "no", "mtbTrails": "yes", "character": "yes", "garden": "yes",
-        "garageWorkspace": "no", "uniqueFeature": null, "closeToFamily": "yes"
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "yes",
+        "tenure": "freehold"
       },
       "aiRating": 7,
       "aiTake": "The cheapest genuinely characterful property found all search — Grade II, freehold, chain-free, and close to a brother and the Common's trails — but it's compact (one double bedroom plus a study) with on-street parking only and a first-floor bedroom that rules out easy ground-floor adaptation.",
@@ -1432,7 +2048,12 @@
             }
           ]
         }
-      ]
+      ],
+      "bedrooms": 1,
+      "parking": {
+        "status": "onstreet",
+        "note": "Confirmed on-street only by the listing itself, not just an omission — see the research findings below for more on this street specifically."
+      }
     },
     {
       "id": "castlelane",
@@ -1441,24 +2062,66 @@
       "price": "£225,000 (guide price)",
       "agent": "Rightmove listing",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "GRADE II LISTED", "color": "#6A1B9A"},
-        {"text": "NO CHAIN", "color": "#EF6C00"},
-        {"text": "NO PARKING INFO", "color": "#757575"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
       ],
-      "photos": ["CastleLane_Gallery_1.jpg", "CastleLane_Gallery_2.jpg", "CastleLane_Gallery_3.jpg", "CastleLane_Gallery_4.jpg"],
+      "photos": [
+        "CastleLane_Gallery_1.jpg",
+        "CastleLane_Gallery_2.jpg",
+        "CastleLane_Gallery_3.jpg",
+        "CastleLane_Gallery_4.jpg",
+        "CastleLane_Gallery_5.jpg",
+        "CastleLane_Gallery_6.jpg",
+        "CastleLane_Gallery_7.jpg",
+        "CastleLane_Gallery_8.jpg",
+        "CastleLane_Gallery_9.jpg",
+        "CastleLane_Gallery_10.jpg",
+        "CastleLane_Gallery_11.jpg",
+        "CastleLane_Gallery_12.jpg",
+        "CastleLane_Gallery_13.jpg",
+        "CastleLane_Gallery_14.jpg",
+        "CastleLane_Gallery_15.jpg"
+      ],
       "link": "https://www.rightmove.co.uk/properties/173746229",
       "linkLabel": "rightmove.co.uk/properties/173746229",
       "body": "Cob and thatched Grade II listed cottage, late 18th/early 19th century, in Littleham village — within Exmouth itself. One double bedroom, cosy sitting room with an open fireplace and exposed beams, dining room/study, modern fitted kitchen, shower room. Large private rear garden with flagstone patio, lawn, shrub borders, two sheds (one with power), plus a front garden. Thatch fully replaced in 2015, ridge replaced and thatch brushed in 2025. Freehold, no onward chain. Septic tank (£110/yr). Council Tax Band B. Pedestrian right of access exists for neighbouring cottages.",
       "why": "A genuine thatched cottage — the thing Jesse said he loves most — and this one is actually inside Exmouth itself (Littleham), not a drive away in a separate village, which nothing else thatched on the list can claim. Freehold, no chain, well under budget, and the thatch has been properly maintained (redone 2015, ridge refreshed 2025 — not a looming repair bill). The catch: parking isn't mentioned at all (listing says ask agent), and it's not especially close to the coast, station, or trails despite being in Exmouth.",
       "dateAdded": "2026-07-11",
       "checklist": {
-        "ocean": "partial", "trainStation": "no", "poolSwimTeam": "partial", "private": "partial",
-        "groundFloorLongTerm": null, "mtbTrails": "no", "character": "yes", "garden": "yes",
-        "garageWorkspace": "partial", "uniqueFeature": "Two garden sheds, one with power — useful outbuilding space for a cottage this size, plus recently maintained thatch (2015/2025) rather than an ageing roof", "closeToFamily": "yes"
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "partial",
+        "private": "partial",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "no",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "partial",
+        "uniqueFeature": "Two garden sheds, one with power — useful outbuilding space for a cottage this size, plus recently maintained thatch (2015/2025) rather than an ageing roof",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
       },
       "aiRating": 7,
-      "aiTake": "A genuine thatched cottage right in Exmouth itself (Littleham) — freehold, no chain, well-maintained thatch, and a proper garden with two sheds — but parking isn't confirmed and it's not especially close to the coast, station, or trails despite being in town."
+      "aiTake": "A genuine thatched cottage right in Exmouth itself (Littleham) — freehold, no chain, well-maintained thatch, and a proper garden with two sheds — but parking isn't confirmed and it's not especially close to the coast, station, or trails despite being in town.",
+      "bedrooms": 1,
+      "parking": {
+        "status": "unknown",
+        "note": "Listing says \"ask agent\" — not confirmed either way."
+      }
     },
     {
       "id": "mireylanewoodbury",
@@ -1467,24 +2130,64 @@
       "price": "Offers In Excess of £250,000",
       "agent": "East of Exe, Topsham",
       "flags": [
-        {"text": "IN BUDGET", "color": "#2E7D32"},
-        {"text": "GRADE II LISTED", "color": "#6A1B9A"},
-        {"text": "NO CHAIN", "color": "#EF6C00"},
-        {"text": "ON-STREET PARKING ONLY (+ free car park 2 min walk)", "color": "#757575"}
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY (+ free car park 2 min walk)",
+          "color": "#757575"
+        }
       ],
-      "photos": ["MireyLane_Gallery_1.jpg", "MireyLane_Gallery_2.jpg", "MireyLane_Gallery_3.jpg", "MireyLane_Gallery_4.jpg"],
+      "photos": [
+        "MireyLane_Gallery_1.jpg",
+        "MireyLane_Gallery_2.jpg",
+        "MireyLane_Gallery_3.jpg",
+        "MireyLane_Gallery_4.jpg",
+        "MireyLane_Gallery_5.jpg",
+        "MireyLane_Gallery_6.jpg",
+        "MireyLane_Gallery_7.jpg",
+        "MireyLane_Gallery_8.jpg",
+        "MireyLane_Gallery_9.jpg",
+        "MireyLane_Gallery_10.jpg",
+        "MireyLane_Gallery_11.jpg",
+        "MireyLane_Gallery_12.jpg",
+        "MireyLane_Gallery_13.jpg"
+      ],
       "link": "https://www.eastofexe.co.uk/properties/mirey-lane-woodbury/",
       "linkLabel": "eastofexe.co.uk — Mirey Lane, Woodbury",
       "body": "Grade II listed mid-terrace cottage dating to the 1800s, right in the heart of Woodbury village. Open-plan lounge/diner with exposed wooden flooring and a character fireplace, fitted kitchen with solid wood units, two bedrooms upstairs with Victorian cast iron fireplaces. Front garden with a cobblestone wall, gate, pathway, herb and flower beds, and a cherry tree. No private rear garden, but the owner has a right of access across the rear courtyard garden to the adjoining lane. Freehold, no onward chain, gas central heating, Council Tax Band B. On-street parking plus a free short-stay car park (Flower Street) two minutes' walk away.",
       "why": "A fourth Woodbury cottage now on file, and this one has the best-confirmed parking situation of any of them — on-street plus a genuine free short-stay car park just two minutes' walk away, not just an unstated gap. Real 1800s Grade II character (beams, cast iron fireplaces, chimney stack) and no chain. The trade-off is the garden: there's no true private plot, just rear courtyard access to the lane.",
       "dateAdded": "2026-07-11",
       "checklist": {
-        "ocean": "no", "trainStation": "no", "poolSwimTeam": "no", "private": "no",
-        "groundFloorLongTerm": "no", "mtbTrails": "yes", "character": "yes", "garden": "partial",
-        "garageWorkspace": "no", "uniqueFeature": "A genuine free short-stay car park two minutes' walk away — the best-confirmed parking situation of any Woodbury cottage on file, even without a dedicated space", "closeToFamily": "yes"
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "uniqueFeature": "A genuine free short-stay car park two minutes' walk away — the best-confirmed parking situation of any Woodbury cottage on file, even without a dedicated space",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
       },
       "aiRating": 6,
-      "aiTake": "The best-confirmed parking of any Woodbury cottage on file — on-street plus a free car park two minutes away — with genuine 1800s Grade II character, but no real private garden, just rear courtyard access. Nudged down slightly for price, since 'offers in excess of £250,000' likely lands past your real £170-200k target."
+      "aiTake": "The best-confirmed parking of any Woodbury cottage on file — on-street plus a free car park two minutes away — with genuine 1800s Grade II character, but no real private garden, just rear courtyard access. Nudged down slightly for price, since 'offers in excess of £250,000' likely lands past your real £170-200k target.",
+      "bedrooms": 2,
+      "parking": {
+        "status": "onstreet",
+        "note": "On-street parking plus a genuine free short-stay car park (Flower Street) two minutes' walk away — better-confirmed than most \"no parking info\" entries."
+      }
     },
     {
       "id": "longmeadowthatched",
@@ -1493,24 +2196,63 @@
       "price": "£445,000",
       "agent": "Hall & Scott, Exmouth",
       "flags": [
-        {"text": "OVER BUDGET (+£145,000 / 48%)", "color": "#B71C1C"},
-        {"text": "GRADE II LISTED, THATCHED", "color": "#6A1B9A"},
-        {"text": "NO CHAIN", "color": "#EF6C00"},
-        {"text": "NO PARKING INFO", "color": "#757575"}
+        {
+          "text": "OVER BUDGET (+£145,000 / 48%)",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "GRADE II LISTED, THATCHED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
       ],
-      "photos": ["LongmeadowThatched_Gallery_1.jpg", "LongmeadowThatched_Gallery_2.jpg", "LongmeadowThatched_Gallery_3.jpg", "LongmeadowThatched_Gallery_4.jpg"],
+      "photos": [
+        "LongmeadowThatched_Gallery_1.jpg",
+        "LongmeadowThatched_Gallery_2.jpg",
+        "LongmeadowThatched_Gallery_3.jpg",
+        "LongmeadowThatched_Gallery_4.jpg",
+        "LongmeadowThatched_Gallery_5.jpg",
+        "LongmeadowThatched_Gallery_6.jpg",
+        "LongmeadowThatched_Gallery_7.jpg",
+        "LongmeadowThatched_Gallery_8.jpg",
+        "LongmeadowThatched_Gallery_9.jpg",
+        "LongmeadowThatched_Gallery_10.jpg",
+        "LongmeadowThatched_Gallery_11.jpg",
+        "LongmeadowThatched_Gallery_12.jpg"
+      ],
       "link": "https://www.hallandscott.co.uk/details/?id=HSEXM_708642",
       "linkLabel": "hallandscott.co.uk — HSEXM_708642",
       "body": "Grade II listed thatched cottage on Longmeadow Road, Lympstone — beautifully presented, two double bedrooms. Sitting room with a gas wood burner, separate dining room, kitchen with utility area, modern family bathroom. Attractive lawned front garden, low-maintenance west-facing rear garden with a garden store. Gas central heating, freehold, no onward chain. Note: this is a different, larger, pricier property from the one-bed Longmeadow Road cottage already tracked (id: longmeadow, £250k, stream-side garden studio) — same street, unrelated listing.",
       "why": "A genuine thatched cottage in Lympstone — the best-located village on the whole list, and Jesse's favourite roof type — but 48% over the £300k ceiling, well beyond the 'slightly over for something exceptional' bar the rest of the list holds to. Kept here as a benchmark/inspiration piece rather than a real contender, and flagged clearly as a separate property from the cheaper Longmeadow Road cottage already tracked so the two don't get confused.",
       "dateAdded": "2026-07-11",
       "checklist": {
-        "ocean": "yes", "trainStation": "yes", "poolSwimTeam": "partial", "private": "no",
-        "groundFloorLongTerm": null, "mtbTrails": "yes", "character": "yes", "garden": "yes",
-        "garageWorkspace": "no", "uniqueFeature": null, "closeToFamily": "partial"
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "partial",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "partial",
+        "tenure": "freehold"
       },
       "aiRating": 4,
-      "aiTake": "A genuine thatched cottage in the best-located village on the list, but 48% over the £300k ceiling — kept as a benchmark, not a real contender at this price. Already well past the hard ceiling, on top of everything else."
+      "aiTake": "A genuine thatched cottage in the best-located village on the list, but 48% over the £300k ceiling — kept as a benchmark, not a real contender at this price. Already well past the hard ceiling, on top of everything else.",
+      "bedrooms": 2,
+      "parking": {
+        "status": "unknown",
+        "note": "Not mentioned in the listing either way."
+      }
     },
     {
       "id": "tythecottage",
@@ -1519,24 +2261,132 @@
       "price": "£325,000+ (guide price, auction)",
       "agent": "Countrywide Property Auctions (Sutton Kersh)",
       "flags": [
-        {"text": "OVER BUDGET (+£25,000)", "color": "#B71C1C"},
-        {"text": "GRADE II LISTED", "color": "#6A1B9A"},
-        {"text": "HAS PARKING (rear)", "color": "#1565C0"},
-        {"text": "AUCTION DATE UNCONFIRMED — verify with agent", "color": "#E65100"}
+        {
+          "text": "OVER BUDGET (+£25,000)",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "HAS PARKING (rear)",
+          "color": "#1565C0"
+        },
+        {
+          "text": "AUCTION DATE UNCONFIRMED — verify with agent",
+          "color": "#E65100"
+        }
       ],
-      "photos": ["Tythe_Gallery_1.jpg", "Tythe_Gallery_2.jpg", "Tythe_Gallery_3.jpg", "Tythe_Gallery_4.jpg"],
+      "photos": [
+        "Tythe_Gallery_1.jpg",
+        "Tythe_Gallery_2.jpg",
+        "Tythe_Gallery_3.jpg",
+        "Tythe_Gallery_4.jpg",
+        "Tythe_Gallery_5.jpg",
+        "Tythe_Gallery_6.jpg",
+        "Tythe_Gallery_7.jpg",
+        "Tythe_Gallery_8.jpg",
+        "Tythe_Gallery_9.jpg",
+        "Tythe_Gallery_10.jpg"
+      ],
       "link": "https://www.propertyauctionsouthwest.co.uk/properties/lot/322921/Tythe+Cottage+Tea+Rooms,+Littleham+Village,+Littleham,+Exmouth,+Devon,+EX8+2RQ/",
       "linkLabel": "propertyauctionsouthwest.co.uk — lot 322921",
       "body": "Grade II listed former tea rooms in Littleham village, within Exmouth — first time on the market in around 50 years. Ground floor: former restaurant/bar area and commercial kitchen. First floor: one-bedroom owner's accommodation (sitting room, bedroom, bathroom). Car parking to the rear of the building, two customer WCs. Needs sympathetic upgrading throughout. EPC C, freehold.",
       "why": "A genuinely unusual find — a Grade II former tea rooms with living accommodation above, unlisted for half a century, going to auction with real rear parking (unusual for anything this close to Exmouth centre). Slightly over budget and needs work, but the character/rarity is real. Important caveat: the auction page shows a date of 11 December 2025, which has already passed — the lot appears to have been renumbered/relisted (322921, previously 21387) and other pages describe it as still open for bidding, so the current status and next auction date genuinely couldn't be pinned down this sweep. Treat as needing a direct call to the auctioneer before relying on any date shown.",
       "dateAdded": "2026-07-11",
       "checklist": {
-        "ocean": "partial", "trainStation": "no", "poolSwimTeam": "no", "private": "no",
-        "groundFloorLongTerm": "no", "mtbTrails": "no", "character": "yes", "garden": "no",
-        "garageWorkspace": "no", "uniqueFeature": "Former tea rooms with a commercial kitchen and restaurant/bar space downstairs — unlisted for ~50 years, a genuinely oddball conversion opportunity", "closeToFamily": "yes"
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "no",
+        "character": "yes",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "uniqueFeature": "Former tea rooms with a commercial kitchen and restaurant/bar space downstairs — unlisted for ~50 years, a genuinely oddball conversion opportunity",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
       },
       "aiRating": 4,
-      "aiTake": "A genuinely unusual former-tea-rooms conversion with real rear parking, close to family in Exmouth — but it's over budget, needs work throughout, and the auction date/status couldn't be confirmed this sweep, so treat the timing as unreliable until you speak to the agent."
+      "aiTake": "A genuinely unusual former-tea-rooms conversion with real rear parking, close to family in Exmouth — but it's over budget, needs work throughout, and the auction date/status couldn't be confirmed this sweep, so treat the timing as unreliable until you speak to the agent.",
+      "bedrooms": 1,
+      "parking": {
+        "status": "has",
+        "note": "Car parking to the rear of the building, confirmed in the listing."
+      }
+    },
+    {
+      "id": "victoriaroadexmouth",
+      "section": "new",
+      "title": "Victoria Road, Exmouth (ground-floor flat)",
+      "price": "Guide Price £70,000",
+      "agent": "Your Move, Exmouth",
+      "flags": [
+        {
+          "text": "🌟 FAMILY SPOTTED THIS",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GROUND FLOOR",
+          "color": "#1565C0"
+        },
+        {
+          "text": "OFFER ALREADY RECEIVED (£58,000) — time-sensitive",
+          "color": "#E65100"
+        },
+        {
+          "text": "HIGH SERVICE CHARGE (£4,078/yr)",
+          "color": "#C62828"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "VictoriaRoad_Gallery_1.jpg",
+        "VictoriaRoad_Gallery_2.jpg",
+        "VictoriaRoad_Gallery_3.jpg",
+        "VictoriaRoad_Gallery_4.jpg",
+        "VictoriaRoad_Gallery_5.jpg",
+        "VictoriaRoad_Gallery_6.jpg",
+        "VictoriaRoad_Gallery_7.jpg",
+        "VictoriaRoad_Gallery_8.jpg"
+      ],
+      "link": "https://www.your-move.co.uk/property/flat-for-sale-victoria-road-exmouth-ex8-id-qex250656",
+      "linkLabel": "your-move.co.uk — QEX250656",
+      "body": "One-bedroom ground-floor flat on Victoria Road, close to Exmouth town centre and seafront. Lounge with built-in storage, bedroom, kitchen with cupboards and freestanding cooker, three-piece bathroom, and a rear courtyard garden with access. Needs redecoration and modernisation throughout. Leasehold: 99 years from July 2007 (~80 years remaining), ground rent £291/year, service charge £4,078/year with major works planned for 2026. Council tax band A, EPC D.",
+      "why": "Submitted by family — cheap headline price and genuinely ground floor, but two things need weighing before getting excited: an offer of £58,000 has already been received on it, with only 5 working days from the listing's publication for anyone to beat it, so this may already be gone or about to go; and the £4,078/year service charge (with major works flagged for 2026 on top) would eat a huge chunk of the low purchase price over time. Family's own note flagged \"no place to park, worrisome back roof\" — parking isn't mentioned in the listing but Victoria Road has a residents' Zone B permit scheme for on-street parking; roof condition isn't addressed in the listing text either and would need a direct question to the agent or a viewing.",
+      "dateAdded": "2026-07-11",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "yes",
+        "tenure": "leasehold",
+        "leaseYears": 80
+      },
+      "aiRating": 4,
+      "aiTake": "Cheapest thing on the whole list and genuinely ground-floor near the seafront, but a £58,000 offer already on the table and a punishing £4,078/year service charge (with major works pending) undercut the headline price badly — worth a very quick decision if pursued at all, not a leisurely one.",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "parking": {
+        "status": "onstreet",
+        "note": "Not mentioned in the listing. Victoria Road has Limited Waiting restrictions (Mon-Sat 8am-6pm, 1hr no return) with an exemption for Residents' Zone B permit holders — a resident's permit (around £35/year for a first permit) would be needed for reliable on-street parking rather than free unrestricted parking."
+      }
     }
   ]
 }

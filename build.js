@@ -22,12 +22,41 @@ function photosHtml(id, photos) {
   if (!photos.length) {
     return `<div class="no-photo">No photo available this sweep</div>`;
   }
-  const main = photos[0];
-  const rest = photos.slice(1);
+  const imgs = photos.map((p, i) => `<img src="images/${p}" alt="${esc(id)} photo ${i + 1}" loading="lazy" class="gallery-img${i === 0 ? " active" : ""}">`).join("");
+  const nav = photos.length > 1 ? `
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / ${photos.length}</div>` : "";
   return `
-    <div class="photo-main"><img src="images/${main}" alt="${esc(id)} main photo" loading="lazy"></div>
-    ${rest.length ? `<div class="photo-strip">${rest.map(p => `<img src="images/${p}" alt="${esc(id)} photo" loading="lazy">`).join("")}</div>` : ""}
+    <div class="gallery">
+      <div class="gallery-viewport">
+        ${imgs}
+        ${nav}
+      </div>
+    </div>
   `;
+}
+
+function bedsBathsHtml(p) {
+  const parts = [];
+  if (p.bedrooms !== undefined && p.bedrooms !== null) parts.push(`🛏 ${esc(String(p.bedrooms))} bed${p.bedrooms == 1 ? "" : "s"}`);
+  if (p.bathrooms !== undefined && p.bathrooms !== null) parts.push(`🛁 ${esc(String(p.bathrooms))} bath${p.bathrooms == 1 ? "" : "s"}`);
+  if (!parts.length) return "";
+  return `<div class="beds-baths">${parts.join(" &nbsp;·&nbsp; ")}</div>`;
+}
+
+const PARKING_LABELS = {
+  has: "🅿️ Has parking",
+  onstreet: "🅿️ On-street parking only",
+  none: "🚫 No parking",
+  unknown: "❓ Parking unclear",
+};
+
+function parkingHtml(p) {
+  const pk = p.parking;
+  if (!pk) return "";
+  const label = PARKING_LABELS[pk.status] || "🅿️ Parking";
+  return `<div class="parking-block"><strong>${label}</strong>${pk.note ? `<span class="parking-note"> — ${esc(pk.note)}</span>` : ""}</div>`;
 }
 
 const REPO = "jkellyllekj/devon-house-search";
@@ -191,6 +220,10 @@ function checklistHtml(p) {
   const c = p.checklist || {};
   const items = CHECKLIST_ITEMS.map(item => ({ key: item.key, label: item.label, raw: c[item.key] }));
   items.push({ key: "groundFloorLongTerm", label: GROUND_FLOOR_LABELS[c.groundFloorLongTerm] || "♿ Ground-floor adaptability unknown", raw: c.groundFloorLongTerm === "yes" ? "yes" : c.groundFloorLongTerm === "no" ? "no" : "partial" });
+  if (c.tenure === "leasehold") {
+    const label = c.leaseYears ? `📜 Leasehold (${c.leaseYears} yrs remaining)` : "📜 Leasehold (years unknown — ask agent)";
+    items.push({ key: "tenure", label, raw: "no" });
+  }
   const rowsHtml = items.map(item => clItemHtml(p, item.key, item.label, item.raw)).join("");
   const unique = c.uniqueFeature ? `<div class="cl-unique">🎁 <strong>Unique:</strong> ${esc(c.uniqueFeature)}</div>` : "";
   return `
@@ -255,16 +288,19 @@ function mapEmbedHtml(p) {
 function propertyCard(p) {
   const avg = avgRating(p);
   const aiR = (p.aiRating !== undefined && p.aiRating !== null) ? p.aiRating : "";
+  const overall = computeOverall(p);
+  const bro3 = (p.ratings && p.ratings["Bro 3"]) ? p.ratings["Bro 3"].score : "";
   return `
-  <section class="card" id="${esc(p.id)}" data-avg-rating="${avg !== null ? avg.toFixed(2) : ""}" data-ai-rating="${aiR}">
+  <section class="card" id="${esc(p.id)}" data-avg-rating="${avg !== null ? avg.toFixed(2) : ""}" data-ai-rating="${aiR}" data-overall-rating="${overall !== null ? overall.toFixed(2) : ""}" data-bro3-rating="${bro3}">
     <h2>${esc(p.title)}</h2>
     <div class="price-row">
       <span class="price">${esc(p.price)}</span>
-      <span class="agent">${esc(p.agent)}</span>
     </div>
+    ${bedsBathsHtml(p)}
     ${sourceBadgeHtml(p)}
     ${ratingsHtml(p)}
     <div class="flags">${p.flags.map(flagHtml).join("")}</div>
+    ${parkingHtml(p)}
     <div class="photos">${photosHtml(p.id, p.photos)}</div>
     ${mapEmbedHtml(p)}
     <p class="body">${esc(p.body)}</p>
@@ -318,13 +354,20 @@ const html = `<!DOCTYPE html>
   .card h2 { margin: 0 0 8px; font-size: 20px; }
   .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
   .price { font-size: 20px; font-weight: 700; color: #1b5e20; }
-  .agent { color: #666; font-style: italic; font-size: 14px; }
+  .beds-baths { font-size: 14px; color: #444; font-weight: 600; margin-bottom: 10px; }
   .flags { margin-bottom: 14px; }
   .flag { display: inline-block; color: #fff; font-weight: 700; font-size: 11px; padding: 4px 8px; border-radius: 4px; margin: 0 6px 6px 0; }
+  .parking-block { background: #eef6fb; border-left: 4px solid #1565C0; border-radius: 4px; padding: 8px 12px; font-size: 13px; line-height: 1.5; margin-bottom: 14px; }
+  .parking-block .parking-note { color: #333; }
   .photos { margin-bottom: 14px; }
-  .photo-main img { width: 100%; border-radius: 8px; display: block; max-height: 380px; object-fit: cover; }
-  .photo-strip { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
-  .photo-strip img { flex: 1 1 140px; max-width: 200px; border-radius: 6px; height: 110px; object-fit: cover; }
+  .gallery-viewport { position: relative; border-radius: 8px; overflow: hidden; background: #eee; height: 380px; }
+  .gallery-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: none; }
+  .gallery-img.active { display: block; }
+  .gallery-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.45); color: #fff; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 20px; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .gallery-nav:hover { background: rgba(0,0,0,0.7); }
+  .gallery-prev { left: 10px; }
+  .gallery-next { right: 10px; }
+  .gallery-counter { position: absolute; right: 10px; bottom: 10px; background: rgba(0,0,0,0.55); color: #fff; font-size: 12px; padding: 3px 8px; border-radius: 10px; }
   .no-photo { background: #eee; border-radius: 8px; padding: 40px; text-align: center; color: #888; font-size: 13px; }
   .map-embed { margin-bottom: 14px; }
   .map-embed iframe { width: 100%; border-radius: 8px; display: block; }
@@ -430,10 +473,8 @@ const html = `<!DOCTYPE html>
       <label for="sortControl">Sort:</label>
       <select id="sortControl">
         <option value="default">Default (newest first)</option>
-        <option value="ai-high">Highest AI rating first</option>
-        <option value="ai-low">Lowest AI rating first</option>
-        <option value="family-high">Highest family rating first</option>
-        <option value="family-low">Lowest family rating first</option>
+        <option value="overall">Overall rating (high to low)</option>
+        <option value="bro3">Bro 3 rating (high to low)</option>
       </select>
     </div>
   </div>
@@ -472,6 +513,21 @@ function cycleChecklist(el) {
 }
 
 document.querySelectorAll('.cl-source .cl-item').forEach(placeClItem);
+
+document.querySelectorAll('.gallery').forEach(function (g) {
+  var imgs = g.querySelectorAll('.gallery-img');
+  var counter = g.querySelector('.gallery-current');
+  var idx = 0;
+  function show(i) {
+    idx = (i + imgs.length) % imgs.length;
+    imgs.forEach(function (im, j) { im.classList.toggle('active', j === idx); });
+    if (counter) counter.textContent = idx + 1;
+  }
+  var prev = g.querySelector('.gallery-prev');
+  var next = g.querySelector('.gallery-next');
+  if (prev) prev.addEventListener('click', function () { show(idx - 1); });
+  if (next) next.addEventListener('click', function () { show(idx + 1); });
+});
 
 var WORKER_URL = 'https://devon-house-worker.jessekellyuk.workers.dev';
 
@@ -532,6 +588,7 @@ function recomputeOverall(card) {
   overallRow.querySelector('.rating-row-score').textContent = overall.toFixed(1) + '/10';
   var flamesEl = overallRow.querySelector('.rating-row-flames');
   if (flamesEl) flamesEl.textContent = '🔥'.repeat(Math.round(overall));
+  card.dataset.overallRating = overall.toFixed(2);
 }
 
 function updateRatingRow(propertyId, bro, score) {
@@ -545,6 +602,7 @@ function updateRatingRow(propertyId, bro, score) {
   if (flamesEl) flamesEl.textContent = '🔥'.repeat(Math.round(score));
   var card = row.closest('.card');
   if (card) {
+    if (bro === 'Bro 3') card.dataset.bro3Rating = score;
     var total = 0, weight = 0;
     card.querySelectorAll('.rating-row[data-bro]:not(.rating-row-empty)').forEach(function (r) {
       var scoreEl = r.querySelector('.rating-row-score');
@@ -706,12 +764,11 @@ wireMiniForm('.remove-input', '.remove-post-btn', '/remove', function (btn, text
       return;
     }
     headers.forEach(function (h) { h.style.display = 'none'; });
-    var attr = mode.indexOf('ai') === 0 ? 'aiRating' : 'avgRating';
-    var asc = mode.indexOf('low') !== -1;
+    var attr = mode === 'bro3' ? 'bro3Rating' : 'overallRating';
     var ranked = sortCards.slice().sort(function (a, b) {
       var av = a.dataset[attr] !== '' && a.dataset[attr] != null ? parseFloat(a.dataset[attr]) : -1;
       var bv = b.dataset[attr] !== '' && b.dataset[attr] != null ? parseFloat(b.dataset[attr]) : -1;
-      return asc ? av - bv : bv - av;
+      return bv - av;
     });
     ranked.forEach(function (c, i) { c.style.order = i; });
   });

@@ -29,13 +29,20 @@
   .card h2 { margin: 0 0 8px; font-size: 20px; }
   .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
   .price { font-size: 20px; font-weight: 700; color: #1b5e20; }
-  .agent { color: #666; font-style: italic; font-size: 14px; }
+  .beds-baths { font-size: 14px; color: #444; font-weight: 600; margin-bottom: 10px; }
   .flags { margin-bottom: 14px; }
   .flag { display: inline-block; color: #fff; font-weight: 700; font-size: 11px; padding: 4px 8px; border-radius: 4px; margin: 0 6px 6px 0; }
+  .parking-block { background: #eef6fb; border-left: 4px solid #1565C0; border-radius: 4px; padding: 8px 12px; font-size: 13px; line-height: 1.5; margin-bottom: 14px; }
+  .parking-block .parking-note { color: #333; }
   .photos { margin-bottom: 14px; }
-  .photo-main img { width: 100%; border-radius: 8px; display: block; max-height: 380px; object-fit: cover; }
-  .photo-strip { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
-  .photo-strip img { flex: 1 1 140px; max-width: 200px; border-radius: 6px; height: 110px; object-fit: cover; }
+  .gallery-viewport { position: relative; border-radius: 8px; overflow: hidden; background: #eee; height: 380px; }
+  .gallery-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: none; }
+  .gallery-img.active { display: block; }
+  .gallery-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.45); color: #fff; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 20px; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .gallery-nav:hover { background: rgba(0,0,0,0.7); }
+  .gallery-prev { left: 10px; }
+  .gallery-next { right: 10px; }
+  .gallery-counter { position: absolute; right: 10px; bottom: 10px; background: rgba(0,0,0,0.55); color: #fff; font-size: 12px; padding: 3px 8px; border-radius: 10px; }
   .no-photo { background: #eee; border-radius: 8px; padding: 40px; text-align: center; color: #888; font-size: 13px; }
   .map-embed { margin-bottom: 14px; }
   .map-embed iframe { width: 100%; border-radius: 8px; display: block; }
@@ -141,23 +148,21 @@
       <label for="sortControl">Sort:</label>
       <select id="sortControl">
         <option value="default">Default (newest first)</option>
-        <option value="ai-high">Highest AI rating first</option>
-        <option value="ai-low">Lowest AI rating first</option>
-        <option value="family-high">Highest family rating first</option>
-        <option value="family-low">Lowest family rating first</option>
+        <option value="overall">Overall rating (high to low)</option>
+        <option value="bro3">Bro 3 rating (high to low)</option>
       </select>
     </div>
   </div>
 </header>
-<nav><a href="#castlelane">Castle Lane</a><a href="#mireylanewoodbury">Mirey Lane</a><a href="#tythecottage">Tythe Cottage Tea Rooms</a><a href="#mountainclose">Mountain Close</a><a href="#haynes">Haynes Cottages</a><a href="#longmeadow">Longmeadow Road</a><a href="#brookside">Brookside Cottage</a><a href="#morcote">Morcote</a><a href="#eastbudleighhighst">High Street</a><a href="#marlesflat">The Marles</a><a href="#farleys">Farleys</a><a href="#bellstreet">3 Bell Street</a><a href="#flexton">The Flexton</a><a href="#beaconflat">The Beacon</a><a href="#cranford">Cranford Avenue</a><a href="#otterton">Thatched Cottage</a><a href="#feniton">Barn at Whites Cottages</a><a href="#douglas">Douglas Avenue</a><a href="#greenwaywoodbury">Greenway</a><a href="#townlanewoodbury">Town Lane</a><a href="#woodburyconservation">Woodbury</a><a href="#queenstreetbudleigh">Queen Street</a><a href="#longbrooklympstone">Longbrook Lane</a><a href="#allsaintseastbudleigh">All Saints Close</a><a href="#vansittartexmouth">Vansittart Drive</a><a href="#normancrescentbudleigh">Norman Crescent</a><a href="#horseshoebarnknowle">Horseshoe Barn</a><a href="#churchstilewoodbury">Church Stile Lane</a><a href="#sidmouth">Circular Thatched Cliff-top Cottage</a><a href="#yettington">The Threshing Barn</a><a href="#beacon">The Beacon</a><a href="#withycombe">Withycombe Village Road</a><a href="#salterton">Salterton Road</a><a href="#eastbudleigh">Grade II Thatched Cottage</a><a href="#clinton">Clinton Garage</a><a href="#leslie">The Coach House</a><a href="#longmeadowthatched">Longmeadow Road</a></nav>
+<nav><a href="#castlelane">Castle Lane</a><a href="#mireylanewoodbury">Mirey Lane</a><a href="#tythecottage">Tythe Cottage Tea Rooms</a><a href="#victoriaroadexmouth">Victoria Road</a><a href="#mountainclose">Mountain Close</a><a href="#haynes">Haynes Cottages</a><a href="#longmeadow">Longmeadow Road</a><a href="#brookside">Brookside Cottage</a><a href="#morcote">Morcote</a><a href="#eastbudleighhighst">High Street</a><a href="#marlesflat">The Marles</a><a href="#farleys">Farleys</a><a href="#bellstreet">3 Bell Street</a><a href="#flexton">The Flexton</a><a href="#beaconflat">The Beacon</a><a href="#cranford">Cranford Avenue</a><a href="#otterton">Thatched Cottage</a><a href="#feniton">Barn at Whites Cottages</a><a href="#douglas">Douglas Avenue</a><a href="#greenwaywoodbury">Greenway</a><a href="#townlanewoodbury">Town Lane</a><a href="#woodburyconservation">Woodbury</a><a href="#queenstreetbudleigh">Queen Street</a><a href="#longbrooklympstone">Longbrook Lane</a><a href="#allsaintseastbudleigh">All Saints Close</a><a href="#vansittartexmouth">Vansittart Drive</a><a href="#normancrescentbudleigh">Norman Crescent</a><a href="#horseshoebarnknowle">Horseshoe Barn</a><a href="#churchstilewoodbury">Church Stile Lane</a><a href="#sidmouth">Circular Thatched Cliff-top Cottage</a><a href="#yettington">The Threshing Barn</a><a href="#beacon">The Beacon</a><a href="#withycombe">Withycombe Village Road</a><a href="#salterton">Salterton Road</a><a href="#eastbudleigh">Grade II Thatched Cottage</a><a href="#clinton">Clinton Garage</a><a href="#leslie">The Coach House</a><a href="#longmeadowthatched">Longmeadow Road</a></nav>
 <main>
 <h1 class="section-title">New This Sweep</h1>
-  <section class="card" id="castlelane" data-avg-rating="" data-ai-rating="7">
+  <section class="card" id="castlelane" data-avg-rating="" data-ai-rating="7" data-overall-rating="7.00" data-bro3-rating="">
     <h2>Castle Lane, Exmouth (Grade II thatched cottage)</h2>
     <div class="price-row">
       <span class="price">£225,000 (guide price)</span>
-      <span class="agent">Rightmove listing</span>
     </div>
+    <div class="beds-baths">🛏 1 bed</div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/173746229" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -193,9 +198,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Listing says "ask agent" — not confirmed either way.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/CastleLane_Gallery_1.jpg" alt="castlelane main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/CastleLane_Gallery_2.jpg" alt="castlelane photo" loading="lazy"><img src="images/CastleLane_Gallery_3.jpg" alt="castlelane photo" loading="lazy"><img src="images/CastleLane_Gallery_4.jpg" alt="castlelane photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/CastleLane_Gallery_1.jpg" alt="castlelane photo 1" loading="lazy" class="gallery-img active"><img src="images/CastleLane_Gallery_2.jpg" alt="castlelane photo 2" loading="lazy" class="gallery-img"><img src="images/CastleLane_Gallery_3.jpg" alt="castlelane photo 3" loading="lazy" class="gallery-img"><img src="images/CastleLane_Gallery_4.jpg" alt="castlelane photo 4" loading="lazy" class="gallery-img"><img src="images/CastleLane_Gallery_5.jpg" alt="castlelane photo 5" loading="lazy" class="gallery-img"><img src="images/CastleLane_Gallery_6.jpg" alt="castlelane photo 6" loading="lazy" class="gallery-img"><img src="images/CastleLane_Gallery_7.jpg" alt="castlelane photo 7" loading="lazy" class="gallery-img"><img src="images/CastleLane_Gallery_8.jpg" alt="castlelane photo 8" loading="lazy" class="gallery-img"><img src="images/CastleLane_Gallery_9.jpg" alt="castlelane photo 9" loading="lazy" class="gallery-img"><img src="images/CastleLane_Gallery_10.jpg" alt="castlelane photo 10" loading="lazy" class="gallery-img"><img src="images/CastleLane_Gallery_11.jpg" alt="castlelane photo 11" loading="lazy" class="gallery-img"><img src="images/CastleLane_Gallery_12.jpg" alt="castlelane photo 12" loading="lazy" class="gallery-img"><img src="images/CastleLane_Gallery_13.jpg" alt="castlelane photo 13" loading="lazy" class="gallery-img"><img src="images/CastleLane_Gallery_14.jpg" alt="castlelane photo 14" loading="lazy" class="gallery-img"><img src="images/CastleLane_Gallery_15.jpg" alt="castlelane photo 15" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 15</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -299,12 +312,12 @@
     <div class="added">Added 2026-07-11</div>
   </section>
 
-  <section class="card" id="mireylanewoodbury" data-avg-rating="" data-ai-rating="6">
+  <section class="card" id="mireylanewoodbury" data-avg-rating="" data-ai-rating="6" data-overall-rating="6.00" data-bro3-rating="">
     <h2>Mirey Lane, Woodbury (Grade II cottage)</h2>
     <div class="price-row">
       <span class="price">Offers In Excess of £250,000</span>
-      <span class="agent">East of Exe, Topsham</span>
     </div>
+    <div class="beds-baths">🛏 2 beds</div>
     <a class="source-badge" href="https://www.eastofexe.co.uk/properties/mirey-lane-woodbury/" target="_blank" rel="noopener">View on EASTOFEXE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -340,9 +353,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY (+ free car park 2 min walk)</span></div>
+    <div class="parking-block"><strong>🅿️ On-street parking only</strong><span class="parking-note"> — On-street parking plus a genuine free short-stay car park (Flower Street) two minutes' walk away — better-confirmed than most "no parking info" entries.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/MireyLane_Gallery_1.jpg" alt="mireylanewoodbury main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/MireyLane_Gallery_2.jpg" alt="mireylanewoodbury photo" loading="lazy"><img src="images/MireyLane_Gallery_3.jpg" alt="mireylanewoodbury photo" loading="lazy"><img src="images/MireyLane_Gallery_4.jpg" alt="mireylanewoodbury photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/MireyLane_Gallery_1.jpg" alt="mireylanewoodbury photo 1" loading="lazy" class="gallery-img active"><img src="images/MireyLane_Gallery_2.jpg" alt="mireylanewoodbury photo 2" loading="lazy" class="gallery-img"><img src="images/MireyLane_Gallery_3.jpg" alt="mireylanewoodbury photo 3" loading="lazy" class="gallery-img"><img src="images/MireyLane_Gallery_4.jpg" alt="mireylanewoodbury photo 4" loading="lazy" class="gallery-img"><img src="images/MireyLane_Gallery_5.jpg" alt="mireylanewoodbury photo 5" loading="lazy" class="gallery-img"><img src="images/MireyLane_Gallery_6.jpg" alt="mireylanewoodbury photo 6" loading="lazy" class="gallery-img"><img src="images/MireyLane_Gallery_7.jpg" alt="mireylanewoodbury photo 7" loading="lazy" class="gallery-img"><img src="images/MireyLane_Gallery_8.jpg" alt="mireylanewoodbury photo 8" loading="lazy" class="gallery-img"><img src="images/MireyLane_Gallery_9.jpg" alt="mireylanewoodbury photo 9" loading="lazy" class="gallery-img"><img src="images/MireyLane_Gallery_10.jpg" alt="mireylanewoodbury photo 10" loading="lazy" class="gallery-img"><img src="images/MireyLane_Gallery_11.jpg" alt="mireylanewoodbury photo 11" loading="lazy" class="gallery-img"><img src="images/MireyLane_Gallery_12.jpg" alt="mireylanewoodbury photo 12" loading="lazy" class="gallery-img"><img src="images/MireyLane_Gallery_13.jpg" alt="mireylanewoodbury photo 13" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 13</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -446,12 +467,12 @@
     <div class="added">Added 2026-07-11</div>
   </section>
 
-  <section class="card" id="tythecottage" data-avg-rating="" data-ai-rating="4">
+  <section class="card" id="tythecottage" data-avg-rating="" data-ai-rating="4" data-overall-rating="4.00" data-bro3-rating="">
     <h2>Tythe Cottage Tea Rooms, Littleham Village (Grade II — AUCTION)</h2>
     <div class="price-row">
       <span class="price">£325,000+ (guide price, auction)</span>
-      <span class="agent">Countrywide Property Auctions (Sutton Kersh)</span>
     </div>
+    <div class="beds-baths">🛏 1 bed</div>
     <a class="source-badge" href="https://www.propertyauctionsouthwest.co.uk/properties/lot/322921/Tythe+Cottage+Tea+Rooms,+Littleham+Village,+Littleham,+Exmouth,+Devon,+EX8+2RQ/" target="_blank" rel="noopener">View on PROPERTYAUCTIONSOUTHWEST.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -487,9 +508,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET (+£25,000)</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#1565C0">HAS PARKING (rear)</span><span class="flag" style="background:#E65100">AUCTION DATE UNCONFIRMED — verify with agent</span></div>
+    <div class="parking-block"><strong>🅿️ Has parking</strong><span class="parking-note"> — Car parking to the rear of the building, confirmed in the listing.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Tythe_Gallery_1.jpg" alt="tythecottage main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Tythe_Gallery_2.jpg" alt="tythecottage photo" loading="lazy"><img src="images/Tythe_Gallery_3.jpg" alt="tythecottage photo" loading="lazy"><img src="images/Tythe_Gallery_4.jpg" alt="tythecottage photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Tythe_Gallery_1.jpg" alt="tythecottage photo 1" loading="lazy" class="gallery-img active"><img src="images/Tythe_Gallery_2.jpg" alt="tythecottage photo 2" loading="lazy" class="gallery-img"><img src="images/Tythe_Gallery_3.jpg" alt="tythecottage photo 3" loading="lazy" class="gallery-img"><img src="images/Tythe_Gallery_4.jpg" alt="tythecottage photo 4" loading="lazy" class="gallery-img"><img src="images/Tythe_Gallery_5.jpg" alt="tythecottage photo 5" loading="lazy" class="gallery-img"><img src="images/Tythe_Gallery_6.jpg" alt="tythecottage photo 6" loading="lazy" class="gallery-img"><img src="images/Tythe_Gallery_7.jpg" alt="tythecottage photo 7" loading="lazy" class="gallery-img"><img src="images/Tythe_Gallery_8.jpg" alt="tythecottage photo 8" loading="lazy" class="gallery-img"><img src="images/Tythe_Gallery_9.jpg" alt="tythecottage photo 9" loading="lazy" class="gallery-img"><img src="images/Tythe_Gallery_10.jpg" alt="tythecottage photo 10" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 10</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -592,13 +621,168 @@
   
     <div class="added">Added 2026-07-11</div>
   </section>
+
+  <section class="card" id="victoriaroadexmouth" data-avg-rating="" data-ai-rating="4" data-overall-rating="4.00" data-bro3-rating="">
+    <h2>Victoria Road, Exmouth (ground-floor flat)</h2>
+    <div class="price-row">
+      <span class="price">Guide Price £70,000</span>
+    </div>
+    <div class="beds-baths">🛏 1 bed &nbsp;·&nbsp; 🛁 1 bath</div>
+    <a class="source-badge" href="https://www.your-move.co.uk/property/flat-for-sale-victoria-road-exmouth-ex8-id-qex250656" target="_blank" rel="noopener">View on YOUR-MOVE.CO.UK ↗</a>
+    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
+    <div class="rating-row rating-row-overall">
+      <span class="rating-row-label">⭐ Overall</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
+    </div>
+  
+      <div class="rating-row rating-row-empty " data-property="victoriaroadexmouth" data-bro="Bro 1">
+        <span class="rating-row-label">Bro 1</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty " data-property="victoriaroadexmouth" data-bro="Bro 2">
+        <span class="rating-row-label">Bro 2</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+      <div class="rating-row rating-row-empty " data-property="victoriaroadexmouth" data-bro="Bro 3">
+        <span class="rating-row-label">Bro 3</span>
+        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <span class="rating-row-score">not yet rated</span>
+      </div>
+    
+    <div class="rating-row rating-row-ai">
+      <span class="rating-row-label">🤖 AI Rating</span>
+      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:40%;background:rgb(145,78,60)"></div></div>
+      <span class="rating-row-score">4/10</span>
+      <span class="rating-row-flames">🔥🔥🔥🔥</span>
+    </div>
+  </div>
+    <div class="flags"><span class="flag" style="background:#6A1B9A">🌟 FAMILY SPOTTED THIS</span><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#1565C0">GROUND FLOOR</span><span class="flag" style="background:#E65100">OFFER ALREADY RECEIVED (£58,000) — time-sensitive</span><span class="flag" style="background:#C62828">HIGH SERVICE CHARGE (£4,078/yr)</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span></div>
+    <div class="parking-block"><strong>🅿️ On-street parking only</strong><span class="parking-note"> — Not mentioned in the listing. Victoria Road has Limited Waiting restrictions (Mon-Sat 8am-6pm, 1hr no return) with an exemption for Residents' Zone B permit holders — a resident's permit (around £35/year for a first permit) would be needed for reliable on-street parking rather than free unrestricted parking.</span></div>
+    <div class="photos">
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/VictoriaRoad_Gallery_1.jpg" alt="victoriaroadexmouth photo 1" loading="lazy" class="gallery-img active"><img src="images/VictoriaRoad_Gallery_2.jpg" alt="victoriaroadexmouth photo 2" loading="lazy" class="gallery-img"><img src="images/VictoriaRoad_Gallery_3.jpg" alt="victoriaroadexmouth photo 3" loading="lazy" class="gallery-img"><img src="images/VictoriaRoad_Gallery_4.jpg" alt="victoriaroadexmouth photo 4" loading="lazy" class="gallery-img"><img src="images/VictoriaRoad_Gallery_5.jpg" alt="victoriaroadexmouth photo 5" loading="lazy" class="gallery-img"><img src="images/VictoriaRoad_Gallery_6.jpg" alt="victoriaroadexmouth photo 6" loading="lazy" class="gallery-img"><img src="images/VictoriaRoad_Gallery_7.jpg" alt="victoriaroadexmouth photo 7" loading="lazy" class="gallery-img"><img src="images/VictoriaRoad_Gallery_8.jpg" alt="victoriaroadexmouth photo 8" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 8</div>
+      </div>
+    </div>
+  </div>
+    
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Victoria%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
+        width="100%" height="380" style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="map-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Victoria%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Victoria%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
+      </div>
+    </div>
+  
+    <p class="body">One-bedroom ground-floor flat on Victoria Road, close to Exmouth town centre and seafront. Lounge with built-in storage, bedroom, kitchen with cupboards and freestanding cooker, three-piece bathroom, and a rear courtyard garden with access. Needs redecoration and modernisation throughout. Leasehold: 99 years from July 2007 (~80 years remaining), ground rent £291/year, service charge £4,078/year with major works planned for 2026. Council tax band A, EPC D.</p>
+    <p class="why"><strong>Why it's here:</strong> Submitted by family — cheap headline price and genuinely ground floor, but two things need weighing before getting excited: an offer of £58,000 has already been received on it, with only 5 working days from the listing's publication for anyone to beat it, so this may already be gone or about to go; and the £4,078/year service charge (with major works flagged for 2026 on top) would eat a huge chunk of the low purchase price over time. Family's own note flagged "no place to park, worrisome back roof" — parking isn't mentioned in the listing but Victoria Road has a residents' Zone B permit scheme for on-street parking; roof condition isn't addressed in the listing text either and would need a direct question to the agent or a viewing.</p>
+    <p class="ai-take">🤖 <strong>AI's take:</strong> Cheapest thing on the whole list and genuinely ground-floor near the seafront, but a £58,000 offer already on the table and a punishing £4,078/year service charge (with major works pending) undercut the headline price badly — worth a very quick decision if pursued at all, not a leisurely one.</p>
+    
+    
+    <div class="checklist-block">
+      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
+      <div class="cl-columns">
+        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
+        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
+      </div>
+      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="victoriaroadexmouth" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="victoriaroadexmouth" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="good" data-prop="victoriaroadexmouth" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="victoriaroadexmouth" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="victoriaroadexmouth" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="bad" data-prop="victoriaroadexmouth" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="indifferent" data-prop="victoriaroadexmouth" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="victoriaroadexmouth" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="victoriaroadexmouth" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="good" data-prop="victoriaroadexmouth" onclick="cycleChecklist(this)">♿ Already ground-floor livable</div><div class="cl-item" data-cl-key="tenure" data-cl-default="bad" data-prop="victoriaroadexmouth" onclick="cycleChecklist(this)">📜 Leasehold (80 yrs remaining)</div></div>
+      
+    </div>
+  
+    
+    <div class="ask-claude-block">
+      <div class="mini-form">
+        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
+        <button class="research-post-btn" data-property="victoriaroadexmouth" data-title="Victoria Road, Exmouth (ground-floor flat)">🔍 Ask Claude to research this</button>
+        <span class="mini-status"></span>
+      </div>
+      <div class="mini-form">
+        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
+        <button class="remove-post-btn" data-property="victoriaroadexmouth" data-title="Victoria Road, Exmouth (ground-floor flat)">Request removal</button>
+        <span class="mini-status"></span>
+      </div>
+      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
+    </div>
+  
+    
+    <div class="comments-block">
+      <h3>💬 Family Comments</h3>
+      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
+      <div class="brother-boxes">
+        
+    <div class="brother-box brother-box-1">
+      <h4>Bro 1</h4>
+      <div class="bro-comments" data-term="victoriaroadexmouth-bro1">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="victoriaroadexmouth" data-bro="Bro 1">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-2">
+      <h4>Bro 2</h4>
+      <div class="bro-comments" data-term="victoriaroadexmouth-bro2">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="victoriaroadexmouth" data-bro="Bro 2">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+        
+    <div class="brother-box brother-box-3">
+      <h4>Bro 3</h4>
+      <div class="bro-comments" data-term="victoriaroadexmouth-bro3">Loading…</div>
+      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
+      <div class="bro-controls">
+        <select class="bro-rating">
+          <option value="">No rating</option>
+          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
+        </select>
+        <button class="bro-post-btn" data-property="victoriaroadexmouth" data-bro="Bro 3">Post</button>
+      </div>
+      <span class="bro-status"></span>
+    </div>
+  
+      </div>
+    </div>
+  
+    <div class="added">Added 2026-07-11</div>
+  </section>
 <h1 class="section-title">Still Listed</h1>
-  <section class="card" id="mountainclose" data-avg-rating="2.00" data-ai-rating="5">
+  <section class="card" id="mountainclose" data-avg-rating="2.00" data-ai-rating="5" data-overall-rating="3.00" data-bro3-rating="2">
     <h2>Mountain Close, Exmouth</h2>
     <div class="price-row">
       <span class="price">£200,000</span>
-      <span class="agent">Purplebricks, Exeter</span>
     </div>
+    <div class="beds-baths">🛏 2 beds &nbsp;·&nbsp; 🛁 1 bath</div>
     <a class="source-badge" href="https://www.onthemarket.com/details/19874547/" target="_blank" rel="noopener">View on ONTHEMARKET.COM ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -635,9 +819,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#6A1B9A">🌟 JESSE SPOTTED THIS</span><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">LEASEHOLD (114 YRS, £0 GROUND RENT)</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Listing doesn't mention parking either way — no drive, garage, or space referenced anywhere in the description.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/MountainClose_Gallery_1.jpg" alt="mountainclose main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/MountainClose_Gallery_2.jpg" alt="mountainclose photo" loading="lazy"><img src="images/MountainClose_Gallery_3.jpg" alt="mountainclose photo" loading="lazy"><img src="images/MountainClose_Gallery_4.jpg" alt="mountainclose photo" loading="lazy"><img src="images/MountainClose_Gallery_5.jpg" alt="mountainclose photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/MountainClose_Gallery_1.jpg" alt="mountainclose photo 1" loading="lazy" class="gallery-img active"><img src="images/MountainClose_Gallery_2.jpg" alt="mountainclose photo 2" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_3.jpg" alt="mountainclose photo 3" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_4.jpg" alt="mountainclose photo 4" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_5.jpg" alt="mountainclose photo 5" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_6.jpg" alt="mountainclose photo 6" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_7.jpg" alt="mountainclose photo 7" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_8.jpg" alt="mountainclose photo 8" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_9.jpg" alt="mountainclose photo 9" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_10.jpg" alt="mountainclose photo 10" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_11.jpg" alt="mountainclose photo 11" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_12.jpg" alt="mountainclose photo 12" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_13.jpg" alt="mountainclose photo 13" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_14.jpg" alt="mountainclose photo 14" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_15.jpg" alt="mountainclose photo 15" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_16.jpg" alt="mountainclose photo 16" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_17.jpg" alt="mountainclose photo 17" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_18.jpg" alt="mountainclose photo 18" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_19.jpg" alt="mountainclose photo 19" loading="lazy" class="gallery-img"><img src="images/MountainClose_Gallery_20.jpg" alt="mountainclose photo 20" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 20</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -666,7 +858,7 @@
         <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
       </div>
       <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
-      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="mountainclose" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="indifferent" data-prop="mountainclose" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="mountainclose" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">♿ Not realistically ground-floor adaptable</div></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="indifferent" data-prop="mountainclose" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="indifferent" data-prop="mountainclose" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="mountainclose" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">♿ Not realistically ground-floor adaptable</div><div class="cl-item" data-cl-key="tenure" data-cl-default="bad" data-prop="mountainclose" onclick="cycleChecklist(this)">📜 Leasehold (114 yrs remaining)</div></div>
       <div class="cl-unique">🎁 <strong>Unique:</strong> A small patch of land adjoining the property that could potentially be annexed to create a proper garden — worth asking the agent/freeholder whether it's included or purchasable.</div>
     </div>
   
@@ -741,12 +933,12 @@
     <div class="added">Added 2026-07-07</div>
   </section>
 
-  <section class="card" id="haynes" data-avg-rating="6.00" data-ai-rating="7">
+  <section class="card" id="haynes" data-avg-rating="6.00" data-ai-rating="7" data-overall-rating="6.33" data-bro3-rating="6">
     <h2>Haynes Cottages, Lympstone</h2>
     <div class="price-row">
       <span class="price">£264,500</span>
-      <span class="agent">Pennys, Exmouth</span>
     </div>
+    <div class="beds-baths">🛏 2 beds</div>
     <a class="source-badge" href="https://www.pennys.net/for-sale/lympstone/haynes-cottages/2-bedroom-terraced-for-sale-in-haynes-cottages-ex8-5lx/266524" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -783,9 +975,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#1565C0">HAS PARKING (3 cars, gravelled bay + electric sockets)</span></div>
+    <div class="parking-block"><strong>🅿️ Has parking</strong><span class="parking-note"> — Gravelled parking bay for up to 3 cars with outside electric sockets — the best parking on the whole list.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Haynes_Gallery_1.jpeg" alt="haynes main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Haynes_Gallery_2.jpg" alt="haynes photo" loading="lazy"><img src="images/Haynes_Gallery_3.jpg" alt="haynes photo" loading="lazy"><img src="images/Haynes_Gallery_4.jpeg" alt="haynes photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Haynes_Gallery_1.jpg" alt="haynes photo 1" loading="lazy" class="gallery-img active"><img src="images/Haynes_Gallery_2.jpg" alt="haynes photo 2" loading="lazy" class="gallery-img"><img src="images/Haynes_Gallery_3.jpg" alt="haynes photo 3" loading="lazy" class="gallery-img"><img src="images/Haynes_Gallery_4.jpg" alt="haynes photo 4" loading="lazy" class="gallery-img"><img src="images/Haynes_Gallery_5.jpg" alt="haynes photo 5" loading="lazy" class="gallery-img"><img src="images/Haynes_Gallery_6.jpg" alt="haynes photo 6" loading="lazy" class="gallery-img"><img src="images/Haynes_Gallery_7.jpg" alt="haynes photo 7" loading="lazy" class="gallery-img"><img src="images/Haynes_Gallery_8.jpg" alt="haynes photo 8" loading="lazy" class="gallery-img"><img src="images/Haynes_Gallery_9.jpg" alt="haynes photo 9" loading="lazy" class="gallery-img"><img src="images/Haynes_Gallery_10.jpg" alt="haynes photo 10" loading="lazy" class="gallery-img"><img src="images/Haynes_Gallery_11.jpg" alt="haynes photo 11" loading="lazy" class="gallery-img"><img src="images/Haynes_Gallery_12.jpg" alt="haynes photo 12" loading="lazy" class="gallery-img"><img src="images/Haynes_Gallery_13.jpg" alt="haynes photo 13" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 13</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -889,12 +1089,12 @@
     <div class="added">Added 2026-07-07</div>
   </section>
 
-  <section class="card" id="longmeadow" data-avg-rating="3.00" data-ai-rating="6">
+  <section class="card" id="longmeadow" data-avg-rating="3.00" data-ai-rating="6" data-overall-rating="4.00" data-bro3-rating="3">
     <h2>Longmeadow Road, Lympstone (Grade II 17th-century cottage)</h2>
     <div class="price-row">
       <span class="price">Guide Price £250,000</span>
-      <span class="agent">Stags, Exeter</span>
     </div>
+    <div class="beds-baths">🛏 1 bed &nbsp;·&nbsp; 🛁 1 bath</div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/89711112" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -931,9 +1131,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span><span class="flag" style="background:#EF6C00">KNOTWEED DISCLOSED (treated, 10-yr guarantee)</span></div>
+    <div class="parking-block"><strong>🅿️ On-street parking only</strong><span class="parking-note"> — No off-street parking; on-street only in Lympstone village.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Longmeadow_Gallery_1.jpg" alt="longmeadow main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Longmeadow_Gallery_2.jpg" alt="longmeadow photo" loading="lazy"><img src="images/Longmeadow_Gallery_3.jpg" alt="longmeadow photo" loading="lazy"><img src="images/Longmeadow_Gallery_4.jpg" alt="longmeadow photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Longmeadow_Gallery_1.jpg" alt="longmeadow photo 1" loading="lazy" class="gallery-img active"><img src="images/Longmeadow_Gallery_2.jpg" alt="longmeadow photo 2" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_3.jpg" alt="longmeadow photo 3" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_4.jpg" alt="longmeadow photo 4" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_5.jpg" alt="longmeadow photo 5" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_6.jpg" alt="longmeadow photo 6" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_7.jpg" alt="longmeadow photo 7" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_8.jpg" alt="longmeadow photo 8" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_9.jpg" alt="longmeadow photo 9" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_10.jpg" alt="longmeadow photo 10" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_11.jpg" alt="longmeadow photo 11" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_12.jpg" alt="longmeadow photo 12" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_13.jpg" alt="longmeadow photo 13" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_14.jpg" alt="longmeadow photo 14" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_15.jpg" alt="longmeadow photo 15" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_16.jpg" alt="longmeadow photo 16" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_17.jpg" alt="longmeadow photo 17" loading="lazy" class="gallery-img"><img src="images/Longmeadow_Gallery_18.jpg" alt="longmeadow photo 18" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 18</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -1037,12 +1245,12 @@
     <div class="added">Added 2026-07-07</div>
   </section>
 
-  <section class="card" id="brookside" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="brookside" data-avg-rating="" data-ai-rating="5" data-overall-rating="5.00" data-bro3-rating="">
     <h2>Brookside Cottage, Lympstone</h2>
     <div class="price-row">
       <span class="price">Guide Price £275,000</span>
-      <span class="agent">Pennys, Exmouth</span>
     </div>
+    <div class="beds-baths">🛏 2 beds</div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/162176444" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -1078,9 +1286,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#9E9E9E">PARKING UNKNOWN</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Listing says "ask agent" rather than confirming either way.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Brookside_Gallery_1.jpg" alt="brookside main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Brookside_Gallery_2.jpg" alt="brookside photo" loading="lazy"><img src="images/Brookside_Gallery_3.jpg" alt="brookside photo" loading="lazy"><img src="images/Brookside_Gallery_4.jpg" alt="brookside photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Brookside_Gallery_1.jpg" alt="brookside photo 1" loading="lazy" class="gallery-img active"><img src="images/Brookside_Gallery_2.jpg" alt="brookside photo 2" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_3.jpg" alt="brookside photo 3" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_4.jpg" alt="brookside photo 4" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_5.jpg" alt="brookside photo 5" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_6.jpg" alt="brookside photo 6" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_7.jpg" alt="brookside photo 7" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_8.jpg" alt="brookside photo 8" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_9.jpg" alt="brookside photo 9" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_10.jpg" alt="brookside photo 10" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_11.jpg" alt="brookside photo 11" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_12.jpg" alt="brookside photo 12" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_13.jpg" alt="brookside photo 13" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_14.jpg" alt="brookside photo 14" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_15.jpg" alt="brookside photo 15" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_16.jpg" alt="brookside photo 16" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_17.jpg" alt="brookside photo 17" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_18.jpg" alt="brookside photo 18" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_19.jpg" alt="brookside photo 19" loading="lazy" class="gallery-img"><img src="images/Brookside_Gallery_20.jpg" alt="brookside photo 20" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 20</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -1184,12 +1400,12 @@
     <div class="added">Added 2026-07-07</div>
   </section>
 
-  <section class="card" id="morcote" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="morcote" data-avg-rating="" data-ai-rating="5" data-overall-rating="5.00" data-bro3-rating="">
     <h2>Morcote, The Strand, Lympstone</h2>
     <div class="price-row">
       <span class="price">Offers in Excess of £225,000</span>
-      <span class="agent">East of Exe Ltd, Topsham</span>
     </div>
+    <div class="beds-baths">🛏 1 bed</div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/159668282" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -1225,9 +1441,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span></div>
+    <div class="parking-block"><strong>🅿️ On-street parking only</strong><span class="parking-note"> — No garden or off-street parking; on-street only, right in the village centre.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Morcote_Gallery_1.jpg" alt="morcote main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Morcote_Gallery_2.jpg" alt="morcote photo" loading="lazy"><img src="images/Morcote_Gallery_3.jpg" alt="morcote photo" loading="lazy"><img src="images/Morcote_Gallery_4.jpg" alt="morcote photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Morcote_Gallery_1.jpg" alt="morcote photo 1" loading="lazy" class="gallery-img active"><img src="images/Morcote_Gallery_2.jpg" alt="morcote photo 2" loading="lazy" class="gallery-img"><img src="images/Morcote_Gallery_3.jpg" alt="morcote photo 3" loading="lazy" class="gallery-img"><img src="images/Morcote_Gallery_4.jpg" alt="morcote photo 4" loading="lazy" class="gallery-img"><img src="images/Morcote_Gallery_5.jpg" alt="morcote photo 5" loading="lazy" class="gallery-img"><img src="images/Morcote_Gallery_6.jpg" alt="morcote photo 6" loading="lazy" class="gallery-img"><img src="images/Morcote_Gallery_7.jpg" alt="morcote photo 7" loading="lazy" class="gallery-img"><img src="images/Morcote_Gallery_8.jpg" alt="morcote photo 8" loading="lazy" class="gallery-img"><img src="images/Morcote_Gallery_9.jpg" alt="morcote photo 9" loading="lazy" class="gallery-img"><img src="images/Morcote_Gallery_10.jpg" alt="morcote photo 10" loading="lazy" class="gallery-img"><img src="images/Morcote_Gallery_11.jpg" alt="morcote photo 11" loading="lazy" class="gallery-img"><img src="images/Morcote_Gallery_12.jpg" alt="morcote photo 12" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 12</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -1331,12 +1555,12 @@
     <div class="added">Added 2026-07-07</div>
   </section>
 
-  <section class="card" id="eastbudleighhighst" data-avg-rating="6.00" data-ai-rating="6">
+  <section class="card" id="eastbudleighhighst" data-avg-rating="6.00" data-ai-rating="6" data-overall-rating="6.00" data-bro3-rating="6">
     <h2>High Street, East Budleigh (Grade II cottage)</h2>
     <div class="price-row">
       <span class="price">£239,950</span>
-      <span class="agent">Pennys, Exmouth</span>
     </div>
+    <div class="beds-baths">🛏 2 beds &nbsp;·&nbsp; 🛁 1 bath</div>
     <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/high-street/2-bedroom-terraced-for-sale-in-high-street-ex9-7ed/263959" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -1373,9 +1597,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">NO PARKING (village on-street only)</span></div>
+    <div class="parking-block"><strong>🚫 No parking</strong><span class="parking-note"> — No parking, garage, or space of any kind — confirmed directly from the full listing text. High Street has limited 30-min on-street parking; the practical option is a free 17-space car park just off the High Street (2-hr limit) or the larger Hayes Lane car park nearby. No formal residents' permit scheme in this small village.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/EastBudleigh_Gallery_1.jpg" alt="eastbudleighhighst main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/EastBudleigh_Gallery_2.jpg" alt="eastbudleighhighst photo" loading="lazy"><img src="images/EastBudleigh_Gallery_3.jpg" alt="eastbudleighhighst photo" loading="lazy"><img src="images/EastBudleigh_Gallery_4.jpg" alt="eastbudleighhighst photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/EastBudleigh_Gallery_1.jpg" alt="eastbudleighhighst photo 1" loading="lazy" class="gallery-img active"><img src="images/EastBudleigh_Gallery_2.jpg" alt="eastbudleighhighst photo 2" loading="lazy" class="gallery-img"><img src="images/EastBudleigh_Gallery_3.jpg" alt="eastbudleighhighst photo 3" loading="lazy" class="gallery-img"><img src="images/EastBudleigh_Gallery_4.jpg" alt="eastbudleighhighst photo 4" loading="lazy" class="gallery-img"><img src="images/EastBudleigh_Gallery_5.jpg" alt="eastbudleighhighst photo 5" loading="lazy" class="gallery-img"><img src="images/EastBudleigh_Gallery_6.jpg" alt="eastbudleighhighst photo 6" loading="lazy" class="gallery-img"><img src="images/EastBudleigh_Gallery_7.jpg" alt="eastbudleighhighst photo 7" loading="lazy" class="gallery-img"><img src="images/EastBudleigh_Gallery_8.jpg" alt="eastbudleighhighst photo 8" loading="lazy" class="gallery-img"><img src="images/EastBudleigh_Gallery_9.jpg" alt="eastbudleighhighst photo 9" loading="lazy" class="gallery-img"><img src="images/EastBudleigh_Gallery_10.jpg" alt="eastbudleighhighst photo 10" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 10</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -1479,12 +1711,12 @@
     <div class="added">Added 2026-07-06</div>
   </section>
 
-  <section class="card" id="marlesflat" data-avg-rating="" data-ai-rating="7">
+  <section class="card" id="marlesflat" data-avg-rating="" data-ai-rating="7" data-overall-rating="7.00" data-bro3-rating="">
     <h2>The Marles, Exmouth (ground-floor flat)</h2>
     <div class="price-row">
       <span class="price">£200,000</span>
-      <span class="agent">Pennys, Exmouth</span>
     </div>
+    <div class="beds-baths">🛏 2 beds &nbsp;·&nbsp; 🛁 1 bath</div>
     <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/the-marles/2-bedroom-groundfloorflat-for-sale-in-the-marles-ex8-4ne/269531" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -1520,9 +1752,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span><span class="flag" style="background:#757575">PARKING: GARAGE TO RENT NEARBY (not included)</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — A garage is understood to be available to rent nearby, but it's not included with the sale — not a guaranteed space.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Marles_Gallery_1.jpg" alt="marlesflat main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Marles_Gallery_2.jpg" alt="marlesflat photo" loading="lazy"><img src="images/Marles_Gallery_3.jpg" alt="marlesflat photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Marles_Gallery_1.jpg" alt="marlesflat photo 1" loading="lazy" class="gallery-img active"><img src="images/Marles_Gallery_2.jpg" alt="marlesflat photo 2" loading="lazy" class="gallery-img"><img src="images/Marles_Gallery_3.jpg" alt="marlesflat photo 3" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 3</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -1551,7 +1791,7 @@
         <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
       </div>
       <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
-      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="marlesflat" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="marlesflat" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="bad" data-prop="marlesflat" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="bad" data-prop="marlesflat" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="indifferent" data-prop="marlesflat" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">♿ Already ground-floor livable</div></div>
+      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="marlesflat" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="marlesflat" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="bad" data-prop="marlesflat" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="bad" data-prop="marlesflat" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="indifferent" data-prop="marlesflat" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="good" data-prop="marlesflat" onclick="cycleChecklist(this)">♿ Already ground-floor livable</div><div class="cl-item" data-cl-key="tenure" data-cl-default="bad" data-prop="marlesflat" onclick="cycleChecklist(this)">📜 Leasehold (years unknown — ask agent)</div></div>
       
     </div>
   
@@ -1626,12 +1866,12 @@
     <div class="added">Added 2026-07-06</div>
   </section>
 
-  <section class="card" id="farleys" data-avg-rating="" data-ai-rating="6">
+  <section class="card" id="farleys" data-avg-rating="" data-ai-rating="6" data-overall-rating="6.00" data-bro3-rating="">
     <h2>Farleys, The Strand, Lympstone (Grade II cottage)</h2>
     <div class="price-row">
       <span class="price">£295,000</span>
-      <span class="agent">Hall &amp; Scott, Exmouth</span>
     </div>
+    <div class="beds-baths">🛏 2 beds &nbsp;·&nbsp; 🛁 1 bath</div>
     <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_706793" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -1667,9 +1907,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#757575">NO PARKING (village car park permit)</span></div>
+    <div class="parking-block"><strong>🚫 No parking</strong><span class="parking-note"> — No dedicated parking; nearest options are the free Lympstone Village Station car park (13 spaces, first-come-first-served) or Underhill Car Park nearby — nothing deeded to the property. See research findings below for the full picture.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Farleys_Gallery_1.jpg" alt="farleys main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Farleys_Gallery_2.png" alt="farleys photo" loading="lazy"><img src="images/Farleys_Gallery_3.jpg" alt="farleys photo" loading="lazy"><img src="images/Farleys_Gallery_4.jpg" alt="farleys photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Farleys_Gallery_1.jpg" alt="farleys photo 1" loading="lazy" class="gallery-img active"><img src="images/Farleys_Gallery_2.jpg" alt="farleys photo 2" loading="lazy" class="gallery-img"><img src="images/Farleys_Gallery_3.jpg" alt="farleys photo 3" loading="lazy" class="gallery-img"><img src="images/Farleys_Gallery_4.jpg" alt="farleys photo 4" loading="lazy" class="gallery-img"><img src="images/Farleys_Gallery_5.jpg" alt="farleys photo 5" loading="lazy" class="gallery-img"><img src="images/Farleys_Gallery_6.jpg" alt="farleys photo 6" loading="lazy" class="gallery-img"><img src="images/Farleys_Gallery_7.jpg" alt="farleys photo 7" loading="lazy" class="gallery-img"><img src="images/Farleys_Gallery_8.jpg" alt="farleys photo 8" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 8</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -1784,12 +2032,12 @@
     <div class="added">Added 2026-07-05</div>
   </section>
 
-  <section class="card" id="bellstreet" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="bellstreet" data-avg-rating="" data-ai-rating="5" data-overall-rating="5.00" data-bro3-rating="">
     <h2>3 Bell Street, Otterton</h2>
     <div class="price-row">
       <span class="price">£220,000</span>
-      <span class="agent">Pennys, Exmouth</span>
     </div>
+    <div class="beds-baths">🛏 2 beds</div>
     <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/bell-street/2-bedroom-terraced-for-sale-in-bell-street-ex9-7hs/270110" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -1825,9 +2073,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span></div>
+    <div class="parking-block"><strong>🅿️ On-street parking only</strong><span class="parking-note"> — On-street parking only, in the same village as the Otterton thatched cottage.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Bell_Street_Otterton.jpg" alt="bellstreet main photo" loading="lazy"></div>
-    
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/BellStreet_Gallery_1.jpg" alt="bellstreet photo 1" loading="lazy" class="gallery-img active"><img src="images/BellStreet_Gallery_2.jpg" alt="bellstreet photo 2" loading="lazy" class="gallery-img"><img src="images/BellStreet_Gallery_3.jpg" alt="bellstreet photo 3" loading="lazy" class="gallery-img"><img src="images/BellStreet_Gallery_4.jpg" alt="bellstreet photo 4" loading="lazy" class="gallery-img"><img src="images/BellStreet_Gallery_5.jpg" alt="bellstreet photo 5" loading="lazy" class="gallery-img"><img src="images/BellStreet_Gallery_6.jpg" alt="bellstreet photo 6" loading="lazy" class="gallery-img"><img src="images/BellStreet_Gallery_7.jpg" alt="bellstreet photo 7" loading="lazy" class="gallery-img"><img src="images/BellStreet_Gallery_8.jpg" alt="bellstreet photo 8" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 8</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -1931,12 +2187,12 @@
     <div class="added">Added 2026-07-05</div>
   </section>
 
-  <section class="card" id="flexton" data-avg-rating="" data-ai-rating="4">
+  <section class="card" id="flexton" data-avg-rating="" data-ai-rating="4" data-overall-rating="4.00" data-bro3-rating="">
     <h2>The Flexton, Ottery St Mary</h2>
     <div class="price-row">
       <span class="price">Guide Price £220,000</span>
-      <span class="agent">Hall &amp; Scott, Ottery St Mary</span>
     </div>
+    <div class="beds-baths">🛏 3 beds &nbsp;·&nbsp; 🛁 1 bath</div>
     <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSOTT_708139" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -1972,9 +2228,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Courtyard access described sounds pedestrian-only; parking isn't mentioned and seems unlikely given the access description.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/The_Flexton_Ottery.jpg" alt="flexton main photo" loading="lazy"></div>
-    
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Flexton_Gallery_1.jpg" alt="flexton photo 1" loading="lazy" class="gallery-img active"><img src="images/Flexton_Gallery_2.jpg" alt="flexton photo 2" loading="lazy" class="gallery-img"><img src="images/Flexton_Gallery_3.jpg" alt="flexton photo 3" loading="lazy" class="gallery-img"><img src="images/Flexton_Gallery_4.jpg" alt="flexton photo 4" loading="lazy" class="gallery-img"><img src="images/Flexton_Gallery_5.jpg" alt="flexton photo 5" loading="lazy" class="gallery-img"><img src="images/Flexton_Gallery_6.jpg" alt="flexton photo 6" loading="lazy" class="gallery-img"><img src="images/Flexton_Gallery_7.jpg" alt="flexton photo 7" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 7</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -2078,12 +2342,12 @@
     <div class="added">Added 2026-07-05</div>
   </section>
 
-  <section class="card" id="beaconflat" data-avg-rating="7.00" data-ai-rating="4">
+  <section class="card" id="beaconflat" data-avg-rating="7.00" data-ai-rating="4" data-overall-rating="6.00" data-bro3-rating="7">
     <h2>The Beacon, Exmouth (ground-floor flat)</h2>
     <div class="price-row">
       <span class="price">£309,950</span>
-      <span class="agent">Pennys, Exmouth</span>
     </div>
+    <div class="beds-baths">🛏 2 beds &nbsp;·&nbsp; 🛁 1 bath</div>
     <a class="source-badge" href="https://www.pennys.net/for-sale/exmouth/the-beacon/2-bedroom-groundfloorflat-for-sale-in-the-beacon-ex8-2ag/270212" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -2120,9 +2384,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET (+£9,950)</span><span class="flag" style="background:#1565C0">HAS PARKING</span><span class="flag" style="background:#5D4037">GROUND FLOOR</span></div>
+    <div class="parking-block"><strong>🅿️ Has parking</strong><span class="parking-note"> — A secure allocated parking space (up-and-over door) is included at the rear — a real space, not just street parking.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Beacon_Flat_Exmouth.jpg" alt="beaconflat main photo" loading="lazy"></div>
-    
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/BeaconFlat_Gallery_1.jpg" alt="beaconflat photo 1" loading="lazy" class="gallery-img active"><img src="images/BeaconFlat_Gallery_2.jpg" alt="beaconflat photo 2" loading="lazy" class="gallery-img"><img src="images/BeaconFlat_Gallery_3.jpg" alt="beaconflat photo 3" loading="lazy" class="gallery-img"><img src="images/BeaconFlat_Gallery_4.jpg" alt="beaconflat photo 4" loading="lazy" class="gallery-img"><img src="images/BeaconFlat_Gallery_5.jpg" alt="beaconflat photo 5" loading="lazy" class="gallery-img"><img src="images/BeaconFlat_Gallery_6.jpg" alt="beaconflat photo 6" loading="lazy" class="gallery-img"><img src="images/BeaconFlat_Gallery_7.jpg" alt="beaconflat photo 7" loading="lazy" class="gallery-img"><img src="images/BeaconFlat_Gallery_8.jpg" alt="beaconflat photo 8" loading="lazy" class="gallery-img"><img src="images/BeaconFlat_Gallery_9.jpg" alt="beaconflat photo 9" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 9</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -2226,12 +2498,12 @@
     <div class="added">Added 2026-07-05</div>
   </section>
 
-  <section class="card" id="cranford" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="cranford" data-avg-rating="" data-ai-rating="5" data-overall-rating="5.00" data-bro3-rating="">
     <h2>Cranford Avenue, Exmouth (ground-floor flat)</h2>
     <div class="price-row">
       <span class="price">£250,000</span>
-      <span class="agent">Hall &amp; Scott, Exmouth</span>
     </div>
+    <div class="beds-baths">🛏 2 beds</div>
     <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_708054" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -2267,9 +2539,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#9E9E9E">PARKING UNKNOWN</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Not mentioned in the listing either way.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Cranford_Avenue_Exmouth.jpg" alt="cranford main photo" loading="lazy"></div>
-    
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Cranford_Gallery_1.jpg" alt="cranford photo 1" loading="lazy" class="gallery-img active"><img src="images/Cranford_Gallery_2.jpg" alt="cranford photo 2" loading="lazy" class="gallery-img"><img src="images/Cranford_Gallery_3.jpg" alt="cranford photo 3" loading="lazy" class="gallery-img"><img src="images/Cranford_Gallery_4.jpg" alt="cranford photo 4" loading="lazy" class="gallery-img"><img src="images/Cranford_Gallery_5.jpg" alt="cranford photo 5" loading="lazy" class="gallery-img"><img src="images/Cranford_Gallery_6.jpg" alt="cranford photo 6" loading="lazy" class="gallery-img"><img src="images/Cranford_Gallery_7.jpg" alt="cranford photo 7" loading="lazy" class="gallery-img"><img src="images/Cranford_Gallery_8.jpg" alt="cranford photo 8" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 8</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -2373,12 +2653,12 @@
     <div class="added">Added 2026-07-05</div>
   </section>
 
-  <section class="card" id="otterton" data-avg-rating="" data-ai-rating="6">
+  <section class="card" id="otterton" data-avg-rating="" data-ai-rating="6" data-overall-rating="6.00" data-bro3-rating="">
     <h2>Thatched Cottage, The Green, Otterton</h2>
     <div class="price-row">
       <span class="price">£225,000 (guide price)</span>
-      <span class="agent">Rightmove listing</span>
     </div>
+    <div class="beds-baths">🛏 3 beds</div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/174232565" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -2414,9 +2694,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#C2185B">LIKED BY JESSE</span><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Village-centre position; on-street parking is the practical reality even though the listing doesn't confirm it explicitly.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Otterton_Gallery_1.jpg" alt="otterton main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Otterton_Gallery_2.jpg" alt="otterton photo" loading="lazy"><img src="images/Otterton_Gallery_3.jpg" alt="otterton photo" loading="lazy"><img src="images/Otterton_Gallery_4.jpg" alt="otterton photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Otterton_Gallery_1.jpg" alt="otterton photo 1" loading="lazy" class="gallery-img active"><img src="images/Otterton_Gallery_2.jpg" alt="otterton photo 2" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_3.jpg" alt="otterton photo 3" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_4.jpg" alt="otterton photo 4" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_5.jpg" alt="otterton photo 5" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_6.jpg" alt="otterton photo 6" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_7.jpg" alt="otterton photo 7" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_8.jpg" alt="otterton photo 8" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_9.jpg" alt="otterton photo 9" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_10.jpg" alt="otterton photo 10" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_11.jpg" alt="otterton photo 11" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_12.jpg" alt="otterton photo 12" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_13.jpg" alt="otterton photo 13" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_14.jpg" alt="otterton photo 14" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_15.jpg" alt="otterton photo 15" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_16.jpg" alt="otterton photo 16" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_17.jpg" alt="otterton photo 17" loading="lazy" class="gallery-img"><img src="images/Otterton_Gallery_18.jpg" alt="otterton photo 18" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 18</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -2520,12 +2808,12 @@
     <div class="added">Added 2026-07-04</div>
   </section>
 
-  <section class="card" id="feniton" data-avg-rating="" data-ai-rating="8">
+  <section class="card" id="feniton" data-avg-rating="" data-ai-rating="8" data-overall-rating="8.00" data-bro3-rating="">
     <h2>Barn at Whites Cottages, Feniton — AUCTION</h2>
     <div class="price-row">
       <span class="price">£65,000 (guide price)</span>
-      <span class="agent">Hall &amp; Scott, Ottery St Mary</span>
     </div>
+    
     <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSOTT_708623" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -2561,9 +2849,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#E65100">AUCTION 23 JUL 2026</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
+    <div class="parking-block"><strong>🅿️ Has parking</strong><span class="parking-note"> — Parking is included in the already-granted planning permission for the converted dwelling.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Feniton_Barn.jpg" alt="feniton main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Feniton_Gallery_2.jpg" alt="feniton photo" loading="lazy"><img src="images/Feniton_Gallery_3.jpg" alt="feniton photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Feniton_Gallery_1.jpg" alt="feniton photo 1" loading="lazy" class="gallery-img active"><img src="images/Feniton_Gallery_2.jpg" alt="feniton photo 2" loading="lazy" class="gallery-img"><img src="images/Feniton_Gallery_3.jpg" alt="feniton photo 3" loading="lazy" class="gallery-img"><img src="images/Feniton_Gallery_4.jpg" alt="feniton photo 4" loading="lazy" class="gallery-img"><img src="images/Feniton_Gallery_5.jpg" alt="feniton photo 5" loading="lazy" class="gallery-img"><img src="images/Feniton_Gallery_6.jpg" alt="feniton photo 6" loading="lazy" class="gallery-img"><img src="images/Feniton_Gallery_7.jpg" alt="feniton photo 7" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 7</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -2667,12 +2963,12 @@
     <div class="added">Added 2026-07-04</div>
   </section>
 
-  <section class="card" id="douglas" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="douglas" data-avg-rating="" data-ai-rating="5" data-overall-rating="5.00" data-bro3-rating="">
     <h2>Douglas Avenue, Exmouth</h2>
     <div class="price-row">
       <span class="price">£235,000</span>
-      <span class="agent">Hall &amp; Scott</span>
     </div>
+    <div class="beds-baths">🛏 2 beds</div>
     <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_697185" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -2708,9 +3004,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#1565C0">HAS PARKING</span></div>
+    <div class="parking-block"><strong>🅿️ Has parking</strong><span class="parking-note"> — Allocated parking confirmed in the listing.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Douglas_Avenue__Exmouth_2.jpg" alt="douglas main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Douglas_Gallery_2.jpg" alt="douglas photo" loading="lazy"><img src="images/Douglas_Gallery_3.jpg" alt="douglas photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Douglas_Gallery_1.jpg" alt="douglas photo 1" loading="lazy" class="gallery-img active"><img src="images/Douglas_Gallery_2.jpg" alt="douglas photo 2" loading="lazy" class="gallery-img"><img src="images/Douglas_Gallery_3.jpg" alt="douglas photo 3" loading="lazy" class="gallery-img"><img src="images/Douglas_Gallery_4.jpg" alt="douglas photo 4" loading="lazy" class="gallery-img"><img src="images/Douglas_Gallery_5.jpg" alt="douglas photo 5" loading="lazy" class="gallery-img"><img src="images/Douglas_Gallery_6.jpg" alt="douglas photo 6" loading="lazy" class="gallery-img"><img src="images/Douglas_Gallery_7.jpg" alt="douglas photo 7" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 7</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -2814,12 +3118,12 @@
     <div class="added">Added 2026-07-03</div>
   </section>
 
-  <section class="card" id="greenwaywoodbury" data-avg-rating="" data-ai-rating="6">
+  <section class="card" id="greenwaywoodbury" data-avg-rating="" data-ai-rating="6" data-overall-rating="6.00" data-bro3-rating="">
     <h2>Greenway, Woodbury (character cottage)</h2>
     <div class="price-row">
       <span class="price">£265,000</span>
-      <span class="agent">Samuels Estate Agents, Exeter</span>
     </div>
+    <div class="beds-baths">🛏 2 beds</div>
     <a class="source-badge" href="https://www.onthemarket.com/details/17798644/" target="_blank" rel="noopener">View on ONTHEMARKET.COM ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -2855,9 +3159,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Pedestrianised position in the village centre makes off-street parking unlikely, though the listing doesn't confirm either way.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Greenway_Gallery_1.jpg" alt="greenwaywoodbury main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Greenway_Gallery_2.jpg" alt="greenwaywoodbury photo" loading="lazy"><img src="images/Greenway_Gallery_3.jpg" alt="greenwaywoodbury photo" loading="lazy"><img src="images/Greenway_Gallery_4.jpg" alt="greenwaywoodbury photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Greenway_Gallery_1.jpg" alt="greenwaywoodbury photo 1" loading="lazy" class="gallery-img active"><img src="images/Greenway_Gallery_2.jpg" alt="greenwaywoodbury photo 2" loading="lazy" class="gallery-img"><img src="images/Greenway_Gallery_3.jpg" alt="greenwaywoodbury photo 3" loading="lazy" class="gallery-img"><img src="images/Greenway_Gallery_4.jpg" alt="greenwaywoodbury photo 4" loading="lazy" class="gallery-img"><img src="images/Greenway_Gallery_5.jpg" alt="greenwaywoodbury photo 5" loading="lazy" class="gallery-img"><img src="images/Greenway_Gallery_6.jpg" alt="greenwaywoodbury photo 6" loading="lazy" class="gallery-img"><img src="images/Greenway_Gallery_7.jpg" alt="greenwaywoodbury photo 7" loading="lazy" class="gallery-img"><img src="images/Greenway_Gallery_8.jpg" alt="greenwaywoodbury photo 8" loading="lazy" class="gallery-img"><img src="images/Greenway_Gallery_9.jpg" alt="greenwaywoodbury photo 9" loading="lazy" class="gallery-img"><img src="images/Greenway_Gallery_10.jpg" alt="greenwaywoodbury photo 10" loading="lazy" class="gallery-img"><img src="images/Greenway_Gallery_11.jpg" alt="greenwaywoodbury photo 11" loading="lazy" class="gallery-img"><img src="images/Greenway_Gallery_12.jpg" alt="greenwaywoodbury photo 12" loading="lazy" class="gallery-img"><img src="images/Greenway_Gallery_13.jpg" alt="greenwaywoodbury photo 13" loading="lazy" class="gallery-img"><img src="images/Greenway_Gallery_14.jpg" alt="greenwaywoodbury photo 14" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 14</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -2961,12 +3273,12 @@
     <div class="added">Added 2026-07-08</div>
   </section>
 
-  <section class="card" id="townlanewoodbury" data-avg-rating="" data-ai-rating="6">
+  <section class="card" id="townlanewoodbury" data-avg-rating="" data-ai-rating="6" data-overall-rating="6.00" data-bro3-rating="">
     <h2>Town Lane, Woodbury (period cottage)</h2>
     <div class="price-row">
       <span class="price">Offers Over £280,000</span>
-      <span class="agent">Village agent, Woodbury</span>
     </div>
+    <div class="beds-baths">🛏 3 beds</div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/166444475" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -3002,9 +3314,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Not confirmed either way.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/TownLane_1.jpeg" alt="townlanewoodbury main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/TownLane_2.jpeg" alt="townlanewoodbury photo" loading="lazy"><img src="images/TownLane_3.jpeg" alt="townlanewoodbury photo" loading="lazy"><img src="images/TownLane_4.jpeg" alt="townlanewoodbury photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/TownLane_Gallery_1.jpg" alt="townlanewoodbury photo 1" loading="lazy" class="gallery-img active"><img src="images/TownLane_Gallery_2.jpg" alt="townlanewoodbury photo 2" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_3.jpg" alt="townlanewoodbury photo 3" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_4.jpg" alt="townlanewoodbury photo 4" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_5.jpg" alt="townlanewoodbury photo 5" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_6.jpg" alt="townlanewoodbury photo 6" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_7.jpg" alt="townlanewoodbury photo 7" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_8.jpg" alt="townlanewoodbury photo 8" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_9.jpg" alt="townlanewoodbury photo 9" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_10.jpg" alt="townlanewoodbury photo 10" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_11.jpg" alt="townlanewoodbury photo 11" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_12.jpg" alt="townlanewoodbury photo 12" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_13.jpg" alt="townlanewoodbury photo 13" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_14.jpg" alt="townlanewoodbury photo 14" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_15.jpg" alt="townlanewoodbury photo 15" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_16.jpg" alt="townlanewoodbury photo 16" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_17.jpg" alt="townlanewoodbury photo 17" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_18.jpg" alt="townlanewoodbury photo 18" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_19.jpg" alt="townlanewoodbury photo 19" loading="lazy" class="gallery-img"><img src="images/TownLane_Gallery_20.jpg" alt="townlanewoodbury photo 20" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 20</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -3108,12 +3428,12 @@
     <div class="added">Added 2026-07-09</div>
   </section>
 
-  <section class="card" id="woodburyconservation" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="woodburyconservation" data-avg-rating="" data-ai-rating="5" data-overall-rating="5.00" data-bro3-rating="">
     <h2>Woodbury (Conservation Area cottage)</h2>
     <div class="price-row">
       <span class="price">Guide Price £279,950</span>
-      <span class="agent">Rightmove listing</span>
     </div>
+    <div class="beds-baths">🛏 2 beds</div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/88785042" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -3149,9 +3469,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Not confirmed either way; only a courtyard garden is mentioned.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/WoodburyCottage_1.jpeg" alt="woodburyconservation main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/WoodburyCottage_2.jpeg" alt="woodburyconservation photo" loading="lazy"><img src="images/WoodburyCottage_3.jpeg" alt="woodburyconservation photo" loading="lazy"><img src="images/WoodburyCottage_4.jpeg" alt="woodburyconservation photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/WoodburyCottage_Gallery_1.jpg" alt="woodburyconservation photo 1" loading="lazy" class="gallery-img active"><img src="images/WoodburyCottage_Gallery_2.jpg" alt="woodburyconservation photo 2" loading="lazy" class="gallery-img"><img src="images/WoodburyCottage_Gallery_3.jpg" alt="woodburyconservation photo 3" loading="lazy" class="gallery-img"><img src="images/WoodburyCottage_Gallery_4.jpg" alt="woodburyconservation photo 4" loading="lazy" class="gallery-img"><img src="images/WoodburyCottage_Gallery_5.jpg" alt="woodburyconservation photo 5" loading="lazy" class="gallery-img"><img src="images/WoodburyCottage_Gallery_6.jpg" alt="woodburyconservation photo 6" loading="lazy" class="gallery-img"><img src="images/WoodburyCottage_Gallery_7.jpg" alt="woodburyconservation photo 7" loading="lazy" class="gallery-img"><img src="images/WoodburyCottage_Gallery_8.jpg" alt="woodburyconservation photo 8" loading="lazy" class="gallery-img"><img src="images/WoodburyCottage_Gallery_9.jpg" alt="woodburyconservation photo 9" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 9</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -3255,12 +3583,12 @@
     <div class="added">Added 2026-07-09</div>
   </section>
 
-  <section class="card" id="queenstreetbudleigh" data-avg-rating="" data-ai-rating="6">
+  <section class="card" id="queenstreetbudleigh" data-avg-rating="" data-ai-rating="6" data-overall-rating="6.00" data-bro3-rating="">
     <h2>Queen Street, Budleigh Salterton (former fisherman's cottage)</h2>
     <div class="price-row">
       <span class="price">£280,000</span>
-      <span class="agent">Hall &amp; Scott / David Rhys (dual-listed)</span>
     </div>
+    <div class="beds-baths">🛏 2 beds &nbsp;·&nbsp; 🛁 2 baths</div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/173444597" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -3296,9 +3624,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span></div>
+    <div class="parking-block"><strong>🅿️ On-street parking only</strong><span class="parking-note"> — On-street parking only; walking distance to the high street and beach instead.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/QueenStreet_1.jpeg" alt="queenstreetbudleigh main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/QueenStreet_2.jpeg" alt="queenstreetbudleigh photo" loading="lazy"><img src="images/QueenStreet_3.jpeg" alt="queenstreetbudleigh photo" loading="lazy"><img src="images/QueenStreet_4.jpeg" alt="queenstreetbudleigh photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/QueenStreet_Gallery_1.jpg" alt="queenstreetbudleigh photo 1" loading="lazy" class="gallery-img active"><img src="images/QueenStreet_Gallery_2.jpg" alt="queenstreetbudleigh photo 2" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_3.jpg" alt="queenstreetbudleigh photo 3" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_4.jpg" alt="queenstreetbudleigh photo 4" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_5.jpg" alt="queenstreetbudleigh photo 5" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_6.jpg" alt="queenstreetbudleigh photo 6" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_7.jpg" alt="queenstreetbudleigh photo 7" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_8.jpg" alt="queenstreetbudleigh photo 8" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_9.jpg" alt="queenstreetbudleigh photo 9" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_10.jpg" alt="queenstreetbudleigh photo 10" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_11.jpg" alt="queenstreetbudleigh photo 11" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_12.jpg" alt="queenstreetbudleigh photo 12" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_13.jpg" alt="queenstreetbudleigh photo 13" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_14.jpg" alt="queenstreetbudleigh photo 14" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_15.jpg" alt="queenstreetbudleigh photo 15" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_16.jpg" alt="queenstreetbudleigh photo 16" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_17.jpg" alt="queenstreetbudleigh photo 17" loading="lazy" class="gallery-img"><img src="images/QueenStreet_Gallery_18.jpg" alt="queenstreetbudleigh photo 18" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 18</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -3402,12 +3738,12 @@
     <div class="added">Added 2026-07-09</div>
   </section>
 
-  <section class="card" id="longbrooklympstone" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="longbrooklympstone" data-avg-rating="" data-ai-rating="5" data-overall-rating="5.00" data-bro3-rating="">
     <h2>Longbrook Lane, Lympstone (fixer-upper)</h2>
     <div class="price-row">
       <span class="price">Guide Price £240,000</span>
-      <span class="agent">Rightmove listing</span>
     </div>
+    <div class="beds-baths">🛏 2 beds</div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/90454254" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -3443,9 +3779,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#8D6E63">NEEDS MODERNISATION THROUGHOUT</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Not confirmed either way; a paved courtyard is mentioned but no parking.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Longbrook_1.jpeg" alt="longbrooklympstone main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Longbrook_2.jpeg" alt="longbrooklympstone photo" loading="lazy"><img src="images/Longbrook_3.jpeg" alt="longbrooklympstone photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Longbrook_Gallery_1.jpg" alt="longbrooklympstone photo 1" loading="lazy" class="gallery-img active"><img src="images/Longbrook_Gallery_2.jpg" alt="longbrooklympstone photo 2" loading="lazy" class="gallery-img"><img src="images/Longbrook_Gallery_3.jpg" alt="longbrooklympstone photo 3" loading="lazy" class="gallery-img"><img src="images/Longbrook_Gallery_4.jpg" alt="longbrooklympstone photo 4" loading="lazy" class="gallery-img"><img src="images/Longbrook_Gallery_5.jpg" alt="longbrooklympstone photo 5" loading="lazy" class="gallery-img"><img src="images/Longbrook_Gallery_6.jpg" alt="longbrooklympstone photo 6" loading="lazy" class="gallery-img"><img src="images/Longbrook_Gallery_7.jpg" alt="longbrooklympstone photo 7" loading="lazy" class="gallery-img"><img src="images/Longbrook_Gallery_8.jpg" alt="longbrooklympstone photo 8" loading="lazy" class="gallery-img"><img src="images/Longbrook_Gallery_9.jpg" alt="longbrooklympstone photo 9" loading="lazy" class="gallery-img"><img src="images/Longbrook_Gallery_10.jpg" alt="longbrooklympstone photo 10" loading="lazy" class="gallery-img"><img src="images/Longbrook_Gallery_11.jpg" alt="longbrooklympstone photo 11" loading="lazy" class="gallery-img"><img src="images/Longbrook_Gallery_12.jpg" alt="longbrooklympstone photo 12" loading="lazy" class="gallery-img"><img src="images/Longbrook_Gallery_13.jpg" alt="longbrooklympstone photo 13" loading="lazy" class="gallery-img"><img src="images/Longbrook_Gallery_14.jpg" alt="longbrooklympstone photo 14" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 14</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -3549,12 +3893,12 @@
     <div class="added">Added 2026-07-09</div>
   </section>
 
-  <section class="card" id="allsaintseastbudleigh" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="allsaintseastbudleigh" data-avg-rating="" data-ai-rating="5" data-overall-rating="5.00" data-bro3-rating="">
     <h2>All Saints Close, East Budleigh (modern terrace)</h2>
     <div class="price-row">
       <span class="price">£290,000</span>
-      <span class="agent">Rightmove listing</span>
     </div>
+    <div class="beds-baths">🛏 3 beds</div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/172719284" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -3590,9 +3934,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#1565C0">HAS PARKING (allocated + visitor space)</span></div>
+    <div class="parking-block"><strong>🅿️ Has parking</strong><span class="parking-note"> — Allocated off-street parking plus a visitor space.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/AllSaints_1.jpeg" alt="allsaintseastbudleigh main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/AllSaints_2.jpeg" alt="allsaintseastbudleigh photo" loading="lazy"><img src="images/AllSaints_3.jpeg" alt="allsaintseastbudleigh photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/AllSaints_Gallery_1.jpg" alt="allsaintseastbudleigh photo 1" loading="lazy" class="gallery-img active"><img src="images/AllSaints_Gallery_2.jpg" alt="allsaintseastbudleigh photo 2" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_3.jpg" alt="allsaintseastbudleigh photo 3" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_4.jpg" alt="allsaintseastbudleigh photo 4" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_5.jpg" alt="allsaintseastbudleigh photo 5" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_6.jpg" alt="allsaintseastbudleigh photo 6" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_7.jpg" alt="allsaintseastbudleigh photo 7" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_8.jpg" alt="allsaintseastbudleigh photo 8" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_9.jpg" alt="allsaintseastbudleigh photo 9" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_10.jpg" alt="allsaintseastbudleigh photo 10" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_11.jpg" alt="allsaintseastbudleigh photo 11" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_12.jpg" alt="allsaintseastbudleigh photo 12" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_13.jpg" alt="allsaintseastbudleigh photo 13" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_14.jpg" alt="allsaintseastbudleigh photo 14" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_15.jpg" alt="allsaintseastbudleigh photo 15" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_16.jpg" alt="allsaintseastbudleigh photo 16" loading="lazy" class="gallery-img"><img src="images/AllSaints_Gallery_17.jpg" alt="allsaintseastbudleigh photo 17" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 17</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -3696,12 +4048,12 @@
     <div class="added">Added 2026-07-09</div>
   </section>
 
-  <section class="card" id="vansittartexmouth" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="vansittartexmouth" data-avg-rating="" data-ai-rating="5" data-overall-rating="5.00" data-bro3-rating="">
     <h2>Vansittart Drive, Exmouth</h2>
     <div class="price-row">
       <span class="price">£249,950</span>
-      <span class="agent">Rightmove listing</span>
     </div>
+    <div class="beds-baths">🛏 2 beds</div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/89475438" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -3737,9 +4089,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#1565C0">HAS PARKING (garage in nearby block)</span></div>
+    <div class="parking-block"><strong>🅿️ Has parking</strong><span class="parking-note"> — A real garage in a nearby block — not just a maybe.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Vansittart_1.jpeg" alt="vansittartexmouth main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Vansittart_2.jpeg" alt="vansittartexmouth photo" loading="lazy"><img src="images/Vansittart_3.jpeg" alt="vansittartexmouth photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Vansittart_Gallery_1.jpg" alt="vansittartexmouth photo 1" loading="lazy" class="gallery-img active"><img src="images/Vansittart_Gallery_2.jpg" alt="vansittartexmouth photo 2" loading="lazy" class="gallery-img"><img src="images/Vansittart_Gallery_3.jpg" alt="vansittartexmouth photo 3" loading="lazy" class="gallery-img"><img src="images/Vansittart_Gallery_4.jpg" alt="vansittartexmouth photo 4" loading="lazy" class="gallery-img"><img src="images/Vansittart_Gallery_5.jpg" alt="vansittartexmouth photo 5" loading="lazy" class="gallery-img"><img src="images/Vansittart_Gallery_6.jpg" alt="vansittartexmouth photo 6" loading="lazy" class="gallery-img"><img src="images/Vansittart_Gallery_7.jpg" alt="vansittartexmouth photo 7" loading="lazy" class="gallery-img"><img src="images/Vansittart_Gallery_8.jpg" alt="vansittartexmouth photo 8" loading="lazy" class="gallery-img"><img src="images/Vansittart_Gallery_9.jpg" alt="vansittartexmouth photo 9" loading="lazy" class="gallery-img"><img src="images/Vansittart_Gallery_10.jpg" alt="vansittartexmouth photo 10" loading="lazy" class="gallery-img"><img src="images/Vansittart_Gallery_11.jpg" alt="vansittartexmouth photo 11" loading="lazy" class="gallery-img"><img src="images/Vansittart_Gallery_12.jpg" alt="vansittartexmouth photo 12" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 12</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -3843,12 +4203,12 @@
     <div class="added">Added 2026-07-09</div>
   </section>
 
-  <section class="card" id="normancrescentbudleigh" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="normancrescentbudleigh" data-avg-rating="" data-ai-rating="5" data-overall-rating="5.00" data-bro3-rating="">
     <h2>Norman Crescent, Budleigh Salterton</h2>
     <div class="price-row">
       <span class="price">Guide Price £289,950</span>
-      <span class="agent">Rightmove listing</span>
     </div>
+    <div class="beds-baths">🛏 2 beds &nbsp;·&nbsp; 🛁 2 baths</div>
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/90486738" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -3884,9 +4244,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#1565C0">HAS PARKING (allocated, off-road, behind property)</span></div>
+    <div class="parking-block"><strong>🅿️ Has parking</strong><span class="parking-note"> — Allocated off-road parking directly behind the property.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/NormanCrescent_1.jpeg" alt="normancrescentbudleigh main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/NormanCrescent_2.jpeg" alt="normancrescentbudleigh photo" loading="lazy"><img src="images/NormanCrescent_3.jpeg" alt="normancrescentbudleigh photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/NormanCrescent_Gallery_1.jpg" alt="normancrescentbudleigh photo 1" loading="lazy" class="gallery-img active"><img src="images/NormanCrescent_Gallery_2.jpg" alt="normancrescentbudleigh photo 2" loading="lazy" class="gallery-img"><img src="images/NormanCrescent_Gallery_3.jpg" alt="normancrescentbudleigh photo 3" loading="lazy" class="gallery-img"><img src="images/NormanCrescent_Gallery_4.jpg" alt="normancrescentbudleigh photo 4" loading="lazy" class="gallery-img"><img src="images/NormanCrescent_Gallery_5.jpg" alt="normancrescentbudleigh photo 5" loading="lazy" class="gallery-img"><img src="images/NormanCrescent_Gallery_6.jpg" alt="normancrescentbudleigh photo 6" loading="lazy" class="gallery-img"><img src="images/NormanCrescent_Gallery_7.jpg" alt="normancrescentbudleigh photo 7" loading="lazy" class="gallery-img"><img src="images/NormanCrescent_Gallery_8.jpg" alt="normancrescentbudleigh photo 8" loading="lazy" class="gallery-img"><img src="images/NormanCrescent_Gallery_9.jpg" alt="normancrescentbudleigh photo 9" loading="lazy" class="gallery-img"><img src="images/NormanCrescent_Gallery_10.jpg" alt="normancrescentbudleigh photo 10" loading="lazy" class="gallery-img"><img src="images/NormanCrescent_Gallery_11.jpg" alt="normancrescentbudleigh photo 11" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 11</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -3990,12 +4358,12 @@
     <div class="added">Added 2026-07-09</div>
   </section>
 
-  <section class="card" id="horseshoebarnknowle" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="horseshoebarnknowle" data-avg-rating="" data-ai-rating="5" data-overall-rating="5.00" data-bro3-rating="">
     <h2>Horseshoe Barn, Knowle (near Crediton — stone barn conversion)</h2>
     <div class="price-row">
       <span class="price">£275,000</span>
-      <span class="agent">Helmores, Crediton</span>
     </div>
+    <div class="beds-baths">🛏 2 beds</div>
     <a class="source-badge" href="https://helmores.com/property/2-bed-barn-conversion-for-sale-in-knowle-crediton/701288" target="_blank" rel="noopener">View on HELMORES.COM ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -4031,9 +4399,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#1565C0">HAS PARKING (off-street + double car port)</span><span class="flag" style="background:#616161">INLAND — ~30-40 MIN FROM COAST</span></div>
+    <div class="parking-block"><strong>🅿️ Has parking</strong><span class="parking-note"> — Off-street parking plus a double open-fronted car port — the best parking/character combination of the sweep, offset by the inland location.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/HorseshoeBarn_1.jpeg" alt="horseshoebarnknowle main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/HorseshoeBarn_2.jpg" alt="horseshoebarnknowle photo" loading="lazy"><img src="images/HorseshoeBarn_3.jpg" alt="horseshoebarnknowle photo" loading="lazy"><img src="images/HorseshoeBarn_4.jpg" alt="horseshoebarnknowle photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/HorseshoeBarn_Gallery_1.jpg" alt="horseshoebarnknowle photo 1" loading="lazy" class="gallery-img active"><img src="images/HorseshoeBarn_Gallery_2.jpg" alt="horseshoebarnknowle photo 2" loading="lazy" class="gallery-img"><img src="images/HorseshoeBarn_Gallery_3.jpg" alt="horseshoebarnknowle photo 3" loading="lazy" class="gallery-img"><img src="images/HorseshoeBarn_Gallery_4.jpg" alt="horseshoebarnknowle photo 4" loading="lazy" class="gallery-img"><img src="images/HorseshoeBarn_Gallery_5.jpg" alt="horseshoebarnknowle photo 5" loading="lazy" class="gallery-img"><img src="images/HorseshoeBarn_Gallery_6.jpg" alt="horseshoebarnknowle photo 6" loading="lazy" class="gallery-img"><img src="images/HorseshoeBarn_Gallery_7.jpg" alt="horseshoebarnknowle photo 7" loading="lazy" class="gallery-img"><img src="images/HorseshoeBarn_Gallery_8.jpg" alt="horseshoebarnknowle photo 8" loading="lazy" class="gallery-img"><img src="images/HorseshoeBarn_Gallery_9.jpg" alt="horseshoebarnknowle photo 9" loading="lazy" class="gallery-img"><img src="images/HorseshoeBarn_Gallery_10.jpg" alt="horseshoebarnknowle photo 10" loading="lazy" class="gallery-img"><img src="images/HorseshoeBarn_Gallery_11.jpg" alt="horseshoebarnknowle photo 11" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 11</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -4137,12 +4513,12 @@
     <div class="added">Added 2026-07-09</div>
   </section>
 
-  <section class="card" id="churchstilewoodbury" data-avg-rating="8.00" data-ai-rating="7">
+  <section class="card" id="churchstilewoodbury" data-avg-rating="8.00" data-ai-rating="7" data-overall-rating="7.67" data-bro3-rating="8">
     <h2>Church Stile Lane, Woodbury (Grade II cottage)</h2>
     <div class="price-row">
       <span class="price">£155,000</span>
-      <span class="agent">East of Exe, Topsham</span>
     </div>
+    <div class="beds-baths">🛏 1 bed</div>
     <a class="source-badge" href="https://www.onthemarket.com/details/19822482/" target="_blank" rel="noopener">View on ONTHEMARKET.COM ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -4179,9 +4555,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#757575">ON-STREET PARKING ONLY</span></div>
+    <div class="parking-block"><strong>🅿️ On-street parking only</strong><span class="parking-note"> — Confirmed on-street only by the listing itself, not just an omission — see the research findings below for more on this street specifically.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/ChurchStileWoodbury_Gallery_1.jpg" alt="churchstilewoodbury main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/ChurchStileWoodbury_Gallery_2.jpg" alt="churchstilewoodbury photo" loading="lazy"><img src="images/ChurchStileWoodbury_Gallery_3.jpg" alt="churchstilewoodbury photo" loading="lazy"><img src="images/ChurchStileWoodbury_Gallery_4.jpg" alt="churchstilewoodbury photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/ChurchStileWoodbury_Gallery_1.jpg" alt="churchstilewoodbury photo 1" loading="lazy" class="gallery-img active"><img src="images/ChurchStileWoodbury_Gallery_2.jpg" alt="churchstilewoodbury photo 2" loading="lazy" class="gallery-img"><img src="images/ChurchStileWoodbury_Gallery_3.jpg" alt="churchstilewoodbury photo 3" loading="lazy" class="gallery-img"><img src="images/ChurchStileWoodbury_Gallery_4.jpg" alt="churchstilewoodbury photo 4" loading="lazy" class="gallery-img"><img src="images/ChurchStileWoodbury_Gallery_5.jpg" alt="churchstilewoodbury photo 5" loading="lazy" class="gallery-img"><img src="images/ChurchStileWoodbury_Gallery_6.jpg" alt="churchstilewoodbury photo 6" loading="lazy" class="gallery-img"><img src="images/ChurchStileWoodbury_Gallery_7.jpg" alt="churchstilewoodbury photo 7" loading="lazy" class="gallery-img"><img src="images/ChurchStileWoodbury_Gallery_8.jpg" alt="churchstilewoodbury photo 8" loading="lazy" class="gallery-img"><img src="images/ChurchStileWoodbury_Gallery_9.jpg" alt="churchstilewoodbury photo 9" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 9</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -4296,12 +4680,12 @@
     <div class="added">Added 2026-07-10</div>
   </section>
 <h1 class="section-title">Also On File (background)</h1>
-  <section class="card" id="sidmouth" data-avg-rating="" data-ai-rating="5">
+  <section class="card" id="sidmouth" data-avg-rating="" data-ai-rating="5" data-overall-rating="5.00" data-bro3-rating="">
     <h2>Circular Thatched Cliff-top Cottage, Peak Hill Road, Sidmouth</h2>
     <div class="price-row">
       <span class="price">Guide price £250,000 (auction)</span>
-      <span class="agent">Bradleys Estate Agents</span>
     </div>
+    
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/90027936" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -4337,9 +4721,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#616161">DECLINED BY JESSE — EROSION/INSURANCE RISK</span><span class="flag" style="background:#B71C1C">KNOWN CLIFF EROSION RISK</span><span class="flag" style="background:#E65100">AUCTION 21 JUL 2026, 12pm</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Not specifically checked — a cliff-top position suggests limited space, but this wasn't confirmed either way. Moot given the property was declined for erosion/insurance reasons.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Sidmouth_Gallery_1.jpg" alt="sidmouth main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Sidmouth_Gallery_2.jpg" alt="sidmouth photo" loading="lazy"><img src="images/Sidmouth_Gallery_3.jpg" alt="sidmouth photo" loading="lazy"><img src="images/Sidmouth_Gallery_4.jpg" alt="sidmouth photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Sidmouth_Gallery_1.jpg" alt="sidmouth photo 1" loading="lazy" class="gallery-img active"><img src="images/Sidmouth_Gallery_2.jpg" alt="sidmouth photo 2" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_3.jpg" alt="sidmouth photo 3" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_4.jpg" alt="sidmouth photo 4" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_5.jpg" alt="sidmouth photo 5" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_6.jpg" alt="sidmouth photo 6" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_7.jpg" alt="sidmouth photo 7" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_8.jpg" alt="sidmouth photo 8" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_9.jpg" alt="sidmouth photo 9" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_10.jpg" alt="sidmouth photo 10" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_11.jpg" alt="sidmouth photo 11" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_12.jpg" alt="sidmouth photo 12" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_13.jpg" alt="sidmouth photo 13" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_14.jpg" alt="sidmouth photo 14" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_15.jpg" alt="sidmouth photo 15" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_16.jpg" alt="sidmouth photo 16" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_17.jpg" alt="sidmouth photo 17" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_18.jpg" alt="sidmouth photo 18" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_19.jpg" alt="sidmouth photo 19" loading="lazy" class="gallery-img"><img src="images/Sidmouth_Gallery_20.jpg" alt="sidmouth photo 20" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 20</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -4454,12 +4846,12 @@
     <div class="added">Added 2026-07-03</div>
   </section>
 
-  <section class="card" id="yettington" data-avg-rating="" data-ai-rating="4">
+  <section class="card" id="yettington" data-avg-rating="" data-ai-rating="4" data-overall-rating="4.00" data-bro3-rating="">
     <h2>The Threshing Barn, Yettington</h2>
     <div class="price-row">
       <span class="price">£375,000–£400,000 (guide price)</span>
-      <span class="agent">Wilkinson Grant &amp; Co</span>
     </div>
+    <div class="beds-baths">🛏 2 beds</div>
     <a class="source-badge" href="https://www.exmouthjournal.co.uk/news/24440905.property-sale-near-budleigh-salterton-two-bedroom-house/" target="_blank" rel="noopener">View on EXMOUTHJOURNAL.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -4495,6 +4887,7 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#1565C0">HAS PARKING</span><span class="flag" style="background:#8D6E63">LIKELY SOLD</span></div>
+    <div class="parking-block"><strong>🅿️ Has parking</strong><span class="parking-note"> — Gardens and allocated parking were confirmed in the original listing (property is likely sold).</span></div>
     <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
     
     <div class="map-embed">
@@ -4598,12 +4991,12 @@
     <div class="added">Added 2026-07-04</div>
   </section>
 
-  <section class="card" id="beacon" data-avg-rating="" data-ai-rating="3">
+  <section class="card" id="beacon" data-avg-rating="" data-ai-rating="3" data-overall-rating="3.00" data-bro3-rating="">
     <h2>The Beacon, Exmouth (inspiration only)</h2>
     <div class="price-row">
       <span class="price">Offers over £400,000</span>
-      <span class="agent">Hall &amp; Scott</span>
     </div>
+    
     <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_707936" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -4639,9 +5032,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">NEEDS RENOVATION</span><span class="flag" style="background:#1565C0">HAS PARKING (garage)</span></div>
+    <div class="parking-block"><strong>🅿️ Has parking</strong><span class="parking-note"> — Private garage included.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/The_Beacon__Exmouth_1.jpg" alt="beacon main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/Beacon_Gallery_2.jpg" alt="beacon photo" loading="lazy"><img src="images/Beacon_Gallery_3.jpg" alt="beacon photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Beacon_Gallery_1.jpg" alt="beacon photo 1" loading="lazy" class="gallery-img active"><img src="images/Beacon_Gallery_2.jpg" alt="beacon photo 2" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_3.jpg" alt="beacon photo 3" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_4.jpg" alt="beacon photo 4" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_5.jpg" alt="beacon photo 5" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_6.jpg" alt="beacon photo 6" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_7.jpg" alt="beacon photo 7" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_8.jpg" alt="beacon photo 8" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_9.jpg" alt="beacon photo 9" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_10.jpg" alt="beacon photo 10" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_11.jpg" alt="beacon photo 11" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_12.jpg" alt="beacon photo 12" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_13.jpg" alt="beacon photo 13" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_14.jpg" alt="beacon photo 14" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_15.jpg" alt="beacon photo 15" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_16.jpg" alt="beacon photo 16" loading="lazy" class="gallery-img"><img src="images/Beacon_Gallery_17.jpg" alt="beacon photo 17" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 17</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -4745,12 +5146,12 @@
     <div class="added">Added 2026-07-03</div>
   </section>
 
-  <section class="card" id="withycombe" data-avg-rating="" data-ai-rating="3">
+  <section class="card" id="withycombe" data-avg-rating="" data-ai-rating="3" data-overall-rating="3.00" data-bro3-rating="">
     <h2>Withycombe Village Road, Exmouth (former Methodist Church)</h2>
     <div class="price-row">
       <span class="price">Guide price £350,000 (as of first report, unconfirmed)</span>
-      <span class="agent">Hall &amp; Scott</span>
     </div>
+    
     <a class="source-badge" href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -4786,9 +5187,14 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span><span class="flag" style="background:#8D6E63">LIKELY SOLD/WITHDRAWN</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Not confirmed either way — the specific listing couldn't be relocated this sweep.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Withycombe_Village_Road__Exmouth_3.jpg" alt="withycombe main photo" loading="lazy"></div>
-    
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/Withycombe_Village_Road__Exmouth_3.jpg" alt="withycombe photo 1" loading="lazy" class="gallery-img active">
+        
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -4892,12 +5298,12 @@
     <div class="added">Added 2026-07-03</div>
   </section>
 
-  <section class="card" id="salterton" data-avg-rating="" data-ai-rating="6">
+  <section class="card" id="salterton" data-avg-rating="" data-ai-rating="6" data-overall-rating="6.00" data-bro3-rating="">
     <h2>Salterton Road, Exmouth (ground-floor retirement flat)</h2>
     <div class="price-row">
       <span class="price">£150,000 (as of first report, unconfirmed)</span>
-      <span class="agent">Hall &amp; Scott</span>
     </div>
+    <div class="beds-baths">🛏 2 beds</div>
     <a class="source-badge" href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -4933,6 +5339,7 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span><span class="flag" style="background:#8D6E63">LIKELY SOLD/WITHDRAWN</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Not confirmed either way.</span></div>
     <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
     
     <div class="map-embed">
@@ -5036,12 +5443,12 @@
     <div class="added">Added 2026-07-03</div>
   </section>
 
-  <section class="card" id="eastbudleigh" data-avg-rating="" data-ai-rating="2">
+  <section class="card" id="eastbudleigh" data-avg-rating="" data-ai-rating="2" data-overall-rating="2.00" data-bro3-rating="">
     <h2>Grade II Thatched Cottage, High Street, East Budleigh</h2>
     <div class="price-row">
       <span class="price">£435,000</span>
-      <span class="agent">Pennys</span>
     </div>
+    
     <a class="source-badge" href="https://www.rightmove.co.uk/properties/165338390" target="_blank" rel="noopener">View on RIGHTMOVE.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -5077,9 +5484,14 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#8D6E63">LIKELY SOLD/WITHDRAWN</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Not confirmed either way; listing has since gone (410).</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/East_Budleigh_Cottage.jpg" alt="eastbudleigh main photo" loading="lazy"></div>
-    
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/East_Budleigh_Cottage.jpg" alt="eastbudleigh photo 1" loading="lazy" class="gallery-img active">
+        
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -5183,12 +5595,12 @@
     <div class="added">Added 2026-07-04</div>
   </section>
 
-  <section class="card" id="clinton" data-avg-rating="" data-ai-rating="3">
+  <section class="card" id="clinton" data-avg-rating="" data-ai-rating="3" data-overall-rating="3.00" data-bro3-rating="">
     <h2>Clinton Garage, Budleigh Salterton — AUCTION</h2>
     <div class="price-row">
       <span class="price">£375,000 (guide price)</span>
-      <span class="agent">Meadows / 247 Property Auctions</span>
     </div>
+    
     <a class="source-badge" href="https://www.meadowsea.com/Property-For-Sale-Clinton-Garage-Budleigh-Salterton-pi-MEAD1265.htm" target="_blank" rel="noopener">View on MEADOWSEA.COM ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -5224,9 +5636,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET</span><span class="flag" style="background:#E65100">AUCTION 16 JUL 2026, 12pm</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Not confirmed either way — former commercial garage site, own parking situation unclear.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/Clinton_Garage.jpg" alt="clinton main photo" loading="lazy"></div>
-    
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/ClintonGarage_Gallery_1.jpg" alt="clinton photo 1" loading="lazy" class="gallery-img active"><img src="images/ClintonGarage_Gallery_2.jpg" alt="clinton photo 2" loading="lazy" class="gallery-img"><img src="images/ClintonGarage_Gallery_3.jpg" alt="clinton photo 3" loading="lazy" class="gallery-img"><img src="images/ClintonGarage_Gallery_4.jpg" alt="clinton photo 4" loading="lazy" class="gallery-img"><img src="images/ClintonGarage_Gallery_5.jpg" alt="clinton photo 5" loading="lazy" class="gallery-img"><img src="images/ClintonGarage_Gallery_6.jpg" alt="clinton photo 6" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 6</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -5330,12 +5750,12 @@
     <div class="added">Added 2026-07-04</div>
   </section>
 
-  <section class="card" id="leslie" data-avg-rating="" data-ai-rating="4">
+  <section class="card" id="leslie" data-avg-rating="" data-ai-rating="4" data-overall-rating="4.00" data-bro3-rating="">
     <h2>The Coach House, Leslie Road, Exmouth</h2>
     <div class="price-row">
       <span class="price">£215,000</span>
-      <span class="agent">Pennys</span>
     </div>
+    
     <a class="source-badge" href="https://www.pennys.net/property-search" target="_blank" rel="noopener">View on PENNYS.NET ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -5371,6 +5791,7 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Not confirmed either way — exact listing couldn't be relocated this sweep.</span></div>
     <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
     
     <div class="map-embed">
@@ -5474,12 +5895,12 @@
     <div class="added">Added 2026-07-03</div>
   </section>
 
-  <section class="card" id="longmeadowthatched" data-avg-rating="" data-ai-rating="4">
+  <section class="card" id="longmeadowthatched" data-avg-rating="" data-ai-rating="4" data-overall-rating="4.00" data-bro3-rating="">
     <h2>Longmeadow Road, Lympstone (Grade II thatched cottage — separate from the one-bed cottage already on file)</h2>
     <div class="price-row">
       <span class="price">£445,000</span>
-      <span class="agent">Hall &amp; Scott, Exmouth</span>
     </div>
+    <div class="beds-baths">🛏 2 beds</div>
     <a class="source-badge" href="https://www.hallandscott.co.uk/details/?id=HSEXM_708642" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
     <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
     <div class="rating-row rating-row-overall">
@@ -5515,9 +5936,17 @@
     </div>
   </div>
     <div class="flags"><span class="flag" style="background:#B71C1C">OVER BUDGET (+£145,000 / 48%)</span><span class="flag" style="background:#6A1B9A">GRADE II LISTED, THATCHED</span><span class="flag" style="background:#EF6C00">NO CHAIN</span><span class="flag" style="background:#757575">NO PARKING INFO</span></div>
+    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Not mentioned in the listing either way.</span></div>
     <div class="photos">
-    <div class="photo-main"><img src="images/LongmeadowThatched_Gallery_1.jpg" alt="longmeadowthatched main photo" loading="lazy"></div>
-    <div class="photo-strip"><img src="images/LongmeadowThatched_Gallery_2.jpg" alt="longmeadowthatched photo" loading="lazy"><img src="images/LongmeadowThatched_Gallery_3.jpg" alt="longmeadowthatched photo" loading="lazy"><img src="images/LongmeadowThatched_Gallery_4.jpg" alt="longmeadowthatched photo" loading="lazy"></div>
+    <div class="gallery">
+      <div class="gallery-viewport">
+        <img src="images/LongmeadowThatched_Gallery_1.jpg" alt="longmeadowthatched photo 1" loading="lazy" class="gallery-img active"><img src="images/LongmeadowThatched_Gallery_2.jpg" alt="longmeadowthatched photo 2" loading="lazy" class="gallery-img"><img src="images/LongmeadowThatched_Gallery_3.jpg" alt="longmeadowthatched photo 3" loading="lazy" class="gallery-img"><img src="images/LongmeadowThatched_Gallery_4.jpg" alt="longmeadowthatched photo 4" loading="lazy" class="gallery-img"><img src="images/LongmeadowThatched_Gallery_5.jpg" alt="longmeadowthatched photo 5" loading="lazy" class="gallery-img"><img src="images/LongmeadowThatched_Gallery_6.jpg" alt="longmeadowthatched photo 6" loading="lazy" class="gallery-img"><img src="images/LongmeadowThatched_Gallery_7.jpg" alt="longmeadowthatched photo 7" loading="lazy" class="gallery-img"><img src="images/LongmeadowThatched_Gallery_8.jpg" alt="longmeadowthatched photo 8" loading="lazy" class="gallery-img"><img src="images/LongmeadowThatched_Gallery_9.jpg" alt="longmeadowthatched photo 9" loading="lazy" class="gallery-img"><img src="images/LongmeadowThatched_Gallery_10.jpg" alt="longmeadowthatched photo 10" loading="lazy" class="gallery-img"><img src="images/LongmeadowThatched_Gallery_11.jpg" alt="longmeadowthatched photo 11" loading="lazy" class="gallery-img"><img src="images/LongmeadowThatched_Gallery_12.jpg" alt="longmeadowthatched photo 12" loading="lazy" class="gallery-img">
+        
+        <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">›</button>
+        <div class="gallery-counter"><span class="gallery-current">1</span> / 12</div>
+      </div>
+    </div>
   </div>
     
     <div class="map-embed">
@@ -5652,6 +6081,21 @@ function cycleChecklist(el) {
 
 document.querySelectorAll('.cl-source .cl-item').forEach(placeClItem);
 
+document.querySelectorAll('.gallery').forEach(function (g) {
+  var imgs = g.querySelectorAll('.gallery-img');
+  var counter = g.querySelector('.gallery-current');
+  var idx = 0;
+  function show(i) {
+    idx = (i + imgs.length) % imgs.length;
+    imgs.forEach(function (im, j) { im.classList.toggle('active', j === idx); });
+    if (counter) counter.textContent = idx + 1;
+  }
+  var prev = g.querySelector('.gallery-prev');
+  var next = g.querySelector('.gallery-next');
+  if (prev) prev.addEventListener('click', function () { show(idx - 1); });
+  if (next) next.addEventListener('click', function () { show(idx + 1); });
+});
+
 var WORKER_URL = 'https://devon-house-worker.jessekellyuk.workers.dev';
 
 function escText(s) {
@@ -5711,6 +6155,7 @@ function recomputeOverall(card) {
   overallRow.querySelector('.rating-row-score').textContent = overall.toFixed(1) + '/10';
   var flamesEl = overallRow.querySelector('.rating-row-flames');
   if (flamesEl) flamesEl.textContent = '🔥'.repeat(Math.round(overall));
+  card.dataset.overallRating = overall.toFixed(2);
 }
 
 function updateRatingRow(propertyId, bro, score) {
@@ -5724,6 +6169,7 @@ function updateRatingRow(propertyId, bro, score) {
   if (flamesEl) flamesEl.textContent = '🔥'.repeat(Math.round(score));
   var card = row.closest('.card');
   if (card) {
+    if (bro === 'Bro 3') card.dataset.bro3Rating = score;
     var total = 0, weight = 0;
     card.querySelectorAll('.rating-row[data-bro]:not(.rating-row-empty)').forEach(function (r) {
       var scoreEl = r.querySelector('.rating-row-score');
@@ -5885,12 +6331,11 @@ wireMiniForm('.remove-input', '.remove-post-btn', '/remove', function (btn, text
       return;
     }
     headers.forEach(function (h) { h.style.display = 'none'; });
-    var attr = mode.indexOf('ai') === 0 ? 'aiRating' : 'avgRating';
-    var asc = mode.indexOf('low') !== -1;
+    var attr = mode === 'bro3' ? 'bro3Rating' : 'overallRating';
     var ranked = sortCards.slice().sort(function (a, b) {
       var av = a.dataset[attr] !== '' && a.dataset[attr] != null ? parseFloat(a.dataset[attr]) : -1;
       var bv = b.dataset[attr] !== '' && b.dataset[attr] != null ? parseFloat(b.dataset[attr]) : -1;
-      return asc ? av - bv : bv - av;
+      return bv - av;
     });
     ranked.forEach(function (c, i) { c.style.order = i; });
   });
