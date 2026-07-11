@@ -2662,6 +2662,76 @@
         "status": "none",
         "note": "No allocated parking with the property. A public car park is roughly 130 yards away — realistically walkable but not guaranteed, and worth checking East Budleigh's car park capacity/cost before relying on it day-to-day."
       }
+    },
+    {
+      "id": "greenwaygradeii",
+      "section": "new",
+      "title": "Greenway, Woodbury (Grade II listed cottage)",
+      "price": "£295,000",
+      "agent": "Stags, Exeter",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "Greenway2_Gallery_1.jpg",
+        "Greenway2_Gallery_2.jpg",
+        "Greenway2_Gallery_3.jpg",
+        "Greenway2_Gallery_4.jpg",
+        "Greenway2_Gallery_5.jpg",
+        "Greenway2_Gallery_6.jpg",
+        "Greenway2_Gallery_7.jpg",
+        "Greenway2_Gallery_8.jpg",
+        "Greenway2_Gallery_9.jpg",
+        "Greenway2_Gallery_10.jpg",
+        "Greenway2_Gallery_11.jpg",
+        "Greenway2_Gallery_12.jpg",
+        "Greenway2_Gallery_13.jpg",
+        "Greenway2_Gallery_14.jpg",
+        "Greenway2_Gallery_15.jpg",
+        "Greenway2_Gallery_16.jpg",
+        "Greenway2_Gallery_17.jpg",
+        "Greenway2_Gallery_18.jpg",
+        "Greenway2_Gallery_19.jpg",
+        "Greenway2_Gallery_20.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/160355060",
+      "linkLabel": "rightmove.co.uk — property 160355060",
+      "body": "Grade II listed period cottage in the heart of Woodbury village, arranged over three floors: sitting room with fireplace and alcove storage, kitchen/dining room, two bedrooms, plus a loft room with a vaulted ceiling and exposed beams (fitted with its own shower, usable as an occasional third bedroom or reception room). Front patio with lawn and a vegetable patch, a brick-built storage shed. On-street parking. Freehold, EPC C, council tax band B. Reduced on 13/05/2026.",
+      "why": "A second, distinct Greenway property from the one already tracked — this one is Grade II listed, spread over three floors with a genuinely useful loft room (vaulted ceiling, exposed beams, its own shower), and £30k under the hard budget ceiling. Right in Woodbury village centre, so a short walk from a brother and effectively on the doorstep of Woodbury Common. Same trade-off as most Woodbury-centre finds: on-street parking only, though the village has a free short-stay car park (Flower Street) a couple of minutes away if visitors need it.",
+      "dateAdded": "2026-07-11",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "uniqueFeature": "A loft room with a vaulted ceiling, exposed beams and its own shower — usable as an occasional third bedroom",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 7,
+      "aiTake": "Grade II character, a genuinely useful loft room, freehold, and comfortably under budget right in Woodbury village — let down only by on-street-only parking, which is the standard trade-off for anything this central.",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "parking": {
+        "status": "onstreet",
+        "note": "On-street parking only, confirmed directly in the listing — no allocated space or garage. Woodbury village centre has a free short-stay car park on Flower Street a couple of minutes' walk away, as already established for other village-centre Woodbury entries."
+      }
     }
   ]
 }
