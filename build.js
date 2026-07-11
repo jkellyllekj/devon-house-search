@@ -40,7 +40,7 @@ function photosHtml(id, photos) {
 function floorplansHtml(id, floorplans) {
   if (!floorplans || !floorplans.length) return "";
   const imgs = floorplans.map((f, i) =>
-    `<a href="images/${f}" target="_blank" rel="noopener"><img src="images/${f}" alt="${esc(id)} floor plan ${i + 1}" loading="lazy" class="floorplan-img"></a>`
+    `<img src="images/${f}" alt="${esc(id)} floor plan ${i + 1}" loading="lazy" class="floorplan-img" data-lightbox-src="images/${f}">`
   ).join("");
   return `<div class="floorplans"><div class="floorplans-label">📐 Floor plan${floorplans.length > 1 ? "s" : ""}</div><div class="floorplans-row">${imgs}</div></div>`;
 }
@@ -373,6 +373,10 @@ const html = `<!DOCTYPE html>
   .floorplans-label { font-size: 13px; font-weight: 700; color: #444; margin-bottom: 6px; }
   .floorplans-row { display: flex; flex-wrap: wrap; gap: 10px; }
   .floorplan-img { max-width: 220px; max-height: 220px; border: 1px solid #ddd; border-radius: 6px; background: #fff; cursor: zoom-in; }
+  .lightbox-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 30px; }
+  .lightbox-img { max-width: 100%; max-height: 100%; border-radius: 6px; background: #fff; }
+  .lightbox-close { position: absolute; top: 16px; right: 20px; background: rgba(255,255,255,0.15); color: #fff; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .lightbox-close:hover { background: rgba(255,255,255,0.3); }
   .gallery-viewport { position: relative; border-radius: 8px; overflow: hidden; background: #eee; height: 380px; }
   .gallery-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: none; }
   .gallery-img.active { display: block; }
@@ -499,6 +503,10 @@ ${sections}
 <footer>
   <p>This page is rebuilt daily. New finds are added to the top of their section; nothing already here is removed unless it's confirmed gone. Checklist overrides (clicking an item) are stored only in your own browser — to actually change what future sweeps prioritise, leave a comment or reply in chat.</p>
 </footer>
+<div id="lightboxOverlay" class="lightbox-overlay" style="display:none">
+  <button type="button" class="lightbox-close" aria-label="Close">✕</button>
+  <img id="lightboxImg" class="lightbox-img" src="" alt="Floor plan enlarged">
+</div>
 <script>
 function clStorageKey(prop, key) { return 'devon-cl-' + prop + '-' + key; }
 
@@ -540,6 +548,27 @@ document.querySelectorAll('.gallery').forEach(function (g) {
   var next = g.querySelector('.gallery-next');
   if (prev) prev.addEventListener('click', function () { show(idx - 1); });
   if (next) next.addEventListener('click', function () { show(idx + 1); });
+});
+
+var lightboxOverlay = document.getElementById('lightboxOverlay');
+var lightboxImg = document.getElementById('lightboxImg');
+function openLightbox(src) {
+  lightboxImg.src = src;
+  lightboxOverlay.style.display = 'flex';
+}
+function closeLightbox() {
+  lightboxOverlay.style.display = 'none';
+  lightboxImg.src = '';
+}
+document.querySelectorAll('.floorplan-img').forEach(function (img) {
+  img.addEventListener('click', function () { openLightbox(img.dataset.lightboxSrc); });
+});
+lightboxOverlay.addEventListener('click', function (e) {
+  if (e.target === lightboxOverlay) closeLightbox();
+});
+document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') closeLightbox();
 });
 
 var WORKER_URL = 'https://devon-house-worker.jessekellyuk.workers.dev';

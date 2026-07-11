@@ -39,6 +39,10 @@
   .floorplans-label { font-size: 13px; font-weight: 700; color: #444; margin-bottom: 6px; }
   .floorplans-row { display: flex; flex-wrap: wrap; gap: 10px; }
   .floorplan-img { max-width: 220px; max-height: 220px; border: 1px solid #ddd; border-radius: 6px; background: #fff; cursor: zoom-in; }
+  .lightbox-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 30px; }
+  .lightbox-img { max-width: 100%; max-height: 100%; border-radius: 6px; background: #fff; }
+  .lightbox-close { position: absolute; top: 16px; right: 20px; background: rgba(255,255,255,0.15); color: #fff; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .lightbox-close:hover { background: rgba(255,255,255,0.3); }
   .gallery-viewport { position: relative; border-radius: 8px; overflow: hidden; background: #eee; height: 380px; }
   .gallery-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: none; }
   .gallery-img.active { display: block; }
@@ -214,7 +218,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/CastleLane_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/CastleLane_Floorplan_1.jpg" alt="castlelane floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/CastleLane_Floorplan_1.jpg" alt="castlelane floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/CastleLane_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -370,7 +374,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/MireyLaneWoodbury_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/MireyLaneWoodbury_Floorplan_1.jpg" alt="mireylanewoodbury floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/MireyLaneWoodbury_Floorplan_1.jpg" alt="mireylanewoodbury floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/MireyLaneWoodbury_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -682,7 +686,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/VictoriaRoad_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/VictoriaRoad_Floorplan_1.jpg" alt="victoriaroadexmouth floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/VictoriaRoad_Floorplan_1.jpg" alt="victoriaroadexmouth floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/VictoriaRoad_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -838,7 +842,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/ChapelStSidbury_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/ChapelStSidbury_Floorplan_1.jpg" alt="chapelstsidbury floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/ChapelStSidbury_Floorplan_1.jpg" alt="chapelstsidbury floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/ChapelStSidbury_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -994,7 +998,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/BictonStExmouth_Floorplan_1.png" target="_blank" rel="noopener"><img src="images/BictonStExmouth_Floorplan_1.png" alt="bictonstexmouth floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/BictonStExmouth_Floorplan_1.png" alt="bictonstexmouth floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/BictonStExmouth_Floorplan_1.png"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -1150,7 +1154,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/CastleCottagesWoodbury_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/CastleCottagesWoodbury_Floorplan_1.jpg" alt="castlecottageswoodbury floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/CastleCottagesWoodbury_Floorplan_1.jpg" alt="castlecottageswoodbury floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/CastleCottagesWoodbury_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -1306,7 +1310,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/VicarageRoadEastBudleigh_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/VicarageRoadEastBudleigh_Floorplan_1.jpg" alt="vicarageroadeastbudleigh floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/VicarageRoadEastBudleigh_Floorplan_1.jpg" alt="vicarageroadeastbudleigh floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/VicarageRoadEastBudleigh_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -1462,7 +1466,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/CranesLaneEastBudleigh_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/CranesLaneEastBudleigh_Floorplan_1.jpg" alt="craneslaneeastbudleigh floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/CranesLaneEastBudleigh_Floorplan_1.jpg" alt="craneslaneeastbudleigh floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/CranesLaneEastBudleigh_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -1618,7 +1622,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Greenway2_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Greenway2_Floorplan_1.jpg" alt="greenwaygradeii floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/Greenway2_Floorplan_1.jpg" alt="greenwaygradeii floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/Greenway2_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -1775,7 +1779,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/MountainClose_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/MountainClose_Floorplan_1.jpg" alt="mountainclose floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/MountainClose_Floorplan_1.jpg" alt="mountainclose floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/MountainClose_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -1932,7 +1936,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Haynes_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Haynes_Floorplan_1.jpg" alt="haynes floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/Haynes_Floorplan_1.jpg" alt="haynes floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/Haynes_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -2089,7 +2093,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Longmeadow_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Longmeadow_Floorplan_1.jpg" alt="longmeadow floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/Longmeadow_Floorplan_1.jpg" alt="longmeadow floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/Longmeadow_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -2245,7 +2249,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Brookside_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Brookside_Floorplan_1.jpg" alt="brookside floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/Brookside_Floorplan_1.jpg" alt="brookside floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/Brookside_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -2401,7 +2405,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plans</div><div class="floorplans-row"><a href="images/Morcote_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Morcote_Floorplan_1.jpg" alt="morcote floor plan 1" loading="lazy" class="floorplan-img"></a><a href="images/Morcote_Floorplan_2.jpg" target="_blank" rel="noopener"><img src="images/Morcote_Floorplan_2.jpg" alt="morcote floor plan 2" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plans</div><div class="floorplans-row"><img src="images/Morcote_Floorplan_1.jpg" alt="morcote floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/Morcote_Floorplan_1.jpg"><img src="images/Morcote_Floorplan_2.jpg" alt="morcote floor plan 2" loading="lazy" class="floorplan-img" data-lightbox-src="images/Morcote_Floorplan_2.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -2558,7 +2562,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/EastBudleighHighSt_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/EastBudleighHighSt_Floorplan_1.jpg" alt="eastbudleighhighst floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/EastBudleighHighSt_Floorplan_1.jpg" alt="eastbudleighhighst floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/EastBudleighHighSt_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -2714,7 +2718,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/MarlesFlat_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/MarlesFlat_Floorplan_1.jpg" alt="marlesflat floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/MarlesFlat_Floorplan_1.jpg" alt="marlesflat floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/MarlesFlat_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -2870,7 +2874,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Farleys_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Farleys_Floorplan_1.jpg" alt="farleys floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/Farleys_Floorplan_1.jpg" alt="farleys floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/Farleys_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -3037,7 +3041,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/BellStreet_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/BellStreet_Floorplan_1.jpg" alt="bellstreet floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/BellStreet_Floorplan_1.jpg" alt="bellstreet floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/BellStreet_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -3193,7 +3197,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Flexton_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Flexton_Floorplan_1.jpg" alt="flexton floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/Flexton_Floorplan_1.jpg" alt="flexton floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/Flexton_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -3350,7 +3354,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/BeaconFlat_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/BeaconFlat_Floorplan_1.jpg" alt="beaconflat floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/BeaconFlat_Floorplan_1.jpg" alt="beaconflat floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/BeaconFlat_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -3506,7 +3510,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Cranford_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Cranford_Floorplan_1.jpg" alt="cranford floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/Cranford_Floorplan_1.jpg" alt="cranford floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/Cranford_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -3662,7 +3666,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Otterton_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Otterton_Floorplan_1.jpg" alt="otterton floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/Otterton_Floorplan_1.jpg" alt="otterton floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/Otterton_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -3974,7 +3978,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Douglas_Floorplan_1.png" target="_blank" rel="noopener"><img src="images/Douglas_Floorplan_1.png" alt="douglas floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/Douglas_Floorplan_1.png" alt="douglas floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/Douglas_Floorplan_1.png"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -4130,7 +4134,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Greenway_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Greenway_Floorplan_1.jpg" alt="greenwaywoodbury floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/Greenway_Floorplan_1.jpg" alt="greenwaywoodbury floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/Greenway_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -4286,7 +4290,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/TownLaneWoodbury_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/TownLaneWoodbury_Floorplan_1.jpg" alt="townlanewoodbury floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/TownLaneWoodbury_Floorplan_1.jpg" alt="townlanewoodbury floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/TownLaneWoodbury_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -4442,7 +4446,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/WoodburyConservation_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/WoodburyConservation_Floorplan_1.jpg" alt="woodburyconservation floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/WoodburyConservation_Floorplan_1.jpg" alt="woodburyconservation floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/WoodburyConservation_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -4598,7 +4602,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/QueenStreet_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/QueenStreet_Floorplan_1.jpg" alt="queenstreetbudleigh floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/QueenStreet_Floorplan_1.jpg" alt="queenstreetbudleigh floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/QueenStreet_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -4754,7 +4758,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/LongbrookLympstone_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/LongbrookLympstone_Floorplan_1.jpg" alt="longbrooklympstone floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/LongbrookLympstone_Floorplan_1.jpg" alt="longbrooklympstone floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/LongbrookLympstone_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -5066,7 +5070,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/VansittartExmouth_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/VansittartExmouth_Floorplan_1.jpg" alt="vansittartexmouth floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/VansittartExmouth_Floorplan_1.jpg" alt="vansittartexmouth floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/VansittartExmouth_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -5378,7 +5382,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/HorseshoeBarnKnowle_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/HorseshoeBarnKnowle_Floorplan_1.jpg" alt="horseshoebarnknowle floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/HorseshoeBarnKnowle_Floorplan_1.jpg" alt="horseshoebarnknowle floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/HorseshoeBarnKnowle_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -5535,7 +5539,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/ChurchStileWoodbury_Floorplan_1.png" target="_blank" rel="noopener"><img src="images/ChurchStileWoodbury_Floorplan_1.png" alt="churchstilewoodbury floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/ChurchStileWoodbury_Floorplan_1.png" alt="churchstilewoodbury floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/ChurchStileWoodbury_Floorplan_1.png"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -6015,7 +6019,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Beacon_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Beacon_Floorplan_1.jpg" alt="beacon floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/Beacon_Floorplan_1.jpg" alt="beacon floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/Beacon_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -6779,7 +6783,7 @@
       </div>
     </div>
   </div>
-    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/LongmeadowThatched_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/LongmeadowThatched_Floorplan_1.jpg" alt="longmeadowthatched floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><img src="images/LongmeadowThatched_Floorplan_1.jpg" alt="longmeadowthatched floor plan 1" loading="lazy" class="floorplan-img" data-lightbox-src="images/LongmeadowThatched_Floorplan_1.jpg"></div></div>
     
     <div class="map-embed">
       <iframe
@@ -6885,6 +6889,10 @@
 <footer>
   <p>This page is rebuilt daily. New finds are added to the top of their section; nothing already here is removed unless it's confirmed gone. Checklist overrides (clicking an item) are stored only in your own browser — to actually change what future sweeps prioritise, leave a comment or reply in chat.</p>
 </footer>
+<div id="lightboxOverlay" class="lightbox-overlay" style="display:none">
+  <button type="button" class="lightbox-close" aria-label="Close">✕</button>
+  <img id="lightboxImg" class="lightbox-img" src="" alt="Floor plan enlarged">
+</div>
 <script>
 function clStorageKey(prop, key) { return 'devon-cl-' + prop + '-' + key; }
 
@@ -6926,6 +6934,27 @@ document.querySelectorAll('.gallery').forEach(function (g) {
   var next = g.querySelector('.gallery-next');
   if (prev) prev.addEventListener('click', function () { show(idx - 1); });
   if (next) next.addEventListener('click', function () { show(idx + 1); });
+});
+
+var lightboxOverlay = document.getElementById('lightboxOverlay');
+var lightboxImg = document.getElementById('lightboxImg');
+function openLightbox(src) {
+  lightboxImg.src = src;
+  lightboxOverlay.style.display = 'flex';
+}
+function closeLightbox() {
+  lightboxOverlay.style.display = 'none';
+  lightboxImg.src = '';
+}
+document.querySelectorAll('.floorplan-img').forEach(function (img) {
+  img.addEventListener('click', function () { openLightbox(img.dataset.lightboxSrc); });
+});
+lightboxOverlay.addEventListener('click', function (e) {
+  if (e.target === lightboxOverlay) closeLightbox();
+});
+document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') closeLightbox();
 });
 
 var WORKER_URL = 'https://devon-house-worker.jessekellyuk.workers.dev';
