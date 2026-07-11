@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10",
+  "lastUpdated": "2026-07-11",
   "properties": [
     {
       "id": "mountainclose",
@@ -1383,7 +1383,7 @@
     },
     {
       "id": "churchstilewoodbury",
-      "section": "new",
+      "section": "still",
       "title": "Church Stile Lane, Woodbury (Grade II cottage)",
       "price": "£155,000",
       "agent": "East of Exe, Topsham",
@@ -1405,7 +1405,138 @@
         "garageWorkspace": "no", "uniqueFeature": null, "closeToFamily": "yes"
       },
       "aiRating": 7,
-      "aiTake": "The cheapest genuinely characterful property found all search — Grade II, freehold, chain-free, and close to a brother and the Common's trails — but it's compact (one double bedroom plus a study) with on-street parking only and a first-floor bedroom that rules out easy ground-floor adaptation."
+      "aiTake": "The cheapest genuinely characterful property found all search — Grade II, freehold, chain-free, and close to a brother and the Common's trails — but it's compact (one double bedroom plus a study) with on-street parking only and a first-floor bedroom that rules out easy ground-floor adaptation.",
+      "ratings": {
+        "Bro 3": {
+          "score": 8,
+          "date": "2026-07-10"
+        }
+      },
+      "research": [
+        {
+          "date": "2026-07-11",
+          "question": "Please do a deep dive: the roof looks a little bad on the back. Would love to find out about parking on this street — seems strangely empty in the photos but no off-street parking shown, what do they do? Also what's behind it — if I have my bike in the shed can I take it out of the back of the house behind that deck somewhere, or do I have to traipse the bike through the house? Check repair issues, permissions, and last sale prices/history.",
+          "findings": "Roof: the listing text says nothing about roof condition either way — can't confirm or rule out what was spotted in the photos from the description alone. Genuinely needs eyes-on or a direct question to the agent, especially given Grade II status limits what repairs are straightforward/permitted. Parking: confirmed on-street only, nothing off-street mentioned anywhere in the listing. What's behind it / bike access: the listing only describes internal access — \"the recently installed kitchen enjoys direct access to the garden\" — with wooden steps up to a raised deck. No side gate, path, or external route is mentioned anywhere, and no shed/outbuilding is mentioned in the listing at all. Read at face value, a bike stored back there would go out through the kitchen, not around the side — but agents routinely leave out side-access details that exist in reality, so treat this as unconfirmed rather than definitively no side gate, until a viewing. Sale history: Land Registry has entries for other numbered addresses in the same cluster (2 Church Stile Cottages sold £270k in 2007; 3 Church Stile Cottages shows a logged 2026 sale of £657k, which looks like a likely data error given everything else on the lane — treat with caution) but nothing tying definitively to this exact cottage since the listing doesn't give a house number/name. Repairs/permissions: no planning applications, enforcement notices, or repair-related records found for this address — the only nearby planning activity on the lane is routine tree-pruning consent for 3 Church Stile Cottages, unrelated to structure or roof. Bottom line: nothing here rules it out, but the roof and rear-access questions genuinely can't be answered from the listing alone — worth putting directly to the agent before going further.",
+          "sources": [
+            {
+              "label": "OnTheMarket — listing 19822482",
+              "url": "https://www.onthemarket.com/details/19822482/"
+            },
+            {
+              "label": "Rightmove — Church Stile Lane sold prices",
+              "url": "https://www.rightmove.co.uk/house-prices/ex5/church-stile-lane.html"
+            },
+            {
+              "label": "Zoopla — Church Stile Lane sold prices",
+              "url": "https://www.zoopla.co.uk/house-prices/woodbury/church-stile-lane/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "castlelane",
+      "section": "new",
+      "title": "Castle Lane, Exmouth (Grade II thatched cottage)",
+      "price": "£225,000 (guide price)",
+      "agent": "Rightmove listing",
+      "flags": [
+        {"text": "IN BUDGET", "color": "#2E7D32"},
+        {"text": "GRADE II LISTED", "color": "#6A1B9A"},
+        {"text": "NO CHAIN", "color": "#EF6C00"},
+        {"text": "NO PARKING INFO", "color": "#757575"}
+      ],
+      "photos": ["CastleLane_Gallery_1.jpg", "CastleLane_Gallery_2.jpg", "CastleLane_Gallery_3.jpg", "CastleLane_Gallery_4.jpg"],
+      "link": "https://www.rightmove.co.uk/properties/173746229",
+      "linkLabel": "rightmove.co.uk/properties/173746229",
+      "body": "Cob and thatched Grade II listed cottage, late 18th/early 19th century, in Littleham village — within Exmouth itself. One double bedroom, cosy sitting room with an open fireplace and exposed beams, dining room/study, modern fitted kitchen, shower room. Large private rear garden with flagstone patio, lawn, shrub borders, two sheds (one with power), plus a front garden. Thatch fully replaced in 2015, ridge replaced and thatch brushed in 2025. Freehold, no onward chain. Septic tank (£110/yr). Council Tax Band B. Pedestrian right of access exists for neighbouring cottages.",
+      "why": "A genuine thatched cottage — the thing Jesse said he loves most — and this one is actually inside Exmouth itself (Littleham), not a drive away in a separate village, which nothing else thatched on the list can claim. Freehold, no chain, well under budget, and the thatch has been properly maintained (redone 2015, ridge refreshed 2025 — not a looming repair bill). The catch: parking isn't mentioned at all (listing says ask agent), and it's not especially close to the coast, station, or trails despite being in Exmouth.",
+      "dateAdded": "2026-07-11",
+      "checklist": {
+        "ocean": "partial", "trainStation": "no", "poolSwimTeam": "partial", "private": "partial",
+        "groundFloorLongTerm": null, "mtbTrails": "no", "character": "yes", "garden": "yes",
+        "garageWorkspace": "partial", "uniqueFeature": "Two garden sheds, one with power — useful outbuilding space for a cottage this size, plus recently maintained thatch (2015/2025) rather than an ageing roof", "closeToFamily": "yes"
+      },
+      "aiRating": 7,
+      "aiTake": "A genuine thatched cottage right in Exmouth itself (Littleham) — freehold, no chain, well-maintained thatch, and a proper garden with two sheds — but parking isn't confirmed and it's not especially close to the coast, station, or trails despite being in town."
+    },
+    {
+      "id": "mireylanewoodbury",
+      "section": "new",
+      "title": "Mirey Lane, Woodbury (Grade II cottage)",
+      "price": "Offers In Excess of £250,000",
+      "agent": "East of Exe, Topsham",
+      "flags": [
+        {"text": "IN BUDGET", "color": "#2E7D32"},
+        {"text": "GRADE II LISTED", "color": "#6A1B9A"},
+        {"text": "NO CHAIN", "color": "#EF6C00"},
+        {"text": "ON-STREET PARKING ONLY (+ free car park 2 min walk)", "color": "#757575"}
+      ],
+      "photos": ["MireyLane_Gallery_1.jpg", "MireyLane_Gallery_2.jpg", "MireyLane_Gallery_3.jpg", "MireyLane_Gallery_4.jpg"],
+      "link": "https://www.eastofexe.co.uk/properties/mirey-lane-woodbury/",
+      "linkLabel": "eastofexe.co.uk — Mirey Lane, Woodbury",
+      "body": "Grade II listed mid-terrace cottage dating to the 1800s, right in the heart of Woodbury village. Open-plan lounge/diner with exposed wooden flooring and a character fireplace, fitted kitchen with solid wood units, two bedrooms upstairs with Victorian cast iron fireplaces. Front garden with a cobblestone wall, gate, pathway, herb and flower beds, and a cherry tree. No private rear garden, but the owner has a right of access across the rear courtyard garden to the adjoining lane. Freehold, no onward chain, gas central heating, Council Tax Band B. On-street parking plus a free short-stay car park (Flower Street) two minutes' walk away.",
+      "why": "A fourth Woodbury cottage now on file, and this one has the best-confirmed parking situation of any of them — on-street plus a genuine free short-stay car park just two minutes' walk away, not just an unstated gap. Real 1800s Grade II character (beams, cast iron fireplaces, chimney stack) and no chain. The trade-off is the garden: there's no true private plot, just rear courtyard access to the lane.",
+      "dateAdded": "2026-07-11",
+      "checklist": {
+        "ocean": "no", "trainStation": "no", "poolSwimTeam": "no", "private": "no",
+        "groundFloorLongTerm": "no", "mtbTrails": "yes", "character": "yes", "garden": "partial",
+        "garageWorkspace": "no", "uniqueFeature": "A genuine free short-stay car park two minutes' walk away — the best-confirmed parking situation of any Woodbury cottage on file, even without a dedicated space", "closeToFamily": "yes"
+      },
+      "aiRating": 6,
+      "aiTake": "The best-confirmed parking of any Woodbury cottage on file — on-street plus a free car park two minutes away — with genuine 1800s Grade II character, but no real private garden, just rear courtyard access. Nudged down slightly for price, since 'offers in excess of £250,000' likely lands past your real £170-200k target."
+    },
+    {
+      "id": "longmeadowthatched",
+      "section": "background",
+      "title": "Longmeadow Road, Lympstone (Grade II thatched cottage — separate from the one-bed cottage already on file)",
+      "price": "£445,000",
+      "agent": "Hall & Scott, Exmouth",
+      "flags": [
+        {"text": "OVER BUDGET (+£145,000 / 48%)", "color": "#B71C1C"},
+        {"text": "GRADE II LISTED, THATCHED", "color": "#6A1B9A"},
+        {"text": "NO CHAIN", "color": "#EF6C00"},
+        {"text": "NO PARKING INFO", "color": "#757575"}
+      ],
+      "photos": ["LongmeadowThatched_Gallery_1.jpg", "LongmeadowThatched_Gallery_2.jpg", "LongmeadowThatched_Gallery_3.jpg", "LongmeadowThatched_Gallery_4.jpg"],
+      "link": "https://www.hallandscott.co.uk/details/?id=HSEXM_708642",
+      "linkLabel": "hallandscott.co.uk — HSEXM_708642",
+      "body": "Grade II listed thatched cottage on Longmeadow Road, Lympstone — beautifully presented, two double bedrooms. Sitting room with a gas wood burner, separate dining room, kitchen with utility area, modern family bathroom. Attractive lawned front garden, low-maintenance west-facing rear garden with a garden store. Gas central heating, freehold, no onward chain. Note: this is a different, larger, pricier property from the one-bed Longmeadow Road cottage already tracked (id: longmeadow, £250k, stream-side garden studio) — same street, unrelated listing.",
+      "why": "A genuine thatched cottage in Lympstone — the best-located village on the whole list, and Jesse's favourite roof type — but 48% over the £300k ceiling, well beyond the 'slightly over for something exceptional' bar the rest of the list holds to. Kept here as a benchmark/inspiration piece rather than a real contender, and flagged clearly as a separate property from the cheaper Longmeadow Road cottage already tracked so the two don't get confused.",
+      "dateAdded": "2026-07-11",
+      "checklist": {
+        "ocean": "yes", "trainStation": "yes", "poolSwimTeam": "partial", "private": "no",
+        "groundFloorLongTerm": null, "mtbTrails": "yes", "character": "yes", "garden": "yes",
+        "garageWorkspace": "no", "uniqueFeature": null, "closeToFamily": "partial"
+      },
+      "aiRating": 4,
+      "aiTake": "A genuine thatched cottage in the best-located village on the list, but 48% over the £300k ceiling — kept as a benchmark, not a real contender at this price. Already well past the hard ceiling, on top of everything else."
+    },
+    {
+      "id": "tythecottage",
+      "section": "new",
+      "title": "Tythe Cottage Tea Rooms, Littleham Village (Grade II — AUCTION)",
+      "price": "£325,000+ (guide price, auction)",
+      "agent": "Countrywide Property Auctions (Sutton Kersh)",
+      "flags": [
+        {"text": "OVER BUDGET (+£25,000)", "color": "#B71C1C"},
+        {"text": "GRADE II LISTED", "color": "#6A1B9A"},
+        {"text": "HAS PARKING (rear)", "color": "#1565C0"},
+        {"text": "AUCTION DATE UNCONFIRMED — verify with agent", "color": "#E65100"}
+      ],
+      "photos": ["Tythe_Gallery_1.jpg", "Tythe_Gallery_2.jpg", "Tythe_Gallery_3.jpg", "Tythe_Gallery_4.jpg"],
+      "link": "https://www.propertyauctionsouthwest.co.uk/properties/lot/322921/Tythe+Cottage+Tea+Rooms,+Littleham+Village,+Littleham,+Exmouth,+Devon,+EX8+2RQ/",
+      "linkLabel": "propertyauctionsouthwest.co.uk — lot 322921",
+      "body": "Grade II listed former tea rooms in Littleham village, within Exmouth — first time on the market in around 50 years. Ground floor: former restaurant/bar area and commercial kitchen. First floor: one-bedroom owner's accommodation (sitting room, bedroom, bathroom). Car parking to the rear of the building, two customer WCs. Needs sympathetic upgrading throughout. EPC C, freehold.",
+      "why": "A genuinely unusual find — a Grade II former tea rooms with living accommodation above, unlisted for half a century, going to auction with real rear parking (unusual for anything this close to Exmouth centre). Slightly over budget and needs work, but the character/rarity is real. Important caveat: the auction page shows a date of 11 December 2025, which has already passed — the lot appears to have been renumbered/relisted (322921, previously 21387) and other pages describe it as still open for bidding, so the current status and next auction date genuinely couldn't be pinned down this sweep. Treat as needing a direct call to the auctioneer before relying on any date shown.",
+      "dateAdded": "2026-07-11",
+      "checklist": {
+        "ocean": "partial", "trainStation": "no", "poolSwimTeam": "no", "private": "no",
+        "groundFloorLongTerm": "no", "mtbTrails": "no", "character": "yes", "garden": "no",
+        "garageWorkspace": "no", "uniqueFeature": "Former tea rooms with a commercial kitchen and restaurant/bar space downstairs — unlisted for ~50 years, a genuinely oddball conversion opportunity", "closeToFamily": "yes"
+      },
+      "aiRating": 4,
+      "aiTake": "A genuinely unusual former-tea-rooms conversion with real rear parking, close to family in Exmouth — but it's over budget, needs work throughout, and the auction date/status couldn't be confirmed this sweep, so treat the timing as unreliable until you speak to the agent."
     }
   ]
 }
