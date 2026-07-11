@@ -1022,7 +1022,7 @@
           "color": "#1565C0"
         },
         {
-          "text": "LIKELY SOLD",
+          "text": "LIKELY SOLD/WITHDRAWN (Sold STC)",
           "color": "#8D6E63"
         }
       ],
@@ -2386,6 +2386,281 @@
       "parking": {
         "status": "onstreet",
         "note": "Not mentioned in the listing. Victoria Road has Limited Waiting restrictions (Mon-Sat 8am-6pm, 1hr no return) with an exemption for Residents' Zone B permit holders — a resident's permit (around £35/year for a first permit) would be needed for reliable on-street parking rather than free unrestricted parking."
+      }
+    },
+    {
+      "id": "chapelstsidbury",
+      "section": "new",
+      "title": "Chapel Street, Sidbury (ground-floor flat)",
+      "price": "£140,000",
+      "agent": "Harrison-Lavers & Potbury's, Sidmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GROUND FLOOR",
+          "color": "#1565C0"
+        },
+        {
+          "text": "LEASEHOLD (~87 YRS)",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "PARKING UNKNOWN",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "ChapelStSidbury_Gallery_1.jpg",
+        "ChapelStSidbury_Gallery_2.jpg",
+        "ChapelStSidbury_Gallery_3.jpg",
+        "ChapelStSidbury_Gallery_4.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/90257214",
+      "linkLabel": "rightmove.co.uk — property 90257214",
+      "body": "Purpose-built one-bedroom ground-floor flat in a small development in Sidbury village. Dual-aspect sitting/dining room overlooking communal gardens, modern kitchen with Corian worktops and built-in oven, double bedroom with built-in wardrobe, bathroom with electric shower. Communal gardens extend down to the River Sid with a walking path. Village shop, pub, primary school and bus links nearby. Leasehold, term expiring 24.03.2113 (~87 years remaining). Reduced 06/06/2026.",
+      "why": "The cheapest thing on the whole list at £140,000, and explicitly ground floor, but it's a real outlier geographically — Sidbury is inland near Sidmouth, further from both Woodbury Common and both brothers than anywhere else being tracked. Worth keeping on file purely as a rock-bottom-price, no-stairs option, but it's a fallback shape, not a first choice.",
+      "dateAdded": "2026-07-11",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "no",
+        "tenure": "leasehold",
+        "leaseYears": 87
+      },
+      "aiRating": 6,
+      "aiTake": "Rock-bottom price and genuinely ground-floor, which counts for a lot, but Sidbury is well off the beaten path relative to both the coast and the brothers, and there's no character or parking to speak of — a fallback option rather than a contender.",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "parking": {
+        "status": "unknown",
+        "note": "Listing doesn't specify parking arrangements for this flat — worth asking the agent directly, since purpose-built developments like this sometimes have allocated bays not mentioned in the online listing."
+      }
+    },
+    {
+      "id": "bictonstexmouth",
+      "section": "new",
+      "title": "Bicton Street, Exmouth (Grade II townhouse + separate listed barn)",
+      "price": "Guide Price £415,000",
+      "agent": "Hall & Scott, Exmouth",
+      "flags": [
+        {
+          "text": "OVER BUDGET (+£115,000)",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "HAS PARKING (off-road + rear space by barn)",
+          "color": "#1565C0"
+        }
+      ],
+      "photos": [
+        "BictonStExmouth_Gallery_1.jpg",
+        "BictonStExmouth_Gallery_2.jpg",
+        "BictonStExmouth_Gallery_3.jpg",
+        "BictonStExmouth_Gallery_4.jpg"
+      ],
+      "link": "https://hallandscott.co.uk/details/hsexm_698905/bicton-street-exmouth/",
+      "linkLabel": "hallandscott.co.uk — HSEXM_698905",
+      "body": "Substantial six-bedroom Grade II listed period townhouse over three floors in Exmouth, needing renovation, no onward chain. Two reception rooms, spacious kitchen/breakfast room, ground-floor bedroom with en-suite wet room, plus five further bedrooms across the upper floors. Wall-enclosed rear garden, gas central heating, solar water heating tubes. The standout feature: a separate Grade II listed brick barn (18' x 10') in the walled garden, suitable for a studio, workshop, or storage subject to consent. Off-road parking plus a rear space by the barn. Close to town centre, beach, and the railway station.",
+      "why": "Significantly over budget and needs real renovation work, but it's genuinely one of a kind — a Grade II townhouse with its own separate listed barn, right in Exmouth with off-road parking and no chain. The barn alone is the kind of oddball workshop/studio space Jesse likes flagged. Included as an exceptional/unique find despite the price, per the standing rule for unusual properties — but six bedrooms and renovation work make this a much bigger project than most of what's on the list.",
+      "dateAdded": "2026-07-11",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "uniqueFeature": "A separate Grade II listed brick barn (18'x10') in the walled rear garden — usable as a studio, workshop, or storage subject to consent. A genuinely rare feature this close to Exmouth town centre.",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "A one-of-a-kind find — Grade II townhouse plus its own listed barn, in Exmouth with real off-road parking — but it's £115,000 over budget, needs renovation throughout, and six bedrooms is far more house than needed, so the price adjustment weighs it down despite the character.",
+      "bedrooms": 6,
+      "bathrooms": 2,
+      "parking": {
+        "status": "has",
+        "note": "Off-road parking plus a rear parking space adjacent to the barn, confirmed in the listing."
+      }
+    },
+    {
+      "id": "castlecottageswoodbury",
+      "section": "new",
+      "title": "1 Castle Cottages, Castle Lane, Woodbury (period cottage)",
+      "price": "Guide Price £375,000",
+      "agent": "Stags, Exeter",
+      "flags": [
+        {
+          "text": "OVER BUDGET (+£75,000)",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "HAS PARKING (to the front)",
+          "color": "#1565C0"
+        }
+      ],
+      "photos": [
+        "CastleCottagesWoodbury_Gallery_1.jpg",
+        "CastleCottagesWoodbury_Gallery_2.jpg",
+        "CastleCottagesWoodbury_Gallery_3.jpg",
+        "CastleCottagesWoodbury_Gallery_4.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/89651460",
+      "linkLabel": "rightmove.co.uk — property 89651460",
+      "body": "Recently upgraded period cottage in a central Woodbury village location, no onward chain. Modern kitchen/dining room with utility, spacious sitting room, an office/4th-bedroom option, three double bedrooms (ensuite master), main bathroom. Private courtyard garden with a useful storage shed. Parking to the front. Electric boiler heating. Note: a neighbouring property has a Right of Way to access a drain located in the garden.",
+      "why": "A different Castle Lane cottage to the thatched one already on file, this one in Woodbury itself rather than Exmouth — genuinely close to a brother and the Common's trails, with real parking to the front (still not common on this list) and a storage shed. £75,000 over budget and not Grade II listed, but it's beautifully presented, no-chain, and move-in ready rather than needing work.",
+      "dateAdded": "2026-07-11",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "partial",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "partial",
+        "uniqueFeature": null,
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "A genuinely nice, move-in-ready Woodbury cottage with real front parking and a storage shed, close to a brother and the Common — but £75,000 over budget and not particularly unusual architecturally, so it lands as a solid rather than standout option.",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "parking": {
+        "status": "has",
+        "note": "\"Parking to the front\" listed as a key feature."
+      }
+    },
+    {
+      "id": "vicarageroadeastbudleigh",
+      "section": "new",
+      "title": "Vicarage Road, East Budleigh (stone and cob period cottage)",
+      "price": "Guide Price £325,000",
+      "agent": "Hall & Scott, Ottery St Mary",
+      "flags": [
+        {
+          "text": "OVER BUDGET (+£25,000)",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#1565C0"
+        }
+      ],
+      "photos": [
+        "VicarageRdEastBudleigh_Gallery_1.jpg",
+        "VicarageRdEastBudleigh_Gallery_2.jpg",
+        "VicarageRdEastBudleigh_Gallery_3.jpg",
+        "VicarageRdEastBudleigh_Gallery_4.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/153367637",
+      "linkLabel": "rightmove.co.uk — property 153367637",
+      "body": "Stone and cob period cottage in East Budleigh with deceptively large accommodation. Ground floor: large living room, spacious kitchen/dining room, cloakroom, utility area. Upstairs: two bedrooms and a bathroom. South-facing, very secluded garden with well-fenced boundaries and a summerhouse (a neighbour has a right-of-way for access). Sits within the East Devon AONB, around 2 miles from the sea and 10 miles from Exeter. Freehold, parking included. Reduced 20/08/2025.",
+      "why": "A characterful stone-and-cob cottage with real parking and a genuinely private, secluded garden complete with a summerhouse — only £25,000 over budget, which is a modest stretch for what's on offer. East Budleigh keeps it close to the Otterton brother, and the AONB setting fits the rural-over-village-centre preference well.",
+      "dateAdded": "2026-07-11",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "yes",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": "A secluded south-facing garden with its own summerhouse",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "Genuine character, real parking, and an unusually private secluded garden with a summerhouse, close to the Otterton brother — only a modest £25,000 over budget, which makes this one of the more reasonable over-budget stretches on the list.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "has",
+        "note": "Parking confirmed in the listing details, though exact arrangement (driveway vs allocated space) isn't spelled out."
+      }
+    },
+    {
+      "id": "craneslaneeastbudleigh",
+      "section": "new",
+      "title": "Cranes Lane, East Budleigh (renovated period cottage)",
+      "price": "£325,000",
+      "agent": "Bradleys, Budleigh Salterton",
+      "flags": [
+        {
+          "text": "OVER BUDGET (+£25,000)",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "FULLY RENOVATED",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO PARKING (car park ~130 yards away)",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "CranesLaneEastBudleigh_Gallery_1.jpg",
+        "CranesLaneEastBudleigh_Gallery_2.jpg",
+        "CranesLaneEastBudleigh_Gallery_3.jpg",
+        "CranesLaneEastBudleigh_Gallery_4.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/90092499",
+      "linkLabel": "rightmove.co.uk — property 90092499",
+      "body": "Fully renovated terraced period cottage in East Budleigh. Entrance hall, sitting room, kitchen/dining room, cloakroom/WC, bathroom, two double bedrooms. Modern gas central heating and double glazing throughout. Attractive, low-maintenance courtyard garden with a wildlife pond and seating area. No allocated parking, but a public car park is around 130 yards away. Freehold. Added 21/02/2026.",
+      "why": "Unlike most of the character cottages on this list, this one is already fully renovated — modern heating, double glazing, nothing left to do. A wildlife pond in the courtyard garden is a nice unusual touch. The real drawback is parking: nothing allocated, just a public car park roughly 130 yards off, and it's £25,000 over budget.",
+      "dateAdded": "2026-07-11",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": "A courtyard garden with its own wildlife pond",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 4,
+      "aiTake": "The one cottage on the list that's already fully renovated — nothing to do on move-in, plus a nice wildlife pond in the courtyard — but no allocated parking and £25,000 over budget pull it down despite the move-in-ready appeal.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "none",
+        "note": "No allocated parking with the property. A public car park is roughly 130 yards away — realistically walkable but not guaranteed, and worth checking East Budleigh's car park capacity/cost before relying on it day-to-day."
       }
     }
   ]
