@@ -81,7 +81,10 @@
       "parking": {
         "status": "unknown",
         "note": "Listing doesn't mention parking either way — no drive, garage, or space referenced anywhere in the description."
-      }
+      },
+      "floorplans": [
+        "MountainClose_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "haynes",
@@ -149,7 +152,10 @@
       "parking": {
         "status": "has",
         "note": "Gravelled parking bay for up to 3 cars with outside electric sockets — the best parking on the whole list."
-      }
+      },
+      "floorplans": [
+        "Haynes_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "longmeadow",
@@ -227,7 +233,10 @@
       "parking": {
         "status": "onstreet",
         "note": "No off-street parking; on-street only in Lympstone village."
-      }
+      },
+      "floorplans": [
+        "Longmeadow_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "brookside",
@@ -297,7 +306,10 @@
       "parking": {
         "status": "unknown",
         "note": "Listing says \"ask agent\" rather than confirming either way."
-      }
+      },
+      "floorplans": [
+        "Brookside_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "morcote",
@@ -354,7 +366,11 @@
       "parking": {
         "status": "onstreet",
         "note": "No garden or off-street parking; on-street only, right in the village centre."
-      }
+      },
+      "floorplans": [
+        "Morcote_Floorplan_1.jpg",
+        "Morcote_Floorplan_2.jpg"
+      ]
     },
     {
       "id": "eastbudleighhighst",
@@ -420,7 +436,10 @@
       "parking": {
         "status": "none",
         "note": "No parking, garage, or space of any kind — confirmed directly from the full listing text. High Street has limited 30-min on-street parking; the practical option is a free 17-space car park just off the High Street (2-hr limit) or the larger Hayes Lane car park nearby. No formal residents' permit scheme in this small village."
-      }
+      },
+      "floorplans": [
+        "EastBudleighHighSt_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "marlesflat",
@@ -475,7 +494,10 @@
       "parking": {
         "status": "unknown",
         "note": "A garage is understood to be available to rent nearby, but it's not included with the sale — not a guaranteed space."
-      }
+      },
+      "floorplans": [
+        "MarlesFlat_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "farleys",
@@ -559,7 +581,10 @@
       "parking": {
         "status": "none",
         "note": "No dedicated parking; nearest options are the free Lympstone Village Station car park (13 spaces, first-come-first-served) or Underhill Car Park nearby — nothing deeded to the property. See research findings below for the full picture."
-      }
+      },
+      "floorplans": [
+        "Farleys_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "bellstreet",
@@ -617,7 +642,10 @@
       "parking": {
         "status": "onstreet",
         "note": "On-street parking only, in the same village as the Otterton thatched cottage."
-      }
+      },
+      "floorplans": [
+        "BellStreet_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "flexton",
@@ -670,7 +698,10 @@
       "parking": {
         "status": "unknown",
         "note": "Courtyard access described sounds pedestrian-only; parking isn't mentioned and seems unlikely given the access description."
-      }
+      },
+      "floorplans": [
+        "Flexton_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "beaconflat",
@@ -736,7 +767,10 @@
       "parking": {
         "status": "has",
         "note": "A secure allocated parking space (up-and-over door) is included at the rear — a real space, not just street parking."
-      }
+      },
+      "floorplans": [
+        "BeaconFlat_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "cranford",
@@ -793,7 +827,10 @@
       "parking": {
         "status": "unknown",
         "note": "Not mentioned in the listing either way."
-      }
+      },
+      "floorplans": [
+        "Cranford_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "sidmouth",
@@ -949,7 +986,10 @@
       "parking": {
         "status": "unknown",
         "note": "Village-centre position; on-street parking is the practical reality even though the listing doesn't confirm it explicitly."
-      }
+      },
+      "floorplans": [
+        "Otterton_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "feniton",
@@ -1104,7 +1144,10 @@
       "parking": {
         "status": "has",
         "note": "Allocated parking confirmed in the listing."
-      }
+      },
+      "floorplans": [
+        "Douglas_Floorplan_1.png"
+      ]
     },
     {
       "id": "beacon",
@@ -1169,7 +1212,10 @@
       "parking": {
         "status": "has",
         "note": "Private garage included."
-      }
+      },
+      "floorplans": [
+        "Beacon_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "withycombe",
@@ -1218,54 +1264,6 @@
       "parking": {
         "status": "unknown",
         "note": "Not confirmed either way — the specific listing couldn't be relocated this sweep."
-      }
-    },
-    {
-      "id": "salterton",
-      "section": "background",
-      "title": "Salterton Road, Exmouth (ground-floor retirement flat)",
-      "price": "£150,000 (as of first report, unconfirmed)",
-      "agent": "Hall & Scott",
-      "flags": [
-        {
-          "text": "IN BUDGET",
-          "color": "#2E7D32"
-        },
-        {
-          "text": "NO PARKING INFO",
-          "color": "#757575"
-        },
-        {
-          "text": "LIKELY SOLD/WITHDRAWN",
-          "color": "#8D6E63"
-        }
-      ],
-      "photos": [],
-      "map": "map_salterton_rd.png",
-      "link": "https://hallandscott.co.uk/sales/",
-      "linkLabel": "hallandscott.co.uk/sales/ (specific listing not relocated)",
-      "body": "Two-bedroom ground-floor retirement apartment, direct access to communal gardens, close to amenities and bus routes. Likely age-restricted.",
-      "why": "Cheapest option found originally; could not reconfirm this exact flat this sweep (a different Salterton Road retirement flat, Bronte Court, now shows instead). No photo included to avoid misattributing an image to the wrong flat.",
-      "dateAdded": "2026-07-03",
-      "checklist": {
-        "ocean": "yes",
-        "trainStation": "yes",
-        "poolSwimTeam": "yes",
-        "private": "no",
-        "groundFloorLongTerm": "yes",
-        "mtbTrails": "partial",
-        "character": "no",
-        "garden": "partial",
-        "garageWorkspace": "no",
-        "uniqueFeature": null,
-        "closeToFamily": "yes"
-      },
-      "aiRating": 6,
-      "aiTake": "Ticks ground-floor and location boxes cheaply, but likely age-restricted and has none of the character you're after — a fallback, not a favourite. Also under your real £170k target, which counts for more than the £300k ceiling implies.",
-      "bedrooms": 2,
-      "parking": {
-        "status": "unknown",
-        "note": "Not confirmed either way."
       }
     },
     {
@@ -1479,7 +1477,10 @@
       "parking": {
         "status": "unknown",
         "note": "Pedestrianised position in the village centre makes off-street parking unlikely, though the listing doesn't confirm either way."
-      }
+      },
+      "floorplans": [
+        "Greenway_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "townlanewoodbury",
@@ -1544,7 +1545,10 @@
       "parking": {
         "status": "unknown",
         "note": "Not confirmed either way."
-      }
+      },
+      "floorplans": [
+        "TownLaneWoodbury_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "woodburyconservation",
@@ -1598,7 +1602,10 @@
       "parking": {
         "status": "unknown",
         "note": "Not confirmed either way; only a courtyard garden is mentioned."
-      }
+      },
+      "floorplans": [
+        "WoodburyConservation_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "queenstreetbudleigh",
@@ -1661,7 +1668,10 @@
       "parking": {
         "status": "onstreet",
         "note": "On-street parking only; walking distance to the high street and beach instead."
-      }
+      },
+      "floorplans": [
+        "QueenStreet_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "longbrooklympstone",
@@ -1723,7 +1733,10 @@
       "parking": {
         "status": "unknown",
         "note": "Not confirmed either way; a paved courtyard is mentioned but no parking."
-      }
+      },
+      "floorplans": [
+        "LongbrookLympstone_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "allsaintseastbudleigh",
@@ -1848,7 +1861,10 @@
       "parking": {
         "status": "has",
         "note": "A real garage in a nearby block — not just a maybe."
-      }
+      },
+      "floorplans": [
+        "VansittartExmouth_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "normancrescentbudleigh",
@@ -1964,7 +1980,10 @@
       "parking": {
         "status": "has",
         "note": "Off-street parking plus a double open-fronted car port — the best parking/character combination of the sweep, offset by the inland location."
-      }
+      },
+      "floorplans": [
+        "HorseshoeBarnKnowle_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "churchstilewoodbury",
@@ -2053,7 +2072,10 @@
       "parking": {
         "status": "onstreet",
         "note": "Confirmed on-street only by the listing itself, not just an omission — see the research findings below for more on this street specifically."
-      }
+      },
+      "floorplans": [
+        "ChurchStileWoodbury_Floorplan_1.png"
+      ]
     },
     {
       "id": "castlelane",
@@ -2121,7 +2143,10 @@
       "parking": {
         "status": "unknown",
         "note": "Listing says \"ask agent\" — not confirmed either way."
-      }
+      },
+      "floorplans": [
+        "CastleLane_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "mireylanewoodbury",
@@ -2187,7 +2212,10 @@
       "parking": {
         "status": "onstreet",
         "note": "On-street parking plus a genuine free short-stay car park (Flower Street) two minutes' walk away — better-confirmed than most \"no parking info\" entries."
-      }
+      },
+      "floorplans": [
+        "MireyLaneWoodbury_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "longmeadowthatched",
@@ -2252,7 +2280,10 @@
       "parking": {
         "status": "unknown",
         "note": "Not mentioned in the listing either way."
-      }
+      },
+      "floorplans": [
+        "LongmeadowThatched_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "tythecottage",
@@ -2386,7 +2417,10 @@
       "parking": {
         "status": "onstreet",
         "note": "Not mentioned in the listing. Victoria Road has Limited Waiting restrictions (Mon-Sat 8am-6pm, 1hr no return) with an exemption for Residents' Zone B permit holders — a resident's permit (around £35/year for a first permit) would be needed for reliable on-street parking rather than free unrestricted parking."
-      }
+      },
+      "floorplans": [
+        "VictoriaRoad_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "chapelstsidbury",
@@ -2445,7 +2479,10 @@
       "parking": {
         "status": "unknown",
         "note": "Listing doesn't specify parking arrangements for this flat — worth asking the agent directly, since purpose-built developments like this sometimes have allocated bays not mentioned in the online listing."
-      }
+      },
+      "floorplans": [
+        "ChapelStSidbury_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "bictonstexmouth",
@@ -2503,7 +2540,10 @@
       "parking": {
         "status": "has",
         "note": "Off-road parking plus a rear parking space adjacent to the barn, confirmed in the listing."
-      }
+      },
+      "floorplans": [
+        "BictonStExmouth_Floorplan_1.png"
+      ]
     },
     {
       "id": "castlecottageswoodbury",
@@ -2557,7 +2597,10 @@
       "parking": {
         "status": "has",
         "note": "\"Parking to the front\" listed as a key feature."
-      }
+      },
+      "floorplans": [
+        "CastleCottagesWoodbury_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "vicarageroadeastbudleigh",
@@ -2607,7 +2650,10 @@
       "parking": {
         "status": "has",
         "note": "Parking confirmed in the listing details, though exact arrangement (driveway vs allocated space) isn't spelled out."
-      }
+      },
+      "floorplans": [
+        "VicarageRoadEastBudleigh_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "craneslaneeastbudleigh",
@@ -2661,7 +2707,10 @@
       "parking": {
         "status": "none",
         "note": "No allocated parking with the property. A public car park is roughly 130 yards away — realistically walkable but not guaranteed, and worth checking East Budleigh's car park capacity/cost before relying on it day-to-day."
-      }
+      },
+      "floorplans": [
+        "CranesLaneEastBudleigh_Floorplan_1.jpg"
+      ]
     },
     {
       "id": "greenwaygradeii",
@@ -2731,7 +2780,10 @@
       "parking": {
         "status": "onstreet",
         "note": "On-street parking only, confirmed directly in the listing — no allocated space or garage. Woodbury village centre has a free short-stay car park on Flower Street a couple of minutes' walk away, as already established for other village-centre Woodbury entries."
-      }
+      },
+      "floorplans": [
+        "Greenway2_Floorplan_1.jpg"
+      ]
     }
   ]
 }

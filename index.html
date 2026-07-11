@@ -35,6 +35,10 @@
   .parking-block { background: #eef6fb; border-left: 4px solid #1565C0; border-radius: 4px; padding: 8px 12px; font-size: 13px; line-height: 1.5; margin-bottom: 14px; }
   .parking-block .parking-note { color: #333; }
   .photos { margin-bottom: 14px; }
+  .floorplans { margin-bottom: 14px; }
+  .floorplans-label { font-size: 13px; font-weight: 700; color: #444; margin-bottom: 6px; }
+  .floorplans-row { display: flex; flex-wrap: wrap; gap: 10px; }
+  .floorplan-img { max-width: 220px; max-height: 220px; border: 1px solid #ddd; border-radius: 6px; background: #fff; cursor: zoom-in; }
   .gallery-viewport { position: relative; border-radius: 8px; overflow: hidden; background: #eee; height: 380px; }
   .gallery-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: none; }
   .gallery-img.active { display: block; }
@@ -154,7 +158,7 @@
     </div>
   </div>
 </header>
-<nav><a href="#castlelane">Castle Lane</a><a href="#mireylanewoodbury">Mirey Lane</a><a href="#tythecottage">Tythe Cottage Tea Rooms</a><a href="#victoriaroadexmouth">Victoria Road</a><a href="#chapelstsidbury">Chapel Street</a><a href="#bictonstexmouth">Bicton Street</a><a href="#castlecottageswoodbury">1 Castle Cottages</a><a href="#vicarageroadeastbudleigh">Vicarage Road</a><a href="#craneslaneeastbudleigh">Cranes Lane</a><a href="#greenwaygradeii">Greenway</a><a href="#mountainclose">Mountain Close</a><a href="#haynes">Haynes Cottages</a><a href="#longmeadow">Longmeadow Road</a><a href="#brookside">Brookside Cottage</a><a href="#morcote">Morcote</a><a href="#eastbudleighhighst">High Street</a><a href="#marlesflat">The Marles</a><a href="#farleys">Farleys</a><a href="#bellstreet">3 Bell Street</a><a href="#flexton">The Flexton</a><a href="#beaconflat">The Beacon</a><a href="#cranford">Cranford Avenue</a><a href="#otterton">Thatched Cottage</a><a href="#feniton">Barn at Whites Cottages</a><a href="#douglas">Douglas Avenue</a><a href="#greenwaywoodbury">Greenway</a><a href="#townlanewoodbury">Town Lane</a><a href="#woodburyconservation">Woodbury</a><a href="#queenstreetbudleigh">Queen Street</a><a href="#longbrooklympstone">Longbrook Lane</a><a href="#allsaintseastbudleigh">All Saints Close</a><a href="#vansittartexmouth">Vansittart Drive</a><a href="#normancrescentbudleigh">Norman Crescent</a><a href="#horseshoebarnknowle">Horseshoe Barn</a><a href="#churchstilewoodbury">Church Stile Lane</a><a href="#sidmouth">Circular Thatched Cliff-top Cottage</a><a href="#yettington">The Threshing Barn</a><a href="#beacon">The Beacon</a><a href="#withycombe">Withycombe Village Road</a><a href="#salterton">Salterton Road</a><a href="#eastbudleigh">Grade II Thatched Cottage</a><a href="#clinton">Clinton Garage</a><a href="#leslie">The Coach House</a><a href="#longmeadowthatched">Longmeadow Road</a></nav>
+<nav><a href="#castlelane">Castle Lane</a><a href="#mireylanewoodbury">Mirey Lane</a><a href="#tythecottage">Tythe Cottage Tea Rooms</a><a href="#victoriaroadexmouth">Victoria Road</a><a href="#chapelstsidbury">Chapel Street</a><a href="#bictonstexmouth">Bicton Street</a><a href="#castlecottageswoodbury">1 Castle Cottages</a><a href="#vicarageroadeastbudleigh">Vicarage Road</a><a href="#craneslaneeastbudleigh">Cranes Lane</a><a href="#greenwaygradeii">Greenway</a><a href="#mountainclose">Mountain Close</a><a href="#haynes">Haynes Cottages</a><a href="#longmeadow">Longmeadow Road</a><a href="#brookside">Brookside Cottage</a><a href="#morcote">Morcote</a><a href="#eastbudleighhighst">High Street</a><a href="#marlesflat">The Marles</a><a href="#farleys">Farleys</a><a href="#bellstreet">3 Bell Street</a><a href="#flexton">The Flexton</a><a href="#beaconflat">The Beacon</a><a href="#cranford">Cranford Avenue</a><a href="#otterton">Thatched Cottage</a><a href="#feniton">Barn at Whites Cottages</a><a href="#douglas">Douglas Avenue</a><a href="#greenwaywoodbury">Greenway</a><a href="#townlanewoodbury">Town Lane</a><a href="#woodburyconservation">Woodbury</a><a href="#queenstreetbudleigh">Queen Street</a><a href="#longbrooklympstone">Longbrook Lane</a><a href="#allsaintseastbudleigh">All Saints Close</a><a href="#vansittartexmouth">Vansittart Drive</a><a href="#normancrescentbudleigh">Norman Crescent</a><a href="#horseshoebarnknowle">Horseshoe Barn</a><a href="#churchstilewoodbury">Church Stile Lane</a><a href="#sidmouth">Circular Thatched Cliff-top Cottage</a><a href="#yettington">The Threshing Barn</a><a href="#beacon">The Beacon</a><a href="#withycombe">Withycombe Village Road</a><a href="#eastbudleigh">Grade II Thatched Cottage</a><a href="#clinton">Clinton Garage</a><a href="#leslie">The Coach House</a><a href="#longmeadowthatched">Longmeadow Road</a></nav>
 <main>
 <h1 class="section-title">New This Sweep</h1>
   <section class="card" id="castlelane" data-avg-rating="" data-ai-rating="7" data-overall-rating="7.00" data-bro3-rating="">
@@ -210,6 +214,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/CastleLane_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/CastleLane_Floorplan_1.jpg" alt="castlelane floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -365,6 +370,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/MireyLaneWoodbury_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/MireyLaneWoodbury_Floorplan_1.jpg" alt="mireylanewoodbury floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -521,6 +527,7 @@
     </div>
   </div>
     
+    
     <div class="map-embed">
       <iframe
         src="https://www.google.com/maps?q=Tythe%20Cottage%20Tea%20Rooms%2C%20Littleham%20Village%2C%20Devon%2C%20UK&z=15&output=embed"
@@ -675,6 +682,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/VictoriaRoad_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/VictoriaRoad_Floorplan_1.jpg" alt="victoriaroadexmouth floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -830,6 +838,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/ChapelStSidbury_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/ChapelStSidbury_Floorplan_1.jpg" alt="chapelstsidbury floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -985,6 +994,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/BictonStExmouth_Floorplan_1.png" target="_blank" rel="noopener"><img src="images/BictonStExmouth_Floorplan_1.png" alt="bictonstexmouth floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -1140,6 +1150,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/CastleCottagesWoodbury_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/CastleCottagesWoodbury_Floorplan_1.jpg" alt="castlecottageswoodbury floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -1295,6 +1306,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/VicarageRoadEastBudleigh_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/VicarageRoadEastBudleigh_Floorplan_1.jpg" alt="vicarageroadeastbudleigh floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -1450,6 +1462,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/CranesLaneEastBudleigh_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/CranesLaneEastBudleigh_Floorplan_1.jpg" alt="craneslaneeastbudleigh floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -1605,6 +1618,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Greenway2_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Greenway2_Floorplan_1.jpg" alt="greenwaygradeii floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -1761,6 +1775,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/MountainClose_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/MountainClose_Floorplan_1.jpg" alt="mountainclose floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -1917,6 +1932,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Haynes_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Haynes_Floorplan_1.jpg" alt="haynes floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -2073,6 +2089,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Longmeadow_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Longmeadow_Floorplan_1.jpg" alt="longmeadow floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -2228,6 +2245,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Brookside_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Brookside_Floorplan_1.jpg" alt="brookside floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -2383,6 +2401,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plans</div><div class="floorplans-row"><a href="images/Morcote_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Morcote_Floorplan_1.jpg" alt="morcote floor plan 1" loading="lazy" class="floorplan-img"></a><a href="images/Morcote_Floorplan_2.jpg" target="_blank" rel="noopener"><img src="images/Morcote_Floorplan_2.jpg" alt="morcote floor plan 2" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -2539,6 +2558,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/EastBudleighHighSt_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/EastBudleighHighSt_Floorplan_1.jpg" alt="eastbudleighhighst floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -2694,6 +2714,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/MarlesFlat_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/MarlesFlat_Floorplan_1.jpg" alt="marlesflat floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -2849,6 +2870,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Farleys_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Farleys_Floorplan_1.jpg" alt="farleys floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -3015,6 +3037,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/BellStreet_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/BellStreet_Floorplan_1.jpg" alt="bellstreet floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -3170,6 +3193,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Flexton_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Flexton_Floorplan_1.jpg" alt="flexton floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -3326,6 +3350,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/BeaconFlat_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/BeaconFlat_Floorplan_1.jpg" alt="beaconflat floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -3481,6 +3506,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Cranford_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Cranford_Floorplan_1.jpg" alt="cranford floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -3636,6 +3662,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Otterton_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Otterton_Floorplan_1.jpg" alt="otterton floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -3792,6 +3819,7 @@
     </div>
   </div>
     
+    
     <div class="map-embed">
       <iframe
         src="https://www.google.com/maps?q=Barn%20at%20Whites%20Cottages%2C%20Feniton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK&z=15&output=embed"
@@ -3946,6 +3974,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Douglas_Floorplan_1.png" target="_blank" rel="noopener"><img src="images/Douglas_Floorplan_1.png" alt="douglas floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -4101,6 +4130,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Greenway_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Greenway_Floorplan_1.jpg" alt="greenwaywoodbury floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -4256,6 +4286,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/TownLaneWoodbury_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/TownLaneWoodbury_Floorplan_1.jpg" alt="townlanewoodbury floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -4411,6 +4442,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/WoodburyConservation_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/WoodburyConservation_Floorplan_1.jpg" alt="woodburyconservation floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -4566,6 +4598,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/QueenStreet_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/QueenStreet_Floorplan_1.jpg" alt="queenstreetbudleigh floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -4721,6 +4754,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/LongbrookLympstone_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/LongbrookLympstone_Floorplan_1.jpg" alt="longbrooklympstone floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -4877,6 +4911,7 @@
     </div>
   </div>
     
+    
     <div class="map-embed">
       <iframe
         src="https://www.google.com/maps?q=All%20Saints%20Close%2C%20East%20Budleigh%2C%20Devon%2C%20UK&z=15&output=embed"
@@ -5031,6 +5066,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/VansittartExmouth_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/VansittartExmouth_Floorplan_1.jpg" alt="vansittartexmouth floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -5187,6 +5223,7 @@
     </div>
   </div>
     
+    
     <div class="map-embed">
       <iframe
         src="https://www.google.com/maps?q=Norman%20Crescent%2C%20Budleigh%20Salterton%2C%20Devon%2C%20UK&z=15&output=embed"
@@ -5341,6 +5378,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/HorseshoeBarnKnowle_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/HorseshoeBarnKnowle_Floorplan_1.jpg" alt="horseshoebarnknowle floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -5497,6 +5535,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/ChurchStileWoodbury_Floorplan_1.png" target="_blank" rel="noopener"><img src="images/ChurchStileWoodbury_Floorplan_1.png" alt="churchstilewoodbury floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -5664,6 +5703,7 @@
     </div>
   </div>
     
+    
     <div class="map-embed">
       <iframe
         src="https://www.google.com/maps?q=Circular%20Thatched%20Cliff-top%20Cottage%2C%20Peak%20Hill%20Road%2C%20Sidmouth%2C%20Devon%2C%20UK&z=15&output=embed"
@@ -5820,6 +5860,7 @@
     <div class="parking-block"><strong>🅿️ Has parking</strong><span class="parking-note"> — Gardens and allocated parking were confirmed in the original listing (property is likely sold).</span></div>
     <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
     
+    
     <div class="map-embed">
       <iframe
         src="https://www.google.com/maps?q=The%20Threshing%20Barn%2C%20Yettington%2C%20Devon%2C%20UK&z=15&output=embed"
@@ -5974,6 +6015,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/Beacon_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/Beacon_Floorplan_1.jpg" alt="beacon floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe
@@ -6127,6 +6169,7 @@
     </div>
   </div>
     
+    
     <div class="map-embed">
       <iframe
         src="https://www.google.com/maps?q=Withycombe%20Village%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
@@ -6228,151 +6271,6 @@
     <div class="added">Added 2026-07-03</div>
   </section>
 
-  <section class="card" id="salterton" data-avg-rating="" data-ai-rating="6" data-overall-rating="6.00" data-bro3-rating="">
-    <h2>Salterton Road, Exmouth (ground-floor retirement flat)</h2>
-    <div class="price-row">
-      <span class="price">£150,000 (as of first report, unconfirmed)</span>
-    </div>
-    <div class="beds-baths">🛏 2 beds</div>
-    <a class="source-badge" href="https://hallandscott.co.uk/sales/" target="_blank" rel="noopener">View on HALLANDSCOTT.CO.UK ↗</a>
-    <div class="ratings-block"><h3>Ratings <span class="cl-hint">(family ratings update live as soon as someone posts — no need to wait for a sweep)</span></h3>
-    <div class="rating-row rating-row-overall">
-      <span class="rating-row-label">⭐ Overall</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
-      <span class="rating-row-score">6/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
-    </div>
-  
-      <div class="rating-row rating-row-empty " data-property="salterton" data-bro="Bro 1">
-        <span class="rating-row-label">Bro 1</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
-        <span class="rating-row-score">not yet rated</span>
-      </div>
-    
-      <div class="rating-row rating-row-empty " data-property="salterton" data-bro="Bro 2">
-        <span class="rating-row-label">Bro 2</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
-        <span class="rating-row-score">not yet rated</span>
-      </div>
-    
-      <div class="rating-row rating-row-empty " data-property="salterton" data-bro="Bro 3">
-        <span class="rating-row-label">Bro 3</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
-        <span class="rating-row-score">not yet rated</span>
-      </div>
-    
-    <div class="rating-row rating-row-ai">
-      <span class="rating-row-label">🤖 AI Rating</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%;background:rgb(112,94,60)"></div></div>
-      <span class="rating-row-score">6/10</span>
-      <span class="rating-row-flames">🔥🔥🔥🔥🔥🔥</span>
-    </div>
-  </div>
-    <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span><span class="flag" style="background:#8D6E63">LIKELY SOLD/WITHDRAWN</span></div>
-    <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Not confirmed either way.</span></div>
-    <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
-    
-    <div class="map-embed">
-      <iframe
-        src="https://www.google.com/maps?q=Salterton%20Road%2C%20Exmouth%2C%20Devon%2C%20UK&z=15&output=embed"
-        width="100%" height="380" style="border:0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-      <div class="map-links">
-        <a href="https://www.google.com/maps/search/?api=1&query=Salterton%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Open full Google Maps ↗</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Salterton%20Road%2C%20Exmouth%2C%20Devon%2C%20UK" target="_blank" rel="noopener">Directions ↗</a>
-      </div>
-    </div>
-  
-    <p class="body">Two-bedroom ground-floor retirement apartment, direct access to communal gardens, close to amenities and bus routes. Likely age-restricted.</p>
-    <p class="why"><strong>Why it's here:</strong> Cheapest option found originally; could not reconfirm this exact flat this sweep (a different Salterton Road retirement flat, Bronte Court, now shows instead). No photo included to avoid misattributing an image to the wrong flat.</p>
-    <p class="ai-take">🤖 <strong>AI's take:</strong> Ticks ground-floor and location boxes cheaply, but likely age-restricted and has none of the character you're after — a fallback, not a favourite. Also under your real £170k target, which counts for more than the £300k ceiling implies.</p>
-    
-    
-    <div class="checklist-block">
-      <h3>Jesse's Checklist <span class="cl-hint">(click any item to override — it's your read, not just the AI's)</span></h3>
-      <div class="cl-columns">
-        <div class="cl-col cl-col-good"><h4>✓ What's great</h4><div class="cl-col-body" data-col="good"></div></div>
-        <div class="cl-col cl-col-bad"><h4>✕ What's missing</h4><div class="cl-col-body" data-col="bad"></div></div>
-      </div>
-      <div class="cl-indifferent" data-col="indifferent"><span class="cl-indifferent-label">≈ Doesn't matter here / unclear:</span></div>
-      <div class="cl-source" style="display:none"><div class="cl-item" data-cl-key="ocean" data-cl-default="good" data-prop="salterton" onclick="cycleChecklist(this)">🌊 Close to ocean</div><div class="cl-item" data-cl-key="trainStation" data-cl-default="good" data-prop="salterton" onclick="cycleChecklist(this)">🚉 Close to train station</div><div class="cl-item" data-cl-key="poolSwimTeam" data-cl-default="good" data-prop="salterton" onclick="cycleChecklist(this)">🏊 Close to pool/swim team</div><div class="cl-item" data-cl-key="private" data-cl-default="bad" data-prop="salterton" onclick="cycleChecklist(this)">🔒 Private/secluded</div><div class="cl-item" data-cl-key="mtbTrails" data-cl-default="indifferent" data-prop="salterton" onclick="cycleChecklist(this)">🚵 Close to Woodbury Common/MTB trails</div><div class="cl-item" data-cl-key="character" data-cl-default="bad" data-prop="salterton" onclick="cycleChecklist(this)">✨ Has character</div><div class="cl-item" data-cl-key="garden" data-cl-default="indifferent" data-prop="salterton" onclick="cycleChecklist(this)">🌳 Has a garden</div><div class="cl-item" data-cl-key="garageWorkspace" data-cl-default="bad" data-prop="salterton" onclick="cycleChecklist(this)">🔧 Garage/shed/workspace</div><div class="cl-item" data-cl-key="closeToFamily" data-cl-default="good" data-prop="salterton" onclick="cycleChecklist(this)">👨‍👩‍👦 Close to Exmouth/brothers</div><div class="cl-item" data-cl-key="groundFloorLongTerm" data-cl-default="good" data-prop="salterton" onclick="cycleChecklist(this)">♿ Already ground-floor livable</div></div>
-      
-    </div>
-  
-    
-    <div class="ask-claude-block">
-      <div class="mini-form">
-        <textarea class="research-input" placeholder="What should Claude look into? (a specific risk, local news, planning history, why the price is what it is…)"></textarea>
-        <button class="research-post-btn" data-property="salterton" data-title="Salterton Road, Exmouth (ground-floor retirement flat)">🔍 Ask Claude to research this</button>
-        <span class="mini-status"></span>
-      </div>
-      <div class="mini-form">
-        <textarea class="remove-input" placeholder="Reason for removal (optional)…"></textarea>
-        <button class="remove-post-btn" data-property="salterton" data-title="Salterton Road, Exmouth (ground-floor retirement flat)">Request removal</button>
-        <span class="mini-status"></span>
-      </div>
-      <span class="notes-caveat">No sign-in needed — Claude actions these on the next daily sweep, not instantly.</span>
-    </div>
-  
-    
-    <div class="comments-block">
-      <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
-      <div class="brother-boxes">
-        
-    <div class="brother-box brother-box-1">
-      <h4>Bro 1</h4>
-      <div class="bro-comments" data-term="salterton-bro1">Loading…</div>
-      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
-      <div class="bro-controls">
-        <select class="bro-rating">
-          <option value="">No rating</option>
-          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
-        </select>
-        <button class="bro-post-btn" data-property="salterton" data-bro="Bro 1">Post</button>
-      </div>
-      <span class="bro-status"></span>
-    </div>
-  
-        
-    <div class="brother-box brother-box-2">
-      <h4>Bro 2</h4>
-      <div class="bro-comments" data-term="salterton-bro2">Loading…</div>
-      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
-      <div class="bro-controls">
-        <select class="bro-rating">
-          <option value="">No rating</option>
-          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
-        </select>
-        <button class="bro-post-btn" data-property="salterton" data-bro="Bro 2">Post</button>
-      </div>
-      <span class="bro-status"></span>
-    </div>
-  
-        
-    <div class="brother-box brother-box-3">
-      <h4>Bro 3</h4>
-      <div class="bro-comments" data-term="salterton-bro3">Loading…</div>
-      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
-      <div class="bro-controls">
-        <select class="bro-rating">
-          <option value="">No rating</option>
-          <option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option>
-        </select>
-        <button class="bro-post-btn" data-property="salterton" data-bro="Bro 3">Post</button>
-      </div>
-      <span class="bro-status"></span>
-    </div>
-  
-      </div>
-    </div>
-  
-    <div class="added">Added 2026-07-03</div>
-  </section>
-
   <section class="card" id="eastbudleigh" data-avg-rating="" data-ai-rating="2" data-overall-rating="2.00" data-bro3-rating="">
     <h2>Grade II Thatched Cottage, High Street, East Budleigh</h2>
     <div class="price-row">
@@ -6423,6 +6321,7 @@
       </div>
     </div>
   </div>
+    
     
     <div class="map-embed">
       <iframe
@@ -6579,6 +6478,7 @@
     </div>
   </div>
     
+    
     <div class="map-embed">
       <iframe
         src="https://www.google.com/maps?q=Clinton%20Garage%2C%20Budleigh%20Salterton%20%E2%80%94%20AUCTION%2C%20Devon%2C%20UK&z=15&output=embed"
@@ -6723,6 +6623,7 @@
     <div class="flags"><span class="flag" style="background:#2E7D32">IN BUDGET</span><span class="flag" style="background:#757575">NO PARKING INFO</span><span class="flag" style="background:#8D6E63">STATUS UNCONFIRMED</span></div>
     <div class="parking-block"><strong>❓ Parking unclear</strong><span class="parking-note"> — Not confirmed either way — exact listing couldn't be relocated this sweep.</span></div>
     <div class="photos"><div class="no-photo">No photo available this sweep</div></div>
+    
     
     <div class="map-embed">
       <iframe
@@ -6878,6 +6779,7 @@
       </div>
     </div>
   </div>
+    <div class="floorplans"><div class="floorplans-label">📐 Floor plan</div><div class="floorplans-row"><a href="images/LongmeadowThatched_Floorplan_1.jpg" target="_blank" rel="noopener"><img src="images/LongmeadowThatched_Floorplan_1.jpg" alt="longmeadowthatched floor plan 1" loading="lazy" class="floorplan-img"></a></div></div>
     
     <div class="map-embed">
       <iframe

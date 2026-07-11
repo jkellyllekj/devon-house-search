@@ -37,6 +37,14 @@ function photosHtml(id, photos) {
   `;
 }
 
+function floorplansHtml(id, floorplans) {
+  if (!floorplans || !floorplans.length) return "";
+  const imgs = floorplans.map((f, i) =>
+    `<a href="images/${f}" target="_blank" rel="noopener"><img src="images/${f}" alt="${esc(id)} floor plan ${i + 1}" loading="lazy" class="floorplan-img"></a>`
+  ).join("");
+  return `<div class="floorplans"><div class="floorplans-label">📐 Floor plan${floorplans.length > 1 ? "s" : ""}</div><div class="floorplans-row">${imgs}</div></div>`;
+}
+
 function bedsBathsHtml(p) {
   const parts = [];
   if (p.bedrooms !== undefined && p.bedrooms !== null) parts.push(`🛏 ${esc(String(p.bedrooms))} bed${p.bedrooms == 1 ? "" : "s"}`);
@@ -302,6 +310,7 @@ function propertyCard(p) {
     <div class="flags">${p.flags.map(flagHtml).join("")}</div>
     ${parkingHtml(p)}
     <div class="photos">${photosHtml(p.id, p.photos)}</div>
+    ${floorplansHtml(p.id, p.floorplans)}
     ${mapEmbedHtml(p)}
     <p class="body">${esc(p.body)}</p>
     <p class="why"><strong>Why it's here:</strong> ${esc(p.why)}</p>
@@ -360,6 +369,10 @@ const html = `<!DOCTYPE html>
   .parking-block { background: #eef6fb; border-left: 4px solid #1565C0; border-radius: 4px; padding: 8px 12px; font-size: 13px; line-height: 1.5; margin-bottom: 14px; }
   .parking-block .parking-note { color: #333; }
   .photos { margin-bottom: 14px; }
+  .floorplans { margin-bottom: 14px; }
+  .floorplans-label { font-size: 13px; font-weight: 700; color: #444; margin-bottom: 6px; }
+  .floorplans-row { display: flex; flex-wrap: wrap; gap: 10px; }
+  .floorplan-img { max-width: 220px; max-height: 220px; border: 1px solid #ddd; border-radius: 6px; background: #fff; cursor: zoom-in; }
   .gallery-viewport { position: relative; border-radius: 8px; overflow: hidden; background: #eee; height: 380px; }
   .gallery-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: none; }
   .gallery-img.active { display: block; }
