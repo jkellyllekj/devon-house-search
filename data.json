@@ -2787,7 +2787,7 @@
     },
     {
       "id": "clarenceroadbudleigh",
-      "section": "new",
+      "section": "still",
       "title": "Clarence Road, Budleigh Salterton (end-of-terrace)",
       "price": "£300,000",
       "agent": "Bradleys, Budleigh Salterton",
@@ -2859,7 +2859,7 @@
     },
     {
       "id": "ashleyhouseexmouth",
-      "section": "new",
+      "section": "still",
       "title": "Flat 3 Ashley House, Raddenstile Lane, Exmouth (ground-floor flat) — AUCTION",
       "price": "£155,000 (guide price, auction)",
       "agent": "Countrywide Property Auctions, South West",
@@ -2918,7 +2918,7 @@
     },
     {
       "id": "strandlympstone2",
-      "section": "new",
+      "section": "still",
       "title": "The Strand, Lympstone (2-bed semi-detached cottage)",
       "price": "£300,000",
       "agent": "Pennys, Exmouth",
@@ -2980,7 +2980,7 @@
     },
     {
       "id": "winstonroadexmouth",
-      "section": "new",
+      "section": "still",
       "title": "Winston Road, Exmouth (bungalow)",
       "price": "£280,000",
       "agent": "Bradleys, Exmouth",
@@ -3048,7 +3048,7 @@
     },
     {
       "id": "cranfordavenue2",
-      "section": "new",
+      "section": "still",
       "title": "Cranford Avenue, Exmouth (ground-floor flat, garage)",
       "price": "£220,000",
       "agent": "Meadows Estate Agents, Exmouth",
@@ -3119,6 +3119,270 @@
       },
       "aiRating": 6,
       "aiTake": "Ground floor with an actual garage and no chain is a rare combo for a flat, but a 78-year lease plus ~£1,828/yr service charge chips into the value — a fair option, not a standout."
+    },
+    {
+      "id": "oldcourthousewoodbury",
+      "section": "new",
+      "title": "The Old Court House, Woodbury",
+      "price": "Offers over £150,000",
+      "agent": "Rightmove listing",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "OldCourtHouse_Gallery_1.jpg",
+        "OldCourtHouse_Gallery_2.jpg",
+        "OldCourtHouse_Gallery_3.jpg",
+        "OldCourtHouse_Gallery_4.jpg",
+        "OldCourtHouse_Gallery_5.jpg",
+        "OldCourtHouse_Gallery_6.jpg",
+        "OldCourtHouse_Gallery_7.jpg",
+        "OldCourtHouse_Gallery_8.jpg",
+        "OldCourtHouse_Gallery_9.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/174717722",
+      "linkLabel": "rightmove.co.uk/properties/174717722",
+      "body": "A two-bedroom first-floor apartment within a converted 1834 Grade II listed building in the centre of Woodbury, converted to residential use in 2012. It has high ceilings, period sash windows, a dual-aspect kitchen/living room with fireplace, and countryside views. Recent upgrades include new windows in 2024 (around £20,000) and electric heating installed in 2023. Two private storage sheds are included, and the sale is a 25% share of the freehold with a 185-year lease remaining. Council tax band A, offered with no onward chain.",
+      "why": "At offers over £150,000 this is the cheapest of this sweep's finds by a wide margin, and it sits in Woodbury itself, close to Woodbury Common and one of your brothers. The character is genuine (Grade II, 1834, sash windows, fireplace) rather than cosmetic. Set against that: it's a first-floor flat with no garden, a lease rather than outright freehold (albeit with a 25% freehold share and 185 years left), and parking isn't mentioned anywhere in the listing, so don't assume a space comes with it.",
+      "dateAdded": "2026-07-12",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "partial",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "uniqueFeature": "25% share of freehold in a converted 1834 Grade II listed courthouse building, with two private storage sheds",
+        "closeToFamily": "yes",
+        "tenure": "leasehold",
+        "leaseYears": 185
+      },
+      "aiRating": 8,
+      "aiTake": "Cheapest of the batch with real period character and a Woodbury Common location, but it's a leasehold first-floor flat with no garden and no disclosed parking.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "unknown",
+        "note": "Not stated anywhere in the listing. Woodbury has no formal residents' permit scheme, so on-street parking on the surrounding village lanes is the realistic default for a central converted building like this — worth confirming directly with the agent (Butt Estates, Topsham) before assuming a space is included."
+      },
+      "floorplans": [
+        "OldCourtHouse_Floorplan_1.jpg"
+      ]
+    },
+    {
+      "id": "bellstreet2",
+      "section": "new",
+      "title": "Bell Street, Otterton",
+      "price": "£220,000",
+      "agent": "Rightmove listing",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "BellStreet2_Gallery_1.jpg",
+        "BellStreet2_Gallery_2.jpg",
+        "BellStreet2_Gallery_3.jpg",
+        "BellStreet2_Gallery_4.jpg",
+        "BellStreet2_Gallery_5.jpg",
+        "BellStreet2_Gallery_6.jpg",
+        "BellStreet2_Gallery_7.jpg",
+        "BellStreet2_Gallery_8.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/90365688",
+      "linkLabel": "rightmove.co.uk/properties/90365688",
+      "body": "A two-bedroom terraced cottage on Bell Street in Otterton, suitable as a permanent or holiday home, with the roof fully renewed in 2023. The ground floor has an entrance hall, sitting room with fireplace, kitchen/breakfast room, rear lobby and shower room; the first floor has two bedrooms and a bathroom. There's an attractive enclosed rear garden with raised beds, an artificial lawn, a woodchip area and a timber store. Freehold, council tax band C, mains electric, water and drainage, offered with no onward chain.",
+      "why": "£220,000 for a freehold cottage with its own garden in Otterton, a short distance from your brother nearby, is a solid budget fit. It has genuine cottage character (fireplace, terraced village form) without being a fixer-upper — the roof was redone in 2023. The honest catch is parking: the listing states on-street parking subject to availability, and Otterton has no public car park of its own, so on-street is genuinely the only option here, not a gap in the listing. Distinct from the already-tracked \"3 Bell Street\" (a different Rightmove/Pennys listing, same street).",
+      "dateAdded": "2026-07-12",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "partial",
+        "private": "partial",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": "Roof fully renewed in 2023; enclosed rear garden with raised beds, artificial lawn and timber store",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 7,
+      "aiTake": "Solidly in-budget freehold cottage with a real garden and a brother nearby, let down only by Otterton's genuine lack of any parking beyond the street.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "parking": {
+        "status": "onstreet",
+        "note": "Listing confirms on-street parking, subject to availability. Otterton has no public car park in the village and no confirmed residents' permit scheme, so on-street really is the norm here rather than a detail the agent omitted."
+      },
+      "floorplans": [
+        "BellStreet2_Floorplan_1.jpg"
+      ]
+    },
+    {
+      "id": "greenwaycob",
+      "section": "new",
+      "title": "Greenway, Woodbury (cob-and-stone cottage)",
+      "price": "£265,000",
+      "agent": "Rightmove listing",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "GreenwayCob_Gallery_1.jpg",
+        "GreenwayCob_Gallery_2.jpg",
+        "GreenwayCob_Gallery_3.jpg",
+        "GreenwayCob_Gallery_4.jpg",
+        "GreenwayCob_Gallery_5.jpg",
+        "GreenwayCob_Gallery_6.jpg",
+        "GreenwayCob_Gallery_7.jpg",
+        "GreenwayCob_Gallery_8.jpg",
+        "GreenwayCob_Gallery_9.jpg",
+        "GreenwayCob_Gallery_10.jpg",
+        "GreenwayCob_Gallery_11.jpg",
+        "GreenwayCob_Gallery_12.jpg",
+        "GreenwayCob_Gallery_13.jpg",
+        "GreenwayCob_Gallery_14.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/166641974",
+      "linkLabel": "rightmove.co.uk/properties/166641974",
+      "body": "A two-bedroom character cottage occupying a pedestrianised position in the heart of Woodbury village, with good access to local amenities. It has exposed ceiling beams and an inglenook-style fireplace with a wood-burning stove, a first-floor modern bathroom, a lounge/dining room, a modern kitchen and gas central heating. There are front and rear gardens. Offered with no onward chain, in a popular village location with good access to Exmouth, Exeter and the main link roads.",
+      "why": "Right in the middle of your budget at £265,000, with the best character features of this sweep's finds — exposed beams, inglenook fireplace, wood burner — plus its own front and rear gardens, which is rare for a cottage this central. It's in Woodbury itself, so close to your brother and Woodbury Common. The tradeoff is the pedestrianised village-centre position: the listing gives no parking detail at all, and a cottage with no direct vehicle access to its door means on-street parking elsewhere in the village is the likely reality, not a guaranteed space. Note: distinct from the already-tracked \"greenwaygradeii\" and \"greenwaywoodbury\" entries — Greenway appears to be a common street/place name in Woodbury with several separate cottages on file.",
+      "dateAdded": "2026-07-12",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "partial",
+        "private": "partial",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": "Cob-and-stone cottage with inglenook fireplace and wood-burning stove, in a pedestrianised part of Woodbury village centre, with both front and rear gardens",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "The most characterful cottage of this sweep's batch with a genuine garden and a Woodbury Common location, but its pedestrianised village-centre position means parking is a real unknown, not just an unstated detail.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "unknown",
+        "note": "Not stated in the listing, and the cottage sits in a pedestrianised part of the village with no obvious direct vehicle access to the door. Woodbury has no formal residents' permit scheme, so any parking would be on-street on a nearby lane — worth checking with the agent before relying on it."
+      },
+      "floorplans": [
+        "GreenwayCob_Floorplan_1.jpg"
+      ]
+    },
+    {
+      "id": "stjohnsfarmmews",
+      "section": "new",
+      "title": "St. Johns Farm Mews, Exmouth",
+      "price": "Offers over £295,000",
+      "agent": "Rightmove listing",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (garage + off-street)",
+          "color": "#1565C0"
+        }
+      ],
+      "photos": [
+        "StJohnsFarmMews_Gallery_1.jpg",
+        "StJohnsFarmMews_Gallery_2.jpg",
+        "StJohnsFarmMews_Gallery_3.jpg",
+        "StJohnsFarmMews_Gallery_4.jpg",
+        "StJohnsFarmMews_Gallery_5.jpg",
+        "StJohnsFarmMews_Gallery_6.jpg",
+        "StJohnsFarmMews_Gallery_7.jpg",
+        "StJohnsFarmMews_Gallery_8.jpg",
+        "StJohnsFarmMews_Gallery_9.jpg",
+        "StJohnsFarmMews_Gallery_10.jpg",
+        "StJohnsFarmMews_Gallery_11.jpg",
+        "StJohnsFarmMews_Gallery_12.jpg",
+        "StJohnsFarmMews_Gallery_13.jpg",
+        "StJohnsFarmMews_Gallery_14.jpg",
+        "StJohnsFarmMews_Gallery_15.jpg",
+        "StJohnsFarmMews_Gallery_16.jpg",
+        "StJohnsFarmMews_Gallery_17.jpg",
+        "StJohnsFarmMews_Gallery_18.jpg",
+        "StJohnsFarmMews_Gallery_19.jpg",
+        "StJohnsFarmMews_Gallery_20.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/171737174",
+      "linkLabel": "rightmove.co.uk/properties/171737174",
+      "body": "A two-bedroom house in St. Johns Farm Mews, a small mews-style development off St Johns Road in a semi-rural setting on the northern edge of Exmouth. It has two double bedrooms with fitted wardrobes, a spacious lounge/dining room, a modern updated kitchen, and a recently renovated shower room with a rainfall feature; the master bedroom has a vanity area. There's a front garden, a garage, and additional off-street and communal parking. The listing describes the finish as beautifully decorated throughout with contemporary touches and notes excellent transport links.",
+      "why": "The standout here is parking: a garage plus off-street and communal spaces, which the agent rightly calls a rare find in this kind of location, and it's the only one of this sweep's finds with a real answer to your parking requirement. It's in Exmouth, so close to the coast and reasonably close to family, though the Mews sits north of the town centre in a quieter semi-rural pocket rather than right on the seafront. The tradeoff is character: this reads as a modern, tidily renovated house rather than a period property, so it's the practical pick rather than the charming one, and at offers over £295,000 it could end up pushing toward your ceiling.",
+      "dateAdded": "2026-07-12",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "partial",
+        "poolSwimTeam": "partial",
+        "private": "partial",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "yes",
+        "uniqueFeature": "Includes its own garage plus off-street and communal parking, unusually generous for the area",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "The parking answer of the group (garage plus off-street), in Exmouth, but modern and character-free, and \"offers over £295,000\" leaves room for the price to drift toward the ceiling.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "has",
+        "note": "Listing states a garage plus off-street and communal parking are included — the clearest parking answer of this sweep's finds, though \"communal\" suggests some spaces may be shared rather than exclusively allocated, worth confirming with the agent (Hunters, Exeter)."
+      },
+      "floorplans": [
+        "StJohnsFarmMews_Floorplan_1.jpg"
+      ]
     }
   ]
 }

@@ -90,6 +90,18 @@ async function createIssue(env, title, body, labels) {
   if (!res.ok) throw new Error(`issue create failed: ${res.status}`);
 }
 
+async function listOpenIssues(env, label) {
+  const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/issues?state=open&labels=${label}&per_page=50`, {
+    headers: {
+      "Authorization": `Bearer ${env.GITHUB_TOKEN}`,
+      "User-Agent": "devon-house-search-worker",
+      "Accept": "application/vnd.github+json",
+    },
+  });
+  if (!res.ok) throw new Error(`issue list failed: ${res.status}`);
+  return res.json();
+}
+
 const BRO_RE = /^Bro [123]$/;
 
 export default {
@@ -139,6 +151,15 @@ export default {
         if (!listingUrl) return json({ error: "bad request" }, 400);
         await createIssue(env, `Submit: ${listingUrl.slice(0, 200)}`, `Listing URL: ${listingUrl}\n\nWhat do you like about it: ${(notes || "").slice(0, 1000)}`, ["property-submission"]);
         return json({ ok: true });
+      }
+
+      if (url.pathname === "/pending" && request.method === "GET") {
+        const issues = await listOpenIssues(env, "property-submission");
+        const pending = issues.map(issue => {
+          const m = (issue.body || "").match(/Listing URL:\s*(\S+)/);
+          return { url: m ? m[1] : null, createdAt: issue.created_at, number: issue.number };
+        }).filter(p => p.url);
+        return json({ pending });
       }
 
       return json({ error: "not found" }, 404);
