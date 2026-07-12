@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-11",
+  "lastUpdated": "2026-07-12",
   "properties": [
     {
       "id": "mountainclose",
@@ -1385,7 +1385,7 @@
           "color": "#757575"
         },
         {
-          "text": "STATUS UNCONFIRMED",
+          "text": "LIKELY SOLD/WITHDRAWN",
           "color": "#8D6E63"
         }
       ],
@@ -2079,7 +2079,7 @@
     },
     {
       "id": "castlelane",
-      "section": "new",
+      "section": "still",
       "title": "Castle Lane, Exmouth (Grade II thatched cottage)",
       "price": "£225,000 (guide price)",
       "agent": "Rightmove listing",
@@ -2150,7 +2150,7 @@
     },
     {
       "id": "mireylanewoodbury",
-      "section": "new",
+      "section": "still",
       "title": "Mirey Lane, Woodbury (Grade II cottage)",
       "price": "Offers In Excess of £250,000",
       "agent": "East of Exe, Topsham",
@@ -2287,7 +2287,7 @@
     },
     {
       "id": "tythecottage",
-      "section": "new",
+      "section": "still",
       "title": "Tythe Cottage Tea Rooms, Littleham Village (Grade II — AUCTION)",
       "price": "£325,000+ (guide price, auction)",
       "agent": "Countrywide Property Auctions (Sutton Kersh)",
@@ -2350,7 +2350,7 @@
     },
     {
       "id": "victoriaroadexmouth",
-      "section": "new",
+      "section": "still",
       "title": "Victoria Road, Exmouth (ground-floor flat)",
       "price": "Guide Price £70,000",
       "agent": "Your Move, Exmouth",
@@ -2424,7 +2424,7 @@
     },
     {
       "id": "chapelstsidbury",
-      "section": "new",
+      "section": "still",
       "title": "Chapel Street, Sidbury (ground-floor flat)",
       "price": "£140,000",
       "agent": "Harrison-Lavers & Potbury's, Sidmouth",
@@ -2486,7 +2486,7 @@
     },
     {
       "id": "bictonstexmouth",
-      "section": "new",
+      "section": "still",
       "title": "Bicton Street, Exmouth (Grade II townhouse + separate listed barn)",
       "price": "Guide Price £415,000",
       "agent": "Hall & Scott, Exmouth",
@@ -2547,7 +2547,7 @@
     },
     {
       "id": "castlecottageswoodbury",
-      "section": "new",
+      "section": "still",
       "title": "1 Castle Cottages, Castle Lane, Woodbury (period cottage)",
       "price": "Guide Price £375,000",
       "agent": "Stags, Exeter",
@@ -2604,7 +2604,7 @@
     },
     {
       "id": "vicarageroadeastbudleigh",
-      "section": "new",
+      "section": "still",
       "title": "Vicarage Road, East Budleigh (stone and cob period cottage)",
       "price": "Guide Price £325,000",
       "agent": "Hall & Scott, Ottery St Mary",
@@ -2657,7 +2657,7 @@
     },
     {
       "id": "craneslaneeastbudleigh",
-      "section": "new",
+      "section": "still",
       "title": "Cranes Lane, East Budleigh (renovated period cottage)",
       "price": "£325,000",
       "agent": "Bradleys, Budleigh Salterton",
@@ -2714,7 +2714,7 @@
     },
     {
       "id": "greenwaygradeii",
-      "section": "new",
+      "section": "still",
       "title": "Greenway, Woodbury (Grade II listed cottage)",
       "price": "£295,000",
       "agent": "Stags, Exeter",
@@ -2784,6 +2784,341 @@
       "floorplans": [
         "Greenway2_Floorplan_1.jpg"
       ]
+    },
+    {
+      "id": "clarenceroadbudleigh",
+      "section": "new",
+      "title": "Clarence Road, Budleigh Salterton (end-of-terrace)",
+      "price": "£300,000",
+      "agent": "Bradleys, Budleigh Salterton",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "IN BUDGET (AT CEILING)",
+          "color": "#43A047"
+        },
+        {
+          "text": "HAS PARKING (2 cars, off-road)",
+          "color": "#1E88E5"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#6D4C41"
+        }
+      ],
+      "parking": {
+        "status": "has",
+        "note": "Off-road parking directly in front for two cars."
+      },
+      "photos": [
+        "Clarence_Gallery_1.jpg",
+        "Clarence_Gallery_2.jpg",
+        "Clarence_Gallery_3.jpg",
+        "Clarence_Gallery_4.jpg",
+        "Clarence_Gallery_5.jpg",
+        "Clarence_Gallery_6.jpg",
+        "Clarence_Gallery_7.jpg",
+        "Clarence_Gallery_8.jpg",
+        "Clarence_Gallery_9.jpg",
+        "Clarence_Gallery_10.jpg",
+        "Clarence_Gallery_11.jpg",
+        "Clarence_Gallery_12.jpg",
+        "Clarence_Gallery_13.jpg",
+        "Clarence_Gallery_14.jpg",
+        "Clarence_Gallery_15.jpg",
+        "Clarence_Gallery_16.jpg",
+        "Clarence_Gallery_17.jpg",
+        "Clarence_Gallery_18.jpg",
+        "Clarence_Gallery_19.jpg"
+      ],
+      "floorplans": [
+        "Clarence_Floorplan_1.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/90689211",
+      "linkLabel": "RIGHTMOVE",
+      "body": "Spacious three-bedroom end-of-terrace close to Budleigh Salterton town centre and seafront, with two stone fireplaces (gas fires) in the open-plan living/dining room, oak flooring in the reception hall, built-in bedroom storage and window shutters. Enclosed rear brick-paviour courtyard garden with a pedestrian gate onto Greenway Lane. Freehold, level access at the front.",
+      "why": "Genuine off-road parking for two cars, freehold, and three bedrooms in a coastal town — a plain but solid option, right at the top of budget.",
+      "dateAdded": "2026-07-12",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "no",
+        "poolSwimTeam": null,
+        "private": "no",
+        "mtbTrails": "no",
+        "character": "partial",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "closeToFamily": "partial",
+        "groundFloorLongTerm": "no",
+        "uniqueFeature": null,
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "A solid, no-drama parking-and-freehold pick in a coastal town, but the character here is two fireplaces rather than the building itself, and it sits right at your budget ceiling."
+    },
+    {
+      "id": "ashleyhouseexmouth",
+      "section": "new",
+      "title": "Flat 3 Ashley House, Raddenstile Lane, Exmouth (ground-floor flat) — AUCTION",
+      "price": "£155,000 (guide price, auction)",
+      "agent": "Countrywide Property Auctions, South West",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#43A047"
+        },
+        {
+          "text": "GROUND FLOOR",
+          "color": "#00897B"
+        },
+        {
+          "text": "HAS PARKING (1 allocated space)",
+          "color": "#1E88E5"
+        },
+        {
+          "text": "SHARE OF FREEHOLD (967 yrs)",
+          "color": "#6D4C41"
+        },
+        {
+          "text": "AUCTION 10 SEP 2026, 12pm",
+          "color": "#C62828"
+        }
+      ],
+      "parking": {
+        "status": "has",
+        "note": "One allocated parking space included with the flat."
+      },
+      "photos": [
+        "Ashley_Gallery_1.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/90750594",
+      "linkLabel": "RIGHTMOVE",
+      "body": "Vacant ground-floor flat close to Exmouth town centre, seafront and the Exeter branch line — lounge/diner with kitchen access, master bedroom with en-suite shower room, second bedroom, family bathroom, private courtyard and use of communal gardens. Secure intercom entry, gas central heating, double glazing.",
+      "why": "Cheap, explicitly ground-floor, comes with an allocated parking space and is effectively freehold (967-year share of freehold) — ticks the flat exception cleanly. It's going to auction on 10 September 2026 with only a guide price, so the eventual sale price could move up.",
+      "dateAdded": "2026-07-12",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": null,
+        "private": "no",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "closeToFamily": "yes",
+        "groundFloorLongTerm": "yes",
+        "uniqueFeature": null,
+        "tenure": "freehold"
+      },
+      "aiRating": 8,
+      "aiTake": "A cheap, practical box-ticker — ground floor, parking, effectively freehold, close to Exmouth centre, train and sea — but it's a plain block flat going to auction, so treat £155k as a floor, not a likely final price."
+    },
+    {
+      "id": "strandlympstone2",
+      "section": "new",
+      "title": "The Strand, Lympstone (2-bed semi-detached cottage)",
+      "price": "£300,000",
+      "agent": "Pennys, Exmouth",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "IN BUDGET (AT CEILING)",
+          "color": "#43A047"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#00897B"
+        },
+        {
+          "text": "PARKING UNKNOWN — ASK AGENT",
+          "color": "#F9A825"
+        }
+      ],
+      "parking": {
+        "status": "unknown",
+        "note": "Listing says 'Ask agent' rather than confirming anything. The Strand itself has no dedicated resident bays — parking there is on-street with no confirmed residents' permit zone. The free Lympstone Village Station car park right on The Strand (13 spaces, no permit needed, first-come-first-served, but can fill with rail commuters) and Underhill Car Park a short walk away are the two nearby options; Underhill's permit/management status has been unsettled historically. Nothing is deeded to this property — worth a direct call to the agent or Lympstone Parish Council before relying on it."
+      },
+      "photos": [
+        "Strand2_Gallery_1.jpg",
+        "Strand2_Gallery_2.jpg",
+        "Strand2_Gallery_3.jpg",
+        "Strand2_Gallery_4.jpg",
+        "Strand2_Gallery_5.jpg",
+        "Strand2_Gallery_6.jpg",
+        "Strand2_Gallery_7.jpg",
+        "Strand2_Gallery_8.jpg",
+        "Strand2_Gallery_9.jpg"
+      ],
+      "floorplans": [
+        "Strand2_Floorplan_1.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/172239773",
+      "linkLabel": "RIGHTMOVE",
+      "body": "Two-bedroom semi-detached cottage in the heart of Lympstone village — open-plan living space with fitted kitchen, dining room and a sitting room with exposed ceiling beams, both bedrooms and a shower room upstairs, gas central heating, patio sun terrace shared with two neighbouring cottages. Freehold, no onward chain, new boiler due to be fitted March 2026.",
+      "why": "A genuine cottage in Lympstone village with no chain and exposed beams, but parking isn't confirmed and it's priced right at the budget ceiling — a stretch case worth flagging rather than a clean fit.",
+      "dateAdded": "2026-07-12",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": null,
+        "private": "no",
+        "mtbTrails": "no",
+        "character": "partial",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "closeToFamily": "partial",
+        "groundFloorLongTerm": "no",
+        "uniqueFeature": null,
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "Village-centre cottage charm and no chain, but unconfirmed parking and a price right at the ceiling make this a stretch rather than a clean fit — worth checking with the agent before ruling in or out."
+    },
+    {
+      "id": "winstonroadexmouth",
+      "section": "new",
+      "title": "Winston Road, Exmouth (bungalow)",
+      "price": "£280,000",
+      "agent": "Bradleys, Exmouth",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#43A047"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#00897B"
+        },
+        {
+          "text": "HAS PARKING (driveway)",
+          "color": "#1E88E5"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#6D4C41"
+        }
+      ],
+      "parking": {
+        "status": "has",
+        "note": "Off-street driveway parking to the front."
+      },
+      "photos": [
+        "Winston_Gallery_1.jpg",
+        "Winston_Gallery_2.jpg",
+        "Winston_Gallery_3.jpg",
+        "Winston_Gallery_4.jpg",
+        "Winston_Gallery_5.jpg",
+        "Winston_Gallery_6.jpg",
+        "Winston_Gallery_7.jpg",
+        "Winston_Gallery_8.jpg",
+        "Winston_Gallery_9.jpg",
+        "Winston_Gallery_10.jpg",
+        "Winston_Gallery_11.jpg",
+        "Winston_Gallery_12.jpg",
+        "Winston_Gallery_13.jpg",
+        "Winston_Gallery_14.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/174604427",
+      "linkLabel": "RIGHTMOVE",
+      "body": "Well-presented two-bedroom semi-detached bungalow, recently redecorated throughout, with a spacious rear lounge opening onto the garden, a generous fitted kitchen with integrated appliances, master bedroom with built-in wardrobes, and a south-west facing rear garden with paved seating, lawn and two sheds. Freehold, no onward chain.",
+      "why": "Already fully ground-floor with a driveway and no chain — a plain but genuinely long-term-adaptable option, not characterful but practical.",
+      "dateAdded": "2026-07-12",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": null,
+        "private": "no",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "closeToFamily": "yes",
+        "groundFloorLongTerm": "yes",
+        "uniqueFeature": null,
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "No character to speak of, but it's already a ground-floor bungalow with a driveway, garden and no chain — a sensible fallback rather than an exciting find."
+    },
+    {
+      "id": "cranfordavenue2",
+      "section": "new",
+      "title": "Cranford Avenue, Exmouth (ground-floor flat, garage)",
+      "price": "£220,000",
+      "agent": "Meadows Estate Agents, Exmouth",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#43A047"
+        },
+        {
+          "text": "GROUND FLOOR",
+          "color": "#00897B"
+        },
+        {
+          "text": "HAS PARKING (garage)",
+          "color": "#1E88E5"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#00897B"
+        },
+        {
+          "text": "LEASEHOLD (~78 YRS)",
+          "color": "#F9A825"
+        }
+      ],
+      "parking": {
+        "status": "has",
+        "note": "Garage with up-and-over door included with the property."
+      },
+      "photos": [
+        "Cranford2_Gallery_1.jpg",
+        "Cranford2_Gallery_2.jpg",
+        "Cranford2_Gallery_3.jpg",
+        "Cranford2_Gallery_4.jpg",
+        "Cranford2_Gallery_5.jpg",
+        "Cranford2_Gallery_6.jpg",
+        "Cranford2_Gallery_7.jpg",
+        "Cranford2_Gallery_8.jpg",
+        "Cranford2_Gallery_9.jpg",
+        "Cranford2_Gallery_10.jpg",
+        "Cranford2_Gallery_11.jpg",
+        "Cranford2_Gallery_12.jpg"
+      ],
+      "floorplans": [
+        "Cranford2_Floorplan_1.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/90580359",
+      "linkLabel": "RIGHTMOVE",
+      "body": "Well-proportioned ground-floor apartment in the Avenues area of Exmouth, overlooking communal gardens with mature trees and shrubs. Sitting/dining room with patio access, modern kitchen/breakfast room, two double bedrooms, wet room with electric shower, 710 sq ft. Includes a garage with up-and-over door. No onward chain. Leasehold, approx. 78 years remaining, service charge ~£1,828/yr, ground rent £152/yr.",
+      "why": "Ground-floor, a real garage (not just a space), and no chain — a genuinely distinct unit from the other Cranford Avenue flat already tracked, though the ~78-year lease and service charges are worth weighing.",
+      "dateAdded": "2026-07-12",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": null,
+        "private": "no",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "yes",
+        "closeToFamily": "yes",
+        "groundFloorLongTerm": "yes",
+        "uniqueFeature": null,
+        "tenure": "leasehold",
+        "leaseYears": 78
+      },
+      "aiRating": 6,
+      "aiTake": "Ground floor with an actual garage and no chain is a rare combo for a flat, but a 78-year lease plus ~£1,828/yr service charge chips into the value — a fair option, not a standout."
     }
   ]
 }
