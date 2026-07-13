@@ -2,6 +2,266 @@
   "lastUpdated": "2026-07-13",
   "properties": [
     {
+      "id": "byestollhouse",
+      "section": "new",
+      "title": "Byes Toll House, Salcombe Road, Sidmouth",
+      "price": "Guide Price £95,000+ fees (auction)",
+      "agent": "Clive Emson Auctioneers",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "AUCTION — CLOSES 23 JULY 2026 (10 DAYS)",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "ByesTollHouse_Gallery_1.jpg",
+        "ByesTollHouse_Gallery_2.jpg",
+        "ByesTollHouse_Gallery_3.jpg",
+        "ByesTollHouse_Gallery_4.jpg",
+        "ByesTollHouse_Gallery_5.jpg",
+        "ByesTollHouse_Gallery_6.jpg",
+        "ByesTollHouse_Gallery_7.jpg",
+        "ByesTollHouse_Gallery_8.jpg",
+        "ByesTollHouse_Gallery_9.jpg",
+        "ByesTollHouse_Gallery_10.jpg"
+      ],
+      "link": "https://www.cliveemson.co.uk/properties/267/120/",
+      "linkLabel": "cliveemson.co.uk — Lot 120",
+      "body": "A one-bedroom, single-storey former toll house believed to date to the early 1800s, sold by instruction of East Devon District Council. Sits at the gateway to the Byes, Sidmouth's riverside park, with gardens to the side and rear. Carries an original blue heritage plaque. Freehold, sold via online auction with Common Auction Conditions applying — auction closes 23 July 2026, 168 lots in the sale.",
+      "why": "A genuinely unique, dirt-cheap find via the Exmouth Journal's auction coverage rather than the usual portals — a real slice of local history (a working 19th-century toll house) at under a third of budget. It's in Sidmouth rather than the core Exmouth/Woodbury zone, so further from both brothers than most of the list, and it's tiny (one bed, single-storey) with no parking mentioned. The hard part is the clock: bidding closes 23 July 2026, 10 days out.",
+      "dateAdded": "2026-07-13",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "no",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": "A genuine early-1800s former toll house with an original blue heritage plaque, at the gateway to the Byes riverside park",
+        "closeToFamily": "partial",
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "A real piece of history, single-storey and dirt cheap — but it's a tiny one-bed in Sidmouth rather than the core zone, parking is unconfirmed, and the 10-day auction clock is the real pressure here.",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "parking": {
+        "status": "unknown",
+        "note": "Not shown in any of the auction photos and not mentioned in the particulars. Sidmouth runs a residents' permit parking scheme via Devon County Council/MiPermit — worth calling Devon CC directly to check whether this address qualifies, since nothing is deeded to the property itself."
+      }
+    },
+    {
+      "id": "bedlandslane",
+      "section": "new",
+      "title": "Bedlands Lane, Budleigh Salterton (ground-floor flat)",
+      "price": "£229,950",
+      "agent": "Pennys, Exmouth (listed on Rightmove)",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GROUND FLOOR",
+          "color": "#5D4037"
+        },
+        {
+          "text": "NO PARKING",
+          "color": "#757575"
+        },
+        {
+          "text": "LOCAL CONNECTION COVENANT — CHECK ELIGIBILITY",
+          "color": "#EF6C00"
+        }
+      ],
+      "photos": [
+        "BedlandsLane_Gallery_1.jpg",
+        "BedlandsLane_Gallery_2.jpg",
+        "BedlandsLane_Gallery_3.jpg",
+        "BedlandsLane_Gallery_4.jpg",
+        "BedlandsLane_Gallery_5.jpg",
+        "BedlandsLane_Gallery_6.jpg",
+        "BedlandsLane_Gallery_7.jpg",
+        "BedlandsLane_Gallery_8.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/163569545",
+      "linkLabel": "rightmove.co.uk/properties/163569545",
+      "body": "A two-double-bedroom explicitly ground-floor flat on Bedlands Lane, Budleigh Salterton. Private patio plus a raised decked sun terrace for sole use of the flat. Leasehold, 125 years from 2017 (roughly 116 years remaining), ground rent £10/year, buildings insurance £109/year, a 1/4 share of maintenance costs as-and-when needed. No parking, garage, or space of any kind mentioned.",
+      "why": "Genuinely ground-floor (clears the flats filter properly) with its own private garden space, which is unusual for a flat at this price. The real catch: this one is subject to a Section 157 Housing Act local-connection covenant, meaning the buyer must typically already live or work in the district — this is NOT shared ownership, but it is a real eligibility restriction that needs confirming with the agent before getting attached, since it could rule Jesse out entirely depending on the exact wording. No parking either.",
+      "dateAdded": "2026-07-13",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "partial",
+        "tenure": "leasehold",
+        "leaseYears": 116
+      },
+      "aiRating": 4,
+      "aiTake": "Cheap, genuinely ground-floor, with a real private garden — but no parking, no character, and most importantly a Section 157 local-connection covenant that may bar a buyer who doesn't already live or work in the district. Confirm eligibility before getting attached.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "none",
+        "note": "No parking, garage, or space of any kind mentioned anywhere in the listing."
+      },
+      "floorplans": [
+        "BedlandsLane_Floorplan_1.jpg"
+      ]
+    },
+    {
+      "id": "oakhillcottages",
+      "section": "new",
+      "title": "1 Oak Hill Cottages, East Budleigh",
+      "price": "£325,000",
+      "agent": "Bradleys Estate Agents",
+      "flags": [
+        {
+          "text": "OVER BUDGET (+£25,000)",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "HAS PARKING (shared driveway)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "FLOOD RISK DISCLOSED",
+          "color": "#EF6C00"
+        }
+      ],
+      "photos": [
+        "OakHillCottages_Gallery_1.jpg",
+        "OakHillCottages_Gallery_2.jpg",
+        "OakHillCottages_Gallery_3.jpg",
+        "OakHillCottages_Gallery_4.jpg",
+        "OakHillCottages_Gallery_5.jpg",
+        "OakHillCottages_Gallery_6.jpg",
+        "OakHillCottages_Gallery_7.jpg",
+        "OakHillCottages_Gallery_8.jpg",
+        "OakHillCottages_Gallery_9.jpg",
+        "OakHillCottages_Gallery_10.jpg",
+        "OakHillCottages_Gallery_11.jpg",
+        "OakHillCottages_Gallery_12.jpg",
+        "OakHillCottages_Gallery_13.jpg",
+        "OakHillCottages_Gallery_14.jpg",
+        "OakHillCottages_Gallery_15.jpg",
+        "OakHillCottages_Gallery_16.jpg",
+        "OakHillCottages_Gallery_17.jpg",
+        "OakHillCottages_Gallery_18.jpg"
+      ],
+      "link": "https://www.bradleys-estate-agents.co.uk/properties/21367672/sales",
+      "linkLabel": "bradleys-estate-agents.co.uk/properties/21367672",
+      "body": "A two-bedroom, one-reception end-of-terrace period cottage in East Budleigh, with oak beams, a dual-fuel log burner, and a freestanding roll-top bath. A designated off-road parking space sits in front of a useful outbuilding/former workshop, reached via a shared gravel driveway. Enclosed front courtyard (patio, lawn, pond) and a raised terraced rear garden with country views. Three steps down to the front entrance. High surface-water flood risk disclosed. Freehold.",
+      "why": "Genuinely characterful — oak beams, a log burner, a roll-top bath, and a workshop outbuilding are a rare combination at this price point, and real designated parking is unusual for an East Budleigh cottage (most of the village's stock is on-street only). It's £25k over the hard ceiling though, and the disclosed flood risk is worth a proper survey before committing.",
+      "dateAdded": "2026-07-13",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "uniqueFeature": "A useful outbuilding/former workshop right by the designated parking space — genuinely rare for this village",
+        "closeToFamily": "partial",
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "Real character (beams, log burner, roll-top bath) and a rare designated parking space with a workshop outbuilding, but £25k over the hard ceiling and carrying a disclosed flood risk that needs a proper survey.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "has",
+        "note": "A designated off-road parking space in front of the outbuilding, reached via a shared gravel driveway — confirmed in the listing."
+      },
+      "floorplans": [
+        "OakHillCottages_Floorplan_1.png"
+      ]
+    },
+    {
+      "id": "moorfieldroadplot",
+      "section": "new",
+      "title": "Self-build plot, Moorfield Road, Exmouth",
+      "price": "Guide Price £85,000 (auction)",
+      "agent": "Hall & Scott, Exmouth (listed on Rightmove)",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "SELF-BUILD PLOT",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "AUCTION — DATE UNCONFIRMED, CALL AGENT",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "MoorfieldRoad_Gallery_1.jpg",
+        "MoorfieldRoad_Gallery_2.jpg",
+        "MoorfieldRoad_Gallery_3.jpg",
+        "MoorfieldRoad_Gallery_4.jpg",
+        "MoorfieldRoad_Gallery_5.jpg",
+        "MoorfieldRoad_Gallery_6.jpg",
+        "MoorfieldRoad_Gallery_7.jpg",
+        "MoorfieldRoad_Gallery_8.jpg",
+        "MoorfieldRoad_Gallery_9.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/87869259",
+      "linkLabel": "rightmove.co.uk/properties/87869259",
+      "body": "A freehold building plot on Moorfield Road, Exmouth, with full planning permission already granted (East Devon DC ref 25/1543/RES) for a two-storey, two-bedroom dwelling — ground floor hall/kitchen/living room, first floor two bedrooms, an office, and a bathroom. Sold via traditional/online auction subject to Common Auction Conditions. The listing states 'please call to book into one of the scheduled block appointments' rather than giving a fixed auction date on the page itself.",
+      "why": "Exactly the self-build opportunity type the brief prioritises — a blank canvas with planning permission already in hand, in Exmouth itself (close to both brothers), at a rock-bottom guide price. The catch: this is land, not a house, so real build costs sit on top of the purchase price, and the auction date shown in cached search results (26 May 2026) has already passed with no new date visible on the live listing — call Hall & Scott (01395 201053) directly to confirm it's genuinely still live before getting excited.",
+      "dateAdded": "2026-07-13",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "partial",
+        "poolSwimTeam": null,
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": null,
+        "garden": null,
+        "garageWorkspace": null,
+        "uniqueFeature": "Full planning permission already granted (ref 25/1543/RES) for a two-bed dwelling — a genuine self-build blank canvas, not just raw land",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 7,
+      "aiTake": "A genuine self-build opportunity with planning already granted, in Exmouth itself, at a rock-bottom price — but you'd be building from scratch on top of the purchase cost, and the auction date needs confirming directly with the agent since the one found online looks stale.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "unknown",
+        "note": "Undeveloped plot — no existing parking. Any parking would need to be designed into the self-build; the listing doesn't give plot dimensions or road frontage detail to judge feasibility."
+      }
+    },
+    {
       "id": "forestreethill",
       "section": "still",
       "title": "Fore Street Hill, Budleigh Salterton (split-level flat)",
@@ -1872,6 +2132,10 @@
         {
           "text": "NO PARKING INFO",
           "color": "#757575"
+        },
+        {
+          "text": "SOLD STC",
+          "color": "#8D6E63"
         }
       ],
       "photos": [
