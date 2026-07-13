@@ -141,7 +141,13 @@
       },
       "floorplans": [
         "OttertonForeSt_Floorplan_1.jpg"
-      ]
+      ],
+      "ratings": {
+        "Bro 3": {
+          "score": 5,
+          "date": "2026-07-13"
+        }
+      }
     },
     {
       "id": "longbrooklane2",
@@ -250,6 +256,12 @@
       "parking": {
         "status": "unknown",
         "note": "Not mentioned in the listing either way. Globe Hill itself is a fairly narrow lane on the edge of the village — worth asking the agent directly rather than assuming either way."
+      },
+      "ratings": {
+        "Bro 3": {
+          "score": 6,
+          "date": "2026-07-13"
+        }
       }
     },
     {
@@ -359,64 +371,6 @@
       "parking": {
         "status": "has",
         "note": "One dedicated parking space in the courtyard, confirmed in the listing."
-      }
-    },
-    {
-      "id": "stokesmeadwoodbury",
-      "section": "new",
-      "title": "Stokes Mead, Woodbury (shared ownership, auction)",
-      "price": "£150,000 (80% share)",
-      "agent": "Northwood, Exeter",
-      "flags": [
-        {
-          "text": "IN BUDGET",
-          "color": "#2E7D32"
-        },
-        {
-          "text": "SHARED OWNERSHIP — ELIGIBILITY REQUIRED",
-          "color": "#B71C1C"
-        },
-        {
-          "text": "AUCTION (MODERN METHOD, 56-DAY RESERVATION)",
-          "color": "#E65100"
-        },
-        {
-          "text": "NO PARKING INFO",
-          "color": "#757575"
-        }
-      ],
-      "photos": [
-        "StokesMeadWoodbury_Gallery_1.jpg",
-        "StokesMeadWoodbury_Gallery_2.jpg",
-        "StokesMeadWoodbury_Gallery_3.jpg"
-      ],
-      "link": "https://www.zoopla.co.uk/for-sale/details/73361763/",
-      "linkLabel": "zoopla.co.uk/for-sale/details/73361763",
-      "body": "A two-bedroom terraced home on Stokes Mead, Woodbury, with solar panels, a private rear garden, and a summer house plus outbuildings. Sold as an 80% shared-ownership share (LiveWest retains the remaining 20%, ~£45/month covering insurance and service charge), subject to LiveWest eligibility approval. Leasehold with 963 years remaining on a 999-year lease from 1990. Sale via Modern Method of Auction with a 56-day reservation period and a non-refundable reservation fee of 4.5% of the purchase price (minimum £6,600 inc. VAT), on top of the purchase price. EPC D, Council Tax Band B.",
-      "why": "Cheap and in Woodbury, close to a brother, with a genuinely nice outbuilding/summer house setup — but this isn't a straightforward purchase. It's an 80% shared-ownership share (not full ownership), needs LiveWest to approve eligibility first, and carries a steep 4.5% auction reservation fee on top of the price. Flagging for completeness, but the structure alone rules it out for a lot of buyers.",
-      "dateAdded": "2026-07-13",
-      "checklist": {
-        "ocean": "no",
-        "trainStation": "no",
-        "poolSwimTeam": "no",
-        "private": "no",
-        "groundFloorLongTerm": "no",
-        "mtbTrails": "yes",
-        "character": "no",
-        "garden": "yes",
-        "garageWorkspace": "yes",
-        "uniqueFeature": "Solar panels and a finished summer house plus outbuildings",
-        "closeToFamily": "yes",
-        "tenure": "leasehold",
-        "leaseYears": 963
-      },
-      "aiRating": 4,
-      "aiTake": "Cheap, in Woodbury, and with a genuinely nice summer house/outbuilding setup, but it's only an 80% shared-ownership share subject to LiveWest eligibility approval, plus a steep 4.5% auction reservation fee — the ownership structure is the real obstacle here, not the property itself.",
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "parking": {
-        "status": "unknown",
-        "note": "Not mentioned in the listing either way."
       }
     },
     {
