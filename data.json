@@ -1,6 +1,420 @@
 {
-  "lastUpdated": "2026-07-12",
+  "lastUpdated": "2026-07-13",
   "properties": [
+    {
+      "id": "forestreethill",
+      "section": "new",
+      "title": "Fore Street Hill, Budleigh Salterton (split-level flat)",
+      "price": "Offers in Excess of £140,000",
+      "agent": "Bettermove - National",
+      "flags": [
+        {
+          "text": "🌟 FAMILY SPOTTED THIS",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#2E7D32"
+        }
+      ],
+      "photos": [
+        "ForeStreetHill_Gallery_1.jpg",
+        "ForeStreetHill_Gallery_2.jpg",
+        "ForeStreetHill_Gallery_3.jpg",
+        "ForeStreetHill_Gallery_4.jpg",
+        "ForeStreetHill_Gallery_5.jpg",
+        "ForeStreetHill_Gallery_6.jpg",
+        "ForeStreetHill_Gallery_7.jpg"
+      ],
+      "link": "https://www.onthemarket.com/details/19737941/",
+      "linkLabel": "onthemarket.com/details/19737941",
+      "body": "A one-bedroom flat in Budleigh Salterton, arranged over two floors — spacious living/dining room and fitted kitchen on the ground floor, bedroom and bathroom on the first. Double glazing and gas central heating throughout. Two allocated parking spaces, close to shops, supermarkets, restaurants and pubs. Chain-free, vacant and ready for immediate possession. Leasehold with 121 years remaining. Council Tax Band A.",
+      "why": "Family-submitted find via the site's submission form. It's the cheapest thing on the whole list bar the auction flats, chain-free, and comes with two allocated parking spaces — genuinely unusual for a flat at this price. The catch is it isn't ground-floor (bedroom and bathroom are upstairs), so it doesn't quite fit the usual flat rule, and there's no garden or particular character beyond being in Budleigh itself. Worth a look as a cheap, practical fallback rather than a dream find.",
+      "dateAdded": "2026-07-13",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "partial",
+        "tenure": "leasehold",
+        "leaseYears": 121
+      },
+      "aiRating": 5,
+      "aiTake": "Rock-bottom price, chain-free, and a rare two allocated parking spaces, but it's split over two floors rather than true ground-floor and has no character or garden to speak of — a cheap fallback, not a contender.",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "parking": {
+        "status": "has",
+        "note": "Two allocated parking spaces included — confirmed directly in the listing."
+      },
+      "floorplans": [
+        "ForeStreetHill_Floorplan_1.jpg"
+      ]
+    },
+    {
+      "id": "forestreetotterton",
+      "section": "new",
+      "title": "Fore Street, Otterton (Grade II thatched cottage)",
+      "price": "Guide Price £400,000",
+      "agent": "Bradleys, Budleigh Salterton",
+      "flags": [
+        {
+          "text": "OVER BUDGET",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "THATCHED",
+          "color": "#8D6E63"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#2E7D32"
+        }
+      ],
+      "photos": [
+        "OttertonForeSt_Gallery_1.jpg",
+        "OttertonForeSt_Gallery_2.jpg",
+        "OttertonForeSt_Gallery_3.jpg",
+        "OttertonForeSt_Gallery_4.jpg",
+        "OttertonForeSt_Gallery_5.jpg",
+        "OttertonForeSt_Gallery_6.jpg",
+        "OttertonForeSt_Gallery_7.jpg",
+        "OttertonForeSt_Gallery_8.jpg",
+        "OttertonForeSt_Gallery_9.jpg",
+        "OttertonForeSt_Gallery_10.jpg",
+        "OttertonForeSt_Gallery_11.jpg",
+        "OttertonForeSt_Gallery_12.jpg",
+        "OttertonForeSt_Gallery_13.jpg",
+        "OttertonForeSt_Gallery_14.jpg",
+        "OttertonForeSt_Gallery_15.jpg",
+        "OttertonForeSt_Gallery_16.jpg",
+        "OttertonForeSt_Gallery_17.jpg",
+        "OttertonForeSt_Gallery_18.jpg",
+        "OttertonForeSt_Gallery_19.jpg",
+        "OttertonForeSt_Gallery_20.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/163393187",
+      "linkLabel": "rightmove.co.uk/properties/163393187",
+      "body": "A semi-detached Grade II listed thatched cottage in the centre of Otterton village, backing onto farmland. Inglenook fireplace with an original bread oven, leaded light windows, exposed timbers, and a vaulted kitchen with garden views. Extensive rear gardens with a raised pond and fruit trees. Private driveway with space for two cars. No mains gas; electricity, water and drainage connected. Freehold, Council Tax Band E. Guide price reduced from an earlier figure on 30/03/2026.",
+      "why": "This is exactly the thatched-cottage archetype Jesse loves, and it's genuinely in Otterton itself — about as close to a brother as it gets. It's a third over the £300k ceiling, but the search brief explicitly calls out cute thatched cottages as worth including over budget when they're this good a match, so it's here flagged clearly rather than dropped. Real driveway parking for two cars is a bonus most thatched finds on this list don't have.",
+      "dateAdded": "2026-07-13",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": "Inglenook fireplace with original bread oven; backs directly onto farmland",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "The thatched-cottage archetype Jesse loves, right in Otterton next to a brother, with real driveway parking — but £400k is a third over budget, which is the only thing holding this back from a top score.",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "parking": {
+        "status": "has",
+        "note": "Private driveway with space for two cars — confirmed directly in the listing."
+      },
+      "floorplans": [
+        "OttertonForeSt_Floorplan_1.jpg"
+      ]
+    },
+    {
+      "id": "longbrooklane2",
+      "section": "new",
+      "title": "Longbrook Lane, Lympstone (renovated cottage)",
+      "price": "Guide Price £270,000",
+      "agent": "Wilkinson Grant & Co, Topsham",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "LongbrookLane2_Gallery_1.jpg",
+        "LongbrookLane2_Gallery_2.jpg",
+        "LongbrookLane2_Gallery_3.jpg",
+        "LongbrookLane2_Gallery_4.jpg",
+        "LongbrookLane2_Gallery_5.jpg",
+        "LongbrookLane2_Gallery_6.jpg",
+        "LongbrookLane2_Gallery_7.jpg",
+        "LongbrookLane2_Gallery_8.jpg",
+        "LongbrookLane2_Gallery_9.jpg",
+        "LongbrookLane2_Gallery_10.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/88253148",
+      "linkLabel": "rightmove.co.uk/properties/88253148",
+      "body": "A period terraced cottage on Longbrook Lane in Lympstone (a different property from the fixer-upper already tracked on the same lane), with a 22-foot sitting/dining room with bay window and fireplace, a compact kitchen, two double bedrooms with sash windows, and attic access. Low-maintenance rear courtyard with gravel and paving. Freehold. Guide price reduced on 12/06/2026.",
+      "why": "A second, more finished cottage on the same Lympstone lane as an existing fixer-upper find — same great village location (estuary, own station, Woodbury Common close), but this one is move-in ready rather than needing full modernisation, for £30k more. On-street parking only, and a courtyard rather than a garden.",
+      "dateAdded": "2026-07-13",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "partial",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "partial",
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "Move-in ready and in the best-located village on the list, with real period character (bay window, fireplace, sash windows), but on-street parking only and a courtyard instead of a garden.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "onstreet",
+        "note": "Listing states \"on street\" parking with no allocated space."
+      },
+      "floorplans": [
+        "LongbrookLane2_Floorplan_1.jpg"
+      ]
+    },
+    {
+      "id": "globehillwoodbury",
+      "section": "new",
+      "title": "Globe Hill, Woodbury (Fairview Cottages)",
+      "price": "£220,000",
+      "agent": "Hall & Scott",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "GlobeHillWoodbury_Gallery_1.jpg"
+      ],
+      "link": "https://www.zoopla.co.uk/for-sale/details/68613466/",
+      "linkLabel": "zoopla.co.uk/for-sale/details/68613466",
+      "body": "A well-presented two-bedroom semi-detached period cottage (2 Fairview Cottages) on Globe Hill, on the edge of Woodbury village. Exposed timbers, stripped floorboards, and a woodburner in the sitting room; main bedroom has countryside views. Rear cottage-style garden (23' x 13') with patio, raised beds, a small shed, and side gate access. Freehold, Council Tax Band B, EPC E. Price reduced 06/05/2026.",
+      "why": "A cheap, genuinely characterful Woodbury cottage — close to a brother and Woodbury Common's trails, same as the other Woodbury cottages already tracked. Zoopla's anti-scraping blocked most of the photo gallery (only one image recovered), and parking isn't mentioned either way, so both are worth checking directly with the agent before getting excited.",
+      "dateAdded": "2026-07-13",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 7,
+      "aiTake": "A cheap, characterful Woodbury cottage with a real garden and close to a brother — held back only by unconfirmed parking and a thin photo set (Zoopla blocked most of the gallery).",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "unknown",
+        "note": "Not mentioned in the listing either way. Globe Hill itself is a fairly narrow lane on the edge of the village — worth asking the agent directly rather than assuming either way."
+      }
+    },
+    {
+      "id": "broadwaywoodbury",
+      "section": "new",
+      "title": "Broadway, Woodbury (\"Stedifords\")",
+      "price": "£225,000",
+      "agent": "Hall & Scott",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "BroadwayWoodbury_Gallery_1.png"
+      ],
+      "link": "https://www.zoopla.co.uk/for-sale/details/69240229/",
+      "linkLabel": "zoopla.co.uk/for-sale/details/69240229",
+      "body": "A semi-detached period cottage (\"Stedifords\") on Broadway, Woodbury, blending character with modern living: living room with fireplace, newly fitted open-plan kitchen, two bedrooms, a walk-in wardrobe, and a contemporary shower room. Enclosed front garden with gravel patio and flower beds; enclosed rear courtyard garden with side access. Freehold, chain-free, Council Tax Band B, EPC D. Roughly equidistant between Exeter and Exmouth. Price reduced 06/05/2026.",
+      "why": "Another cheap, chain-free Woodbury cottage, recently updated rather than needing work — a good practical option close to a brother and the Common. As with the other Zoopla find today, the gallery was mostly blocked (one image recovered) and parking isn't stated, both worth chasing with the agent.",
+      "dateAdded": "2026-07-13",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 7,
+      "aiTake": "Cheap, chain-free, and already updated rather than needing work, close to a brother and the Common — but unconfirmed parking and a near-empty photo set (Zoopla blocked the gallery) keep it from scoring higher.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "unknown",
+        "note": "Not mentioned in the listing either way — worth asking the agent directly."
+      }
+    },
+    {
+      "id": "churchviewhousewoodbury",
+      "section": "new",
+      "title": "Flat 1, Church View House, Oakhayes Road, Woodbury",
+      "price": "£230,000",
+      "agent": "Bradleys, Budleigh Salterton",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GROUND FLOOR",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#2E7D32"
+        }
+      ],
+      "photos": [
+        "ChurchViewHouseWoodbury_Gallery_1.jpg",
+        "ChurchViewHouseWoodbury_Gallery_2.jpg",
+        "ChurchViewHouseWoodbury_Gallery_3.jpg"
+      ],
+      "link": "https://www.zoopla.co.uk/for-sale/details/69694282/",
+      "linkLabel": "zoopla.co.uk/for-sale/details/69694282",
+      "body": "A modernised two-bedroom ground-floor flat in Church View House on Oakhayes Road, Woodbury Conservation Area. Large sitting room, modern kitchen/breakfast room with built-in appliances, two well-proportioned bedrooms (main with double wardrobe), modern shower room. Enclosed private southwest-facing courtyard plus access to communal gardens and grounds overlooking the church. One dedicated parking space. Share of freehold with a separate 999-year lease from July 2003 (peppercorn ground rent). Service charge £1,991.48/year plus a £345 managing agents fee. EPC D, Council Tax Band C.",
+      "why": "Confirmed genuinely ground-floor, so it clears the flats filter properly (unlike today's other flat find), with a dedicated parking space and a near-999-year lease that removes any leasehold worry. It's in Woodbury itself, close to a brother and the Common. The service charge (just over £2,300/year all in) is on the high side and worth weighing against the price.",
+      "dateAdded": "2026-07-13",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "yes",
+        "character": "partial",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "uniqueFeature": "Private courtyard plus access to communal gardens overlooking the church grounds",
+        "closeToFamily": "yes",
+        "tenure": "leasehold",
+        "leaseYears": 999
+      },
+      "aiRating": 7,
+      "aiTake": "A genuinely ground-floor flat with real parking, a near-999-year lease, and a spot in Woodbury close to a brother — the service charge is on the high side, but this is one of the cleaner flat options found so far.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "has",
+        "note": "One dedicated parking space in the courtyard, confirmed in the listing."
+      },
+      "floorplans": [
+        "ChurchViewHouseWoodbury_Floorplan_1.png"
+      ]
+    },
+    {
+      "id": "stokesmeadwoodbury",
+      "section": "new",
+      "title": "Stokes Mead, Woodbury (shared ownership, auction)",
+      "price": "£150,000 (80% share)",
+      "agent": "Northwood, Exeter",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "SHARED OWNERSHIP — ELIGIBILITY REQUIRED",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "AUCTION (MODERN METHOD, 56-DAY RESERVATION)",
+          "color": "#E65100"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "StokesMeadWoodbury_Gallery_1.jpg",
+        "StokesMeadWoodbury_Gallery_2.jpg",
+        "StokesMeadWoodbury_Gallery_3.jpg"
+      ],
+      "link": "https://www.zoopla.co.uk/for-sale/details/73361763/",
+      "linkLabel": "zoopla.co.uk/for-sale/details/73361763",
+      "body": "A two-bedroom terraced home on Stokes Mead, Woodbury, with solar panels, a private rear garden, and a summer house plus outbuildings. Sold as an 80% shared-ownership share (LiveWest retains the remaining 20%, ~£45/month covering insurance and service charge), subject to LiveWest eligibility approval. Leasehold with 963 years remaining on a 999-year lease from 1990. Sale via Modern Method of Auction with a 56-day reservation period and a non-refundable reservation fee of 4.5% of the purchase price (minimum £6,600 inc. VAT), on top of the purchase price. EPC D, Council Tax Band B.",
+      "why": "Cheap and in Woodbury, close to a brother, with a genuinely nice outbuilding/summer house setup — but this isn't a straightforward purchase. It's an 80% shared-ownership share (not full ownership), needs LiveWest to approve eligibility first, and carries a steep 4.5% auction reservation fee on top of the price. Flagging for completeness, but the structure alone rules it out for a lot of buyers.",
+      "dateAdded": "2026-07-13",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "yes",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "uniqueFeature": "Solar panels and a finished summer house plus outbuildings",
+        "closeToFamily": "yes",
+        "tenure": "leasehold",
+        "leaseYears": 963
+      },
+      "aiRating": 4,
+      "aiTake": "Cheap, in Woodbury, and with a genuinely nice summer house/outbuilding setup, but it's only an 80% shared-ownership share subject to LiveWest eligibility approval, plus a steep 4.5% auction reservation fee — the ownership structure is the real obstacle here, not the property itself.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "unknown",
+        "note": "Not mentioned in the listing either way."
+      }
+    },
     {
       "id": "mountainclose",
       "section": "still",
@@ -877,7 +1291,7 @@
       "map": "map_sidmouth.png",
       "link": "https://www.rightmove.co.uk/properties/90027936",
       "linkLabel": "rightmove.co.uk/properties/90027936",
-      "body": "A unique circular thatched house on a cliff-top position along the Jurassic Coast, designed in the 1960s for novelist R.F. Delderfield. Panoramic sea views over Ladram Bay, mature terraced gardens. Auction closes 21 July 2026 — just over two weeks out.",
+      "body": "A unique circular thatched house on a cliff-top position along the Jurassic Coast, designed in the 1960s for novelist R.F. Delderfield. Panoramic sea views over Ladram Bay, mature terraced gardens. Auction closes 21 July 2026 — 8 days from this update.",
       "why": "Was Jesse's stated dream home, dropped 2026-07-06 once the erosion risk was actually looked into. Local press confirms the garden has already lost ground to a cliff fall, not just theoretical risk, and that stretch of Peak Hill has a well-documented run of landslips. Separately, standard UK buildings insurance excludes coastal erosion outright, there's no government backstop for it like there is for flooding, and lenders increasingly treat erosion-risk properties as unmortgageable — the only public money available is a £6,000 demolition grant if it's ever condemned, nothing toward lost value. That combination is why the guide price is so low, and why Jesse walked away. Kept here for the record rather than deleted.",
       "dateAdded": "2026-07-03",
       "research": [
