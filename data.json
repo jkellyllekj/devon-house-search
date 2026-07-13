@@ -219,7 +219,10 @@
         }
       ],
       "photos": [
-        "GlobeHillWoodbury_Gallery_1.jpg"
+        "GlobeHillWoodbury_Gallery_1.jpg",
+        "GlobeHillWoodbury_Gallery_2.jpg",
+        "GlobeHillWoodbury_Gallery_3.jpg",
+        "GlobeHillWoodbury_Gallery_4.jpg"
       ],
       "link": "https://www.zoopla.co.uk/for-sale/details/68613466/",
       "linkLabel": "zoopla.co.uk/for-sale/details/68613466",
@@ -270,7 +273,10 @@
         }
       ],
       "photos": [
-        "BroadwayWoodbury_Gallery_1.png"
+        "BroadwayWoodbury_Gallery_1.png",
+        "BroadwayWoodbury_Gallery_2.jpg",
+        "BroadwayWoodbury_Gallery_3.jpg",
+        "BroadwayWoodbury_Gallery_4.jpg"
       ],
       "link": "https://www.zoopla.co.uk/for-sale/details/69240229/",
       "linkLabel": "zoopla.co.uk/for-sale/details/69240229",
@@ -321,9 +327,10 @@
         }
       ],
       "photos": [
-        "ChurchViewHouseWoodbury_Gallery_1.jpg",
+        "ChurchViewHouseWoodbury_Gallery_1.png",
         "ChurchViewHouseWoodbury_Gallery_2.jpg",
-        "ChurchViewHouseWoodbury_Gallery_3.jpg"
+        "ChurchViewHouseWoodbury_Gallery_3.jpg",
+        "ChurchViewHouseWoodbury_Gallery_4.jpg"
       ],
       "link": "https://www.zoopla.co.uk/for-sale/details/69694282/",
       "linkLabel": "zoopla.co.uk/for-sale/details/69694282",
@@ -352,10 +359,7 @@
       "parking": {
         "status": "has",
         "note": "One dedicated parking space in the courtyard, confirmed in the listing."
-      },
-      "floorplans": [
-        "ChurchViewHouseWoodbury_Floorplan_1.png"
-      ]
+      }
     },
     {
       "id": "stokesmeadwoodbury",

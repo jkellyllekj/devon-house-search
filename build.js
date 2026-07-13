@@ -53,6 +53,24 @@ function bedsBathsHtml(p) {
   return `<div class="beds-baths">${parts.join(" &nbsp;·&nbsp; ")}</div>`;
 }
 
+function tenureHtml(p) {
+  const c = p.checklist || {};
+  if (c.tenure === "freehold") {
+    return `<div class="tenure-badge tenure-freehold">🏠 Freehold</div>`;
+  }
+  if (c.tenure === "leasehold") {
+    const label = c.leaseYears ? `📜 Leasehold — ${c.leaseYears} yrs remaining` : `📜 Leasehold — years unknown, ask agent`;
+    return `<div class="tenure-badge tenure-leasehold">${label}</div>`;
+  }
+  return `<div class="tenure-badge tenure-unknown">❓ Tenure not stated</div>`;
+}
+
+function parsePrice(str) {
+  if (!str) return null;
+  const m = String(str).replace(/,/g, "").match(/£\s*(\d+)/);
+  return m ? parseInt(m[1], 10) : null;
+}
+
 const PARKING_LABELS = {
   has: "🅿️ Has parking",
   onstreet: "🅿️ On-street parking only",
@@ -228,10 +246,6 @@ function checklistHtml(p) {
   const c = p.checklist || {};
   const items = CHECKLIST_ITEMS.map(item => ({ key: item.key, label: item.label, raw: c[item.key] }));
   items.push({ key: "groundFloorLongTerm", label: GROUND_FLOOR_LABELS[c.groundFloorLongTerm] || "♿ Ground-floor adaptability unknown", raw: c.groundFloorLongTerm === "yes" ? "yes" : c.groundFloorLongTerm === "no" ? "no" : "partial" });
-  if (c.tenure === "leasehold") {
-    const label = c.leaseYears ? `📜 Leasehold (${c.leaseYears} yrs remaining)` : "📜 Leasehold (years unknown — ask agent)";
-    items.push({ key: "tenure", label, raw: "no" });
-  }
   const rowsHtml = items.map(item => clItemHtml(p, item.key, item.label, item.raw)).join("");
   const unique = c.uniqueFeature ? `<div class="cl-unique">🎁 <strong>Unique:</strong> ${esc(c.uniqueFeature)}</div>` : "";
   return `
@@ -298,13 +312,15 @@ function propertyCard(p) {
   const aiR = (p.aiRating !== undefined && p.aiRating !== null) ? p.aiRating : "";
   const overall = computeOverall(p);
   const bro3 = (p.ratings && p.ratings["Bro 3"]) ? p.ratings["Bro 3"].score : "";
+  const priceVal = parsePrice(p.price);
   return `
-  <section class="card" id="${esc(p.id)}" data-avg-rating="${avg !== null ? avg.toFixed(2) : ""}" data-ai-rating="${aiR}" data-overall-rating="${overall !== null ? overall.toFixed(2) : ""}" data-bro3-rating="${bro3}">
+  <section class="card" id="${esc(p.id)}" data-avg-rating="${avg !== null ? avg.toFixed(2) : ""}" data-ai-rating="${aiR}" data-overall-rating="${overall !== null ? overall.toFixed(2) : ""}" data-bro3-rating="${bro3}" data-price="${priceVal !== null ? priceVal : ""}" data-date-added="${esc(p.dateAdded)}">
     <h2>${esc(p.title)}</h2>
     <div class="price-row">
       <span class="price">${esc(p.price)}</span>
     </div>
     ${bedsBathsHtml(p)}
+    ${tenureHtml(p)}
     ${sourceBadgeHtml(p)}
     ${ratingsHtml(p)}
     <div class="flags">${p.flags.map(flagHtml).join("")}</div>
@@ -323,12 +339,14 @@ function propertyCard(p) {
   </section>`;
 }
 
-const orderedProps = SECTION_ORDER.flatMap(sec => props.filter(p => p.section === sec));
+function byDateAddedDesc(a, b) { return (b.dateAdded || "").localeCompare(a.dateAdded || ""); }
+
+const orderedProps = SECTION_ORDER.flatMap(sec => props.filter(p => p.section === sec).slice().sort(byDateAddedDesc));
 
 const navLinks = orderedProps.map(p => `<a href="#${esc(p.id)}">${esc(p.title.split(",")[0].split(" (")[0])}</a>`).join("");
 
 const sections = SECTION_ORDER.filter(s => props.some(p => p.section === s)).map(sec => {
-  const items = props.filter(p => p.section === sec);
+  const items = props.filter(p => p.section === sec).slice().sort(byDateAddedDesc);
   return `<h1 class="section-title">${SECTION_TITLES[sec]}</h1>` + items.map(propertyCard).join("\n");
 }).join("\n");
 
@@ -348,7 +366,7 @@ const html = `<!DOCTYPE html>
   header .sub { color: #cfe0d6; font-size: 12px; margin-top: 2px; }
   .header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; flex-shrink: 0; }
   .submit-form { position: relative; }
-  #submitPanel { position: absolute; right: 0; top: 100%; background: #fff; border-radius: 8px; padding: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); z-index: 20; width: 260px; }
+  #submitPanel { position: absolute; right: 0; top: 100%; background: #fff; border-radius: 8px; padding: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); z-index: 20; width: 300px; }
   .submit-link { display: inline-block; background: #E65100; color: #fff; font-weight: 700; font-size: 12px; padding: 6px 14px; border-radius: 16px; text-decoration: none; border: none; font-family: inherit; cursor: pointer; white-space: nowrap; }
   .submit-link:hover { background: #ff6f1a; }
   .sort-row { font-size: 12px; display: flex; align-items: center; gap: 6px; }
@@ -364,6 +382,10 @@ const html = `<!DOCTYPE html>
   .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
   .price { font-size: 20px; font-weight: 700; color: #1b5e20; }
   .beds-baths { font-size: 14px; color: #444; font-weight: 600; margin-bottom: 10px; }
+  .tenure-badge { display: inline-block; font-size: 13px; font-weight: 700; padding: 5px 12px; border-radius: 14px; margin-bottom: 12px; }
+  .tenure-freehold { background: #e6f4ea; color: #1b5e20; }
+  .tenure-leasehold { background: #fff3e0; color: #9a5300; }
+  .tenure-unknown { background: #eee; color: #777; }
   .flags { margin-bottom: 14px; }
   .flag { display: inline-block; color: #fff; font-weight: 700; font-size: 11px; padding: 4px 8px; border-radius: 4px; margin: 0 6px 6px 0; }
   .parking-block { background: #eef6fb; border-left: 4px solid #1565C0; border-radius: 4px; padding: 8px 12px; font-size: 13px; line-height: 1.5; margin-bottom: 14px; }
@@ -457,7 +479,8 @@ const html = `<!DOCTYPE html>
   .bro-status { display: block; font-size: 11px; color: #888; margin-top: 4px; min-height: 14px; }
   .ask-claude-block { margin-top: 10px; padding-top: 10px; }
   .mini-form { margin-bottom: 12px; }
-  .mini-form textarea, .mini-form input[type="text"] { width: 100%; box-sizing: border-box; font-family: inherit; font-size: 13px; padding: 6px 8px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 6px; }
+  .mini-form textarea, .mini-form input[type="text"], .mini-form select { width: 100%; box-sizing: border-box; font-family: inherit; font-size: 13px; padding: 6px 8px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 6px; }
+  .submit-hint { font-size: 11px; color: #9a5300; background: #fff3e0; border-radius: 4px; padding: 6px 8px; margin: 0 0 8px; }
   .mini-form textarea { min-height: 50px; resize: vertical; }
   .mini-form button { background: #1155cc; color: #fff; border: none; border-radius: 16px; padding: 6px 14px; font-size: 12px; font-weight: 600; cursor: pointer; }
   .mini-form button:hover { background: #0d3f99; }
@@ -481,6 +504,17 @@ const html = `<!DOCTYPE html>
       <button id="submitToggle" class="submit-link" type="button">📮 Spotted one yourself? Submit a property</button>
       <div id="submitPanel" class="mini-form" style="display:none">
         <input id="submitUrl" type="text" placeholder="Paste the listing URL here">
+        <p class="submit-hint">Facebook/Marketplace links can't be scraped automatically — please fill in what you can below so Claude doesn't have to go hunting for it.</p>
+        <input id="submitPrice" type="text" placeholder="Price (e.g. £220,000)">
+        <input id="submitAddress" type="text" placeholder="Address / postcode">
+        <input id="submitBeds" type="text" placeholder="Bedrooms (optional)">
+        <input id="submitBaths" type="text" placeholder="Bathrooms (optional)">
+        <select id="submitParking">
+          <option value="">Parking — not sure</option>
+          <option value="has">Has parking (driveway/garage/allocated)</option>
+          <option value="onstreet">On-street only</option>
+          <option value="none">No parking</option>
+        </select>
         <textarea id="submitNotes" placeholder="What do you like about it? (optional)"></textarea>
         <button id="submitPostBtn" type="button">Submit</button>
         <span id="submitStatus" class="mini-status"></span>
@@ -492,6 +526,7 @@ const html = `<!DOCTYPE html>
         <option value="default">Default (newest first)</option>
         <option value="overall">Overall rating (high to low)</option>
         <option value="bro3">Bro 3 rating (high to low)</option>
+        <option value="price">Price (lowest to highest)</option>
       </select>
     </div>
   </div>
@@ -761,6 +796,11 @@ wireMiniForm('.remove-input', '.remove-post-btn', '/remove', function (btn, text
   });
   document.getElementById('submitPostBtn').addEventListener('click', function () {
     var urlInput = document.getElementById('submitUrl');
+    var priceInput = document.getElementById('submitPrice');
+    var addressInput = document.getElementById('submitAddress');
+    var bedsInput = document.getElementById('submitBeds');
+    var bathsInput = document.getElementById('submitBaths');
+    var parkingSelect = document.getElementById('submitParking');
     var notes = document.getElementById('submitNotes');
     var status = document.getElementById('submitStatus');
     var btn = this;
@@ -773,7 +813,15 @@ wireMiniForm('.remove-input', '.remove-post-btn', '/remove', function (btn, text
     fetch(WORKER_URL + '/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ listingUrl: urlInput.value, notes: notes.value }),
+      body: JSON.stringify({
+        listingUrl: urlInput.value,
+        notes: notes.value,
+        price: priceInput.value,
+        address: addressInput.value,
+        bedrooms: bedsInput.value,
+        bathrooms: bathsInput.value,
+        parking: parkingSelect.value,
+      }),
     })
       .then(function (r) { return r.json(); })
       .then(function (data) {
@@ -782,6 +830,11 @@ wireMiniForm('.remove-input', '.remove-post-btn', '/remove', function (btn, text
           status.textContent = 'Sent — Claude will pick it up on the next sweep!';
           urlInput.value = '';
           notes.value = '';
+          priceInput.value = '';
+          addressInput.value = '';
+          bedsInput.value = '';
+          bathsInput.value = '';
+          parkingSelect.value = '';
         } else {
           status.textContent = 'Something went wrong, try again.';
         }
@@ -806,12 +859,21 @@ wireMiniForm('.remove-input', '.remove-post-btn', '/remove', function (btn, text
       return;
     }
     headers.forEach(function (h) { h.style.display = 'none'; });
-    var attr = mode === 'bro3' ? 'bro3Rating' : 'overallRating';
-    var ranked = sortCards.slice().sort(function (a, b) {
-      var av = a.dataset[attr] !== '' && a.dataset[attr] != null ? parseFloat(a.dataset[attr]) : -1;
-      var bv = b.dataset[attr] !== '' && b.dataset[attr] != null ? parseFloat(b.dataset[attr]) : -1;
-      return bv - av;
-    });
+    var ranked;
+    if (mode === 'price') {
+      ranked = sortCards.slice().sort(function (a, b) {
+        var av = a.dataset.price !== '' && a.dataset.price != null ? parseFloat(a.dataset.price) : Infinity;
+        var bv = b.dataset.price !== '' && b.dataset.price != null ? parseFloat(b.dataset.price) : Infinity;
+        return av - bv;
+      });
+    } else {
+      var attr = mode === 'bro3' ? 'bro3Rating' : 'overallRating';
+      ranked = sortCards.slice().sort(function (a, b) {
+        var av = a.dataset[attr] !== '' && a.dataset[attr] != null ? parseFloat(a.dataset[attr]) : -1;
+        var bv = b.dataset[attr] !== '' && b.dataset[attr] != null ? parseFloat(b.dataset[attr]) : -1;
+        return bv - av;
+      });
+    }
     ranked.forEach(function (c, i) { c.style.order = i; });
   });
 })();

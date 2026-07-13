@@ -147,9 +147,20 @@ export default {
       }
 
       if (url.pathname === "/submit" && request.method === "POST") {
-        const { listingUrl, notes } = await request.json();
+        const { listingUrl, notes, price, address, bedrooms, bathrooms, parking } = await request.json();
         if (!listingUrl) return json({ error: "bad request" }, 400);
-        await createIssue(env, `Submit: ${listingUrl.slice(0, 200)}`, `Listing URL: ${listingUrl}\n\nWhat do you like about it: ${(notes || "").slice(0, 1000)}`, ["property-submission"]);
+        const parkingLabels = { has: "Has parking (driveway/garage/allocated)", onstreet: "On-street only", none: "No parking" };
+        const lines = [
+          `Listing URL: ${listingUrl}`,
+          `Price: ${(price || "not given").toString().slice(0, 100)}`,
+          `Address/postcode: ${(address || "not given").toString().slice(0, 200)}`,
+          `Bedrooms: ${(bedrooms || "not given").toString().slice(0, 20)}`,
+          `Bathrooms: ${(bathrooms || "not given").toString().slice(0, 20)}`,
+          `Parking: ${parkingLabels[parking] || "not given"}`,
+          ``,
+          `What do you like about it: ${(notes || "").slice(0, 1000)}`,
+        ];
+        await createIssue(env, `Submit: ${listingUrl.slice(0, 200)}`, lines.join("\n"), ["property-submission"]);
         return json({ ok: true });
       }
 
