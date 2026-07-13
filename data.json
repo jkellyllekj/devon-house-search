@@ -3,7 +3,7 @@
   "properties": [
     {
       "id": "forestreethill",
-      "section": "new",
+      "section": "still",
       "title": "Fore Street Hill, Budleigh Salterton (split-level flat)",
       "price": "Offers in Excess of £140,000",
       "agent": "Bettermove - National",
@@ -68,7 +68,7 @@
     },
     {
       "id": "forestreetotterton",
-      "section": "new",
+      "section": "still",
       "title": "Fore Street, Otterton (Grade II thatched cottage)",
       "price": "Guide Price £400,000",
       "agent": "Bradleys, Budleigh Salterton",
@@ -151,7 +151,7 @@
     },
     {
       "id": "longbrooklane2",
-      "section": "new",
+      "section": "still",
       "title": "Longbrook Lane, Lympstone (renovated cottage)",
       "price": "Guide Price £270,000",
       "agent": "Wilkinson Grant & Co, Topsham",
@@ -210,7 +210,7 @@
     },
     {
       "id": "globehillwoodbury",
-      "section": "new",
+      "section": "still",
       "title": "Globe Hill, Woodbury (Fairview Cottages)",
       "price": "£220,000",
       "agent": "Hall & Scott",
@@ -266,7 +266,7 @@
     },
     {
       "id": "broadwaywoodbury",
-      "section": "new",
+      "section": "still",
       "title": "Broadway, Woodbury (\"Stedifords\")",
       "price": "£225,000",
       "agent": "Hall & Scott",
@@ -320,7 +320,7 @@
     },
     {
       "id": "churchviewhousewoodbury",
-      "section": "new",
+      "section": "still",
       "title": "Flat 1, Church View House, Oakhayes Road, Woodbury",
       "price": "£230,000",
       "agent": "Bradleys, Budleigh Salterton",
@@ -1222,6 +1222,10 @@
         {
           "text": "AUCTION 21 JUL 2026, 12pm",
           "color": "#E65100"
+        },
+        {
+          "text": "PARKING UNKNOWN",
+          "color": "#757575"
         }
       ],
       "photos": [
@@ -3755,6 +3759,124 @@
       "floorplans": [
         "StJohnsFarmMews_Floorplan_1.jpg"
       ]
+    },
+    {
+      "id": "woodburygradeiicottage2",
+      "section": "new",
+      "title": "Woodbury (Grade II Listed one-bed cottage)",
+      "price": "£155,000",
+      "agent": "East of Exe",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6D4C41"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "WoodburyGradeIICottage2_Gallery_1.jpg",
+        "WoodburyGradeIICottage2_Gallery_2.jpg",
+        "WoodburyGradeIICottage2_Gallery_3.jpg",
+        "WoodburyGradeIICottage2_Gallery_4.jpg",
+        "WoodburyGradeIICottage2_Gallery_5.jpg",
+        "WoodburyGradeIICottage2_Gallery_6.jpg",
+        "WoodburyGradeIICottage2_Gallery_7.jpg",
+        "WoodburyGradeIICottage2_Gallery_8.jpg",
+        "WoodburyGradeIICottage2_Gallery_9.jpg"
+      ],
+      "floorplans": [
+        "WoodburyGradeIICottage2_Floorplan_1.png"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/90249219",
+      "linkLabel": "rightmove.co.uk/properties/90249219",
+      "body": "A one-bedroom Grade II Listed cottage in Woodbury village, with exposed ceiling beams and a feature fireplace in the sitting room, a separate study, recently-fitted kitchen, and a ground-floor bathroom. Upstairs is a single double bedroom with a walk-in wardrobe. Enclosed rear garden with patio and decking. Freehold. Marketed by East of Exe, Topsham.",
+      "why": "Cheap, genuinely characterful, freehold, and right in Woodbury near Bro 2 and Woodbury Common's trails — the trade-off is that it's a small one-bed with no off-street parking, so it suits a single-person or downsizer scenario more than a family home.",
+      "dateAdded": "2026-07-13",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": null,
+        "private": "no",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 7,
+      "aiTake": "A cheap, genuinely characterful Grade II cottage right in Woodbury near Bro 2 — but it's a tiny one-bed with no off-street parking, so it trades space and convenience for charm and price.",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "parking": {
+        "status": "onstreet",
+        "note": "On-street parking only, but Woodbury village has a small free short-stay car park (Flower Street) within a couple of minutes' walk, same as noted for the Mirey Lane cottage already tracked — a realistic fallback if the street itself is full."
+      }
+    },
+    {
+      "id": "ebfordlandplotb",
+      "section": "new",
+      "title": "Plot B, Land East of Exmouth Road, Ebford (self-build plot — AUCTION)",
+      "price": "£75,000 (guide price, plus £1,200 admin fee + £1,200 buyer's premium)",
+      "agent": "Auction House South West",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "SELF-BUILD PLOT — NO PLANNING PERMISSION SECURED",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "AUCTION 3 AUG 2026 (National Online Auction)",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "HAS PARKING (vehicular access established; buyer builds own driveway)",
+          "color": "#2E7D32"
+        }
+      ],
+      "photos": [
+        "EbfordLandPlotB_Gallery_1.jpg",
+        "EbfordLandPlotB_Gallery_2.jpg",
+        "EbfordLandPlotB_Gallery_3.jpg",
+        "EbfordLandPlotB_Gallery_4.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/90648726",
+      "linkLabel": "rightmove.co.uk/properties/90648726",
+      "body": "An approximately 1-acre (0.40 hectare) plot of land in a semi-rural setting between the villages of Ebford and Exton, just east of Exeter and roughly 15-20 minutes' drive from Exmouth. Established vehicular access from the road. Being sold freehold by national online auction on 3 August 2026, with contracts exchanging immediately on a successful bid. No planning permission is currently in place — the listing describes only 'development potential, subject to the necessary planning permissions and statutory consents', and the sale is subject to a planning overage provision (the legal pack should be reviewed carefully before bidding). A companion Plot A on the same road is also listed separately at the same guide price.",
+      "why": "A genuine self-build plot, which Jesse has said he likes as a category — cheap, freehold, and buildable-in-principle. But it is genuinely speculative: no planning permission is secured, so there is real risk of paying £75k+fees for land that can't be built on, and Ebford itself is inland/estuary-side rather than coastal, and not especially close to either brother. Flagging it for awareness given the auction date (21 days out) rather than as a strong recommendation.",
+      "dateAdded": "2026-07-13",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "partial",
+        "poolSwimTeam": null,
+        "private": "yes",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "no",
+        "character": null,
+        "garden": null,
+        "garageWorkspace": null,
+        "uniqueFeature": "Undeveloped self-build plot — buyer designs and builds their own home from scratch, subject to planning permission being secured.",
+        "closeToFamily": "no",
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "Appeals purely on the self-build concept Jesse likes — cheap and freehold — but real planning risk plus a location that's not coastal, not near the MTB trails, and not especially close to either brother keep this as a speculative long-shot rather than a strong pick.",
+      "parking": {
+        "status": "has",
+        "note": "Not parking in the conventional sense — this is undeveloped land with established vehicular access from the road, so any driveway/parking would be built as part of a future development."
+      }
     }
   ]
 }
