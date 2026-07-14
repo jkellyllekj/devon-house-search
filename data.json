@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-13",
+  "lastUpdated": "2026-07-14",
   "properties": [
     {
       "id": "byestollhouse",
@@ -3642,6 +3642,10 @@
         {
           "text": "FREEHOLD",
           "color": "#6D4C41"
+        },
+        {
+          "text": "LIKELY SOLD/WITHDRAWN (Sold STC)",
+          "color": "#8D6E63"
         }
       ],
       "parking": {
@@ -4141,6 +4145,76 @@
         "status": "has",
         "note": "Not parking in the conventional sense — this is undeveloped land with established vehicular access from the road, so any driveway/parking would be built as part of a future development."
       }
+    },
+    {
+      "id": "cliffroadbudleigh",
+      "section": "new",
+      "title": "Cliff Road, Budleigh Salterton (ground-floor flat, sea views)",
+      "price": "£230,000",
+      "agent": "Bradleys, Budleigh Salterton",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GROUND FLOOR",
+          "color": "#5D4037"
+        },
+        {
+          "text": "HAS PARKING (allocated space)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        }
+      ],
+      "photos": [
+        "CliffRoadBudleigh_Gallery_1.jpg",
+        "CliffRoadBudleigh_Gallery_2.jpg",
+        "CliffRoadBudleigh_Gallery_3.jpg",
+        "CliffRoadBudleigh_Gallery_4.jpg",
+        "CliffRoadBudleigh_Gallery_5.jpg",
+        "CliffRoadBudleigh_Gallery_6.jpg",
+        "CliffRoadBudleigh_Gallery_7.jpg",
+        "CliffRoadBudleigh_Gallery_8.jpg",
+        "CliffRoadBudleigh_Gallery_9.jpg",
+        "CliffRoadBudleigh_Gallery_10.jpg",
+        "CliffRoadBudleigh_Gallery_11.jpg",
+        "CliffRoadBudleigh_Gallery_12.jpg"
+      ],
+      "link": "https://www.zoopla.co.uk/for-sale/details/73601048/",
+      "linkLabel": "zoopla.co.uk — listing 73601048",
+      "body": "A genuinely ground-floor, two-double-bedroom apartment in a small modern block (12 units) on Cliff Road, Budleigh Salterton, with a south-facing terrace looking over the communal garden towards the sea. Open-plan sitting room with sea views and patio access, fitted kitchen with appliances, separate WC plus a modern bathroom. One allocated parking space, with additional visitor parking. Direct access to the coastal footpath via the communal gardens. Share of freehold, 999-year lease from 1982 (roughly 955 years remaining), service charge £200/month. Chain-free. EPC C, very low flood risk.",
+      "why": "Clears the flats bar cleanly — genuinely ground-floor, cheap, chain-free, and with real allocated parking, which is unusual for a sub-£250k flat here. The sea view and direct coastal footpath access from a shared garden are a real plus for a flat at this price. It's a modern block rather than anything characterful, and the communal garden isn't private, but the near-999-year lease means it behaves like freehold in practice. A solid, low-drama fallback rather than a dream find.",
+      "dateAdded": "2026-07-14",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "no",
+        "poolSwimTeam": null,
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "uniqueFeature": "South-facing terrace with a sea view plus direct access to the coastal footpath via the communal gardens",
+        "closeToFamily": "partial",
+        "tenure": "leasehold",
+        "leaseYears": 955
+      },
+      "aiRating": 6,
+      "aiTake": "A genuinely ground-floor, sea-view flat with real allocated parking and a near-freehold-length lease — practical and cheap, if short on character.",
+      "parking": {
+        "status": "has",
+        "note": "One allocated parking space included, plus additional visitor parking on site — confirmed in the listing."
+      },
+      "floorplans": [
+        "CliffRoadBudleigh_Floorplan_1.png"
+      ]
     }
   ]
 }
