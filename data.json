@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14",
+  "lastUpdated": "2026-07-15",
   "properties": [
     {
       "id": "newtonpoppleford",
@@ -77,7 +77,13 @@
       "floorplans": [
         "NewtonPoppleford_Floorplan_1.jpg",
         "NewtonPoppleford_Floorplan_2.jpg"
-      ]
+      ],
+      "ratings": {
+        "Bro 3": {
+          "score": 3,
+          "date": "2026-07-15"
+        }
+      }
     },
     {
       "id": "rivermeadavenue",
@@ -141,7 +147,13 @@
       },
       "floorplans": [
         "Rivermead_Floorplan_1.jpg"
-      ]
+      ],
+      "ratings": {
+        "Bro 3": {
+          "score": 2,
+          "date": "2026-07-15"
+        }
+      }
     },
     {
       "id": "madeiravillas",
@@ -157,6 +169,10 @@
         {
           "text": "HAS PARKING",
           "color": "#2E7D32"
+        },
+        {
+          "text": "LIKELY SOLD/WITHDRAWN (SOLD STC)",
+          "color": "#8D6E63"
         }
       ],
       "photos": [
@@ -203,7 +219,13 @@
       },
       "floorplans": [
         "Madeira_Floorplan_1.jpg"
-      ]
+      ],
+      "ratings": {
+        "Bro 3": {
+          "score": 4,
+          "date": "2026-07-15"
+        }
+      }
     },
     {
       "id": "byestollhouse",
@@ -217,7 +239,7 @@
           "color": "#2E7D32"
         },
         {
-          "text": "AUCTION — CLOSES 23 JULY 2026 (9 DAYS)",
+          "text": "AUCTION — CLOSES 23 JULY 2026 (8 DAYS)",
           "color": "#B71C1C"
         },
         {
@@ -263,6 +285,12 @@
       "parking": {
         "status": "unknown",
         "note": "Not shown in any of the auction photos and not mentioned in the particulars. Sidmouth runs a residents' permit parking scheme via Devon County Council/MiPermit — worth calling Devon CC directly to check whether this address qualifies, since nothing is deeded to the property itself."
+      },
+      "ratings": {
+        "Bro 3": {
+          "score": 7,
+          "date": "2026-07-15"
+        }
       }
     },
     {
@@ -400,7 +428,13 @@
       },
       "floorplans": [
         "OakHillCottages_Floorplan_1.png"
-      ]
+      ],
+      "ratings": {
+        "Bro 3": {
+          "score": 3,
+          "date": "2026-07-15"
+        }
+      }
     },
     {
       "id": "moorfieldroadplot",
@@ -528,7 +562,13 @@
       },
       "floorplans": [
         "ForeStreetHill_Floorplan_1.jpg"
-      ]
+      ],
+      "ratings": {
+        "Bro 3": {
+          "score": 8,
+          "date": "2026-07-15"
+        }
+      }
     },
     {
       "id": "forestreetotterton",
@@ -1684,7 +1724,7 @@
           "color": "#B71C1C"
         },
         {
-          "text": "AUCTION 21 JUL 2026, 12pm",
+          "text": "AUCTION 21 JUL 2026, 12pm (6 DAYS)",
           "color": "#E65100"
         },
         {
@@ -1843,7 +1883,7 @@
           "color": "#2E7D32"
         },
         {
-          "text": "AUCTION 23 JUL 2026",
+          "text": "AUCTION 23 JUL 2026 (8 DAYS)",
           "color": "#E65100"
         },
         {
@@ -2171,7 +2211,7 @@
           "color": "#B71C1C"
         },
         {
-          "text": "AUCTION 16 JUL 2026, 12pm",
+          "text": "AUCTION 16 JUL 2026, 12pm (TOMORROW — 1 DAY)",
           "color": "#E65100"
         },
         {
@@ -3731,7 +3771,7 @@
           "color": "#6D4C41"
         },
         {
-          "text": "AUCTION 10 SEP 2026, 12pm",
+          "text": "AUCTION 10 SEP 2026, 12pm (57 DAYS)",
           "color": "#C62828"
         }
       ],
@@ -4314,7 +4354,7 @@
           "color": "#B71C1C"
         },
         {
-          "text": "AUCTION 3 AUG 2026 (National Online Auction)",
+          "text": "AUCTION 3 AUG 2026 (19 DAYS, National Online Auction)",
           "color": "#EF6C00"
         },
         {
@@ -4422,7 +4462,13 @@
       },
       "floorplans": [
         "CliffRoadBudleigh_Floorplan_1.png"
-      ]
+      ],
+      "ratings": {
+        "Bro 3": {
+          "score": 6,
+          "date": "2026-07-15"
+        }
+      }
     }
   ]
 }
