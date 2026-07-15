@@ -228,6 +228,231 @@
       }
     },
     {
+      "id": "pumpcottage",
+      "section": "new",
+      "title": "Pump Cottage, High Street, East Budleigh (Grade II, 1600s)",
+      "price": "£400,000 (reduced 24/04/2026)",
+      "agent": "Bradleys, Budleigh Salterton",
+      "flags": [
+        {
+          "text": "OVER BUDGET (+£100,000)",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "HAS PARKING (multiple vehicles)",
+          "color": "#2E7D32"
+        }
+      ],
+      "photos": [
+        "PumpCottage_Gallery_1.jpg",
+        "PumpCottage_Gallery_2.jpg",
+        "PumpCottage_Gallery_3.jpg",
+        "PumpCottage_Gallery_4.jpg",
+        "PumpCottage_Gallery_5.jpg",
+        "PumpCottage_Gallery_6.jpg",
+        "PumpCottage_Gallery_7.jpg",
+        "PumpCottage_Gallery_8.jpg",
+        "PumpCottage_Gallery_9.jpg",
+        "PumpCottage_Gallery_10.jpg",
+        "PumpCottage_Gallery_11.jpg",
+        "PumpCottage_Gallery_12.jpg",
+        "PumpCottage_Gallery_13.jpg",
+        "PumpCottage_Gallery_14.jpg",
+        "PumpCottage_Gallery_15.jpg",
+        "PumpCottage_Gallery_16.jpg",
+        "PumpCottage_Gallery_17.jpg",
+        "PumpCottage_Gallery_18.jpg",
+        "PumpCottage_Gallery_19.jpg",
+        "PumpCottage_Gallery_20.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/160105097",
+      "linkLabel": "rightmove.co.uk/properties/160105097",
+      "body": "A Grade II listed end-terrace cottage on the High Street in East Budleigh, with origins to the 1600s. Kitchen, sitting room with original stone fireplace and exposed beams, dining room, shower room, two first-floor bedrooms. Gas central heating. The standout feature is the large enclosed rear garden — a haven for keen gardeners — with mature trees, a summer house, and a paved area beside a stream. Off-street parking for multiple vehicles. Freehold, Council Tax Band C. Price reduced 24/04/2026.",
+      "why": "A genuine 1600s Grade II cottage with off-street parking for several cars — a rare combination for a listed village cottage, where most of the stock on this list has on-street parking only. The stream-side garden with its own summer house is a real bonus. It's £100k over the hard ceiling, so this only clears the bar because it's a genuinely exceptional, characterful find rather than an ordinary house.",
+      "dateAdded": "2026-07-15",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "uniqueFeature": "Garden backs onto a stream, with its own summer house beside the water",
+        "closeToFamily": "partial",
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "A genuine 1600s Grade II cottage with rare multi-car off-street parking and a lovely stream-side garden, but £100k over the hard ceiling for a fairly modest 2-bed/1-bath layout.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "has",
+        "note": "Off-street parking for multiple vehicles — confirmed directly in the listing."
+      },
+      "floorplans": [
+        "PumpCottage_Floorplan_1.jpg"
+      ]
+    },
+    {
+      "id": "grasshoppers",
+      "section": "new",
+      "title": "Grasshoppers, High Street, East Budleigh (Grade II, 1600s)",
+      "price": "£450,000",
+      "agent": "David Rhys, Budleigh Salterton",
+      "flags": [
+        {
+          "text": "OVER BUDGET (+£150,000)",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#2E7D32"
+        }
+      ],
+      "photos": [
+        "Grasshoppers_Gallery_1.jpg",
+        "Grasshoppers_Gallery_2.jpg",
+        "Grasshoppers_Gallery_3.jpg",
+        "Grasshoppers_Gallery_4.jpg",
+        "Grasshoppers_Gallery_5.jpg",
+        "Grasshoppers_Gallery_6.jpg",
+        "Grasshoppers_Gallery_7.jpg",
+        "Grasshoppers_Gallery_8.jpg",
+        "Grasshoppers_Gallery_9.jpg",
+        "Grasshoppers_Gallery_10.jpg",
+        "Grasshoppers_Gallery_11.jpg",
+        "Grasshoppers_Gallery_12.jpg",
+        "Grasshoppers_Gallery_13.jpg",
+        "Grasshoppers_Gallery_14.jpg",
+        "Grasshoppers_Gallery_15.jpg",
+        "Grasshoppers_Gallery_16.jpg",
+        "Grasshoppers_Gallery_17.jpg",
+        "Grasshoppers_Gallery_18.jpg",
+        "Grasshoppers_Gallery_19.jpg",
+        "Grasshoppers_Gallery_20.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/174299930",
+      "linkLabel": "rightmove.co.uk/properties/174299930",
+      "body": "A Grade II listed cottage on the High Street in East Budleigh (Historic England lists it as \"Grasshoppers, The Stores\"), dating to the 1600s and sympathetically extended. Sitting room with feature fireplace, dining room, study/music room, utility room, modern fitted kitchen, further living/family room, two first-floor bedrooms, bathroom, separate WC. The layout allows single-floor living via a downstairs bedroom with its own ensuite shower room and private entrance. Enclosed patio-style garden, gas central heating. Council Tax Band E. Tenure listed as \"ask agent.\"",
+      "why": "The single-floor-living flexibility is the standout here — a downstairs bedroom with its own ensuite and private entrance is a genuine answer to the long-term-stairs question most of this list can't offer. Real character (1600s Grade II) and confirmed parking too. But it's £150k over the hard ceiling, the garden is patio-style rather than a proper garden, and tenure isn't confirmed (listed as \"ask agent\") — worth clarifying before getting attached.",
+      "dateAdded": "2026-07-15",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "uniqueFeature": "A downstairs bedroom with its own ensuite and private entrance — genuine single-floor-living flexibility, useful for a long-term no-stairs scenario or multigenerational living",
+        "closeToFamily": "partial"
+      },
+      "aiRating": 4,
+      "aiTake": "Real single-floor-living flexibility and genuine 1600s character, but £150k over the hard ceiling, tenure is unconfirmed, and the garden is only a patio rather than a proper outdoor space.",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "parking": {
+        "status": "has",
+        "note": "Parking confirmed directly on the listing, though the exact number of spaces isn't specified."
+      },
+      "floorplans": [
+        "Grasshoppers_Floorplan_1.jpg"
+      ]
+    },
+    {
+      "id": "castlelaneexmouth2",
+      "section": "new",
+      "title": "Castle Lane, Exmouth (Grade II thatched cottage, near Littleham)",
+      "price": "Guide Price £395,000",
+      "agent": "Links Estate Agents, Exmouth",
+      "flags": [
+        {
+          "text": "OVER BUDGET (+£95,000)",
+          "color": "#B71C1C"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "THATCHED",
+          "color": "#8D6E63"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "HAS PARKING (2 cars)",
+          "color": "#2E7D32"
+        }
+      ],
+      "photos": [
+        "CastleLaneExmouth2_Gallery_1.jpg",
+        "CastleLaneExmouth2_Gallery_2.jpg",
+        "CastleLaneExmouth2_Gallery_3.jpg",
+        "CastleLaneExmouth2_Gallery_4.jpg",
+        "CastleLaneExmouth2_Gallery_5.jpg",
+        "CastleLaneExmouth2_Gallery_6.jpg",
+        "CastleLaneExmouth2_Gallery_7.jpg",
+        "CastleLaneExmouth2_Gallery_8.jpg",
+        "CastleLaneExmouth2_Gallery_9.jpg",
+        "CastleLaneExmouth2_Gallery_10.jpg",
+        "CastleLaneExmouth2_Gallery_11.jpg",
+        "CastleLaneExmouth2_Gallery_12.jpg",
+        "CastleLaneExmouth2_Gallery_13.jpg",
+        "CastleLaneExmouth2_Gallery_14.jpg",
+        "CastleLaneExmouth2_Gallery_15.jpg",
+        "CastleLaneExmouth2_Gallery_16.jpg",
+        "CastleLaneExmouth2_Gallery_17.jpg",
+        "CastleLaneExmouth2_Gallery_18.jpg",
+        "CastleLaneExmouth2_Gallery_19.jpg"
+      ],
+      "link": "https://www.linksestateagents.co.uk/Property-For-Sale-Castle-Lane-Exmouth-pi-LINK6172.htm",
+      "linkLabel": "linksestateagents.co.uk — Castle Lane, Exmouth",
+      "body": "A Grade II listed, part-thatched cottage on Castle Lane in Littleham, Exmouth, believed to date to the late 18th/early 19th century (88m² / 947 sq ft). Three double bedrooms plus loft room access, one four-piece bathroom with a roll-top bath and rainfall shower. Sitting room with an inglenook fireplace, kitchen/dining room, a brick outhouse, oil central heating. Off-road parking for 2 vehicles in the rear garden. Freehold, no onward chain.",
+      "why": "A second, larger thatched Grade II cottage on the same Castle Lane as the one-bedroom find already tracked below (also Littleham/Exmouth) — this one has three double bedrooms plus a loft, a proper bathroom with a roll-top bath, and genuine off-road parking for two cars, a rare feature for a thatched cottage on this list. It's £95k over the hard ceiling, £170k pricier than the other Castle Lane cottage, but the parking alone makes it worth flagging as the more practical of the two.",
+      "dateAdded": "2026-07-15",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "partial",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "no",
+        "character": "yes",
+        "garden": "partial",
+        "garageWorkspace": "yes",
+        "uniqueFeature": "A roll-top bath and rainfall shower in a Grade II thatched cottage, plus a rare off-road parking bay for 2 cars — parking most thatched cottages on this list lack",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "A larger, better-appointed thatched Grade II cottage than its one-bed neighbour on the same lane, with rare 2-car parking — but £95k over the hard ceiling and still not especially close to the coast, station, or trails despite being in Exmouth itself.",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "parking": {
+        "status": "has",
+        "note": "Off-road parking for 2 vehicles in the rear garden — confirmed directly in the listing, a rare feature for a thatched cottage on this list."
+      },
+      "floorplans": [
+        "CastleLaneExmouth2_Floorplan_1.jpg"
+      ]
+    },
+    {
       "id": "byestollhouse",
       "section": "still",
       "title": "Byes Toll House, Salcombe Road, Sidmouth",
@@ -1817,7 +2042,7 @@
           "color": "#2E7D32"
         },
         {
-          "text": "NO PARKING INFO",
+          "text": "PARKING UNKNOWN",
           "color": "#757575"
         }
       ],
@@ -1858,14 +2083,16 @@
         "garden": "yes",
         "garageWorkspace": "no",
         "uniqueFeature": null,
-        "closeToFamily": "yes"
+        "closeToFamily": "yes",
+        "tenure": "freehold"
       },
       "aiRating": 6,
       "aiTake": "The thatched-cottage character you love, near your brother, but it's the exact village-centre/on-street-parking trade-off you flagged not wanting — you said as much yourself.",
       "bedrooms": 3,
+      "bathrooms": 1,
       "parking": {
         "status": "unknown",
-        "note": "Village-centre position; on-street parking is the practical reality even though the listing doesn't confirm it explicitly."
+        "note": "Listing says \"ask agent.\" Researched directly: there's no public car park in Otterton village itself — Otterton Mill's car park at the village edge is for mill/café customers and short walkers only, not residents. No residents' permit scheme exists here (unlike Budleigh Salterton's Lime Kiln car park nearby) — parking would mean informal on-street space near the cottage, with nothing guaranteed. Worth asking the agent directly whether this specific cottage has any allocated space or rear access."
       },
       "floorplans": [
         "Otterton_Floorplan_1.jpg"
