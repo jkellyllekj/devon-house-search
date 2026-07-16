@@ -88,35 +88,24 @@ function parkingHtml(p) {
 const REPO = "jkellyllekj/devon-house-search";
 const WORKER_URL = "https://devon-house-worker.jessekellyuk.workers.dev";
 
-function brotherBoxHtml(p, n) {
-  const bro = `Bro ${n}`;
-  const term = `${p.id}-bro${n}`;
-  return `
-    <div class="brother-box brother-box-${n}">
-      <h4>Bro ${n}</h4>
-      <div class="bro-comments" data-term="${esc(term)}">Loading…</div>
-      <textarea class="bro-input" placeholder="Write a comment (optional)…"></textarea>
-      <div class="bro-controls">
-        <select class="bro-rating">
-          <option value="">No rating</option>
-          ${[1,2,3,4,5,6,7,8,9,10].map(n2 => `<option value="${n2}">${n2}/10</option>`).join("")}
-        </select>
-        <button class="bro-post-btn" data-property="${esc(p.id)}" data-bro="${esc(bro)}">Post</button>
-      </div>
-      <span class="bro-status"></span>
-    </div>
-  `;
-}
-
 function commentsBlockHtml(p) {
   return `
     <div class="comments-block">
       <h3>💬 Family Comments</h3>
-      <p class="rating-hint">💡 Each brother has their own box below — no sign-in needed. Write a comment and/or pick a rating, then hit Post. You can post again any time to update it.</p>
-      <div class="brother-boxes">
-        ${brotherBoxHtml(p, 1)}
-        ${brotherBoxHtml(p, 2)}
-        ${brotherBoxHtml(p, 3)}
+      <p class="rating-hint">💡 Ratings live in the box above now — tap or drag your row (B1/B2/B3) there to rate instantly, nothing to submit. Down here is just for comments: pick who you are and post whenever.</p>
+      <div class="family-feed" data-property="${esc(p.id)}">Loading…</div>
+      <div class="family-post">
+        <div class="family-who">
+          <span class="family-who-label">Posting as:</span>
+          <button type="button" class="bro-select-btn bro-select-1" data-bro="Bro 1">Bro 1</button>
+          <button type="button" class="bro-select-btn bro-select-2" data-bro="Bro 2">Bro 2</button>
+          <button type="button" class="bro-select-btn bro-select-3" data-bro="Bro 3">Bro 3</button>
+        </div>
+        <textarea class="family-input" placeholder="Write a comment…"></textarea>
+        <div class="family-controls">
+          <button class="family-post-btn" data-property="${esc(p.id)}">Post</button>
+          <span class="family-status"></span>
+        </div>
       </div>
     </div>
   `;
@@ -158,13 +147,18 @@ function ratingBarColor(score) {
 }
 
 function ratingRowHtml(label, score, cls, propertyId, bro) {
-  const dataAttrs = (propertyId && bro) ? ` data-property="${esc(propertyId)}" data-bro="${esc(bro)}"` : "";
+  const interactive = Boolean(propertyId && bro);
+  const dataAttrs = interactive ? ` data-property="${esc(propertyId)}" data-bro="${esc(bro)}"` : "";
+  const trackClass = "rating-bar-track" + (interactive ? " interactive" : "");
+  const thumb = (pct) => interactive ? `<div class="rating-thumb" style="left:${pct}%"></div>` : "";
+  const flash = interactive ? `<span class="rating-row-flash"></span>` : "";
   if (score === null || score === undefined) {
     return `
       <div class="rating-row rating-row-empty ${cls}"${dataAttrs}>
         <span class="rating-row-label">${esc(label)}</span>
-        <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+        <div class="${trackClass}"><div class="rating-bar-fill" style="width:0%"></div>${thumb(0)}</div>
         <span class="rating-row-score">not yet rated</span>
+        ${flash}
       </div>
     `;
   }
@@ -173,9 +167,10 @@ function ratingRowHtml(label, score, cls, propertyId, bro) {
   return `
     <div class="rating-row ${cls}"${dataAttrs}>
       <span class="rating-row-label">${esc(label)}</span>
-      <div class="rating-bar-track"><div class="rating-bar-fill" style="width:${score * 10}%;background:${ratingBarColor(score)}"></div></div>
+      <div class="${trackClass}"><div class="rating-bar-fill" style="width:${score * 10}%;background:${ratingBarColor(score)}"></div>${thumb(score * 10)}</div>
       <span class="rating-row-score">${esc(scoreLabel)}/10</span>
       <span class="rating-row-flames">${flames}</span>
+      ${flash}
     </div>
   `;
 }
@@ -197,7 +192,7 @@ function ratingsHtml(p) {
     ...BROTHER_SLOTS.map(label => ratingRowHtml(label.replace("Bro ", "B"), ratings[label] !== undefined ? ratings[label].score : null, "", p.id, label)),
     ratingRowHtml("🤖", (p.aiRating !== undefined && p.aiRating !== null) ? p.aiRating : null, "rating-row-ai"),
   ].join("");
-  return `<div class="ratings-block" title="Family ratings update live as soon as someone posts">${rows}</div>`;
+  return `<div class="ratings-block" title="Tap or drag your row (B1/B2/B3) to rate — saves instantly, no submit needed">${rows}<div class="ratings-caption">Tap/drag B1–B3 to rate</div></div>`;
 }
 
 function avgRating(p) {
@@ -426,15 +421,20 @@ const html = `<!DOCTYPE html>
   .why { background: #fdf6e3; border-left: 4px solid #e6b800; padding: 10px 14px; border-radius: 4px; font-size: 14px; line-height: 1.5; }
   .source-badge { display: inline-block; background: #1b3a2f; color: #fff !important; font-weight: 700; font-size: 12px; letter-spacing: 0.4px; padding: 5px 12px; border-radius: 20px; text-decoration: none; margin-bottom: 0; }
   .source-badge:hover { background: #23483a; }
-  .ratings-block { padding: 8px 10px; background: #fafafa; border-radius: 8px; cursor: help; }
-  .rating-row { display: flex; align-items: center; gap: 6px; margin-bottom: 3px; font-size: 11px; }
+  .ratings-block { padding: 8px 10px; background: #fafafa; border-radius: 8px; }
+  .ratings-caption { font-size: 9px; color: #aaa; text-align: right; margin-top: 2px; }
+  .rating-row { display: flex; align-items: center; gap: 6px; margin-bottom: 3px; font-size: 11px; position: relative; }
   .rating-row-label { flex: 0 0 26px; font-weight: 600; color: #333; }
   .rating-row-ai .rating-row-label { color: #6A1B9A; }
   .rating-row-overall .rating-row-label { color: #E65100; font-weight: 800; }
-  .rating-bar-track { flex: 1 1 auto; height: 6px; background: #e6e6e6; border-radius: 6px; overflow: hidden; }
-  .rating-bar-fill { height: 100%; border-radius: 8px; transition: width 0.3s; }
+  .rating-bar-track { flex: 1 1 auto; height: 6px; background: #e6e6e6; border-radius: 6px; overflow: hidden; position: relative; }
+  .rating-bar-track.interactive { cursor: pointer; overflow: visible; touch-action: none; }
+  .rating-bar-track.interactive:hover .rating-bar-fill, .rating-bar-track.interactive:active .rating-bar-fill { filter: brightness(1.08); }
+  .rating-thumb { position: absolute; top: 50%; width: 12px; height: 12px; border-radius: 50%; background: #fff; border: 2px solid #E65100; transform: translate(-50%, -50%); pointer-events: none; box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
+  .rating-bar-fill { height: 100%; border-radius: 8px; transition: width 0.15s; }
   .rating-row-score { flex: 0 0 32px; font-weight: 700; color: #444; text-align: right; font-size: 11px; }
   .rating-row-flames { display: none; }
+  .rating-row-flash { position: absolute; right: 0; top: -13px; font-size: 9px; font-weight: 700; color: #2E7D32; }
   .rating-row-empty .rating-row-score { color: #999; font-weight: 400; }
   .checklist-block { margin-bottom: 10px; padding: 10px 12px; background: #f4f8f5; border-radius: 8px; }
   .checklist-block h3 { margin: 0 0 8px; font-size: 12px; color: #1b3a2f; text-transform: uppercase; letter-spacing: 0.5px; }
@@ -465,25 +465,27 @@ const html = `<!DOCTYPE html>
   .comments-block { margin-top: 10px; padding: 10px 12px; background: #fff8f0; border: 2px solid #E65100; border-radius: 8px; }
   .comments-block h3 { margin: 0 0 6px; font-size: 14px; font-weight: 800; color: #E65100; letter-spacing: 0.3px; }
   .rating-hint { font-size: 10px; color: #8a5a00; margin: 0 0 6px; }
-  .brother-boxes { display: flex; gap: 8px; flex-wrap: wrap; }
-  .brother-box { flex: 1 1 220px; min-width: 200px; background: #fff; border-radius: 8px; padding: 7px 8px; border-top: 3px solid #999; }
-  .brother-box h4 { margin: 0 0 5px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; color: #666; }
-  .brother-box-1 { border-top-color: #1565C0; }
-  .brother-box-1 h4 { color: #1565C0; }
-  .brother-box-2 { border-top-color: #2E7D32; }
-  .brother-box-2 h4 { color: #2E7D32; }
-  .brother-box-3 { border-top-color: #C2185B; }
-  .brother-box-3 h4 { color: #C2185B; }
-  .bro-comments { font-size: 12px; margin-bottom: 5px; max-height: 90px; overflow-y: auto; }
-  .bro-comment { background: #f4f4f4; border-radius: 6px; padding: 5px 7px; margin-bottom: 4px; white-space: pre-wrap; }
+  .family-feed { font-size: 12px; margin-bottom: 8px; max-height: 160px; overflow-y: auto; }
+  .fam-comment { background: #f4f4f4; border-radius: 6px; padding: 5px 7px; margin-bottom: 4px; white-space: pre-wrap; }
+  .fam-comment-who { font-weight: 700; margin-right: 4px; }
+  .fam-bro-1 .fam-comment-who { color: #1565C0; }
+  .fam-bro-2 .fam-comment-who { color: #2E7D32; }
+  .fam-bro-3 .fam-comment-who { color: #C2185B; }
   .bro-empty { color: #999; font-size: 11px; }
-  .bro-input { width: 100%; box-sizing: border-box; min-height: 36px; font-family: inherit; font-size: 12px; padding: 5px 7px; border: 1px solid #ccc; border-radius: 6px; resize: vertical; }
-  .bro-controls { display: flex; gap: 6px; margin-top: 5px; align-items: center; }
-  .bro-rating { font-size: 11px; padding: 3px 5px; border-radius: 4px; border: 1px solid #ccc; }
-  .bro-post-btn { background: #1b3a2f; color: #fff; border: none; border-radius: 16px; padding: 5px 12px; font-size: 11px; font-weight: 600; cursor: pointer; }
-  .bro-post-btn:hover { background: #23483a; }
-  .bro-post-btn:disabled { opacity: 0.6; cursor: default; }
-  .bro-status { display: block; font-size: 10px; color: #888; margin-top: 3px; min-height: 12px; }
+  .family-post { background: #fff; border-radius: 8px; padding: 8px; }
+  .family-who { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .family-who-label { font-size: 11px; color: #666; font-weight: 600; }
+  .bro-select-btn { font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 14px; border: 2px solid #ccc; background: #fff; color: #666; cursor: pointer; }
+  .bro-select-btn.active { color: #fff; }
+  .bro-select-1.active { background: #1565C0; border-color: #1565C0; }
+  .bro-select-2.active { background: #2E7D32; border-color: #2E7D32; }
+  .bro-select-3.active { background: #C2185B; border-color: #C2185B; }
+  .family-input { width: 100%; box-sizing: border-box; min-height: 40px; font-family: inherit; font-size: 12px; padding: 5px 7px; border: 1px solid #ccc; border-radius: 6px; resize: vertical; }
+  .family-controls { display: flex; gap: 6px; margin-top: 5px; align-items: center; }
+  .family-post-btn { background: #1b3a2f; color: #fff; border: none; border-radius: 16px; padding: 5px 12px; font-size: 11px; font-weight: 600; cursor: pointer; }
+  .family-post-btn:hover { background: #23483a; }
+  .family-post-btn:disabled { opacity: 0.6; cursor: default; }
+  .family-status { display: block; font-size: 10px; color: #888; margin-top: 3px; min-height: 12px; }
   .ask-claude-block { margin-top: 6px; padding-top: 6px; }
   .mini-form { margin-bottom: 8px; }
   .mini-form textarea, .mini-form input[type="text"], .mini-form select { width: 100%; box-sizing: border-box; font-family: inherit; font-size: 12px; padding: 5px 7px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 5px; }
@@ -621,23 +623,36 @@ function escText(s) {
   return d.innerHTML;
 }
 
-function loadBroComments(el) {
-  var term = el.dataset.term;
-  fetch(WORKER_URL + '/comments?term=' + encodeURIComponent(term))
-    .then(function (r) { return r.json(); })
-    .then(function (data) {
-      if (!data.comments || !data.comments.length) {
-        el.innerHTML = '<p class="bro-empty">No comment yet.</p>';
-        return;
-      }
-      el.innerHTML = data.comments.map(function (c) {
-        return '<div class="bro-comment">' + escText(c.body) + '</div>';
-      }).join('');
-      applyLiveRating(el.dataset.term, data.comments);
-    })
-    .catch(function () {
-      el.innerHTML = '<p class="bro-empty">Couldn\\'t load comments right now — try reloading the page.</p>';
+function loadFamilyFeed(el) {
+  var propertyId = el.dataset.property;
+  var terms = [1, 2, 3].map(function (n) { return propertyId + '-bro' + n; });
+  Promise.all(terms.map(function (term) {
+    return fetch(WORKER_URL + '/comments?term=' + encodeURIComponent(term))
+      .then(function (r) { return r.json(); })
+      .then(function (data) { return { term: term, bro: 'Bro ' + term.slice(-1), comments: data.comments || [] }; })
+      .catch(function () { return { term: term, bro: 'Bro ' + term.slice(-1), comments: [] }; });
+  })).then(function (results) {
+    results.forEach(function (r) { applyLiveRating(r.term, r.comments); });
+    var all = [];
+    results.forEach(function (r) {
+      r.comments.forEach(function (c) {
+        var body = c.body.replace(/^\\s*Rating:\\s*\\d{1,2}\\s*\\/\\s*10\\s*\\n*/i, '').trim();
+        if (!body) return;
+        all.push({ bro: r.bro, body: body, createdAt: c.createdAt });
+      });
     });
+    all.sort(function (a, b) { return new Date(a.createdAt) - new Date(b.createdAt); });
+    if (!all.length) {
+      el.innerHTML = '<p class="bro-empty">No comments yet.</p>';
+      return;
+    }
+    el.innerHTML = all.map(function (c) {
+      var cls = c.bro === 'Bro 1' ? 'fam-bro-1' : c.bro === 'Bro 2' ? 'fam-bro-2' : 'fam-bro-3';
+      return '<div class="fam-comment ' + cls + '"><span class="fam-comment-who">' + c.bro + ':</span>' + escText(c.body) + '</div>';
+    }).join('');
+  }).catch(function () {
+    el.innerHTML = '<p class="bro-empty">Couldn\\'t load comments right now — try reloading the page.</p>';
+  });
 }
 
 function ratingBarColorJs(score) {
@@ -715,48 +730,122 @@ function applyLiveRating(term, comments) {
   }
 }
 
-document.querySelectorAll('.bro-comments').forEach(loadBroComments);
+document.querySelectorAll('.family-feed').forEach(loadFamilyFeed);
 
-document.querySelectorAll('.bro-post-btn').forEach(function (btn) {
-  btn.addEventListener('click', function () {
-    var box = btn.closest('.brother-box');
-    var textarea = box.querySelector('.bro-input');
-    var select = box.querySelector('.bro-rating');
-    var status = box.querySelector('.bro-status');
-    var commentsEl = box.querySelector('.bro-comments');
-    if (!textarea.value.trim() && !select.value) {
-      status.textContent = 'Write a comment or pick a rating first.';
+document.querySelectorAll('.family-post').forEach(function (panel) {
+  var selected = null;
+  var buttons = panel.querySelectorAll('.bro-select-btn');
+  var textarea = panel.querySelector('.family-input');
+  var postBtn = panel.querySelector('.family-post-btn');
+  var status = panel.querySelector('.family-status');
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      buttons.forEach(function (x) { x.classList.remove('active'); });
+      b.classList.add('active');
+      selected = b.dataset.bro;
+      status.textContent = '';
+    });
+  });
+  postBtn.addEventListener('click', function () {
+    if (!selected) {
+      status.textContent = 'Pick who you are first.';
       return;
     }
-    btn.disabled = true;
+    if (!textarea.value.trim()) {
+      status.textContent = 'Write a comment first.';
+      return;
+    }
+    postBtn.disabled = true;
     status.textContent = 'Posting…';
     fetch(WORKER_URL + '/comment', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        propertyId: btn.dataset.property,
-        bro: btn.dataset.bro,
-        rating: select.value || null,
+        propertyId: postBtn.dataset.property,
+        bro: selected,
+        rating: null,
         comment: textarea.value,
       }),
     })
       .then(function (r) { return r.json(); })
       .then(function (data) {
-        btn.disabled = false;
+        postBtn.disabled = false;
         if (data.ok) {
           status.textContent = 'Posted!';
           textarea.value = '';
-          select.value = '';
-          loadBroComments(commentsEl);
+          loadFamilyFeed(panel.closest('.comments-block').querySelector('.family-feed'));
         } else {
           status.textContent = 'Something went wrong — try again in a bit.';
         }
       })
       .catch(function () {
-        btn.disabled = false;
+        postBtn.disabled = false;
         status.textContent = 'Could not reach the server — try again in a bit.';
       });
   });
+});
+
+function computeScoreFromEvent(track, clientX) {
+  var rect = track.getBoundingClientRect();
+  var pct = rect.width ? (clientX - rect.left) / rect.width : 0;
+  pct = Math.max(0, Math.min(1, pct));
+  return Math.max(1, Math.round(pct * 10) || 1);
+}
+
+document.querySelectorAll('.rating-bar-track.interactive').forEach(function (track) {
+  var dragging = false;
+  function paint(score) {
+    var row = track.closest('.rating-row');
+    row.classList.remove('rating-row-empty');
+    track.querySelector('.rating-bar-fill').style.width = (score * 10) + '%';
+    track.querySelector('.rating-bar-fill').style.background = ratingBarColorJs(score);
+    var thumb = track.querySelector('.rating-thumb');
+    if (thumb) thumb.style.left = (score * 10) + '%';
+    var scoreEl = row.querySelector('.rating-row-score');
+    if (scoreEl) scoreEl.textContent = score + '/10';
+  }
+  function commit(score) {
+    var row = track.closest('.rating-row');
+    var propertyId = row.dataset.property, bro = row.dataset.bro;
+    var flash = row.querySelector('.rating-row-flash');
+    fetch(WORKER_URL + '/comment', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ propertyId: propertyId, bro: bro, rating: score, comment: '' }),
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        updateRatingRow(propertyId, bro, score);
+        if (flash) {
+          flash.textContent = data.ok ? '✓ saved' : 'save failed';
+          setTimeout(function () { flash.textContent = ''; }, 2000);
+        }
+      })
+      .catch(function () {
+        if (flash) {
+          flash.textContent = 'save failed — try again';
+          setTimeout(function () { flash.textContent = ''; }, 2500);
+        }
+      });
+  }
+  track.addEventListener('pointerdown', function (e) {
+    dragging = true;
+    try { track.setPointerCapture(e.pointerId); } catch (err) {}
+    paint(computeScoreFromEvent(track, e.clientX));
+    e.preventDefault();
+  });
+  track.addEventListener('pointermove', function (e) {
+    if (!dragging) return;
+    paint(computeScoreFromEvent(track, e.clientX));
+  });
+  track.addEventListener('pointerup', function (e) {
+    if (!dragging) return;
+    dragging = false;
+    var score = computeScoreFromEvent(track, e.clientX);
+    paint(score);
+    commit(score);
+  });
+  track.addEventListener('pointercancel', function () { dragging = false; });
 });
 
 function wireMiniForm(inputSel, btnSel, endpoint, buildBody) {
