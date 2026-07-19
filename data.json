@@ -1,9 +1,74 @@
 {
-  "lastUpdated": "2026-07-15",
+  "lastUpdated": "2026-07-19",
   "properties": [
     {
-      "id": "newtonpoppleford",
+      "id": "mortonroadexmouth",
       "section": "new",
+      "title": "Morton Road, Exmouth (ground-floor bungalow)",
+      "price": "Guide Price £160,000",
+      "agent": "Hall & Scott, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#2E7D32"
+        }
+      ],
+      "photos": [
+        "MortonRoad_Gallery_1.jpg",
+        "MortonRoad_Gallery_2.jpg",
+        "MortonRoad_Gallery_3.jpg",
+        "MortonRoad_Gallery_4.jpg",
+        "MortonRoad_Gallery_5.jpg",
+        "MortonRoad_Gallery_6.jpg",
+        "MortonRoad_Gallery_7.jpg",
+        "MortonRoad_Gallery_8.jpg",
+        "MortonRoad_Gallery_9.jpg",
+        "MortonRoad_Gallery_10.jpg",
+        "MortonRoad_Gallery_11.jpg",
+        "MortonRoad_Gallery_12.jpg"
+      ],
+      "link": "https://hallandscott.co.uk/details/?id=HSEXM_709045",
+      "linkLabel": "hallandscott.co.uk — Morton Road, Exmouth",
+      "body": "A freehold attached bungalow with a private courtyard/sun terrace and a dedicated parking space, close to Exmouth town centre and the seafront. Open-plan living room and kitchen with a built-in oven and hob, a double bedroom with wardrobe space, and a modern en-suite shower room. Electric heating and UPVC double glazing throughout. Council Tax Band A, EPC E. Pays a small (unstated) contribution towards the communal fire alarm system at 15 Morton Road. Marketed as suitable for a first-time buyer, an Airbnb/investment let, or level-access living.",
+      "why": "Comfortably under Jesse's real £170k target, freehold, with its own parking space and already ground-floor — genuinely adaptable long-term without needing any adaptation work. It is a short walk to both Exmouth's seafront and the train station, and it's in Exmouth itself rather than out toward one of the villages. The trade-off is honest: this is a plain modern bungalow, not a characterful find, and the outside space is a courtyard rather than a real garden.",
+      "dateAdded": "2026-07-19",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "yes",
+        "poolSwimTeam": null,
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 8,
+      "aiTake": "A no-frills freehold ground-floor bungalow with its own parking space, comfortably under Jesse's real £170k target and a short walk to Exmouth's seafront and train station — practical and adaptable long-term, but it's a modern 1-bed with a courtyard instead of a garden and none of the thatched/period character Jesse tends to go for.",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "parking": {
+        "status": "has",
+        "note": "One dedicated parking space included with the property, confirmed directly in the listing."
+      },
+      "floorplans": [
+        "MortonRoad_Floorplan_1.jpg"
+      ],
+      "town": "Exmouth",
+      "lat": 50.617029,
+      "lng": -3.417325,
+      "geocodeSource": "Morton Road, Exmouth, Devon, UK"
+    },
+    {
+      "id": "newtonpoppleford",
+      "section": "still",
       "title": "Station Road, Newton Poppleford (thatched cottage + barn)",
       "price": "Guide Price £260,000",
       "agent": "Stags, Honiton",
@@ -83,11 +148,15 @@
           "score": 3,
           "date": "2026-07-15"
         }
-      }
+      },
+      "town": "Newton Poppleford",
+      "lat": 50.70022,
+      "lng": -3.294248,
+      "geocodeSource": "Station Road, Newton Poppleford, Devon, UK"
     },
     {
       "id": "rivermeadavenue",
-      "section": "new",
+      "section": "still",
       "title": "Rivermead Avenue, Exmouth (bungalow)",
       "price": "£270,000",
       "agent": "Links Estate Agents",
@@ -153,11 +222,15 @@
           "score": 2,
           "date": "2026-07-15"
         }
-      }
+      },
+      "town": "Exmouth",
+      "lat": 50.638298,
+      "lng": -3.409027,
+      "geocodeSource": "Rivermead Avenue, Exmouth, Devon, UK"
     },
     {
       "id": "madeiravillas",
-      "section": "new",
+      "section": "still",
       "title": "Madeira Villas, Exmouth",
       "price": "£282,500",
       "agent": "Hall & Scott, Exmouth",
@@ -225,11 +298,15 @@
           "score": 4,
           "date": "2026-07-15"
         }
-      }
+      },
+      "town": "Exmouth",
+      "lat": 50.62385,
+      "lng": -3.408229,
+      "geocodeSource": "Madeira Villas, Exmouth, Devon, UK"
     },
     {
       "id": "pumpcottage",
-      "section": "new",
+      "section": "still",
       "title": "Pump Cottage, High Street, East Budleigh (Grade II, 1600s)",
       "price": "£400,000 (reduced 24/04/2026)",
       "agent": "Bradleys, Budleigh Salterton",
@@ -298,11 +375,15 @@
       },
       "floorplans": [
         "PumpCottage_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "East Budleigh",
+      "lat": 50.648099,
+      "lng": -3.338103,
+      "geocodeSource": "Pump Cottage, East Budleigh, Devon, UK"
     },
     {
       "id": "grasshoppers",
-      "section": "new",
+      "section": "still",
       "title": "Grasshoppers, High Street, East Budleigh (Grade II, 1600s)",
       "price": "£450,000",
       "agent": "David Rhys, Budleigh Salterton",
@@ -370,11 +451,15 @@
       },
       "floorplans": [
         "Grasshoppers_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "East Budleigh",
+      "lat": 50.646999,
+      "lng": -3.336368,
+      "geocodeSource": "Grasshoppers, East Budleigh, Devon, UK"
     },
     {
       "id": "castlelaneexmouth2",
-      "section": "new",
+      "section": "still",
       "title": "Castle Lane, Exmouth (Grade II thatched cottage, near Littleham)",
       "price": "Guide Price £395,000",
       "agent": "Links Estate Agents, Exmouth",
@@ -450,7 +535,11 @@
       },
       "floorplans": [
         "CastleLaneExmouth2_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Exmouth",
+      "lat": 50.6239,
+      "lng": -3.373411,
+      "geocodeSource": "Castle Lane, Exmouth, Devon, UK"
     },
     {
       "id": "byestollhouse",
@@ -464,7 +553,7 @@
           "color": "#2E7D32"
         },
         {
-          "text": "AUCTION — CLOSES 23 JULY 2026 (8 DAYS)",
+          "text": "AUCTION — CLOSES 23 JULY 2026 (4 DAYS)",
           "color": "#B71C1C"
         },
         {
@@ -516,7 +605,40 @@
           "score": 7,
           "date": "2026-07-15"
         }
-      }
+      },
+      "town": "Sidmouth",
+      "lat": 50.683468,
+      "lng": -3.235744,
+      "geocodeSource": "Byes Toll House, Sidmouth, Devon, UK",
+      "research": [
+        {
+          "date": "2026-07-19",
+          "question": "Does Sidmouth have a public pool or MTB trails nearby? What is the story on this place — has it been on the market before? Why does it seem underpriced, and what might be wrong with it?",
+          "findings": "Pool/trails: yes to both. Sidmouth Swimming Pool (Ham Lane, LED Community Leisure, 25m/5-lane, public and lane swimming) is about a mile from the property, plus Sidmouth Leisure Centre (Primley Road) for gym/classes. For MTB, Mutters Moor and the Peak Hill/Mutter’s Moor loop are right on Sidmouth’s doorstep (linking to Woodbury Castle further west), and there are 80+ mapped trails in the wider East Devon AONB around Salcombe Regis/Hawkerland/Fire Beacon Hill — genuinely better MTB access than most of the list, just not Woodbury Common itself.\n\nThe story: this is a real, well-documented building, not an obscure flip. It’s Grade II listed, built c.1817 for the Honiton & Sidmouth Turnpike Trust, and has belonged to East Devon (originally Sidmouth Urban District) Council since 1936. It was used as council social housing from the end of WWII, then stood empty for several years after a severe flood in July 1968 left it unfit for habitation, before the council refurbished it in 1974. It’s now being sold as one of 168 lots in Clive Emson’s July 2026 auction, by instruction of East Devon District Council — this reads as a routine council asset disposal (councils regularly auction off small, hard-to-modernise former-tenancy stock), not a distressed or scandal sale. I couldn’t find any record of this specific building being on the market a year ago — you may be thinking of Ye Olde Toll House in Newton Poppleford, a different (unrelated) toll house that Clive Emson auctioned separately in an earlier sale.\n\nWhy it looks underpriced: three real, boring reasons rather than one hidden catch. (1) It’s genuinely tiny — one bed, single-storey — which caps value regardless of location. (2) It’s Grade II listed, so any alterations need listed building consent, which narrows the buyer pool and limits what a buyer could do with it. (3) Auction guide prices are deliberately set low to spark bidding — £95,000 is a floor to draw interest, not a prediction of the final hammer price, which very plausibly lands well above it once bidding opens. On top of that, standard Common Auction Conditions mean it sells as-seen with no room to negotiate on condition, which filters out mortgage-dependent buyers and caps the price a normal owner-occupier pool would push it to — auction stock this small and this specific tends to go to cash buyers.\n\nOne genuine thing worth checking before bidding: the building sits right at the entrance to the Byes riverside walk along the River Sid, and its own history includes a severe flood in 1968 that made it uninhabitable for years. The River Sid at Sidmouth still has an active flood warning area today (there was real flooding in the area as recently as January/February 2026), and although Salcombe Road itself isn’t named in the current warning zone (that covers Primley Gardens, Mill Street, Riverside Road, York Street, Ham Lane, East Street and Fore Street), a riverside property with this specific flood history is worth a direct check on the gov.uk flood risk checker by postcode before bidding — not a dealbreaker, just due diligence given the building’s own past.",
+          "sources": [
+            {
+              "label": "Sidmouth Swimming Pool",
+              "url": "https://ledleisure.co.uk/locations/sidmouth-swimming-pool/"
+            },
+            {
+              "label": "MTB trails around Sidmouth (Komoot)",
+              "url": "https://www.komoot.com/guide/869945/mtb-trails-around-sidmouth"
+            },
+            {
+              "label": "Former Sidmouth toll house auction coverage",
+              "url": "https://www.sidmouthherald.co.uk/news/26260780.east-devon-toll-house-auction-clive-emson/"
+            },
+            {
+              "label": "History of the Old Toll House (Sidmouth Herald)",
+              "url": "https://www.sidmouthherald.co.uk/news/20440142.sidmouths-grade-ii-listed-council-home-history-old-toll-house/"
+            },
+            {
+              "label": "River Sid at Sidmouth flood warning area (gov.uk)",
+              "url": "https://check-for-flooding.service.gov.uk/target-area/113FWF2I1B"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "bedlandslane",
@@ -582,7 +704,11 @@
       },
       "floorplans": [
         "BedlandsLane_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Budleigh Salterton",
+      "lat": 50.63215,
+      "lng": -3.329984,
+      "geocodeSource": "Bedlands Lane, Budleigh Salterton, Devon, UK"
     },
     {
       "id": "oakhillcottages",
@@ -659,7 +785,11 @@
           "score": 3,
           "date": "2026-07-15"
         }
-      }
+      },
+      "town": "East Budleigh",
+      "lat": 50.645899,
+      "lng": -3.338103,
+      "geocodeSource": "1 Oak Hill Cottages, East Budleigh, Devon, UK"
     },
     {
       "id": "moorfieldroadplot",
@@ -722,7 +852,11 @@
       "parking": {
         "status": "unknown",
         "note": "Undeveloped plot — no existing parking. Any parking would need to be designed into the self-build; the listing doesn't give plot dimensions or road frontage detail to judge feasibility."
-      }
+      },
+      "town": "Exmouth",
+      "lat": 50.620196,
+      "lng": -3.41468,
+      "geocodeSource": "Self-build plot, Exmouth, Devon, UK"
     },
     {
       "id": "forestreethill",
@@ -793,7 +927,11 @@
           "score": 8,
           "date": "2026-07-15"
         }
-      }
+      },
+      "town": "Budleigh Salterton",
+      "lat": 50.630504,
+      "lng": -3.320165,
+      "geocodeSource": "Fore Street Hill, Budleigh Salterton, Devon, UK"
     },
     {
       "id": "forestreetotterton",
@@ -876,7 +1014,11 @@
           "score": 5,
           "date": "2026-07-13"
         }
-      }
+      },
+      "town": "Otterton",
+      "lat": 50.660378,
+      "lng": -3.297549,
+      "geocodeSource": "Fore Street, Otterton, Devon, UK"
     },
     {
       "id": "longbrooklane2",
@@ -935,7 +1077,11 @@
       },
       "floorplans": [
         "LongbrookLane2_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Lympstone",
+      "lat": 50.647663,
+      "lng": -3.420866,
+      "geocodeSource": "Longbrook Lane, Lympstone, Devon, UK"
     },
     {
       "id": "globehillwoodbury",
@@ -991,7 +1137,11 @@
           "score": 6,
           "date": "2026-07-13"
         }
-      }
+      },
+      "town": "Woodbury",
+      "lat": 50.674506,
+      "lng": -3.40469,
+      "geocodeSource": "Globe Hill, Woodbury, Devon, UK"
     },
     {
       "id": "broadwaywoodbury",
@@ -1045,7 +1195,11 @@
       "parking": {
         "status": "unknown",
         "note": "Not mentioned in the listing either way — worth asking the agent directly."
-      }
+      },
+      "town": "Woodbury",
+      "lat": 50.672671,
+      "lng": -3.400999,
+      "geocodeSource": "Broadway, Woodbury, Devon, UK"
     },
     {
       "id": "churchviewhousewoodbury",
@@ -1100,7 +1254,11 @@
       "parking": {
         "status": "has",
         "note": "One dedicated parking space in the courtyard, confirmed in the listing."
-      }
+      },
+      "town": "Woodbury",
+      "lat": 50.677077,
+      "lng": -3.4061,
+      "geocodeSource": "Church View House, Woodbury, Devon, UK"
     },
     {
       "id": "mountainclose",
@@ -1185,7 +1343,11 @@
       },
       "floorplans": [
         "MountainClose_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Exmouth",
+      "lat": 50.627845,
+      "lng": -3.378674,
+      "geocodeSource": "Mountain Close, Exmouth, Devon, UK"
     },
     {
       "id": "haynes",
@@ -1256,7 +1418,11 @@
       },
       "floorplans": [
         "Haynes_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Lympstone",
+      "lat": 50.650032,
+      "lng": -3.425723,
+      "geocodeSource": "Haynes Cottages, Lympstone, Devon, UK"
     },
     {
       "id": "longmeadow",
@@ -1337,7 +1503,11 @@
       },
       "floorplans": [
         "Longmeadow_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Lympstone",
+      "lat": 50.649695,
+      "lng": -3.422583,
+      "geocodeSource": "Longmeadow Road, Lympstone, Devon, UK"
     },
     {
       "id": "brookside",
@@ -1410,7 +1580,11 @@
       },
       "floorplans": [
         "Brookside_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Lympstone",
+      "lat": 50.648932,
+      "lng": -3.423988,
+      "geocodeSource": "Brookside Cottage, Lympstone, Devon, UK"
     },
     {
       "id": "morcote",
@@ -1471,7 +1645,11 @@
       "floorplans": [
         "Morcote_Floorplan_1.jpg",
         "Morcote_Floorplan_2.jpg"
-      ]
+      ],
+      "town": "Lympstone",
+      "lat": 50.647832,
+      "lng": -3.425723,
+      "geocodeSource": "Morcote, Lympstone, Devon, UK"
     },
     {
       "id": "eastbudleighhighst",
@@ -1540,7 +1718,11 @@
       },
       "floorplans": [
         "EastBudleighHighSt_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "East Budleigh",
+      "lat": 50.654282,
+      "lng": -3.321768,
+      "geocodeSource": "High Street, East Budleigh, Devon, UK"
     },
     {
       "id": "marlesflat",
@@ -1598,7 +1780,11 @@
       },
       "floorplans": [
         "MarlesFlat_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Exmouth",
+      "lat": 50.635803,
+      "lng": -3.398599,
+      "geocodeSource": "The Marles, Exmouth, Devon, UK"
     },
     {
       "id": "farleys",
@@ -1685,7 +1871,11 @@
       },
       "floorplans": [
         "Farleys_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Lympstone",
+      "lat": 50.648932,
+      "lng": -3.427458,
+      "geocodeSource": "Farleys, Lympstone, Devon, UK"
     },
     {
       "id": "bellstreet",
@@ -1746,7 +1936,11 @@
       },
       "floorplans": [
         "BellStreet_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Otterton",
+      "lat": 50.66136,
+      "lng": -3.295446,
+      "geocodeSource": "3 Bell Street, Otterton, Devon, UK"
     },
     {
       "id": "flexton",
@@ -1802,7 +1996,11 @@
       },
       "floorplans": [
         "Flexton_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Ottery St Mary",
+      "lat": 50.752308,
+      "lng": -3.278545,
+      "geocodeSource": "The Flexton, Ottery St Mary, Devon, UK"
     },
     {
       "id": "beaconflat",
@@ -1871,7 +2069,11 @@
       },
       "floorplans": [
         "BeaconFlat_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Exmouth",
+      "lat": 50.617837,
+      "lng": -3.413141,
+      "geocodeSource": "The Beacon, Exmouth, Devon, UK"
     },
     {
       "id": "cranford",
@@ -1931,7 +2133,11 @@
       },
       "floorplans": [
         "Cranford_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Exmouth",
+      "lat": 50.624926,
+      "lng": -3.387583,
+      "geocodeSource": "Cranford Avenue, Exmouth, Devon, UK"
     },
     {
       "id": "sidmouth",
@@ -2024,7 +2230,11 @@
       "parking": {
         "status": "unknown",
         "note": "Not specifically checked — a cliff-top position suggests limited space, but this wasn't confirmed either way. Moot given the property was declined for erosion/insurance reasons."
-      }
+      },
+      "town": "Sidmouth",
+      "lat": 50.679003,
+      "lng": -3.237657,
+      "geocodeSource": "Circular Thatched Cliff-top Cottage, Sidmouth, Devon, UK"
     },
     {
       "id": "otterton",
@@ -2096,7 +2306,11 @@
       },
       "floorplans": [
         "Otterton_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Otterton",
+      "lat": 50.659449,
+      "lng": -3.299993,
+      "geocodeSource": "Thatched Cottage, Otterton, Devon, UK"
     },
     {
       "id": "feniton",
@@ -2151,7 +2365,11 @@
       "parking": {
         "status": "has",
         "note": "Parking is included in the already-granted planning permission for the converted dwelling."
-      }
+      },
+      "town": "Feniton",
+      "lat": 50.795426,
+      "lng": -3.275442,
+      "geocodeSource": "Barn at Whites Cottages, Feniton, Devon, UK"
     },
     {
       "id": "yettington",
@@ -2199,7 +2417,11 @@
       "parking": {
         "status": "has",
         "note": "Gardens and allocated parking were confirmed in the original listing (property is likely sold)."
-      }
+      },
+      "town": "Yettington",
+      "lat": 50.662966,
+      "lng": -3.335948,
+      "geocodeSource": "The Threshing Barn, Yettington, Devon, UK"
     },
     {
       "id": "douglas",
@@ -2254,7 +2476,11 @@
       },
       "floorplans": [
         "Douglas_Floorplan_1.png"
-      ]
+      ],
+      "town": "Exmouth",
+      "lat": 50.614958,
+      "lng": -3.404802,
+      "geocodeSource": "Douglas Avenue, Exmouth, Devon, UK"
     },
     {
       "id": "beacon",
@@ -2326,7 +2552,11 @@
       },
       "floorplans": [
         "Beacon_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Exmouth",
+      "lat": 50.615637,
+      "lng": -3.413141,
+      "geocodeSource": "The Beacon, Exmouth, Devon, UK"
     },
     {
       "id": "withycombe",
@@ -2375,7 +2605,11 @@
       "parking": {
         "status": "unknown",
         "note": "Not confirmed either way — the specific listing couldn't be relocated this sweep."
-      }
+      },
+      "town": "Exmouth",
+      "lat": 50.625792,
+      "lng": -3.407151,
+      "geocodeSource": "Withycombe Village Road, Exmouth, Devon, UK"
     },
     {
       "id": "eastbudleigh",
@@ -2424,7 +2658,11 @@
       "parking": {
         "status": "unknown",
         "note": "Not confirmed either way; listing has since gone (410)."
-      }
+      },
+      "town": "East Budleigh",
+      "lat": 50.646999,
+      "lng": -3.339838,
+      "geocodeSource": "Grade II Thatched Cottage, East Budleigh, Devon, UK"
     },
     {
       "id": "clinton",
@@ -2478,7 +2716,11 @@
       "parking": {
         "status": "unknown",
         "note": "Not confirmed either way — former commercial garage site, own parking situation unclear."
-      }
+      },
+      "town": "Budleigh Salterton",
+      "lat": 50.62995,
+      "lng": -3.329984,
+      "geocodeSource": "Clinton Garage, Budleigh Salterton, Devon, UK"
     },
     {
       "id": "leslie",
@@ -2525,7 +2767,11 @@
       "parking": {
         "status": "unknown",
         "note": "Not confirmed either way — exact listing couldn't be relocated this sweep."
-      }
+      },
+      "town": "Exmouth",
+      "lat": 50.619096,
+      "lng": -3.412946,
+      "geocodeSource": "The Coach House, Exmouth, Devon, UK"
     },
     {
       "id": "greenwaywoodbury",
@@ -2591,7 +2837,11 @@
       },
       "floorplans": [
         "Greenway_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Woodbury",
+      "lat": 50.676549,
+      "lng": -3.401794,
+      "geocodeSource": "Greenway, Woodbury, Devon, UK"
     },
     {
       "id": "townlanewoodbury",
@@ -2663,7 +2913,11 @@
       },
       "floorplans": [
         "TownLaneWoodbury_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Woodbury",
+      "lat": 50.674572,
+      "lng": -3.398059,
+      "geocodeSource": "Town Lane, Woodbury, Devon, UK"
     },
     {
       "id": "woodburyconservation",
@@ -2720,7 +2974,11 @@
       },
       "floorplans": [
         "WoodburyConservation_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Woodbury",
+      "lat": 50.676317,
+      "lng": -3.404449,
+      "geocodeSource": "Woodbury, Devon, UK"
     },
     {
       "id": "queenstreetbudleigh",
@@ -2782,10 +3040,31 @@
       "bathrooms": 2,
       "parking": {
         "status": "onstreet",
-        "note": "On-street parking only; walking distance to the high street and beach instead."
+        "note": "On-street parking only on Queen Street itself; no residents-permit scheme found for the town (unlike Sidmouth). 5 council car parks (123 free + 505 pay-and-display spaces total) are a short walk away in the town centre."
       },
       "floorplans": [
         "QueenStreet_Floorplan_1.jpg"
+      ],
+      "town": "Budleigh Salterton",
+      "lat": 50.628901,
+      "lng": -3.3263,
+      "geocodeSource": "Queen Street, Budleigh Salterton, Devon, UK",
+      "research": [
+        {
+          "date": "2026-07-19",
+          "question": "What is the parking situation like near Queen Street, Budleigh Salterton?",
+          "findings": "Budleigh Salterton does not appear to run a residents-permit on-street scheme the way Sidmouth does — no record of one turned up for the town, including Queen Street specifically. What the town has instead: 5 council car parks with 123 free and 505 pay-and-display spaces between them, all a short walk from the town centre (Queen Street sits right in the middle of town, close to the High Street). Queen Street itself has some on-street bays, consistent with the listing’s “on-street parking only.” Practically: no guaranteed space at the door, but genuinely easy walk-to-parking rather than a real scarcity problem — this is a town-centre-convenience trade-off, not a car-storage crisis.",
+          "sources": [
+            {
+              "label": "Car park locations and information (East Devon)",
+              "url": "https://eastdevon.gov.uk/parking/car-parking/car-park-locations-and-information/"
+            },
+            {
+              "label": "Where to park in Budleigh Salterton (Visit Devon)",
+              "url": "https://www.visitdevon.co.uk/east-devon/areas-to-visit/budleigh-salterton/getting-to-budleigh-salterton/parking-in-budleigh-salterton/"
+            }
+          ]
+        }
       ]
     },
     {
@@ -2851,7 +3130,11 @@
       },
       "floorplans": [
         "LongbrookLympstone_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Lympstone",
+      "lat": 50.645463,
+      "lng": -3.420866,
+      "geocodeSource": "Longbrook Lane, Lympstone, Devon, UK"
     },
     {
       "id": "allsaintseastbudleigh",
@@ -2916,7 +3199,11 @@
       "parking": {
         "status": "has",
         "note": "Allocated off-street parking plus a visitor space."
-      }
+      },
+      "town": "East Budleigh",
+      "lat": 50.656266,
+      "lng": -3.323683,
+      "geocodeSource": "All Saints Close, East Budleigh, Devon, UK"
     },
     {
       "id": "vansittartexmouth",
@@ -2979,7 +3266,11 @@
       },
       "floorplans": [
         "VansittartExmouth_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Exmouth",
+      "lat": 50.639874,
+      "lng": -3.396486,
+      "geocodeSource": "Vansittart Drive, Exmouth, Devon, UK"
     },
     {
       "id": "normancrescentbudleigh",
@@ -3035,7 +3326,11 @@
       "parking": {
         "status": "has",
         "note": "Allocated off-road parking directly behind the property."
-      }
+      },
+      "town": "Budleigh Salterton",
+      "lat": 50.635515,
+      "lng": -3.32936,
+      "geocodeSource": "Norman Crescent, Budleigh Salterton, Devon, UK"
     },
     {
       "id": "horseshoebarnknowle",
@@ -3098,7 +3393,11 @@
       },
       "floorplans": [
         "HorseshoeBarnKnowle_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Crediton",
+      "lat": 50.789587,
+      "lng": -3.658963,
+      "geocodeSource": "Crediton, Devon, UK (corrected, town center fallback)"
     },
     {
       "id": "churchstilewoodbury",
@@ -3190,7 +3489,11 @@
       },
       "floorplans": [
         "ChurchStileWoodbury_Floorplan_1.png"
-      ]
+      ],
+      "town": "Woodbury",
+      "lat": 50.676081,
+      "lng": -3.402988,
+      "geocodeSource": "Church Stile Lane, Woodbury, Devon, UK"
     },
     {
       "id": "castlelane",
@@ -3261,7 +3564,11 @@
       },
       "floorplans": [
         "CastleLane_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Exmouth",
+      "lat": 50.6217,
+      "lng": -3.373411,
+      "geocodeSource": "Castle Lane, Exmouth, Devon, UK"
     },
     {
       "id": "mireylanewoodbury",
@@ -3330,7 +3637,11 @@
       },
       "floorplans": [
         "MireyLaneWoodbury_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Woodbury",
+      "lat": 50.675831,
+      "lng": -3.402182,
+      "geocodeSource": "Mirey Lane, Woodbury, Devon, UK"
     },
     {
       "id": "longmeadowthatched",
@@ -3398,7 +3709,11 @@
       },
       "floorplans": [
         "LongmeadowThatched_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Lympstone",
+      "lat": 50.647495,
+      "lng": -3.422583,
+      "geocodeSource": "Longmeadow Road, Lympstone, Devon, UK"
     },
     {
       "id": "tythecottage",
@@ -3461,7 +3776,11 @@
       "parking": {
         "status": "has",
         "note": "Car parking to the rear of the building, confirmed in the listing."
-      }
+      },
+      "town": "Exmouth",
+      "lat": 50.622521,
+      "lng": -3.373778,
+      "geocodeSource": "Littleham, Exmouth, Devon, UK (corrected)"
     },
     {
       "id": "victoriaroadexmouth",
@@ -3535,7 +3854,11 @@
       },
       "floorplans": [
         "VictoriaRoad_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Exmouth",
+      "lat": 50.618235,
+      "lng": -3.418987,
+      "geocodeSource": "Victoria Road, Exmouth, Devon, UK"
     },
     {
       "id": "chapelstsidbury",
@@ -3597,7 +3920,11 @@
       },
       "floorplans": [
         "ChapelStSidbury_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Sidbury",
+      "lat": 50.715596,
+      "lng": -3.222662,
+      "geocodeSource": "Chapel Street, Sidbury, Devon, UK"
     },
     {
       "id": "bictonstexmouth",
@@ -3658,7 +3985,11 @@
       },
       "floorplans": [
         "BictonStExmouth_Floorplan_1.png"
-      ]
+      ],
+      "town": "Exmouth",
+      "lat": 50.61869,
+      "lng": -3.409568,
+      "geocodeSource": "Bicton Street, Exmouth, Devon, UK"
     },
     {
       "id": "castlecottageswoodbury",
@@ -3715,7 +4046,11 @@
       },
       "floorplans": [
         "CastleCottagesWoodbury_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Woodbury",
+      "lat": 50.675087,
+      "lng": -3.40508,
+      "geocodeSource": "1 Castle Cottages, Woodbury, Devon, UK"
     },
     {
       "id": "vicarageroadeastbudleigh",
@@ -3768,7 +4103,11 @@
       },
       "floorplans": [
         "VicarageRoadEastBudleigh_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "East Budleigh",
+      "lat": 50.656493,
+      "lng": -3.318173,
+      "geocodeSource": "Vicarage Road, East Budleigh, Devon, UK"
     },
     {
       "id": "craneslaneeastbudleigh",
@@ -3825,7 +4164,11 @@
       },
       "floorplans": [
         "CranesLaneEastBudleigh_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "East Budleigh",
+      "lat": 50.655547,
+      "lng": -3.32202,
+      "geocodeSource": "Cranes Lane, East Budleigh, Devon, UK"
     },
     {
       "id": "greenwaygradeii",
@@ -3898,7 +4241,11 @@
       },
       "floorplans": [
         "Greenway2_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Woodbury",
+      "lat": 50.674899,
+      "lng": -3.400291,
+      "geocodeSource": "Greenway, Woodbury, Devon, UK"
     },
     {
       "id": "clarenceroadbudleigh",
@@ -3970,7 +4317,11 @@
         "tenure": "freehold"
       },
       "aiRating": 5,
-      "aiTake": "A solid, no-drama parking-and-freehold pick in a coastal town, but the character here is two fireplaces rather than the building itself, and it sits right at your budget ceiling."
+      "aiTake": "A solid, no-drama parking-and-freehold pick in a coastal town, but the character here is two fireplaces rather than the building itself, and it sits right at your budget ceiling.",
+      "town": "Budleigh Salterton",
+      "lat": 50.6349,
+      "lng": -3.326843,
+      "geocodeSource": "Clarence Road, Budleigh Salterton, Devon, UK"
     },
     {
       "id": "ashleyhouseexmouth",
@@ -4029,7 +4380,11 @@
         "tenure": "freehold"
       },
       "aiRating": 8,
-      "aiTake": "A cheap, practical box-ticker — ground floor, parking, effectively freehold, close to Exmouth centre, train and sea — but it's a plain block flat going to auction, so treat £155k as a floor, not a likely final price."
+      "aiTake": "A cheap, practical box-ticker — ground floor, parking, effectively freehold, close to Exmouth centre, train and sea — but it's a plain block flat going to auction, so treat £155k as a floor, not a likely final price.",
+      "town": "Exmouth",
+      "lat": 50.617996,
+      "lng": -3.41468,
+      "geocodeSource": "Ashley House, Exmouth, Devon, UK"
     },
     {
       "id": "strandlympstone2",
@@ -4091,7 +4446,11 @@
         "tenure": "freehold"
       },
       "aiRating": 5,
-      "aiTake": "Village-centre cottage charm and no chain, but unconfirmed parking and a price right at the ceiling make this a stretch rather than a clean fit — worth checking with the agent before ruling in or out."
+      "aiTake": "Village-centre cottage charm and no chain, but unconfirmed parking and a price right at the ceiling make this a stretch rather than a clean fit — worth checking with the agent before ruling in or out.",
+      "town": "Lympstone",
+      "lat": 50.647196,
+      "lng": -3.431926,
+      "geocodeSource": "The Strand, Lympstone, Devon, UK"
     },
     {
       "id": "winstonroadexmouth",
@@ -4163,7 +4522,11 @@
         "tenure": "freehold"
       },
       "aiRating": 5,
-      "aiTake": "No character to speak of, but it's already a ground-floor bungalow with a driveway, garden and no chain — a sensible fallback rather than an exciting find."
+      "aiTake": "No character to speak of, but it's already a ground-floor bungalow with a driveway, garden and no chain — a sensible fallback rather than an exciting find.",
+      "town": "Exmouth",
+      "lat": 50.637302,
+      "lng": -3.384824,
+      "geocodeSource": "Winston Road, Exmouth, Devon, UK"
     },
     {
       "id": "cranfordavenue2",
@@ -4237,7 +4600,11 @@
         "leaseYears": 78
       },
       "aiRating": 6,
-      "aiTake": "Ground floor with an actual garage and no chain is a rare combo for a flat, but a 78-year lease plus ~£1,828/yr service charge chips into the value — a fair option, not a standout."
+      "aiTake": "Ground floor with an actual garage and no chain is a rare combo for a flat, but a 78-year lease plus ~£1,828/yr service charge chips into the value — a fair option, not a standout.",
+      "town": "Exmouth",
+      "lat": 50.622726,
+      "lng": -3.387583,
+      "geocodeSource": "Cranford Avenue, Exmouth, Devon, UK"
     },
     {
       "id": "oldcourthousewoodbury",
@@ -4304,7 +4671,11 @@
       },
       "floorplans": [
         "OldCourtHouse_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Woodbury",
+      "lat": 50.675087,
+      "lng": -3.40712,
+      "geocodeSource": "The Old Court House, Woodbury, Devon, UK"
     },
     {
       "id": "bellstreet2",
@@ -4365,7 +4736,11 @@
       },
       "floorplans": [
         "BellStreet2_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Otterton",
+      "lat": 50.65916,
+      "lng": -3.295446,
+      "geocodeSource": "Bell Street, Otterton, Devon, UK"
     },
     {
       "id": "greenwaycob",
@@ -4432,7 +4807,11 @@
       },
       "floorplans": [
         "GreenwayCob_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Woodbury",
+      "lat": 50.674899,
+      "lng": -3.403297,
+      "geocodeSource": "Greenway, Woodbury, Devon, UK"
     },
     {
       "id": "stjohnsfarmmews",
@@ -4501,7 +4880,11 @@
       },
       "floorplans": [
         "StJohnsFarmMews_Floorplan_1.jpg"
-      ]
+      ],
+      "town": "Exmouth",
+      "lat": 50.619096,
+      "lng": -3.416414,
+      "geocodeSource": "St. Johns Farm Mews, Exmouth, Devon, UK"
     },
     {
       "id": "woodburygradeiicottage2",
@@ -4563,7 +4946,11 @@
       "parking": {
         "status": "onstreet",
         "note": "On-street parking only, but Woodbury village has a small free short-stay car park (Flower Street) within a couple of minutes' walk, same as noted for the Mirey Lane cottage already tracked — a realistic fallback if the street itself is full."
-      }
+      },
+      "town": "Woodbury",
+      "lat": 50.676317,
+      "lng": -3.407751,
+      "geocodeSource": "Woodbury, Devon, UK"
     },
     {
       "id": "ebfordlandplotb",
@@ -4619,7 +5006,11 @@
       "parking": {
         "status": "has",
         "note": "Not parking in the conventional sense — this is undeveloped land with established vehicular access from the road, so any driveway/parking would be built as part of a future development."
-      }
+      },
+      "town": "Ebford",
+      "lat": 50.682376,
+      "lng": -3.442321,
+      "geocodeSource": "Land East of Exmouth Road, Ebford, Devon, UK"
     },
     {
       "id": "cliffroadbudleigh",
@@ -4695,7 +5086,11 @@
           "score": 6,
           "date": "2026-07-15"
         }
-      }
+      },
+      "town": "Budleigh Salterton",
+      "lat": 50.628588,
+      "lng": -3.327386,
+      "geocodeSource": "Cliff Road, Budleigh Salterton, Devon, UK"
     }
   ]
 }

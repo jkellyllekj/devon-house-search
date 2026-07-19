@@ -279,6 +279,33 @@ function researchHtml(p) {
   `;
 }
 
+function overviewMapHtml(items) {
+  const points = items.filter(p => typeof p.lat === "number" && typeof p.lng === "number");
+  const data = points.map(p => {
+    const sold = (p.flags || []).some(f => /SOLD|WITHDRAWN/.test(f.text));
+    const photo = (p.photos && p.photos[0]) ? `images/${p.photos[0]}` : "";
+    return {
+      id: p.id,
+      lat: p.lat,
+      lng: p.lng,
+      title: p.title,
+      price: p.price,
+      photo,
+      sold,
+    };
+  });
+  return `
+  <div class="overview-map-wrap">
+    <div class="overview-map-head">
+      <h2>Map overview — ${points.length} propert${points.length === 1 ? "y" : "ies"}</h2>
+      <span class="overview-map-hint">Click a pin to preview, then jump to the full listing below</span>
+    </div>
+    <div id="overviewMap"></div>
+  </div>
+  <script>window.__OVERVIEW_MAP_DATA__ = ${JSON.stringify(data)};</script>
+  `;
+}
+
 function mapQuery(p) {
   return p.title.replace(/\s*\([^)]*\)/g, "").trim() + ", Devon, UK";
 }
@@ -309,7 +336,7 @@ function propertyCard(p) {
   const bro3 = (p.ratings && p.ratings["Bro 3"]) ? p.ratings["Bro 3"].score : "";
   const priceVal = parsePrice(p.price);
   return `
-  <section class="card" id="${esc(p.id)}" data-avg-rating="${avg !== null ? avg.toFixed(2) : ""}" data-ai-rating="${aiR}" data-overall-rating="${overall !== null ? overall.toFixed(2) : ""}" data-bro3-rating="${bro3}" data-price="${priceVal !== null ? priceVal : ""}" data-date-added="${esc(p.dateAdded)}">
+  <section class="card" id="${esc(p.id)}" data-avg-rating="${avg !== null ? avg.toFixed(2) : ""}" data-ai-rating="${aiR}" data-overall-rating="${overall !== null ? overall.toFixed(2) : ""}" data-bro3-rating="${bro3}" data-price="${priceVal !== null ? priceVal : ""}" data-date-added="${esc(p.dateAdded)}" data-town="${esc(p.town || "")}">
     <div class="card-head">
       <div class="card-head-main">
         <h2>${esc(p.title)}</h2>
@@ -358,6 +385,8 @@ const html = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
 <title>Devon House Search</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <style>
   :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
   body { margin: 0; background: #f4f1ea; color: #222; }
@@ -377,6 +406,21 @@ const html = `<!DOCTYPE html>
   nav a { color: #d9ecdf; text-decoration: none; font-size: 13px; margin-right: 16px; }
   nav a:hover { text-decoration: underline; }
   main { max-width: 880px; margin: 0 auto; padding: 16px; display: flex; flex-direction: column; }
+  .overview-map-wrap { margin: 4px 0 20px; }
+  .overview-map-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+  .overview-map-head h2 { margin: 0; font-size: 17px; color: #1b3a2f; }
+  .overview-map-hint { font-size: 12px; color: #777; }
+  #overviewMap { width: 100%; height: 440px; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.12); background: #eee; }
+  .map-pin-popup { width: 200px; }
+  .map-pin-popup img { width: 100%; height: 110px; object-fit: cover; border-radius: 6px 6px 0 0; display: block; }
+  .map-pin-popup .mpp-body { padding: 8px 2px 2px; }
+  .map-pin-popup .mpp-title { font-weight: 700; font-size: 13px; line-height: 1.3; margin: 0 0 3px; color: #1b3a2f; }
+  .map-pin-popup .mpp-price { font-size: 13px; font-weight: 700; color: #1b5e20; margin: 0 0 6px; }
+  .map-pin-popup .mpp-link { display: inline-block; background: #1b3a2f; color: #fff; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 14px; text-decoration: none; }
+  .map-pin-popup .mpp-link:hover { background: #23483a; }
+  .map-pin-popup .mpp-sold { display: inline-block; background: #8D6E63; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-bottom: 4px; }
+  .leaflet-popup-content-wrapper { padding: 0; overflow: hidden; border-radius: 8px; }
+  .leaflet-popup-content { margin: 0; width: 200px !important; }
   .section-title { margin-top: 30px; border-bottom: 3px solid #1b3a2f; padding-bottom: 6px; font-size: 20px; color: #1b3a2f; }
   .card { background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.12); padding: 16px; margin: 12px 0; scroll-margin-top: 60px; }
   .card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; flex-wrap: wrap; margin-bottom: 8px; }
@@ -533,6 +577,7 @@ const html = `<!DOCTYPE html>
       <label for="sortControl">Sort:</label>
       <select id="sortControl">
         <option value="default">Default (newest first)</option>
+        <option value="exmouth">Exmouth first</option>
         <option value="overall">Overall rating (high to low)</option>
         <option value="bro3">Bro 3 rating (high to low)</option>
         <option value="price">Price (lowest to highest)</option>
@@ -542,6 +587,7 @@ const html = `<!DOCTYPE html>
 </header>
 <nav>${navLinks}</nav>
 <main>
+${overviewMapHtml(orderedProps)}
 ${sections}
 </main>
 <footer>
@@ -943,6 +989,40 @@ wireMiniForm('.remove-input', '.remove-post-btn', '/remove', function (btn, text
 })();
 
 (function () {
+  var mapData = window.__OVERVIEW_MAP_DATA__ || [];
+  var mapEl = document.getElementById('overviewMap');
+  if (!mapEl || !mapData.length || typeof L === 'undefined') return;
+  var map = L.map('overviewMap');
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
+  var bounds = [];
+  mapData.forEach(function (p) {
+    var color = p.sold ? '#8D6E63' : '#1b3a2f';
+    var icon = L.divIcon({
+      className: 'map-pin-icon',
+      html: '<div style="width:16px;height:16px;border-radius:50% 50% 50% 0;background:' + color + ';border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,0.4);transform:rotate(-45deg);"></div>',
+      iconSize: [16, 16],
+      iconAnchor: [8, 16],
+      popupAnchor: [0, -16],
+    });
+    var marker = L.marker([p.lat, p.lng], { icon: icon }).addTo(map);
+    var soldBadge = p.sold ? '<span class="mpp-sold">Likely sold/withdrawn</span>' : '';
+    var img = p.photo ? '<img src="' + p.photo + '" alt="">' : '';
+    var popupHtml = '<div class="map-pin-popup">' + img +
+      '<div class="mpp-body">' + soldBadge +
+      '<p class="mpp-title">' + escText(p.title) + '</p>' +
+      '<p class="mpp-price">' + escText(p.price) + '</p>' +
+      '<a class="mpp-link" href="#' + p.id + '">View full listing ↓</a>' +
+      '</div></div>';
+    marker.bindPopup(popupHtml);
+    bounds.push([p.lat, p.lng]);
+  });
+  if (bounds.length) map.fitBounds(bounds, { padding: [24, 24] });
+})();
+
+(function () {
   var sortCards = Array.from(document.querySelectorAll('.card'));
   var headers = Array.from(document.querySelectorAll('.section-title'));
   var select = document.getElementById('sortControl');
@@ -956,7 +1036,11 @@ wireMiniForm('.remove-input', '.remove-post-btn', '/remove', function (btn, text
     }
     headers.forEach(function (h) { h.style.display = 'none'; });
     var ranked;
-    if (mode === 'price') {
+    if (mode === 'exmouth') {
+      var exmouth = sortCards.filter(function (c) { return c.dataset.town === 'Exmouth'; });
+      var rest = sortCards.filter(function (c) { return c.dataset.town !== 'Exmouth'; });
+      ranked = exmouth.concat(rest);
+    } else if (mode === 'price') {
       ranked = sortCards.slice().sort(function (a, b) {
         var av = a.dataset.price !== '' && a.dataset.price != null ? parseFloat(a.dataset.price) : Infinity;
         var bv = b.dataset.price !== '' && b.dataset.price != null ? parseFloat(b.dataset.price) : Infinity;
