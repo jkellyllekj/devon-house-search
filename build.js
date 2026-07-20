@@ -396,7 +396,7 @@ const html = `<!DOCTYPE html>
   header .sub { color: #cfe0d6; font-size: 12px; margin-top: 2px; }
   .header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; flex-shrink: 0; }
   .submit-form { position: relative; }
-  #submitPanel { position: absolute; right: 0; top: 100%; background: #fff; border-radius: 8px; padding: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); z-index: 20; width: 300px; }
+  #submitPanel { position: absolute; right: 0; top: 100%; background: #fff; border-radius: 8px; padding: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); z-index: 1000; width: 300px; box-sizing: border-box; }
   .submit-link { display: inline-block; background: #E65100; color: #fff; font-weight: 700; font-size: 12px; padding: 6px 14px; border-radius: 16px; text-decoration: none; border: none; font-family: inherit; cursor: pointer; white-space: nowrap; }
   .submit-link:hover { background: #ff6f1a; }
   .sort-row { font-size: 12px; display: flex; align-items: center; gap: 6px; }
@@ -540,7 +540,7 @@ const html = `<!DOCTYPE html>
   .mini-form button:disabled { opacity: 0.6; cursor: default; }
   .mini-status { display: block; font-size: 10px; color: #888; margin-top: 3px; min-height: 12px; }
   .submit-form { margin-top: 14px; }
-  #submitPanel { margin-top: 10px; max-width: 420px; }
+  #submitPanel { margin-top: 10px; max-width: min(420px, calc(100vw - 24px)); }
   .notes-caveat { display: block; font-size: 11px; color: #999; margin-top: 6px; }
   .added { font-size: 11px; color: #aaa; margin-top: 6px; }
   footer { max-width: 880px; margin: 0 auto; padding: 20px; color: #555; font-size: 13px; }
