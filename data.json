@@ -1,6 +1,129 @@
 {
-  "lastUpdated": "2026-07-19",
+  "lastUpdated": "2026-07-20",
   "properties": [
+    {
+      "id": "beacongardenapt",
+      "section": "new",
+      "title": "The Beacon, Exmouth (Grade II garden apartment)",
+      "price": "£225,000",
+      "agent": "Meadows, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#2E7D32"
+        }
+      ],
+      "photos": [
+        "Beacon2_Gallery_1.jpg"
+      ],
+      "link": "https://www.zoopla.co.uk/for-sale/details/72742659/",
+      "linkLabel": "zoopla.co.uk — The Beacon, Exmouth",
+      "body": "A bright and spacious Grade II listed garden apartment in a period building on the historic Beacon, near the seafront and town centre. Open-plan living/kitchen area, a large double bedroom overlooking a patio, an occasional bedroom/study, a bathroom, and communal courtyard access. 1/5 share of freehold with the remainder of a 999-year lease, service charge approx £1,500/year. EPC E, Council Tax Band B. Chain-free.",
+      "why": "A third, distinct Beacon listing from the two already tracked — a different agent (Meadows), different price, and structured as a share-of-freehold rather than a standard lease. Grade II listed, chain-free, and in Jesse's favourite Exmouth pocket. Zoopla's Cloudflare block meant only one photo could be pulled this time rather than the full gallery — worth a second attempt next sweep.",
+      "dateAdded": "2026-07-20",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": null,
+        "private": "no",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "no",
+        "character": "yes",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "uniqueFeature": "Grade II listed period building on the historic Beacon, with a private patio and communal courtyard",
+        "closeToFamily": "yes",
+        "tenure": "leasehold",
+        "leaseYears": 999
+      },
+      "aiRating": 7,
+      "aiTake": "A characterful, chain-free Grade II garden apartment in Jesse's favourite Exmouth pocket with a near-999-year lease (effectively freehold in practice) — the £1,500/year service charge and share-of-freehold structure are worth a clear eye, and only one photo could be recovered this sweep.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "unknown",
+        "note": "Not mentioned in the listing. The Beacon sits right in Exmouth town centre near the seafront — on-street parking here is limited/restricted, and the nearest reliable option is one of the town-centre pay-and-display car parks a short walk away. Worth confirming directly with Meadows whether any allocated space comes with this specific unit before ruling it out."
+      },
+      "town": "Exmouth",
+      "lat": 50.616187,
+      "lng": -3.414642,
+      "geocodeSource": "The Beacon, Exmouth, Devon, UK"
+    },
+    {
+      "id": "newstreetexmouth",
+      "section": "new",
+      "title": "New Street, Exmouth (town-centre terrace)",
+      "price": "Guide Price £235,000",
+      "agent": "Links Estate Agents, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO PARKING",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "NewStreet_Gallery_1.jpg",
+        "NewStreet_Gallery_2.jpg",
+        "NewStreet_Gallery_3.jpg",
+        "NewStreet_Gallery_4.jpg",
+        "NewStreet_Gallery_5.jpg",
+        "NewStreet_Gallery_6.jpg",
+        "NewStreet_Gallery_7.jpg",
+        "NewStreet_Gallery_8.jpg",
+        "NewStreet_Gallery_9.jpg",
+        "NewStreet_Gallery_10.jpg",
+        "NewStreet_Gallery_11.jpg",
+        "NewStreet_Gallery_12.jpg",
+        "NewStreet_Gallery_13.jpg",
+        "NewStreet_Gallery_14.jpg"
+      ],
+      "link": "https://www.linksestateagents.co.uk/Property-For-Sale-New-Street-Exmouth-pi-LINK5632.htm",
+      "linkLabel": "linksestateagents.co.uk — New Street, Exmouth",
+      "body": "A characterful and beautifully presented 2 double bedroom terrace house in Exmouth town centre, a short walk from the train station and a level walk to the seafront. Entrance hallway, downstairs cloakroom, through sitting/dining room with a fireplace and French doors, and a modern kitchen with integrated appliances. Upstairs both double bedrooms have en-suite facilities. Enclosed rear courtyard garden with gated access, plus a brick utility store and timber shed. Gas central heating, double glazing. Freehold. Council Tax Band B.",
+      "why": "Jesse drove past this one and liked it. Genuinely characterful for a town-centre terrace (fireplace, French doors, both bedrooms en-suite), freehold, and close to the train station and seafront. The honest trade-off: no garage or dedicated parking at all, which would normally be a hard-requirement miss — flagged plainly rather than hidden.",
+      "dateAdded": "2026-07-20",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "yes",
+        "poolSwimTeam": null,
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "no",
+        "character": "yes",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "A genuinely characterful freehold terrace right in Exmouth town centre, close to the train station and a level walk to the seafront — but it has no parking at all, which is a real miss against the hard requirement, and both bedrooms being upstairs with no ground-floor room rules out long-term stair-free living.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "parking": {
+        "status": "none",
+        "note": "No garage or dedicated parking with the property — confirmed directly in the listing. New Street is in Exmouth town centre; on-street parking here is metered/restricted rather than free, and the nearest pay-and-display options are the town-centre car parks a short walk away (e.g. around the Strand/seafront). Worth checking East Devon's residents' permit scheme for this specific postcode before assuming casual on-street parking is realistic."
+      },
+      "floorplans": [
+        "NewStreet_Floorplan_1.jpg"
+      ],
+      "town": "Exmouth",
+      "lat": 50.621546,
+      "lng": -3.412926,
+      "geocodeSource": "New Street, Exmouth, Devon, UK"
+    },
     {
       "id": "mortonroadexmouth",
       "section": "new",
@@ -2554,8 +2677,8 @@
         "Beacon_Floorplan_1.jpg"
       ],
       "town": "Exmouth",
-      "lat": 50.615637,
-      "lng": -3.413141,
+      "lat": 50.616187,
+      "lng": -3.41164,
       "geocodeSource": "The Beacon, Exmouth, Devon, UK"
     },
     {
