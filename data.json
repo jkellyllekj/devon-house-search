@@ -2,6 +2,79 @@
   "lastUpdated": "2026-07-20",
   "properties": [
     {
+      "id": "georgestreetexmouth",
+      "section": "new",
+      "title": "21 George Street, Exmouth (tenanted investment)",
+      "price": "£250,000",
+      "agent": "Rightmove listing",
+      "flags": [
+        {
+          "text": "🌟 JESSE SPOTTED THIS",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "PARKING UNKNOWN",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "GeorgeStreet_Gallery_1.jpg",
+        "GeorgeStreet_Gallery_2.jpg",
+        "GeorgeStreet_Gallery_3.jpg",
+        "GeorgeStreet_Gallery_4.jpg",
+        "GeorgeStreet_Gallery_5.jpg",
+        "GeorgeStreet_Gallery_6.jpg",
+        "GeorgeStreet_Gallery_7.jpg",
+        "GeorgeStreet_Gallery_8.jpg",
+        "GeorgeStreet_Gallery_9.jpg",
+        "GeorgeStreet_Gallery_10.jpg",
+        "GeorgeStreet_Gallery_11.jpg",
+        "GeorgeStreet_Gallery_12.jpg",
+        "GeorgeStreet_Gallery_13.jpg",
+        "GeorgeStreet_Gallery_14.jpg",
+        "GeorgeStreet_Gallery_15.jpg",
+        "GeorgeStreet_Gallery_16.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/174180530",
+      "linkLabel": "rightmove.co.uk/properties/174180530",
+      "body": "A semi-detached house on George Street, about 50 metres from Exmouth's high street and a 10-minute walk to the seafront, completely renovated three years ago. Open-plan living/dining area, a newly fitted galley kitchen with dishwasher, utility room, downstairs toilet, laminate flooring throughout the ground floor. Upstairs has two double bedrooms and one single, plus a bathroom with both bath and electric shower. Double glazing, private rear courtyard. Freehold. Currently occupied by tenants — marketed as a turnkey investment opportunity.",
+      "why": "Submitted directly by Jesse. Well inside budget, freehold, right in Exmouth town centre near the high street and a short walk to the seafront. The catch: it's currently tenanted and marketed as an investment property, so buying it for Jesse to actually live in would likely mean waiting out the tenancy or buying with vacant possession terms agreed separately — worth checking with the agent before getting attached. Parking isn't stated either way.",
+      "dateAdded": "2026-07-20",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "yes",
+        "poolSwimTeam": null,
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "no",
+        "character": "partial",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "uniqueFeature": null,
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "Solidly in-budget, freehold, and right in Exmouth town centre near the high street and a short walk to the seafront — but it's currently tenanted and marketed as an investment flip rather than a home ready to move into, and neither a garden nor parking is confirmed.",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "parking": {
+        "status": "unknown",
+        "note": "Listed as \"ask agent\" — not confirmed either way. Exmouth introduced a residents' parking permit scheme in August 2023 covering parts of the town (including the Colonies area and parts of St Andrews Road) — George Street wasn't specifically named in what turned up, so it's worth checking directly with Devon County Council or the agent whether this address falls inside a permit zone before assuming casual on-street parking is available."
+      },
+      "floorplans": [
+        "GeorgeStreet_Floorplan_1.jpg"
+      ],
+      "town": "Exmouth",
+      "lat": 50.621245,
+      "lng": -3.410526,
+      "geocodeSource": "21 George Street, Exmouth, Devon, UK"
+    },
+    {
       "id": "beacongardenapt",
       "section": "new",
       "title": "The Beacon, Exmouth (Grade II garden apartment)",

@@ -373,6 +373,12 @@ const orderedProps = SECTION_ORDER.flatMap(sec => props.filter(p => p.section ==
 
 const navLinks = orderedProps.map(p => `<a href="#${esc(p.id)}">${esc(p.title.split(",")[0].split(" (")[0])}</a>`).join("");
 
+const townCounts = {};
+props.forEach(p => { if (p.town) townCounts[p.town] = (townCounts[p.town] || 0) + 1; });
+const townOptions = Object.keys(townCounts).sort().map(t =>
+  `<option value="${esc(t)}">${esc(t)} (${townCounts[t]})</option>`
+).join("");
+
 const sections = SECTION_ORDER.filter(s => props.some(p => p.section === s)).map(sec => {
   const items = props.filter(p => p.section === sec).slice().sort(byDateAddedDesc);
   return `<h1 class="section-title">${SECTION_TITLES[sec]}</h1>` + items.map(propertyCard).join("\n");
@@ -557,27 +563,19 @@ const html = `<!DOCTYPE html>
       <button id="submitToggle" class="submit-link" type="button">📮 Spotted one yourself? Submit a property</button>
       <div id="submitPanel" class="mini-form" style="display:none">
         <input id="submitUrl" type="text" placeholder="Paste the listing URL here">
-        <p class="submit-hint">Facebook/Marketplace links can't be scraped automatically — please fill in what you can below so Claude doesn't have to go hunting for it.</p>
-        <input id="submitPrice" type="text" placeholder="Price (e.g. £220,000)">
-        <input id="submitAddress" type="text" placeholder="Address / postcode">
-        <input id="submitBeds" type="text" placeholder="Bedrooms (optional)">
-        <input id="submitBaths" type="text" placeholder="Bathrooms (optional)">
-        <select id="submitParking">
-          <option value="">Parking — not sure</option>
-          <option value="has">Has parking (driveway/garage/allocated)</option>
-          <option value="onstreet">On-street only</option>
-          <option value="none">No parking</option>
-        </select>
-        <textarea id="submitNotes" placeholder="What do you like about it? (optional)"></textarea>
         <button id="submitPostBtn" type="button">Submit</button>
         <span id="submitStatus" class="mini-status"></span>
       </div>
     </div>
     <div class="sort-row">
+      <label for="townFilter">Show:</label>
+      <select id="townFilter">
+        <option value="all">All towns</option>
+        ${townOptions}
+      </select>
       <label for="sortControl">Sort:</label>
       <select id="sortControl">
         <option value="default">Default (newest first)</option>
-        <option value="exmouth">Exmouth first</option>
         <option value="overall">Overall rating (high to low)</option>
         <option value="bro3">Bro 3 rating (high to low)</option>
         <option value="price">Price (lowest to highest)</option>
@@ -938,12 +936,6 @@ wireMiniForm('.remove-input', '.remove-post-btn', '/remove', function (btn, text
   });
   document.getElementById('submitPostBtn').addEventListener('click', function () {
     var urlInput = document.getElementById('submitUrl');
-    var priceInput = document.getElementById('submitPrice');
-    var addressInput = document.getElementById('submitAddress');
-    var bedsInput = document.getElementById('submitBeds');
-    var bathsInput = document.getElementById('submitBaths');
-    var parkingSelect = document.getElementById('submitParking');
-    var notes = document.getElementById('submitNotes');
     var status = document.getElementById('submitStatus');
     var btn = this;
     if (!urlInput.value.trim()) {
@@ -957,12 +949,12 @@ wireMiniForm('.remove-input', '.remove-post-btn', '/remove', function (btn, text
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         listingUrl: urlInput.value,
-        notes: notes.value,
-        price: priceInput.value,
-        address: addressInput.value,
-        bedrooms: bedsInput.value,
-        bathrooms: bathsInput.value,
-        parking: parkingSelect.value,
+        notes: '',
+        price: '',
+        address: '',
+        bedrooms: '',
+        bathrooms: '',
+        parking: '',
       }),
     })
       .then(function (r) { return r.json(); })
@@ -971,12 +963,6 @@ wireMiniForm('.remove-input', '.remove-post-btn', '/remove', function (btn, text
         if (data.ok) {
           status.textContent = 'Sent — Claude will pick it up on the next sweep!';
           urlInput.value = '';
-          notes.value = '';
-          priceInput.value = '';
-          addressInput.value = '';
-          bedsInput.value = '';
-          bathsInput.value = '';
-          parkingSelect.value = '';
         } else {
           status.textContent = 'Something went wrong, try again.';
         }
@@ -1023,39 +1009,54 @@ wireMiniForm('.remove-input', '.remove-post-btn', '/remove', function (btn, text
 })();
 
 (function () {
-  var sortCards = Array.from(document.querySelectorAll('.card'));
+  var allCards = Array.from(document.querySelectorAll('.card'));
   var headers = Array.from(document.querySelectorAll('.section-title'));
-  var select = document.getElementById('sortControl');
-  if (!select) return;
-  select.addEventListener('change', function () {
-    var mode = select.value;
-    if (mode === 'default') {
-      sortCards.forEach(function (c) { c.style.order = ''; });
-      headers.forEach(function (h) { h.style.display = ''; });
+  var townSelect = document.getElementById('townFilter');
+  var sortSelect = document.getElementById('sortControl');
+  if (!sortSelect) return;
+
+  function applyFilterAndSort() {
+    var town = townSelect ? townSelect.value : 'all';
+    var mode = sortSelect.value;
+    var isDefaultView = town === 'all' && mode === 'default';
+
+    allCards.forEach(function (c) {
+      var matches = town === 'all' || c.dataset.town === town;
+      c.style.display = matches ? '' : 'none';
+    });
+
+    headers.forEach(function (h) { h.style.display = isDefaultView ? '' : 'none'; });
+
+    if (isDefaultView) {
+      allCards.forEach(function (c) { c.style.order = ''; });
       return;
     }
-    headers.forEach(function (h) { h.style.display = 'none'; });
+
+    var visible = allCards.filter(function (c) { return c.style.display !== 'none'; });
     var ranked;
-    if (mode === 'exmouth') {
-      var exmouth = sortCards.filter(function (c) { return c.dataset.town === 'Exmouth'; });
-      var rest = sortCards.filter(function (c) { return c.dataset.town !== 'Exmouth'; });
-      ranked = exmouth.concat(rest);
-    } else if (mode === 'price') {
-      ranked = sortCards.slice().sort(function (a, b) {
+    if (mode === 'price') {
+      ranked = visible.slice().sort(function (a, b) {
         var av = a.dataset.price !== '' && a.dataset.price != null ? parseFloat(a.dataset.price) : Infinity;
         var bv = b.dataset.price !== '' && b.dataset.price != null ? parseFloat(b.dataset.price) : Infinity;
         return av - bv;
       });
-    } else {
+    } else if (mode === 'overall' || mode === 'bro3') {
       var attr = mode === 'bro3' ? 'bro3Rating' : 'overallRating';
-      ranked = sortCards.slice().sort(function (a, b) {
+      ranked = visible.slice().sort(function (a, b) {
         var av = a.dataset[attr] !== '' && a.dataset[attr] != null ? parseFloat(a.dataset[attr]) : -1;
         var bv = b.dataset[attr] !== '' && b.dataset[attr] != null ? parseFloat(b.dataset[attr]) : -1;
         return bv - av;
       });
+    } else {
+      ranked = visible.slice().sort(function (a, b) {
+        return (b.dataset.dateAdded || '').localeCompare(a.dataset.dateAdded || '');
+      });
     }
     ranked.forEach(function (c, i) { c.style.order = i; });
-  });
+  }
+
+  if (townSelect) townSelect.addEventListener('change', applyFilterAndSort);
+  sortSelect.addEventListener('change', applyFilterAndSort);
 })();
 </script>
 </body>
