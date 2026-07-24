@@ -1,6 +1,85 @@
 {
-  "lastUpdated": "2026-07-20",
+  "lastUpdated": "2026-07-24",
   "properties": [
+    {
+      "id": "mountpleasantavenue",
+      "section": "new",
+      "title": "Mount Pleasant Avenue, Exmouth (chain-free bungalow)",
+      "price": "Guide Price £300,000",
+      "agent": "OnTheMarket listing",
+      "flags": [
+        {
+          "text": "IN BUDGET (AT CEILING)",
+          "color": "#43A047"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (driveway + detached garage)",
+          "color": "#1565C0"
+        },
+        {
+          "text": "NEEDS MODERNISATION THROUGHOUT",
+          "color": "#8D6E63"
+        }
+      ],
+      "photos": [
+        "MountPleasant_Gallery_1.jpg",
+        "MountPleasant_Gallery_2.jpg",
+        "MountPleasant_Gallery_3.jpg",
+        "MountPleasant_Gallery_4.jpg",
+        "MountPleasant_Gallery_5.jpg",
+        "MountPleasant_Gallery_6.jpg",
+        "MountPleasant_Gallery_7.jpg",
+        "MountPleasant_Gallery_8.jpg",
+        "MountPleasant_Gallery_9.jpg",
+        "MountPleasant_Gallery_10.jpg",
+        "MountPleasant_Gallery_11.jpg",
+        "MountPleasant_Gallery_12.jpg",
+        "MountPleasant_Gallery_13.jpg",
+        "MountPleasant_Gallery_14.jpg",
+        "MountPleasant_Gallery_15.jpg",
+        "MountPleasant_Gallery_16.jpg",
+        "MountPleasant_Gallery_17.jpg",
+        "MountPleasant_Gallery_18.jpg"
+      ],
+      "floorplans": [
+        "MountPleasant_Floorplan_1.jpg"
+      ],
+      "link": "https://www.onthemarket.com/details/19289726/",
+      "linkLabel": "onthemarket.com/details/19289726",
+      "body": "A semi-detached two-double-bedroom bungalow in an elevated position in the Hulham part of Exmouth (EX8 4QW), on the north-eastern edge of town nearest the Woodbury Common side. Bright living room with a bay window and rooftop views, kitchen looking over the rear garden, two double bedrooms with picture windows, and a shower room. Freehold, chain-free. Driveway plus a detached garage, and a private, surprisingly spacious rear garden with level lawn, established hedging and mature trees. Honestly described as needing modernisation throughout, so there is real renovation potential to add value.",
+      "why": "Found on OnTheMarket. It is right at the top of the £300k budget and needs a full refresh, so it is not the cheap-and-cheerful end of the list, but as a package it lines up well with the stuff that actually matters long term: it is a proper single-storey bungalow (somewhere Jesse could stay put even if stairs became a problem one day), it is freehold, chain-free, and it comes with both a driveway and a detached garage plus a decent garden. The modernisation-needed angle is a plus rather than a minus if you want to put your own stamp on it and build in equity. Not much character in the building itself, and it is a town rather than remote-rural spot.",
+      "dateAdded": "2026-07-24",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "partial",
+        "poolSwimTeam": null,
+        "private": "partial",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "uniqueFeature": null,
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "A practical, low-risk long-term home base — freehold, chain-free, single-storey, with driveway, garage and a good garden on the Woodbury Common edge of Exmouth — but it sits right at the £300k ceiling, needs full modernisation, and has little character of its own.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "has",
+        "note": "Private driveway plus a detached garage, both included — comfortably ahead of the parking most Exmouth town properties offer, and the garage doubles as workshop/storage space."
+      },
+      "town": "Exmouth",
+      "lat": 50.6399176,
+      "lng": -3.4047185,
+      "geocodeSource": "Mount Pleasant Avenue, Exmouth, Devon, EX8 4QW, UK"
+    },
     {
       "id": "georgestreetexmouth",
       "section": "new",
