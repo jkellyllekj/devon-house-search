@@ -1,9 +1,362 @@
 {
-  "lastUpdated": "2026-07-24",
+  "lastUpdated": "2026-07-27",
   "properties": [
     {
-      "id": "mountpleasantavenue",
+      "id": "portlandavenueexmouth",
       "section": "new",
+      "town": "Exmouth",
+      "title": "Portland Avenue, Exmouth (ground-floor flat, garage + allocated space)",
+      "price": "£224,950",
+      "agent": "Pennys Estate Agents, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GROUND FLOOR",
+          "color": "#1565C0"
+        },
+        {
+          "text": "HAS PARKING (allocated space + garage)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "SHARE OF FREEHOLD (997 yrs, £1,200/yr service charge)",
+          "color": "#EF6C00"
+        }
+      ],
+      "photos": [
+        "PortlandAvenue_Gallery_1.jpg",
+        "PortlandAvenue_Gallery_2.jpg",
+        "PortlandAvenue_Gallery_3.jpg",
+        "PortlandAvenue_Gallery_4.jpg",
+        "PortlandAvenue_Gallery_5.jpg",
+        "PortlandAvenue_Gallery_6.jpg"
+      ],
+      "floorplans": [
+        "PortlandAvenue_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.onthemarket.com/details/19591252/",
+      "linkLabel": "onthemarket.com — Portland Avenue, Exmouth",
+      "body": "A ground-floor purpose-built flat in a small development of just four apartments, a short distance from Exmouth seafront, town centre, bus services and the health centre. Private front door off a communal hallway into a reception hall with fitted, linen and cylinder cupboards. A 16ft lounge/dining room to the front, and a kitchen/breakfast room with modern fitted units, integrated dishwasher, built-in oven and four-ring electric hob. Two double bedrooms and a bathroom/WC with both a bath and a separate shower cubicle with a Mira unit. Communal lawned gardens to the front; to the rear an allocated parking space and a single garage with an up-and-over door. Tenure is a quarter share of the freehold alongside a long lease with roughly 997 years remaining; service charge approximately £1,200 a year including buildings insurance.",
+      "why": "Of the cheap ground-floor flats that keep surfacing around Exmouth, this is the one that actually solves parking — an allocated space *and* a garage, in a block of only four, which is far better than the on-street compromise most of the others carry. Being ground-floor and level, it passes the long-term no-stairs test outright, and it has a proper bathroom with both bath and shower rather than a token shower room. Against that: it is an ordinary purpose-built flat with no character, the outside space is communal lawn rather than a garden of Jesse’s own, and the £1,200 annual service charge is a real recurring cost even though the 997-year lease and quarter share of the freehold make the tenure about as benign as leasehold gets.",
+      "dateAdded": "2026-07-27",
+      "parking": {
+        "status": "has",
+        "note": "Both an allocated parking space and a single garage with an up-and-over door, at the rear of the development — stated explicitly in the listing, not inferred."
+      },
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "partial",
+        "poolSwimTeam": null,
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "yes",
+        "closeToFamily": "yes",
+        "uniqueFeature": null,
+        "tenure": "leasehold",
+        "leaseYears": 997
+      },
+      "aiRating": 6,
+      "aiTake": "The rare cheap Exmouth ground-floor flat that comes with both a garage and an allocated space, in a block of only four and walkable to the seafront — but it is plain, the garden is communal, and there is a £1,200-a-year service charge against an otherwise benign 997-year lease with a share of freehold."
+    },
+    {
+      "id": "capellaneexmouth",
+      "section": "new",
+      "town": "Exmouth",
+      "title": "Capel Lane, Exmouth (tucked-away bungalow)",
+      "price": "£269,950",
+      "agent": "Pennys Estate Agents, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#1565C0"
+        },
+        {
+          "text": "HAS PARKING (garage in nearby block)",
+          "color": "#2E7D32"
+        }
+      ],
+      "photos": [
+        "CapelLane_Gallery_1.jpg",
+        "CapelLane_Gallery_2.jpg",
+        "CapelLane_Gallery_3.jpg",
+        "CapelLane_Gallery_4.jpg",
+        "CapelLane_Gallery_5.jpg",
+        "CapelLane_Gallery_6.jpg",
+        "CapelLane_Gallery_7.jpg",
+        "CapelLane_Gallery_8.jpg",
+        "CapelLane_Gallery_9.jpg",
+        "CapelLane_Gallery_10.jpg",
+        "CapelLane_Gallery_11.jpg",
+        "CapelLane_Gallery_12.jpg",
+        "CapelLane_Gallery_13.jpg"
+      ],
+      "floorplans": [
+        "CapelLane_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.onthemarket.com/details/19730093/",
+      "linkLabel": "onthemarket.com — Capel Lane, Exmouth",
+      "body": "A well-presented semi-detached bungalow in a private, tucked-away position standing in generously sized mature front and rear gardens. Double-glazed entrance porch into a reception hall with a good-sized linen cupboard housing a modern Worcester boiler; bright 17ft lounge/dining room with sliding patio doors into a double-glazed conservatory overlooking the front gardens; kitchen with fitted units and space for appliances. Two double bedrooms, both with built-in wardrobes and looking over the rear gardens, and a modern shower room/WC. Gas central heating, double glazing throughout. A pedestrian gate from the rear garden gives access to the garage, which sits in a block close by. Offered with no ongoing chain.",
+      "why": "This is the practical end of the list rather than the characterful end, but it scores where it counts: a true bungalow, so the no-stairs long-term test is already passed with nothing to adapt, plus a garage, unusually generous mature gardens, and a genuinely private tucked-away setting rather than a village-centre frontage. Capel Lane sits on the north-eastern edge of Exmouth, which puts it closer to Woodbury Common’s trails and to Bro 2 than anything in the town centre while still being in Exmouth itself. What it does not have is character — this is a conventional post-war bungalow with a conservatory, not a cottage — and at £269,950 it costs noticeably more than the plainer Morton Road bungalow already tracked.",
+      "dateAdded": "2026-07-27",
+      "parking": {
+        "status": "has",
+        "note": "A garage is included, sitting in a nearby block and reached through a pedestrian gate from the rear garden rather than from the property frontage. Worth knowing that this means no driveway at the bungalow itself, so anything larger than the garage, or a second car, falls back on the lane."
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": null,
+        "private": "yes",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "closeToFamily": "yes",
+        "uniqueFeature": null,
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "A chain-free bungalow with a garage, big mature gardens and a genuinely private tucked-away spot on the Woodbury-facing edge of Exmouth — already fully ground-floor for the long term, but conventional in character and dear at £269,950 next to the cheaper bungalows already on the list."
+    },
+    {
+      "id": "rollestreetexmouth",
+      "section": "new",
+      "town": "Exmouth",
+      "title": "Rolle Street, Exmouth (1991 store conversion, reverse-level)",
+      "price": "£195,000",
+      "agent": "Links Estate Agents, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "QUIRKY CONVERSION",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#1565C0"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#EF6C00"
+        }
+      ],
+      "photos": [
+        "RolleStreet_Gallery_1.jpg",
+        "RolleStreet_Gallery_2.jpg",
+        "RolleStreet_Gallery_3.jpg",
+        "RolleStreet_Gallery_4.jpg",
+        "RolleStreet_Gallery_5.jpg",
+        "RolleStreet_Gallery_6.jpg",
+        "RolleStreet_Gallery_7.jpg",
+        "RolleStreet_Gallery_8.jpg",
+        "RolleStreet_Gallery_9.jpg",
+        "RolleStreet_Gallery_10.jpg",
+        "RolleStreet_Gallery_11.jpg"
+      ],
+      "floorplans": [
+        "RolleStreet_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.onthemarket.com/details/19930687/",
+      "linkLabel": "onthemarket.com — Rolle Street, Exmouth",
+      "body": "A two-bedroom freehold house converted by the current owners from a store room in 1991, tucked away behind Exmouth town centre. Reverse-level layout: the ground floor holds both bedrooms (each with a built-in wardrobe) and a brand-new fitted shower room with WC, while the first floor is a bright open-plan living area with a newly fitted contemporary kitchen. Recently renovated throughout — re-plastered and redecorated, new electrical fittings and lights, new floor coverings, new kitchen and shower room. Double glazing and modern electric heating. Within easy walking distance of the town centre, the train station and the seafront. Offered with no onward chain.",
+      "why": "Genuinely unusual in the way Jesse likes — a former store room someone turned into a house in 1991, tucked away behind the town rather than sitting in a row of identical terraces — and at £195,000 it is one of the few finds close to his real £170k target rather than the £300k ceiling. Freehold, no chain, freshly renovated so nothing needs immediate spending, and it is walkable to the seafront, the town and the train station in a way almost nothing else on this list manages at once. The trade-offs are real: no garden, no parking mentioned, and the reverse-level layout puts the kitchen and living space upstairs, which cuts against the long-term no-stairs test even though both bedrooms and the shower room are on the ground floor.",
+      "dateAdded": "2026-07-27",
+      "parking": {
+        "status": "unknown",
+        "note": "The listing says nothing about parking either way, and the property sits in a tucked-away spot behind the town centre where a dedicated space would be unusual. Central Exmouth is covered by East Devon District Council pay-and-display car parks rather than a blanket residents’ permit zone, with the nearest large ones at Manor Gardens and the Magnolia Centre a few minutes’ walk away; some central streets carry time-limited restrictions. Because the exact frontage cannot be confirmed from the listing or photos, this is worth one direct question to Links before viewing — whether any on-street entitlement attaches to the property at all is the single unresolved point on an otherwise well-documented listing."
+      },
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": null,
+        "private": "partial",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "no",
+        "character": "partial",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "closeToFamily": "yes",
+        "uniqueFeature": "Converted from a store room in 1991 — a reverse-level house hidden behind the town centre, with bedrooms down and living up",
+        "tenure": "freehold"
+      },
+      "aiRating": 8,
+      "aiTake": "A quirky freehold former store-room conversion, freshly renovated and chain-free at £195,000, within walking distance of the seafront, town and train station — no garden and no confirmed parking, and the reverse-level layout puts the living space upstairs."
+    },
+    {
+      "id": "townlanewoodbury",
+      "section": "new",
+      "town": "Woodbury",
+      "title": "Town Lane, Woodbury (double-fronted period cottage)",
+      "price": "£280,000",
+      "agent": "Twenty Twenty Property, Exeter",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "PERIOD CHARACTER",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "OUTBUILDINGS (photographed)",
+          "color": "#1565C0"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY",
+          "color": "#EF6C00"
+        }
+      ],
+      "photos": [
+        "TownLaneWoodbury_Gallery_1.jpg",
+        "TownLaneWoodbury_Gallery_2.jpg",
+        "TownLaneWoodbury_Gallery_3.jpg",
+        "TownLaneWoodbury_Gallery_4.jpg",
+        "TownLaneWoodbury_Gallery_5.jpg",
+        "TownLaneWoodbury_Gallery_6.jpg",
+        "TownLaneWoodbury_Gallery_7.jpg",
+        "TownLaneWoodbury_Gallery_8.jpg",
+        "TownLaneWoodbury_Gallery_9.jpg",
+        "TownLaneWoodbury_Gallery_10.jpg",
+        "TownLaneWoodbury_Gallery_11.jpg",
+        "TownLaneWoodbury_Gallery_12.jpg",
+        "TownLaneWoodbury_Gallery_13.jpg",
+        "TownLaneWoodbury_Gallery_14.jpg",
+        "TownLaneWoodbury_Gallery_15.jpg",
+        "TownLaneWoodbury_Gallery_16.jpg",
+        "TownLaneWoodbury_Gallery_17.jpg",
+        "TownLaneWoodbury_Gallery_18.jpg",
+        "TownLaneWoodbury_Gallery_19.jpg",
+        "TownLaneWoodbury_Gallery_20.jpg"
+      ],
+      "floorplans": [
+        "TownLaneWoodbury_Floorplan_1.jpg"
+      ],
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "link": "https://www.onthemarket.com/details/19961917/",
+      "linkLabel": "onthemarket.com — Town Lane, Woodbury",
+      "body": "Double-fronted period cottage in central Woodbury with heavy exposed beams throughout. Cosy sitting room with a feature fireplace, a separate dining room, and a kitchen mixing rustic style with practical fittings. Three well-proportioned bedrooms upstairs alongside the bathroom. To the rear, a south-facing garden — private, sunny and a decent size — backed by a run of brick outbuildings under a corrugated roof giving real storage. Gas central heating, Council Tax Band A, EPC Rating E. what3words ///sitting.positives.grow",
+      "why": "Three bedrooms and genuine period character in Bro 2’s own village, with Woodbury Common and its trails a few minutes away and Darts Farm down the road. The south-facing rear garden is a proper one rather than a courtyard, and — worth noting given the scepticism about unphotographed outbuilding claims on the Newton Poppleford listing — the outbuildings here are clearly shown in the photos rather than just asserted in the copy. At £280,000 it is near the top of the range for a village-centre cottage with no parking of its own, which is exactly the \"charming but pricey for what it is\" shape that has drawn low marks before.",
+      "dateAdded": "2026-07-27",
+      "parking": {
+        "status": "onstreet",
+        "note": "The listing mentions no parking and none is visible in the photos — Town Lane is a narrow central village street, so it is on-street only. The practical backstop is the same one that applies to the other central-Woodbury entries: Flower Street car park (EX5 1LX) is free with a 23-hours-in-24 maximum stay and is a couple of minutes’ walk, and there is a further free car park beside Woodbury Village Hall. No residents’ permit scheme turned up for Woodbury, so this is unrestricted on-street plus two free car parks rather than a permit situation."
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": null,
+        "private": "no",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "partial",
+        "closeToFamily": "yes",
+        "uniqueFeature": "A run of brick outbuildings across the back of the south-facing garden — genuinely photographed, not just claimed in the copy",
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "A beamy three-bed double-fronted cottage in Bro 2’s village with a sunny south-facing garden, real outbuildings and Woodbury Common on the doorstep — held back by no parking of its own, no train station nearby, and a £280,000 price that sits high for a village-centre cottage."
+    },
+    {
+      "id": "eastbudleighthatch",
+      "section": "new",
+      "town": "East Budleigh",
+      "title": "High Street, East Budleigh (Grade II thatched cottage)",
+      "price": "Guide Price £220,000",
+      "agent": "Hall & Scott, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "THATCHED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO PARKING (free village car park nearby)",
+          "color": "#C62828"
+        }
+      ],
+      "photos": [
+        "EastBudleighThatch_Gallery_1.jpg",
+        "EastBudleighThatch_Gallery_2.jpg",
+        "EastBudleighThatch_Gallery_3.jpg",
+        "EastBudleighThatch_Gallery_4.jpg",
+        "EastBudleighThatch_Gallery_5.jpg",
+        "EastBudleighThatch_Gallery_6.jpg",
+        "EastBudleighThatch_Gallery_7.jpg",
+        "EastBudleighThatch_Gallery_8.jpg",
+        "EastBudleighThatch_Gallery_9.jpg",
+        "EastBudleighThatch_Gallery_10.jpg",
+        "EastBudleighThatch_Gallery_11.jpg",
+        "EastBudleighThatch_Gallery_12.jpg",
+        "EastBudleighThatch_Gallery_13.jpg",
+        "EastBudleighThatch_Gallery_14.jpg",
+        "EastBudleighThatch_Gallery_15.jpg",
+        "EastBudleighThatch_Gallery_16.jpg"
+      ],
+      "floorplans": [
+        "EastBudleighThatch_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.onthemarket.com/details/19989125/",
+      "linkLabel": "onthemarket.com — East Budleigh thatched cottage",
+      "body": "Thatched Grade II listed end-of-terrace cob cottage right in the heart of East Budleigh village. Ground floor: living room with exposed ceiling beams and a fireplace, opening to a second bedroom that also works as a home office or dining room, plus a bespoke modern kitchen with solid oak worktops, integral electric oven and induction hob, and a door out to the garden. First floor: one impressive double bedroom with a deep wardrobe, and a bathroom with a feature freestanding roll-top bath. Gas central heating, enclosed cottage-style rear garden with patio, shed and side gate. EPC exempt as a listed building; Council Tax Band B. Walking distance to the community shop, the church, the Sir Walter Raleigh pub and the free public car park.",
+      "why": "This is the closest thing to Jesse’s stated dream this list has had in a while and it is comfortably in budget: a genuinely thatched, genuinely listed cob cottage at £220,000, not a compromise version of one. It sits between both brothers — a couple of miles from Otterton, a short run to Woodbury — with East Budleigh Common and the Pebblebed Heaths trails effectively on the doorstep and Budleigh Salterton’s beach two miles down the road. The honest catch is parking: it fronts straight onto the road with no driveway, so it depends on the free village car park. There is a ground-floor room already usable as a bedroom, but the only bathroom is upstairs and listed-building consent would gate any change to that.",
+      "dateAdded": "2026-07-27",
+      "parking": {
+        "status": "none",
+        "note": "No driveway, garage or allocated space — the cottage fronts directly onto the road, confirmed from the photos as well as the listing’s silence. The listing does point out it is \"close to the free public car park\", which matches what was already researched for the other East Budleigh entries: a small free 17-space car park just off the High Street (2-hour limit) plus the larger Hayes Lane car park a short walk away. There is no residents’ permit scheme in the village, so overnight parking means the car park or finding an unrestricted stretch of High Street — the same compromise every cottage on this street carries."
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": null,
+        "private": "no",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "partial",
+        "closeToFamily": "yes",
+        "uniqueFeature": "Thatched roof, exposed cob and ceiling beams, and a freestanding roll-top bath — EPC-exempt by virtue of being Grade II listed",
+        "tenure": "freehold"
+      },
+      "aiRating": 8,
+      "aiTake": "A real thatched Grade II cottage with beams, a fireplace and a proper cottage garden, in budget at £220,000 and sitting neatly between both brothers with heath trails on the doorstep — the only serious gap is parking, which means the free village car park rather than anything of its own."
+    },
+    {
+      "id": "mountpleasantavenue",
+      "section": "still",
       "title": "Mount Pleasant Avenue, Exmouth (chain-free bungalow)",
       "price": "Guide Price £300,000",
       "agent": "OnTheMarket listing",
@@ -82,7 +435,7 @@
     },
     {
       "id": "georgestreetexmouth",
-      "section": "new",
+      "section": "still",
       "title": "21 George Street, Exmouth (tenanted investment)",
       "price": "£250,000",
       "agent": "Rightmove listing",
@@ -155,7 +508,7 @@
     },
     {
       "id": "beacongardenapt",
-      "section": "new",
+      "section": "still",
       "title": "The Beacon, Exmouth (Grade II garden apartment)",
       "price": "£225,000",
       "agent": "Meadows, Exmouth",
@@ -171,6 +524,10 @@
         {
           "text": "NO CHAIN",
           "color": "#2E7D32"
+        },
+        {
+          "text": "PARKING UNKNOWN — ASK AGENT",
+          "color": "#EF6C00"
         }
       ],
       "photos": [
@@ -211,7 +568,7 @@
     },
     {
       "id": "newstreetexmouth",
-      "section": "new",
+      "section": "still",
       "title": "New Street, Exmouth (town-centre terrace)",
       "price": "Guide Price £235,000",
       "agent": "Links Estate Agents, Exmouth",
@@ -278,7 +635,7 @@
     },
     {
       "id": "mortonroadexmouth",
-      "section": "new",
+      "section": "still",
       "title": "Morton Road, Exmouth (ground-floor bungalow)",
       "price": "Guide Price £160,000",
       "agent": "Hall & Scott, Exmouth",
@@ -578,7 +935,13 @@
       "town": "East Budleigh",
       "lat": 50.648099,
       "lng": -3.338103,
-      "geocodeSource": "Pump Cottage, East Budleigh, Devon, UK"
+      "geocodeSource": "Pump Cottage, East Budleigh, Devon, UK",
+      "ratings": {
+        "Bro 3": {
+          "score": 7,
+          "date": "2026-07-16"
+        }
+      }
     },
     {
       "id": "grasshoppers",
@@ -654,18 +1017,28 @@
       "town": "East Budleigh",
       "lat": 50.646999,
       "lng": -3.336368,
-      "geocodeSource": "Grasshoppers, East Budleigh, Devon, UK"
+      "geocodeSource": "Grasshoppers, East Budleigh, Devon, UK",
+      "ratings": {
+        "Bro 3": {
+          "score": 2,
+          "date": "2026-07-16"
+        }
+      }
     },
     {
       "id": "castlelaneexmouth2",
       "section": "still",
       "title": "Castle Lane, Exmouth (Grade II thatched cottage, near Littleham)",
-      "price": "Guide Price £395,000",
+      "price": "Guide Price £385,000",
       "agent": "Links Estate Agents, Exmouth",
       "flags": [
         {
-          "text": "OVER BUDGET (+£95,000)",
-          "color": "#B71C1C"
+          "text": "PRICE REDUCED (£395,000 → £385,000)",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "OVER BUDGET (+£85,000)",
+          "color": "#C62828"
         },
         {
           "text": "GRADE II LISTED",
@@ -748,12 +1121,16 @@
       "agent": "Clive Emson Auctioneers",
       "flags": [
         {
+          "text": "LIKELY SOLD/WITHDRAWN",
+          "color": "#8D6E63"
+        },
+        {
           "text": "IN BUDGET",
           "color": "#2E7D32"
         },
         {
-          "text": "AUCTION — CLOSES 23 JULY 2026 (4 DAYS)",
-          "color": "#B71C1C"
+          "text": "SOLD AT AUCTION 23 JUL 2026 — £100,000",
+          "color": "#8D6E63"
         },
         {
           "text": "NO PARKING INFO",
@@ -834,6 +1211,17 @@
             {
               "label": "River Sid at Sidmouth flood warning area (gov.uk)",
               "url": "https://check-for-flooding.service.gov.uk/target-area/113FWF2I1B"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-27",
+          "question": "Auction result — did the Byes Toll House sell on 23 July 2026?",
+          "findings": "It sold. Clive Emson’s lot page for auction 267 lot 120 now shows \"SOLD £100,000\" against a guide of £95,000+, so it went just over guide at the 23 July 2026 online auction. Bro 3 had rated it 7/10 purely on the cheap guide price while suspecting something was wrong with it; at £100,000 the market evidently did not share that suspicion. Flagged as sold this sweep and due for removal from the page on the next sweep per the sold-property cleanup rule.",
+          "sources": [
+            {
+              "label": "Clive Emson — Auction 267, Lot 120",
+              "url": "https://www.cliveemson.co.uk/properties/267/120/"
             }
           ]
         }
@@ -1125,6 +1513,10 @@
         "Bro 3": {
           "score": 8,
           "date": "2026-07-15"
+        },
+        "Bro 1": {
+          "score": 1,
+          "date": "2026-07-26"
         }
       },
       "town": "Budleigh Salterton",
@@ -2342,7 +2734,7 @@
       "id": "sidmouth",
       "section": "background",
       "title": "Circular Thatched Cliff-top Cottage, Peak Hill Road, Sidmouth",
-      "price": "Guide price £250,000 (auction)",
+      "price": "Guide price £200,000 (auction, reduced 23/07/2026)",
       "agent": "Bradleys Estate Agents",
       "flags": [
         {
@@ -2354,12 +2746,16 @@
           "color": "#B71C1C"
         },
         {
-          "text": "AUCTION 21 JUL 2026, 12pm (6 DAYS)",
-          "color": "#E65100"
+          "text": "AUCTION — BIDS BY 1pm, 7 AUG 2026 (11 DAYS)",
+          "color": "#EF6C00"
         },
         {
           "text": "PARKING UNKNOWN",
           "color": "#757575"
+        },
+        {
+          "text": "PRICE REDUCED (£250,000 → £200,000)",
+          "color": "#EF6C00"
         }
       ],
       "photos": [
@@ -2523,8 +2919,8 @@
           "color": "#2E7D32"
         },
         {
-          "text": "AUCTION 23 JUL 2026 (8 DAYS)",
-          "color": "#E65100"
+          "text": "AUCTION POSTPONED — NEW DATE TBC",
+          "color": "#EF6C00"
         },
         {
           "text": "HAS PARKING",
@@ -2568,7 +2964,24 @@
       "town": "Feniton",
       "lat": 50.795426,
       "lng": -3.275442,
-      "geocodeSource": "Barn at Whites Cottages, Feniton, Devon, UK"
+      "geocodeSource": "Barn at Whites Cottages, Feniton, Devon, UK",
+      "research": [
+        {
+          "date": "2026-07-27",
+          "question": "Auction status — the 23 July 2026 auction date has passed; did the Feniton barn sell?",
+          "findings": "Neither. Clive Emson’s lot page (auction 267, lot 67) now shows POSTPONED beneath the 23 July 2026 date — the lot was pulled before bidding rather than sold or withdrawn, and no new date has been published. The Hall & Scott page still says \"Available\" at £65,000 guide but is simply stale on the date. Planning permission for conversion to a single dwelling (EDDC ref 25/0370/FUL, granted 9 September 2025) remains in place, so this is worth watching for a re-listed auction date rather than treating as gone.",
+          "sources": [
+            {
+              "label": "Clive Emson — Auction 267, Lot 67 (POSTPONED)",
+              "url": "https://www.cliveemson.co.uk/properties/267/67/"
+            },
+            {
+              "label": "Hall & Scott — Barn at Whites Cottages, Feniton",
+              "url": "https://www.hallandscott.co.uk/details/?id=HSOTT_708623"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "douglas",
@@ -2641,8 +3054,8 @@
           "color": "#B71C1C"
         },
         {
-          "text": "AUCTION 16 JUL 2026, 12pm (TOMORROW — 1 DAY)",
-          "color": "#E65100"
+          "text": "AUCTION 13 AUG 2026, 12pm (17 DAYS)",
+          "color": "#EF6C00"
         },
         {
           "text": "NO PARKING INFO",
@@ -4187,8 +4600,8 @@
           "color": "#6D4C41"
         },
         {
-          "text": "AUCTION 10 SEP 2026, 12pm (57 DAYS)",
-          "color": "#C62828"
+          "text": "AUCTION 10 SEP 2026, 12pm (45 DAYS)",
+          "color": "#EF6C00"
         }
       ],
       "parking": {
@@ -4730,8 +5143,8 @@
           "color": "#B71C1C"
         },
         {
-          "text": "AUCTION 3 AUG 2026 (19 DAYS, National Online Auction)",
-          "color": "#EF6C00"
+          "text": "AUCTION 3 AUG 2026 (7 DAYS — National Online Auction)",
+          "color": "#C62828"
         },
         {
           "text": "HAS PARKING (vehicular access established; buyer builds own driveway)",
