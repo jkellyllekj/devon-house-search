@@ -1,9 +1,379 @@
 {
-  "lastUpdated": "2026-07-27",
+  "lastUpdated": "2026-07-30",
   "properties": [
     {
-      "id": "portlandavenueexmouth",
+      "id": "talaton",
       "section": "new",
+      "town": "Talaton",
+      "title": "Talaton, EX5 2RG (Grade II thatched cottage)",
+      "price": "£245,000",
+      "agent": "Redferns, Ottery St Mary",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "THATCHED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "INLAND — ~25 MIN FROM COAST",
+          "color": "#616161"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "Talaton_Gallery_1.jpg",
+        "Talaton_Gallery_2.jpg",
+        "Talaton_Gallery_3.jpg",
+        "Talaton_Gallery_4.jpg",
+        "Talaton_Gallery_5.jpg",
+        "Talaton_Gallery_6.jpg",
+        "Talaton_Gallery_7.jpg",
+        "Talaton_Gallery_8.jpg",
+        "Talaton_Gallery_9.jpg",
+        "Talaton_Gallery_10.jpg",
+        "Talaton_Gallery_11.jpg",
+        "Talaton_Gallery_12.jpg",
+        "Talaton_Gallery_13.jpg",
+        "Talaton_Gallery_14.jpg",
+        "Talaton_Gallery_15.jpg",
+        "Talaton_Gallery_16.jpg",
+        "Talaton_Gallery_17.jpg",
+        "Talaton_Gallery_18.jpg",
+        "Talaton_Gallery_19.jpg"
+      ],
+      "floorplans": [
+        "Talaton_Floorplan_1.jpg",
+        "Talaton_Floorplan_2.jpg",
+        "Talaton_Floorplan_3.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.onthemarket.com/details/19466509/",
+      "linkLabel": "onthemarket.com — Talaton thatched cottage",
+      "body": "A properly thatched Grade II listed cottage in the middle of Talaton, a few steps from the village green, offered with no onward chain. Ground floor: a cosy sitting room with a striking stone inglenook fireplace, a leaded-light window with a window seat and an abundance of exposed ceiling beams; a kitchen with wall and base units, built-in oven, hob and extractor and an integrated washing machine; and a couple of steps down to a dining area with wooden flooring and more beams, which opens directly into Bedroom Two and on to a rear porch and the garden. First floor: the principal bedroom with built-in storage, plus the bathroom. Heating is electric storage heaters — mains gas is not connected. Council Tax Band C, freehold, EPC-exempt as a listed building. Outside there is a rear garden mostly laid to lawn with a flowerbed and a summerhouse; separately, the current owner and the neighbours rent an adjoining strip of garden land from a local landowner for a modest annual sum, and the landowner has indicated they are happy for that to continue — worth confirming in writing, since it is rented rather than owned. The village itself has a community-run shop and post office, a pub, an active village hall and a medieval parish church; Ottery St Mary is 3 miles away, Honiton 5 miles with a train station, and the A30 is close for Exeter and the M5.",
+      "why": "This is the best straight-up thatched cottage the sweep has turned up in budget for a while — genuinely thatched, genuinely Grade II, freehold, chain-free, with a stone inglenook, beams throughout and a garden with a summerhouse, all at £245,000 rather than the £385,000–£450,000 the East Budleigh and Castle Lane thatched cottages want. It also gives Jesse a downstairs room already being used as a bedroom. The honest trade-off is geography: Talaton is inland, about 25 minutes from the Budleigh/Sidmouth coast and roughly 20 minutes from both brothers rather than the few miles the East Budleigh options manage, and it has no parking of its own. Electric storage heating and the rented garden strip are two more things to price in.",
+      "dateAdded": "2026-07-30",
+      "parking": {
+        "status": "unknown",
+        "note": "The listing says nothing at all about parking for the cottage — no driveway, garage or allocated space is mentioned, and the only parking reference in the whole description is to the \"unreserved parking\" at the parish church, which is a general village amenity rather than anything attached to this property. Researching it: Talaton has no residents' permit scheme and no council car park at all — Devon County Council handles on-street parking countywide and East Devon District Council's car parks are all in the towns (Ottery St Mary, Honiton, Budleigh, Exmouth), none in the village. In practice that means unrestricted on-street/verge parking on the lanes around the green, plus the church and village hall car parks which are informally used by residents. That is usually workable in a village this small, but it is not guaranteed and it is not the same as owning a space — worth asking Redferns directly whether the cottage has any recognised parking right, because for a listed cottage in a conservation-sensitive village there is no realistic prospect of creating a driveway."
+      },
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "partial",
+        "poolSwimTeam": null,
+        "private": "partial",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "partial",
+        "closeToFamily": "partial",
+        "uniqueFeature": "Full thatched roof, stone inglenook fireplace and leaded-light window with a window seat — plus an adjoining strip of garden land rented annually from a neighbouring landowner",
+        "tenure": "freehold"
+      },
+      "aiRating": 7,
+      "aiTake": "A real thatched Grade II cottage — inglenook, beams, summerhouse garden, freehold and chain-free — at £245,000, which is a lot of character per pound; it loses points for being genuinely inland (no sea, ~20 minutes from either brother) and for having no parking of its own."
+    },
+    {
+      "id": "stationroadbudleigh",
+      "section": "new",
+      "town": "Budleigh Salterton",
+      "title": "Station Road, Budleigh Salterton (ground-floor Edwardian conversion)",
+      "price": "£189,950",
+      "agent": "David Rhys & Co, Budleigh Salterton",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GROUND FLOOR",
+          "color": "#1565C0"
+        },
+        {
+          "text": "PERIOD CHARACTER",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "SHARE OF FREEHOLD (lease to be created on completion)",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "StationRoadBudleigh_Gallery_1.jpg",
+        "StationRoadBudleigh_Gallery_2.jpg",
+        "StationRoadBudleigh_Gallery_3.jpg",
+        "StationRoadBudleigh_Gallery_4.jpg",
+        "StationRoadBudleigh_Gallery_5.jpg",
+        "StationRoadBudleigh_Gallery_6.jpg",
+        "StationRoadBudleigh_Gallery_7.jpg",
+        "StationRoadBudleigh_Gallery_8.jpg",
+        "StationRoadBudleigh_Gallery_9.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.onthemarket.com/details/17369915/",
+      "linkLabel": "onthemarket.com — Station Road, Budleigh Salterton",
+      "body": "A spacious ground-floor apartment forming part of a distinctive Edwardian town house on Station Road, right beside The Green in Budleigh Salterton. 796 sq ft on one level: lounge/diner, kitchen/breakfast room, two double bedrooms, bathroom, and generous storage throughout. The agent's line is that the building has \"managed to retain a great deal of character and charm\", and the conversion has kept the period proportions rather than chopping them up. There is a communal front garden included. EPC C. Tenure is a share of freehold, to be created on completion — so the exact lease length isn't stated yet and needs pinning down with the solicitor. Pets and lettings are both permitted. Notably it is available for the first time in 21 years. Walking distance to the town's shops, the seafront and the bus routes; Exmouth and its train station are about five miles away.",
+      "why": "On paper this ticks more of Jesse's actual long-term boxes than almost anything else at this price: it is fully ground floor with two double bedrooms, so the \"could I still live here if I couldn't manage stairs\" test is already passed rather than merely adaptable; it is in Budleigh Salterton a few minutes' walk from the sea; it is a period conversion rather than a modern box; and at £189,950 it sits below Jesse's real £170k–£200k comfort zone rather than at the £300k ceiling. It is also close to both brothers — Otterton is about three miles, Woodbury about six. The gaps are parking, which the listing simply doesn't address, and the share-of-freehold structure needing proper legal checking because the lease is only being created at completion.",
+      "dateAdded": "2026-07-30",
+      "parking": {
+        "status": "unknown",
+        "note": "The listing makes no mention of parking at all — no allocated space, garage or driveway is claimed, and the photos don't show one. Researching the street specifically: Station Road is where East Devon District Council's Lower Station Road car park sits, effectively on the doorstep, and EDDC's published rules give it no restriction of use at all between 1 October and 31 March, which makes winter parking straightforward and free. Outside that window it is a paid short-stay car park, but EDDC sells virtual monthly permits at £10/month for one town (Budleigh Salterton is one of the eligible towns), rising in £2 steps if you want to add more towns, with no physical permit to display. So the realistic position is: no parking with the flat, but a council car park within yards of the front door and a cheap monthly permit that covers it — a better fallback than most of the no-parking cottages on this list. Still worth asking David Rhys & Co whether any of the building's residents have an informal arrangement, because a converted Edwardian town house of this size often has some rear access."
+      },
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "no",
+        "poolSwimTeam": null,
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "closeToFamily": "yes",
+        "uniqueFeature": "Part of a distinctive Edwardian town house beside The Green, on the market for the first time in 21 years",
+        "tenure": "leasehold"
+      },
+      "aiRating": 8,
+      "aiTake": "Fully ground-floor, two doubles, period character, five minutes from the Budleigh seafront and close to both brothers, at £189,950 — the ground-floor-for-life test is passed outright; the catches are no parking of its own (though the council car park is on the same street) and a share-of-freehold lease that only gets written at completion."
+    },
+    {
+      "id": "rockcottagesalfington",
+      "section": "new",
+      "town": "Alfington",
+      "title": "Rock Cottages, Alfington (2-bed cottage with carport)",
+      "price": "Guide Price £185,000",
+      "agent": "Hall & Scott, Ottery St Mary",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (carport)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "PERIOD CHARACTER",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "INLAND — ~25 MIN FROM COAST",
+          "color": "#616161"
+        },
+        {
+          "text": "NIGHT STORAGE HEATING / SHARED PRIVATE DRAINAGE",
+          "color": "#EF6C00"
+        }
+      ],
+      "photos": [
+        "RockCottages_Gallery_1.png",
+        "RockCottages_Gallery_2.jpg",
+        "RockCottages_Gallery_3.jpg",
+        "RockCottages_Gallery_4.jpg",
+        "RockCottages_Gallery_5.jpg",
+        "RockCottages_Gallery_6.jpg",
+        "RockCottages_Gallery_7.jpg",
+        "RockCottages_Gallery_8.jpg",
+        "RockCottages_Gallery_9.png",
+        "RockCottages_Gallery_10.jpg",
+        "RockCottages_Gallery_11.jpg",
+        "RockCottages_Gallery_12.jpg"
+      ],
+      "floorplans": [
+        "RockCottages_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.hallandscott.co.uk/details/?id=HSOTT_650196",
+      "linkLabel": "hallandscott.co.uk — Rock Cottages, Alfington",
+      "body": "A two-bedroom mid-terrace cottage in the hamlet of Alfington, offered with no onward chain at a £185,000 guide. Ground floor: a lounge with a feature fireplace and wood-burning fire, a separate dining room, and a kitchen with base units and built-in appliances. First floor: two bedrooms and a shower room. Described by the agent as beautifully presented. Crucially for this list it has genuine off-road parking — a 4.18m x 2.58m carport — which almost nothing else at this price in a village setting does. Rear access leads to a brick-paved patio and an artificial-lawned garden with a pergola, all landscaped. Two practical caveats stated in the listing: heating is night storage heaters, not gas central heating, and drainage is shared private drainage rather than mains. The front elevation is rendered and fronts straight onto the lane, and the render on the plinth looks tired in the photos even though the interior is smart. Alfington sits just outside Ottery St Mary with A30 access and a bus service.",
+      "why": "It is one of the cheapest genuinely rural, genuinely characterful cottages the sweep has found that also comes with its own off-road parking — that combination is rare enough to be worth tracking on its own. At £185,000 it lands inside Jesse's real target range rather than near the ceiling, it is chain-free, and Alfington is properly small and quiet, which suits the stated preference for somewhere more remote than a village centre. Against it: night storage heating and shared private drainage are both cost and hassle items that will show up on any survey, there is no sea within reach (Sidmouth is roughly 25 minutes), and it is about 20 minutes from each brother rather than the few miles the East Budleigh and Budleigh options manage.",
+      "dateAdded": "2026-07-30",
+      "parking": {
+        "status": "has",
+        "note": "A carport measuring 4.18m x 2.58m, explicitly described in the listing as providing off-road parking — one vehicle, under cover, not a shared or permit arrangement."
+      },
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "partial",
+        "poolSwimTeam": null,
+        "private": "partial",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "partial",
+        "character": "partial",
+        "garden": "yes",
+        "garageWorkspace": "partial",
+        "closeToFamily": "partial",
+        "uniqueFeature": null
+      },
+      "aiRating": 6,
+      "aiTake": "Cheap, chain-free, quiet and — unusually for a village cottage at this price — it has its own carport, which is why it earns its place; it is held back by being properly inland with no coast and no brother nearby, plus night storage heating and shared private drainage to price in."
+    },
+    {
+      "id": "yonderstreetottery",
+      "section": "new",
+      "town": "Ottery St Mary",
+      "title": "Yonder Street, Ottery St Mary (2-bed cottage, downstairs bathroom)",
+      "price": "Guide Price £210,000",
+      "agent": "Hall & Scott, Ottery St Mary",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "PERIOD CHARACTER",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "DOWNSTAIRS BATHROOM",
+          "color": "#1565C0"
+        },
+        {
+          "text": "CURRENTLY TENANTED",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "YonderStreet_Gallery_1.jpg",
+        "YonderStreet_Gallery_2.jpg",
+        "YonderStreet_Gallery_3.jpg"
+      ],
+      "floorplans": [
+        "YonderStreet_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.onthemarket.com/details/19393357/",
+      "linkLabel": "onthemarket.com — Yonder Street, Ottery St Mary",
+      "body": "A two-bedroom cottage on Yonder Street in the middle of Ottery St Mary, marketed with an established tenant already in place and therefore immediate rental income if that is wanted. The floorplan is the useful bit: 665 sq ft over two floors, with the living room (feature fireplace), dining room, kitchen AND the bathroom all on the ground floor, and the two double bedrooms upstairs. That downstairs bathroom is worth noting — very few cottages on this list have one. Outside there is a south-facing rear garden with a patio, a lawn and a substantial shed with a wood store, plus side access to the front. One legal detail flagged in the listing: rear pedestrian access carries a right of way in favour of the adjoining property. EPC D. Walking distance to Ottery's shops and amenities, with the A30, the M5 and the London Waterloo line all reachable. Only three photos are published, which is thin — it is a tenanted property, so interior access for photography was probably limited, and that also means limited insight into condition.",
+      "why": "The layout is the reason it is here. A ground-floor bathroom plus a ground-floor dining room means the long-term \"no stairs\" conversion is close to trivial — put a bed in the dining room and the whole thing works on one level, which is far better than the usual \"adaptable in theory\" cottage. At £210,000 it is comfortably in budget, it has a south-facing garden with a real shed, and it is a character cottage rather than a modern box. Against it: three photos is not enough to judge condition, it is a town-centre street rather than the remote setting Jesse leans towards, there is no coast (Sidmouth is about six miles), Ottery is roughly 20 minutes from both brothers, and the sitting tenant means viewing and vacant possession both need sorting out.",
+      "dateAdded": "2026-07-30",
+      "parking": {
+        "status": "unknown",
+        "note": "The listing gives no parking detail — no driveway, garage or allocated space is claimed, and Yonder Street is a narrow through-street of terraced cottages fronting the pavement, so on-street is the realistic assumption. Researching it: East Devon District Council runs car parks in the centre of Ottery St Mary (the main one off Silver Street/Land of Canaan) within a few minutes' walk, and EDDC's virtual monthly permit scheme covers Ottery St Mary at £10/month for a single town with no permit to display. Devon County Council handles the on-street side; there is no residents' permit zone in Ottery, so unrestricted on-street stretches are first-come-first-served. One thing to check with the agent given the street: Devon County Council has had repeated temporary parking prohibitions and through-traffic closures on Yonder Street and neighbouring Mill Street during works (another closure is scheduled for late August 2026), which is a nuisance rather than a dealbreaker but does mean on-street parking here is occasionally suspended outright."
+      },
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "partial",
+        "poolSwimTeam": null,
+        "private": "no",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "partial",
+        "character": "partial",
+        "garden": "yes",
+        "garageWorkspace": "partial",
+        "closeToFamily": "partial",
+        "uniqueFeature": "Ground-floor bathroom — rare on this list — and a substantial shed with wood store in a south-facing garden"
+      },
+      "aiRating": 6,
+      "aiTake": "The ground-floor bathroom and ground-floor dining room make this one of the easiest \"no stairs later\" conversions on the whole list, and at £210,000 with a south-facing garden it is fair value; it is dragged down by being inland and town-centre, ~20 minutes from either brother, with only three photos and a sitting tenant to work around."
+    },
+    {
+      "id": "hillsidecourtmarles",
+      "section": "new",
+      "town": "Exmouth",
+      "title": "Hillside Court, The Marles, Exmouth (ground-floor flat)",
+      "price": "£189,950",
+      "agent": "Links Estate Agents, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GROUND FLOOR (but steps down in communal area)",
+          "color": "#1565C0"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "LEASEHOLD — ~92 YRS, £120/MONTH",
+          "color": "#F9A825"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY (garages to rent from freeholder)",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "HillsideCourt_Gallery_1.jpg",
+        "HillsideCourt_Gallery_2.jpg",
+        "HillsideCourt_Gallery_3.jpg",
+        "HillsideCourt_Gallery_4.jpg",
+        "HillsideCourt_Gallery_5.jpg",
+        "HillsideCourt_Gallery_6.jpg",
+        "HillsideCourt_Gallery_7.jpg",
+        "HillsideCourt_Gallery_8.jpg",
+        "HillsideCourt_Gallery_9.jpg",
+        "HillsideCourt_Gallery_10.jpg",
+        "HillsideCourt_Gallery_11.jpg"
+      ],
+      "floorplans": [
+        "HillsideCourt_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.onthemarket.com/details/20020980/",
+      "linkLabel": "onthemarket.com — Hillside Court, The Marles, Exmouth",
+      "body": "A ground-floor flat in Hillside Court on The Marles, Exmouth, chain-free and newly to market. 742 sq ft: a 25'1\" x 11'6\" dual-aspect living/dining room, a high-specification kitchen with integrated Neff appliances, quartz worktops and a Quooker instant-boiling tap, two double bedrooms both with built-in wardrobes and LED lighting, and a fully tiled shower room with a walk-in shower. Engineered oak flooring, gas central heating, uPVC double glazing, plus a storage cupboard in the communal hallway. Council Tax B, EPC-relevant broadband at 67Mbps. Tenure is leasehold with roughly 92 years remaining, £250 a year ground rent and £120 a month covering service charge and buildings insurance. Parking is on-street on The Marles, which the agent calls ample; Hillside Court has garage blocks but they are rented from the freeholder on an as-and-when basis rather than sold with the flat, and some of those garages have a driveway too. One thing the listing is honest about and worth repeating: despite the ground-floor designation, there are steps down to the front door within the communal area. Note this is a different flat from the other Marles entry already on the list — that one is a Pennys listing at £200,000 with a garage included and a brand-new extended lease on completion, in the same EX8 4NE postcode.",
+      "why": "It is a cheap, chain-free, genuinely single-level Exmouth flat with a big living room and a kitchen someone has already spent real money on, at £189,950 — inside Jesse's actual target range rather than at the ceiling, and about as close to family as anything gets. The problems are the ones Bro 3 has already said he cares about: a 92-year lease is under the 100-plus he is comfortable with, £120 a month plus £250 a year ground rent is a standing cost, and the garage is rented from the freeholder rather than owned, so there is no parking that comes with the property. The steps down in the communal area also undercut the ground-floor advantage for the specific long-term scenario Jesse cares about. Included because it is a legitimate cheap Exmouth option worth having on the board, not because it is exciting.",
+      "dateAdded": "2026-07-30",
+      "parking": {
+        "status": "onstreet",
+        "note": "No parking is included in the sale. The listing states there is \"ample on street parking\" on The Marles, and that Hillside Court has several garage blocks which can be rented from the freeholder on an as-and-when basis — some with a driveway attached — but they are rented, not owned, and availability is not guaranteed at the point of purchase. Researching the location: The Marles is a residential estate road in the Withycombe area of Exmouth with no residents' permit scheme and no waiting restrictions, so on-street parking here is genuinely free and unrestricted rather than the permit-or-car-park situation the town-centre and village entries face — a practical positive. East Devon District Council's £10/month virtual town permit exists for Exmouth if a car park is ever needed, but for a flat on this estate it should not be. The thing to nail down with Links is whether a garage is actually available to rent now and at what rent, because it changes the effective monthly cost on top of the £120 service charge."
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "partial",
+        "poolSwimTeam": null,
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "partial",
+        "closeToFamily": "yes",
+        "uniqueFeature": null,
+        "tenure": "leasehold",
+        "leaseYears": 92
+      },
+      "aiRating": 6,
+      "aiTake": "A cheap, chain-free, all-on-one-level Exmouth flat with a genuinely good kitchen and a 25ft living room at £189,950, close to family — but a 92-year lease, £120/month plus ground rent, no owned parking and communal steps down to the door keep it a practical option rather than a good one."
+    },
+    {
+      "id": "portlandavenueexmouth",
+      "section": "still",
       "town": "Exmouth",
       "title": "Portland Avenue, Exmouth (ground-floor flat, garage + allocated space)",
       "price": "£224,950",
@@ -68,7 +438,7 @@
     },
     {
       "id": "capellaneexmouth",
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "title": "Capel Lane, Exmouth (tucked-away bungalow)",
       "price": "£269,950",
@@ -135,7 +505,7 @@
     },
     {
       "id": "rollestreetexmouth",
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "title": "Rolle Street, Exmouth (1991 store conversion, reverse-level)",
       "price": "£195,000",
@@ -204,7 +574,7 @@
     },
     {
       "id": "townlanewoodbury",
-      "section": "new",
+      "section": "still",
       "town": "Woodbury",
       "title": "Town Lane, Woodbury (double-fronted period cottage)",
       "price": "£280,000",
@@ -282,7 +652,7 @@
     },
     {
       "id": "eastbudleighthatch",
-      "section": "new",
+      "section": "still",
       "town": "East Budleigh",
       "title": "High Street, East Budleigh (Grade II thatched cottage)",
       "price": "Guide Price £220,000",
@@ -1114,120 +1484,6 @@
       "geocodeSource": "Castle Lane, Exmouth, Devon, UK"
     },
     {
-      "id": "byestollhouse",
-      "section": "still",
-      "title": "Byes Toll House, Salcombe Road, Sidmouth",
-      "price": "Guide Price £95,000+ fees (auction)",
-      "agent": "Clive Emson Auctioneers",
-      "flags": [
-        {
-          "text": "LIKELY SOLD/WITHDRAWN",
-          "color": "#8D6E63"
-        },
-        {
-          "text": "IN BUDGET",
-          "color": "#2E7D32"
-        },
-        {
-          "text": "SOLD AT AUCTION 23 JUL 2026 — £100,000",
-          "color": "#8D6E63"
-        },
-        {
-          "text": "NO PARKING INFO",
-          "color": "#757575"
-        }
-      ],
-      "photos": [
-        "ByesTollHouse_Gallery_1.jpg",
-        "ByesTollHouse_Gallery_2.jpg",
-        "ByesTollHouse_Gallery_3.jpg",
-        "ByesTollHouse_Gallery_4.jpg",
-        "ByesTollHouse_Gallery_5.jpg",
-        "ByesTollHouse_Gallery_6.jpg",
-        "ByesTollHouse_Gallery_7.jpg",
-        "ByesTollHouse_Gallery_8.jpg",
-        "ByesTollHouse_Gallery_9.jpg",
-        "ByesTollHouse_Gallery_10.jpg"
-      ],
-      "link": "https://www.cliveemson.co.uk/properties/267/120/",
-      "linkLabel": "cliveemson.co.uk — Lot 120",
-      "body": "A one-bedroom, single-storey former toll house believed to date to the early 1800s, sold by instruction of East Devon District Council. Sits at the gateway to the Byes, Sidmouth's riverside park, with gardens to the side and rear. Carries an original blue heritage plaque. Freehold, sold via online auction with Common Auction Conditions applying — auction closes 23 July 2026, 168 lots in the sale.",
-      "why": "A genuinely unique, dirt-cheap find via the Exmouth Journal's auction coverage rather than the usual portals — a real slice of local history (a working 19th-century toll house) at under a third of budget. It's in Sidmouth rather than the core Exmouth/Woodbury zone, so further from both brothers than most of the list, and it's tiny (one bed, single-storey) with no parking mentioned. The hard part is the clock: bidding closes 23 July 2026, 10 days out.",
-      "dateAdded": "2026-07-13",
-      "checklist": {
-        "ocean": "partial",
-        "trainStation": "no",
-        "poolSwimTeam": "no",
-        "private": "no",
-        "groundFloorLongTerm": "yes",
-        "mtbTrails": "no",
-        "character": "yes",
-        "garden": "yes",
-        "garageWorkspace": "no",
-        "uniqueFeature": "A genuine early-1800s former toll house with an original blue heritage plaque, at the gateway to the Byes riverside park",
-        "closeToFamily": "partial",
-        "tenure": "freehold"
-      },
-      "aiRating": 6,
-      "aiTake": "A real piece of history, single-storey and dirt cheap — but it's a tiny one-bed in Sidmouth rather than the core zone, parking is unconfirmed, and the 10-day auction clock is the real pressure here.",
-      "bedrooms": 1,
-      "bathrooms": 1,
-      "parking": {
-        "status": "unknown",
-        "note": "Not shown in any of the auction photos and not mentioned in the particulars. Sidmouth runs a residents' permit parking scheme via Devon County Council/MiPermit — worth calling Devon CC directly to check whether this address qualifies, since nothing is deeded to the property itself."
-      },
-      "ratings": {
-        "Bro 3": {
-          "score": 7,
-          "date": "2026-07-15"
-        }
-      },
-      "town": "Sidmouth",
-      "lat": 50.683468,
-      "lng": -3.235744,
-      "geocodeSource": "Byes Toll House, Sidmouth, Devon, UK",
-      "research": [
-        {
-          "date": "2026-07-19",
-          "question": "Does Sidmouth have a public pool or MTB trails nearby? What is the story on this place — has it been on the market before? Why does it seem underpriced, and what might be wrong with it?",
-          "findings": "Pool/trails: yes to both. Sidmouth Swimming Pool (Ham Lane, LED Community Leisure, 25m/5-lane, public and lane swimming) is about a mile from the property, plus Sidmouth Leisure Centre (Primley Road) for gym/classes. For MTB, Mutters Moor and the Peak Hill/Mutter’s Moor loop are right on Sidmouth’s doorstep (linking to Woodbury Castle further west), and there are 80+ mapped trails in the wider East Devon AONB around Salcombe Regis/Hawkerland/Fire Beacon Hill — genuinely better MTB access than most of the list, just not Woodbury Common itself.\n\nThe story: this is a real, well-documented building, not an obscure flip. It’s Grade II listed, built c.1817 for the Honiton & Sidmouth Turnpike Trust, and has belonged to East Devon (originally Sidmouth Urban District) Council since 1936. It was used as council social housing from the end of WWII, then stood empty for several years after a severe flood in July 1968 left it unfit for habitation, before the council refurbished it in 1974. It’s now being sold as one of 168 lots in Clive Emson’s July 2026 auction, by instruction of East Devon District Council — this reads as a routine council asset disposal (councils regularly auction off small, hard-to-modernise former-tenancy stock), not a distressed or scandal sale. I couldn’t find any record of this specific building being on the market a year ago — you may be thinking of Ye Olde Toll House in Newton Poppleford, a different (unrelated) toll house that Clive Emson auctioned separately in an earlier sale.\n\nWhy it looks underpriced: three real, boring reasons rather than one hidden catch. (1) It’s genuinely tiny — one bed, single-storey — which caps value regardless of location. (2) It’s Grade II listed, so any alterations need listed building consent, which narrows the buyer pool and limits what a buyer could do with it. (3) Auction guide prices are deliberately set low to spark bidding — £95,000 is a floor to draw interest, not a prediction of the final hammer price, which very plausibly lands well above it once bidding opens. On top of that, standard Common Auction Conditions mean it sells as-seen with no room to negotiate on condition, which filters out mortgage-dependent buyers and caps the price a normal owner-occupier pool would push it to — auction stock this small and this specific tends to go to cash buyers.\n\nOne genuine thing worth checking before bidding: the building sits right at the entrance to the Byes riverside walk along the River Sid, and its own history includes a severe flood in 1968 that made it uninhabitable for years. The River Sid at Sidmouth still has an active flood warning area today (there was real flooding in the area as recently as January/February 2026), and although Salcombe Road itself isn’t named in the current warning zone (that covers Primley Gardens, Mill Street, Riverside Road, York Street, Ham Lane, East Street and Fore Street), a riverside property with this specific flood history is worth a direct check on the gov.uk flood risk checker by postcode before bidding — not a dealbreaker, just due diligence given the building’s own past.",
-          "sources": [
-            {
-              "label": "Sidmouth Swimming Pool",
-              "url": "https://ledleisure.co.uk/locations/sidmouth-swimming-pool/"
-            },
-            {
-              "label": "MTB trails around Sidmouth (Komoot)",
-              "url": "https://www.komoot.com/guide/869945/mtb-trails-around-sidmouth"
-            },
-            {
-              "label": "Former Sidmouth toll house auction coverage",
-              "url": "https://www.sidmouthherald.co.uk/news/26260780.east-devon-toll-house-auction-clive-emson/"
-            },
-            {
-              "label": "History of the Old Toll House (Sidmouth Herald)",
-              "url": "https://www.sidmouthherald.co.uk/news/20440142.sidmouths-grade-ii-listed-council-home-history-old-toll-house/"
-            },
-            {
-              "label": "River Sid at Sidmouth flood warning area (gov.uk)",
-              "url": "https://check-for-flooding.service.gov.uk/target-area/113FWF2I1B"
-            }
-          ]
-        },
-        {
-          "date": "2026-07-27",
-          "question": "Auction result — did the Byes Toll House sell on 23 July 2026?",
-          "findings": "It sold. Clive Emson’s lot page for auction 267 lot 120 now shows \"SOLD £100,000\" against a guide of £95,000+, so it went just over guide at the 23 July 2026 online auction. Bro 3 had rated it 7/10 purely on the cheap guide price while suspecting something was wrong with it; at £100,000 the market evidently did not share that suspicion. Flagged as sold this sweep and due for removal from the page on the next sweep per the sold-property cleanup rule.",
-          "sources": [
-            {
-              "label": "Clive Emson — Auction 267, Lot 120",
-              "url": "https://www.cliveemson.co.uk/properties/267/120/"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "bedlandslane",
       "section": "still",
       "title": "Bedlands Lane, Budleigh Salterton (ground-floor flat)",
@@ -2019,12 +2275,16 @@
       "id": "longmeadow",
       "section": "still",
       "title": "Longmeadow Road, Lympstone (Grade II 17th-century cottage)",
-      "price": "Guide Price £250,000",
+      "price": "Offers in Excess of £230,000 (reduced 27/07/2026)",
       "agent": "Stags, Exeter",
       "flags": [
         {
           "text": "IN BUDGET",
           "color": "#2E7D32"
+        },
+        {
+          "text": "PRICE REDUCED (£250,000 → £230,000, 27/07/2026)",
+          "color": "#EF6C00"
         },
         {
           "text": "GRADE II LISTED",
@@ -2079,7 +2339,7 @@
         "closeToFamily": "partial"
       },
       "aiRating": 6,
-      "aiTake": "Genuine Grade II character with a lovely garden studio by a stream, but only one bedroom, no real parking, and a disclosed knotweed issue worth getting a surveyor's eye on before getting attached.",
+      "aiTake": "A genuinely characterful Grade II cottage with an inglenook and an oak-framed garden studio, now £20,000 cheaper at £230,000 — but it is a one-bedroom with on-street parking only, and the newly disclosed Japanese Knotweed in the garden (guarantee in place) is a real thing to price in.",
       "ratings": {
         "Bro 3": {
           "score": 3,
@@ -2098,7 +2358,24 @@
       "town": "Lympstone",
       "lat": 50.649695,
       "lng": -3.422583,
-      "geocodeSource": "Longmeadow Road, Lympstone, Devon, UK"
+      "geocodeSource": "Longmeadow Road, Lympstone, Devon, UK",
+      "research": [
+        {
+          "date": "2026-07-30",
+          "question": "Sweep re-check: price and any new material disclosures",
+          "findings": "Reduced again on 27 July 2026, from a £250,000 guide to offers in excess of £230,000 — a £20,000 cut, and the second reduction on this cottage. Stags' current listing also now carries a disclosure that was not on the version originally captured: Japanese Knotweed was found at the bottom of the garden in spring 2026. A 10-year insurance-backed treatment guarantee is in place, which is what most lenders require before they will lend, but it is a material fact for both the survey and the resale conversation and should be raised with the agent directly rather than taken as fully closed. Everything else is unchanged — Grade II listed, freehold, one bedroom with an ensuite, inglenook with a log-effect gas stove, substantial south-facing garden with the detached oak-framed garden studio, on-street parking to the front only.",
+          "sources": [
+            {
+              "label": "OnTheMarket — Longmeadow Road, Lympstone",
+              "url": "https://www.onthemarket.com/details/19724958/"
+            },
+            {
+              "label": "Rightmove — Longmeadow Road, Lympstone",
+              "url": "https://www.rightmove.co.uk/properties/89711112"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "brookside",
@@ -2746,8 +3023,8 @@
           "color": "#B71C1C"
         },
         {
-          "text": "AUCTION — BIDS BY 1pm, 7 AUG 2026 (11 DAYS)",
-          "color": "#EF6C00"
+          "text": "AUCTION — BIDS BY 1pm, 7 AUG 2026 (8 DAYS)",
+          "color": "#C62828"
         },
         {
           "text": "PARKING UNKNOWN",
@@ -3054,8 +3331,8 @@
           "color": "#B71C1C"
         },
         {
-          "text": "AUCTION 13 AUG 2026, 12pm (17 DAYS)",
-          "color": "#EF6C00"
+          "text": "AUCTION 13 AUG 2026, 12pm (14 DAYS)",
+          "color": "#C62828"
         },
         {
           "text": "NO PARKING INFO",
@@ -3322,12 +3599,16 @@
       "id": "longbrooklympstone",
       "section": "still",
       "title": "Longbrook Lane, Lympstone (fixer-upper)",
-      "price": "Guide Price £240,000",
+      "price": "Guide Price £225,000 (reduced 21/07/2026)",
       "agent": "Rightmove listing",
       "flags": [
         {
           "text": "IN BUDGET",
           "color": "#2E7D32"
+        },
+        {
+          "text": "PRICE REDUCED (£240,000 → £225,000, 21/07/2026)",
+          "color": "#EF6C00"
         },
         {
           "text": "NEEDS MODERNISATION THROUGHOUT",
@@ -4425,12 +4706,16 @@
       "id": "greenwaygradeii",
       "section": "still",
       "title": "Greenway, Woodbury (Grade II listed cottage)",
-      "price": "£295,000",
+      "price": "Offers in Excess of £275,000 (reduced 24/07/2026)",
       "agent": "Stags, Exeter",
       "flags": [
         {
           "text": "IN BUDGET",
           "color": "#2E7D32"
+        },
+        {
+          "text": "PRICE REDUCED (£295,000 → £275,000, 24/07/2026)",
+          "color": "#EF6C00"
         },
         {
           "text": "GRADE II LISTED",
