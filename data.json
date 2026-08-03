@@ -1,9 +1,476 @@
 {
-  "lastUpdated": "2026-07-30",
+  "lastUpdated": "2026-08-03",
   "properties": [
     {
-      "id": "talaton",
+      "id": "ebfordparcels",
       "section": "new",
+      "town": "Ebford",
+      "title": "Land parcels, Exmouth Road, Ebford/Exton (⅓ acre — AUCTION)",
+      "price": "Guide Price £30,000 (auction)",
+      "agent": "Signature Property Concierge",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "BARE LAND — NO PLANNING PERMISSION",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "30% PLANNING OVERAGE TO SELLER",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "AUCTION SALE — CHECK DATE WITH AGENT",
+          "color": "#C62828"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (established roadside vehicle access)",
+          "color": "#2E7D32"
+        }
+      ],
+      "photos": [
+        "EbfordParcels_Gallery_1.jpg",
+        "EbfordParcels_Gallery_2.jpg",
+        "EbfordParcels_Gallery_3.jpg",
+        "EbfordParcels_Gallery_4.jpg",
+        "EbfordParcels_Gallery_5.jpg",
+        "EbfordParcels_Gallery_6.jpg",
+        "EbfordParcels_Gallery_7.jpg"
+      ],
+      "floorplans": [],
+      "link": "https://www.rightmove.co.uk/properties/91541838",
+      "linkLabel": "rightmove.co.uk — Land, Exmouth Road, Ebford",
+      "body": "Freehold parcels of land, each about a third of an acre (roughly 13,000 sq ft / 1,208 sq m), on the Exmouth Road between the villages of Ebford and Exton, offered by auction with a £30,000 guide. The listing describes a prominent roadside position with established vehicle access. Critically, this is bare land with no planning permission — the agent markets it as \"ideal for a variety of uses subject to the necessary consents\" and it carries a 30% planning overage, meaning if residential or other valuable consent is ever obtained, 30% of the resulting uplift in value is payable back to the seller. Reserve is set within the guide range or no more than 10% above it, and the usual auction fees apply on top. Came to market 2 August 2026.",
+      "why": "Worth tracking because it is cheap, genuinely unconventional, and in a spot that suits Jesse well on paper — the Ebford/Exton stretch sits right by the Exe estuary with Exton station on the Avocet line, ten minutes from Exmouth and very close to the Woodbury brother, with Woodbury Common trails a short ride away. At £30,000 the downside is small in absolute terms. But it should be read as a speculative punt rather than a route to a home, and the reasons are stacked up in the listing itself. There is no planning permission of any kind, this is open countryside outside any settlement boundary, and East Devon is not in the habit of granting new isolated dwellings there. The 30% overage clause is the clearest signal of all: the seller has priced in the possibility that a buyer tries for consent, and has arranged to take almost a third of the gain if it ever lands. Note also that Plot B on the same stretch of Exmouth Road, tracked here separately, went to auction on 3 August 2026 with a £75,000 guide and its listing has now been pulled — so this may well be the same land being re-marketed at a lower guide, which is a fact worth establishing with the agent before bidding.",
+      "dateAdded": "2026-08-03",
+      "parking": {
+        "status": "has",
+        "note": "The listing specifically calls out a prominent roadside position with established vehicle access, so the parcel can be driven onto directly from the Exmouth Road rather than needing a right of way negotiated over someone else's land — which is the single most valuable practical attribute bare land of this kind can have. There is nothing built, so any actual hardstanding or driveway would be the buyer's to create, subject to consent."
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "yes",
+        "poolSwimTeam": null,
+        "private": "yes",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "yes",
+        "character": null,
+        "garden": "yes",
+        "garageWorkspace": null,
+        "closeToFamily": "yes",
+        "uniqueFeature": "A third of an acre of freehold Devon countryside between the estuary and Woodbury Common, with its own roadside vehicle access, for the price of a car.",
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "A third of an acre with its own road access, ten minutes from Exmouth and next to Woodbury Common, for £30,000 — but it is bare countryside with no planning permission and a 30% overage clause, so it is a cheap speculative punt on consent rather than anywhere to live."
+    },
+    {
+      "id": "raleighroadottery",
+      "section": "new",
+      "town": "Ottery St Mary",
+      "title": "Raleigh Road, Ottery St Mary (2-bed bungalow, garage with power)",
+      "price": "£250,000",
+      "agent": "Red Homes Estate Agents",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "BUNGALOW — ALL ON ONE LEVEL",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (driveway + garage)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GARAGE WITH LIGHT, POWER & UTILITY",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "INLAND — ~25 MIN FROM COAST",
+          "color": "#616161"
+        },
+        {
+          "text": "MODERN — LIMITED CHARACTER",
+          "color": "#616161"
+        }
+      ],
+      "photos": [
+        "RaleighRoad_Gallery_1.jpg",
+        "RaleighRoad_Gallery_2.jpg",
+        "RaleighRoad_Gallery_3.jpg",
+        "RaleighRoad_Gallery_4.jpg",
+        "RaleighRoad_Gallery_5.jpg",
+        "RaleighRoad_Gallery_6.jpg",
+        "RaleighRoad_Gallery_7.jpg",
+        "RaleighRoad_Gallery_8.jpg",
+        "RaleighRoad_Gallery_9.jpg"
+      ],
+      "floorplans": [
+        "RaleighRoad_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.rightmove.co.uk/properties/91504275",
+      "linkLabel": "rightmove.co.uk — Raleigh Road, Ottery St Mary",
+      "body": "A freehold two-bedroom semi-detached bungalow on the eastern outskirts of Ottery St Mary at £250,000, a level walk from the town centre. Accommodation is a reception porch and hall, a fully fitted kitchen with built-in oven and gas hob and slate-effect worktops, a sitting/dining room with a large picture window and a feature fireplace, two double bedrooms both with built-in wardrobes, and a modern shower room. uPVC double glazing throughout, gas central heating and a new gas boiler. Outside there is a driveway giving off-road parking and access to a garage fitted with a remote-operated electric door, light, power and a utility area at one end. The front garden is open-plan lawn; the rear is fully enclosed, mainly paved for low maintenance, with established flowerbeds and a large timber shed which the agent suggests would suit conversion to a home office or summer house.",
+      "why": "This is the most straightforwardly practical entry of the batch and it ticks the two boxes that are hardest to find together: it is a bungalow, so the stay-put-if-stairs-become-a-problem question is answered outright rather than as an adaptation, and the garage has light, power and a utility area, which makes it a usable workspace rather than just somewhere to put a car. Add a driveway on top, a new boiler, an enclosed low-maintenance garden and a shed with home-office potential, and there is very little that would need spending on straight away. The case against is the one Jesse and Bro 3 both apply hardest. There is no character here — it is a mid-century estate bungalow, competently presented, with nothing unusual about it — and Ottery St Mary is properly inland, roughly 25 minutes from the nearest sea and about the same again from Exmouth, so it fails both the ocean and the close-to-family tests. At £250,000 for two bedrooms it also sits in exactly the zone where Bro 3 has repeatedly said a place feels expensive for what it is.",
+      "dateAdded": "2026-08-03",
+      "parking": {
+        "status": "has",
+        "note": "A private driveway to the front giving off-road parking, leading to a garage with a remote-operated electric door, light and power, and a utility area built into one end — so both a parked car and a working garage, not one at the expense of the other."
+      },
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "partial",
+        "poolSwimTeam": "partial",
+        "private": "partial",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "closeToFamily": "no",
+        "uniqueFeature": null,
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "Ticks the practical boxes cleanly — a true bungalow, a driveway, and a garage with power and a utility that would actually work as a workshop — but it has no character at all and sits inland, well away from both the sea and either brother."
+    },
+    {
+      "id": "saltertonroadapt",
+      "section": "new",
+      "town": "Exmouth",
+      "title": "Salterton Road, Exmouth (3-bed period apartment, all on one level)",
+      "price": "£300,000",
+      "agent": "Fulfords",
+      "flags": [
+        {
+          "text": "IN BUDGET (AT CEILING)",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "PERIOD CHARACTER",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "ALL ON ONE LEVEL (84.3 sq m)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (off-road)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "TENURE NOT STATED — ASK AGENT",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NOT RETIREMENT / NOT SHARED OWNERSHIP (checked)",
+          "color": "#616161"
+        }
+      ],
+      "photos": [
+        "SaltertonRdApt_Gallery_1.jpg",
+        "SaltertonRdApt_Gallery_2.jpg",
+        "SaltertonRdApt_Gallery_3.jpg",
+        "SaltertonRdApt_Gallery_4.jpg",
+        "SaltertonRdApt_Gallery_5.jpg",
+        "SaltertonRdApt_Gallery_6.jpg",
+        "SaltertonRdApt_Gallery_7.jpg",
+        "SaltertonRdApt_Gallery_8.jpg",
+        "SaltertonRdApt_Gallery_9.jpg",
+        "SaltertonRdApt_Gallery_10.jpg",
+        "SaltertonRdApt_Gallery_11.jpg",
+        "SaltertonRdApt_Gallery_12.jpg",
+        "SaltertonRdApt_Gallery_13.jpg",
+        "SaltertonRdApt_Gallery_14.jpg",
+        "SaltertonRdApt_Gallery_15.jpg",
+        "SaltertonRdApt_Gallery_16.jpg",
+        "SaltertonRdApt_Gallery_17.jpg",
+        "SaltertonRdApt_Gallery_18.jpg"
+      ],
+      "floorplans": [
+        "SaltertonRdApt_Floorplan_1.jpg"
+      ],
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "link": "https://www.rightmove.co.uk/properties/91514514",
+      "linkLabel": "rightmove.co.uk — Salterton Road, Exmouth",
+      "body": "A three-bedroom apartment in a substantial red-brick-and-render Victorian villa on Salterton Road, at £300,000 with off-road parking. The floorplan shows 84.3 sq m (908 sq ft) laid out entirely on one level: a long central hall running the depth of the apartment, a 6.00m x 4.27m living room with a bay window, kitchen, three bedrooms (the principal at 4.54m x 2.68m with an en-suite shower room) and a separate family bathroom. The listing emphasises high ceilings, decorative ceiling details and a lot of natural light, and the photographs bear that out. The building itself is handsome, with a two-storey canted bay, brick quoining and a lawned frontage. Two things the listing does not state: which floor of the building the apartment occupies, and the tenure — Rightmove records tenure as \"ask agent\", with no lease length given. Checked specifically and confirmed it is neither retirement/age-restricted nor shared ownership.",
+      "why": "Of everything found this sweep, this has the most actual period character combined with a genuinely useful layout — 908 sq ft of three-bedroom accommodation, all on a single level, in a proper Victorian villa, with off-road parking on a road that runs toward the seafront. Single-level living at this size is the thing worth noting: if it turns out to be the ground-floor apartment, it answers the stay-put-long-term question outright rather than conditionally. The problem is that two of the most important facts are missing from the listing. The tenure is simply not stated, and for an apartment that matters enormously — a short lease would change the picture completely, and Bro 3 has already marked one property down hard for exactly this kind of ambiguity. The floor level is also unstated, and while the ground-floor bay in the photographs matches the bay on the plan, the building has a matching bay at first-floor level too, so it cannot be settled from the pictures. Both are single questions to the agent. Beyond that it sits right on the £300,000 ceiling, has no private garden, and is on a main road rather than the quiet or rural setting Jesse has said he leans towards.",
+      "dateAdded": "2026-08-03",
+      "parking": {
+        "status": "has",
+        "note": "The listing states off-road parking is included, and the photographs show a gravelled and paved parking area to the side of the building, reached down the drive past the lawn. What is not specified is whether that is an allocated numbered space or shared among the flats in the building — worth asking, since Salterton Road itself is a busy through route where on-street parking would be a poor fallback."
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "partial",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "closeToFamily": "yes",
+        "uniqueFeature": "A three-bedroom, 908 sq ft apartment laid out entirely on one level inside a Victorian villa — the space of a house with none of the stairs, which is an unusual combination at this price."
+      },
+      "aiRating": 5,
+      "aiTake": "The most genuine period character of this batch, with 908 sq ft of three-bed accommodation all on one level and off-road parking in Exmouth — but it sits right on the budget ceiling with no garden, and the listing states neither the tenure nor which floor it is on, which are exactly the two facts that would decide it."
+    },
+    {
+      "id": "allsaintsmewsexmouth",
+      "section": "new",
+      "town": "Exmouth",
+      "title": "All Saints Mews, Exmouth (3-bed freehold townhouse, no chain)",
+      "price": "£270,000",
+      "agent": "Links Estate Agents",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (garage, currently part-converted)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "DOWNSTAIRS BEDROOM",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "MODERN — LIMITED CHARACTER",
+          "color": "#616161"
+        }
+      ],
+      "photos": [
+        "AllSaintsMews_Gallery_1.jpg",
+        "AllSaintsMews_Gallery_2.jpg",
+        "AllSaintsMews_Gallery_3.jpg",
+        "AllSaintsMews_Gallery_4.jpg",
+        "AllSaintsMews_Gallery_5.jpg",
+        "AllSaintsMews_Gallery_6.jpg",
+        "AllSaintsMews_Gallery_7.jpg",
+        "AllSaintsMews_Gallery_8.jpg",
+        "AllSaintsMews_Gallery_9.jpg",
+        "AllSaintsMews_Gallery_10.jpg",
+        "AllSaintsMews_Gallery_11.jpg",
+        "AllSaintsMews_Gallery_12.jpg",
+        "AllSaintsMews_Gallery_13.jpg",
+        "AllSaintsMews_Gallery_14.jpg",
+        "AllSaintsMews_Gallery_15.jpg",
+        "AllSaintsMews_Gallery_16.jpg"
+      ],
+      "floorplans": [
+        "AllSaintsMews_Floorplan_1.jpg"
+      ],
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "link": "https://www.rightmove.co.uk/properties/91527072",
+      "linkLabel": "rightmove.co.uk — All Saints Mews, Exmouth",
+      "body": "A freehold three-double-bedroom townhouse arranged over three floors in a small mews off All Saints, offered chain-free at £270,000 and a level walk from Exmouth town centre, the railway station and the bus interchange. Ground floor: entrance hall, utility room and bedroom three. First floor: lounge/dining room, kitchen and bathroom/WC. Second floor: the master and bedroom two. The garage has been split to create that third bedroom plus a lockable store, and the agent explicitly states it \"could be reverted to the original full size garage\" — so a buyer can choose between three bedrooms or a full garage plus two. To the rear is a small enclosed courtyard garden looking towards All Saints Church.",
+      "why": "On the practical criteria this is one of the tidier packages in Exmouth itself: freehold rather than leasehold, three double bedrooms, no chain, its own garage, and close enough to the station and the seafront to tick coast, train and family-proximity all at once. The reversible garage conversion is genuinely useful optionality — keep bedroom three, or take the garage back for a workshop, which is the sort of flexibility most terraces at this price do not offer. The ground-floor bedroom also gives a partial head start on staying put long-term, though the bathroom is a floor above it, so a downstairs WC or shower would still be needed to make that work properly. Where it loses ground is character: this is a modern mews house over three floors, not a cottage, and Jesse has been consistent that he would rather have something with a story to it. At £270,000 it also sits in the band where Bro 3's \"expensive for what it is\" reflex tends to fire, particularly for a house with only a courtyard rather than a garden.",
+      "dateAdded": "2026-08-03",
+      "parking": {
+        "status": "has",
+        "note": "A garage belonging to the property, currently divided into bedroom three and a lockable store, which the agent states can be reverted to its original full size — so off-road parking is included in the title either way, it is just a question of whether the buyer wants the space as a bedroom or as a garage."
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "partial",
+        "character": "partial",
+        "garden": "partial",
+        "garageWorkspace": "partial",
+        "closeToFamily": "yes",
+        "uniqueFeature": "A garage deliberately converted into a bedroom-plus-store that the agent confirms can be turned straight back into a full garage — rare flexibility to swap a room for a workshop and back again.",
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "Freehold, chain-free, three doubles, a reversible garage and a level walk to both the station and the sea — a genuinely practical Exmouth buy that is marked down mainly for being a modern mews house with a courtyard rather than the characterful cottage Jesse actually wants."
+    },
+    {
+      "id": "sidmouthbuildingplot",
+      "section": "new",
+      "town": "Sidmouth",
+      "title": "Single Building Plot, Core Hill Road, Sidmouth (self-build, full planning granted)",
+      "price": "Guide Price £220,000",
+      "agent": "KLP",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "SELF-BUILD PLOT",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "DETAILED PLANNING GRANTED (23/2134/FUL)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "BUILD COST ON TOP OF PLOT PRICE",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "PERMISSION EXPIRES ~FEB 2027 — CHECK COMMENCEMENT",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "HAS PARKING (off-road, in approved plans)",
+          "color": "#2E7D32"
+        }
+      ],
+      "photos": [
+        "SidmouthPlot_Gallery_1.jpg",
+        "SidmouthPlot_Gallery_2.jpg",
+        "SidmouthPlot_Gallery_3.jpg",
+        "SidmouthPlot_Gallery_4.jpg",
+        "SidmouthPlot_Gallery_5.jpg",
+        "SidmouthPlot_Gallery_6.jpg",
+        "SidmouthPlot_Gallery_7.jpg",
+        "SidmouthPlot_Gallery_8.jpg"
+      ],
+      "floorplans": [],
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "link": "https://www.rightmove.co.uk/properties/170356919",
+      "linkLabel": "rightmove.co.uk — Single Building Plot, Sidmouth",
+      "body": "A freehold single building plot of about 0.126 acres (0.05 ha) on the north-western edge of Sidmouth, north of Woolbrook Mead and close to the Waitrose. Detailed — not outline — planning permission was granted by East Devon District Council under reference 23/2134/FUL on 5 February 2024 for the construction of one new detached dwelling and associated works. The approved design is a three-bedroom dormer-style house of roughly 191 sq m (2,063 sq ft): ground floor gives an entrance hall, an en-suite bedroom, utility, WC and an open-plan kitchen/living/dining room opening onto the garden; the upper floor adds two large bedrooms, both en-suite with built-in wardrobes. Off-road parking is shown at the front, accessed from Core Hill Road, with an established westerly-facing garden to the rear. The lead photo is an aerial with the plot boundary drawn on it, which places it clearly in an established residential area with the sea visible in the distance.",
+      "why": "Jesse has asked repeatedly for self-build plots to be surfaced, and this is the strongest version of that this sweep found: the hard planning risk is already retired, because permission is detailed rather than outline and covers a specific approved house, so a buyer is not gambling on whether East Devon will ever allow a dwelling here. The approved layout is also unusually well-suited to him without needing any redesign — there is a full en-suite bedroom, utility and WC on the ground floor alongside the living space, which is the ground-floor-forever box ticked from day one rather than as a later adaptation. Two real caveats. First, £220,000 buys the land only; a 191 sq m house will realistically cost well north of £250,000 to build, so the all-in figure lands far above the £300,000 ceiling even though the listing price sits under it. Second, a February 2024 detailed consent carries the standard three-year commencement window, so it expires around February 2027 unless work has lawfully started — worth confirming with EDDC before doing anything else. Location-wise Sidmouth is about 30 minutes from Exmouth and 20 from Otterton, so it is the weakest of this batch on closeness to family, and there is no railway station in the town at all.",
+      "dateAdded": "2026-08-03",
+      "parking": {
+        "status": "has",
+        "note": "The approved scheme includes off-road parking at the front of the plot, accessed directly off Core Hill Road — so parking comes as part of the planning permission rather than being something to negotiate later. Because nothing is built yet, the exact number of spaces follows whatever the approved site plan shows; worth pulling the drawings from the East Devon planning portal under 23/2134/FUL to confirm the count before committing."
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "partial",
+        "private": "partial",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": null,
+        "garden": "yes",
+        "garageWorkspace": null,
+        "closeToFamily": "no",
+        "uniqueFeature": "A blank slate with the planning fight already won — detailed consent for a specific 2,063 sq ft three-bed house, so the design can be built as approved or varied, rather than starting from an outline permission and hoping.",
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "The self-build option Jesse keeps asking for, with detailed planning already granted and a ground-floor en-suite bedroom in the approved layout — but £220,000 is the land alone, and the build cost on top pushes the real total well past the ceiling, in a town that is the furthest of this batch from both brothers."
+    },
+    {
+      "id": "stationroadbroadclyst",
+      "section": "new",
+      "town": "Broadclyst",
+      "title": "Station Road, Broadclyst (period cottage with a 25ft workshop)",
+      "price": "Guide Price £220,000–£230,000",
+      "agent": "Right at Home Estate Agents",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "PERIOD CHARACTER",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "OUTBUILDINGS (all photographed)",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "DOWNSTAIRS SHOWER ROOM",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "INLAND — ~25-30 MIN FROM COAST",
+          "color": "#616161"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY",
+          "color": "#EF6C00"
+        }
+      ],
+      "photos": [
+        "StationRdBroadclyst_Gallery_1.jpg",
+        "StationRdBroadclyst_Gallery_2.jpg",
+        "StationRdBroadclyst_Gallery_3.jpg",
+        "StationRdBroadclyst_Gallery_4.jpg",
+        "StationRdBroadclyst_Gallery_5.jpg",
+        "StationRdBroadclyst_Gallery_6.jpg",
+        "StationRdBroadclyst_Gallery_7.jpg",
+        "StationRdBroadclyst_Gallery_8.jpg",
+        "StationRdBroadclyst_Gallery_9.jpg",
+        "StationRdBroadclyst_Gallery_10.jpg",
+        "StationRdBroadclyst_Gallery_11.jpg",
+        "StationRdBroadclyst_Gallery_12.jpg",
+        "StationRdBroadclyst_Gallery_13.jpg",
+        "StationRdBroadclyst_Gallery_14.jpg",
+        "StationRdBroadclyst_Gallery_15.jpg",
+        "StationRdBroadclyst_Gallery_16.jpg",
+        "StationRdBroadclyst_Gallery_17.jpg",
+        "StationRdBroadclyst_Gallery_18.jpg",
+        "StationRdBroadclyst_Gallery_19.jpg",
+        "StationRdBroadclyst_Gallery_20.jpg"
+      ],
+      "floorplans": [
+        "StationRdBroadclyst_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.rightmove.co.uk/properties/91536882",
+      "linkLabel": "rightmove.co.uk — Station Road, Broadclyst",
+      "body": "A two-bedroom terraced period cottage in the middle of Broadclyst, guided at £220,000–£230,000 and freehold. The floorplan is the interesting part: the ground floor is porch, living room, kitchen and — unusually for a cottage this size — a shower room, with the two bedrooms upstairs. Total floor area including outbuildings is 104.8 sq m. Outside is an enclosed rear garden and a genuinely substantial run of outbuildings: a workshop measuring 7.85m x 2.13m (25'9\" x 7'0\"), a utility/shed, a shed fitted out as a home office, and a summer house. All four appear on the floorplan and, importantly, are photographed — the summer house is fully timber-lined with a woodburner and full-height glazing, and the workshop/store is a proper lined building rather than a flat-pack shed. Parking is on-street only. Broadclyst is a National Trust estate village on the edge of Ashclyst Forest, one of the larger blocks of woodland in East Devon.",
+      "why": "This is the closest thing this sweep found to the character-plus-workshop combination Jesse keeps circling, at a price inside his real target range rather than at the ceiling. A 25-foot workshop, a home-office shed and a woodburner-fitted summer house is a lot of usable outbuilding for £220,000, and the downstairs shower room already existing means converting the living room to a bedroom later is a realistic route to staying put long-term rather than a hopeful guess. Bro 3 has previously marked a property down for claiming a barn it never photographed — that objection does not apply here, every outbuilding is both drawn on the plan and shown in the gallery. The honest arguments against are all about location: Broadclyst is properly inland with no sea, it is roughly 25-30 minutes from Exmouth and further from Otterton, so it fails the close-to-family test on both counts, and parking is on-street only. Ashclyst Forest on the doorstep does at least answer the trails question, just not with Woodbury Common.",
+      "dateAdded": "2026-08-03",
+      "parking": {
+        "status": "onstreet",
+        "note": "The listing says only \"on-street parking is available nearby\", with no driveway, garage or allocated space — and the floorplan confirms the outbuildings occupy the rear, so there is no scope to create off-road parking without losing the workshop. Broadclyst is a National Trust estate village with no residents' permit scheme and no public car park of any size; the practical options are the unrestricted stretches of Station Road and the surrounding lanes, plus the village hall and school areas which fill on weekdays. Free and unmetered, but genuinely first-come-first-served, and the terrace fronts more or less straight onto the road, so a space directly outside is not something to count on."
+      },
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "partial",
+        "poolSwimTeam": "no",
+        "private": "partial",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "closeToFamily": "no",
+        "uniqueFeature": "A fully timber-lined summer house with its own woodburner, alongside a separate 25ft workshop and a shed fitted out as a home office — and unlike most listings making outbuilding claims, all of them are photographed and drawn on the floorplan.",
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "Real period character, a freehold title, a downstairs shower room and about 40 feet of genuinely photographed workshop and summer house for £220,000 — held back from a higher score purely by geography, being inland with no coast and a good half-hour from both brothers."
+    },
+    {
+      "id": "talaton",
+      "section": "still",
       "town": "Talaton",
       "title": "Talaton, EX5 2RG (Grade II thatched cottage)",
       "price": "£245,000",
@@ -90,7 +557,7 @@
     },
     {
       "id": "stationroadbudleigh",
-      "section": "new",
+      "section": "still",
       "town": "Budleigh Salterton",
       "title": "Station Road, Budleigh Salterton (ground-floor Edwardian conversion)",
       "price": "£189,950",
@@ -158,7 +625,7 @@
     },
     {
       "id": "rockcottagesalfington",
-      "section": "new",
+      "section": "still",
       "town": "Alfington",
       "title": "Rock Cottages, Alfington (2-bed cottage with carport)",
       "price": "Guide Price £185,000",
@@ -235,7 +702,7 @@
     },
     {
       "id": "yonderstreetottery",
-      "section": "new",
+      "section": "still",
       "town": "Ottery St Mary",
       "title": "Yonder Street, Ottery St Mary (2-bed cottage, downstairs bathroom)",
       "price": "Guide Price £210,000",
@@ -299,7 +766,7 @@
     },
     {
       "id": "hillsidecourtmarles",
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "title": "Hillside Court, The Marles, Exmouth (ground-floor flat)",
       "price": "£189,950",
@@ -3023,7 +3490,7 @@
           "color": "#B71C1C"
         },
         {
-          "text": "AUCTION — BIDS BY 1pm, 7 AUG 2026 (8 DAYS)",
+          "text": "AUCTION — BIDS BY 1pm, 7 AUG 2026 (4 DAYS)",
           "color": "#C62828"
         },
         {
@@ -3331,7 +3798,7 @@
           "color": "#B71C1C"
         },
         {
-          "text": "AUCTION 13 AUG 2026, 12pm (14 DAYS)",
+          "text": "AUCTION 13 AUG 2026, 12pm (10 DAYS)",
           "color": "#C62828"
         },
         {
@@ -4885,7 +5352,7 @@
           "color": "#6D4C41"
         },
         {
-          "text": "AUCTION 10 SEP 2026, 12pm (45 DAYS)",
+          "text": "AUCTION 10 SEP 2026, 12pm (38 DAYS)",
           "color": "#EF6C00"
         }
       ],
@@ -5420,6 +5887,10 @@
       "agent": "Auction House South West",
       "flags": [
         {
+          "text": "LIKELY SOLD/WITHDRAWN",
+          "color": "#8D6E63"
+        },
+        {
           "text": "IN BUDGET",
           "color": "#2E7D32"
         },
@@ -5428,7 +5899,7 @@
           "color": "#B71C1C"
         },
         {
-          "text": "AUCTION 3 AUG 2026 (7 DAYS — National Online Auction)",
+          "text": "AUCTION WAS 3 AUG 2026 — LISTING NOW REMOVED",
           "color": "#C62828"
         },
         {
@@ -5470,7 +5941,20 @@
       "town": "Ebford",
       "lat": 50.682376,
       "lng": -3.442321,
-      "geocodeSource": "Land East of Exmouth Road, Ebford, Devon, UK"
+      "geocodeSource": "Land East of Exmouth Road, Ebford, Devon, UK",
+      "research": [
+        {
+          "date": "2026-08-03",
+          "question": "Automatic re-check: is this listing still live?",
+          "findings": "The Rightmove listing now returns HTTP 410 (Gone), checked on the morning of its own auction day, 3 August 2026. That is the expected result once an online auction lot closes, so the most likely reading is that the lot went to auction and the page was pulled rather than the listing being withdrawn early. Flagged LIKELY SOLD/WITHDRAWN this sweep; if it is still gone next sweep it will be deleted per the standing cleanup rule. Worth noting alongside this: a separate parcel of land on the same stretch of Exmouth Road between Ebford and Exton came to market on 2 August 2026 at a £30,000 guide via a different agent, which is now tracked separately.",
+          "sources": [
+            {
+              "label": "Rightmove listing (now 410 Gone)",
+              "url": "https://www.rightmove.co.uk/properties/90648726"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "cliffroadbudleigh",
