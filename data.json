@@ -1,9 +1,406 @@
 {
-  "lastUpdated": "2026-08-06",
+  "lastUpdated": "2026-08-10",
   "properties": [
     {
-      "id": "byronwayexmouth",
+      "id": "madeiravillas2",
       "section": "new",
+      "town": "Exmouth",
+      "title": "Madeira Villas, Exmouth (2-bed freehold semi, tenanted at £870pcm)",
+      "price": "£150,000",
+      "agent": "Pennys, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET — WELL UNDER",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "SEMI-DETACHED HOUSE AT FLAT MONEY",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "TENANTED — £870 PCM SITTING TENANT",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY (Residents' Zone D)",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "SMALL COURTYARD GARDEN ONLY",
+          "color": "#616161"
+        }
+      ],
+      "photos": [
+        "MadeiraVillas2_Gallery_1.jpg",
+        "MadeiraVillas2_Gallery_2.jpg",
+        "MadeiraVillas2_Gallery_3.jpg",
+        "MadeiraVillas2_Gallery_4.jpg",
+        "MadeiraVillas2_Gallery_5.jpg",
+        "MadeiraVillas2_Gallery_6.jpg",
+        "MadeiraVillas2_Gallery_7.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.onthemarket.com/details/20099215/",
+      "linkLabel": "onthemarket.com — Madeira Villas, Exmouth",
+      "body": "A red-brick two-bedroom semi-detached house on a corner plot in Madeira Villas, off Exeter Road in central Exmouth, on with Pennys at £150,000 freehold. The ground floor is a single dual-aspect lounge/dining room of 15'8\" x 15'6\" (narrowing to 9'2\") with windows to front and side, running through to a compact 8'0\" x 6'8\" kitchen with a wall-mounted gas boiler and a door out to the rear. Upstairs are two bedrooms — 11'6\" x 8'10\" and 9'3\" x 6'7\" — and a bathroom/WC with bath, basin and WC. Outside is an enclosed courtyard garden with a rear pedestrian gate. Double glazed, gas central heating, EPC C. The key caveat is in the listing's own feature list: there is a sitting tenant paying £870 per calendar month, so this is being marketed as an investment rather than as a vacant home, and vacant possession would need to be negotiated as part of any offer.",
+      "why": "£150,000 for a freehold semi-detached house in Exmouth is the cheapest house — not flat, house — the sweep has turned up in central Exmouth, and it is barely a ten-minute walk from the town centre and Exmouth Community College. At that number it clears Jesse's real £170k target with room to spare, which matters more than the fact that it is a plain 1930s-ish brick semi with no particular character. The two real problems are parking and the tenant. There is no driveway; the corner plot is fenced right up to the pavement and Madeira Villas sits inside Devon County Council's Exmouth Residents Parking Zone D, so it is a permit-and-hope arrangement rather than a space of your own. And the £870pcm tenant means this is priced as a yield play — roughly 7% gross — which is likely why it is this cheap. If Jesse wanted to live in it he would be asking the agent for vacant possession on completion before anything else. Worth putting in front of the brothers precisely because the price is so far below everything else on the page.",
+      "dateAdded": "2026-08-10",
+      "parking": {
+        "status": "onstreet",
+        "note": "No driveway or garage — the corner plot is fenced to the pavement and the listing makes no mention of parking at all. Madeira Villas falls inside Devon County Council's Exmouth Residents Parking Zone D, where on-street bays are restricted 8am–8pm and residents buy an annual permit through Devon's MiPermit system (postcode + house number). That makes a space likely but not guaranteed, and permits do not reserve a specific bay. Photos of the street show cars parked nose-to-tail along the kerb, so competition is real. The nearest off-street alternative for a second car is the Imperial Road / Camperdown long-stay council car parks about ten minutes' walk away."
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "closeToFamily": "yes",
+        "uniqueFeature": null,
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "The cheapest freehold house in Exmouth the search has found — walkable to town and the station, but plain, tenanted at £870pcm, with only a courtyard garden and permit-scheme kerbside parking."
+    },
+    {
+      "id": "dukeofcornwallclose",
+      "section": "new",
+      "town": "Exmouth",
+      "title": "Duke of Cornwall Close, Exmouth (2-bed freehold terrace, allocated space, no chain)",
+      "price": "Guide Price £170,000",
+      "agent": "Pennys, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET — AT JESSE'S £170K TARGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (allocated space close by)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO ONGOING CHAIN",
+          "color": "#1565C0"
+        },
+        {
+          "text": "GENERAL REFURBISHMENT REQUIRED",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "MODERN — NO CHARACTER",
+          "color": "#616161"
+        }
+      ],
+      "photos": [
+        "DukeOfCornwall_Gallery_1.jpg",
+        "DukeOfCornwall_Gallery_2.jpg",
+        "DukeOfCornwall_Gallery_3.jpg",
+        "DukeOfCornwall_Gallery_4.jpg",
+        "DukeOfCornwall_Gallery_5.jpg",
+        "DukeOfCornwall_Gallery_6.jpg",
+        "DukeOfCornwall_Gallery_7.jpg"
+      ],
+      "floorplans": [
+        "DukeOfCornwall_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.onthemarket.com/details/20079690/",
+      "linkLabel": "onthemarket.com — Duke of Cornwall Close, Exmouth",
+      "body": "A two-bedroom freehold terraced house in Duke of Cornwall Close, off Hulham Road on the Brixington side of Exmouth, guided at £170,000 through Pennys with no ongoing chain. Downstairs is a 13'10\" x 12'5\" lounge with the staircase and an understairs recess, opening into a 12'5\" x 8'4\" kitchen/breakfast room with a breakfast bar, a modern Ideal gas boiler, and a door to the rear garden. Upstairs, bedroom one is 9'10\" x 9'3\" with a mirror-fronted built-in wardrobe, bedroom two is 12'8\" x 6'4\" narrowing to 5'1\", and the bathroom has a bath with shower over and a linen cupboard. The rear garden is fully enclosed and laid out for low maintenance with decorative stone and a patio; the front is decorative stone with a path to the door. The agent is explicit that general refurbishment is required. EPC E, last assessed back in 2009 — worth a fresh one.",
+      "why": "This lands exactly on Jesse's real £170,000 target rather than his £300,000 ceiling, and it does the two boring things that usually get lost at that price: it is freehold, and it comes with an allocated parking space. Bassetts Farm Primary is 0.2 miles away and the Brixington precinct is walkable, so it is a properly functional bit of Exmouth. It is also completely characterless — a 1970s-ish estate terrace with stone-chipping gardens — which is the opposite of the thatched-cottage end of this list, and it needs work throughout, so budget for a kitchen, bathroom and probably rewiring on top. The upside of that is obvious: at £170k with refurb money still leaving change against the ceiling, it is one of the few entries where Bro 3's habit of adding the renovation cost to the asking price still ends up looking sensible rather than damning.",
+      "dateAdded": "2026-08-10",
+      "parking": {
+        "status": "has",
+        "note": "The listing states plainly under Outside: \"Located close by is an allocated parking space.\" So a space comes with the house, though it is in a nearby communal bay rather than a driveway at the door — worth asking the agent to point out exactly which bay and how far it is from the front door, and whether the allocation is on the title deeds or an informal estate arrangement."
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "yes",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "closeToFamily": "yes",
+        "uniqueFeature": null,
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "Right on the £170k target, freehold, chain-free and with an allocated space — a genuinely sensible Exmouth buy, let down by needing full refurbishment and having no character whatsoever."
+    },
+    {
+      "id": "parksidedriveexmouth",
+      "section": "new",
+      "town": "Exmouth",
+      "title": "Parkside Drive, Exmouth (2-bed semi-detached bungalow, driveway + garage, renovation project)",
+      "price": "£260,000",
+      "agent": "Fulfords, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "BUNGALOW — ALL ON ONE LEVEL",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "HAS PARKING (driveway + garage)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#1565C0"
+        },
+        {
+          "text": "OFFER OF £240,000 ALREADY RECEIVED",
+          "color": "#C62828"
+        },
+        {
+          "text": "NEEDS FULL MODERNISATION",
+          "color": "#EF6C00"
+        }
+      ],
+      "photos": [
+        "ParksideDrive_Gallery_1.jpg",
+        "ParksideDrive_Gallery_2.jpg",
+        "ParksideDrive_Gallery_3.jpg",
+        "ParksideDrive_Gallery_4.jpg",
+        "ParksideDrive_Gallery_5.jpg",
+        "ParksideDrive_Gallery_6.jpg",
+        "ParksideDrive_Gallery_7.jpg",
+        "ParksideDrive_Gallery_8.jpg",
+        "ParksideDrive_Gallery_9.jpg",
+        "ParksideDrive_Gallery_10.jpg",
+        "ParksideDrive_Gallery_11.jpg",
+        "ParksideDrive_Gallery_12.jpg",
+        "ParksideDrive_Gallery_13.jpg"
+      ],
+      "floorplans": [
+        "ParksideDrive_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.onthemarket.com/details/19491397/",
+      "linkLabel": "onthemarket.com — Parkside Drive, Exmouth",
+      "body": "A two-bedroom semi-detached bungalow on Parkside Drive (EX8 4LD) in the Brixington area of Exmouth, on with Fulfords at £260,000 freehold, council tax band C, with no onward chain. The accommodation is a living room, two double bedrooms, a shower room and a kitchen — all on one level — with driveway parking and a garage outside. The agent is straightforward that it is a renovation project: \"clear scope to modernise throughout and tailor the layout and finishes to suit individual tastes.\" Brixington Precinct is on the doorstep for everyday shopping, with the Salterton Road supermarkets and retail parks a short drive and the town centre, beach and seafront easily reached. Important: Fulfords have published a Section 21 notice on the listing stating they have already received an offer of £240,000, and that any interested party must submit a higher offer in writing to the agent before exchange of contracts — so this one is live and moving, not sitting.",
+      "why": "The bungalow format is the thing here. It is the only new find this sweep that answers the long-term question outright — everything on one level, no stairs to design around later — and it does it while also having a driveway and a garage, which is the workshop/bike space Jesse keeps coming back to. Being chain-free and a blank renovation canvas means the layout can be reworked rather than inherited. Against that: £260,000 is well above Jesse's real £170k target and in the band where Bro 3's \"too expensive for what it is\" reflex fires hardest, especially for a plain post-war bungalow with no character on a Brixington estate a mile and a half back from the sea. And there is already £240,000 on the table with contracts not yet exchanged, so anyone interested is bidding against a live offer rather than starting a conversation. Genuinely useful, not romantic.",
+      "dateAdded": "2026-08-10",
+      "parking": {
+        "status": "has",
+        "note": "Driveway parking plus a garage, both confirmed in the agent's own description of the property. Parkside Drive is a wide, unrestricted residential road on the Brixington estate, so overflow kerbside space for a second vehicle or visitors is not a problem either."
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "yes",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "closeToFamily": "yes",
+        "uniqueFeature": null,
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "A chain-free Exmouth bungalow with driveway, garage and everything on one level — the best long-term-liveability answer this sweep — but characterless, needing full modernisation, and already carrying a £240,000 offer at a £260,000 ask."
+    },
+    {
+      "id": "fulfordwaywoodbury",
+      "section": "new",
+      "town": "Woodbury",
+      "title": "Fulford Way, Woodbury (3-bed mid-terrace, no chain, Woodbury Common on the doorstep)",
+      "price": "£275,000",
+      "agent": "Fulfords, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "WOODBURY — CLOSE TO BROTHER + COMMON",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#1565C0"
+        },
+        {
+          "text": "RECENTLY REDUCED",
+          "color": "#1565C0"
+        },
+        {
+          "text": "PARKING UNKNOWN — \"NO WAITING AT ANY TIME\" ON THIS ROAD",
+          "color": "#C62828"
+        },
+        {
+          "text": "TENURE NOT STATED — ASK AGENT",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "MODERN — LIMITED CHARACTER",
+          "color": "#616161"
+        }
+      ],
+      "photos": [
+        "FulfordWay_Gallery_1.jpg",
+        "FulfordWay_Gallery_2.jpg",
+        "FulfordWay_Gallery_3.jpg",
+        "FulfordWay_Gallery_4.jpg",
+        "FulfordWay_Gallery_5.jpg",
+        "FulfordWay_Gallery_6.jpg",
+        "FulfordWay_Gallery_7.jpg",
+        "FulfordWay_Gallery_8.jpg",
+        "FulfordWay_Gallery_9.jpg",
+        "FulfordWay_Gallery_10.jpg",
+        "FulfordWay_Gallery_11.jpg",
+        "FulfordWay_Gallery_12.jpg",
+        "FulfordWay_Gallery_13.jpg",
+        "FulfordWay_Gallery_14.jpg",
+        "FulfordWay_Gallery_15.jpg",
+        "FulfordWay_Gallery_16.jpg"
+      ],
+      "floorplans": [
+        "FulfordWay_Floorplan_1.jpg"
+      ],
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "link": "https://www.onthemarket.com/details/19948518/",
+      "linkLabel": "onthemarket.com — Fulford Way, Woodbury",
+      "body": "A three-bedroom mid-terrace house on Fulford Way in Woodbury village, on with Fulfords at £275,000 (recently reduced) with no onward chain, council tax band C, EPC C. Entrance hall into a bright living room with understairs storage, a dining area to the rear, and a kitchen off it. Upstairs are two double bedrooms plus a versatile third that would work as a nursery, office or single, and a modern family bathroom. The rear garden is small and low-maintenance. Woodbury village centre — store, primary school, pubs and cafés — is a couple of minutes away, Woodbury Common's walking, cycling and riding routes start on the edge of the village, Exmouth and Budleigh Salterton are both a short drive, and Exeter is about eight miles. Note Fulfords charge the buyer a non-refundable AML fee once an offer is accepted. Tenure is listed as \"ask agent\" rather than stated.",
+      "why": "Location is the whole case for this one. Woodbury puts Jesse in the same village as one brother and drops him straight onto Woodbury Common for the mountain biking, with the coast fifteen minutes down the hill — it is the strongest \"close to family\" tick of anything new this sweep, and three bedrooms plus two bathrooms is more usable space than most of the cottages on this page. The problems are parking and price. The listing does not mention parking at all, the cover photo shows a pedestrian path and lawn rather than a driveway, and Devon County Council confirmed a \"No Waiting At Any Time\" order along Fulford Way and Globe Hill in July 2024 — so kerbside parking outside the house is not legal, and where residents actually put cars needs establishing before anything else. On top of that £275,000 for a plain modern terrace, in a village where Bro 3 already marked down Globe Hill at £6/10 for being \"a bit expensive for being away from the station and all\", is exactly the shape of listing he tends to score in the fours.",
+      "dateAdded": "2026-08-10",
+      "parking": {
+        "status": "unknown",
+        "note": "The listing does not mention parking anywhere, and the exterior photo shows a footpath and lawn frontage with no driveway. Worse, Devon County Council's July 2024 traffic order for East Devon confirmed \"No Waiting At Any Time\" on Fulford Way and Globe Hill in Woodbury — so parking directly outside is prohibited. Woodbury has no residents' permit scheme to fall back on, and the village's public parking is limited to a small free car park by the village hall / Woodbury Village Stores plus informal spaces near the church, none of it intended as overnight residents' parking. Estates of this era in Woodbury often have a shared parking court set back from the road, which is the most likely answer here, but nothing in the listing or photos confirms one. Treat this as the first question for the agent: is a parking space or court bay included, and is it on the title?"
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "no",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "yes",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "closeToFamily": "yes",
+        "uniqueFeature": null
+      },
+      "aiRating": 4,
+      "aiTake": "Right village — brother nearby, Woodbury Common on the doorstep — and three beds with two bathrooms, but plain, £275,000, tenure unstated, and no parking mentioned on a road that now carries a No Waiting At Any Time order."
+    },
+    {
+      "id": "meadowroadbudleigh",
+      "section": "new",
+      "town": "Budleigh Salterton",
+      "title": "Meadow Road, Budleigh Salterton (ground-floor 2-bed flat with its own private garden — AUCTION)",
+      "price": "Guide Price from £155,000 (modern method of auction)",
+      "agent": "Robert Williams / iamsold",
+      "flags": [
+        {
+          "text": "⚠ DEVON OCCUPANCY RESTRICTION — 3-YEAR LOCAL CONNECTION REQUIRED",
+          "color": "#C62828"
+        },
+        {
+          "text": "IN BUDGET — WELL UNDER",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GROUND FLOOR — ALL ON ONE LEVEL",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "OWN PRIVATE ENCLOSED REAR GARDEN + STORE",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "MODERN METHOD OF AUCTION — RESERVATION FEE ON TOP",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "LEASEHOLD — ~99 YRS LEFT, £10 GROUND RENT, £224/YR SERVICE CHARGE",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#1565C0"
+        }
+      ],
+      "photos": [
+        "MeadowRoadBudleigh_Gallery_1.jpg",
+        "MeadowRoadBudleigh_Gallery_2.jpg",
+        "MeadowRoadBudleigh_Gallery_3.jpg",
+        "MeadowRoadBudleigh_Gallery_4.jpg",
+        "MeadowRoadBudleigh_Gallery_5.jpg",
+        "MeadowRoadBudleigh_Gallery_6.jpg",
+        "MeadowRoadBudleigh_Gallery_7.jpg",
+        "MeadowRoadBudleigh_Gallery_8.jpg",
+        "MeadowRoadBudleigh_Gallery_9.jpg",
+        "MeadowRoadBudleigh_Gallery_10.jpg",
+        "MeadowRoadBudleigh_Gallery_11.jpg"
+      ],
+      "floorplans": [
+        "MeadowRoadBudleigh_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.onthemarket.com/details/15880645/",
+      "linkLabel": "onthemarket.com — Meadow Road, Budleigh Salterton",
+      "body": "A purpose-built ground-floor two-double-bedroom flat on Meadow Road, about half a mile from Budleigh Salterton's town centre and seafront, offered for sale by modern method of auction through iamsold with a guide from £155,000 plus a reservation fee (quote reference RB0167). Accommodation is all on one level: hall, a bright lounge opening into a small conservatory with underfloor heating that looks over the garden, a dual-aspect fitted kitchen, two double bedrooms (10'6\" x 8'6\" and 9'10\" x 8'6\") and a modern white bathroom suite. The property has been recently redecorated and well maintained, with a new Worcester Bosch gas combi boiler and new uPVC double glazing, soffits, fascias and guttering. Outside it has its own good-sized fully enclosed private rear garden, mainly lawn, with a gated side entrance and a lockable private garden store. Council tax band A. Leasehold, running from 19/04/2000 to 11/04/2125 — around 99 years remaining — with ground rent of £10 a year and a service charge of £224 a year. Vacant possession, no onward chain. Critically, a Devon Occupancy Restriction applies: the buyer must have lived or worked in Devon (or a combination of the two) for three years.",
+      "why": "On paper this is one of the better-value things on the whole page. £155,000 buys a genuinely ground-floor two-double-bedroom home half a mile from the beach in Budleigh, with its own private enclosed garden and a lockable store — not a shared communal lawn, an actual garden — plus a nearly-new boiler and windows, so nothing needs spending on day one. It answers the long-term stairs question completely, and the lease is a comfortable 99 years with a trivial £10 ground rent and a £224 service charge. Two things need eyes on before getting excited. First, the Devon Occupancy Restriction: the buyer must have lived or worked in Devon for three years, which is a real gate for someone moving in from outside the county and needs checking against Jesse's own circumstances before any bid — it is also the likeliest reason the guide price is this low. Second, it is a modern-method auction, so there is a non-refundable reservation fee on top of the guide and a fixed timetable once reserved. Parking is kerbside only. Even with all that, a ground-floor flat with a private garden in Budleigh at £155k earns its place on the list.",
+      "dateAdded": "2026-08-10",
+      "parking": {
+        "status": "onstreet",
+        "note": "The agent's own notes say simply \"On-road parking\" — there is no allocated bay, driveway or garage. The good news is that Budleigh Salterton has no residents' permit scheme, and Meadow Road is a quiet unrestricted residential road about half a mile back from the seafront, so kerbside space outside or near the flat is realistic year-round rather than only out of season. The flat also has a gated side entrance and a lockable garden store, which handles bike storage without needing a garage. For a second vehicle or visitors in high summer, East Devon District Council's Lime Kiln, Rolle Mews and Brook Road car parks are all in the town centre roughly ten minutes' walk away, with annual resident season tickets available."
+      },
+      "checklist": {
+        "tenure": "leasehold",
+        "leaseYears": 99,
+        "ocean": "yes",
+        "trainStation": "no",
+        "poolSwimTeam": "no",
+        "private": "partial",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "closeToFamily": "yes",
+        "uniqueFeature": "A Devon Occupancy Restriction on the title — the buyer must have lived or worked in Devon for three years, which is unusual outside new-build local-needs housing and is almost certainly what is holding the guide price down."
+      },
+      "aiRating": 6,
+      "aiTake": "Cheap, chain-free, genuinely ground-floor and with its own private garden and store half a mile from Budleigh beach — held back by a three-year Devon residency restriction, auction fees, kerbside-only parking and a 99-year lease."
+    },
+    {
+      "id": "byronwayexmouth",
+      "section": "still",
       "town": "Exmouth",
       "title": "Byron Way, Exmouth (2-bed terrace, private driveway + garage, no chain)",
       "price": "£239,950",
@@ -78,7 +475,7 @@
     },
     {
       "id": "cranfordavenue3",
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "title": "Cranford Avenue, Exmouth (ground-floor 2-bed flat with garage — short lease)",
       "price": "£150,000",
@@ -153,7 +550,7 @@
     },
     {
       "id": "meadowviewroadexmouth",
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "title": "Meadow View Road, Exmouth (modernised 3-bed end terrace, integrated garage)",
       "price": "£270,000",
@@ -1146,9 +1543,13 @@
       "section": "still",
       "town": "Exmouth",
       "title": "Capel Lane, Exmouth (tucked-away bungalow)",
-      "price": "£269,950",
+      "price": "£250,000",
       "agent": "Pennys Estate Agents, Exmouth",
       "flags": [
+        {
+          "text": "PRICE REDUCED (Aug 2026)",
+          "color": "#1565C0"
+        },
         {
           "text": "IN BUDGET",
           "color": "#2E7D32"
@@ -1205,8 +1606,21 @@
         "uniqueFeature": null,
         "tenure": "freehold"
       },
-      "aiRating": 6,
-      "aiTake": "A chain-free bungalow with a garage, big mature gardens and a genuinely private tucked-away spot on the Woodbury-facing edge of Exmouth — already fully ground-floor for the long term, but conventional in character and dear at £269,950 next to the cheaper bungalows already on the list."
+      "aiRating": 7,
+      "aiTake": "A chain-free bungalow with a garage, big mature gardens and a genuinely private tucked-away spot on the Woodbury-facing edge of Exmouth — already fully ground-floor for the long term, but conventional in character and dear at £269,950 next to the cheaper bungalows already on the list.",
+      "research": [
+        {
+          "date": "2026-08-10",
+          "question": "Routine sweep re-check: is this still listed, and has the price moved?",
+          "findings": "Still live and confirmed on the market this sweep, but the asking price has come down from £269,950 to £250,000 — a £19,950 reduction. That moves it out of the £250k–£300k band and onto the £250,000 line exactly, which lifts its rating by a point under the budget weighting. Worth watching for a further drop given it has now been reduced once.",
+          "sources": [
+            {
+              "label": "onthemarket.com — Capel Lane, Exmouth",
+              "url": "https://www.onthemarket.com/details/19730093/"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "rollestreetexmouth",
@@ -3519,9 +3933,13 @@
       "id": "flexton",
       "section": "still",
       "title": "The Flexton, Ottery St Mary",
-      "price": "Guide Price £220,000",
+      "price": "Guide Price £215,000",
       "agent": "Hall & Scott, Ottery St Mary",
       "flags": [
+        {
+          "text": "PRICE REDUCED (Aug 2026)",
+          "color": "#1565C0"
+        },
         {
           "text": "IN BUDGET",
           "color": "#2E7D32"
@@ -3573,7 +3991,20 @@
       "town": "Ottery St Mary",
       "lat": 50.752308,
       "lng": -3.278545,
-      "geocodeSource": "The Flexton, Ottery St Mary, Devon, UK"
+      "geocodeSource": "The Flexton, Ottery St Mary, Devon, UK",
+      "research": [
+        {
+          "date": "2026-08-10",
+          "question": "Routine sweep re-check: is this still listed, and has the price moved?",
+          "findings": "Still live with Hall & Scott and confirmed on the market this sweep. The guide has eased slightly from £220,000 to £215,000 — a modest £5,000 trim rather than a real repricing, so no change to the overall assessment.",
+          "sources": [
+            {
+              "label": "hallandscott.co.uk — HSOTT_708139",
+              "url": "https://www.hallandscott.co.uk/details/?id=HSOTT_708139"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "beaconflat",
@@ -4304,9 +4735,13 @@
       "id": "longbrooklympstone",
       "section": "still",
       "title": "Longbrook Lane, Lympstone (fixer-upper)",
-      "price": "Guide Price £225,000 (reduced 21/07/2026)",
+      "price": "£200,000",
       "agent": "Rightmove listing",
       "flags": [
+        {
+          "text": "PRICE REDUCED (Aug 2026)",
+          "color": "#1565C0"
+        },
         {
           "text": "IN BUDGET",
           "color": "#2E7D32"
@@ -4358,7 +4793,7 @@
         "uniqueFeature": null,
         "closeToFamily": "partial"
       },
-      "aiRating": 5,
+      "aiRating": 6,
       "aiTake": "Cheapest Lympstone option this sweep and a genuine fixer-upper opportunity in the best-located village on the list, but needs work throughout and parking is unconfirmed.",
       "bedrooms": 2,
       "parking": {
@@ -4371,7 +4806,20 @@
       "town": "Lympstone",
       "lat": 50.645463,
       "lng": -3.420866,
-      "geocodeSource": "Longbrook Lane, Lympstone, Devon, UK"
+      "geocodeSource": "Longbrook Lane, Lympstone, Devon, UK",
+      "research": [
+        {
+          "date": "2026-08-10",
+          "question": "Routine sweep re-check: is this still listed, and has the price moved?",
+          "findings": "Still live and confirmed on the market this sweep, and the price has come down again — from a guide of £225,000 (itself already reduced on 21/07/2026) to £200,000, a further £25,000 off. That is a cumulative reduction of real size on a Lympstone fixer-upper and pulls it into the £170k–£200k band, lifting its rating by a point. A property being cut twice in three weeks usually means either limited interest or a motivated seller — both are useful to know before making an offer.",
+          "sources": [
+            {
+              "label": "rightmove.co.uk/properties/90454254",
+              "url": "https://www.rightmove.co.uk/properties/90454254"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "allsaintseastbudleigh",
