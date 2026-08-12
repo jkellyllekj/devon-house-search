@@ -1,9 +1,447 @@
 {
-  "lastUpdated": "2026-08-10",
+  "lastUpdated": "2026-08-12",
   "properties": [
     {
-      "id": "madeiravillas2",
+      "id": "elwynroadexmouth",
       "section": "new",
+      "town": "Exmouth",
+      "title": "Elwyn Road, Exmouth (ground-floor 2-bed, both en-suite, gated allocated parking)",
+      "price": "Guide Price £280,000 (reduced 11/08/2026)",
+      "agent": "Your Move, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "PRICE REDUCED (11/08/2026)",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "GROUND FLOOR — ALL ON ONE LEVEL",
+          "color": "#1565C0"
+        },
+        {
+          "text": "HAS PARKING (allocated, secure gated residents’ area)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "BOTH BEDROOMS EN-SUITE + CLOAKROOM",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO ONGOING CHAIN",
+          "color": "#1565C0"
+        },
+        {
+          "text": "SHARE OF FREEHOLD (125-yr lease from 2011)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "SERVICE CHARGE ~£1,893/YR",
+          "color": "#EF6C00"
+        }
+      ],
+      "photos": [
+        "ElwynRoad_Gallery_1.jpg",
+        "ElwynRoad_Gallery_2.jpg",
+        "ElwynRoad_Gallery_3.jpg",
+        "ElwynRoad_Gallery_4.jpg",
+        "ElwynRoad_Gallery_5.jpg",
+        "ElwynRoad_Gallery_6.jpg",
+        "ElwynRoad_Gallery_7.jpg",
+        "ElwynRoad_Gallery_8.jpg",
+        "ElwynRoad_Gallery_9.jpg",
+        "ElwynRoad_Gallery_10.jpg",
+        "ElwynRoad_Gallery_11.jpg",
+        "ElwynRoad_Gallery_12.jpg",
+        "ElwynRoad_Gallery_13.jpg",
+        "ElwynRoad_Gallery_14.jpg",
+        "ElwynRoad_Gallery_15.jpg",
+        "ElwynRoad_Gallery_16.jpg",
+        "ElwynRoad_Gallery_17.jpg",
+        "ElwynRoad_Gallery_18.jpg",
+        "ElwynRoad_Gallery_19.jpg",
+        "ElwynRoad_Gallery_20.jpg"
+      ],
+      "floorplans": [
+        "ElwynRoad_Floorplan_1.jpg",
+        "ElwynRoad_Floorplan_2.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "link": "https://www.rightmove.co.uk/properties/175012589",
+      "linkLabel": "rightmove.co.uk — Elwyn Road, Exmouth",
+      "body": "A purpose-built ground-floor two-bedroom apartment in the \"Avenues\" area of Exmouth, guide £280,000–£300,000 through Your Move, reduced on 11/08/2026 and described as a motivated seller with no ongoing chain. Entry is via a security door with remote unlocking into a hallway with ample storage and a utility cupboard plumbed for a washing machine, with space for a tumble dryer and the manifold for the underfloor heating. The main room is a large open-plan lounge/dining area with a modern integrated kitchen and French doors opening onto its own planted patio. Both bedrooms are doubles and both have their own white en-suite shower rooms, and there is a further cloakroom/WC. Outside are maintained communal gardens, a communal bin store and a secure shared shed with an individual lockable unit per flat. Parking is an allocated space inside a secure residents’ area behind remote-controlled gates onto Elwyn Road. Tenure is share of freehold on a 125-year lease running from 24 February 2011 (about 110 years remaining); the service charge is 6.6% of the annual budget, currently around £157 a month or £1,892.81 a year, covering buildings insurance and all communal areas. Exmouth station is 0.84 miles away.",
+      "why": "Of everything on this list, this is one of the very few that answers the \"what if stairs stop being an option\" question outright rather than theoretically — it is genuinely ground floor, level throughout, with its own patio via French doors and a gated allocated parking space a few steps away. Two double bedrooms each with their own en-suite is unusual at this price and makes it work properly for guests or family staying. The Avenues is a good part of Exmouth, under a mile from the station and walkable to the seafront. The reservations are the money. £280,000 is not cheap for a flat, the £1,893 annual service charge is a real ongoing cost on top, and it is a modern purpose-built block with no character whatsoever — the opposite end of the spectrum from the thatched cottages Jesse actually gravitates towards. The share of freehold and the 110-year lease are both reassuring, and the seller being motivated after a reduction is worth testing with an offer.",
+      "dateAdded": "2026-08-12",
+      "parking": {
+        "status": "has",
+        "note": "An allocated space within a secure residents’ parking area, accessed through remote-controlled gates onto Elwyn Road — about as good as parking gets on a flat, since it is both allocated and gated rather than an open communal free-for-all. There is also a secure shared shed with an individual lockable storage unit for this flat, which would take bikes."
+      },
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "partial",
+        "groundFloorLongTerm": "yes",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "partial",
+        "closeToFamily": "yes",
+        "uniqueFeature": "Both bedrooms have their own en-suite shower room, plus a separate cloakroom — three WCs in a two-bed flat",
+        "tenure": "leasehold",
+        "leaseYears": 110
+      },
+      "aiRating": 5,
+      "aiTake": "The most genuinely step-free option on the list — ground floor, own patio, gated allocated parking, two en-suites and share of freehold — but £280,000 with a £1,893 service charge for a modern block with no character is a lot of money for very little soul."
+    },
+    {
+      "id": "vansittartdriveexmouth2",
+      "section": "new",
+      "town": "Exmouth",
+      "title": "Vansittart Drive, Exmouth (2-bed end terrace, driveway, garden room, no chain)",
+      "price": "Guide Price £255,000",
+      "agent": "Links Estate Agents, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (brick paved driveway)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GARDEN ROOM / HOME OFFICE",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "GROUND FLOOR CLOAKROOM",
+          "color": "#1565C0"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#1565C0"
+        },
+        {
+          "text": "MODERN — LIMITED CHARACTER",
+          "color": "#616161"
+        }
+      ],
+      "photos": [
+        "VansittartDrive2_Gallery_1.jpg",
+        "VansittartDrive2_Gallery_2.jpg",
+        "VansittartDrive2_Gallery_3.jpg",
+        "VansittartDrive2_Gallery_4.jpg",
+        "VansittartDrive2_Gallery_5.jpg",
+        "VansittartDrive2_Gallery_6.jpg",
+        "VansittartDrive2_Gallery_7.jpg",
+        "VansittartDrive2_Gallery_8.jpg",
+        "VansittartDrive2_Gallery_9.jpg",
+        "VansittartDrive2_Gallery_10.jpg",
+        "VansittartDrive2_Gallery_11.jpg",
+        "VansittartDrive2_Gallery_12.jpg",
+        "VansittartDrive2_Gallery_13.jpg",
+        "VansittartDrive2_Gallery_14.jpg"
+      ],
+      "floorplans": [
+        "VansittartDrive2_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.rightmove.co.uk/properties/91869108",
+      "linkLabel": "rightmove.co.uk — Vansittart Drive, Exmouth",
+      "body": "A two-double-bedroom end-of-terrace house on Vansittart Drive, guide £255,000 through Links Estate Agents, added on 11/08/2026 and the newest Exmouth listing in this sweep. Downstairs is a modern fitted cloakroom, a living room and an impressive kitchen/breakfast room with a granite breakfast bar; upstairs are two good-sized doubles, the principal with a large built-in wardrobe, plus a modern bathroom. Gas central heating and uPVC double glazing throughout. Outside there is a brick paved driveway giving off-road parking, an enclosed low-maintenance rear garden, a sun room/conservatory and — the feature Links push hardest — a garden room they suggest would work as a home office or hobby room. Freehold, council tax band B, no onward chain. Exmouth station is 1.6 miles away. This is a different property from the £249,950 Vansittart Drive house already on the list, and from the £290,000 one currently marketed by Your Move on the same road.",
+      "why": "The garden room is the reason to look twice. Jesse has consistently rated separate, finished outbuildings — workshop, studio, bike space — as a genuine plus rather than a nice-to-have, and Bro 3 said the same explicitly about the sheds at Haynes Cottages. Here you get one, plus a sun room, plus a driveway, plus a downstairs cloakroom that makes a future ground-floor adaptation considerably easier, all freehold and chain-free at £255,000. Against that: it is an unremarkable modern end-terrace with no character at all, in a residential pocket a mile and a half back from both the station and the seafront, and £255,000 is £85,000 above Jesse’s real target. It is the practical option rather than the interesting one — but it does the practical things properly.",
+      "dateAdded": "2026-08-12",
+      "parking": {
+        "status": "has",
+        "note": "A brick paved driveway to the front provides off-road parking, described by Links as part of the property rather than shared. Vansittart Drive is a wide residential road with unrestricted kerbside space as well, so a second vehicle or visitors are not a problem here."
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "partial",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "yes",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "closeToFamily": "yes",
+        "uniqueFeature": "Detached garden room set up as a home office/hobby room, plus a separate sun room — two extra usable spaces beyond the house itself",
+        "tenure": "freehold"
+      },
+      "aiRating": 5,
+      "aiTake": "Driveway, garden room, sun room and a downstairs cloakroom, freehold and chain-free — a lot of practical boxes ticked for £255,000, with the honest caveat that it is a plain modern terrace with no character and sits well above the £170k target."
+    },
+    {
+      "id": "egremontroadexmouth",
+      "section": "new",
+      "town": "Exmouth",
+      "title": "Egremont Road, Exmouth (3-bed period terrace, 200 yards from the station, no chain)",
+      "price": "Guide Price £265,000",
+      "agent": "Bradleys, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "PERIOD CHARACTER (high ceilings, feature fireplace)",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "0.2 MILES FROM EXMOUTH STATION",
+          "color": "#1565C0"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#1565C0"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY (residents’ permit zone)",
+          "color": "#EF6C00"
+        }
+      ],
+      "photos": [
+        "EgremontRoad_Gallery_1.jpg",
+        "EgremontRoad_Gallery_2.jpg",
+        "EgremontRoad_Gallery_3.jpg",
+        "EgremontRoad_Gallery_4.jpg",
+        "EgremontRoad_Gallery_5.jpg",
+        "EgremontRoad_Gallery_6.jpg",
+        "EgremontRoad_Gallery_7.jpg",
+        "EgremontRoad_Gallery_8.jpg",
+        "EgremontRoad_Gallery_9.jpg",
+        "EgremontRoad_Gallery_10.jpg",
+        "EgremontRoad_Gallery_11.jpg",
+        "EgremontRoad_Gallery_12.jpg",
+        "EgremontRoad_Gallery_13.jpg",
+        "EgremontRoad_Gallery_14.jpg",
+        "EgremontRoad_Gallery_15.jpg",
+        "EgremontRoad_Gallery_16.jpg",
+        "EgremontRoad_Gallery_17.jpg",
+        "EgremontRoad_Gallery_18.jpg",
+        "EgremontRoad_Gallery_19.jpg"
+      ],
+      "floorplans": [
+        "EgremontRoad_Floorplan_1.jpg"
+      ],
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "link": "https://www.rightmove.co.uk/properties/91765623",
+      "linkLabel": "rightmove.co.uk — Egremont Road, Exmouth",
+      "body": "A three-bedroom freehold terraced house on Egremont Road, guide £265,000 through Bradleys, added on 07/08/2026 and offered with no onward chain. The floorplan totals 896 sq ft over two floors, split almost exactly evenly: downstairs a lounge (11’8\" x 10’8\") with a feature fireplace, a separate dining room (13’1\" x 11’8\") and a 12’7\" x 8’0\" kitchen at the back; upstairs two doubles (12’5\" x 10’8\" and 13’1\" x 9’5\"), a small third bedroom (8’0\" x 6’2\") and the bathroom. Bradleys highlight the high ceilings and the feature fireplace as the character draw. Outside is an enclosed rear garden with a patio, lawn, shed and rear access. What stands out on the map is the location: Exmouth station is 0.22 miles away, which is about a four-minute walk, and the seafront and town centre are a similar distance in the other direction.",
+      "why": "Three bedrooms, freehold, period features and a garden, four minutes from the train station and about the same from the town centre, for £265,000 — on paper this is one of the better-value Exmouth houses to appear in a while, and it is the closest to a station of anything currently on the list. The high ceilings and fireplace give it more character than the usual Exmouth terrace, and the third bedroom, small as it is, makes it genuinely flexible. The problem is parking. Bradleys do not mention any, which on a road of this type means kerbside only, and Egremont Road sits inside the Exmouth residents’ permit zone — so a permit is likely available but a guaranteed space is not. Parking is a hard requirement for an ordinary house in this search, and this is an ordinary house. Weigh the station and the price against the near-certainty of circling the block on a summer evening.",
+      "dateAdded": "2026-08-12",
+      "parking": {
+        "status": "onstreet",
+        "note": "No off-road parking is mentioned anywhere on the listing, so this is kerbside only. The useful part is that Egremont Road falls inside the Exmouth residents’ parking permit scheme — Devon County Council approved it after consultation, and Egremont Road is named within the \"colonies\" area (Zone A), one of five Exmouth zones with resident, visitor, essential visitor, business, trade and blue badge permit types. A resident permit therefore gives priority to park in the immediate area, which is a real improvement on unrestricted free-for-all streets, but it is not a reserved bay and it is not a guaranteed space — demand near the station is high. Check the current permit cost and the household allocation limit with Devon County Council, and note that the rear access shown on the floorplan is pedestrian, not vehicular."
+      },
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "partial",
+        "character": "partial",
+        "garden": "yes",
+        "garageWorkspace": "partial",
+        "closeToFamily": "yes",
+        "uniqueFeature": null,
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "A genuinely well-located three-bed freehold with period features, a garden and the station four minutes away at a fair price — held back only by having no parking at all beyond a residents’ permit."
+    },
+    {
+      "id": "greenwaywoodbury2",
+      "section": "new",
+      "town": "Woodbury",
+      "title": "Greenway, Woodbury (2-bed semi, freehold, shared driveway, no chain)",
+      "price": "£300,000",
+      "agent": "Bradleys, Exmouth",
+      "flags": [
+        {
+          "text": "IN BUDGET (AT CEILING)",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "WOODBURY — CLOSE TO BROTHER + COMMON",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#1565C0"
+        },
+        {
+          "text": "HAS PARKING (shared driveway)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "MODERN — LIMITED CHARACTER",
+          "color": "#616161"
+        }
+      ],
+      "photos": [
+        "GreenwayWoodbury2_Gallery_1.jpg",
+        "GreenwayWoodbury2_Gallery_2.jpg",
+        "GreenwayWoodbury2_Gallery_3.jpg",
+        "GreenwayWoodbury2_Gallery_4.jpg",
+        "GreenwayWoodbury2_Gallery_5.jpg",
+        "GreenwayWoodbury2_Gallery_6.jpg",
+        "GreenwayWoodbury2_Gallery_7.jpg",
+        "GreenwayWoodbury2_Gallery_8.jpg",
+        "GreenwayWoodbury2_Gallery_9.jpg",
+        "GreenwayWoodbury2_Gallery_10.jpg",
+        "GreenwayWoodbury2_Gallery_11.jpg",
+        "GreenwayWoodbury2_Gallery_12.jpg",
+        "GreenwayWoodbury2_Gallery_13.jpg",
+        "GreenwayWoodbury2_Gallery_14.jpg",
+        "GreenwayWoodbury2_Gallery_15.jpg",
+        "GreenwayWoodbury2_Gallery_16.jpg",
+        "GreenwayWoodbury2_Gallery_17.jpg"
+      ],
+      "floorplans": [
+        "GreenwayWoodbury2_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.rightmove.co.uk/properties/91791267",
+      "linkLabel": "rightmove.co.uk — Greenway, Woodbury",
+      "body": "A two-bedroom semi-detached house on Greenway in the middle of Woodbury, freehold at £300,000 through Bradleys and added on 08/08/2026. Bradleys describe it as immaculately presented: a spacious living/dining room with French doors onto the garden, a modern kitchen, two double bedrooms and a contemporary shower room. Outside is a private decked garden, useful storage, and shared driveway parking. Offered with no onward chain. Council tax band C. The nearest stations are Exton (2.0 miles) and Lympstone Commando (2.0 miles). This is the fourth Greenway property to come through the search — the others are the £265,000 cob cottage, the £265,000 semi and the Grade II listed one reduced to £275,000 — so it is worth comparing all four side by side before deciding anything.",
+      "why": "Woodbury keeps earning its place in this search: the brother is in the village, Woodbury Common and its mountain bike trails are effectively on the doorstep, and Exmouth is a ten-minute drive. This one is freehold, chain-free, has genuine off-road parking and is turnkey rather than a project, which is a rarer combination than it sounds at this end of the market. The catch is the price. At £300,000 it lands exactly on the ceiling and £130,000 above Jesse’s actual target, for a two-bedroom house with no particular character — a modern, well-presented semi rather than anything unusual. Bro 3’s most consistent complaint across this whole list is \"too expensive for what it is\", and a plain two-bed at the top of budget is squarely in the path of it. The decked garden and the village position are the arguments in its favour; the price is the argument against.",
+      "dateAdded": "2026-08-12",
+      "parking": {
+        "status": "has",
+        "note": "Shared driveway parking is included in the sale. Worth clarifying with Bradleys how many spaces it gives in practice and whether they are allocated or first-come — \"shared driveway\" on a Woodbury semi usually means one space each, but the arrangement is worth confirming in writing, and Greenway itself is a narrow village road with limited on-street overflow."
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "partial",
+        "poolSwimTeam": "partial",
+        "private": "partial",
+        "groundFloorLongTerm": "adaptable",
+        "mtbTrails": "yes",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "closeToFamily": "yes",
+        "uniqueFeature": null,
+        "tenure": "freehold"
+      },
+      "aiRating": 4,
+      "aiTake": "Freehold, chain-free and parked, in the one village that scores best on family and mountain bike trails — but a plain modern two-bed sitting right on the £300k ceiling, which is a lot of money for what is being offered."
+    },
+    {
+      "id": "highstreetbudleighflat",
+      "section": "new",
+      "town": "Budleigh Salterton",
+      "title": "High Street, Budleigh Salterton (2-bed flat, chain free, minutes from the beach)",
+      "price": "£175,000",
+      "agent": "Purplebricks, covering Exeter",
+      "flags": [
+        {
+          "text": "IN BUDGET — WELL UNDER",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "CHAIN FREE",
+          "color": "#1565C0"
+        },
+        {
+          "text": "ALL ON ONE LEVEL (57.5 sq m)",
+          "color": "#1565C0"
+        },
+        {
+          "text": "A FEW MINUTES’ WALK TO THE BEACH",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "LEASEHOLD — ~105 YRS LEFT (lease ends 28/09/2130)",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "FLOOR LEVEL NOT STATED — ASK AGENT",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO PARKING",
+          "color": "#B71C1C"
+        }
+      ],
+      "photos": [
+        "HighStBudleighFlat_Gallery_1.jpg",
+        "HighStBudleighFlat_Gallery_2.jpg",
+        "HighStBudleighFlat_Gallery_3.jpg",
+        "HighStBudleighFlat_Gallery_4.jpg",
+        "HighStBudleighFlat_Gallery_5.jpg",
+        "HighStBudleighFlat_Gallery_6.jpg",
+        "HighStBudleighFlat_Gallery_7.jpg",
+        "HighStBudleighFlat_Gallery_8.jpg",
+        "HighStBudleighFlat_Gallery_9.jpg",
+        "HighStBudleighFlat_Gallery_10.jpg",
+        "HighStBudleighFlat_Gallery_11.jpg",
+        "HighStBudleighFlat_Gallery_12.jpg",
+        "HighStBudleighFlat_Gallery_13.jpg",
+        "HighStBudleighFlat_Gallery_14.jpg",
+        "HighStBudleighFlat_Gallery_15.jpg",
+        "HighStBudleighFlat_Gallery_16.jpg",
+        "HighStBudleighFlat_Gallery_17.jpg",
+        "HighStBudleighFlat_Gallery_18.jpg",
+        "HighStBudleighFlat_Gallery_19.jpg"
+      ],
+      "floorplans": [
+        "HighStBudleighFlat_Floorplan_1.jpg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.rightmove.co.uk/properties/91807293",
+      "linkLabel": "rightmove.co.uk — High Street, Budleigh Salterton",
+      "body": "A two-bedroom apartment right on Budleigh Salterton High Street, listed chain-free at £175,000 through Purplebricks and added on 08/08/2026. The floorplan runs to 57.5 sq m (619 sq ft) on a single level: a hall with a useful entrance storage cupboard, a separate living room (14’8\" x 9’2\"), a 15’1\" x 8’2\" kitchen, two bedrooms (14’8\" x 9’0\" and 10’10\" x 8’1\") and a bathroom positioned between them. There are no stairs anywhere inside the flat itself. Tenure is leasehold with the lease running to 28/09/2130 — about 105 years remaining — and Rightmove reports no ground rent and no service charge review period, with the actual service charge figure not published on the listing. Council tax band B. What the listing does not say anywhere, in the description or the key features, is which floor the flat is on, and the floorplan carries no \"Ground Floor\" label. That matters a lot here, so it is the first question for the agent.",
+      "why": "This is one of the cheapest ways into Budleigh Salterton town centre that has appeared in months, and at £175,000 it sits close to Jesse’s real £170k target rather than the £300k ceiling. Everything is on one level, which is exactly the long-term shape he has said he wants, and the High Street position puts the pebble beach, the Jurassic Coast path and the whole run of independent shops within a few minutes on foot. It is also close to the Otterton brother. The two problems are real, though. There is no parking at all — Budleigh’s High Street has only limited, restricted on-street bays, so this would mean paying for a car park permit indefinitely. And the listing never states which floor it is on, which, given the single-level floorplan is otherwise ideal for the no-stairs test, is the difference between a genuinely accessible flat and one reached by two flights of communal stairs. Worth a phone call before anything else.",
+      "dateAdded": "2026-08-12",
+      "parking": {
+        "status": "none",
+        "note": "No parking of any kind is included and the High Street itself has only limited, time-restricted on-street bays — not a realistic place to keep a car. The practical answer in Budleigh is a council car park permit: East Devon District Council sells permits for its designated car parks, and Rolle Mews (7 Fore Street, with EV charging) and the Station Road car parks are the closest to this address, both a few minutes’ walk. Lower Station Road is a short-stay car park with the use restriction lifted from 1 October to 31 March. Budget for an annual permit as a standing cost, and check with EDDC which of the Budleigh car parks currently allow all-day resident permit parking before committing — the short-stay ones are not a substitute for a driveway."
+      },
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "no",
+        "poolSwimTeam": "partial",
+        "private": "no",
+        "groundFloorLongTerm": null,
+        "mtbTrails": "partial",
+        "character": "partial",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "closeToFamily": "yes",
+        "uniqueFeature": null,
+        "tenure": "leasehold",
+        "leaseYears": 105
+      },
+      "aiRating": 5,
+      "aiTake": "Cheap for central Budleigh, chain-free, and entirely on one level — but no parking, no garden, no outside space at all, and the listing never says which floor it is on, which undercuts the one thing that would otherwise make it stand out."
+    },
+    {
+      "id": "madeiravillas2",
+      "section": "still",
       "town": "Exmouth",
       "title": "Madeira Villas, Exmouth (2-bed freehold semi, tenanted at £870pcm)",
       "price": "£150,000",
@@ -73,7 +511,7 @@
     },
     {
       "id": "dukeofcornwallclose",
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "title": "Duke of Cornwall Close, Exmouth (2-bed freehold terrace, allocated space, no chain)",
       "price": "Guide Price £170,000",
@@ -146,7 +584,7 @@
     },
     {
       "id": "parksidedriveexmouth",
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "title": "Parkside Drive, Exmouth (2-bed semi-detached bungalow, driveway + garage, renovation project)",
       "price": "£260,000",
@@ -229,7 +667,7 @@
     },
     {
       "id": "fulfordwaywoodbury",
-      "section": "new",
+      "section": "still",
       "town": "Woodbury",
       "title": "Fulford Way, Woodbury (3-bed mid-terrace, no chain, Woodbury Common on the doorstep)",
       "price": "£275,000",
@@ -314,7 +752,7 @@
     },
     {
       "id": "meadowroadbudleigh",
-      "section": "new",
+      "section": "still",
       "town": "Budleigh Salterton",
       "title": "Meadow Road, Budleigh Salterton (ground-floor 2-bed flat with its own private garden — AUCTION)",
       "price": "Guide Price from £155,000 (modern method of auction)",
@@ -3578,7 +4016,7 @@
       "section": "still",
       "title": "Morcote, The Strand, Lympstone",
       "price": "Offers in Excess of £225,000",
-      "agent": "East of Exe Ltd, Topsham",
+      "agent": "West of Exe",
       "flags": [
         {
           "text": "IN BUDGET",
@@ -3587,26 +4025,30 @@
         {
           "text": "ON-STREET PARKING ONLY",
           "color": "#757575"
+        },
+        {
+          "text": "RE-LISTED 10/08/2026 (new agent, same price)",
+          "color": "#EF6C00"
         }
       ],
       "photos": [
-        "Morcote_Gallery_1.jpg",
-        "Morcote_Gallery_2.jpg",
-        "Morcote_Gallery_3.jpg",
-        "Morcote_Gallery_4.jpg",
-        "Morcote_Gallery_5.jpg",
-        "Morcote_Gallery_6.jpg",
-        "Morcote_Gallery_7.jpg",
-        "Morcote_Gallery_8.jpg",
-        "Morcote_Gallery_9.jpg",
-        "Morcote_Gallery_10.jpg",
-        "Morcote_Gallery_11.jpg",
-        "Morcote_Gallery_12.jpg"
+        "Morcote2_Gallery_1.jpg",
+        "Morcote2_Gallery_2.jpg",
+        "Morcote2_Gallery_3.jpg",
+        "Morcote2_Gallery_4.jpg",
+        "Morcote2_Gallery_5.jpg",
+        "Morcote2_Gallery_6.jpg",
+        "Morcote2_Gallery_7.jpg",
+        "Morcote2_Gallery_8.jpg",
+        "Morcote2_Gallery_9.jpg",
+        "Morcote2_Gallery_10.jpg",
+        "Morcote2_Gallery_11.jpg",
+        "Morcote2_Gallery_12.jpg"
       ],
       "map": "map_morcote.png",
-      "link": "https://www.rightmove.co.uk/properties/159668282",
-      "linkLabel": "rightmove.co.uk/properties/159668282",
-      "body": "One-bedroom period cottage in the heart of Lympstone village, near the estuary. Solid wood flooring, an inset wood stove on a slate hearth, sash windows with shutters, solid wood doors with iron ironmongery. No garden or outside space at all. On-street parking only.",
+      "link": "https://www.rightmove.co.uk/properties/91843476",
+      "linkLabel": "rightmove.co.uk — The Strand, Lympstone",
+      "body": "One-bedroom period cottage in the heart of Lympstone village, near the estuary. Solid wood flooring, an inset wood stove on a slate hearth, sash windows with shutters, solid wood doors with iron ironmongery. No garden or outside space at all. On-street parking only. \n\nUpdate 12/08/2026: the original listing (Rightmove 159668282, East of Exe) has been taken down and now returns a 410, and the cottage was re-listed on 10/08/2026 by West of Exe at the same Offers in Excess of £225,000. Still freehold, still one bedroom, and the new listing adds a full floorplan set. The re-listing describes the sitting room with its inset wood stove on a slate hearth and thick wooden mantle, sash windows with shutter blinds front and back, solid wooden doors with black iron hardware throughout, and a versatile ancillary room across the landing from the bedroom. Lympstone Village station is 0.09 miles away — the closest station of anything on this list by some margin.",
       "why": "Cheap and genuinely characterful, right in the middle of the village, but it's the weakest of this sweep's Lympstone finds on practicality — no garden whatsoever and no dedicated parking. Worth a look only if the interior character outweighs having zero outdoor space.",
       "dateAdded": "2026-07-07",
       "checklist": {
@@ -3630,8 +4072,8 @@
         "note": "No garden or off-street parking; on-street only, right in the village centre."
       },
       "floorplans": [
-        "Morcote_Floorplan_1.jpg",
-        "Morcote_Floorplan_2.jpg"
+        "Morcote2_Floorplan_1.jpg",
+        "Morcote2_Floorplan_2.jpg"
       ],
       "town": "Lympstone",
       "lat": 50.647832,
@@ -4151,6 +4593,10 @@
       "agent": "Bradleys Estate Agents",
       "flags": [
         {
+          "text": "LIKELY SOLD/WITHDRAWN",
+          "color": "#8D6E63"
+        },
+        {
           "text": "DECLINED BY JESSE — EROSION/INSURANCE RISK",
           "color": "#616161"
         },
@@ -4159,16 +4605,16 @@
           "color": "#B71C1C"
         },
         {
-          "text": "AUCTION — BIDS BY 1pm, 7 AUG 2026 (TOMORROW — 1 DAY)",
-          "color": "#C62828"
-        },
-        {
           "text": "PARKING UNKNOWN",
           "color": "#757575"
         },
         {
           "text": "PRICE REDUCED (£250,000 → £200,000)",
           "color": "#EF6C00"
+        },
+        {
+          "text": "SOLD AT AUCTION (Bradleys) — guide was £200,000",
+          "color": "#8D6E63"
         }
       ],
       "photos": [
@@ -4196,7 +4642,7 @@
       "map": "map_sidmouth.png",
       "link": "https://www.rightmove.co.uk/properties/90027936",
       "linkLabel": "rightmove.co.uk/properties/90027936",
-      "body": "A unique circular thatched house on a cliff-top position along the Jurassic Coast, designed in the 1960s for novelist R.F. Delderfield. Panoramic sea views over Ladram Bay, mature terraced gardens. Auction closes 21 July 2026 — 8 days from this update.",
+      "body": "A unique circular thatched house on a cliff-top position along the Jurassic Coast, designed in the 1960s for novelist R.F. Delderfield. Panoramic sea views over Ladram Bay, mature terraced gardens. Auction closes 21 July 2026 — 8 days from this update. \n\nUpdate 12/08/2026: sold. The Rightmove listing now opens \"*** SOLD BY BRADLEYS VIA AUCTION ***\" and carries a Sold STC tag, following the 7 August bid deadline and the reduction from £250,000 to a £200,000 guide on 23/07/2026. That closes the file on the circular cliff-top thatched cottage Jesse had once called his dream home before the erosion and insurance findings ruled it out. It is flagged here for the record this sweep and will drop off the list on the next one.",
       "why": "Was Jesse's stated dream home, dropped 2026-07-06 once the erosion risk was actually looked into. Local press confirms the garden has already lost ground to a cliff fall, not just theoretical risk, and that stretch of Peak Hill has a well-documented run of landslips. Separately, standard UK buildings insurance excludes coastal erosion outright, there's no government backstop for it like there is for flooding, and lenders increasingly treat erosion-risk properties as unmortgageable — the only public money available is a £6,000 demolition grant if it's ever condemned, nothing toward lost value. That combination is why the guide price is so low, and why Jesse walked away. Kept here for the record rather than deleted.",
       "dateAdded": "2026-07-03",
       "research": [
@@ -4467,7 +4913,7 @@
           "color": "#B71C1C"
         },
         {
-          "text": "AUCTION 13 AUG 2026, 12pm (7 DAYS)",
+          "text": "AUCTION 13 AUG 2026, 12pm — TOMORROW (1 DAY)",
           "color": "#C62828"
         },
         {
@@ -6038,8 +6484,8 @@
           "color": "#6D4C41"
         },
         {
-          "text": "AUCTION 10 SEP 2026, 12pm (35 DAYS)",
-          "color": "#EF6C00"
+          "text": "AUCTION 10 SEP 2026, 12pm (29 DAYS)",
+          "color": "#C62828"
         }
       ],
       "parking": {
