@@ -1,9 +1,265 @@
 {
- "lastUpdated": "2026-08-16",
+ "lastUpdated": "2026-08-18",
  "properties": [
   {
-   "id": "highstnewtonpop",
+   "id": "normancrescentapt",
    "section": "new",
+   "town": "Budleigh Salterton",
+   "title": "52 Norman Crescent, Budleigh Salterton (ground-floor 2-bed, en-suite + bathroom, allocated parking)",
+   "price": "Guide Price £192,000",
+   "agent": "Red Homes",
+   "flags": [
+    {
+     "text": "WELL UNDER BUDGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (allocated space)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GROUND FLOOR — ALL ON ONE LEVEL",
+     "color": "#1565C0"
+    },
+    {
+     "text": "TWO BATHROOMS (EN-SUITE + FAMILY)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "LEASEHOLD — 132 YEARS REMAINING",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "OUTGOINGS ~£1,500/YR (SERVICE + GROUND RENT + INSURANCE)",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "NO CHAIN",
+     "color": "#1565C0"
+    },
+    {
+     "text": "COMMUNAL GARDEN ONLY",
+     "color": "#616161"
+    }
+   ],
+   "photos": [
+    "NormanCrescentApt_Gallery_1.png",
+    "NormanCrescentApt_Gallery_2.jpg",
+    "NormanCrescentApt_Gallery_3.jpg",
+    "NormanCrescentApt_Gallery_4.jpg",
+    "NormanCrescentApt_Gallery_5.jpg",
+    "NormanCrescentApt_Gallery_6.jpg",
+    "NormanCrescentApt_Gallery_7.jpg",
+    "NormanCrescentApt_Gallery_8.jpg",
+    "NormanCrescentApt_Gallery_9.jpg"
+   ],
+   "floorplans": [
+    "NormanCrescentApt_Floorplan_1.png"
+   ],
+   "bedrooms": 2,
+   "bathrooms": 2,
+   "link": "https://www.rightmove.co.uk/properties/91998453",
+   "linkLabel": "rightmove.co.uk — Norman Crescent, Budleigh Salterton",
+   "body": "A ground-floor two-bedroom apartment at 52 Norman Crescent, Budleigh Salterton (EX9 6RB), guide £192,000 with Red Homes and no chain. Communal doors front and rear with an entry phone lead to a private hallway. The lounge is 4.77m x 3.66m and bright with double-glazed windows, with a fitted kitchen of 3.55m x 1.63m alongside — inset sink, electric hob with extractor, fitted oven and space for freestanding appliances. The principal bedroom is a 3.55m x 2.72m double with its own en-suite shower room, and the second bedroom, 2.56m x 2.72m, has two built-in cupboards and would suit a guest room or office. There is a separate family bathroom with a panelled bath. Heating is by night storage and electric wall heaters rather than gas. Outside, the flat comes with one allocated parking space and residents share a well-managed gated lawned garden. Tenure is leasehold on a 155-year lease from 2003, so roughly 132 years remain — ground rent £167.71 per half year, service and management £453.07 per half year, and buildings insurance £261.96 a year, giving total outgoings of about £1,500 a year. Council tax band B, EPC C.",
+   "why": "This is the cheapest thing on the list that is genuinely ground-floor, has its own allocated parking, and gives two bedrooms and two bathrooms — at £192,000 it sits close to the real £170k target rather than the £300k ceiling. Budleigh puts it near the Otterton brother and an easy run to Exmouth. The trade-offs are that it is leasehold, and while 132 years is a comfortable term, roughly £1,500 a year of combined service charge, ground rent and insurance is a standing cost a freehold house would not carry; there is also no private garden, only the shared gated lawn, and no character in a 2003 block.",
+   "parking": {
+    "status": "has",
+    "note": "One allocated parking space comes with the flat, alongside a gated communal lawned garden for residents."
+   },
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "no",
+    "poolSwimTeam": "no",
+    "private": "no",
+    "mtbTrails": "partial",
+    "character": "no",
+    "garden": "partial",
+    "garageWorkspace": "no",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "yes",
+    "uniqueFeature": null,
+    "tenure": "leasehold",
+    "leaseYears": 132
+   },
+   "aiRating": 7,
+   "aiTake": "Cheap, genuinely ground-floor, two beds and two bathrooms with its own parking space in Budleigh — the closest thing here to the real £170k target, docked for leasehold, ~£1,500/yr outgoings and no private garden or character.",
+   "dateAdded": "2026-08-18"
+  },
+  {
+   "id": "chichestercloseexmouth",
+   "section": "new",
+   "town": "Exmouth",
+   "title": "Chichester Close, Exmouth (1-bed semi-detached bungalow, driveway + garage, solar panels, park views)",
+   "price": "Guide Price £225,000",
+   "agent": "Links Estate Agents, Exmouth",
+   "flags": [
+    {
+     "text": "IN BUDGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (driveway + detached garage)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "BUNGALOW — ALL ON ONE LEVEL",
+     "color": "#1565C0"
+    },
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SOLAR PANELS ALREADY FITTED",
+     "color": "#6A1B9A"
+    },
+    {
+     "text": "LOFT WITH CONVERSION POTENTIAL (STP)",
+     "color": "#1565C0"
+    },
+    {
+     "text": "QUIET CUL-DE-SAC — VIEWS OVER PHEAR PARK",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#1565C0"
+    },
+    {
+     "text": "ONLY 1 BEDROOM",
+     "color": "#EF6C00"
+    }
+   ],
+   "photos": [
+    "ChichesterCloseExmouth_Gallery_1.jpg",
+    "ChichesterCloseExmouth_Gallery_2.jpg",
+    "ChichesterCloseExmouth_Gallery_3.jpg",
+    "ChichesterCloseExmouth_Gallery_4.jpg",
+    "ChichesterCloseExmouth_Gallery_5.jpg",
+    "ChichesterCloseExmouth_Gallery_6.jpg",
+    "ChichesterCloseExmouth_Gallery_7.jpg",
+    "ChichesterCloseExmouth_Gallery_8.jpg",
+    "ChichesterCloseExmouth_Gallery_9.jpg",
+    "ChichesterCloseExmouth_Gallery_10.jpg"
+   ],
+   "floorplans": [
+    "ChichesterCloseExmouth_Floorplan_1.jpg"
+   ],
+   "bedrooms": 1,
+   "bathrooms": 1,
+   "link": "https://www.rightmove.co.uk/properties/173729027",
+   "linkLabel": "rightmove.co.uk — Chichester Close, Exmouth",
+   "body": "A one-double-bedroom semi-detached bungalow tucked into a quiet cul-de-sac off Ashleigh Road on the edge of Exmouth, guide £225,000 freehold with Links, no onward chain. The layout is a single open-plan living room/kitchen of 17ft4 x 15ft2 with a breakfast bar, built-in electric hob and oven, and a window to the rear looking over the garden with Phear Park beyond. Off it is a 12ft5 x 9ft8 uPVC conservatory with French doors to the garden and views over Exmouth, a 13ft11 x 11ft6 double bedroom to the front, and a dual-aspect bathroom of 10ft7 x 5ft5 fitted with a four-piece suite including both a bath and a separate triple shower tray with a rainfall thermostatic shower. Gas central heating via a combi boiler, uPVC double glazing throughout, and solar panels are already fitted with the control unit indoors. The loft is insulated and part-boarded with its own double-glazed window, and the agent notes it could be converted for further accommodation subject to the usual consents. Outside is a driveway to the front leading to a detached garage, and a good-sized enclosed rear garden arranged over terraces. Council tax band B, about 452 sq ft.",
+   "why": "For the long-term brief this is one of the better shapes on the list — a genuine bungalow, so everything that matters is on one level, with a driveway, a detached garage for a workshop, a garden with a view over Phear Park, and solar panels already paid for by somebody else. The loft with a window and conversion potential is real upside on a small footprint. The obvious limit is that it is a one-bedroom house at 452 sq ft, so it works as a home for one but has no room for guests without converting that loft, and there are steps up from the driveway to the front door.",
+   "parking": {
+    "status": "has",
+    "note": "Driveway to the front leading to a detached garage, which the agent describes as ideal for storage and would suit a workshop."
+   },
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "partial",
+    "poolSwimTeam": "yes",
+    "private": "partial",
+    "mtbTrails": "partial",
+    "character": "no",
+    "garden": "yes",
+    "garageWorkspace": "yes",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "yes",
+    "uniqueFeature": "Solar panels already installed, plus an insulated, part-boarded loft with its own window flagged for conversion (STP).",
+    "tenure": "freehold"
+   },
+   "aiRating": 6,
+   "aiTake": "A true one-level bungalow with driveway, detached garage, terraced garden, park views and solar panels already fitted — strong on the things that matter long-term, held back by being a single bedroom at 452 sq ft with no real character.",
+   "dateAdded": "2026-08-18"
+  },
+  {
+   "id": "hollywalkexmouth",
+   "section": "new",
+   "town": "Exmouth",
+   "title": "Holly Walk, Exmouth (2-bed terrace, two parking spaces, sunny secluded rear garden, no chain)",
+   "price": "£235,000",
+   "agent": "Pennys, Exmouth",
+   "flags": [
+    {
+     "text": "IN BUDGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (allocated space + rear hardstanding)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SECLUDED SUNNY REAR GARDEN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ROOM TO BUILD A GARAGE (STP)",
+     "color": "#1565C0"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#1565C0"
+    },
+    {
+     "text": "MODERN — LIMITED CHARACTER",
+     "color": "#616161"
+    }
+   ],
+   "photos": [
+    "HollyWalkExmouth_Gallery_1.jpg",
+    "HollyWalkExmouth_Gallery_2.jpg",
+    "HollyWalkExmouth_Gallery_3.jpg",
+    "HollyWalkExmouth_Gallery_4.jpg",
+    "HollyWalkExmouth_Gallery_5.jpg",
+    "HollyWalkExmouth_Gallery_6.jpg",
+    "HollyWalkExmouth_Gallery_7.jpg",
+    "HollyWalkExmouth_Gallery_8.jpg",
+    "HollyWalkExmouth_Gallery_9.jpg",
+    "HollyWalkExmouth_Gallery_10.jpg",
+    "HollyWalkExmouth_Gallery_11.jpg",
+    "HollyWalkExmouth_Gallery_12.jpg",
+    "HollyWalkExmouth_Gallery_13.jpg",
+    "HollyWalkExmouth_Gallery_14.jpg"
+   ],
+   "floorplans": [
+    "HollyWalkExmouth_Floorplan_1.jpg"
+   ],
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "link": "https://www.rightmove.co.uk/properties/92047311",
+   "linkLabel": "rightmove.co.uk — Holly Walk, Exmouth",
+   "body": "A two-bedroom terraced house on Holly Walk in the Brixington area of Exmouth, freehold at £235,000 with Pennys. Steps rise to the front door and an entrance hall opens into a 16ft10 x 11ft11 lounge/dining room with an alcove the agent suggests for a dining table or study, and a generous understairs cupboard. Behind it is a modern fitted kitchen of 11ft10 x 7ft3 with a wall-mounted Ideal gas boiler, plumbing for a washing machine and a door straight out to the garden. Upstairs are two bedrooms — 12ft10 x 8ft8 and 11ft4 x 6ft10 — and a bathroom/WC with a bath, shower and detachable hose. uPVC double glazing and gas central heating throughout, council tax band B. Outside, a decorative stone-chipped garden wraps the front and side, and the rear garden is enclosed with timber fencing, secluded and sunny-aspect, part lawn and part patio. Parking is the standout for the price: an allocated space at the front, plus a hardstanding parking area at the rear reached through a timber side gate, which the agent notes has the potential to become a garage or store subject to consents.",
+   "why": "Two parking spaces on a £235,000 freehold house is unusual, and the rear hardstanding with room for a garage is exactly the kind of workshop potential worth having. The garden is genuinely private and sunny rather than a token yard. The honest catch is that it is a straightforward modern terrace with no character to speak of, and Brixington sits a good mile and a half back from both the seafront and the station, so it trades charm and location for practicality and space.",
+   "parking": {
+    "status": "has",
+    "note": "An allocated parking space at the front of the property, plus a separate hardstanding parking area at the rear accessed via a timber side gate — the agent notes this has potential to be converted into a garage or store subject to the usual consents."
+   },
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "partial",
+    "poolSwimTeam": "yes",
+    "private": "no",
+    "mtbTrails": "partial",
+    "character": "no",
+    "garden": "yes",
+    "garageWorkspace": "partial",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "adaptable",
+    "uniqueFeature": "Rear hardstanding with room to build a garage or workshop subject to planning — rare on a terrace at this price.",
+    "tenure": "freehold"
+   },
+   "aiRating": 6,
+   "aiTake": "Freehold, two parking spaces, a secluded sunny garden and space to build a garage make this a lot of practical house for £235,000, but it has no character at all and sits well back from both the sea and the station.",
+   "dateAdded": "2026-08-18"
+  },
+  {
+   "id": "highstnewtonpop",
+   "section": "still",
    "town": "Newton Poppleford",
    "title": "High Street, Newton Poppleford (Grade II listed 2-bed cottage, inglenook, garage + parking for several)",
    "price": "Guide Price £250,000",
@@ -81,7 +337,7 @@
   },
   {
    "id": "barnnewtonpop",
-   "section": "new",
+   "section": "still",
    "town": "Newton Poppleford",
    "title": "High Street, Newton Poppleford (2-bed barn conversion, single storey, allocated parking)",
    "price": "Guide Price £250,000",
@@ -159,7 +415,7 @@
   },
   {
    "id": "marlesbungalow",
-   "section": "new",
+   "section": "still",
    "town": "Exmouth",
    "title": "The Marles, Exmouth (3-bed detached bungalow, corner plot, garage + driveway, estuary glimpses)",
    "price": "£250,000",
@@ -245,7 +501,7 @@
   },
   {
    "id": "louisaterrace",
-   "section": "new",
+   "section": "still",
    "town": "Exmouth",
    "title": "Louisa Terrace, Exmouth (Grade II Georgian 2-bed lower ground floor, 999-yr lease + share of freehold, sea views)",
    "price": "£250,000",
@@ -348,7 +604,7 @@
   },
   {
    "id": "stationrdnewtonpop",
-   "section": "new",
+   "section": "still",
    "town": "Newton Poppleford",
    "title": "Station Road, Newton Poppleford (2 double-bed character cottage, inglenook + wood burner, driveway, chain free)",
    "price": "£215,000",
@@ -437,7 +693,7 @@
   },
   {
    "id": "mortoncrescentmews",
-   "section": "new",
+   "section": "still",
    "town": "Exmouth",
    "title": "Morton Crescent Mews, Exmouth (1-bed ground floor, own private garden, share of freehold, steps from the beach)",
    "price": "£150,000",
@@ -523,7 +779,7 @@
   },
   {
    "id": "elizabethroadexmouth",
-   "section": "new",
+   "section": "still",
    "town": "Exmouth",
    "title": "Elizabeth Road, Exmouth (2-bed semi-detached bungalow, garage + driveway, large south-facing garden)",
    "price": "Guide Price £275,000",
@@ -606,7 +862,7 @@
   },
   {
    "id": "valleywayexmouth",
-   "section": "new",
+   "section": "still",
    "town": "Exmouth",
    "title": "Valley Way, Exmouth (2-bed detached bungalow, driveway + garage, private south-facing garden, no chain)",
    "price": "Guide Price £265,000",
@@ -1129,6 +1385,10 @@
    "agent": "Pennys, Exmouth",
    "flags": [
     {
+     "text": "AUCTION — 4 SEPT 2026, 11.30am (17 DAYS)",
+     "color": "#C2185B"
+    },
+    {
      "text": "IN BUDGET — WELL UNDER",
      "color": "#2E7D32"
     },
@@ -1164,9 +1424,9 @@
    ],
    "bedrooms": 2,
    "bathrooms": 1,
-   "link": "https://www.onthemarket.com/details/20099215/",
-   "linkLabel": "onthemarket.com — Madeira Villas, Exmouth",
-   "body": "A red-brick two-bedroom semi-detached house on a corner plot in Madeira Villas, off Exeter Road in central Exmouth, on with Pennys at £150,000 freehold. The ground floor is a single dual-aspect lounge/dining room of 15'8\" x 15'6\" (narrowing to 9'2\") with windows to front and side, running through to a compact 8'0\" x 6'8\" kitchen with a wall-mounted gas boiler and a door out to the rear. Upstairs are two bedrooms — 11'6\" x 8'10\" and 9'3\" x 6'7\" — and a bathroom/WC with bath, basin and WC. Outside is an enclosed courtyard garden with a rear pedestrian gate. Double glazed, gas central heating, EPC C. The key caveat is in the listing's own feature list: there is a sitting tenant paying £870 per calendar month, so this is being marketed as an investment rather than as a vacant home, and vacant possession would need to be negotiated as part of any offer.",
+   "link": "https://www.rightmove.co.uk/properties/91818192",
+   "linkLabel": "rightmove.co.uk — Madeira Villas, Exmouth",
+   "body": "A red-brick two-bedroom semi-detached house on a corner plot in Madeira Villas, off Exeter Road in central Exmouth, on with Pennys at £150,000 freehold. The ground floor is a single dual-aspect lounge/dining room of 15'8\" x 15'6\" (narrowing to 9'2\") with windows to front and side, running through to a compact 8'0\" x 6'8\" kitchen with a wall-mounted gas boiler and a door out to the rear. Upstairs are two bedrooms — 11'6\" x 8'10\" and 9'3\" x 6'7\" — and a bathroom/WC with bath, basin and WC. Outside is an enclosed courtyard garden with a rear pedestrian gate. Double glazed, gas central heating, EPC C. The key caveat is in the listing's own feature list: there is a sitting tenant paying £870 per calendar month, so this is being marketed as an investment rather than as a vacant home, and vacant possession would need to be negotiated as part of any offer. Update 18/08/2026: now being sold by traditional online auction with Pennys on 4 September 2026 at 11.30am, rather than by private treaty — the £150,000 figure is effectively a guide, and the sitting tenant at £870pcm remains in place.",
    "why": "£150,000 for a freehold semi-detached house in Exmouth is the cheapest house — not flat, house — the sweep has turned up in central Exmouth, and it is barely a ten-minute walk from the town centre and Exmouth Community College. At that number it clears Jesse's real £170k target with room to spare, which matters more than the fact that it is a plain 1930s-ish brick semi with no particular character. The two real problems are parking and the tenant. There is no driveway; the corner plot is fenced right up to the pavement and Madeira Villas sits inside Devon County Council's Exmouth Residents Parking Zone D, so it is a permit-and-hope arrangement rather than a space of your own. And the £870pcm tenant means this is priced as a yield play — roughly 7% gross — which is likely why it is this cheap. If Jesse wanted to live in it he would be asking the agent for vacant possession on completion before anything else. Worth putting in front of the brothers precisely because the price is so far below everything else on the page.",
    "dateAdded": "2026-08-10",
    "parking": {
@@ -1764,6 +2024,10 @@
    "agent": "Signature Property Concierge",
    "flags": [
     {
+     "text": "AUCTION — 1-2 SEPT 2026 (14 DAYS)",
+     "color": "#C2185B"
+    },
+    {
      "text": "IN BUDGET",
      "color": "#2E7D32"
     },
@@ -1774,10 +2038,6 @@
     {
      "text": "30% PLANNING OVERAGE TO SELLER",
      "color": "#EF6C00"
-    },
-    {
-     "text": "AUCTION SALE — CHECK DATE WITH AGENT",
-     "color": "#C62828"
     },
     {
      "text": "FREEHOLD",
@@ -1800,7 +2060,7 @@
    "floorplans": [],
    "link": "https://www.rightmove.co.uk/properties/91541838",
    "linkLabel": "rightmove.co.uk — Land, Exmouth Road, Ebford",
-   "body": "Freehold parcels of land, each about a third of an acre (roughly 13,000 sq ft / 1,208 sq m), on the Exmouth Road between the villages of Ebford and Exton, offered by auction with a £30,000 guide. The listing describes a prominent roadside position with established vehicle access. Critically, this is bare land with no planning permission — the agent markets it as \"ideal for a variety of uses subject to the necessary consents\" and it carries a 30% planning overage, meaning if residential or other valuable consent is ever obtained, 30% of the resulting uplift in value is payable back to the seller. Reserve is set within the guide range or no more than 10% above it, and the usual auction fees apply on top. Came to market 2 August 2026.",
+   "body": "Freehold parcels of land, each about a third of an acre (roughly 13,000 sq ft / 1,208 sq m), on the Exmouth Road between the villages of Ebford and Exton, offered by auction with a £30,000 guide. The listing describes a prominent roadside position with established vehicle access. Critically, this is bare land with no planning permission — the agent markets it as \"ideal for a variety of uses subject to the necessary consents\" and it carries a 30% planning overage, meaning if residential or other valuable consent is ever obtained, 30% of the resulting uplift in value is payable back to the seller. Reserve is set within the guide range or no more than 10% above it, and the usual auction fees apply on top. Came to market 2 August 2026. Update 18/08/2026: the auction date is now confirmed — the individual parcels (Plots C and D, each about 0.3 acres, EX3 0PQ) are listed by Auction House South West for National Online Auction starting 1 September 2026 and ending 2 September 2026, each at a £30,000 guide plus fees, still freehold and still subject to the planning overage.",
    "why": "Worth tracking because it is cheap, genuinely unconventional, and in a spot that suits Jesse well on paper — the Ebford/Exton stretch sits right by the Exe estuary with Exton station on the Avocet line, ten minutes from Exmouth and very close to the Woodbury brother, with Woodbury Common trails a short ride away. At £30,000 the downside is small in absolute terms. But it should be read as a speculative punt rather than a route to a home, and the reasons are stacked up in the listing itself. There is no planning permission of any kind, this is open countryside outside any settlement boundary, and East Devon is not in the habit of granting new isolated dwellings there. The 30% overage clause is the clearest signal of all: the seller has priced in the possibility that a buyer tries for consent, and has arranged to take almost a third of the gain if it ever lands. Note also that Plot B on the same stretch of Exmouth Road, tracked here separately, went to auction on 3 August 2026 with a £75,000 guide and its listing has now been pulled — so this may well be the same land being re-marketed at a lower guide, which is a fact worth establishing with the agent before bidding.",
    "dateAdded": "2026-08-03",
    "parking": {
