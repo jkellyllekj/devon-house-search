@@ -1,9 +1,410 @@
 {
- "lastUpdated": "2026-08-21",
+ "lastUpdated": "2026-08-22",
  "properties": [
   {
-   "id": "lyndhurstroadexmouth",
+   "id": "burnthousebarn",
    "section": "new",
+   "title": "Burnt House Barn, Northmostown, near Sidmouth (Grade II thatched cob barn with full planning consent for a 3-bed conversion)",
+   "price": "Offers in Excess of £300,000",
+   "agent": "Stags, Exeter",
+   "bedrooms": 3,
+   "bathrooms": 2,
+   "flags": [
+    {
+     "text": "GRADE II LISTED COB & THATCHED BARN",
+     "color": "#6A1B9A"
+    },
+    {
+     "text": "FULL PLANNING CONSENT ALREADY GRANTED (25/1773/FUL)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (courtyard driveway + attached garage in the consented plans)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "0.2 ACRE PLOT, GARDEN OVERLOOKING FIELDS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "AONB — RURAL HAMLET, SURROUNDED BY COUNTRYSIDE",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "CLOSE TO OTTERTON & EAST BUDLEIGH",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "AT THE TOP OF BUDGET — AND THIS IS ONLY THE SHELL",
+     "color": "#C62828"
+    },
+    {
+     "text": "CONVERSION COST ON TOP — NOT HABITABLE AS IT STANDS",
+     "color": "#C62828"
+    },
+    {
+     "text": "£27,654 CIL DUE (SELF-BUILD EXEMPTION POSSIBLE)",
+     "color": "#C62828"
+    },
+    {
+     "text": "ALL 3 BEDROOMS UPSTAIRS IN THE CONSENTED PLANS",
+     "color": "#C62828"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/89506818",
+   "linkLabel": "rightmove.co.uk — listing 89506818",
+   "body": "A Grade II listed cob and thatched barn in the hamlet of Northmostown, sold as a shell with detailed planning permission already granted by East Devon District Council on 18 September 2025 (ref 25/1773/FUL) to remove an attached Nissen hut and convert the barn into a single three-bedroom dwelling with parking area and landscaping. The plot runs to roughly 0.2 acres. The architect's drawings included in the listing show, at ground level, an entrance into a vaulted living room open to the roof, then dining room, kitchen, utility/boot room and a shower room, with an attached outbuilding/garage at the western end and a courtyard driveway and turning area in front. Upstairs are a mezzanine looking down into the living room, bedroom 1 (11.51 sq m, vaulted), bedroom 2 (7.50 sq m), an office/third bedroom, a bathroom and an en-suite. The elevations specify a new water reed thatch and lime render. Steps rise from the courtyard to a garden overlooking fields. Services are proposed rather than connected — heating by air source heat pump or oil boiler, and a new sewage treatment plant. Standard and ultrafast broadband are available. Northmostown sits about 3.5 miles from Sidmouth and 4.7 from Budleigh Salterton, with Otterton, East Budleigh and Colaton Raleigh all nearby, and Exeter about 14 miles away.",
+   "why": "This is the closest thing to Jesse's stated ideal that has come up in months — a genuinely characterful thatched, listed building, in a quiet rural hamlet surrounded by countryside rather than in a village centre, with its own garden, courtyard parking and an attached garage, and a very short hop to Otterton and East Budleigh where family already are. The planning risk is already taken: consent is granted and current, which is what usually kills barn conversions at this price. The catch is the money. £300,000 is an opening figure for a shell, and a listed cob-and-thatch conversion done to consent — new thatch, lime render, heat pump, treatment plant, full fit-out — realistically adds £250,000 or more on top, plus £27,654 of Community Infrastructure Levy unless the self-build exemption applies (it does if you live there three years). Against a £170,000 target this is in a different league entirely, and there would be a year or more of living somewhere else while it is built. Worth noting too that the consented layout puts all three bedrooms upstairs, with only a shower room downstairs — the plans could in principle be reworked for a ground-floor bedroom, but on a listed building that means a fresh listed building consent, not a pen stroke.",
+   "dateAdded": "2026-08-22",
+   "photos": [
+    "BurntHouseBarn_Gallery_1.jpeg",
+    "BurntHouseBarn_Gallery_2.jpeg",
+    "BurntHouseBarn_Gallery_3.jpeg",
+    "BurntHouseBarn_Gallery_4.jpeg",
+    "BurntHouseBarn_Gallery_5.jpeg",
+    "BurntHouseBarn_Gallery_6.jpeg",
+    "BurntHouseBarn_Gallery_7.jpeg",
+    "BurntHouseBarn_Gallery_8.jpeg",
+    "BurntHouseBarn_Gallery_9.jpeg",
+    "BurntHouseBarn_Gallery_10.jpeg",
+    "BurntHouseBarn_Gallery_11.jpeg",
+    "BurntHouseBarn_Gallery_12.jpeg",
+    "BurntHouseBarn_Gallery_13.jpeg",
+    "BurntHouseBarn_Gallery_14.jpeg",
+    "BurntHouseBarn_Gallery_15.jpeg",
+    "BurntHouseBarn_Gallery_16.jpeg",
+    "BurntHouseBarn_Gallery_17.jpeg",
+    "BurntHouseBarn_Gallery_18.jpeg",
+    "BurntHouseBarn_Gallery_19.jpeg"
+   ],
+   "floorplans": [
+    "BurntHouseBarn_Floorplan_2.png",
+    "BurntHouseBarn_Floorplan_1.jpeg"
+   ],
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "no",
+    "poolSwimTeam": "partial",
+    "private": "yes",
+    "mtbTrails": "partial",
+    "character": "yes",
+    "garden": "yes",
+    "garageWorkspace": "yes",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "adaptable",
+    "uniqueFeature": "A Grade II listed cob-and-thatch agricultural barn sold as a blank canvas with consent already in hand — you get to design the inside of a listed building rather than inherit someone else's choices, and the consented scheme includes a vaulted living room open to the roof with a mezzanine above it.",
+    "tenure": "freehold"
+   },
+   "aiRating": 6,
+   "aiTake": "Thatched, listed, rural, private, with garage, garden and consent already granted — on character it is the best fit yet, but £300,000 buys only the shell and the finished cost lands somewhere near double Jesse's ceiling.",
+   "parking": {
+    "status": "has",
+    "note": "The consented plans show a courtyard driveway and turning area directly in front of the barn plus an attached outbuilding/garage at the western end, with the existing 3.0m-wide vehicle access off the lane retained. Parking is therefore off-road, on the plot and generous by the standards of anything else on this list — but it exists on paper rather than on the ground today, so it arrives only when the conversion is built out."
+   },
+   "town": "Northmostown",
+   "lat": 50.674846,
+   "lng": -3.28929,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "northstreetexmouth",
+   "section": "new",
+   "title": "North Street, Exmouth (ground-floor apartment in the courtyard and gardens of a historic manor house, share of freehold)",
+   "price": "£132,500",
+   "agent": "Belvoir, Exmouth",
+   "bedrooms": 1,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "WELL UNDER JESSE'S £170K TARGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GROUND FLOOR — ALL ON ONE LEVEL",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SHARE OF FREEHOLD — NO GROUND RENT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SET IN THE COURTYARD & GARDENS OF A HISTORIC MANOR HOUSE",
+     "color": "#6A1B9A"
+    },
+    {
+     "text": "OWN PRIVATE 3-TIERED TERRACE GARDEN WITH APPLE & HOLLY TREES",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "LEVEL WALK TO TOWN, STATION & SEAFRONT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SERVICE CHARGE £854/YR",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "NO PARKING INFO",
+     "color": "#C62828"
+    },
+    {
+     "text": "ONLY 1 BEDROOM",
+     "color": "#C62828"
+    },
+    {
+     "text": "EPC E",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/92279079",
+   "linkLabel": "rightmove.co.uk — listing 92279079",
+   "body": "A self-contained ground-floor apartment tucked into the courtyard and gardens of a historic old manor house, right in the middle of Exmouth town centre. Inside it has been repainted throughout with new vinyl flooring to the hallway and bathroom, and comprises a bright dual-aspect kitchen/living room looking out over both the garden and the courtyard, one spacious double bedroom, a hallway with a tall storage cupboard, and a bathroom with a shower over the bath and further storage. Outside, it has its own private three-tiered terrace garden with mature apple and holly trees, plus access to a communal drying area and a large shed usable for bikes or garden furniture. The agent stresses how quiet the setting is despite the central location. It carries a share of the freehold with no ground rent payable and a 2026 service charge of £854.51. No onward chain. EPC E, council tax band A. The agent quotes an estimated rental value of about £900 per calendar month.",
+   "why": "At £132,500 this is comfortably the cheapest characterful thing on the list, and it is a rare combination: entirely on one level, share of freehold with no ground rent, a genuinely private garden of its own rather than a communal lawn, and a setting in the grounds of an old manor house that is far more interesting than the price suggests. Everything — town, railway station, seafront — is a level walk. The two real limits are that it is a one-bedroom flat, which rules out a child having a room, and that no parking comes with it in the heart of the town centre. Against Jesse's £170,000 target it leaves a lot of headroom, so it reads more as a cheap, low-risk, easily-let base than as a forever home.",
+   "dateAdded": "2026-08-22",
+   "photos": [
+    "NorthStreetExmouth_Gallery_1.jpeg",
+    "NorthStreetExmouth_Gallery_2.jpeg",
+    "NorthStreetExmouth_Gallery_3.jpeg",
+    "NorthStreetExmouth_Gallery_4.jpeg",
+    "NorthStreetExmouth_Gallery_5.jpeg",
+    "NorthStreetExmouth_Gallery_6.jpeg",
+    "NorthStreetExmouth_Gallery_7.jpeg",
+    "NorthStreetExmouth_Gallery_8.jpeg",
+    "NorthStreetExmouth_Gallery_9.jpeg",
+    "NorthStreetExmouth_Gallery_10.jpeg",
+    "NorthStreetExmouth_Gallery_11.jpeg",
+    "NorthStreetExmouth_Gallery_12.jpeg",
+    "NorthStreetExmouth_Gallery_13.jpeg"
+   ],
+   "floorplans": [
+    "NorthStreetExmouth_Floorplan_1.jpeg"
+   ],
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "yes",
+    "poolSwimTeam": "yes",
+    "private": "partial",
+    "mtbTrails": "partial",
+    "character": "yes",
+    "garden": "yes",
+    "garageWorkspace": "partial",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "yes",
+    "uniqueFeature": "The flat sits inside the walled courtyard and gardens of a historic manor house in the middle of the town — and comes with its own three-tiered terrace garden of mature apple and holly trees, which is not something a £132,500 town-centre flat normally has.",
+    "tenure": "freehold"
+   },
+   "aiRating": 7,
+   "aiTake": "Cheap, all on one level, share of freehold, and a private orchard-ish garden in a manor house courtyard — held back by being a one-bedroom with no parking of its own.",
+   "parking": {
+    "status": "none",
+    "note": "The listing offers no parking at all, and North Street sits in the middle of Exmouth town centre where kerbside space is time-limited and enforced 8am to 6pm Monday to Saturday. Worth knowing that North Street was inside the wider area consulted on for Exmouth's residents' parking scheme, but the zones that actually went live cover The Colonies, St Andrews Road, part of Albion Hill and Carter Avenue — not North Street — so there is currently no residents' permit to buy for this address. The realistic answer is a season permit in an East Devon District Council long-stay car park: Imperial Road Recreation Ground is the main long-stay option in the town at roughly 240 spaces and is about a five-minute walk away, and the Manor Road/Magnolia area car parks are closer still. The listing does note a large shed on site suitable for bikes, which matters more here than it usually would."
+   },
+   "town": "Exmouth",
+   "lat": 50.62206,
+   "lng": -3.4103,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "trefusisterraceexmouth",
+   "section": "new",
+   "title": "Trefusis Terrace, Exmouth (2-bed lower-ground-floor apartment with its own garage, no chain)",
+   "price": "£220,000",
+   "agent": "Bradleys, Exmouth",
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "IN BUDGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (own garage)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "CLOSE TO THE SEAFRONT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FEATURE FIREPLACE IN THE LIVING ROOM",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "TWO DOUBLE BEDROOMS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "LEASEHOLD — TERM NOT STATED, ASK AGENT",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "LOWER GROUND FLOOR — STEPS DOWN FROM STREET LEVEL",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "NO PRIVATE GARDEN MENTIONED",
+     "color": "#C62828"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/175065038",
+   "linkLabel": "rightmove.co.uk — listing 175065038",
+   "body": "A spacious two-bedroom lower-ground-floor apartment on Trefusis Terrace, a Victorian terrace a short walk from Exmouth seafront and the Maer. The accommodation runs from an entrance hall with plumbing for a washing machine into a modern kitchen with integrated appliances and a large living room with a feature fireplace, then a generous master bedroom, a second double bedroom and a modern bathroom. A garage comes with it. Offered with no onward chain. Council tax band B. Bradleys' particulars are unusually brief for a flat of this size and do not state the lease length, service charge or ground rent, nor whether any outside space comes with it.",
+   "why": "Two double bedrooms, a garage of its own and a position within walking distance of the seafront for £220,000 is a fair deal in Exmouth, and the feature fireplace and Victorian proportions give it a bit more warmth than the modern flats that usually sit at this price. Being lower ground floor means steps down from street level, which cuts against the long-term single-level test even though the flat itself is on one floor. The bigger issue is how little the agent has actually said: no lease length, no service charge, no ground rent and no mention of outside space, all of which need answering before it can be judged properly — a short lease in particular would change the picture entirely.",
+   "dateAdded": "2026-08-22",
+   "photos": [
+    "TrefusisTerrace_Gallery_1.jpeg",
+    "TrefusisTerrace_Gallery_2.jpeg",
+    "TrefusisTerrace_Gallery_3.jpeg",
+    "TrefusisTerrace_Gallery_4.jpeg",
+    "TrefusisTerrace_Gallery_5.jpeg",
+    "TrefusisTerrace_Gallery_6.jpeg",
+    "TrefusisTerrace_Gallery_7.jpeg",
+    "TrefusisTerrace_Gallery_8.jpeg",
+    "TrefusisTerrace_Gallery_9.jpeg",
+    "TrefusisTerrace_Gallery_10.jpeg",
+    "TrefusisTerrace_Gallery_11.jpeg",
+    "TrefusisTerrace_Gallery_12.jpeg",
+    "TrefusisTerrace_Gallery_13.jpeg",
+    "TrefusisTerrace_Gallery_14.jpeg",
+    "TrefusisTerrace_Gallery_15.jpeg",
+    "TrefusisTerrace_Gallery_16.jpeg",
+    "TrefusisTerrace_Gallery_17.jpeg"
+   ],
+   "floorplans": [
+    "TrefusisTerrace_Floorplan_1.jpeg"
+   ],
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "partial",
+    "poolSwimTeam": "yes",
+    "private": "partial",
+    "mtbTrails": "partial",
+    "character": "partial",
+    "garden": null,
+    "garageWorkspace": "yes",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "partial",
+    "uniqueFeature": null,
+    "tenure": "leasehold"
+   },
+   "aiRating": 5,
+   "aiTake": "Two doubles, a garage and the seafront on the doorstep for £220,000 is decent value, but it is a lower-ground flat with no stated lease length and a listing too thin to judge properly.",
+   "parking": {
+    "status": "has",
+    "note": "A garage is included with the flat, which is a real advantage on Trefusis Terrace — this is Victorian terraced housing close to the seafront where kerbside space is contested, particularly in summer. The particulars do not say whether the garage is on the plot or in a nearby block, so that is worth asking."
+   },
+   "town": "Exmouth",
+   "lat": 50.614421,
+   "lng": -3.408239,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "mountpleasantaveexmouth",
+   "section": "new",
+   "title": "Mount Pleasant Avenue, Exmouth (2-bed ground-floor apartment with its own private driveway)",
+   "price": "£210,000",
+   "agent": "Bradleys, Exmouth",
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "IN BUDGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GROUND FLOOR — ALL ON ONE LEVEL",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (private driveway, off-road)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "TWO DOUBLE BEDROOMS, 755 SQ FT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "LEASEHOLD — TERM NOT STATED, ASK AGENT",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "MODERN — LIMITED CHARACTER",
+     "color": "#C62828"
+    },
+    {
+     "text": "NO GARDEN MENTIONED",
+     "color": "#C62828"
+    },
+    {
+     "text": "NORTH SIDE OF TOWN — NOT WALKABLE TO THE SEAFRONT",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/92288634",
+   "linkLabel": "rightmove.co.uk — listing 92288634",
+   "body": "A two-bedroom ground-floor apartment on Mount Pleasant Avenue on the northern side of Exmouth, running to 755 sq ft. The floorplan shows a 17ft 2in x 14ft 6in sitting room, a separate kitchen, two genuine double bedrooms (both 14ft 11in long) off a central hallway, a shower room and a separate WC. It comes with a private driveway giving off-road parking. Bradleys describe it as spacious and well presented with a modern kitchen and contemporary shower room. The particulars are brief and do not state the lease length, service charge, ground rent or whether any garden comes with it.",
+   "why": "755 sq ft entirely on one level with two proper doubles and its own driveway for £210,000 is sensible, practical value, and off-road parking attached to a ground-floor flat is genuinely useful given how often that is the missing piece on this list. It is also completely plain — a modern flat with no character to speak of, which is exactly the profile that has scored badly with the family before. Mount Pleasant Avenue is a mile and a half north of the seafront, so this is an Exmouth address rather than a coastal one, and as with the Trefusis Terrace flat from the same agent the listing withholds the lease length and service charge, which need checking before it means anything.",
+   "dateAdded": "2026-08-22",
+   "photos": [
+    "MountPleasantAve_Gallery_1.jpeg",
+    "MountPleasantAve_Gallery_2.jpeg",
+    "MountPleasantAve_Gallery_3.jpeg",
+    "MountPleasantAve_Gallery_4.jpeg",
+    "MountPleasantAve_Gallery_5.jpeg",
+    "MountPleasantAve_Gallery_6.jpeg",
+    "MountPleasantAve_Gallery_7.jpeg",
+    "MountPleasantAve_Gallery_8.jpeg",
+    "MountPleasantAve_Gallery_9.jpeg",
+    "MountPleasantAve_Gallery_10.jpeg",
+    "MountPleasantAve_Gallery_11.jpeg",
+    "MountPleasantAve_Gallery_12.jpeg",
+    "MountPleasantAve_Gallery_13.jpeg",
+    "MountPleasantAve_Gallery_14.jpeg",
+    "MountPleasantAve_Gallery_15.jpeg"
+   ],
+   "floorplans": [
+    "MountPleasantAve_Floorplan_1.gif"
+   ],
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "partial",
+    "poolSwimTeam": "yes",
+    "private": "partial",
+    "mtbTrails": "partial",
+    "character": "no",
+    "garden": null,
+    "garageWorkspace": "no",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "yes",
+    "uniqueFeature": null,
+    "tenure": "leasehold"
+   },
+   "aiRating": 5,
+   "aiTake": "A big, sensible, entirely single-level two-double flat with its own driveway at a fair price — but plain, garden-less and with the lease length left unstated.",
+   "parking": {
+    "status": "has",
+    "note": "A private driveway providing off-road parking comes with the flat, which is unusual for an apartment at this price and removes any dependence on kerbside space. Mount Pleasant Avenue is a residential road on the northern side of Exmouth and sits outside the residents' permit zones that went live in the town, so visitor parking on the street should also be straightforward."
+   },
+   "town": "Exmouth",
+   "lat": 50.639515,
+   "lng": -3.40725,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "lyndhurstroadexmouth",
+   "section": "still",
    "title": "Lyndhurst Road, Exmouth (ground-floor 2-bed flat that owns the freehold of the building, own rear garden)",
    "price": "£185,000",
    "agent": "Links Estate Agents, Exmouth",
@@ -88,7 +489,7 @@
   },
   {
    "id": "clintonsquareexmouth",
-   "section": "new",
+   "section": "still",
    "title": "Clinton Square, Exmouth (1-bed all on one level, own private entrance, courtyard garden and log burner)",
    "price": "£140,000",
    "agent": "Bradleys, Exmouth",
@@ -181,7 +582,7 @@
   },
   {
    "id": "northstreetottery",
-   "section": "new",
+   "section": "still",
    "title": "North Street, Ottery St Mary (2-bed brick-and-flint cottage, log burner, one of the largest gardens in the area, plus a studio)",
    "price": "Guide Price £240,000",
    "agent": "Hall & Scott, Ottery St Mary",
@@ -276,7 +677,7 @@
   },
   {
    "id": "redcliffcourtbudleigh",
-   "section": "new",
+   "section": "still",
    "title": "Apartment 1, Redcliff Court, Cliff Road, Budleigh Salterton (ground-floor 2 double bed, share of freehold, own garage)",
    "price": "£230,000",
    "agent": "Links Estate Agents, Exmouth",
@@ -375,7 +776,7 @@
   },
   {
    "id": "gibsoncloseexmouth",
-   "section": "new",
+   "section": "still",
    "title": "Gibson Close, Exmouth (3-bed freehold terrace with garage, solar panels and a secluded sunny garden)",
    "price": "Guide Price £269,950",
    "agent": "Pennys, Exmouth",
@@ -459,7 +860,7 @@
   },
   {
    "id": "brackendaleexmouth",
-   "section": "new",
+   "section": "still",
    "title": "Brackendale, Exmouth (2-bed freehold corner link house, two allocated parking spaces, move-in ready)",
    "price": "£230,000",
    "agent": "Links Estate Agents, Exmouth",
