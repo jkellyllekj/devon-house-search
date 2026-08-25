@@ -1,9 +1,648 @@
 {
- "lastUpdated": "2026-08-22",
+ "lastUpdated": "2026-08-25",
  "properties": [
   {
-   "id": "burnthousebarn",
+   "id": "northstreet41exmouth",
    "section": "new",
+   "title": "41 North Street, Exmouth (2-bed apartment walkable to the beach — heavy service charge)",
+   "price": "Offers in Excess of £140,000",
+   "agent": "Springbok Properties, Nationwide",
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "UNDER JESSE’S £170K TARGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "TWO BEDROOMS AT THIS PRICE",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "WALKING DISTANCE TO TOWN CENTRE, BEACH AND MARINA",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SPACIOUS OPEN-PLAN LIVING/DINING/KITCHEN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SERVICE CHARGE £1,787.90/YR + £175 GROUND RENT — ~£1,963 A YEAR",
+     "color": "#C62828"
+    },
+    {
+     "text": "LEASEHOLD — 100-YR LEASE FROM 2017, ~91 YEARS LEFT",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "NO PARKING",
+     "color": "#C62828"
+    },
+    {
+     "text": "NO FLOORPLAN AND NO FLOOR LEVEL STATED",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "NO OUTSIDE SPACE MENTIONED",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/90406524",
+   "linkLabel": "rightmove.co.uk — listing 90406524",
+   "body": "A two-bedroom apartment at 41 North Street in central Exmouth, marketed by an online nationwide agent. An entrance hall leads to all the principal rooms, with a spacious open-plan living, dining and kitchen area at the heart of the flat, a principal double bedroom with room for freestanding furniture, a versatile second bedroom suited to a guest room or home office, and a modern bathroom with a shower. Council tax band A. The lease is 100 years beginning 29 September 2017, leaving roughly 91 years, with ground rent of £175 a year and a service charge of £1,787.90 a year. The particulars are pitched squarely at first-time buyers and buy-to-let investors, and there is no floorplan, no statement of which floor the flat is on, and no mention of parking or outside space.",
+   "why": "Two bedrooms in central Exmouth for offers over £140,000 is genuinely under Jesse’s target and rare enough to be worth tracking. The problem is what comes with it. A service charge of £1,787.90 plus £175 ground rent is close to £1,963 a year, or roughly £164 a month, which on a £140,000 purchase is a heavy ongoing drag and would need explaining — that level of charge usually implies significant communal fabric, lifts or a managing agent with an expensive remit. The lease at about 91 years is comfortably above the 80-year danger line but is ticking, and extending later costs money. There is no parking and North Street is not covered by Exmouth’s residents’ permit zones, so that has to be solved with a car park season permit. And with no floorplan and no floor level stated, there is no way to test it against the ground-floor-long-term criterion at all. Cheap headline, expensive to hold — ask what the service charge actually buys before anything else.",
+   "dateAdded": "2026-08-25",
+   "photos": [
+    "NorthStreet41Exmouth_Gallery_1.jpeg",
+    "NorthStreet41Exmouth_Gallery_2.jpeg",
+    "NorthStreet41Exmouth_Gallery_3.jpeg",
+    "NorthStreet41Exmouth_Gallery_4.jpeg",
+    "NorthStreet41Exmouth_Gallery_5.jpeg",
+    "NorthStreet41Exmouth_Gallery_6.jpeg",
+    "NorthStreet41Exmouth_Gallery_7.jpeg",
+    "NorthStreet41Exmouth_Gallery_8.jpeg"
+   ],
+   "floorplans": [],
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "yes",
+    "poolSwimTeam": "yes",
+    "private": "no",
+    "mtbTrails": "partial",
+    "character": "no",
+    "garden": "no",
+    "garageWorkspace": "no",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": null,
+    "uniqueFeature": null,
+    "tenure": "leasehold",
+    "leaseYears": 91
+   },
+   "aiRating": 5,
+   "aiTake": "Two bedrooms in central Exmouth under £145,000 is a rare headline, but a £1,963-a-year service charge and ground rent, no parking, and a listing with no floorplan or floor level take most of the shine off.",
+   "parking": {
+    "status": "none",
+    "note": "No parking is offered and none is mentioned. This is the same North Street situation already researched for the other flat tracked on this street: kerbside space in central Exmouth is time-limited and enforced 8am to 6pm Monday to Saturday, and although North Street fell inside the area consulted on for Exmouth’s residents’ parking scheme, the zones that actually went live cover The Colonies, St Andrews Road, part of Albion Hill and Carter Avenue — not North Street. So there is currently no residents’ permit to buy for this address. The realistic answer is a season permit in an East Devon District Council long-stay car park: Imperial Road Recreation Ground is the main long-stay option at roughly 240 spaces and about five minutes’ walk, with the Manor Road and Magnolia car parks closer still. Given the service charge already running at nearly £2,000 a year, the cost of a car park season ticket on top is worth pricing before committing."
+   },
+   "town": "Exmouth",
+   "lat": 50.622176,
+   "lng": -3.40881,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "heydonshallsidmouth",
+   "section": "new",
+   "title": "Heydons Hall, Heydons Lane, Sidmouth (former school building on a central plot — lapsed consent for two houses)",
+   "price": "Offers in Region of £250,000",
+   "agent": "KLP, Exeter",
+   "flags": [
+    {
+     "text": "IN BUDGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SELF-BUILD / CONVERSION OPPORTUNITY",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (small parking area to the front on Heydon’s Lane)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "CENTRAL SIDMOUTH — WALK TO THE ESPLANADE",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "PLANNING HAS LAPSED — 2009 CONSENT RENEWED 2012, LONG EXPIRED",
+     "color": "#C62828"
+    },
+    {
+     "text": "BUILD OR CONVERSION COST ON TOP OF THE PURCHASE PRICE",
+     "color": "#C62828"
+    },
+    {
+     "text": "BACKS DIRECTLY ONTO SIDMOUTH RUGBY CLUB CLUBHOUSE",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "NOT HABITABLE AS IT STANDS — CLASSROOM BUILDING",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/91936491",
+   "linkLabel": "rightmove.co.uk — listing 91936491",
+   "body": "A building on its own plot in the centre of Sidmouth, used for some years as classrooms by the Sidmouth International School, with a small parking area to the front on Heydon’s Lane. It previously held outline planning permission granted in April 2009 and renewed in July 2012 for demolition of the existing building and erection of a pair of semi-detached two-bedroom houses with rear gardens and parking to the front. That permission has lapsed. The agent frames three routes: carry on using the existing building as it is, try to reinstate the old permissions for two dwellings, or seek a fresh permission for a single detached house with parking. A footpath connecting Roselands to Heydon’s Lane runs to the south-west, the garden of 5 Roselands backs onto the rear, and the entire north-east boundary is the Sidmouth Rugby Club clubhouse, with the path between the two owned by the rugby club. Freehold.",
+   "why": "This is the unconventional end of the search — not a house but a plot with a building on it, freehold, in the middle of a Jurassic Coast town, with parking already established and a walk to the esplanade. If a fresh permission for a single detached house came through, £250,000 for a central Sidmouth plot with parking would look like a good starting number. The problem is that the planning has lapsed and has been lapsed for over a decade, so nothing here is consented — you would be buying on the strength of a 2012 precedent, not a live permission, and East Devon’s policy has moved on since. Add build costs on top and the total is well past the ceiling unless the existing building can be converted rather than replaced. Two boundary details deserve a look on site too: the rugby clubhouse runs the full length of one side, which means noise and floodlights on match days, and there is a public footpath along another. High risk, real upside, and only worth pursuing with a planning consultant’s view first.",
+   "dateAdded": "2026-08-25",
+   "photos": [
+    "HeydonsHallSidmouth_Gallery_1.jpeg",
+    "HeydonsHallSidmouth_Gallery_2.jpeg",
+    "HeydonsHallSidmouth_Gallery_3.jpeg",
+    "HeydonsHallSidmouth_Gallery_4.jpeg",
+    "HeydonsHallSidmouth_Gallery_5.jpeg",
+    "HeydonsHallSidmouth_Gallery_6.jpeg",
+    "HeydonsHallSidmouth_Gallery_7.jpeg",
+    "HeydonsHallSidmouth_Gallery_8.jpeg",
+    "HeydonsHallSidmouth_Gallery_9.jpeg",
+    "HeydonsHallSidmouth_Gallery_10.jpeg",
+    "HeydonsHallSidmouth_Gallery_11.jpeg",
+    "HeydonsHallSidmouth_Gallery_12.jpeg"
+   ],
+   "floorplans": [
+    "HeydonsHallSidmouth_Floorplan_1.jpeg",
+    "HeydonsHallSidmouth_Floorplan_2.jpeg"
+   ],
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "no",
+    "poolSwimTeam": "partial",
+    "private": "no",
+    "mtbTrails": "partial",
+    "character": "partial",
+    "garden": null,
+    "garageWorkspace": null,
+    "closeToFamily": "partial",
+    "groundFloorLongTerm": "adaptable",
+    "uniqueFeature": "A former international-school classroom block on its own freehold plot in central Sidmouth, sharing its entire north-east boundary with the rugby club clubhouse — buy it as a building, a conversion or a demolition-and-rebuild.",
+    "tenure": "freehold"
+   },
+   "aiRating": 5,
+   "aiTake": "A freehold central-Sidmouth plot with parking and three possible futures for £250,000 is a real opportunity, but the planning lapsed over a decade ago, build cost sits on top, and a rugby clubhouse runs the length of one boundary.",
+   "parking": {
+    "status": "has",
+    "note": "A small parking area sits to the front of the building on Heydon’s Lane and is part of the property, and the lapsed 2009/2012 consent for two houses also had parking to the front — so vehicular access and hardstanding are already established rather than something you would have to argue for. That matters more than usual here, because central Sidmouth parking is genuinely difficult: the nearby Mill Street car park has gone public pay-and-display and its reserved-permit list is closed. Worth measuring on site how many cars the front area actually takes."
+   },
+   "town": "Sidmouth",
+   "lat": 50.68052,
+   "lng": -3.24086,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "byronwayflatexmouth",
+   "section": "new",
+   "title": "Byron Way, Exmouth (1-bed with its own private entrance and off-road parking space, 999-year lease)",
+   "price": "£149,950",
+   "agent": "Pennys, Exmouth",
+   "bedrooms": 1,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "UNDER JESSE’S £170K TARGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (own off-road space to the front)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "OWN PRIVATE ENTRANCE — NO COMMUNAL HALL",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "999-YEAR LEASE FROM 1995 — 968 YEARS LEFT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "LARGE 18FT LOUNGE/DINING ROOM",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ALL LIVING SPACE IS UP THE STAIRS",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "NIGHT STORAGE HEATERS — NO CENTRAL HEATING",
+     "color": "#C62828"
+    },
+    {
+     "text": "MODERN — NO CHARACTER",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "NO GARDEN",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/91450518",
+   "linkLabel": "rightmove.co.uk — listing 91450518",
+   "body": "A one-bedroom first-floor flat on Byron Way in north Exmouth, sold with its own private front door rather than a shared entrance. A storm porch with a storage cupboard leads to a private front door and an entrance hallway with the stairs rising to the living accommodation. The lounge is a good size at 18’0\" x 14’9\" narrowing to 8’8\", with two double-glazed windows to the front and a further window to the side. There is an inner hallway with a coats cupboard and an airing cupboard housing the water cylinder, a 10’0\" x 4’8\" galley kitchen with built-in electric hob and oven and plumbing for a washing machine, a 10’0\" x 8’7\" double bedroom with a built-in wardrobe, and a bathroom with a bath and Mira shower over. Outside there is a parking space for one car to the front. Held on a 999-year lease from 1995 with the vendor insuring the property and external maintenance split. Heating throughout is a night storage heater in the lounge and electric wall heaters elsewhere — there is no gas central heating.",
+   "why": "The two things this gets right are the two things flats at this price usually get wrong: it has its own off-road parking space, and it has its own private front door rather than a communal hallway, on a lease so long it is functionally freehold. At £149,950 that is under Jesse’s real target with parking already solved, and the 18-foot lounge is a genuinely generous room for the money. Against that: every bit of the living space is up a flight of stairs, which fails the long-term single-level test outright, there is no garden, it is plain modern stock with no character, and the heating is night storage plus electric wall panels — the most expensive way to heat a flat and a running-cost problem rather than a cosmetic one. Five photographs is also thin. A practical, cheap, parked bolthole rather than anything Jesse would fall for.",
+   "dateAdded": "2026-08-25",
+   "photos": [
+    "ByronWayFlat_Gallery_1.jpeg",
+    "ByronWayFlat_Gallery_2.jpeg",
+    "ByronWayFlat_Gallery_3.jpeg",
+    "ByronWayFlat_Gallery_4.jpeg",
+    "ByronWayFlat_Gallery_5.jpeg"
+   ],
+   "floorplans": [
+    "ByronWayFlat_Floorplan_1.jpeg"
+   ],
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "partial",
+    "poolSwimTeam": "yes",
+    "private": "partial",
+    "mtbTrails": "partial",
+    "character": "no",
+    "garden": "no",
+    "garageWorkspace": "no",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "no",
+    "uniqueFeature": null,
+    "tenure": "leasehold",
+    "leaseYears": 968
+   },
+   "aiRating": 6,
+   "aiTake": "Its own front door, its own parking space and a 968-year lease for under £150,000 is a genuinely practical package, undone by stairs to every room, night storage heating and no character at all.",
+   "parking": {
+    "status": "has",
+    "note": "A parking space for one car directly to the front of the property, off-road and included in the sale. That is the single strongest thing about this flat — off-road parking with a one-bedroom flat under £150,000 is rare in Exmouth, and it removes the residents’-permit question entirely."
+   },
+   "town": "Exmouth",
+   "lat": 50.642036,
+   "lng": -3.398641,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "mortonroadflatexmouth",
+   "section": "new",
+   "title": "Morton Road, Exmouth (ground-floor 1-bed with its own private entrance and sun-trap courtyard, share of freehold)",
+   "price": "£150,000",
+   "agent": "Spring Estates, Exmouth",
+   "bedrooms": 1,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "UNDER JESSE’S £170K TARGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ENTIRELY GROUND FLOOR",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SHARE OF FREEHOLD — 992-YEAR LEASE",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "OWN PRIVATE ENTRANCE — NO COMMUNAL HALL",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "OWN PRIVATE SUN-TRAP COURTYARD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "MOMENTS FROM THE SEAFRONT AND MARINA, 5-MIN LEVEL WALK TO TOWN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "VAULTED CEILING",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "VERY SMALL — 24.1 SQ M / 259 SQ FT IN TOTAL",
+     "color": "#C62828"
+    },
+    {
+     "text": "ON-STREET PARKING ONLY",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/92309409",
+   "linkLabel": "rightmove.co.uk — listing 92309409",
+   "body": "A stylishly finished open-plan apartment on Morton Road, moments from Exmouth seafront and marina and a five-minute level walk from the town centre. It has its own entrance at the rear of the building leading into a private courtyard that catches the sun for most of the day and has been landscaped for low maintenance. Inside is an open-plan kitchen and living space under a vaulted ceiling finished with wooden trims, with a generous modern kitchen including an integrated slimline dishwasher and a U-shaped run of worktops forming a breakfast bar; a double bedroom with built-in storage; and a modern shower room. It comes with a share of the freehold on a 992-year lease, council tax band A. The floorplan is the number to pay attention to: the whole flat is 24.1 square metres — 259 square feet — on one level, excluding the courtyard.",
+   "why": "For £150,000 this is a lot of the right things at once — share of freehold on a lease so long it is effectively freehold, entirely on one level, its own front door rather than a shared hallway, a private sun-trap courtyard, and a position by the marina with the town a level five-minute walk away. The finish looks genuinely good rather than landlord-grade. But 259 square feet is very small indeed: the whole flat is roughly the size of a single large room, the bedroom is 8’10\" x 9’10\" and the bathroom is under four feet wide. That is a real constraint rather than a quibble, and the agent’s own closing line pitching it as a holiday-rental investment tells you who it is really aimed at. Parking is kerbside only in a part of town under heavy summer pressure. Worth seeing if the location and the private courtyard outweigh the footprint — but go and stand in it before deciding.",
+   "dateAdded": "2026-08-25",
+   "photos": [
+    "MortonRoadFlat_Gallery_1.jpeg",
+    "MortonRoadFlat_Gallery_2.jpeg",
+    "MortonRoadFlat_Gallery_3.jpeg",
+    "MortonRoadFlat_Gallery_4.jpeg",
+    "MortonRoadFlat_Gallery_5.jpeg",
+    "MortonRoadFlat_Gallery_6.jpeg",
+    "MortonRoadFlat_Gallery_7.jpeg",
+    "MortonRoadFlat_Gallery_8.jpeg",
+    "MortonRoadFlat_Gallery_9.jpeg",
+    "MortonRoadFlat_Gallery_10.jpeg",
+    "MortonRoadFlat_Gallery_11.jpeg"
+   ],
+   "floorplans": [
+    "MortonRoadFlat_Floorplan_1.jpeg"
+   ],
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "yes",
+    "poolSwimTeam": "yes",
+    "private": "partial",
+    "mtbTrails": "partial",
+    "character": "partial",
+    "garden": "partial",
+    "garageWorkspace": "no",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "yes",
+    "uniqueFeature": "Its own private street-level entrance and enclosed courtyard, in a seafront-adjacent block where almost everything else at this price shares a communal hall.",
+    "tenure": "leasehold",
+    "leaseYears": 992
+   },
+   "aiRating": 7,
+   "aiTake": "Share of freehold, all on one level, its own door and private sun-trap courtyard a moment from the marina for £150,000 — genuinely good value, but the whole flat is only 259 square feet and there is no parking.",
+   "parking": {
+    "status": "onstreet",
+    "note": "No parking is mentioned anywhere in the particulars, so this is kerbside only. Morton Road sits in central Exmouth by the seafront and marina, which is inside the area Devon County Council has covered with its residents’ parking permit scheme since 2023, run through MiPermit at roughly £35 a year for a first band A permit — cheap and realistically obtainable if this address falls inside a live zone. The catch is that the zones were drawn street by street and the seafront end of town carries the heaviest summer visitor pressure in Exmouth, so a permit buys priority, not a reserved bay. Confirm the zone for this exact address with Devon County Council before treating it as solved. The Queen’s Drive and Estuary car parks are a short walk but are priced for tourists; East Devon District Council does sell a virtual monthly town permit for its Exmouth car parks as a fallback."
+   },
+   "town": "Exmouth",
+   "lat": 50.61752,
+   "lng": -3.418095,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "littlehamroadexmouth",
+   "section": "new",
+   "title": "Littleham Road, Exmouth (architect-designed bungalow down a private lane, garage/workshop plus parking for two, no chain)",
+   "price": "£250,000",
+   "agent": "Pennys, Exmouth",
+   "bedrooms": 1,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "IN BUDGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "BUNGALOW — ENTIRELY ON ONE LEVEL",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (2 cars on the lane + single garage with power and light)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GARAGE/WORKSHOP WITH ITS OWN STORE AREA",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SECLUDED — PRIVATE LANE, WALLED COURTYARD GARDEN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ARCHITECT-DESIGNED ONE-OFF, NOT ESTATE HOUSING",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "TENURE NOT STATED — AGENT ASKS YOU TO CONFIRM",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "ONLY 1 BEDROOM AT £250,000",
+     "color": "#C62828"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/92337225",
+   "linkLabel": "rightmove.co.uk — listing 92337225",
+   "body": "An architect-designed bungalow of around 2000, tucked down a private lane behind the Cranford Avenue shopping parade in Exmouth. It was built to a high standard with a generous glazed frontage, and runs as an open-plan kitchen with a modern fitted range of units and a Worcester combi boiler, a living space, one bedroom of 12’6\" x 8’4\", and a stylish modern bathroom of 9’11\" x 12’6\" with a large shower cubicle, chrome grab rails and a heated towel rail. Outside, the agent singles the garden out for special note: reached through an archway, enclosed by brick boundaries, laid to several sunny paved areas for outside entertaining, with a timber shed, solar lighting and an outside tap. From the private lane there is parking for approximately two cars plus a single garage of 12’7\" x 10’3\" with an up-and-over door, power and light, and an additional store area in front of it. uPVC double glazing throughout, gas central heating, council tax band A, no onward chain. Pennys have not stated the tenure and explicitly ask buyers to confirm freehold or leasehold with them.",
+   "why": "Almost everything on the practical checklist is ticked here — it is a bungalow so it is entirely on one level and passes the long-term stairs test outright, it has real parking plus a powered and lit garage that would work as a workshop, the garden is walled and private, and it sits down its own lane rather than on an estate road, which suits the preference for somewhere a bit more tucked away. The bathroom already has grab rails fitted, which is telling about how it has been lived in. The thing that stops it scoring higher is simple arithmetic: £250,000 for one bedroom. That is the exact shape of purchase Bro 3 marks down hardest, and it leaves no room to grow. It is also a 2000 build, so the character is in the architecture and the glazing rather than in beams and thatch. Worth a look if a low-maintenance, one-level, workshop-equipped base matters more than bedroom count — and the unstated tenure needs answering first, because for a bungalow it really ought to be freehold.",
+   "dateAdded": "2026-08-25",
+   "photos": [
+    "LittlehamRoadExmouth_Gallery_1.jpeg",
+    "LittlehamRoadExmouth_Gallery_2.jpeg",
+    "LittlehamRoadExmouth_Gallery_3.jpeg",
+    "LittlehamRoadExmouth_Gallery_4.jpeg",
+    "LittlehamRoadExmouth_Gallery_5.jpeg",
+    "LittlehamRoadExmouth_Gallery_6.jpeg",
+    "LittlehamRoadExmouth_Gallery_7.jpeg",
+    "LittlehamRoadExmouth_Gallery_8.jpeg",
+    "LittlehamRoadExmouth_Gallery_9.jpeg",
+    "LittlehamRoadExmouth_Gallery_10.jpeg",
+    "LittlehamRoadExmouth_Gallery_11.jpeg",
+    "LittlehamRoadExmouth_Gallery_12.jpeg",
+    "LittlehamRoadExmouth_Gallery_13.jpeg",
+    "LittlehamRoadExmouth_Gallery_14.jpeg",
+    "LittlehamRoadExmouth_Gallery_15.jpeg",
+    "LittlehamRoadExmouth_Gallery_16.jpeg",
+    "LittlehamRoadExmouth_Gallery_17.jpeg",
+    "LittlehamRoadExmouth_Gallery_18.jpeg"
+   ],
+   "floorplans": [
+    "LittlehamRoadExmouth_Floorplan_1.jpeg"
+   ],
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "partial",
+    "poolSwimTeam": "yes",
+    "private": "yes",
+    "mtbTrails": "partial",
+    "character": "partial",
+    "garden": "yes",
+    "garageWorkspace": "yes",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "yes",
+    "uniqueFeature": "A one-off architect-designed bungalow from around 2000 hidden down a private lane behind a shopping parade — a big glazed frontage and a walled courtyard, nothing like the housing either side of it.",
+    "tenure": null
+   },
+   "aiRating": 6,
+   "aiTake": "Ticks the practical boxes almost completely — one level, real parking, a powered garage/workshop and a private walled garden down its own lane — but £250,000 buys just one bedroom here, and the agent has not even said whether it is freehold.",
+   "parking": {
+    "status": "has",
+    "note": "Parking for approximately two cars on the private lane, plus a single garage of 12’7\" x 10’3\" with an up-and-over door, power and light, and an extra store area in front of it. The powered garage is the useful part — it is described as a garage/workshop and would take a bike bench or a project without needing anything doing to it."
+   },
+   "town": "Exmouth",
+   "lat": 50.624702,
+   "lng": -3.387099,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "millstreetsidmouth",
+   "section": "new",
+   "title": "Mill Street, Sidmouth (freehold town-centre cottage with level access — garage offered separately)",
+   "price": "£190,000",
+   "agent": "Harrison-Lavers & Potbury’s, Sidmouth",
+   "bedrooms": 1,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "IN BUDGET — UNDER £200K",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "LEVEL ACCESS — NO STEPS UP FROM THE STREET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SHORT STROLL TO THE ESPLANADE AND SEAFRONT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GARAGE AVAILABLE — BUT £40,000 EXTRA",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "NO PARKING INCLUDED IN THE PRICE",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "ONLY 1 BEDROOM",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "VERY THIN LISTING — ALMOST NO DETAIL GIVEN",
+     "color": "#C62828"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/173485142",
+   "linkLabel": "rightmove.co.uk — listing 173485142",
+   "body": "A one-bedroom freehold cottage on Mill Street in the centre of Sidmouth, a short walk from the town centre shops, the esplanade and the seafront. The agent makes a point of the level access — no steps up from the street — which matters for the long-term single-level test. Council tax band A. The listing is remarkably thin: two sentences of description and nothing on room sizes, condition, heating, outside space or what the cottage actually contains beyond the photographs and a single floorplan. The one concrete extra is that a town-centre garage is offered alongside it for a further £40,000, which would take the real total to £230,000 if you wanted parking.",
+   "why": "Freehold at £190,000 in the middle of a coastal town, on the level, is a decent starting point, and the option to buy a town-centre garage — a genuinely scarce thing in Sidmouth — is more than most flats at this price can offer. But the £40,000 asked for it is a lot, and buying both puts you at £230,000 for a one-bedroom cottage, which is where Bro 3’s \"too expensive for what it is\" test starts to bite. The bigger problem is how little the agent has said. Two sentences is not enough to judge condition, heating or outside space, and for a town-centre cottage of unstated age those are exactly the things that decide whether this is a bargain or a project. Worth a call to the agent before a viewing, purely to find out what is actually being sold.",
+   "dateAdded": "2026-08-25",
+   "photos": [
+    "MillStreetSidmouth_Gallery_1.jpeg",
+    "MillStreetSidmouth_Gallery_2.jpeg",
+    "MillStreetSidmouth_Gallery_3.jpeg",
+    "MillStreetSidmouth_Gallery_4.jpeg",
+    "MillStreetSidmouth_Gallery_5.jpeg",
+    "MillStreetSidmouth_Gallery_6.jpeg",
+    "MillStreetSidmouth_Gallery_7.jpeg",
+    "MillStreetSidmouth_Gallery_8.jpeg",
+    "MillStreetSidmouth_Gallery_9.jpeg",
+    "MillStreetSidmouth_Gallery_10.jpeg",
+    "MillStreetSidmouth_Gallery_11.jpeg",
+    "MillStreetSidmouth_Gallery_12.jpeg"
+   ],
+   "floorplans": [
+    "MillStreetSidmouth_Floorplan_1.jpeg"
+   ],
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "no",
+    "poolSwimTeam": "partial",
+    "private": "no",
+    "mtbTrails": "partial",
+    "character": "partial",
+    "garden": null,
+    "garageWorkspace": "partial",
+    "closeToFamily": "partial",
+    "groundFloorLongTerm": null,
+    "uniqueFeature": "A separately purchasable town-centre garage — a rare commodity in Sidmouth, where the main car park has gone pay-and-display and the reserved-permit list is closed.",
+    "tenure": "freehold"
+   },
+   "aiRating": 6,
+   "aiTake": "Freehold, level-access and walkable to the seafront for £190,000 is a fair Sidmouth entry point, but it is one bedroom, the parking costs another £40,000, and the two-sentence listing gives you almost nothing to judge it on.",
+   "parking": {
+    "status": "none",
+    "note": "No parking is included at the asking price — the agent instead offers a town-centre garage as a separate £40,000 purchase, which tells you how tight parking is here. Researching the alternatives confirms it: the Mill Street car park immediately by the cottage was converted by East Devon District Council from permit-holder use to public pay-and-display (£1 per hour for the first two hours, £3 for four hours), and the reserved-space permit that used to cover it cost £2,000 a year including VAT, with a 25 per cent discount for Sidmouth council-tax payers — and that application process is now closed, so it is not currently available to a new owner. Devon County Council does run residents’ on-street permits for the Sidmouth zones, so that is the first thing to check with them for this specific address; if it does not qualify, the £40,000 garage stops being an optional extra and becomes the realistic answer."
+   },
+   "town": "Sidmouth",
+   "lat": 50.681801,
+   "lng": -3.236176,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "churchstsidford",
+   "section": "new",
+   "title": "Church Street, Sidford (Grade II listed thatched cottage, freehold, no onward chain)",
+   "price": "Guide Price £165,000",
+   "agent": "Redferns, Sidmouth",
+   "bedrooms": 1,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "THATCHED",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GRADE II LISTED",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "UNDER JESSE’S £170K TARGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GAS CENTRAL HEATING",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO PARKING (long-stay car park on the same street)",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "ONLY 1 BEDROOM — AND IT IS UPSTAIRS",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "FRONTS DIRECTLY ONTO THE ROAD — PATIO GARDEN ONLY",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/92228835",
+   "linkLabel": "rightmove.co.uk — listing 92228835",
+   "body": "A one-bedroom Grade II listed thatched cottage on Church Street in Sidford, the village that sits immediately inland of Sidmouth. The photographs show the real thing: a whitewashed cob elevation under a well-kept thatch that runs on into the attached neighbour, small-paned windows, a date stone set into the front wall and a low local-stone boundary wall onto the pavement. Inside there is a spacious characterful living room, a galley kitchen, and upstairs a generously proportioned double bedroom with a large bathroom. It has gas central heating, which is not a given in a cottage of this age, and a patio area outside for sitting out. Freehold, council tax band B, and offered with no onward chain. There is no garden beyond the patio and no parking of its own — the cottage fronts straight onto the street.",
+   "why": "This is the closest thing this sweep found to what Jesse actually says he wants: a genuinely thatched, genuinely listed cottage, freehold, chain free, and at £165,000 it lands under his real £170,000 target rather than merely under the £300,000 ceiling. Character at this price normally comes with a catch, and here the catches are honest ones — it is one bedroom, that bedroom is up the stairs, there is no garden to speak of, and the front door opens onto a road rather than a lane. Parking is the obvious gap, but it is a softer gap than usual because Sidford’s long-stay car park is on this same street. The real trade is location: Sidford is further east than the usual hunting ground, so it is a longer run to both brothers and to Exmouth than anything in Woodbury or East Budleigh, and there is no train station nearby. Worth seeing on character and price alone, with eyes open about the thatch and listed-building maintenance bill.",
+   "dateAdded": "2026-08-25",
+   "photos": [
+    "ChurchStreetSidford_Gallery_1.jpeg",
+    "ChurchStreetSidford_Gallery_2.jpeg",
+    "ChurchStreetSidford_Gallery_3.jpeg",
+    "ChurchStreetSidford_Gallery_4.jpeg",
+    "ChurchStreetSidford_Gallery_5.jpeg",
+    "ChurchStreetSidford_Gallery_6.jpeg",
+    "ChurchStreetSidford_Gallery_7.jpeg",
+    "ChurchStreetSidford_Gallery_8.jpeg"
+   ],
+   "floorplans": [
+    "ChurchStreetSidford_Floorplan_1.jpeg",
+    "ChurchStreetSidford_Floorplan_2.jpeg",
+    "ChurchStreetSidford_Floorplan_3.jpeg"
+   ],
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "no",
+    "poolSwimTeam": "partial",
+    "private": "no",
+    "mtbTrails": "partial",
+    "character": "yes",
+    "garden": "partial",
+    "garageWorkspace": "no",
+    "closeToFamily": "partial",
+    "groundFloorLongTerm": "no",
+    "uniqueFeature": "A date stone set into the front elevation and a thatch that runs continuously into the attached neighbour — an 18th-century village cottage that has survived largely intact, with a blue plaque on the pair next door.",
+    "tenure": "freehold"
+   },
+   "aiRating": 7,
+   "aiTake": "A real thatched, Grade II listed, freehold cottage at £165,000 with no chain — exactly Jesse’s stated taste and under his actual target — held back by one upstairs bedroom, no parking of its own, a roadside frontage and a location further east than the rest of the search.",
+   "parking": {
+    "status": "none",
+    "note": "The cottage has no parking of its own and fronts straight onto Church Street, so there is nothing to pull onto. The saving grace is unusually specific: East Devon District Council runs a long-stay car park called Church Street car park in Sidford, on this same street, and up to 15 of its spaces are let as reserved annual spaces at roughly £300 per space per year. That is a rentable, named, walkable answer rather than a vague \"there is a car park nearby\" — but it is a rental, not an asset, and the reserved spaces are a fixed and small number, so check availability with EDDC (01404 516551) before assuming one is obtainable. Devon County Council’s residents’ permit scheme covers the Sidmouth zones rather than Sidford, so an on-street permit is unlikely to be the route here."
+   },
+   "town": "Sidford",
+   "lat": 50.703297,
+   "lng": -3.226406,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "burnthousebarn",
+   "section": "still",
    "title": "Burnt House Barn, Northmostown, near Sidmouth (Grade II thatched cob barn with full planning consent for a 3-bed conversion)",
    "price": "Offers in Excess of £300,000",
    "agent": "Stags, Exeter",
@@ -112,7 +751,7 @@
   },
   {
    "id": "northstreetexmouth",
-   "section": "new",
+   "section": "still",
    "title": "North Street, Exmouth (ground-floor apartment in the courtyard and gardens of a historic manor house, share of freehold)",
    "price": "£132,500",
    "agent": "Belvoir, Exmouth",
@@ -214,7 +853,7 @@
   },
   {
    "id": "trefusisterraceexmouth",
-   "section": "new",
+   "section": "still",
    "title": "Trefusis Terrace, Exmouth (2-bed lower-ground-floor apartment with its own garage, no chain)",
    "price": "£220,000",
    "agent": "Bradleys, Exmouth",
@@ -312,7 +951,7 @@
   },
   {
    "id": "mountpleasantaveexmouth",
-   "section": "new",
+   "section": "still",
    "title": "Mount Pleasant Avenue, Exmouth (2-bed ground-floor apartment with its own private driveway)",
    "price": "£210,000",
    "agent": "Bradleys, Exmouth",
@@ -2326,8 +2965,8 @@
    "agent": "Pennys, Exmouth",
    "flags": [
     {
-     "text": "AUCTION — 4 SEPT 2026, 11.30am (17 DAYS)",
-     "color": "#C2185B"
+     "text": "AUCTION — 4 SEPT 2026, 11.30am (10 DAYS)",
+     "color": "#C62828"
     },
     {
      "text": "IN BUDGET — WELL UNDER",
@@ -2965,8 +3604,8 @@
    "agent": "Signature Property Concierge",
    "flags": [
     {
-     "text": "AUCTION — 1-2 SEPT 2026 (14 DAYS)",
-     "color": "#C2185B"
+     "text": "AUCTION — 1-2 SEPT 2026 (7 DAYS)",
+     "color": "#C62828"
     },
     {
      "text": "IN BUDGET",
@@ -6686,12 +7325,16 @@
    "agent": "Meadows / 247 Property Auctions",
    "flags": [
     {
-     "text": "OVER BUDGET",
-     "color": "#B71C1C"
+     "text": "LIKELY SOLD/WITHDRAWN",
+     "color": "#8D6E63"
     },
     {
-     "text": "AUCTION 13 AUG 2026, 12pm — TOMORROW (1 DAY)",
-     "color": "#C62828"
+     "text": "AUCTION HELD 13 AUG 2026 — OUTCOME UNCONFIRMED",
+     "color": "#8D6E63"
+    },
+    {
+     "text": "OVER BUDGET",
+     "color": "#B71C1C"
     },
     {
      "text": "NO PARKING INFO",
@@ -6709,7 +7352,7 @@
    "map": "map_clinton_garage.png",
    "link": "https://www.meadowsea.com/Property-For-Sale-Clinton-Garage-Budleigh-Salterton-pi-MEAD1265.htm",
    "linkLabel": "meadowsea.com — MEAD1265",
-   "body": "Former commercial garage/MOT site right in Budleigh Salterton itself — conversion/redevelopment long-shot.",
+   "body": "Former commercial garage/MOT site right in Budleigh Salterton itself — conversion/redevelopment long-shot. [Sweep 2026-08-25: the 13 August auction date has now passed. An independent auction-results database lists the lot as Sold, but the agent’s own page has not been updated and still shows it as Available with the auction described as upcoming, so the outcome is not confirmed either way. Flagged rather than removed this sweep; if it is still showing as sold or withdrawn next sweep it will be deleted.]",
    "why": "Over budget and speculative, but flagged given the town-centre location and imminent auction date.",
    "dateAdded": "2026-07-04",
    "checklist": {
@@ -8261,7 +8904,7 @@
      "color": "#6D4C41"
     },
     {
-     "text": "AUCTION 10 SEP 2026, 12pm (29 DAYS)",
+     "text": "AUCTION 10 SEP 2026, 12pm (16 DAYS)",
      "color": "#C62828"
     }
    ],
