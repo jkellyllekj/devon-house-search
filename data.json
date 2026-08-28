@@ -1,9 +1,531 @@
 {
- "lastUpdated": "2026-08-25",
+ "lastUpdated": "2026-08-28",
  "properties": [
   {
-   "id": "northstreet41exmouth",
+   "id": "raleighroadbudleigh",
    "section": "new",
+   "title": "Raleigh Road, Budleigh Salterton (3-bed apartment at Raleigh Court with a private garage and sun terrace — 47-year lease)",
+   "price": "£250,000",
+   "agent": "David Rhys, Budleigh Salterton",
+   "bedrooms": 3,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "LEASEHOLD — ONLY 47 YEARS REMAINING",
+     "color": "#C62828"
+    },
+    {
+     "text": "IN BUDGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (private garage + communal and visitor parking)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "THREE BEDROOMS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "PRIVATE SUN TERRACE",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "VIEWS OVER THE OTTER ESTUARY",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HALF A MILE FROM THE TOWN CENTRE AND SEAFRONT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "VERY LOW FLOOD RISK",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "MORTGAGE LIKELY DIFFICULT AT 47 YEARS — LEASE EXTENSION COST ON TOP",
+     "color": "#C62828"
+    },
+    {
+     "text": "FIRST FLOOR VIA AN INTERNAL COMMUNAL STAIRCASE — NO LIFT",
+     "color": "#C62828"
+    },
+    {
+     "text": "NO PETS AND NO HOLIDAY LETS PERMITTED",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "MAINTENANCE ~£1,214/YR PLUS £25 GROUND RENT",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "COUNCIL TAX BAND D",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/92427942",
+   "linkLabel": "rightmove.co.uk — listing 92427942",
+   "body": "A purpose-built first-floor apartment in Raleigh Court, an intimate and private development half a mile from Budleigh Salterton town centre and seafront, with fine views over the surrounding area and the Otter Estuary. The accommodation is tastefully presented and extremely light thanks to several double aspects and a southerly orientation: three bedrooms, a large living room, a kitchen/breakfast room, a bathroom and a separate WC, plus a delightful sun terrace. It comes with a private garage, and the development has attractive communal grounds with private and visitors’ parking. The agent notes the external fabric of the building and the communal gardens are in excellent condition and maintained to a very high standard, and the location is convenient for the main bus routes with easy access to the scenic Otter Estuary. Flood risk is very low, under 0.1% a year. The critical detail sits in the small print: the lease has only 47 years remaining. Ground rent is £25 a year and the maintenance charge is approximately £303.44 per quarter, covering buildings insurance, garden maintenance and cleaning and lighting of communal areas. No holiday lets and no pets are permitted. Council Tax Band D. Access is via an internal communal staircase.",
+   "why": "On the face of it this is good value — three bedrooms, a private garage, a sun terrace and estuary views in a well-kept private development, in budget at £250,000 and a short drive from the brother near Otterton. The 47-year lease is the problem, and it is a serious one rather than a quibble. Most mainstream lenders want considerably more than 47 years left at the point of purchase, so this is realistically a cash buy or a specialist-lender buy, and the same wall will face anyone Jesse eventually sells to. Extending it under the leasehold reforms is possible but not cheap, and below the 80-year mark marriage value has historically pushed the premium up sharply — that cost needs pricing in as part of the purchase, not treated as a later problem. Jesse has been happy with 99 and 114-year leases before; this is a different category of risk. Add that it is first floor up a communal staircase with no lift, which fails the long-term ground-floor test, and pets are barred. The garage and the setting are genuinely attractive, so it is worth a conversation with the agent about the lease extension cost — but that number decides it.",
+   "dateAdded": "2026-08-28",
+   "photos": [
+    "RaleighRoadBudleigh_Gallery_1.jpg",
+    "RaleighRoadBudleigh_Gallery_2.jpg",
+    "RaleighRoadBudleigh_Gallery_3.jpg",
+    "RaleighRoadBudleigh_Gallery_4.jpg",
+    "RaleighRoadBudleigh_Gallery_5.jpg",
+    "RaleighRoadBudleigh_Gallery_6.jpg",
+    "RaleighRoadBudleigh_Gallery_7.jpg",
+    "RaleighRoadBudleigh_Gallery_8.jpg",
+    "RaleighRoadBudleigh_Gallery_9.jpg",
+    "RaleighRoadBudleigh_Gallery_10.jpg",
+    "RaleighRoadBudleigh_Gallery_11.jpg",
+    "RaleighRoadBudleigh_Gallery_12.jpg",
+    "RaleighRoadBudleigh_Gallery_13.jpg",
+    "RaleighRoadBudleigh_Gallery_14.jpg",
+    "RaleighRoadBudleigh_Gallery_15.jpg",
+    "RaleighRoadBudleigh_Gallery_16.jpg",
+    "RaleighRoadBudleigh_Gallery_17.jpg",
+    "RaleighRoadBudleigh_Gallery_18.jpg",
+    "RaleighRoadBudleigh_Gallery_19.jpg",
+    "RaleighRoadBudleigh_Gallery_20.jpg"
+   ],
+   "floorplans": [
+    "RaleighRoadBudleigh_Floorplan_1.jpg"
+   ],
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "no",
+    "poolSwimTeam": "partial",
+    "private": "partial",
+    "mtbTrails": "partial",
+    "character": "no",
+    "garden": "partial",
+    "garageWorkspace": "yes",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "no",
+    "uniqueFeature": "A private garage and a south-facing sun terrace looking over the Otter Estuary, in a small and unusually private development.",
+    "tenure": "leasehold",
+    "leaseYears": 47
+   },
+   "aiRating": 4,
+   "aiTake": "Three bedrooms, a private garage, a sun terrace and Otter Estuary views for £250,000 would be a good buy if not for the 47-year lease, which puts it beyond most mainstream mortgage lenders and lands an extension bill on top of the asking price.",
+   "parking": {
+    "status": "has",
+    "note": "A private garage is included with the apartment, and the development has its own communal parking plus a dedicated visitors’ parking area — the agent lists parking availability explicitly as \"communal parking and private garage\". That is the strongest parking provision of anything added this sweep, and a garage also gives Jesse lockable storage or workshop space for bikes, which very little else on the list at this price offers."
+   },
+   "town": "Budleigh Salterton",
+   "lat": 50.634751,
+   "lng": -3.318179,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "strandexmouth",
+   "section": "new",
+   "title": "4 The Strand, Exmouth (2 double bedrooms above a shop in the town centre, 168-year lease)",
+   "price": "Offers in Excess of £140,000",
+   "agent": "Springbok Properties, Nationwide",
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "UNDER JESSE’S £170K TARGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "TWO DOUBLE BEDROOMS AT THIS PRICE",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "LEASEHOLD — RUNS TO 2194, ~168 YEARS LEFT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "PEPPERCORN GROUND RENT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "PRIME CENTRAL EXMOUTH — WALK TO BEACH, STATION AND SHOPS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "COUNCIL TAX BAND B",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "CASH BUYERS PREFERRED — LENDING LIKELY DIFFICULT",
+     "color": "#C62828"
+    },
+    {
+     "text": "SERVICE CHARGE £480.73/QUARTER — ~£1,923/YR",
+     "color": "#C62828"
+    },
+    {
+     "text": "ABOVE COMMERCIAL PREMISES",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "UP A COMMUNAL STAIRCASE — NOT GROUND FLOOR",
+     "color": "#C62828"
+    },
+    {
+     "text": "NO PARKING INFO",
+     "color": "#C62828"
+    },
+    {
+     "text": "NO OUTSIDE SPACE MENTIONED",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/91940988",
+   "linkLabel": "rightmove.co.uk — listing 91940988",
+   "body": "A generously proportioned two-double-bedroom flat set above commercial premises in an attractive traditional building right in the heart of Exmouth, on The Strand. It is approached via a communal entrance and staircase, opening into a surprisingly spacious interior. The main living area is the highlight — ample room for both lounge and dining furniture, with a bank of large windows overlooking the town and an elevated position that lets in plenty of daylight — alongside a fitted kitchen. There is an option to purchase the flat fully furnished. Tenure is a lease running from 26 October 2007 to 30 November 2194, roughly 168 years remaining, at a peppercorn ground rent, with a service charge of £480.73 per quarter. Council Tax Band B. The agent states cash buyers are preferred, with some lenders available. The position is about as central as Exmouth gets: shops, cafés and restaurants on the doorstep, the sandy beach and seafront within easy reach, Exmouth railway station convenient for services to Exeter, and Manor Gardens, Phear Park and the Exe Estuary all close by.",
+   "why": "Two double bedrooms in the middle of Exmouth for £140,000 with a 168-year lease and a peppercorn ground rent is a lot of space for the money, and the big windows over the town give it more personality than most flats at this price. There is a reason it is cheap, though, and the agent is upfront about it: cash buyers are preferred, which is the standard signal that flats above commercial premises are hard to mortgage — many lenders simply decline them, which limits both who can buy it now and who can buy it from you later. The service charge is close to £1,923 a year, it is up a communal staircase with no ground-floor option, no parking is mentioned, and there is no outside space at all. Best read as a cash purchase for someone who wants a big, cheap, central bolt-hole and accepts that resale will be to the same narrow pool of cash buyers.",
+   "dateAdded": "2026-08-28",
+   "photos": [
+    "StrandExmouth_Gallery_1.jpg",
+    "StrandExmouth_Gallery_2.jpg",
+    "StrandExmouth_Gallery_3.jpg",
+    "StrandExmouth_Gallery_4.jpg",
+    "StrandExmouth_Gallery_5.jpg",
+    "StrandExmouth_Gallery_6.jpg",
+    "StrandExmouth_Gallery_7.jpg",
+    "StrandExmouth_Gallery_8.jpg",
+    "StrandExmouth_Gallery_9.jpg",
+    "StrandExmouth_Gallery_10.jpg"
+   ],
+   "floorplans": [
+    "StrandExmouth_Floorplan_1.png"
+   ],
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "yes",
+    "poolSwimTeam": "yes",
+    "private": "no",
+    "mtbTrails": "partial",
+    "character": "partial",
+    "garden": "no",
+    "garageWorkspace": "no",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "no",
+    "uniqueFeature": "A large flat sitting directly over a shopfront on The Strand, with a bank of windows looking out over the middle of Exmouth.",
+    "tenure": "leasehold",
+    "leaseYears": 168
+   },
+   "aiRating": 5,
+   "aiTake": "Two double bedrooms in central Exmouth for £140,000 on a 168-year peppercorn lease is real space for the money, but \"cash buyers preferred\" above a shopfront means a mortgage is unlikely, the service charge is nearly £2,000 a year, and there is no parking or outside space.",
+   "parking": {
+    "status": "unknown",
+    "note": "Parking is not mentioned in the particulars, which for a flat over a shopfront on The Strand almost certainly means none is included. This is the busiest part of central Exmouth. Devon County Council runs the residents’ parking permit scheme covering central Exmouth through MiPermit at roughly £35 a year for a first band A permit, but the zones were set street by street and The Strand is a pedestrianised-edge retail frontage, so a residents’ permit may not be available for this address at all — this is the specific thing to check with Devon County Council before going further. Failing that, East Devon District Council sells a virtual monthly permit for its Exmouth town car parks, and Elizabeth Hall and Imperial Road car parks are the nearest options, both within a few minutes’ walk but priced for shoppers and summer visitors."
+   },
+   "town": "Exmouth",
+   "lat": 50.620238,
+   "lng": -3.41435,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "hartleyroadexmouth",
+   "section": "new",
+   "title": "Hartley Road, Exmouth (1-bed flat, no chain, residents’ parking)",
+   "price": "Guide Price £90,000",
+   "agent": "Your Move, Exmouth",
+   "bedrooms": 1,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "WELL UNDER JESSE’S £170K TARGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (residents’ parking with the development)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "LEASEHOLD — 125-YEAR LEASE FROM 1994, ~93 YEARS LEFT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "WALKING DISTANCE TO TOWN CENTRE AND SEAFRONT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "COUNCIL TAX BAND A",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SERVICE CHARGE £1,800/YR — HEAVY AGAINST A £90,000 PRICE",
+     "color": "#C62828"
+    },
+    {
+     "text": "ELECTRIC HEATING ONLY — NO GAS CENTRAL HEATING",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "FLOOR LEVEL NOT STATED IN THE PARTICULARS",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "ONE BEDROOM, NO GARDEN MENTIONED",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/91961424",
+   "linkLabel": "rightmove.co.uk — listing 91961424",
+   "body": "A one-bedroom flat on Hartley Road offered with no ongoing chain, within walking distance of Exmouth town centre and seafront. The accommodation runs entrance hall, lounge with a utility cupboard plumbed for a washing machine, kitchen with base and eye-level cupboards and a built-in oven and hob, a shower room with a three-piece white suite including a corner wash hand basin and WC, and a double bedroom. Double glazing throughout and electric heating. Residents’ parking comes with the development. Tenure is a 125-year lease running from 6 June 1994, leaving roughly 93 years, with ground rent of £30 every six months and a service charge of £900 every six months which includes the buildings insurance. Council Tax Band A. The particulars do not state which floor the flat is on.",
+   "why": "At a £90,000 guide this is among the cheapest things on the list that is a straightforward full-ownership purchase rather than a retirement lease or a shared-ownership share, and it comes with the two things cheap Exmouth flats usually lack: residents’ parking and no onward chain. A 93-year lease is fine, Council Tax Band A keeps running costs down, and the town centre and seafront are walkable. The catch is proportional rather than absolute — £1,800 a year in service charge plus £60 ground rent is a lot of money set against a £90,000 asset, and it is money you cannot get back. Electric-only heating pushes the bills up further. The particulars are also thin: they never say which floor it is on, which matters for Jesse’s long-term ground-floor test, and no garden or outside space is mentioned. Cheap enough to be worth a call to the agent to pin down the floor level and what exactly the service charge buys.",
+   "dateAdded": "2026-08-28",
+   "photos": [
+    "HartleyRoadExmouth_Gallery_1.jpg",
+    "HartleyRoadExmouth_Gallery_2.jpg",
+    "HartleyRoadExmouth_Gallery_3.jpg",
+    "HartleyRoadExmouth_Gallery_4.jpg",
+    "HartleyRoadExmouth_Gallery_5.jpg",
+    "HartleyRoadExmouth_Gallery_6.jpg",
+    "HartleyRoadExmouth_Gallery_7.jpg",
+    "HartleyRoadExmouth_Gallery_8.jpg",
+    "HartleyRoadExmouth_Gallery_9.jpg"
+   ],
+   "floorplans": [
+    "HartleyRoadExmouth_Floorplan_1.png"
+   ],
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "yes",
+    "poolSwimTeam": "yes",
+    "private": "no",
+    "mtbTrails": "partial",
+    "character": "no",
+    "garden": "no",
+    "garageWorkspace": "no",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": null,
+    "uniqueFeature": null,
+    "tenure": "leasehold",
+    "leaseYears": 93
+   },
+   "aiRating": 6,
+   "aiTake": "A £90,000 chain-free one-bed with residents’ parking and a 93-year lease inside walking distance of Exmouth seafront — genuinely cheap, but £1,800 a year of service charge against a £90,000 price is a heavy drag and the particulars never say which floor it is on.",
+   "parking": {
+    "status": "has",
+    "note": "The particulars list residents’ parking as a benefit of the development, so a space comes with the flat rather than needing a council permit — a real advantage at this price point in Exmouth, where most flats under £100,000 have nothing at all. Worth confirming with the agent whether the space is specifically allocated to this flat or is first-come-first-served across the residents’ area, as the wording does not distinguish between the two."
+   },
+   "town": "Exmouth",
+   "lat": 50.617267,
+   "lng": -3.408414,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "manchesterroadexmouth",
+   "section": "new",
+   "title": "Manchester Road, Exmouth (two independent 1-bed flats sold as one lot — AUCTION 17 Sept)",
+   "price": "Guide Price £130,000 (auction)",
+   "agent": "Links Estate Agents, Exmouth",
+   "bedrooms": 2,
+   "bathrooms": 2,
+   "flags": [
+    {
+     "text": "AUCTION — 17 SEPTEMBER 2026 (20 DAYS)",
+     "color": "#C62828"
+    },
+    {
+     "text": "WELL UNDER JESSE’S £170K TARGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "TWO SELF-CONTAINED FLATS IN ONE LOT",
+     "color": "#6A1B9A"
+    },
+    {
+     "text": "MAIN TITLE IS FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "EXMOUTH TOWN CENTRE — LEVEL WALK TO STATION, MARINA AND SEAFRONT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "COUNCIL TAX BAND A",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SOLD AS AN INVESTMENT — BOTH FLATS CURRENTLY TENANTED",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "SPLIT TENURE — 4a FREEHOLD, 6a ON A 999-YEAR LEASE FROM 1989",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "ALL LIVING SPACE IS UP THE STAIRS IN BOTH FLATS",
+     "color": "#C62828"
+    },
+    {
+     "text": "NO PARKING INFO",
+     "color": "#C62828"
+    },
+    {
+     "text": "NO FLOORPLAN PUBLISHED",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/92356614",
+   "linkLabel": "rightmove.co.uk — listing 92356614",
+   "body": "An unusual lot going to online auction on Thursday 17 September: two entirely independent one-bedroom flats, 4a and 6a Manchester Road, sold together in the heart of Exmouth town centre. Each flat has its own private front door at ground level and then a landing, kitchen, living room, bedroom and bathroom/WC upstairs — they share nothing internally. Both are currently let: 4a on an AST at £575 pcm, 6a at £700 pcm with the tenant having served notice to leave. Tenure is split — 4 Manchester Road, including the flat known as 4a, is freehold, while 6a is held on the remainder of a 999-year lease dated from 1989 with a peppercorn ground rent. Council Tax Band A. The agent is pitching it squarely at lettings investors wanting ready-made income, or at buyers who would refurbish for onward sale once vacant possession is available. Open-day viewing slots are being run through late August and early September ahead of the auction.",
+   "why": "This is on the list because it is genuinely unconventional and genuinely cheap — £130,000 guide for two self-contained flats with the main title freehold, right in the middle of Exmouth on a level walk to the station, marina and seafront. There are two interesting angles: live in one and let the other to cover most of the running costs, or take the pair back into a single house once both are vacant. Be clear-eyed about what it is not, though. It is marketed as an income asset rather than a home, both flats are tenanted right now so vacant possession is not immediate, and the split tenure between a freehold and a leasehold flat makes the legal pack essential reading before bidding. Both flats put every room upstairs, which rules the lot out on Jesse’s long-term ground-floor test, there is no parking mentioned anywhere, and no floorplan has been published. Auction guide prices in Exmouth have been running over on the day, so treat £130,000 as a starting point.",
+   "dateAdded": "2026-08-28",
+   "photos": [
+    "ManchesterRoadExmouth_Gallery_1.jpg",
+    "ManchesterRoadExmouth_Gallery_2.jpg",
+    "ManchesterRoadExmouth_Gallery_3.jpg",
+    "ManchesterRoadExmouth_Gallery_4.jpg",
+    "ManchesterRoadExmouth_Gallery_5.jpg",
+    "ManchesterRoadExmouth_Gallery_6.jpg",
+    "ManchesterRoadExmouth_Gallery_7.jpg",
+    "ManchesterRoadExmouth_Gallery_8.jpg",
+    "ManchesterRoadExmouth_Gallery_9.jpg",
+    "ManchesterRoadExmouth_Gallery_10.jpg",
+    "ManchesterRoadExmouth_Gallery_11.jpg",
+    "ManchesterRoadExmouth_Gallery_12.jpg"
+   ],
+   "floorplans": [],
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "yes",
+    "poolSwimTeam": "yes",
+    "private": "no",
+    "mtbTrails": "partial",
+    "character": "partial",
+    "garden": "no",
+    "garageWorkspace": "no",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "no",
+    "uniqueFeature": "Two completely independent one-bedroom flats sold as a single lot, with the main title freehold — so you can live in one and let the other, or reunite them into one house.",
+    "tenure": "freehold"
+   },
+   "aiRating": 6,
+   "aiTake": "Two self-contained flats in central Exmouth for a £130,000 auction guide with the main title freehold — a genuinely interesting live-in-one-let-the-other play, but it is sold as a tenanted investment, all rooms are upstairs in both, and there is no parking.",
+   "parking": {
+    "status": "unknown",
+    "note": "The particulars do not mention parking at all, which for a town-centre address of this type almost certainly means there is none with the property. Manchester Road sits in central Exmouth, inside the area Devon County Council covers with its residents’ parking permit scheme run through MiPermit, where a first band A permit is roughly £35 a year — cheap if this street falls inside a live zone, but the zones were drawn street by street and a permit gives priority rather than a reserved bay. East Devon District Council also sells a virtual monthly permit for its Exmouth town car parks, and the Imperial Road and Elizabeth Hall car parks are both a short level walk away. Confirm the zone for this exact address with Devon County Council before bidding, and note that a lot with two flats may generate demand for two vehicles."
+   },
+   "town": "Exmouth",
+   "lat": 50.620066,
+   "lng": -3.415179,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "forestreetbudleighflat",
+   "section": "new",
+   "title": "Fore Street, Budleigh Salterton (2-bed ground-floor flat at The Rolle — step-free, allocated parking, coastal path from the garden)",
+   "price": "Guide Price £220,000",
+   "agent": "David Rhys, Budleigh Salterton",
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "IN BUDGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ENTIRELY GROUND FLOOR",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "STEP-FREE ENTRY — LIFT FROM THE BASEMENT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SHARE OF FREEHOLD — 999-YEAR LEASE FROM 2007",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (allocated space at the front + visitor parking)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "COMMUNAL GARDENS OPEN STRAIGHT ONTO THE COASTAL PATH",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HEART OF BUDLEIGH — YARDS FROM THE HIGH STREET AND SEAFRONT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SERVICE CHARGE ~£2,990/YR AND RISING 5% EVERY JULY",
+     "color": "#C62828"
+    },
+    {
+     "text": "KITCHEN NEEDS UPDATING",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "PURPOSE-BUILT BLOCK — LIMITED CHARACTER",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "COUNCIL TAX BAND D",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/92471205",
+   "linkLabel": "rightmove.co.uk — listing 92471205",
+   "body": "A purpose-built ground-floor apartment in The Rolle, on the town-centre side of the building, a stone’s throw from Budleigh Salterton’s High Street and seafront. The accommodation is bright and well-proportioned with double glazing and gas-fired central heating throughout: a long entrance hall, a 15’5\" x 10’4\" living room, a 12’4\" x 10’4\" kitchen, a large 18’10\" principal bedroom, a second bedroom, and a bathroom/WC that has been tastefully refurbished. The kitchen is the one room the agent admits needs updating. Unusually for a period-town flat, the property can be reached without using a single step, via the basement and lift, though there are stairs to all floors as well. Outside there is an allocated parking space at the front, ample visitor parking, basement storage, and large communal gardens to the rear that are maintained to a high standard, afford views over the beach and Lyme Bay, and open directly onto the coastal path. Tenure is a 999-year lease from October 2007 with the freehold held by Ellor Management Company Ltd, in which every flat owner holds a share. Council Tax Band D.",
+   "why": "This ticks an unusual number of Jesse’s practical boxes at once: genuinely all on one level, step-free from the street via the lift, a share of the freehold on a lease so long it is effectively freehold, its own allocated parking space, and a garden gate that opens onto the coastal path in the middle of Budleigh Salterton. For a two-bedroom home with parking at £220,000 in that location, that is a strong package, and it is a short hop to the brother near Otterton. The number to weigh against it is the service charge: £1,459.02 for six months, escalating 5% every July, which is close to £3,000 a year now and compounds from here — over a decade that is a serious sum against a £220,000 purchase. It is also a modern purpose-built block rather than anything with character, the kitchen needs money spent, and Council Tax Band D is high for a two-bed flat. Worth a look for the accessibility and the setting, with the service charge trajectory checked hard.",
+   "dateAdded": "2026-08-28",
+   "photos": [
+    "ForeStreetBudleighFlat_Gallery_1.jpg",
+    "ForeStreetBudleighFlat_Gallery_2.jpg",
+    "ForeStreetBudleighFlat_Gallery_3.jpg",
+    "ForeStreetBudleighFlat_Gallery_4.jpg",
+    "ForeStreetBudleighFlat_Gallery_5.jpg",
+    "ForeStreetBudleighFlat_Gallery_6.jpg",
+    "ForeStreetBudleighFlat_Gallery_7.jpg",
+    "ForeStreetBudleighFlat_Gallery_8.jpg",
+    "ForeStreetBudleighFlat_Gallery_9.jpg",
+    "ForeStreetBudleighFlat_Gallery_10.jpg",
+    "ForeStreetBudleighFlat_Gallery_11.jpg",
+    "ForeStreetBudleighFlat_Gallery_12.jpg",
+    "ForeStreetBudleighFlat_Gallery_13.jpg",
+    "ForeStreetBudleighFlat_Gallery_14.jpg",
+    "ForeStreetBudleighFlat_Gallery_15.jpg",
+    "ForeStreetBudleighFlat_Gallery_16.jpg"
+   ],
+   "floorplans": [
+    "ForeStreetBudleighFlat_Floorplan_1.jpg"
+   ],
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "no",
+    "poolSwimTeam": "partial",
+    "private": "no",
+    "mtbTrails": "partial",
+    "character": "no",
+    "garden": "partial",
+    "garageWorkspace": "no",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "yes",
+    "uniqueFeature": "The communal garden opens directly onto the South West Coast Path, and the flat can be entered without a single step by going in through the basement and taking the lift.",
+    "tenure": "leasehold",
+    "leaseYears": 980
+   },
+   "aiRating": 6,
+   "aiTake": "Step-free two-bed with its own parking space and a garden gate onto the coastal path in the middle of Budleigh for £220,000 — practically excellent and close to the Otterton brother, but it is a characterless purpose-built block with a near-£3,000 service charge that climbs 5% a year.",
+   "parking": {
+    "status": "has",
+    "note": "An allocated car parking space at the front of the property is included, and the development has ample additional visitors’ parking. Confirmed in the agent’s particulars — no permit or kerbside hunting required, which is a genuine advantage in central Budleigh Salterton where on-street space is heavily contested through the summer."
+   },
+   "town": "Budleigh Salterton",
+   "lat": 50.629136,
+   "lng": -3.324541,
+   "geocodeSource": "Rightmove listing coordinates"
+  },
+  {
+   "id": "northstreet41exmouth",
+   "section": "still",
    "title": "41 North Street, Exmouth (2-bed apartment walkable to the beach — heavy service charge)",
    "price": "Offers in Excess of £140,000",
    "agent": "Springbok Properties, Nationwide",
@@ -91,7 +613,7 @@
   },
   {
    "id": "heydonshallsidmouth",
-   "section": "new",
+   "section": "still",
    "title": "Heydons Hall, Heydons Lane, Sidmouth (former school building on a central plot — lapsed consent for two houses)",
    "price": "Offers in Region of £250,000",
    "agent": "KLP, Exeter",
@@ -183,7 +705,7 @@
   },
   {
    "id": "byronwayflatexmouth",
-   "section": "new",
+   "section": "still",
    "title": "Byron Way, Exmouth (1-bed with its own private entrance and off-road parking space, 999-year lease)",
    "price": "£149,950",
    "agent": "Pennys, Exmouth",
@@ -270,7 +792,7 @@
   },
   {
    "id": "mortonroadflatexmouth",
-   "section": "new",
+   "section": "still",
    "title": "Morton Road, Exmouth (ground-floor 1-bed with its own private entrance and sun-trap courtyard, share of freehold)",
    "price": "£150,000",
    "agent": "Spring Estates, Exmouth",
@@ -363,7 +885,7 @@
   },
   {
    "id": "littlehamroadexmouth",
-   "section": "new",
+   "section": "still",
    "title": "Littleham Road, Exmouth (architect-designed bungalow down a private lane, garage/workshop plus parking for two, no chain)",
    "price": "£250,000",
    "agent": "Pennys, Exmouth",
@@ -462,7 +984,7 @@
   },
   {
    "id": "millstreetsidmouth",
-   "section": "new",
+   "section": "still",
    "title": "Mill Street, Sidmouth (freehold town-centre cottage with level access — garage offered separately)",
    "price": "£190,000",
    "agent": "Harrison-Lavers & Potbury’s, Sidmouth",
@@ -551,7 +1073,7 @@
   },
   {
    "id": "churchstsidford",
-   "section": "new",
+   "section": "still",
    "title": "Church Street, Sidford (Grade II listed thatched cottage, freehold, no onward chain)",
    "price": "Guide Price £165,000",
    "agent": "Redferns, Sidmouth",
@@ -3604,7 +4126,7 @@
    "agent": "Signature Property Concierge",
    "flags": [
     {
-     "text": "AUCTION — 1-2 SEPT 2026 (7 DAYS)",
+     "text": "AUCTION CLOSES 2 SEPT 2026 — 5 DAYS LEFT",
      "color": "#C62828"
     },
     {
@@ -3662,7 +4184,24 @@
     "tenure": "freehold"
    },
    "aiRating": 5,
-   "aiTake": "A third of an acre with its own road access, ten minutes from Exmouth and next to Woodbury Common, for £30,000 — but it is bare countryside with no planning permission and a 30% overage clause, so it is a cheap speculative punt on consent rather than anywhere to live."
+   "aiTake": "A third of an acre with its own road access, ten minutes from Exmouth and next to Woodbury Common, for £30,000 — but it is bare countryside with no planning permission and a 30% overage clause, so it is a cheap speculative punt on consent rather than anywhere to live.",
+   "research": [
+    {
+     "date": "2026-08-28",
+     "question": "Sweep re-check — auction timing and how the parcels are being offered.",
+     "findings": "Confirmed live and imminent. Auction House South West is running this as a National Online Auction opening 1 September 2026 and ending 24 hours later on 2 September — five days from this sweep. The land is being offered as individually numbered parcels rather than one block: Plot C (Rightmove 92086383) and Plot D (Rightmove 92086401) are each listed separately at a £30,000 guide, each about 0.3 acres, both freehold with established vehicular access from the A376. The auctioneer confirms the planning overage provision applies, with full terms in the free legal pack. Still bare land with no planning permission, so the overage only bites if consent is ever obtained.",
+     "sources": [
+      {
+       "label": "Rightmove 92086383 — Plot C",
+       "url": "https://www.rightmove.co.uk/properties/92086383"
+      },
+      {
+       "label": "Rightmove 92086401 — Plot D",
+       "url": "https://www.rightmove.co.uk/properties/92086401"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "raleighroadottery",
@@ -4733,9 +5272,13 @@
    "section": "still",
    "town": "East Budleigh",
    "title": "High Street, East Budleigh (Grade II thatched cottage)",
-   "price": "Guide Price £220,000",
+   "price": "Guide Price £200,000",
    "agent": "Hall & Scott, Exmouth",
    "flags": [
+    {
+     "text": "PRICE REDUCED — £220,000 → £200,000",
+     "color": "#2E7D32"
+    },
     {
      "text": "IN BUDGET",
      "color": "#2E7D32"
@@ -4776,8 +5319,8 @@
    ],
    "bedrooms": 2,
    "bathrooms": 1,
-   "link": "https://www.onthemarket.com/details/19989125/",
-   "linkLabel": "onthemarket.com — East Budleigh thatched cottage",
+   "link": "https://www.rightmove.co.uk/properties/91230633",
+   "linkLabel": "rightmove.co.uk — listing 91230633",
    "body": "Thatched Grade II listed end-of-terrace cob cottage right in the heart of East Budleigh village. Ground floor: living room with exposed ceiling beams and a fireplace, opening to a second bedroom that also works as a home office or dining room, plus a bespoke modern kitchen with solid oak worktops, integral electric oven and induction hob, and a door out to the garden. First floor: one impressive double bedroom with a deep wardrobe, and a bathroom with a feature freestanding roll-top bath. Gas central heating, enclosed cottage-style rear garden with patio, shed and side gate. EPC exempt as a listed building; Council Tax Band B. Walking distance to the community shop, the church, the Sir Walter Raleigh pub and the free public car park.",
    "why": "This is the closest thing to Jesse’s stated dream this list has had in a while and it is comfortably in budget: a genuinely thatched, genuinely listed cob cottage at £220,000, not a compromise version of one. It sits between both brothers — a couple of miles from Otterton, a short run to Woodbury — with East Budleigh Common and the Pebblebed Heaths trails effectively on the doorstep and Budleigh Salterton’s beach two miles down the road. The honest catch is parking: it fronts straight onto the road with no driveway, so it depends on the free village car park. There is a ground-floor room already usable as a bedroom, but the only bathroom is upstairs and listed-building consent would gate any change to that.",
    "dateAdded": "2026-07-27",
@@ -4800,7 +5343,20 @@
     "tenure": "freehold"
    },
    "aiRating": 8,
-   "aiTake": "A real thatched Grade II cottage with beams, a fireplace and a proper cottage garden, in budget at £220,000 and sitting neatly between both brothers with heath trails on the doorstep — the only serious gap is parking, which means the free village car park rather than anything of its own."
+   "aiTake": "A thatched Grade II cottage in the heart of East Budleigh with a ground-floor second bedroom and a proper cottage garden, now reduced to £200,000 — exactly the kind of character Jesse is after, and the only real drawback is that there is no parking.",
+   "research": [
+    {
+     "date": "2026-08-28",
+     "question": "Sweep re-check — is this still listed, and at what price?",
+     "findings": "Still on the market and now cheaper. It has moved from the OnTheMarket listing at a £220,000 guide to a Hall & Scott listing on Rightmove at a £200,000 guide — a £20,000 reduction. The particulars are otherwise unchanged and confirm the same cottage: thatched Grade II listed end-of-terrace, living room with exposed ceiling beams and fireplace, bespoke modern kitchen with built-in oven and hob, ground-floor second bedroom/home office, impressive first-floor double bedroom, bathroom with a feature freestanding bath, gas central heating, cottage-style rear garden with shed, EPC exempt as a listed building, Council Tax Band B. At £200,000 this is now comfortably the cheapest thatched Grade II cottage on the tracked list, and it sits £30,000 above Jesse’s £170,000 target rather than £50,000 above it.",
+     "sources": [
+      {
+       "label": "Rightmove listing 91230633 (Hall & Scott)",
+       "url": "https://www.rightmove.co.uk/properties/91230633"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "mountpleasantavenue",
