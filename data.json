@@ -1,9 +1,406 @@
 {
- "lastUpdated": "2026-08-28",
+ "lastUpdated": "2026-09-04",
  "properties": [
   {
-   "id": "raleighroadbudleigh",
+   "id": "ebfordlandexmouthroad",
    "section": "new",
+   "town": "Ebford",
+   "title": "Land off Exmouth Road, Ebford/Exton (freehold acreage with roadside vehicle access and river views — no planning consent)",
+   "price": "£125,000",
+   "agent": "Signature Property Concierge, Hampshire",
+   "flags": [
+    {
+     "text": "WELL UNDER JESSE’S £170K TARGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FREEHOLD LAND",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (roadside vehicle access onto the land)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ESTABLISHED ROADSIDE VEHICLE ACCESS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "RIVER VIEWS OVER THE EXE ESTUARY",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "EXTON STATION IS WALKABLE — ON THE EXMOUTH–EXETER LINE",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "CLOSE TO WOODBURY AND WOODBURY COMMON",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO PLANNING PERMISSION — NOT A BUILDING PLOT AS IT STANDS",
+     "color": "#B71C1C"
+    },
+    {
+     "text": "30% PLANNING OVERAGE — SELLER TAKES 30% OF ANY UPLIFT",
+     "color": "#B71C1C"
+    },
+    {
+     "text": "SOLD BY A COMPANY ASSOCIATED WITH THE AGENT",
+     "color": "#B71C1C"
+    },
+    {
+     "text": "LISTED SIZE CONTRADICTS ITSELF — 3.5 ACRES OR 24.7?",
+     "color": "#C62828"
+    },
+    {
+     "text": "NO BUILDING, NO SERVICES, NOTHING TO LIVE IN",
+     "color": "#C62828"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/92629236",
+   "linkLabel": "rightmove.co.uk — listing 92629236",
+   "body": "Freehold land between the villages of Ebford and Exton, on the western edge of the Exe estuary, advertised with river views, a prominent roadside position and established vehicle access. The agent describes it as \"three and a half acres\" in the write-up and \"over three and a half acres\" in the key features, but Rightmove’s own size field for the same listing records 24.71 acres / 10 hectares — the two do not agree and the actual extent needs establishing from the title plan before anything else. The land is sold freehold subject to a 30% planning overage, meaning that if consent is ever granted the seller takes 30% of the uplift in value. The agent also states plainly that \"the property is being sold by a company associated with the Signature Property Concierge\", and the same seller has two further parcels on the same road at £300,000 (6 acres) and £125,000. There is no planning permission, no building and no services — it is marketed as being \"ideal for a variety of uses subject to the necessary consents\".",
+   "why": "Bare land is explicitly on your list — self-build plots are one of the unconventional routes you asked to be shown — and on the face of it this is cheap freehold acreage, well under your £170k target, in a genuinely good spot: Exton station is on the Exmouth–Exeter line within walking distance, Woodbury and the Common are a few minutes away, and it looks over the estuary. It is on the list for that reason. But it needs flagging hard rather than sold to you. There is no planning permission, so it is not a building plot — it is a field, and East Devon’s green-field policy makes residential consent between two small villages a long shot rather than a formality. The 30% overage means that even if you did win consent, the seller takes nearly a third of the gain you created. The seller being a company associated with the selling agent, based in Hampshire, marketing several roadside parcels at once with overage attached, matches the shape of land-banking sales, where buyers pay a premium over agricultural value for land whose consent never arrives. And the listing cannot agree with itself on whether you are buying 3.5 acres or 24.7. Treat this as a speculative punt to investigate with a solicitor and a look at East Devon’s local plan, not as a plot to build on.",
+   "dateAdded": "2026-09-04",
+   "photos": [
+    "EbfordLand_Gallery_1.jpg",
+    "EbfordLand_Gallery_2.jpg",
+    "EbfordLand_Gallery_3.jpg",
+    "EbfordLand_Gallery_4.jpg",
+    "EbfordLand_Gallery_5.jpg",
+    "EbfordLand_Gallery_6.jpg",
+    "EbfordLand_Gallery_7.jpg"
+   ],
+   "floorplans": [],
+   "parking": {
+    "status": "has",
+    "note": "Not a home, so parking in the ordinary sense does not apply — but the listing’s main selling point is a prominent roadside position on Exmouth Road with established vehicle access, so you can get a vehicle onto the land itself. Flagged here as \"has\" purely so the entry carries an explicit parking status like every other property on the page."
+   },
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "yes",
+    "poolSwimTeam": "no",
+    "private": "yes",
+    "mtbTrails": "partial",
+    "character": null,
+    "garden": null,
+    "garageWorkspace": "no",
+    "groundFloorLongTerm": null,
+    "closeToFamily": "yes",
+    "tenure": "freehold",
+    "uniqueFeature": "Freehold acreage on the estuary edge with its own roadside vehicle access and a station walkable from it — but no consent, and a 30% overage clawback attached"
+   },
+   "aiRating": 4,
+   "aiTake": "Cheap freehold acreage in a genuinely good position — estuary views, Exton station walkable, Woodbury Common close — but with no planning consent, a 30% overage clawback, a seller connected to the agent, and a listing that contradicts itself on the acreage, it is a speculative punt rather than somewhere you could build."
+  },
+  {
+   "id": "jarvisclosexmouth",
+   "section": "new",
+   "town": "Exmouth",
+   "title": "Jarvis Close, Exmouth (2 double bedroom semi-detached bungalow, driveway and garage, no chain)",
+   "price": "£290,000",
+   "agent": "Links Estate Agents, Exmouth",
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "BUNGALOW — ENTIRELY ON ONE LEVEL",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (driveway plus garage with remote door)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GARAGE WITH POWER AND LIGHT — USABLE AS A WORKSHOP",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GARDENS FRONT AND REAR",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "TWO DOUBLE BEDROOMS, BOTH WITH BUILT-IN WARDROBES",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "LEVEL WALK TO LOCAL FACILITIES",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "COUNCIL TAX BAND C",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "ELECTRIC HEATERS ONLY — NO GAS CENTRAL HEATING",
+     "color": "#C62828"
+    },
+    {
+     "text": "MODERN AND PLAIN — NO CHARACTER",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "£290,000 — NEAR THE TOP OF THE BUDGET",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/92706738",
+   "linkLabel": "rightmove.co.uk — listing 92706738",
+   "body": "A spacious two double bedroom semi-detached bungalow tucked away in a quiet close, close to bus services, shops and a post office, and offered with no onward chain. The double-glazed accommodation comprises an entrance hallway with a loft hatch and pull-down ladder, a 15’7\" x 13’2\" lounge/dining room opening into a study/snug, a kitchen with a range of base and eye-level units and plumbing for a washing machine, two double bedrooms (11’10\" x 11’3\" and 11’10\" x 8’11\") both with built-in double wardrobes and sliding patio doors onto the rear garden, and a shower room/WC with a quadrant cubicle and Mira shower. Outside, the front garden is laid to faux grass for ease of maintenance with an outside tap, a driveway provides off-road parking and leads to a 16’1\" x 8’5\" garage with a remote-operated up-and-over door, power, light and a courtesy door into the rear garden. The rear garden is laid mainly to stone paving with flower and shrub borders. Freehold, Council Tax Band C. Heating is by electric heaters with an Ariston electric water heater — there is no gas central heating.",
+   "why": "This is the practical end of the search rather than the romantic one. It is the single best answer on the list to the \"could I still live here if I could not manage stairs\" question — a true bungalow, everything on one level, with a level walk to shops and buses — and it comes with the things most of the cheap characterful cottages cannot offer: its own driveway, a proper garage with power and light that would work as a workshop, gardens front and rear, and freehold with no chain. What you are giving up is character: it is a plain post-war bungalow in a close, with nothing period about it, and it is the opposite of remote. The running-cost catch is real too — electric heaters and an electric water heater rather than gas central heating will cost noticeably more to run, and that is worth pricing in. At £290,000 it is close to the ceiling and a long way over your £170k target.",
+   "dateAdded": "2026-09-04",
+   "photos": [
+    "JarvisClose_Gallery_1.jpg",
+    "JarvisClose_Gallery_2.jpg",
+    "JarvisClose_Gallery_3.jpg",
+    "JarvisClose_Gallery_4.jpg",
+    "JarvisClose_Gallery_5.jpg",
+    "JarvisClose_Gallery_6.jpg",
+    "JarvisClose_Gallery_7.jpg",
+    "JarvisClose_Gallery_8.jpg",
+    "JarvisClose_Gallery_9.jpg"
+   ],
+   "floorplans": [
+    "JarvisClose_Floorplan_1.jpg"
+   ],
+   "parking": {
+    "status": "has",
+    "note": "A private driveway giving off-road parking, leading to a 16’1\" x 8’5\" garage with a remote-operated up-and-over door, power and light, and a courtesy door through to the rear garden. This is the strongest parking of any entry added this sweep — nothing to research."
+   },
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "partial",
+    "poolSwimTeam": "yes",
+    "private": "no",
+    "mtbTrails": "partial",
+    "character": "no",
+    "garden": "yes",
+    "garageWorkspace": "yes",
+    "groundFloorLongTerm": "yes",
+    "closeToFamily": "yes",
+    "tenure": "freehold",
+    "uniqueFeature": null
+   },
+   "aiRating": 6,
+   "aiTake": "The most practical entry on the list — a genuine one-level bungalow with its own driveway, a powered garage/workshop, gardens both sides, freehold and no chain — but completely without character, on electric-only heating, and at £290,000 near the top of what you would pay."
+  },
+  {
+   "id": "helenaplaceexmouth",
+   "section": "new",
+   "town": "Exmouth",
+   "title": "Helena Place, Exmouth (19th-century workers’ cottage, freehold, renovation project, downstairs bathroom already in)",
+   "price": "£160,000",
+   "agent": "Belvoir, Exmouth",
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "UNDER JESSE’S £170K TARGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "19TH-CENTURY WORKERS’ COTTAGE — GENUINE CHARACTER",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "BATHROOM IS ALREADY ON THE GROUND FLOOR",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "TWO DOUBLE BEDROOMS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "CENTRAL EXMOUTH — WALK TO BEACH, STATION AND SHOPS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FRONT GARDEN AND PRIVATE REAR COURTYARD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "COUNCIL TAX BAND A — THE CHEAPEST BAND",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ON-STREET PARKING ONLY (council permit — no space of its own)",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "NEEDS FULL RENOVATION AND MODERNISATION",
+     "color": "#C62828"
+    },
+    {
+     "text": "MID-TERRACE IN A CENTRAL STREET — NOT REMOTE OR PRIVATE",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/92667885",
+   "linkLabel": "rightmove.co.uk — listing 92667885",
+   "body": "A 19th-century terraced workers’ cottage in the heart of Exmouth, sold as a renovation project and priced with the work in mind. The ground floor runs from an entrance porch into a generous reception room with both front and rear aspects and a gas fireplace, then through to a galley-style kitchen and a tiled bathroom fitted with WC, wash basin, short bath and overhead shower. Upstairs are two well-proportioned double bedrooms. Outside there is a front garden and a private rear courtyard. A permit parking space is available through East Devon District Council. Offered with no onward chain. Freehold, Council Tax Band A, EPC rating D.",
+   "why": "At £160,000 this is one of the few genuinely characterful freehold houses on the whole list that sits under your real £170k target rather than the £300k ceiling — and it is a house, not a flat, with no service charge, no ground rent and the cheapest council tax band. The workers’-cottage origin gives it real character, and there is a quietly important practical detail: the bathroom is already on the ground floor alongside a large reception room, which makes single-level living far more achievable here than in most two-up-two-down cottages, where the only bathroom is upstairs. Against that, it is priced low because it needs the work — budget for the renovation on top, the way Bro 3 always does — and it is a mid-terrace in a central street, which is the opposite of the remote/rural setting you have said you would prefer. Parking is a permit rather than a space of your own.",
+   "dateAdded": "2026-09-04",
+   "photos": [
+    "HelenaPlace_Gallery_1.jpg",
+    "HelenaPlace_Gallery_2.jpg",
+    "HelenaPlace_Gallery_3.jpg",
+    "HelenaPlace_Gallery_4.jpg",
+    "HelenaPlace_Gallery_5.jpg",
+    "HelenaPlace_Gallery_6.jpg",
+    "HelenaPlace_Gallery_7.jpg",
+    "HelenaPlace_Gallery_8.jpg",
+    "HelenaPlace_Gallery_9.jpg"
+   ],
+   "floorplans": [
+    "HelenaPlace_Floorplan_1.jpg"
+   ],
+   "parking": {
+    "status": "onstreet",
+    "note": "No drive or garage — the agent says only that “a permit parking space is available through East Devon District Council”. Two separate schemes are relevant and it is worth checking which one the agent means. East Devon District Council sells car-park permits covering its own car parks: £120 a year for an annual permit, or £10 a month for one town (£2 extra per additional town, capped at £20/month) — that buys you a space in a council car park, not outside the door. Separately, Devon County Council runs the on-street residents’ permit scheme; three residents’ parking zones went live in Exmouth in 2023 (including the Albion Hill area, which is close to Helena Place) with further central zones proposed, administered through the MiPermit portal, with a maximum of two resident and two visitor permits per property depending on zone. Worth confirming with the agent and with DCC whether this address actually falls inside a residents’ zone before relying on it."
+   },
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "yes",
+    "poolSwimTeam": "yes",
+    "private": "no",
+    "mtbTrails": "partial",
+    "character": "yes",
+    "garden": "partial",
+    "garageWorkspace": "no",
+    "groundFloorLongTerm": "adaptable",
+    "closeToFamily": "yes",
+    "tenure": "freehold",
+    "uniqueFeature": "A 19th-century workers’ cottage — built for working families rather than as a villa, and it still has that small-scale original layout, including a ground-floor bathroom that most cottages of this size do not have"
+   },
+   "aiRating": 8,
+   "aiTake": "A freehold character cottage under your £170k target, walkable to the beach and station, band A council tax, no chain, and a ground-floor bathroom that makes long-term single-level living realistic — held back by needing a full renovation, permit-only parking, and being a central terrace rather than anywhere remote."
+  },
+  {
+   "id": "suffolkcottagewoodbury",
+   "section": "new",
+   "town": "Woodbury",
+   "title": "Suffolk Cottage, Greenway, Woodbury (Grade II listed 17th-century cottage, freehold, log burner, three floors)",
+   "price": "£285,000",
+   "agent": "Stags, Exeter",
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "GRADE II LISTED — BELIEVED 17TH CENTURY",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "IN BUDGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "IN WOODBURY ITSELF — SAME VILLAGE AS YOUR BROTHER",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "WOODBURY COMMON MTB TRAILS ON THE DOORSTEP",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "EXPOSED BEAMS AND A LOG BURNER",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "VERSATILE TOP-FLOOR ATTIC ROOM — USABLE AS A 3RD BEDROOM",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "COUNCIL TAX BAND B",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ON-STREET PARKING ONLY",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "FRONT PATIO GARDEN ONLY — NO REAR GARDEN",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "LISTED STATUS LIMITS WHAT YOU CAN CHANGE",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "ALL BEDROOMS AND THE BATHROOM ARE UPSTAIRS",
+     "color": "#C62828"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/92698785",
+   "linkLabel": "rightmove.co.uk — listing 92698785",
+   "body": "Suffolk Cottage is a Grade II listed cottage in the heart of Woodbury, believed to date back to the 17th century and presented in excellent condition. The front door opens into a spacious, light-filled sitting/dining room centred on a fireplace with a wood-burner and looking out over the front garden. Off it sits a well-appointed kitchen with a Belfast sink, wooden base units, integrated dishwasher, oven with gas hob and open shelving, with an adjoining utility room. Stairs rise to two well-proportioned double bedrooms, one with fitted wardrobes overlooking the garden, and a generous family bathroom with both a shower and a free-standing bath. A second flight leads to a versatile top-floor attic room, currently used as a bedroom — which is why the agent markets it as a 2/3 bedroom cottage. Outside there is an enclosed, low-maintenance front garden laid to patio that catches sun through the day, with a raised flower bed and a generous log store. 976 sq ft in total. Freehold, Council Tax Band B, mains water/electric/gas with gas central heating, and standard/superfast/ultrafast broadband available.",
+   "why": "This is the kind of property the search exists to find: a genuinely old, Grade II listed cottage with exposed beams and a log burner, freehold, in Woodbury itself — the same village as your brother, with Woodbury Common and its mountain bike trails effectively on the doorstep. At 976 sq ft over three floors it is bigger than most of the central-Woodbury cottages on file, and the attic room gives real flexibility. The honest catches are the ones that apply to nearly every cottage in that village core: there is no parking of your own, just on-street plus the free Flower Street car park a couple of minutes away, and the only outside space is a front patio — no rear garden at all. Listed status will also constrain what you can alter, which matters given every bedroom and the only bathroom are upstairs. At £285,000 it is well past your £170k target and towards the top of the range, so the question is whether the character and the village earn that premium over the cheaper Woodbury cottages already tracked.",
+   "dateAdded": "2026-09-04",
+   "photos": [
+    "SuffolkCottage_Gallery_1.jpg",
+    "SuffolkCottage_Gallery_2.jpg",
+    "SuffolkCottage_Gallery_3.jpg",
+    "SuffolkCottage_Gallery_4.jpg",
+    "SuffolkCottage_Gallery_5.jpg",
+    "SuffolkCottage_Gallery_6.jpg",
+    "SuffolkCottage_Gallery_7.jpg",
+    "SuffolkCottage_Gallery_8.jpg",
+    "SuffolkCottage_Gallery_9.jpg",
+    "SuffolkCottage_Gallery_10.jpg",
+    "SuffolkCottage_Gallery_11.jpg",
+    "SuffolkCottage_Gallery_12.jpg",
+    "SuffolkCottage_Gallery_13.jpg",
+    "SuffolkCottage_Gallery_14.jpg",
+    "SuffolkCottage_Gallery_15.jpg",
+    "SuffolkCottage_Gallery_16.jpg"
+   ],
+   "floorplans": [
+    "SuffolkCottage_Floorplan_1.jpg"
+   ],
+   "parking": {
+    "status": "onstreet",
+    "note": "The agent lists on-street parking only — no space, drive or garage. Greenway is in the central village core, so the practical backstop is the same as for the other central-Woodbury cottages on file: Flower Street car park (EX5 1LX) is free with a 23-hours-in-24 maximum stay and is a couple of minutes’ walk, and there is a second free car park beside Woodbury Village Hall. No residents’ permit scheme operates in Woodbury, so this is unrestricted on-street plus two free car parks rather than a permit situation — workable, but you would be walking to your car."
+   },
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "no",
+    "poolSwimTeam": "no",
+    "private": "no",
+    "mtbTrails": "yes",
+    "character": "yes",
+    "garden": "partial",
+    "garageWorkspace": "no",
+    "groundFloorLongTerm": "adaptable",
+    "closeToFamily": "yes",
+    "tenure": "freehold",
+    "uniqueFeature": "A three-storey 17th-century cottage on a small footprint — the top-floor attic room gives a genuine third room above two full floors, which is unusual in a village terrace this size"
+   },
+   "aiRating": 6,
+   "aiTake": "Real 17th-century Grade II character, freehold, in your brother’s village with the Common’s trails on the doorstep and more space than most central-Woodbury cottages — but no parking, no rear garden, everything upstairs, and £285,000 is a long way past your £170k target."
+  },
+  {
+   "id": "raleighroadbudleigh",
+   "section": "still",
    "title": "Raleigh Road, Budleigh Salterton (3-bed apartment at Raleigh Court with a private garage and sun terrace — 47-year lease)",
    "price": "£250,000",
    "agent": "David Rhys, Budleigh Salterton",
@@ -121,7 +518,7 @@
   },
   {
    "id": "strandexmouth",
-   "section": "new",
+   "section": "still",
    "title": "4 The Strand, Exmouth (2 double bedrooms above a shop in the town centre, 168-year lease)",
    "price": "Offers in Excess of £140,000",
    "agent": "Springbok Properties, Nationwide",
@@ -225,7 +622,7 @@
   },
   {
    "id": "hartleyroadexmouth",
-   "section": "new",
+   "section": "still",
    "title": "Hartley Road, Exmouth (1-bed flat, no chain, residents’ parking)",
    "price": "Guide Price £90,000",
    "agent": "Your Move, Exmouth",
@@ -320,7 +717,7 @@
   },
   {
    "id": "manchesterroadexmouth",
-   "section": "new",
+   "section": "still",
    "title": "Manchester Road, Exmouth (two independent 1-bed flats sold as one lot — AUCTION 17 Sept)",
    "price": "Guide Price £130,000 (auction)",
    "agent": "Links Estate Agents, Exmouth",
@@ -419,7 +816,7 @@
   },
   {
    "id": "forestreetbudleighflat",
-   "section": "new",
+   "section": "still",
    "title": "Fore Street, Budleigh Salterton (2-bed ground-floor flat at The Rolle — step-free, allocated parking, coastal path from the garden)",
    "price": "Guide Price £220,000",
    "agent": "David Rhys, Budleigh Salterton",
@@ -713,6 +1110,10 @@
    "bathrooms": 1,
    "flags": [
     {
+     "text": "LIKELY SOLD/WITHDRAWN",
+     "color": "#8D6E63"
+    },
+    {
      "text": "UNDER JESSE’S £170K TARGET",
      "color": "#2E7D32"
     },
@@ -892,6 +1293,10 @@
    "bedrooms": 1,
    "bathrooms": 1,
    "flags": [
+    {
+     "text": "LIKELY SOLD/WITHDRAWN",
+     "color": "#8D6E63"
+    },
     {
      "text": "IN BUDGET",
      "color": "#2E7D32"
@@ -7206,7 +7611,8 @@
     "garden": "yes",
     "garageWorkspace": "no",
     "uniqueFeature": null,
-    "closeToFamily": "partial"
+    "closeToFamily": "partial",
+    "tenure": "freehold"
    },
    "aiRating": 6,
    "aiTake": "Solid character and price, but no parking, and the ocean/station/pool are all a drive away rather than walkable — a village-life trade rather than a coast-or-trail-adjacent one.",
@@ -7881,12 +8287,8 @@
    "agent": "Meadows / 247 Property Auctions",
    "flags": [
     {
-     "text": "LIKELY SOLD/WITHDRAWN",
-     "color": "#8D6E63"
-    },
-    {
-     "text": "AUCTION HELD 13 AUG 2026 — OUTCOME UNCONFIRMED",
-     "color": "#8D6E63"
+     "text": "AUCTION HELD 13 AUG 2026 — DID NOT SELL, STILL AVAILABLE",
+     "color": "#EF6C00"
     },
     {
      "text": "OVER BUDGET",
@@ -7908,7 +8310,7 @@
    "map": "map_clinton_garage.png",
    "link": "https://www.meadowsea.com/Property-For-Sale-Clinton-Garage-Budleigh-Salterton-pi-MEAD1265.htm",
    "linkLabel": "meadowsea.com — MEAD1265",
-   "body": "Former commercial garage/MOT site right in Budleigh Salterton itself — conversion/redevelopment long-shot. [Sweep 2026-08-25: the 13 August auction date has now passed. An independent auction-results database lists the lot as Sold, but the agent’s own page has not been updated and still shows it as Available with the auction described as upcoming, so the outcome is not confirmed either way. Flagged rather than removed this sweep; if it is still showing as sold or withdrawn next sweep it will be deleted.]",
+   "body": "Former commercial garage/MOT site right in Budleigh Salterton itself — conversion/redevelopment long-shot. [Sweep 2026-08-25: the 13 August auction date has now passed. An independent auction-results database lists the lot as Sold, but the agent’s own page has not been updated and still shows it as Available with the auction described as upcoming, so the outcome is not confirmed either way. Flagged rather than removed this sweep; if it is still showing as sold or withdrawn next sweep it will be deleted.] [Sweep 2026-09-04: re-checked the agent’s own page directly — it still reads “Guide Price £375,000 - Available”, so the lot did not sell at the 13 August auction and is still being marketed. The LIKELY SOLD/WITHDRAWN flag added by an earlier sweep was a false positive and has been removed.]",
    "why": "Over budget and speculative, but flagged given the town-centre location and imminent auction date.",
    "dateAdded": "2026-07-04",
    "checklist": {
