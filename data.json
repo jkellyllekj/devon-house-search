@@ -1,9 +1,363 @@
 {
- "lastUpdated": "2026-09-04",
+ "lastUpdated": "2026-09-07",
  "properties": [
   {
-   "id": "ebfordlandexmouthroad",
+   "id": "hartwellstarcross",
    "section": "new",
+   "town": "Starcross",
+   "title": "Hartwell House, Starcross (five-bedroom freehold former shop and community space, planning permission to convert into three flats, estuary views)",
+   "price": "£250,000",
+   "agent": "Wilkinson Grant & Co, Exeter",
+   "bedrooms": 5,
+   "bathrooms": 2,
+   "flags": [
+    {
+     "text": "IN BUDGET — AND FIVE BEDROOMS AT £250,000",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "PLANNING PERMISSION ALREADY IN PLACE TO CONVERT INTO THREE FLATS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FORMERLY TWO DWELLINGS PLUS A CHARITY SHOP — GENUINELY UNUSUAL BUILDING",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ESTUARY VIEWS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GROUND FLOOR ALREADY HAS ITS OWN KITCHEN, BATHROOM AND GARDEN DOOR",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "WALKING DISTANCE TO STARCROSS STATION",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HALDON FOREST MTB TRAILS ~15 MINUTES AWAY",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "OUTBUILDING AND REAR GARDEN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NEW ROOF ON ONE HALF AFTER HISTORIC WATER INGRESS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "WRONG SIDE OF THE EXE — A LONG WAY ROUND FROM BOTH BROTHERS",
+     "color": "#C62828"
+    },
+    {
+     "text": "NO PARKING INFO — NOTHING IN THE LISTING EITHER WAY",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "UPPER FLOORS REACHED BY AN EXTERNAL REAR STAIRCASE",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "A PROJECT, NOT A FINISHED HOME",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "FRONTS THE MAIN ROAD THROUGH THE VILLAGE — NOT REMOTE",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/92398803",
+   "linkLabel": "rightmove.co.uk — listing 92398803",
+   "body": "Hartwell House sits in a prominent spot fronting the main road through Starcross, on the west shore of the Exe estuary. It was formerly arranged as two separate dwellings, and the ground floor was most recently used by a charity as a retail and community space — a big open-plan room, with a kitchen and bathroom to the rear and its own separate door out to the rear garden. The upper floors are currently reached by an external staircase at the back. The first floor has two more generously proportioned rooms plus a second kitchen and bathroom, and two separate entrance doors, one of which opens into a self-contained room at the rear. A staircase continues to the second floor, where two further rooms sit either side of the stairs, each with windows front and back and views along the village. One half of the building has recently had a new roof following historic water ingress. The plot is about 0.05 acres and the building runs to roughly 221 sq m. Sold freehold with no onward chain, and with planning permission already in place to convert the whole thing into three flats. Starcross station is a short walk, Powderham Castle and its farm shop are under two miles away, and the Turf Lock pub sits on the estuary nearby.",
+   "why": "This is the most genuinely unconventional thing to come up in a while, and on paper the value is hard to argue with — a freehold building of roughly 221 sq m with five usable rooms, two kitchens and two bathrooms, an outbuilding, a garden and consent to convert into three flats, all for £250,000. The ground floor is close to being a self-contained single-level home already: big open room, kitchen, bathroom and its own door to the garden, which is exactly the long-term ground-floor living you have said matters. Haldon Forest, one of the best mountain bike centres in the South West, is about fifteen minutes away on this side of the water, and the station is walkable. The catch is location, and it is a real one: Starcross is on the wrong side of the Exe. You can see Exmouth across the water but by road it is a long way round through Exeter, and it is nowhere near either brother — by your own weighting that has to pull the score down regardless of how good the building is. There is also no mention of parking anywhere in the listing, the upper floors are currently only reachable by an external staircase at the back, and this is unmistakably a project rather than somewhere to move into.",
+   "dateAdded": "2026-09-07",
+   "photos": [
+    "HartwellStarcross_Gallery_1.jpeg",
+    "HartwellStarcross_Gallery_2.jpeg",
+    "HartwellStarcross_Gallery_3.jpeg",
+    "HartwellStarcross_Gallery_4.jpeg",
+    "HartwellStarcross_Gallery_5.jpeg",
+    "HartwellStarcross_Gallery_6.jpeg",
+    "HartwellStarcross_Gallery_7.jpeg",
+    "HartwellStarcross_Gallery_8.jpeg",
+    "HartwellStarcross_Gallery_9.jpeg",
+    "HartwellStarcross_Gallery_10.jpeg",
+    "HartwellStarcross_Gallery_11.jpeg",
+    "HartwellStarcross_Gallery_12.jpeg",
+    "HartwellStarcross_Gallery_13.jpeg",
+    "HartwellStarcross_Gallery_14.jpeg",
+    "HartwellStarcross_Gallery_15.jpeg"
+   ],
+   "floorplans": [
+    "HartwellStarcross_Floorplan_1.jpeg",
+    "HartwellStarcross_Floorplan_2.jpeg",
+    "HartwellStarcross_Floorplan_3.jpeg"
+   ],
+   "parking": {
+    "status": "unknown",
+    "note": "The listing says nothing about parking at all — no drive, no garage, no allocated space mentioned, and none visible in the photos of the frontage, which opens straight onto the main road through the village. So assume none of its own until the agent confirms otherwise. The village situation is better than that sounds, though: Starcross has two Teignbridge District Council car parks, The Strand (essentially on the doorstep, since The Strand is the main road the house fronts) and New Road a little further along. Teignbridge agreed a revised fees and charges list that made resident permits available at the New Road car park, and confirmed that permit charges at The Strand car park would be the same as at New Road — so a resident permit in a council car park within a short walk looks genuinely available. Teignbridge does not publish the permit price on the pages that are currently reachable (both of its Starcross permit pages return 404), so ring the council for the current figure. Worth also asking the agent whether the rear service access to the garden and outbuilding is wide enough to take a car, since the property does have its own separate rear access."
+   },
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "yes",
+    "poolSwimTeam": "no",
+    "private": "no",
+    "mtbTrails": "yes",
+    "character": "yes",
+    "garden": "yes",
+    "garageWorkspace": "partial",
+    "groundFloorLongTerm": "adaptable",
+    "closeToFamily": "no",
+    "tenure": "freehold",
+    "uniqueFeature": "A former charity shop and community space on the ground floor of what were once two separate dwellings, sold with planning permission already granted to split it into three flats — you are buying a small building with development consent, not a house"
+   },
+   "aiRating": 6,
+   "aiTake": "Remarkable value and a genuinely unusual building — 221 sq m freehold, five rooms, two kitchens and bathrooms, an outbuilding and consent for three flats at £250,000, with Haldon Forest and a station close by — but it sits on the wrong side of the Exe from both brothers, has no parking mentioned anywhere, and is a conversion project rather than a home."
+  },
+  {
+   "id": "danbyterraceexmouth",
+   "section": "new",
+   "town": "Exmouth",
+   "title": "Danby Terrace, Exmouth (bay-fronted freehold house, four double bedrooms, ground-floor bedroom and bathroom, brick workshop, no chain)",
+   "price": "£300,000",
+   "agent": "Links Estate Agents, Exmouth",
+   "bedrooms": 4,
+   "bathrooms": 2,
+   "flags": [
+    {
+     "text": "FOUR DOUBLE BEDROOMS AND TWO BATHROOMS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GROUND-FLOOR BEDROOM AND GROUND-FLOOR BATHROOM ALREADY IN PLACE",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "1,389 SQ FT — LARGE FOR THE MONEY",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "BRICK-BUILT SHED / WORKSHOP IN THE COURTYARD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "WALK TO TOWN CENTRE, STATION AND SEAFRONT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "BAY FRONT, ORNATE COVING AND STAINED GLASS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "USEFUL LOFT ROOM OFF THE LANDING",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "COUNCIL TAX BAND C",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "POSSIBLE OFF-ROAD PARKING VIA THE REAR SERVICE LANE (SUBJECT TO CONSENT)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ON-STREET PARKING ONLY — AND DANBY TERRACE IS NAMED IN DEVON'S RESTRICTION PLANS",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "ELECTRIC NIGHT STORAGE HEATING — GAS IS CONNECTED BUT UNUSED",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "ONLY PART DOUBLE GLAZED",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "£300,000 — RIGHT AT THE TOP OF THE BUDGET",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "MID-TERRACE IN A CENTRAL STREET — NOT REMOTE OR PRIVATE",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/173220221",
+   "linkLabel": "rightmove.co.uk — listing 173220221",
+   "body": "A deceptively spacious bay-fronted terraced house within easy walking distance of Exmouth town centre, the train station, local schools and the seafront, offered with no onward chain. The ground floor has a bay-fronted living room with ornate ceiling coving, a fourth double bedroom or additional reception room, a good-sized kitchen/dining room running to nearly 16 feet, and a bathroom. Upstairs are three more double bedrooms and a shower room, with steps from the landing leading up to a useful loft room. The entrance hall has stained glass to the inner door and understairs storage. Outside is a good-sized courtyard garden with a brick-built shed/workshop. The house runs to about 1,389 sq ft. Heating is by modern electric night storage radiators, though gas is connected to the property, and the glazing is only part double. Residents' parking is on the street and in neighbouring roads, and the agent notes that subject to the usual planning consents there could be scope to create off-road parking in the rear garden via the rear service lane. Freehold, Council Tax Band C.",
+   "why": "For practical long-term liveability this is one of the better-shaped houses on the list. There is already a double bedroom AND a full bathroom on the ground floor, alongside the kitchen/dining room and living room — so if stairs ever became a problem you could live entirely on one level without building anything, which is rare in a terrace. On top of that you get three more doubles upstairs, a second shower room, a loft room, a brick workshop in the courtyard and nearly 1,400 sq ft, all freehold with no chain and a level walk to the station and the sea. The honest downsides: it is £300,000, which is the very top of the ceiling and a long way above your real £170k target, so Bro 3's standing 'too expensive for what it is' test applies. The heating is electric night storage despite gas being connected, and the glazing is only part double, so there is money to spend. And the parking claim needs reading carefully — see the parking note, because Danby Terrace is specifically named in Devon County Council's restriction proposals rather than being the free-for-all the listing implies.",
+   "dateAdded": "2026-09-07",
+   "photos": [
+    "DanbyTerrace_Gallery_1.jpeg",
+    "DanbyTerrace_Gallery_2.jpeg",
+    "DanbyTerrace_Gallery_3.jpeg",
+    "DanbyTerrace_Gallery_4.jpeg",
+    "DanbyTerrace_Gallery_5.jpeg",
+    "DanbyTerrace_Gallery_6.jpeg",
+    "DanbyTerrace_Gallery_7.jpeg",
+    "DanbyTerrace_Gallery_8.jpeg",
+    "DanbyTerrace_Gallery_9.jpeg",
+    "DanbyTerrace_Gallery_10.jpeg",
+    "DanbyTerrace_Gallery_11.jpeg",
+    "DanbyTerrace_Gallery_12.jpeg",
+    "DanbyTerrace_Gallery_13.jpeg",
+    "DanbyTerrace_Gallery_14.jpeg"
+   ],
+   "floorplans": [
+    "DanbyTerrace_Floorplan_1.jpeg"
+   ],
+   "parking": {
+    "status": "onstreet",
+    "note": "The listing says there is 'ample residents parking within Danby Terrace and surrounding roads', which is worth a caveat: Danby Terrace is named specifically in Devon County Council's Exmouth parking proposals. Belvedere Road, Danby Terrace and Lawn Road are set to have parking restricted to one hour between 8am and 8pm Monday to Saturday with no return within the hour, and residents' zonal restrictions have been proposed for specified lengths of Danby Terrace over the same hours. Three residents' parking zones already went live in Exmouth in 2023 and residents and councillors asked for further central areas to be added so people could buy permits — Danby Terrace is in that next wave. In practice that means a resident permit will very likely be necessary rather than optional here, and without one you would be limited to an hour at a time during the day. Permits are administered by Devon County Council through the MiPermit portal, typically capped at two resident and two visitor permits per property depending on the zone. Confirm the current status of the order for this specific length of Danby Terrace with DCC before relying on the agent's wording. The offsetting point is genuine: the agent says that subject to the usual planning consents there could be scope to create off-road parking in the rear garden, accessed from the rear service lane — if that works it would give the house a space of its own and remove the problem entirely, so it is worth pricing up early."
+   },
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "yes",
+    "poolSwimTeam": "yes",
+    "private": "no",
+    "mtbTrails": "partial",
+    "character": "partial",
+    "garden": "partial",
+    "garageWorkspace": "yes",
+    "groundFloorLongTerm": "yes",
+    "closeToFamily": "yes",
+    "tenure": "freehold",
+    "uniqueFeature": "A rear service lane behind the courtyard that could, subject to consent, be used to create the house's own off-road parking — unusual for a central Exmouth terrace"
+   },
+   "aiRating": 7,
+   "aiTake": "Freehold, nearly 1,400 sq ft, four doubles, a brick workshop and — unusually for a terrace — a bedroom and a full bathroom already on the ground floor, all a level walk from the station and sea; marked down for being right at the £300k ceiling, running on electric night storage heaters, and sitting on a street Devon is actively adding parking restrictions to."
+  },
+  {
+   "id": "madisonwharfexmouth",
+   "section": "new",
+   "town": "Exmouth",
+   "title": "Madison Wharf, Exmouth Marina (ground-floor studio with its own terrace gate onto the marina walkway, allocated parking, no chain)",
+   "price": "£200,000",
+   "agent": "Hall & Scott, Exmouth",
+   "bedrooms": 1,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "ENTIRELY GROUND FLOOR — STEP-FREE VIA ITS OWN TERRACE DOORS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (allocated space at the side of the block)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "OWN PRIVATE ENTRANCE — NO NEED TO USE THE COMMUNAL HALL",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GATED PRIVATE ACCESS STRAIGHT ONTO THE MARINA WALKWAY",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SOUTH-WESTERLY TERRACE WITH ESTUARY VIEWS TO DAWLISH WARREN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ADJACENT TO SHELLY BEACH",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "LEASEHOLD — 125-YEAR LEASE FROM 2001, ~100 YEARS LEFT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "WALK TO THE TOWN CENTRE AND TRAIN STATION",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "COUNCIL TAX BAND B",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "~£2,654 A YEAR IN CHARGES — £2,263 MAINTENANCE PLUS £391 GROUND RENT",
+     "color": "#C62828"
+    },
+    {
+     "text": "EFFECTIVELY A STUDIO — THE BEDROOM IS SCREENED OFF BY BLINDS",
+     "color": "#C62828"
+    },
+    {
+     "text": "NO PETS WITHOUT THE MANAGEMENT COMPANY'S CONSENT",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "MODERN MARINA BLOCK — NO CHARACTER",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "ELECTRIC HEATING ONLY",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/170513624",
+   "linkLabel": "rightmove.co.uk — listing 170513624",
+   "body": "A well-presented modern ground-floor studio apartment on the Exmouth Marina development, a few steps from Shelly Beach. The flat has its own private entrance door and, better still, double glazed doors from the sitting/dining room straight onto a south-westerly facing terrace with a gate giving direct access onto the marina walkway — so you can come and go without using the communal entrance at all. The sitting/dining room runs to about 15ft by 13ft; the kitchen is fitted with integrated fridge, oven, hob and washer/dryer; the bedroom area is roughly 10ft by 9ft and is screened off from the rest of the accommodation with vertical blinds rather than a wall. The bathroom is modern, with a P-shaped Trevi spa bath, curved glass screen and a twin-headed shower with body jets. The terrace has an astroturfed lawn area and estuary views out towards Dawlish Warren. There is an allocated parking space at the side of the block, an entry security system, electric central heating and double glazing, and no onward chain. Leasehold on a 125-year lease from 2001, maintenance £2,263 a year, ground rent £391 a year, Council Tax Band B at £1,893.10. No pets without prior consent from the management company.",
+   "why": "On the practical criteria that keep coming up this one scores unusually well for the money: it is entirely on the ground floor with step-free access through its own terrace doors, it has a parking space of its own, it is a five-minute walk from the station and town, and it is about as close to the water as anything on the list — a gate from your own terrace onto the marina walkway, with Shelly Beach next door. Roughly 100 years left on the lease is comfortable, and there is no chain. What holds it back is what you actually get for £200,000: this is a studio, not a one-bedroom flat — the bedroom is separated from the living space by vertical blinds, not a wall — and the running costs are heavy, with maintenance and ground rent together coming to about £2,654 a year before council tax. That is the kind of gap between price and substance that Bro 3 consistently marks down, and it is a modern block with no character at all, which is the opposite of the thatched-cottage end of your list.",
+   "dateAdded": "2026-09-07",
+   "photos": [
+    "MadisonWharf_Gallery_1.jpeg",
+    "MadisonWharf_Gallery_2.jpeg",
+    "MadisonWharf_Gallery_3.png",
+    "MadisonWharf_Gallery_4.jpeg",
+    "MadisonWharf_Gallery_5.jpeg",
+    "MadisonWharf_Gallery_6.png",
+    "MadisonWharf_Gallery_7.png",
+    "MadisonWharf_Gallery_8.jpeg"
+   ],
+   "floorplans": [
+    "MadisonWharf_Floorplan_1.jpeg"
+   ],
+   "parking": {
+    "status": "has",
+    "note": "An allocated parking space comes with the flat, located at the side of the apartment block — a space of its own rather than a permit, which on the Exmouth Marina development is worth having given how tight parking gets down by Shelly Beach in summer."
+   },
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "yes",
+    "poolSwimTeam": "yes",
+    "private": "partial",
+    "mtbTrails": "partial",
+    "character": "no",
+    "garden": "partial",
+    "garageWorkspace": "no",
+    "groundFloorLongTerm": "yes",
+    "closeToFamily": "yes",
+    "tenure": "leasehold",
+    "leaseYears": 100,
+    "uniqueFeature": "A private gate from your own terrace directly onto the marina walkway, so you can step out onto the waterfront without going through any communal area"
+   },
+   "aiRating": 6,
+   "aiTake": "Ticks the practical boxes better than most flats at this price — fully ground floor, step-free through its own terrace doors, allocated parking, ~100 years of lease and a gate straight onto the marina walkway — but it is a studio with a blind instead of a bedroom wall, carries about £2,654 a year in charges, and has no character whatsoever."
+  },
+  {
+   "id": "ebfordlandexmouthroad",
+   "section": "still",
    "town": "Ebford",
    "title": "Land off Exmouth Road, Ebford/Exton (freehold acreage with roadside vehicle access and river views — no planning consent)",
    "price": "£125,000",
@@ -96,7 +450,7 @@
   },
   {
    "id": "jarvisclosexmouth",
-   "section": "new",
+   "section": "still",
    "town": "Exmouth",
    "title": "Jarvis Close, Exmouth (2 double bedroom semi-detached bungalow, driveway and garage, no chain)",
    "price": "£290,000",
@@ -195,7 +549,7 @@
   },
   {
    "id": "helenaplaceexmouth",
-   "section": "new",
+   "section": "still",
    "town": "Exmouth",
    "title": "Helena Place, Exmouth (19th-century workers’ cottage, freehold, renovation project, downstairs bathroom already in)",
    "price": "£160,000",
@@ -294,7 +648,7 @@
   },
   {
    "id": "suffolkcottagewoodbury",
-   "section": "new",
+   "section": "still",
    "town": "Woodbury",
    "title": "Suffolk Cottage, Greenway, Woodbury (Grade II listed 17th-century cottage, freehold, log burner, three floors)",
    "price": "£285,000",
@@ -1101,97 +1455,6 @@
    "geocodeSource": "Rightmove listing coordinates"
   },
   {
-   "id": "byronwayflatexmouth",
-   "section": "still",
-   "title": "Byron Way, Exmouth (1-bed with its own private entrance and off-road parking space, 999-year lease)",
-   "price": "£149,950",
-   "agent": "Pennys, Exmouth",
-   "bedrooms": 1,
-   "bathrooms": 1,
-   "flags": [
-    {
-     "text": "LIKELY SOLD/WITHDRAWN",
-     "color": "#8D6E63"
-    },
-    {
-     "text": "UNDER JESSE’S £170K TARGET",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "HAS PARKING (own off-road space to the front)",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "OWN PRIVATE ENTRANCE — NO COMMUNAL HALL",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "999-YEAR LEASE FROM 1995 — 968 YEARS LEFT",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "LARGE 18FT LOUNGE/DINING ROOM",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "ALL LIVING SPACE IS UP THE STAIRS",
-     "color": "#EF6C00"
-    },
-    {
-     "text": "NIGHT STORAGE HEATERS — NO CENTRAL HEATING",
-     "color": "#C62828"
-    },
-    {
-     "text": "MODERN — NO CHARACTER",
-     "color": "#EF6C00"
-    },
-    {
-     "text": "NO GARDEN",
-     "color": "#EF6C00"
-    }
-   ],
-   "link": "https://www.rightmove.co.uk/properties/91450518",
-   "linkLabel": "rightmove.co.uk — listing 91450518",
-   "body": "A one-bedroom first-floor flat on Byron Way in north Exmouth, sold with its own private front door rather than a shared entrance. A storm porch with a storage cupboard leads to a private front door and an entrance hallway with the stairs rising to the living accommodation. The lounge is a good size at 18’0\" x 14’9\" narrowing to 8’8\", with two double-glazed windows to the front and a further window to the side. There is an inner hallway with a coats cupboard and an airing cupboard housing the water cylinder, a 10’0\" x 4’8\" galley kitchen with built-in electric hob and oven and plumbing for a washing machine, a 10’0\" x 8’7\" double bedroom with a built-in wardrobe, and a bathroom with a bath and Mira shower over. Outside there is a parking space for one car to the front. Held on a 999-year lease from 1995 with the vendor insuring the property and external maintenance split. Heating throughout is a night storage heater in the lounge and electric wall heaters elsewhere — there is no gas central heating.",
-   "why": "The two things this gets right are the two things flats at this price usually get wrong: it has its own off-road parking space, and it has its own private front door rather than a communal hallway, on a lease so long it is functionally freehold. At £149,950 that is under Jesse’s real target with parking already solved, and the 18-foot lounge is a genuinely generous room for the money. Against that: every bit of the living space is up a flight of stairs, which fails the long-term single-level test outright, there is no garden, it is plain modern stock with no character, and the heating is night storage plus electric wall panels — the most expensive way to heat a flat and a running-cost problem rather than a cosmetic one. Five photographs is also thin. A practical, cheap, parked bolthole rather than anything Jesse would fall for.",
-   "dateAdded": "2026-08-25",
-   "photos": [
-    "ByronWayFlat_Gallery_1.jpeg",
-    "ByronWayFlat_Gallery_2.jpeg",
-    "ByronWayFlat_Gallery_3.jpeg",
-    "ByronWayFlat_Gallery_4.jpeg",
-    "ByronWayFlat_Gallery_5.jpeg"
-   ],
-   "floorplans": [
-    "ByronWayFlat_Floorplan_1.jpeg"
-   ],
-   "checklist": {
-    "ocean": "partial",
-    "trainStation": "partial",
-    "poolSwimTeam": "yes",
-    "private": "partial",
-    "mtbTrails": "partial",
-    "character": "no",
-    "garden": "no",
-    "garageWorkspace": "no",
-    "closeToFamily": "yes",
-    "groundFloorLongTerm": "no",
-    "uniqueFeature": null,
-    "tenure": "leasehold",
-    "leaseYears": 968
-   },
-   "aiRating": 6,
-   "aiTake": "Its own front door, its own parking space and a 968-year lease for under £150,000 is a genuinely practical package, undone by stairs to every room, night storage heating and no character at all.",
-   "parking": {
-    "status": "has",
-    "note": "A parking space for one car directly to the front of the property, off-road and included in the sale. That is the single strongest thing about this flat — off-road parking with a one-bedroom flat under £150,000 is rare in Exmouth, and it removes the residents’-permit question entirely."
-   },
-   "town": "Exmouth",
-   "lat": 50.642036,
-   "lng": -3.398641,
-   "geocodeSource": "Rightmove listing coordinates"
-  },
-  {
    "id": "mortonroadflatexmouth",
    "section": "still",
    "title": "Morton Road, Exmouth (ground-floor 1-bed with its own private entrance and sun-trap courtyard, share of freehold)",
@@ -1282,109 +1545,6 @@
    "town": "Exmouth",
    "lat": 50.61752,
    "lng": -3.418095,
-   "geocodeSource": "Rightmove listing coordinates"
-  },
-  {
-   "id": "littlehamroadexmouth",
-   "section": "still",
-   "title": "Littleham Road, Exmouth (architect-designed bungalow down a private lane, garage/workshop plus parking for two, no chain)",
-   "price": "£250,000",
-   "agent": "Pennys, Exmouth",
-   "bedrooms": 1,
-   "bathrooms": 1,
-   "flags": [
-    {
-     "text": "LIKELY SOLD/WITHDRAWN",
-     "color": "#8D6E63"
-    },
-    {
-     "text": "IN BUDGET",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "BUNGALOW — ENTIRELY ON ONE LEVEL",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "HAS PARKING (2 cars on the lane + single garage with power and light)",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "GARAGE/WORKSHOP WITH ITS OWN STORE AREA",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "SECLUDED — PRIVATE LANE, WALLED COURTYARD GARDEN",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "ARCHITECT-DESIGNED ONE-OFF, NOT ESTATE HOUSING",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "NO ONWARD CHAIN",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "TENURE NOT STATED — AGENT ASKS YOU TO CONFIRM",
-     "color": "#EF6C00"
-    },
-    {
-     "text": "ONLY 1 BEDROOM AT £250,000",
-     "color": "#C62828"
-    }
-   ],
-   "link": "https://www.rightmove.co.uk/properties/92337225",
-   "linkLabel": "rightmove.co.uk — listing 92337225",
-   "body": "An architect-designed bungalow of around 2000, tucked down a private lane behind the Cranford Avenue shopping parade in Exmouth. It was built to a high standard with a generous glazed frontage, and runs as an open-plan kitchen with a modern fitted range of units and a Worcester combi boiler, a living space, one bedroom of 12’6\" x 8’4\", and a stylish modern bathroom of 9’11\" x 12’6\" with a large shower cubicle, chrome grab rails and a heated towel rail. Outside, the agent singles the garden out for special note: reached through an archway, enclosed by brick boundaries, laid to several sunny paved areas for outside entertaining, with a timber shed, solar lighting and an outside tap. From the private lane there is parking for approximately two cars plus a single garage of 12’7\" x 10’3\" with an up-and-over door, power and light, and an additional store area in front of it. uPVC double glazing throughout, gas central heating, council tax band A, no onward chain. Pennys have not stated the tenure and explicitly ask buyers to confirm freehold or leasehold with them.",
-   "why": "Almost everything on the practical checklist is ticked here — it is a bungalow so it is entirely on one level and passes the long-term stairs test outright, it has real parking plus a powered and lit garage that would work as a workshop, the garden is walled and private, and it sits down its own lane rather than on an estate road, which suits the preference for somewhere a bit more tucked away. The bathroom already has grab rails fitted, which is telling about how it has been lived in. The thing that stops it scoring higher is simple arithmetic: £250,000 for one bedroom. That is the exact shape of purchase Bro 3 marks down hardest, and it leaves no room to grow. It is also a 2000 build, so the character is in the architecture and the glazing rather than in beams and thatch. Worth a look if a low-maintenance, one-level, workshop-equipped base matters more than bedroom count — and the unstated tenure needs answering first, because for a bungalow it really ought to be freehold.",
-   "dateAdded": "2026-08-25",
-   "photos": [
-    "LittlehamRoadExmouth_Gallery_1.jpeg",
-    "LittlehamRoadExmouth_Gallery_2.jpeg",
-    "LittlehamRoadExmouth_Gallery_3.jpeg",
-    "LittlehamRoadExmouth_Gallery_4.jpeg",
-    "LittlehamRoadExmouth_Gallery_5.jpeg",
-    "LittlehamRoadExmouth_Gallery_6.jpeg",
-    "LittlehamRoadExmouth_Gallery_7.jpeg",
-    "LittlehamRoadExmouth_Gallery_8.jpeg",
-    "LittlehamRoadExmouth_Gallery_9.jpeg",
-    "LittlehamRoadExmouth_Gallery_10.jpeg",
-    "LittlehamRoadExmouth_Gallery_11.jpeg",
-    "LittlehamRoadExmouth_Gallery_12.jpeg",
-    "LittlehamRoadExmouth_Gallery_13.jpeg",
-    "LittlehamRoadExmouth_Gallery_14.jpeg",
-    "LittlehamRoadExmouth_Gallery_15.jpeg",
-    "LittlehamRoadExmouth_Gallery_16.jpeg",
-    "LittlehamRoadExmouth_Gallery_17.jpeg",
-    "LittlehamRoadExmouth_Gallery_18.jpeg"
-   ],
-   "floorplans": [
-    "LittlehamRoadExmouth_Floorplan_1.jpeg"
-   ],
-   "checklist": {
-    "ocean": "partial",
-    "trainStation": "partial",
-    "poolSwimTeam": "yes",
-    "private": "yes",
-    "mtbTrails": "partial",
-    "character": "partial",
-    "garden": "yes",
-    "garageWorkspace": "yes",
-    "closeToFamily": "yes",
-    "groundFloorLongTerm": "yes",
-    "uniqueFeature": "A one-off architect-designed bungalow from around 2000 hidden down a private lane behind a shopping parade — a big glazed frontage and a walled courtyard, nothing like the housing either side of it.",
-    "tenure": null
-   },
-   "aiRating": 6,
-   "aiTake": "Ticks the practical boxes almost completely — one level, real parking, a powered garage/workshop and a private walled garden down its own lane — but £250,000 buys just one bedroom here, and the agent has not even said whether it is freehold.",
-   "parking": {
-    "status": "has",
-    "note": "Parking for approximately two cars on the private lane, plus a single garage of 12’7\" x 10’3\" with an up-and-over door, power and light, and an extra store area in front of it. The powered garage is the useful part — it is described as a garage/workshop and would take a bike bench or a project without needing anything doing to it."
-   },
-   "town": "Exmouth",
-   "lat": 50.624702,
-   "lng": -3.387099,
    "geocodeSource": "Rightmove listing coordinates"
   },
   {
