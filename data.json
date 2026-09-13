@@ -1,9 +1,489 @@
 {
-  "lastUpdated": "2026-09-10",
+  "lastUpdated": "2026-09-13",
   "properties": [
     {
-      "id": "ebfordsixacres",
+      "id": "brixingtonlaneexmouth",
       "section": "new",
+      "town": "Exmouth",
+      "title": "Brixington Lane, Exmouth (detached freehold two-double-bedroom bungalow — driveway and garage, conservatory, no chain, needs modernising)",
+      "price": "£295,000",
+      "agent": "Pennys, Exmouth",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "DETACHED BUNGALOW — ENTIRELY ON ONE LEVEL",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (driveway leading to a garage)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GARAGE — USABLE AS BIKE AND WORKSHOP SPACE",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "DETACHED — NOT ATTACHED TO NEIGHBOURS ON EITHER SIDE",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GARDENS FRONT AND REAR PLUS A TIMBER SHED",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "EXTENDED LOUNGE/DINING ROOM 23’0\" LONG",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "CONSERVATORY / GARDEN ROOM OFF BEDROOM 1",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GAS CENTRAL HEATING VIA A MODERN BOILER, DOUBLE GLAZED",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "CLOSER TO WOODBURY COMMON MTB TRAILS THAN CENTRAL EXMOUTH",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NEEDS A FULL PROGRAMME OF MODERNISATION AND REFURBISHMENT",
+          "color": "#C62828"
+        },
+        {
+          "text": "£295,000 — RIGHT AT THE TOP OF THE BUDGET, BEFORE THE WORKS",
+          "color": "#C62828"
+        },
+        {
+          "text": "PLAIN POST-WAR BUNGALOW — NO CHARACTER",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "BRIXINGTON IS ~1.5 MILES FROM THE STATION AND SEAFRONT",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "SUBURBAN ESTATE SETTING — NOT REMOTE OR RURAL",
+          "color": "#EF6C00"
+        }
+      ],
+      "link": "https://www.rightmove.co.uk/properties/90175464",
+      "linkLabel": "rightmove.co.uk — listing 90175464",
+      "body": "A detached two-double-bedroom bungalow on Brixington Lane, sold with no ongoing chain and openly described by the agent as requiring a programme of modernisation and refurbishment. Accommodation runs from a spacious entrance porch into a reception hall, then an extended lounge/dining room measuring 23'0\" x 10'10\" with windows to the front. The kitchen has a double drainer sink, fitted cupboards, plumbing for a washing machine and a cupboard housing a modern gas boiler serving the hot water and central heating. Bedroom 1 has a built-in wardrobe and sliding patio doors opening into a conservatory/garden room, which in turn opens onto the rear garden; bedroom 2 also has a built-in wardrobe. The bathroom/WC has a bath in a tiled surround with a Mira shower unit. Outside, the property has driveway parking leading to a garage, a front garden laid to lawn with patio, rose and shrub beds, and a sunny rear garden with lawn, patio, mature shrubs, a timber garden shed and an outside cold water tap. Gas central heating, double glazed windows. Freehold.",
+      "why": "This is the one property this sweep that fully satisfies the long-term single-level test you have been applying — a detached bungalow is already entirely on one floor, no adaptation required — and it pairs that with the driveway-plus-garage parking you want as standard, a garage you could actually work on bikes in, gardens front and rear, gas central heating with a modern boiler, and no chain. It is also detached, which is rarer than it sounds at this price in Exmouth, and Brixington sits on the Woodbury Common side of town so the trails are closer than from the centre. The problem is the arithmetic. At £295,000 it is already near the top of your budget, and the agent states up front that it needs a full programme of modernisation — so on Bro 3’s price-plus-works test you are realistically well past £300,000 for a plain post-war bungalow on a suburban estate with no character and no view. Worth watching for a price reduction rather than chasing at the asking figure.",
+      "dateAdded": "2026-09-13",
+      "photos": [
+        "BrixingtonLane_Gallery_1.jpg",
+        "BrixingtonLane_Gallery_2.jpg",
+        "BrixingtonLane_Gallery_3.jpg",
+        "BrixingtonLane_Gallery_4.jpg",
+        "BrixingtonLane_Gallery_5.jpg",
+        "BrixingtonLane_Gallery_6.jpg",
+        "BrixingtonLane_Gallery_7.jpg",
+        "BrixingtonLane_Gallery_8.jpg",
+        "BrixingtonLane_Gallery_9.jpg",
+        "BrixingtonLane_Gallery_10.jpg",
+        "BrixingtonLane_Gallery_11.jpg",
+        "BrixingtonLane_Gallery_12.jpg",
+        "BrixingtonLane_Gallery_13.jpg"
+      ],
+      "floorplans": [
+        "BrixingtonLane_Floorplan_1.jpeg"
+      ],
+      "parking": {
+        "status": "has",
+        "note": "The particulars confirm driveway parking leading to a garage, so there is off-road space for at least one car on the drive plus the garage itself — comfortably meeting the hard parking requirement, with the garage usable as bike storage or a workshop. There is a timber garden shed in the rear garden as well."
+      },
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "partial",
+        "poolSwimTeam": "yes",
+        "private": "partial",
+        "mtbTrails": "yes",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "groundFloorLongTerm": "yes",
+        "closeToFamily": "yes",
+        "tenure": "freehold",
+        "uniqueFeature": null
+      },
+      "aiRating": 5,
+      "aiTake": "Ticks the practical boxes better than anything else here — detached freehold bungalow, entirely one level, driveway and garage, gardens, no chain — but it is a characterless post-war estate bungalow at £295,000 that the agent admits needs a full refurbishment on top."
+    },
+    {
+      "id": "charlesstreetexmouth",
+      "section": "new",
+      "town": "Exmouth",
+      "title": "Charles Street, Exmouth (freehold two-double-bedroom terraced house, new roof in 2025, no onward chain)",
+      "price": "£200,000",
+      "agent": "Your Move, Exmouth",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "AT JESSE’S £200K MARK — WELL UNDER THE CEILING",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "MAIN ROOF REPLACED IN 2025",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "TWO DOUBLE BEDROOMS",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GROUND-FLOOR SHOWER ROOM ALREADY IN PLACE",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "CENTRAL EXMOUTH — WALK TO BEACH, STATION AND SHOPS",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "COUNCIL TAX BAND B",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "READY TO MOVE INTO — NO RENOVATION NEEDED",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO PARKING INFO — NOTHING IN THE LISTING EITHER WAY",
+          "color": "#C62828"
+        },
+        {
+          "text": "CHARLES STREET HAS “NO WAITING AT ANY TIME” RESTRICTIONS",
+          "color": "#C62828"
+        },
+        {
+          "text": "NO GARDEN MENTIONED IN THE PARTICULARS",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "MODERNISED AND NEUTRAL — LITTLE REMAINING CHARACTER",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "MID-TERRACE IN A CENTRAL STREET — NOT REMOTE OR PRIVATE",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "MARKETED HEAVILY AT INVESTORS (≈6% YIELD) — EXPECT LANDLORD COMPETITION",
+          "color": "#EF6C00"
+        }
+      ],
+      "link": "https://www.rightmove.co.uk/properties/89187372",
+      "linkLabel": "rightmove.co.uk — listing 89187372",
+      "body": "A two-bedroom terraced house on Charles Street in central Exmouth, offered with no onward chain and with the main roof replaced in 2025. The ground floor has a reception room, a light kitchen with space for dining, and a shower room. Upstairs are two generous double bedrooms. The interior is bright and neutrally decorated, presented as ready to move into while leaving scope to personalise. The agent markets it at first-time buyers and investors alike, quoting an estimated rental yield of around 6%. Exmouth railway station runs to Exeter St Davids in about 30–35 minutes, with the beach, seafront, River Exe waterfront and Phear Park all close by. Freehold, Council Tax Band B. The particulars make no mention of parking or of a garden.",
+      "why": "A freehold house — not a flat — in central Exmouth at £200,000, with no chain, no renovation needed and a brand new roof, which removes the single most expensive surprise an older terrace can spring on you. The ground-floor shower room is quietly useful for the long-term single-level test, since it means only the bedrooms are upstairs. Band B council tax and no service charge or ground rent keep the running costs down. What holds it back is that it is an ordinary house that misses your one hard requirement: there is no parking mentioned at all, and Charles Street carries \"No Waiting At Any Time\" restrictions, so you would be relying on a council permit. The particulars also never mention a garden, which for a terrace of this type usually means a small yard at best. And the interior has been modernised to a neutral finish, so there is little of the character you have consistently said you want. Bro 3’s recurring test — is it expensive for what it actually is — is the one to apply here: it is sound and central, but fairly plain.",
+      "dateAdded": "2026-09-13",
+      "photos": [
+        "CharlesStreet_Gallery_1.jpg",
+        "CharlesStreet_Gallery_2.jpg",
+        "CharlesStreet_Gallery_3.jpg",
+        "CharlesStreet_Gallery_4.jpg",
+        "CharlesStreet_Gallery_5.jpg",
+        "CharlesStreet_Gallery_6.jpg",
+        "CharlesStreet_Gallery_7.jpg",
+        "CharlesStreet_Gallery_8.jpg",
+        "CharlesStreet_Gallery_9.jpg",
+        "CharlesStreet_Gallery_10.jpg",
+        "CharlesStreet_Gallery_11.jpg",
+        "CharlesStreet_Gallery_12.jpg"
+      ],
+      "floorplans": [
+        "CharlesStreet_Floorplan_1.png"
+      ],
+      "parking": {
+        "status": "unknown",
+        "note": "Neither the description nor the key features mention parking of any kind, and there is no driveway or garage visible. Charles Street (EX8 1LW) appears in Devon County Council’s Exmouth traffic regulation amendment orders with \"No Waiting At Any Time\" restrictions, so parking directly on the street is likely to be limited or prohibited along at least part of it. Exmouth’s residents’ parking permit scheme, approved in 2022 and run by Devon County Council via the MiPermit portal, operates lettered zones 8am–8pm with a maximum of two resident and two visitor permits per property depending on zone — Charles Street sits in the central area covered by those zones, so a permit is the realistic route. East Devon District Council additionally sells car-park permits for its own car parks at £120 a year or £10 a month for one town. Worth asking the agent directly which zone this address is in and whether a permit is currently obtainable, since central Exmouth zones have been oversubscribed."
+      },
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "mtbTrails": "partial",
+        "character": "partial",
+        "garden": null,
+        "garageWorkspace": "no",
+        "groundFloorLongTerm": "adaptable",
+        "closeToFamily": "yes",
+        "tenure": "freehold",
+        "uniqueFeature": null
+      },
+      "aiRating": 6,
+      "aiTake": "A sound, chain-free freehold house in central Exmouth at £200,000 with a new 2025 roof and a ground-floor shower room, but it has no parking on a restricted street, no garden mentioned, and has been modernised into something fairly characterless."
+    },
+    {
+      "id": "alexandraterraceexmouth",
+      "section": "new",
+      "town": "Exmouth",
+      "title": "Alexandra Terrace, Exmouth (top-floor apartment in a period seafront building — panoramic two-mile seafront views from a Juliet balcony, no chain)",
+      "price": "£185,000",
+      "agent": "Bradleys, Exmouth",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "UNDER £200,000 — CLOSE TO JESSE’S REAL TARGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "PANORAMIC VIEWS ACROSS EXMOUTH’S TWO-MILE SEAFRONT",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "PERIOD BUILDING — REAL CHARACTER",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "JULIET BALCONY FACING THE SEA",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "DIRECTLY ON THE SEAFRONT — WALK TO BEACH, TOWN AND STATION",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "MODERNISED KITCHEN/DINING AREA AND MODERN BATHROOM",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO PARKING INFO — NOTHING IN THE LISTING EITHER WAY",
+          "color": "#C62828"
+        },
+        {
+          "text": "ALEXANDRA TERRACE HAS “NO WAITING AT ANY TIME” RESTRICTIONS",
+          "color": "#C62828"
+        },
+        {
+          "text": "TOP FLOOR — NO LIFT MENTIONED",
+          "color": "#C62828"
+        },
+        {
+          "text": "ONE BEDROOM ONLY",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "LEASEHOLD — YEARS REMAINING NOT STATED, ASK THE AGENT",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO GARDEN — JULIET BALCONY ONLY",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "COUNCIL TAX BAND TBC — NOT YET CONFIRMED",
+          "color": "#EF6C00"
+        }
+      ],
+      "link": "https://www.rightmove.co.uk/properties/172689518",
+      "linkLabel": "rightmove.co.uk — listing 172689518",
+      "body": "A one-bedroom apartment on the top floor of a period building on Alexandra Terrace, directly on Exmouth seafront. The main draw is the outlook: panoramic views across the full two-mile sweep of Exmouth seafront, taken in from a Juliet balcony off the bright living room. The flat also has a modernised kitchen/dining area and a modern bathroom. Sold with no onward chain. Leasehold, with the number of years remaining not stated in the particulars. Council tax band listed as TBC. The agent’s particulars are unusually brief and carry no key-features list, no parking information and no service charge or ground rent figures — all of which need establishing with the agent before going further.",
+      "why": "For £185,000 this buys you a period building directly on the seafront with a genuinely special view, which is a rare combination under £200,000 in Exmouth and puts it close to your real £170k target rather than the £300k ceiling. It is also as central as it gets for the station, the beach and the swimming. But the gaps matter, and there are several: the particulars say nothing at all about parking, and Alexandra Terrace itself carries \"No Waiting At Any Time\" restrictions, so you would be depending on Devon County Council’s residents’ permit scheme or a paid council car park rather than anything of your own. It is a top-floor flat with no lift mentioned, which rules it out on the long-term single-level test you have been applying. And the lease length is simply not stated — on a period conversion that is the single most important number to pin down, because a short lease would change the economics completely. Treat the price as provisional until the agent confirms lease years, service charge and ground rent.",
+      "dateAdded": "2026-09-13",
+      "photos": [
+        "AlexandraTerrace_Gallery_1.jpg",
+        "AlexandraTerrace_Gallery_2.jpg",
+        "AlexandraTerrace_Gallery_3.jpg",
+        "AlexandraTerrace_Gallery_4.jpg",
+        "AlexandraTerrace_Gallery_5.jpg",
+        "AlexandraTerrace_Gallery_6.jpg",
+        "AlexandraTerrace_Gallery_7.jpg",
+        "AlexandraTerrace_Gallery_8.jpg",
+        "AlexandraTerrace_Gallery_9.jpg",
+        "AlexandraTerrace_Gallery_10.jpg",
+        "AlexandraTerrace_Gallery_11.jpg",
+        "AlexandraTerrace_Gallery_12.jpg",
+        "AlexandraTerrace_Gallery_13.jpg",
+        "AlexandraTerrace_Gallery_14.jpg",
+        "AlexandraTerrace_Gallery_15.jpg",
+        "AlexandraTerrace_Gallery_16.jpg",
+        "AlexandraTerrace_Gallery_17.jpg",
+        "AlexandraTerrace_Gallery_18.jpg",
+        "AlexandraTerrace_Gallery_19.jpg",
+        "AlexandraTerrace_Gallery_20.jpg"
+      ],
+      "floorplans": [
+        "AlexandraTerrace_Floorplan_1.jpeg"
+      ],
+      "parking": {
+        "status": "unknown",
+        "note": "The particulars are silent on parking, and Alexandra Terrace is a seafront road where Devon County Council has introduced \"No Waiting At Any Time\" restrictions under its 2023 Exmouth traffic regulation amendments — so parking directly outside is unlikely to be an option. Exmouth has had a residents’ parking permit scheme since 2022, run by Devon County Council through the MiPermit portal and divided into lettered zones (A–E) operating 8am–8pm, so the practical question is whether this address falls inside one of those zones and whether a permit is actually available for a flat in a converted building. Separately, East Devon District Council sells car-park permits for its own car parks at £120 a year (or £10 a month for one town) — the large Queen’s Drive and Maer Road seafront car parks are both within a few minutes’ walk. Confirm the zone and permit eligibility with the agent and with DCC before assuming you can park nearby."
+      },
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "no",
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "no",
+        "garageWorkspace": "no",
+        "groundFloorLongTerm": "no",
+        "closeToFamily": "yes",
+        "tenure": "leasehold",
+        "uniqueFeature": "A top-floor Juliet balcony looking straight down the entire two-mile sweep of Exmouth seafront — the kind of view that normally comes attached to a much larger price"
+      },
+      "aiRating": 6,
+      "aiTake": "A cheap way into a period seafront building with a genuinely exceptional view and no chain, but it is a one-bed top-floor flat with no lift, no garden, no parking information on a restricted road, and an unstated lease length that needs answering before anything else."
+    },
+    {
+      "id": "coftonhillcockwood",
+      "section": "new",
+      "town": "Cockwood",
+      "title": "Cofton Hill, Cockwood (two-bedroom freehold character cottage in a conservation area — wood burner, garage, workshop and a roof terrace with estuary views)",
+      "price": "Offers in Excess of £290,000",
+      "agent": "Connells, Exeter",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "GENUINE CHARACTER COTTAGE — PERIOD FEATURES THROUGHOUT",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (single garage)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GARAGE PLUS A SEPARATE OUTSIDE UTILITY / WORKSHOP",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "ROOF TERRACE ABOVE THE GARAGE WITH ESTUARY AND COASTAL VIEWS",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "WOOD BURNER AND ORIGINAL FIREPLACE IN THE LIVING ROOM",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "INSIDE A CONSERVATION AREA",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "SEPARATE DINING ROOM WITH FRENCH DOORS TO THE GARDEN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "REAR BEDROOM LOOKS OVER OPEN COUNTRYSIDE AND FIELDS",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "PRIVATE PATIO GARDEN AND GATED FRONT PATH",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HALDON FOREST MTB TRAILS ~15 MINUTES AWAY",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "STARCROSS STATION UNDER A MILE — ON THE EXETER–PAIGNTON LINE",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "COUNCIL TAX BAND C",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "WRONG SIDE OF THE EXE — A LONG WAY ROUND FROM BOTH BROTHERS",
+          "color": "#C62828"
+        },
+        {
+          "text": "BOTH BEDROOMS AND THE ONLY SHOWER ROOM ARE UPSTAIRS",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "OFFERS IN EXCESS OF £290,000 — AT THE TOP OF THE BUDGET",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "CONSERVATION AREA STATUS LIMITS WHAT YOU CAN CHANGE OUTSIDE",
+          "color": "#EF6C00"
+        }
+      ],
+      "link": "https://www.rightmove.co.uk/properties/90652548",
+      "linkLabel": "rightmove.co.uk — listing 90652548",
+      "body": "A two-bedroom character cottage on Cofton Hill in the estuary village of Cockwood, sitting inside a conservation area and approached through a gated front garden path. The original front door opens straight into a living room with an attractive fireplace and wood burner, leading to a separate dining room with French doors onto the garden, and through again to a modern fitted kitchen with windows over the rear garden and a door outside. Upstairs are two bedrooms and a modern shower room, with the rear bedroom looking out across neighbouring countryside and fields. Outside there is an easy-maintenance private patio garden, an outside utility/workshop, and a single garage with an up-and-over door — above which sits a raised decked roof terrace with far-reaching views over the Exe estuary and coastline. Gas hob and oven, wall-mounted radiators throughout. Freehold, Council Tax Band C.",
+      "why": "This is the most characterful thing to come up this sweep and it hits several of your specific wants at once: freehold, a real period cottage rather than a modernised box, a wood burner, a garage AND a separate outside workshop, and a roof terrace with estuary views for the price of an ordinary Exmouth terrace. Haldon Forest is about fifteen minutes away for riding, and Starcross station is under a mile. The catch is location, and it is a real one — Cockwood is on the west bank of the Exe, so despite looking close to Exmouth on a map you are driving round via Exeter to reach it, roughly forty minutes to your brother in Woodbury and longer again to Otterton. The ferry is seasonal and foot-passenger only. Set against your stated priority of being near both brothers, that is the thing that holds it back rather than anything about the house. Also worth noting for the long term: both bedrooms and the only shower room are upstairs in a small cottage footprint, and conservation area status will limit what you can change outside.",
+      "dateAdded": "2026-09-13",
+      "photos": [
+        "CoftonHill_Gallery_1.jpg",
+        "CoftonHill_Gallery_2.jpg",
+        "CoftonHill_Gallery_3.jpg",
+        "CoftonHill_Gallery_4.jpg",
+        "CoftonHill_Gallery_5.jpg",
+        "CoftonHill_Gallery_6.jpg",
+        "CoftonHill_Gallery_7.jpg",
+        "CoftonHill_Gallery_8.jpg",
+        "CoftonHill_Gallery_9.jpg",
+        "CoftonHill_Gallery_10.jpg",
+        "CoftonHill_Gallery_11.jpg",
+        "CoftonHill_Gallery_12.jpg",
+        "CoftonHill_Gallery_13.jpg",
+        "CoftonHill_Gallery_14.jpg",
+        "CoftonHill_Gallery_15.jpg",
+        "CoftonHill_Gallery_16.jpg",
+        "CoftonHill_Gallery_17.jpg",
+        "CoftonHill_Gallery_18.jpg",
+        "CoftonHill_Gallery_19.jpg"
+      ],
+      "floorplans": [
+        "CoftonHill_Floorplan_1.jpeg"
+      ],
+      "parking": {
+        "status": "has",
+        "note": "A single garage with an up-and-over door and side windows is included, with the roof terrace built above it. That is a proper lockable space rather than an allocated bay, and combined with the separate outside utility/workshop it gives you somewhere to keep and work on bikes. Note the listing describes the garage as offering \"excellent storage\" rather than explicitly confirming a car fits comfortably — Cofton Hill is a narrow older village lane, so worth measuring on a viewing. There is no separate driveway mentioned."
+      },
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "partial",
+        "private": "partial",
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "groundFloorLongTerm": "no",
+        "closeToFamily": "no",
+        "tenure": "freehold",
+        "uniqueFeature": "A raised decked roof terrace built on top of the garage, positioned to take in far-reaching views over the Exe estuary and coastline — an unusual bit of outdoor space for a cottage of this size"
+      },
+      "aiRating": 6,
+      "aiTake": "The best character-per-pound of this sweep — freehold cottage, wood burner, garage plus workshop, and an estuary-view roof terrace at £290,000 — but it sits on the wrong side of the Exe, a long drive round from both brothers, with all bedrooms and the only shower room upstairs."
+    },
+    {
+      "id": "ebfordsixacres",
+      "section": "still",
       "town": "Ebford",
       "title": "Exmouth Road, Ebford (6+ acres of freehold roadside land with river views, between Ebford and Exton)",
       "price": "£300,000",
@@ -95,7 +575,7 @@
     },
     {
       "id": "moorparkdouglasavenue",
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "title": "Moor Park, Douglas Avenue, Exmouth (two-bed apartment in the Avenues with TWO garages, sea views and share of freehold)",
       "price": "£250,000",
@@ -206,7 +686,7 @@
     },
     {
       "id": "exeterroadexmouthpenthouse",
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "title": "Exeter Road, Exmouth (penthouse in a converted detached house — glass balcony, estuary and sea views, driveway parking)",
       "price": "£190,000",
@@ -322,7 +802,7 @@
     },
     {
       "id": "tedstonelanelympstone",
-      "section": "new",
+      "section": "still",
       "town": "Lympstone",
       "title": "Tedstone Lane, Lympstone (ground-floor apartment in a Victorian country house — 12ft ceilings, open fire, own garden and garage)",
       "price": "£250,000",
@@ -781,116 +1261,6 @@
       },
       "aiRating": 6,
       "aiTake": "Ticks the practical boxes better than most flats at this price — fully ground floor, step-free through its own terrace doors, allocated parking, ~100 years of lease and a gate straight onto the marina walkway — but it is a studio with a blind instead of a bedroom wall, carries about £2,654 a year in charges, and has no character whatsoever."
-    },
-    {
-      "id": "ebfordlandexmouthroad",
-      "section": "still",
-      "town": "Ebford",
-      "title": "Land off Exmouth Road, Ebford/Exton (freehold acreage with roadside vehicle access and river views — no planning consent)",
-      "price": "£125,000",
-      "agent": "Signature Property Concierge, Hampshire",
-      "flags": [
-        {
-          "text": "LIKELY SOLD/WITHDRAWN",
-          "color": "#8D6E63"
-        },
-        {
-          "text": "WELL UNDER JESSE’S £170K TARGET",
-          "color": "#2E7D32"
-        },
-        {
-          "text": "FREEHOLD LAND",
-          "color": "#2E7D32"
-        },
-        {
-          "text": "HAS PARKING (roadside vehicle access onto the land)",
-          "color": "#2E7D32"
-        },
-        {
-          "text": "ESTABLISHED ROADSIDE VEHICLE ACCESS",
-          "color": "#2E7D32"
-        },
-        {
-          "text": "RIVER VIEWS OVER THE EXE ESTUARY",
-          "color": "#2E7D32"
-        },
-        {
-          "text": "EXTON STATION IS WALKABLE — ON THE EXMOUTH–EXETER LINE",
-          "color": "#2E7D32"
-        },
-        {
-          "text": "CLOSE TO WOODBURY AND WOODBURY COMMON",
-          "color": "#2E7D32"
-        },
-        {
-          "text": "NO PLANNING PERMISSION — NOT A BUILDING PLOT AS IT STANDS",
-          "color": "#B71C1C"
-        },
-        {
-          "text": "30% PLANNING OVERAGE — SELLER TAKES 30% OF ANY UPLIFT",
-          "color": "#B71C1C"
-        },
-        {
-          "text": "SOLD BY A COMPANY ASSOCIATED WITH THE AGENT",
-          "color": "#B71C1C"
-        },
-        {
-          "text": "LISTED SIZE CONTRADICTS ITSELF — 3.5 ACRES OR 24.7?",
-          "color": "#C62828"
-        },
-        {
-          "text": "NO BUILDING, NO SERVICES, NOTHING TO LIVE IN",
-          "color": "#C62828"
-        }
-      ],
-      "link": "https://www.rightmove.co.uk/properties/92629236",
-      "linkLabel": "rightmove.co.uk — listing 92629236",
-      "body": "Freehold land between the villages of Ebford and Exton, on the western edge of the Exe estuary, advertised with river views, a prominent roadside position and established vehicle access. The agent describes it as \"three and a half acres\" in the write-up and \"over three and a half acres\" in the key features, but Rightmove’s own size field for the same listing records 24.71 acres / 10 hectares — the two do not agree and the actual extent needs establishing from the title plan before anything else. The land is sold freehold subject to a 30% planning overage, meaning that if consent is ever granted the seller takes 30% of the uplift in value. The agent also states plainly that \"the property is being sold by a company associated with the Signature Property Concierge\", and the same seller has two further parcels on the same road at £300,000 (6 acres) and £125,000. There is no planning permission, no building and no services — it is marketed as being \"ideal for a variety of uses subject to the necessary consents\".",
-      "why": "Bare land is explicitly on your list — self-build plots are one of the unconventional routes you asked to be shown — and on the face of it this is cheap freehold acreage, well under your £170k target, in a genuinely good spot: Exton station is on the Exmouth–Exeter line within walking distance, Woodbury and the Common are a few minutes away, and it looks over the estuary. It is on the list for that reason. But it needs flagging hard rather than sold to you. There is no planning permission, so it is not a building plot — it is a field, and East Devon’s green-field policy makes residential consent between two small villages a long shot rather than a formality. The 30% overage means that even if you did win consent, the seller takes nearly a third of the gain you created. The seller being a company associated with the selling agent, based in Hampshire, marketing several roadside parcels at once with overage attached, matches the shape of land-banking sales, where buyers pay a premium over agricultural value for land whose consent never arrives. And the listing cannot agree with itself on whether you are buying 3.5 acres or 24.7. Treat this as a speculative punt to investigate with a solicitor and a look at East Devon’s local plan, not as a plot to build on.",
-      "dateAdded": "2026-09-04",
-      "photos": [
-        "EbfordLand_Gallery_1.jpg",
-        "EbfordLand_Gallery_2.jpg",
-        "EbfordLand_Gallery_3.jpg",
-        "EbfordLand_Gallery_4.jpg",
-        "EbfordLand_Gallery_5.jpg",
-        "EbfordLand_Gallery_6.jpg",
-        "EbfordLand_Gallery_7.jpg"
-      ],
-      "floorplans": [],
-      "parking": {
-        "status": "has",
-        "note": "Not a home, so parking in the ordinary sense does not apply — but the listing’s main selling point is a prominent roadside position on Exmouth Road with established vehicle access, so you can get a vehicle onto the land itself. Flagged here as \"has\" purely so the entry carries an explicit parking status like every other property on the page."
-      },
-      "checklist": {
-        "ocean": "partial",
-        "trainStation": "yes",
-        "poolSwimTeam": "no",
-        "private": "yes",
-        "mtbTrails": "partial",
-        "character": null,
-        "garden": null,
-        "garageWorkspace": "no",
-        "groundFloorLongTerm": null,
-        "closeToFamily": "yes",
-        "tenure": "freehold",
-        "uniqueFeature": "Freehold acreage on the estuary edge with its own roadside vehicle access and a station walkable from it — but no consent, and a 30% overage clawback attached"
-      },
-      "aiRating": 4,
-      "aiTake": "Cheap freehold acreage in a genuinely good position — estuary views, Exton station walkable, Woodbury Common close — but with no planning consent, a 30% overage clawback, a seller connected to the agent, and a listing that contradicts itself on the acreage, it is a speculative punt rather than somewhere you could build.",
-      "research": [
-        {
-          "date": "2026-09-10",
-          "question": "Automated re-verification: does the listing still resolve?",
-          "findings": "Rightmove listing 92629236 now returns HTTP 410 Gone. Flagged as likely sold or withdrawn on this sweep. Per the delete-on-second-confirmation rule this entry is kept for now; if it is still gone on the next sweep it will be removed from the page entirely.",
-          "sources": [
-            {
-              "label": "Rightmove listing (now 410 Gone)",
-              "url": "https://www.rightmove.co.uk/properties/92629236"
-            }
-          ]
-        }
-      ]
     },
     {
       "id": "jarvisclosexmouth",
@@ -5158,107 +5528,6 @@
       },
       "aiRating": 5,
       "aiTake": "Freehold, fully modernised, three bedrooms, off-road parking plus an integrated garage already wired and plumbed as a workshop — practically the strongest package here, marked down for having no character and sitting near the top of the budget."
-    },
-    {
-      "id": "ebfordparcels",
-      "section": "still",
-      "town": "Ebford",
-      "title": "Land parcels, Exmouth Road, Ebford/Exton (⅓ acre — AUCTION)",
-      "price": "Guide Price £30,000 (auction)",
-      "agent": "Signature Property Concierge",
-      "flags": [
-        {
-          "text": "LIKELY SOLD/WITHDRAWN",
-          "color": "#8D6E63"
-        },
-        {
-          "text": "AUCTION CLOSED 2 SEPT 2026 — LISTING NOW GONE",
-          "color": "#8D6E63"
-        },
-        {
-          "text": "IN BUDGET",
-          "color": "#2E7D32"
-        },
-        {
-          "text": "BARE LAND — NO PLANNING PERMISSION",
-          "color": "#EF6C00"
-        },
-        {
-          "text": "30% PLANNING OVERAGE TO SELLER",
-          "color": "#EF6C00"
-        },
-        {
-          "text": "FREEHOLD",
-          "color": "#2E7D32"
-        },
-        {
-          "text": "HAS PARKING (established roadside vehicle access)",
-          "color": "#2E7D32"
-        }
-      ],
-      "photos": [
-        "EbfordParcels_Gallery_1.jpg",
-        "EbfordParcels_Gallery_2.jpg",
-        "EbfordParcels_Gallery_3.jpg",
-        "EbfordParcels_Gallery_4.jpg",
-        "EbfordParcels_Gallery_5.jpg",
-        "EbfordParcels_Gallery_6.jpg",
-        "EbfordParcels_Gallery_7.jpg"
-      ],
-      "floorplans": [],
-      "link": "https://www.rightmove.co.uk/properties/91541838",
-      "linkLabel": "rightmove.co.uk — Land, Exmouth Road, Ebford",
-      "body": "Freehold parcels of land, each about a third of an acre (roughly 13,000 sq ft / 1,208 sq m), on the Exmouth Road between the villages of Ebford and Exton, offered by auction with a £30,000 guide. The listing describes a prominent roadside position with established vehicle access. Critically, this is bare land with no planning permission — the agent markets it as \"ideal for a variety of uses subject to the necessary consents\" and it carries a 30% planning overage, meaning if residential or other valuable consent is ever obtained, 30% of the resulting uplift in value is payable back to the seller. Reserve is set within the guide range or no more than 10% above it, and the usual auction fees apply on top. Came to market 2 August 2026. Update 18/08/2026: the auction date is now confirmed — the individual parcels (Plots C and D, each about 0.3 acres, EX3 0PQ) are listed by Auction House South West for National Online Auction starting 1 September 2026 and ending 2 September 2026, each at a £30,000 guide plus fees, still freehold and still subject to the planning overage.",
-      "why": "Worth tracking because it is cheap, genuinely unconventional, and in a spot that suits Jesse well on paper — the Ebford/Exton stretch sits right by the Exe estuary with Exton station on the Avocet line, ten minutes from Exmouth and very close to the Woodbury brother, with Woodbury Common trails a short ride away. At £30,000 the downside is small in absolute terms. But it should be read as a speculative punt rather than a route to a home, and the reasons are stacked up in the listing itself. There is no planning permission of any kind, this is open countryside outside any settlement boundary, and East Devon is not in the habit of granting new isolated dwellings there. The 30% overage clause is the clearest signal of all: the seller has priced in the possibility that a buyer tries for consent, and has arranged to take almost a third of the gain if it ever lands. Note also that Plot B on the same stretch of Exmouth Road, tracked here separately, went to auction on 3 August 2026 with a £75,000 guide and its listing has now been pulled — so this may well be the same land being re-marketed at a lower guide, which is a fact worth establishing with the agent before bidding.",
-      "dateAdded": "2026-08-03",
-      "parking": {
-        "status": "has",
-        "note": "The listing specifically calls out a prominent roadside position with established vehicle access, so the parcel can be driven onto directly from the Exmouth Road rather than needing a right of way negotiated over someone else's land — which is the single most valuable practical attribute bare land of this kind can have. There is nothing built, so any actual hardstanding or driveway would be the buyer's to create, subject to consent."
-      },
-      "checklist": {
-        "ocean": "partial",
-        "trainStation": "yes",
-        "poolSwimTeam": null,
-        "private": "yes",
-        "groundFloorLongTerm": null,
-        "mtbTrails": "yes",
-        "character": null,
-        "garden": "yes",
-        "garageWorkspace": null,
-        "closeToFamily": "yes",
-        "uniqueFeature": "A third of an acre of freehold Devon countryside between the estuary and Woodbury Common, with its own roadside vehicle access, for the price of a car.",
-        "tenure": "freehold"
-      },
-      "aiRating": 5,
-      "aiTake": "A third of an acre with its own road access, ten minutes from Exmouth and next to Woodbury Common, for £30,000 — but it is bare countryside with no planning permission and a 30% overage clause, so it is a cheap speculative punt on consent rather than anywhere to live.",
-      "research": [
-        {
-          "date": "2026-08-28",
-          "question": "Sweep re-check — auction timing and how the parcels are being offered.",
-          "findings": "Confirmed live and imminent. Auction House South West is running this as a National Online Auction opening 1 September 2026 and ending 24 hours later on 2 September — five days from this sweep. The land is being offered as individually numbered parcels rather than one block: Plot C (Rightmove 92086383) and Plot D (Rightmove 92086401) are each listed separately at a £30,000 guide, each about 0.3 acres, both freehold with established vehicular access from the A376. The auctioneer confirms the planning overage provision applies, with full terms in the free legal pack. Still bare land with no planning permission, so the overage only bites if consent is ever obtained.",
-          "sources": [
-            {
-              "label": "Rightmove 92086383 — Plot C",
-              "url": "https://www.rightmove.co.uk/properties/92086383"
-            },
-            {
-              "label": "Rightmove 92086401 — Plot D",
-              "url": "https://www.rightmove.co.uk/properties/92086401"
-            }
-          ]
-        },
-        {
-          "date": "2026-09-10",
-          "question": "Automated re-verification: does the listing still resolve?",
-          "findings": "Rightmove listing 91541838 now returns HTTP 410 Gone; the 2 Sept 2026 auction has passed. Flagged as likely sold or withdrawn on this sweep. Per the delete-on-second-confirmation rule this entry is kept for now; if it is still gone on the next sweep it will be removed from the page entirely.",
-          "sources": [
-            {
-              "label": "Rightmove listing (now 410 Gone)",
-              "url": "https://www.rightmove.co.uk/properties/91541838"
-            }
-          ]
-        }
-      ]
     },
     {
       "id": "raleighroadottery",
