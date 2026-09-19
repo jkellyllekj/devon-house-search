@@ -1,9 +1,611 @@
 {
- "lastUpdated": "2026-09-16",
+ "lastUpdated": "2026-09-19",
  "properties": [
   {
-   "id": "littlehamroadbungalow",
+   "id": "southstreetexmouth",
    "section": "new",
+   "town": "Exmouth",
+   "title": "South Street, Exmouth (freehold ground-floor two-bedroom flat in a former dairy, with its own courtyard garden)",
+   "price": "£139,000",
+   "agent": "Belvoir, Exmouth",
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "CHEAPEST THING ON THE LIST — £31,000 UNDER YOUR £170K TARGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FREEHOLD — NOT LEASEHOLD, WHICH IS RARE FOR A FLAT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ENTIRELY GROUND FLOOR — NO STAIRS AT ALL",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "PART OF A FORMER DAIRY — A GENUINE CONVERSION",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ITS OWN PRIVATE COURTYARD GARDEN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FEATURE FIREPLACES AND EXPOSED ORIGINAL BRICKWORK",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "COUNCIL TAX BAND A — THE CHEAPEST BAND",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "EPC C",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "⚠️ DAMP AND MOULD SURVEY DONE — REMEDIAL WORK ALREADY QUOTED",
+     "color": "#C62828"
+    },
+    {
+     "text": "⚠️ A FREEHOLD FLAT IS HARD TO MORTGAGE — MANY LENDERS REFUSE",
+     "color": "#C62828"
+    },
+    {
+     "text": "NO PARKING INFO",
+     "color": "#C62828"
+    },
+    {
+     "text": "SECOND BEDROOM IS A SINGLE",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/93322998",
+   "linkLabel": "rightmove.co.uk — listing 93322998",
+   "body": "A ground-floor period flat forming part of a former dairy on a quiet residential street in the middle of Exmouth, a short walk from the Magnolia Centre, the train and bus stations and the seafront. The accommodation is open-plan: a bright kitchen and living area, with a country-style fitted kitchen running a distinctive sink, four-ring hob and electric oven, and an attractive feature fireplace in the living space. A rear door opens directly onto a private courtyard garden. The main bedroom sits at the front and has a characterful chimney breast with the original brickwork exposed; the second bedroom is a single overlooking the courtyard. The bathroom is fully tiled with bath, wash basin and WC. Council tax band A, EPC rating C, offered with no onward chain. The particulars state plainly that a damp and mould survey has been carried out and remedial work has been quoted for. Tenure is freehold.",
+   "why": "This is the cheapest property on the list and it is not cheap because it is grim — it is a former dairy conversion with exposed brickwork, feature fireplaces and its own courtyard, entirely on the ground floor, in the middle of Exmouth. At £139,000 it is £31,000 below the £170,000 you actually aim at, not the £300,000 ceiling, and council tax band A keeps the running costs down too. Being freehold rather than leasehold means no service charge, no ground rent and no lease to extend, which is the thing that quietly ruins most cheap flats. Two serious caveats, though, and they are linked. The particulars volunteer that a damp and mould survey has been done and work has been quoted — an unusually honest disclosure, and it means you should get that quote and the survey before you get attached, because in a ground-floor period conversion damp can be anything from a failed bit of pointing to a missing damp course. And a freehold flat is a genuine mortgage problem: most mainstream lenders will not touch one, because there is no leasehold structure obliging the neighbours to maintain the shared bits of the building. If you are buying with a mortgage, ask your broker that question before you view. If it is cash, that objection disappears and this becomes very interesting indeed. No parking, which in central Exmouth means a permit.",
+   "dateAdded": "2026-09-19",
+   "photos": [
+    "SouthStreetExmouth_Gallery_1.jpeg",
+    "SouthStreetExmouth_Gallery_2.jpeg",
+    "SouthStreetExmouth_Gallery_3.jpeg",
+    "SouthStreetExmouth_Gallery_4.jpeg",
+    "SouthStreetExmouth_Gallery_5.jpeg",
+    "SouthStreetExmouth_Gallery_6.jpeg",
+    "SouthStreetExmouth_Gallery_7.jpeg",
+    "SouthStreetExmouth_Gallery_8.jpeg",
+    "SouthStreetExmouth_Gallery_9.jpeg",
+    "SouthStreetExmouth_Gallery_10.jpeg",
+    "SouthStreetExmouth_Gallery_11.jpeg",
+    "SouthStreetExmouth_Gallery_12.jpeg"
+   ],
+   "floorplans": [
+    "SouthStreetExmouth_Floorplan_1.jpeg"
+   ],
+   "parking": {
+    "status": "none",
+    "note": "No parking is mentioned in the particulars and the outside space is a courtyard garden, so this is kerbside or a car park. South Street is in the middle of Exmouth, inside the area covered by the residents' parking permit scheme Devon County Council approved after its Exmouth consultation and now runs through the MiPermit portal. A first resident permit starts at around £35 a year, with banded charges rising to about £65 for additional vehicles, which is cheap. Two caveats apply. A permit buys you the right to park in your zone, not a reserved space, so through July and August you are competing with beach traffic. And the zones were drawn street by street rather than blanket-covering the town, so confirm with Devon County Council that this stretch of South Street is inside a live zone before assuming a permit exists for it. The fallback is a season ticket in an East Devon District Council car park — Imperial Road is the closest at roughly a five-minute walk, and EDDC sells both annual permits and a £10 monthly option, which is the realistic answer if the residents' zone does not reach this street."
+   },
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "yes",
+    "poolSwimTeam": "yes",
+    "private": "partial",
+    "mtbTrails": "no",
+    "character": "yes",
+    "garden": "yes",
+    "garageWorkspace": "no",
+    "groundFloorLongTerm": "yes",
+    "closeToFamily": "yes",
+    "tenure": "freehold",
+    "uniqueFeature": "It is part of a former dairy — a genuine working-building conversion, with exposed original brickwork in the main bedroom, and freehold rather than leasehold, which almost never happens with a flat."
+   },
+   "aiRating": 8,
+   "aiTake": "The cheapest thing on the list by a distance, freehold, entirely step-free, and a real dairy conversion with actual character — held back by a disclosed damp problem and the fact that freehold flats are notoriously hard to mortgage."
+  },
+  {
+   "id": "cheshireroadexmouth",
+   "section": "new",
+   "town": "Exmouth",
+   "title": "Cheshire Road, Exmouth (top-floor two-double-bedroom flat with a garage, nominal ground rent and a low service charge)",
+   "price": "£160,000",
+   "agent": "Pennys, Exmouth",
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "UNDER YOUR £170,000 TARGET",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (garage in a nearby block)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "TWO GENUINE DOUBLE BEDROOMS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SERVICE CHARGE ONLY £350 A YEAR — VERY LOW",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GROUND RENT £10 A YEAR — EFFECTIVELY NOTHING",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GAS CENTRAL HEATING AND DOUBLE GLAZING",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "OWN PRIVATE FRONT DOOR OFF THE COMMUNAL LANDING",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "⚠️ TOP FLOOR — COMMUNAL STAIRS, NO LIFT MENTIONED",
+     "color": "#C62828"
+    },
+    {
+     "text": "LEASEHOLD — ABOUT 88 YEARS REMAINING",
+     "color": "#C62828"
+    },
+    {
+     "text": "NO GARDEN OF ITS OWN — COMMUNAL GROUNDS ONLY",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "NO REAL CHARACTER — PLAIN MODERN BLOCK",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/170101700",
+   "linkLabel": "rightmove.co.uk — listing 170101700",
+   "body": "A top-floor flat on Cheshire Road in the Brixington area of Exmouth, reached through a communal entrance with door-entry intercom and communal stairs, then its own private front door. The reception hall has a coats cupboard, a meter cupboard and a further large storage cupboard with slatted shelving. The lounge is 5.05m x 3.63m (16'7\" x 11'11\"), bright, with a deep window sill and a pleasant open aspect. The kitchen is 3.35m x 2.08m (11'0\" x 6'10\") and has been modernised — wood-effect worktops, inset one-and-a-half-bowl sink, four-ring electric hob with built-in oven below, extractor, integrated fridge and freezer, and a cupboard housing the gas boiler. Bedroom one is 4.75m x 3.4m (15'7\" x 11'2\") with a feature wood-panelled wall and the same open aspect; bedroom two is 2.57m x 2.36m (8'5\" x 7'9\"). The bathroom has a bath with shower over, pedestal basin, WC, extensively tiled walls and a chrome heated towel rail. Outside there are communal grounds with a drying area, and a garage in a block close by. Tenure is leasehold on a 125-year lease from 1989, leaving roughly 88 years, with a service charge of about £350 a year and ground rent of £10 a year.",
+   "why": "The numbers here are the point. £160,000 is under the £170,000 you actually aim at, and unlike most cheap flats the ongoing costs do not then eat you alive — £350 a year service charge and £10 a year ground rent is about £30 a month all in, against the £100 a month some of the other flats on this list are charging. It comes with a garage, which solves parking properly rather than with a permit and a prayer, and gives you somewhere to keep bikes. Both bedrooms are real doubles and the main one is a good size at 15'7\". The kitchen and bathroom have both been done. The drawbacks are honest ones. It is on the top floor up communal stairs with no lift mentioned, which directly fails the long-term no-stairs test — this is a flat that works now and might not in twenty years. The lease has about 88 years left, which is over the 80-year cliff where extension costs jump, but not by a lot, and it is the sort of figure Bro 3 has said makes him uneasy. And it is a plain modern block in Brixington with no character to speak of, which is the opposite of what you usually go for. Think of this as the sensible, cheap, well-run option rather than the exciting one.",
+   "dateAdded": "2026-09-19",
+   "photos": [
+    "CheshireRoadExmouth_Gallery_1.jpeg",
+    "CheshireRoadExmouth_Gallery_2.jpeg",
+    "CheshireRoadExmouth_Gallery_3.jpeg",
+    "CheshireRoadExmouth_Gallery_4.jpeg",
+    "CheshireRoadExmouth_Gallery_5.jpeg",
+    "CheshireRoadExmouth_Gallery_6.jpeg",
+    "CheshireRoadExmouth_Gallery_7.jpeg"
+   ],
+   "floorplans": [
+    "CheshireRoadExmouth_Floorplan_1.jpeg"
+   ],
+   "parking": {
+    "status": "has",
+    "note": "A garage in a block close to the building is included in the sale, which is better than an allocated bay — it is lockable, dry and large enough to keep bikes and tools in as well as a car. There are also communal grounds around the block. Cheshire Road is in Brixington, a residential area well away from the seafront, so kerbside parking for a second vehicle or visitors is not under the same pressure as the town centre and the residents' permit scheme does not apply here."
+   },
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "partial",
+    "poolSwimTeam": "yes",
+    "private": "partial",
+    "mtbTrails": "no",
+    "character": "no",
+    "garden": "no",
+    "garageWorkspace": "yes",
+    "groundFloorLongTerm": "no",
+    "closeToFamily": "yes",
+    "tenure": "leasehold",
+    "leaseYears": 88,
+    "uniqueFeature": null
+   },
+   "aiRating": 7,
+   "aiTake": "Cheap to buy and genuinely cheap to run — £30 a month in service charge and ground rent, plus a garage — but it is a plain top-floor flat up communal stairs on an 88-year lease, so it fails the long-term stairs test completely."
+  },
+  {
+   "id": "hawthorngroveexmouth",
+   "section": "new",
+   "town": "Exmouth",
+   "title": "Hawthorn Grove, Exmouth (first-floor flat with a 948-year lease, no service charge, private gardens and a garage)",
+   "price": "£190,000",
+   "agent": "Fulfords, Exmouth",
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "948 YEARS LEFT ON THE LEASE — LEASEHOLD ONLY ON PAPER",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO SERVICE CHARGE AT ALL",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "GROUND RENT £40 A YEAR",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (garage)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SOLE USE OF THE FRONT GARDEN AND HALF THE REAR GARDEN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "OWN PRIVATE ENTRANCE — NO COMMUNAL HALLWAY",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "BOTH BEDROOMS ARE GOOD DOUBLES",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "UNDER £200,000",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "COUNCIL TAX BAND B",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "⚠️ FIRST FLOOR — UP A FLIGHT OF STAIRS FROM YOUR OWN FRONT DOOR",
+     "color": "#C62828"
+    },
+    {
+     "text": "NO REAL CHARACTER",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/93248697",
+   "linkLabel": "rightmove.co.uk — listing 93248697",
+   "body": "A first-floor apartment in a residential part of Exmouth, reached through its own private entrance and a flight of stairs rather than a shared communal hallway. The hall opens onto all the principal rooms. The living room is the standout space, big enough for both seating and dining furniture, with the kitchen off it — matching wall and base units, generous worktop, tiled splashbacks, integrated oven and hob. Both bedrooms are described as excellent-sized doubles. The bathroom has a white suite with bath and shower over, basin and WC. Outside, the flat has sole use of the front garden and of the rear half of the rear garden, which is unusual for an apartment, and a garage at the rear for secure parking or storage. Double glazed throughout. The tenure is the notable part: a 999-year lease from 1978 leaving approximately 948 years, ground rent of £40 a year, and no service charge. Council tax band B.",
+   "why": "The legal terms here are better than most freeholds manage. A 948-year lease is leasehold as a technicality and nothing more — there is no extension to fund, no cliff to worry about, nothing for a future buyer to flinch at. Add no service charge at all and £40 a year ground rent and the ongoing cost of owning this is essentially council tax and bills, which puts it in a completely different category from the cheap Exmouth flats charging £100 a month for the privilege. On top of that you get your own front door, sole use of the front garden and half the rear garden, and a garage — that is three things flats almost never have, and the garage gives you bike and workshop space. Both bedrooms are real doubles and the living room is a proper size. The catch is simple and it is the stairs: your own front door opens onto a flight, and there is no way round that, so it fails the long-term no-stairs question outright. It is also an ordinary modern flat with no particular character, in a residential pocket rather than somewhere with a view. But for £190,000, with those lease terms, private outdoor space and a garage, the value is real.",
+   "dateAdded": "2026-09-19",
+   "photos": [
+    "HawthornGroveExmouth_Gallery_1.jpeg",
+    "HawthornGroveExmouth_Gallery_2.jpeg",
+    "HawthornGroveExmouth_Gallery_3.jpeg",
+    "HawthornGroveExmouth_Gallery_4.jpeg",
+    "HawthornGroveExmouth_Gallery_5.jpeg",
+    "HawthornGroveExmouth_Gallery_6.jpeg",
+    "HawthornGroveExmouth_Gallery_7.jpeg",
+    "HawthornGroveExmouth_Gallery_8.jpeg",
+    "HawthornGroveExmouth_Gallery_9.jpeg",
+    "HawthornGroveExmouth_Gallery_10.jpeg",
+    "HawthornGroveExmouth_Gallery_11.jpeg",
+    "HawthornGroveExmouth_Gallery_12.jpeg",
+    "HawthornGroveExmouth_Gallery_13.jpeg",
+    "HawthornGroveExmouth_Gallery_14.jpeg",
+    "HawthornGroveExmouth_Gallery_15.jpeg",
+    "HawthornGroveExmouth_Gallery_16.jpeg",
+    "HawthornGroveExmouth_Gallery_17.jpeg"
+   ],
+   "floorplans": [
+    "HawthornGroveExmouth_Floorplan_1.jpeg"
+   ],
+   "parking": {
+    "status": "has",
+    "note": "A garage at the rear of the property is included, giving secure off-road parking plus dry storage — useful for bikes and tools as well as a car. Hawthorn Grove is a quiet residential street in the Brixington side of Exmouth, outside the town-centre residents' permit zone, so kerbside space for a second car or visitors is straightforward."
+   },
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "partial",
+    "poolSwimTeam": "yes",
+    "private": "yes",
+    "mtbTrails": "no",
+    "character": "no",
+    "garden": "yes",
+    "garageWorkspace": "yes",
+    "groundFloorLongTerm": "no",
+    "closeToFamily": "yes",
+    "tenure": "leasehold",
+    "leaseYears": 948,
+    "uniqueFeature": "A 999-year lease from 1978 with no service charge whatsoever, plus sole use of gardens and a garage — terms that are better than plenty of freeholds."
+   },
+   "aiRating": 6,
+   "aiTake": "Outstanding legal terms for a flat — 948 years, no service charge, £40 ground rent — with a garage and private gardens on top, but it is up a flight of stairs and has no character, so it scores on value rather than appeal."
+  },
+  {
+   "id": "parsoncloseexmouth",
+   "section": "new",
+   "town": "Exmouth",
+   "title": "Parson Close, Exmouth (freehold two-double-bedroom terraced bungalow with driveway parking, no chain)",
+   "price": "£240,000",
+   "agent": "Bradleys, Exmouth",
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "BUNGALOW — ENTIRELY ON ONE LEVEL",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (driveway)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ENCLOSED REAR GARDEN WITH PATIO AND SHED",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "TWO DOUBLE BEDROOMS, BOTH WITH BUILT-IN WARDROBES",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "COUNCIL TAX BAND C",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "⚠️ SOME MODERNISATION REQUIRED — BUDGET FOR IT",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "TERRACED, NOT DETACHED — NEIGHBOURS BOTH SIDES",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "NO REAL CHARACTER — ORDINARY POSTWAR BUNGALOW",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/93303882",
+   "linkLabel": "rightmove.co.uk — listing 93303882",
+   "body": "A two-bedroom terraced bungalow on Parson Close in Exmouth, offered with no onward chain. The accommodation is a spacious lounge, a kitchen with direct access to the garden, two double bedrooms both with built-in wardrobes, and a bathroom — all on one level. Outside there is an enclosed rear garden with a patio, mature shrubs and a shed, plus driveway parking to the front. Freehold, council tax band C. The agent notes that some modernisation is required.",
+   "why": "This is the straightforward answer to the question you keep coming back to: somewhere you could still live in thirty years without stairs being a problem. It is a genuine bungalow, freehold, with its own driveway and an enclosed rear garden with a shed, and it is chain-free so it could move quickly. Two double bedrooms with built-in wardrobes is more useful than it sounds at this size. At £240,000 it sits comfortably inside the £300,000 ceiling, though it is well above the £170,000 you actually aim at, and the agent's own \"some modernisation required\" is the line to pay attention to — on Bro 3's usual reckoning that is the asking price plus whatever the works cost, so price it as £240,000 plus a kitchen and bathroom and see whether it still looks right. What it does not have is character. It is an ordinary postwar terraced bungalow, not a cottage or a conversion, with neighbours on both sides, and nothing about it will make you feel anything. Set against that, it ticks the practical boxes — one level, parking, garden, freehold, no chain — more cleanly than almost anything else on the list.",
+   "dateAdded": "2026-09-19",
+   "photos": [
+    "ParsonCloseExmouth_Gallery_1.jpeg",
+    "ParsonCloseExmouth_Gallery_2.jpeg",
+    "ParsonCloseExmouth_Gallery_3.jpeg",
+    "ParsonCloseExmouth_Gallery_4.jpeg",
+    "ParsonCloseExmouth_Gallery_5.jpeg",
+    "ParsonCloseExmouth_Gallery_6.jpeg",
+    "ParsonCloseExmouth_Gallery_7.jpeg",
+    "ParsonCloseExmouth_Gallery_8.jpeg",
+    "ParsonCloseExmouth_Gallery_9.jpeg",
+    "ParsonCloseExmouth_Gallery_10.jpeg",
+    "ParsonCloseExmouth_Gallery_11.jpeg",
+    "ParsonCloseExmouth_Gallery_12.jpeg",
+    "ParsonCloseExmouth_Gallery_13.jpeg",
+    "ParsonCloseExmouth_Gallery_14.jpeg"
+   ],
+   "floorplans": [
+    "ParsonCloseExmouth_Floorplan_1.jpeg"
+   ],
+   "parking": {
+    "status": "has",
+    "note": "Driveway parking to the front of the bungalow, stated in the particulars — off-road, private and stepping straight onto a single-level property, which matters if mobility ever becomes the issue. Parson Close is a quiet residential cul-de-sac away from the seafront, so it sits outside the town-centre residents' permit zone and kerbside space for a second car or visitors is not under pressure."
+   },
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "partial",
+    "poolSwimTeam": "yes",
+    "private": "partial",
+    "mtbTrails": "no",
+    "character": "no",
+    "garden": "yes",
+    "garageWorkspace": "no",
+    "groundFloorLongTerm": "yes",
+    "closeToFamily": "yes",
+    "tenure": "freehold",
+    "uniqueFeature": null
+   },
+   "aiRating": 6,
+   "aiTake": "Freehold, one level, driveway, private garden and no chain — it answers the long-term stairs question completely, but it is a plain postwar bungalow needing work, with no character at all."
+  },
+  {
+   "id": "merristcourtexmouth",
+   "section": "new",
+   "town": "Exmouth",
+   "title": "Merrist Court, Douglas Avenue, Exmouth (share-of-freehold ground-floor period apartment with a south-facing terrace and allocated parking)",
+   "price": "£272,500",
+   "agent": "Hall & Scott, Exmouth",
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "flags": [
+    {
+     "text": "SHARE OF FREEHOLD — YOU OWN PART OF THE BUILDING",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ENTIRELY GROUND FLOOR — NO STAIRS AT ALL",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "OWN PRIVATE ENTRANCE DOOR",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (allocated space)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SOUTH-FACING VERANDA TERRACE OFF THE SITTING ROOM",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FIVE MINUTES’ WALK FROM EXMOUTH BEACH",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "PERIOD FEATURES — CAST IRON FIREPLACE, CEILING ROSE, SASH BAY",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "COUNCIL TAX BAND A — THE CHEAPEST BAND",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ONLY 5 FLATS IN THE BUILDING",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SERVICE CHARGE £60 A MONTH — £720 A YEAR",
+     "color": "#C62828"
+    },
+    {
+     "text": "ABOVE YOUR £170K TARGET BY OVER £100,000",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "GARDEN IS COMMUNAL APART FROM THE TERRACE",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/93263169",
+   "linkLabel": "rightmove.co.uk — listing 93263169",
+   "body": "A south-facing ground-floor apartment in Merrist Court on Douglas Avenue, finished to a high standard while keeping its original features. Entry is through its own private door into a lobby with a leaded and stained glass door. The sitting/dining room is 4.4m x 4.2m (14'7\" x 13'8\") with solid oak flooring, a feature mantled fireplace with cast iron inset and tiled hearth, decorative coved ceiling and ceiling rose, and double glazed double doors opening onto the terrace and rear garden. The kitchen is 4.6m x 1.96m (15' x 6'2\") with white gloss units, granite worktops, an induction Siemens hob, stainless steel oven, and integrated dishwasher, fridge, freezer and washer/dryer. Bedroom one is 4.8m x 3.6m (15'10\" x 11'9\"), particularly bright, with a very large double glazed sash square bay window looking over the garden and a picture rail. Bedroom two is 3.6m x 3.3m (11'11\" x 10'10\"). The bathroom is 2.9m x 1.6m (9'8\" x 5'3\") with a claw-foot freestanding bath with Victorian-style mixer shower tap, a fully tiled shower cubicle, WC and pedestal basin. Outside is a private veranda-style south-facing terrace plus communal gardens, and an allocated parking space. Council tax band A. Tenure is leasehold with an equal share of the freehold split between the five flats, 125 years remaining on the lease, service charge £60 per month. No onward chain.",
+   "why": "This is the one in this batch that actually has some soul. A ground-floor period apartment with a cast iron fireplace, a ceiling rose, a big sash bay window in the main bedroom and a claw-foot bath, opening through double doors onto its own south-facing terrace, five minutes' walk from the beach and walkable to the station. It is entirely on one level with its own private door, so it answers the long-term stairs question outright, and it comes with an allocated parking space. The share of freehold matters too — with only five flats, you and the neighbours own the building between you, so there is no absentee freeholder setting the charges, and the 125-year lease is academic on top of that. Council tax band A on a property at this price is a quiet bonus. The problem is the price. At £272,500 it is more than £100,000 above the £170,000 you actually aim at, and on the pattern Bro 3 has shown all year — Longmeadow Road, Madeira Villas, Grasshoppers — \"charming but too expensive for what it is\" is exactly the verdict this will get from him, because at the end of it you have a two-bedroom flat with a communal garden. The £60 a month service charge is fair for a five-flat building but it is still £720 a year. Lovely thing; the question is whether it is a £272,500 thing.",
+   "dateAdded": "2026-09-19",
+   "photos": [
+    "MerristCourtExmouth_Gallery_1.jpeg",
+    "MerristCourtExmouth_Gallery_2.jpeg",
+    "MerristCourtExmouth_Gallery_3.jpeg",
+    "MerristCourtExmouth_Gallery_4.jpeg",
+    "MerristCourtExmouth_Gallery_5.jpeg",
+    "MerristCourtExmouth_Gallery_6.jpeg",
+    "MerristCourtExmouth_Gallery_7.jpeg",
+    "MerristCourtExmouth_Gallery_8.jpeg",
+    "MerristCourtExmouth_Gallery_9.jpeg",
+    "MerristCourtExmouth_Gallery_10.jpeg"
+   ],
+   "floorplans": [
+    "MerristCourtExmouth_Floorplan_1.png"
+   ],
+   "parking": {
+    "status": "has",
+    "note": "An allocated parking space is included in the sale and confirmed in the particulars under its own heading. That is worth more here than in most of Exmouth: Douglas Avenue runs up from the seafront end of town and the surrounding streets fall inside the Devon County Council residents' permit area, where a permit gets you the right to look for a space rather than an actual one, and summer beach traffic makes that real. Having a named space removes that problem entirely."
+   },
+   "checklist": {
+    "ocean": "yes",
+    "trainStation": "yes",
+    "poolSwimTeam": "yes",
+    "private": "partial",
+    "mtbTrails": "no",
+    "character": "yes",
+    "garden": "partial",
+    "garageWorkspace": "no",
+    "groundFloorLongTerm": "yes",
+    "closeToFamily": "yes",
+    "tenure": "leasehold",
+    "leaseYears": 125,
+    "uniqueFeature": "A share of the freehold split equally between just five flats, so the residents collectively own the building — plus a veranda-style south-facing private terrace off the sitting room."
+   },
+   "aiRating": 6,
+   "aiTake": "Genuinely characterful, entirely step-free, share of freehold, allocated parking and a south-facing terrace five minutes from the beach — but at £272,500 it is over £100,000 past your real target for a two-bed flat with a communal garden."
+  },
+  {
+   "id": "ebfordthirdacre",
+   "section": "new",
+   "town": "Ebford",
+   "title": "Land at Ebford (one-third-acre freehold roadside parcel between Ebford and Exton, £20,000)",
+   "price": "£20,000",
+   "agent": "Signature Property Concierge, Hampshire",
+   "flags": [
+    {
+     "text": "ONLY £20,000 — BY FAR THE CHEAPEST THING TRACKED",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "FREEHOLD LAND",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ABOUT A THIRD OF AN ACRE",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (established roadside vehicle access)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ROAD-FRONTING ON THE A376",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "EXTON STATION NEARBY — ON THE EXMOUTH–EXETER LINE",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "CLOSE TO WOODBURY COMMON MTB TRAILS",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO PLANNING PERMISSION — YOU CANNOT BUILD OR LIVE ON IT",
+     "color": "#C62828"
+    },
+    {
+     "text": "30% PLANNING OVERAGE — SELLER TAKES 30% OF ANY UPLIFT",
+     "color": "#C62828"
+    },
+    {
+     "text": "SOLD BY A COMPANY ASSOCIATED WITH THE AGENT",
+     "color": "#C62828"
+    },
+    {
+     "text": "⚠️ CLASSIC PLOT-SPLITTING — TREAT WITH REAL CAUTION",
+     "color": "#C62828"
+    },
+    {
+     "text": "NO SERVICES, NO BUILDING, NOTHING TO LIVE IN",
+     "color": "#C62828"
+    },
+    {
+     "text": "PART OF THE SAME 6 ACRES BEING AUCTIONED AS ONE LOT",
+     "color": "#EF6C00"
+    }
+   ],
+   "link": "https://www.rightmove.co.uk/properties/93315144",
+   "linkLabel": "rightmove.co.uk — listing 93315144",
+   "body": "Freehold parcels of land, each about a third of an acre, on the eastern side of the A376 Exmouth Road between the villages of Ebford and Exton. Each parcel has a prominent roadside position with established vehicle access. The agent markets them as suitable \"for a variety of uses subject to the necessary consents\" and offers them individually or as a whole site. The parcels carry a 30% planning overage, meaning the seller retains 30% of any increase in value if planning consent is ever obtained. The particulars disclose that the property is being sold by a company associated with Signature Property Concierge. This is the same six acres tracked separately on this page as a single auction lot with a £195,000 guide — the seller is offering it both ways at once.",
+   "why": "Included because £20,000 is an extraordinary headline number and because you asked to look somewhere less conventional, not because this is a good buy. Be clear about what it is. There is no planning permission, so you cannot build on it, live on it, or park a van on it and call it home — doing any of that needs consent East Devon District Council has no obvious reason to grant on an open field beside the A376. There are no services. And the 30% overage means that if you did somehow win planning, the seller takes 30% of the uplift, which is the bulk of the reason anyone would want it. The pattern — an out-of-area agent, a field chopped into small parcels sold individually, \"subject to the necessary consents\" language, an overage clause, and the seller being a company connected to the agent — is the textbook shape of land-banking, where parcels get sold to a lot of buyers on the hope of future development that does not arrive. It is not illegal and the particulars disclose the connection honestly, but it is the thing to recognise. The location genuinely is good: roadside access, Exton station on the Exmouth–Exeter line, and Woodbury Common on the doorstep. If you ever wanted somewhere to leave a bike trailer or grow something, £20,000 buys a third of an acre. Just do not buy it expecting to build.",
+   "dateAdded": "2026-09-19",
+   "photos": [
+    "EbfordThirdAcre_Gallery_1.jpeg",
+    "EbfordThirdAcre_Gallery_2.jpeg",
+    "EbfordThirdAcre_Gallery_3.jpeg",
+    "EbfordThirdAcre_Gallery_4.jpeg",
+    "EbfordThirdAcre_Gallery_5.jpeg",
+    "EbfordThirdAcre_Gallery_6.jpeg",
+    "EbfordThirdAcre_Gallery_7.jpeg"
+   ],
+   "floorplans": [],
+   "parking": {
+    "status": "has",
+    "note": "Established vehicular access directly from the A376 roadside is stated in the particulars, and the parcels are described as road-fronting, so getting a vehicle onto the land is not in question. Worth noting the flip side: direct access onto a busy A-road is exactly the kind of detail the highways authority scrutinises if any change of use or development were ever applied for, so the existing access being there does not mean an intensified use of it would be permitted."
+   },
+   "checklist": {
+    "ocean": "no",
+    "trainStation": "yes",
+    "poolSwimTeam": "no",
+    "private": "partial",
+    "mtbTrails": "yes",
+    "character": "no",
+    "garden": "no",
+    "garageWorkspace": "no",
+    "groundFloorLongTerm": "no",
+    "closeToFamily": "yes",
+    "tenure": "freehold",
+    "uniqueFeature": "A third of an acre of freehold Devon land for £20,000 — the cheapest thing on this page by an order of magnitude, and the only entry you could buy outright with no mortgage."
+   },
+   "aiRating": 4,
+   "aiTake": "A third of an acre of well-placed freehold land for £20,000 near Exton station and Woodbury Common, but with no planning, no services, a 30% overage and every hallmark of a plot-splitting sale — a curiosity, not a home."
+  },
+  {
+   "id": "littlehamroadbungalow",
+   "section": "still",
    "town": "Exmouth",
    "title": "Littleham Road, Exmouth (architect-designed detached bungalow down a private lane — walled courtyard gardens, detached garage/workshop, no chain)",
    "price": "£250,000",
@@ -118,7 +720,7 @@
   },
   {
    "id": "brookmeadowexmouth",
-   "section": "new",
+   "section": "still",
    "town": "Exmouth",
    "title": "Brook Meadow, Exmouth (three-bedroom detached freehold bungalow in a cul-de-sac of three — garage, off-road parking, mature gardens)",
    "price": "£300,000",
@@ -222,7 +824,7 @@
   },
   {
    "id": "elmfieldcrescentexmouth",
-   "section": "new",
+   "section": "still",
    "town": "Exmouth",
    "title": "Elmfield Crescent, Exmouth (two-double-bedroom semi-detached freehold bungalow — driveway and garage, sun room extension, no chain)",
    "price": "£289,950",
@@ -327,7 +929,7 @@
   },
   {
    "id": "dagmarroadexmouth",
-   "section": "new",
+   "section": "still",
    "town": "Exmouth",
    "title": "Dagmar Road, Exmouth (ground-floor one-bedroom flat with its own private entrance and private garden — no shared access)",
    "price": "£180,000",
@@ -428,7 +1030,7 @@
   },
   {
    "id": "marpoolcrescentexmouth",
-   "section": "new",
+   "section": "still",
    "town": "Exmouth",
    "title": "Marpool Crescent, Exmouth (modern freehold one-bedroom end-of-terrace house built 2017 — good-sized front and rear gardens, loft room)",
    "price": "£199,950",
@@ -529,7 +1131,7 @@
   },
   {
    "id": "brixingtonlaneexmouth",
-   "section": "new",
+   "section": "still",
    "town": "Exmouth",
    "title": "Brixington Lane, Exmouth (detached freehold two-double-bedroom bungalow — driveway and garage, conservatory, no chain, needs modernising)",
    "price": "£295,000",
@@ -648,7 +1250,7 @@
   },
   {
    "id": "charlesstreetexmouth",
-   "section": "new",
+   "section": "still",
    "town": "Exmouth",
    "title": "Charles Street, Exmouth (freehold two-double-bedroom terraced house, new roof in 2025, no onward chain)",
    "price": "£200,000",
@@ -762,7 +1364,7 @@
   },
   {
    "id": "alexandraterraceexmouth",
-   "section": "new",
+   "section": "still",
    "town": "Exmouth",
    "title": "Alexandra Terrace, Exmouth (top-floor apartment in a period seafront building — panoramic two-mile seafront views from a Juliet balcony, no chain)",
    "price": "£185,000",
@@ -880,7 +1482,7 @@
   },
   {
    "id": "coftonhillcockwood",
-   "section": "new",
+   "section": "still",
    "town": "Cockwood",
    "title": "Cofton Hill, Cockwood (two-bedroom freehold character cottage in a conservation area — wood burner, garage, workshop and a roof terrace with estuary views)",
    "price": "Offers in Excess of £290,000",
@@ -1012,19 +1614,23 @@
    "section": "still",
    "town": "Ebford",
    "title": "Exmouth Road, Ebford (6+ acres of freehold roadside land with river views, between Ebford and Exton)",
-   "price": "£300,000",
-   "agent": "Signature Property Concierge, Hampshire",
+   "price": "Guide Price £195,000",
+   "agent": "Auction House, South West",
    "flags": [
     {
-     "text": "⏳ AUCTION ENDS 29 SEPTEMBER 2026 — 13 DAYS LEFT",
+     "text": "⏳ AUCTION ENDS 29 SEPTEMBER 2026 — 10 DAYS LEFT",
      "color": "#C62828"
     },
     {
      "text": "NATIONAL ONLINE AUCTION OPENS 28 SEPTEMBER 2026",
-     "color": "#C62828"
+     "color": "#EF6C00"
     },
     {
-     "text": "ALSO LISTED BY AUCTION HOUSE SOUTH WEST — SAME LAND, TWO AGENTS",
+     "text": "📉 GUIDE CUT FROM £300,000 TO £195,000 — DOWN £105,000",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "ALSO LISTED BY SIGNATURE PROPERTY CONCIERGE — SAME LAND, TWO AGENTS",
      "color": "#EF6C00"
     },
     {
@@ -1064,20 +1670,16 @@
      "color": "#C62828"
     },
     {
-     "text": "£300,000 — THE VERY TOP OF THE BUDGET",
-     "color": "#C62828"
-    },
-    {
      "text": "NO BUILDING, NO SERVICES, NOTHING TO LIVE IN",
      "color": "#C62828"
     },
     {
-     "text": "SAME SELLER’S CHEAPER £125,000 PARCEL HAS JUST BEEN WITHDRAWN",
+     "text": "SELLER IS ALSO BREAKING IT INTO ⅓-ACRE PARCELS AT £20,000 EACH",
      "color": "#EF6C00"
     }
    ],
-   "link": "https://www.rightmove.co.uk/properties/92668863",
-   "linkLabel": "rightmove.co.uk — listing 92668863",
+   "link": "https://www.rightmove.co.uk/properties/92980719",
+   "linkLabel": "rightmove.co.uk — listing 92980719 (Auction House South West)",
    "body": "Over 6 acres of roadside land between the villages of Ebford and Exton, marketed as \"strategic\" and enjoying river views over the Exe Estuary. The parcels have a prominent roadside position on Exmouth Road with established vehicle access. The agent describes it as suitable \"for a variety of uses subject to the necessary consents\" and pitches it at investors, developers, or buyers seeking land for personal use. Sold freehold with a 30% planning overage attached, meaning the seller takes 30% of any uplift in value should consent be obtained in future. The particulars carry an important notice: the property is being sold by a company associated with Signature Property Concierge — the agent and the seller are connected.",
    "why": "This is the same seller and the same stretch of Exmouth Road as the £125,000 parcel already on your list — and that cheaper listing has just been withdrawn, with this 6-acre lot at £300,000 appearing in its place. Read it as one holding being re-cut and re-priced rather than a fresh opportunity. The location genuinely suits you: it is between Ebford and Exton, on the estuary with river views, a short hop from Woodbury and the Common trails, and Exton station on the Exmouth–Exeter line is right there, so it is close to your brother in Woodbury in a way most of the coastal stock is not. But be clear about what £300,000 actually buys: bare land with no planning permission, no services and nothing to live in, at the absolute top of your budget, with a 30% overage clause that hands nearly a third of any future planning gain straight back to the seller. Add that the agent is selling on behalf of a company it is connected to, and the words \"strategic\" and \"subject to the necessary consents\" doing a lot of quiet work, and this is speculation rather than a home. Worth knowing about, worth watching, not worth £300,000 of a £300,000 budget.",
    "dateAdded": "2026-09-10",
@@ -1108,8 +1710,8 @@
     "tenure": "freehold",
     "uniqueFeature": "Six acres of estuary-side freehold land with its own roadside access and a railway station walkable from it — but no consent, a 30% clawback on any future uplift, and an agent selling on behalf of a company it is connected to"
    },
-   "aiRating": 3,
-   "aiTake": "Six freehold acres in exactly the right spot — estuary views, Exton station, minutes from Woodbury and the Common — but it is bare land with no planning, no services, a 30% overage clawback and a connected-party seller, at the very top of the budget.",
+   "aiRating": 4,
+   "aiTake": "Still six acres of freehold roadside land with no planning, no services and a 30% overage, so nothing you could live on — but the guide has been cut by £105,000 to £195,000, which is the first thing about this that has genuinely improved.",
    "research": [
     {
      "date": "2026-09-16",
@@ -1123,6 +1725,25 @@
       {
        "label": "Original Signature Property Concierge listing (Rightmove 92668863)",
        "url": "https://www.rightmove.co.uk/properties/92668863"
+      }
+     ]
+    },
+    {
+     "date": "2026-09-19",
+     "question": "Automated re-check — the tracked Rightmove listing stopped resolving. Sold, withdrawn, or something else?",
+     "findings": "Not sold and not withdrawn — re-priced and re-listed. The original listing (92668863, Signature Property Concierge, £300,000) now returns HTTP 410, which on its own looks exactly like a withdrawal. It is not. The same six acres is live under two current listings, both at a £195,000 guide: Auction House South West (92980719) and a fresh Signature Property Concierge listing (93315141). Both confirm the same land — approximately 6 acres (2.43 hectares) on the eastern side of the A376 Exmouth Road between Ebford and Exton, freehold, with established vehicular access — and both confirm the same auction window, a national online auction opening 28 September 2026 and ending 29 September 2026. So the guide has been cut by £105,000, a third off, about three weeks before the auction. Read that as the seller not finding a buyer at £300,000 rather than as a bargain appearing: the things that made this hard to price have not changed, and the legal pack is the thing to read. No planning permission, no services, and a 30% planning overage clause that hands the seller 30% of any uplift if consent is ever granted. The sale is still being run by a company associated with the selling agent, which is disclosed in the particulars and is worth knowing. One new development: the same seller is now also offering individual one-third-acre parcels off the same site at £20,000 each (listing 93315144), which is being tracked separately. That tells you the whole-site sale is being hedged, and it means a buyer of the whole 6 acres could end up with neighbours who each bought a strip.",
+     "sources": [
+      {
+       "label": "Auction House South West — 6 acres, Ebford, guide £195,000",
+       "url": "https://www.rightmove.co.uk/properties/92980719"
+      },
+      {
+       "label": "Signature Property Concierge — same land re-listed at £195,000",
+       "url": "https://www.rightmove.co.uk/properties/93315141"
+      },
+      {
+       "label": "Signature Property Concierge — ⅓-acre parcels at £20,000",
+       "url": "https://www.rightmove.co.uk/properties/93315144"
       }
      ]
     }
@@ -2448,6 +3069,14 @@
    "bathrooms": 2,
    "flags": [
     {
+     "text": "🔨 AUCTION DATE OF 17 SEPTEMBER 2026 HAS NOW PASSED",
+     "color": "#8D6E63"
+    },
+    {
+     "text": "LIKELY SOLD/WITHDRAWN",
+     "color": "#8D6E63"
+    },
+    {
      "text": "AUCTION — 17 SEPTEMBER 2026 (7 DAYS LEFT)",
      "color": "#C62828"
     },
@@ -2535,7 +3164,20 @@
    "town": "Exmouth",
    "lat": 50.620066,
    "lng": -3.415179,
-   "geocodeSource": "Rightmove listing coordinates"
+   "geocodeSource": "Rightmove listing coordinates",
+   "research": [
+    {
+     "date": "2026-09-19",
+     "question": "Automated re-check — did this go at auction?",
+     "findings": "The Rightmove listing (92357522) now returns HTTP 404, and the auction date it was advertised for, 17 September 2026, passed two days ago. Those two facts together are about as clear as this gets without a Land Registry entry: the lot went under the hammer and the listing has been taken down. Flagged rather than deleted this sweep, because the standing rule is to confirm a disappearance on a second sweep before removing an entry — a single failed fetch can be a site hiccup. If it is still gone next sweep, the entry will be deleted. The sale price is not published by the auctioneer on the public listing, so there is no figure to record.",
+     "sources": [
+      {
+       "label": "Rightmove listing 92357522 (now 404)",
+       "url": "https://www.rightmove.co.uk/properties/92357522"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "forestreetbudleighflat",
@@ -5516,8 +6158,25 @@
        "url": "https://www.rightmove.co.uk/properties/91818192"
       }
      ]
+    },
+    {
+     "date": "2026-09-19",
+     "question": "Automated sweep check — why does this card show no family rating when Bro 3 has commented on this property?",
+     "findings": "Bro 3 rated Madeira Villas 4/10 on 15 July 2026, writing: 'Great, parking, garden, location, but not in love with it and too expensive.' That rating was not showing on this card. The reason is an id change, not a lost comment. The property was originally tracked under the id 'madeiravillas', was removed at some point, and was then re-added on 10 August 2026 under the new id 'madeiravillas2'. The family comment widgets key off the property id, so this card looks for discussion threads named 'madeiravillas2-bro1/2/3' while Bro 3's rating still sits on the old 'madeiravillas-bro3' thread, which nothing now points at. The score has been written directly into this entry so it is preserved and visible. Worth knowing generally: if a property is ever removed and re-added under a new id, any family ratings and comments made under the old id become orphaned and silently disappear from the page.",
+     "sources": [
+      {
+       "label": "Bro 3 discussion thread (old id)",
+       "url": "https://github.com/jkellyllekj/devon-house-search/discussions"
+      }
+     ]
     }
-   ]
+   ],
+   "ratings": {
+    "Bro 3": {
+     "score": 4,
+     "date": "2026-07-15"
+    }
+   }
   },
   {
    "id": "dukeofcornwallclose",
