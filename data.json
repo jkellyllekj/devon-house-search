@@ -1,8 +1,120 @@
 {
- "lastUpdated": "2026-09-25",
+ "lastUpdated": "2026-09-28",
  "properties": [
   {
    "section": "new",
+   "dateAdded": "2026-09-28",
+   "town": "Exmouth",
+   "id": "admiralswalkexmouth",
+   "title": "Admirals Walk, Exmouth (freehold three-bed terrace with wood burner, south-facing garden and a garage part-converted into a hobbies room)",
+   "price": "£275,000",
+   "agent": "Fulfords, Exmouth",
+   "bedrooms": 3,
+   "bathrooms": 1,
+   "link": "https://www.rightmove.co.uk/properties/93564630",
+   "linkLabel": "rightmove.co.uk — listing 93564630",
+   "lat": 50.63455,
+   "lng": -3.38889,
+   "photos": [
+    "AdmiralsWalkExmouth_Gallery_1.jpeg",
+    "AdmiralsWalkExmouth_Gallery_2.jpeg",
+    "AdmiralsWalkExmouth_Gallery_3.jpeg",
+    "AdmiralsWalkExmouth_Gallery_4.jpeg",
+    "AdmiralsWalkExmouth_Gallery_5.jpeg",
+    "AdmiralsWalkExmouth_Gallery_6.jpeg",
+    "AdmiralsWalkExmouth_Gallery_7.jpeg",
+    "AdmiralsWalkExmouth_Gallery_8.jpeg",
+    "AdmiralsWalkExmouth_Gallery_9.jpeg",
+    "AdmiralsWalkExmouth_Gallery_10.jpeg",
+    "AdmiralsWalkExmouth_Gallery_11.jpeg",
+    "AdmiralsWalkExmouth_Gallery_12.jpeg",
+    "AdmiralsWalkExmouth_Gallery_13.jpeg",
+    "AdmiralsWalkExmouth_Gallery_14.jpeg",
+    "AdmiralsWalkExmouth_Gallery_15.jpeg",
+    "AdmiralsWalkExmouth_Gallery_16.jpeg",
+    "AdmiralsWalkExmouth_Gallery_17.jpeg",
+    "AdmiralsWalkExmouth_Gallery_18.jpeg",
+    "AdmiralsWalkExmouth_Gallery_19.jpeg",
+    "AdmiralsWalkExmouth_Gallery_20.jpeg"
+   ],
+   "floorplans": [
+    "AdmiralsWalkExmouth_Floorplan_1.jpeg"
+   ],
+   "flags": [
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (off-road space next to the garage)",
+     "color": "#1E88E5"
+    },
+    {
+     "text": "FORMER GARAGE NOW A HOBBIES ROOM/STUDY — PLUS STORAGE",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "WOOD-BURNING STOVE IN THE SITTING ROOM",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SOUTH-FACING REAR GARDEN WITH RAISED TERRACE",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "CONSERVATORY OFF THE KITCHEN/DINER",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "COUNCIL TAX BAND B",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "EAST SIDE OF EXMOUTH — TOWARDS WOODBURY AND BUDLEIGH",
+     "color": "#1E88E5"
+    },
+    {
+     "text": "£105,000 ABOVE YOUR £170K TARGET",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "ALL BEDROOMS AND THE ONLY BATHROOM ARE UPSTAIRS — NO DOWNSTAIRS WC",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "BEDROOMS 2 AND 3 ARE SMALL",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "ORDINARY ESTATE TERRACE — NO REAL CHARACTER",
+     "color": "#EF6C00"
+    }
+   ],
+   "parking": {
+    "status": "has",
+    "note": "Off-road parking beside the former garage at the rear, stated in the particulars, with rear pedestrian access too."
+   },
+   "body": "A three-bedroom mid-terrace on Admirals Walk, a residential estate on the eastern outskirts of Exmouth. Freehold. Downstairs there is an entrance porch and hall, a 16'8\" sitting room with a wood-burning stove, and a kitchen/diner across the back opening into a small conservatory. Upstairs are three bedrooms (a 13'4\" main bedroom and two smaller ones) and the family bathroom. The rear garden faces south and has a raised seating terrace. The old garage has been partly converted into an 11'10\" study/games room, keeping a storage section at the front, with off-road parking alongside and rear pedestrian access. About 840 sq ft in total. Council tax band B.",
+   "why": "The garage conversion is the reason to look. You get a separate room outside the house for bikes, a bench or a home office, plus a parking space, which is exactly the garage/workspace box most cheap Exmouth houses miss. Add a south-facing garden and a wood burner and it is a comfortable, practical house on the Woodbury side of town, so a short run to the Common and to both brothers. The downsides are the usual ones for this estate: no character, two small bedrooms, and nothing on the ground floor for later life beyond a converted outbuilding. At £275,000 it is also a long way over the £170k you actually want to spend.",
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "partial",
+    "poolSwimTeam": "yes",
+    "private": "partial",
+    "mtbTrails": "partial",
+    "character": "no",
+    "garden": "yes",
+    "garageWorkspace": "yes",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "no",
+    "uniqueFeature": "Former garage partly converted into a separate study/games room",
+    "tenure": "freehold"
+   },
+   "aiRating": 5,
+   "aiTake": "Freehold, parking, a south-facing garden and a detached hobbies room are solid practical wins, but it is a plain estate terrace, upstairs-only for sleeping, and £105k over target."
+  },
+  {
+   "section": "still",
    "dateAdded": "2026-09-25",
    "town": "Exmouth",
    "linkLabel": "rightmove.co.uk — listing 93454701",
@@ -114,7 +226,7 @@
    "aiTake": "A freehold, one-level bungalow with a garage, driveway, gardens and a modern kitchen and shower room, and no chain. It ticks the practical boxes cleanly, but it is plain and £80k over target."
   },
   {
-   "section": "new",
+   "section": "still",
    "dateAdded": "2026-09-25",
    "town": "Exmouth",
    "linkLabel": "rightmove.co.uk — listing 93364005",
@@ -219,7 +331,7 @@
    "aiTake": "A real period cottage with fireplaces, gardens front and back and the beach and station on foot, but no parking, stairs to every bedroom, a flying freehold to check and £260k is £90k over target."
   },
   {
-   "section": "new",
+   "section": "still",
    "dateAdded": "2026-09-25",
    "town": "Exmouth",
    "linkLabel": "rightmove.co.uk — listing 93490905",
@@ -3371,126 +3483,6 @@
    "lat": 50.617267,
    "lng": -3.408414,
    "geocodeSource": "Rightmove listing coordinates"
-  },
-  {
-   "id": "manchesterroadexmouth",
-   "section": "still",
-   "title": "Manchester Road, Exmouth (two independent 1-bed flats sold as one lot — AUCTION 17 Sept)",
-   "price": "Guide Price £130,000 (auction)",
-   "agent": "Links Estate Agents, Exmouth",
-   "bedrooms": 2,
-   "bathrooms": 2,
-   "flags": [
-    {
-     "text": "🔨 AUCTION DATE OF 17 SEPTEMBER 2026 HAS NOW PASSED",
-     "color": "#8D6E63"
-    },
-    {
-     "text": "LIKELY SOLD/WITHDRAWN",
-     "color": "#8D6E63"
-    },
-    {
-     "text": "AUCTION — 17 SEPTEMBER 2026 (7 DAYS LEFT)",
-     "color": "#C62828"
-    },
-    {
-     "text": "WELL UNDER JESSE’S £170K TARGET",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "TWO SELF-CONTAINED FLATS IN ONE LOT",
-     "color": "#6A1B9A"
-    },
-    {
-     "text": "MAIN TITLE IS FREEHOLD",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "EXMOUTH TOWN CENTRE — LEVEL WALK TO STATION, MARINA AND SEAFRONT",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "COUNCIL TAX BAND A",
-     "color": "#2E7D32"
-    },
-    {
-     "text": "SOLD AS AN INVESTMENT — BOTH FLATS CURRENTLY TENANTED",
-     "color": "#EF6C00"
-    },
-    {
-     "text": "SPLIT TENURE — 4a FREEHOLD, 6a ON A 999-YEAR LEASE FROM 1989",
-     "color": "#EF6C00"
-    },
-    {
-     "text": "ALL LIVING SPACE IS UP THE STAIRS IN BOTH FLATS",
-     "color": "#C62828"
-    },
-    {
-     "text": "NO PARKING INFO",
-     "color": "#C62828"
-    },
-    {
-     "text": "NO FLOORPLAN PUBLISHED",
-     "color": "#EF6C00"
-    }
-   ],
-   "link": "https://www.rightmove.co.uk/properties/92356614",
-   "linkLabel": "rightmove.co.uk — listing 92356614",
-   "body": "An unusual lot going to online auction on Thursday 17 September: two entirely independent one-bedroom flats, 4a and 6a Manchester Road, sold together in the heart of Exmouth town centre. Each flat has its own private front door at ground level and then a landing, kitchen, living room, bedroom and bathroom/WC upstairs — they share nothing internally. Both are currently let: 4a on an AST at £575 pcm, 6a at £700 pcm with the tenant having served notice to leave. Tenure is split — 4 Manchester Road, including the flat known as 4a, is freehold, while 6a is held on the remainder of a 999-year lease dated from 1989 with a peppercorn ground rent. Council Tax Band A. The agent is pitching it squarely at lettings investors wanting ready-made income, or at buyers who would refurbish for onward sale once vacant possession is available. Open-day viewing slots are being run through late August and early September ahead of the auction.",
-   "why": "This is on the list because it is genuinely unconventional and genuinely cheap — £130,000 guide for two self-contained flats with the main title freehold, right in the middle of Exmouth on a level walk to the station, marina and seafront. There are two interesting angles: live in one and let the other to cover most of the running costs, or take the pair back into a single house once both are vacant. Be clear-eyed about what it is not, though. It is marketed as an income asset rather than a home, both flats are tenanted right now so vacant possession is not immediate, and the split tenure between a freehold and a leasehold flat makes the legal pack essential reading before bidding. Both flats put every room upstairs, which rules the lot out on Jesse’s long-term ground-floor test, there is no parking mentioned anywhere, and no floorplan has been published. Auction guide prices in Exmouth have been running over on the day, so treat £130,000 as a starting point.",
-   "dateAdded": "2026-08-28",
-   "photos": [
-    "ManchesterRoadExmouth_Gallery_1.jpg",
-    "ManchesterRoadExmouth_Gallery_2.jpg",
-    "ManchesterRoadExmouth_Gallery_3.jpg",
-    "ManchesterRoadExmouth_Gallery_4.jpg",
-    "ManchesterRoadExmouth_Gallery_5.jpg",
-    "ManchesterRoadExmouth_Gallery_6.jpg",
-    "ManchesterRoadExmouth_Gallery_7.jpg",
-    "ManchesterRoadExmouth_Gallery_8.jpg",
-    "ManchesterRoadExmouth_Gallery_9.jpg",
-    "ManchesterRoadExmouth_Gallery_10.jpg",
-    "ManchesterRoadExmouth_Gallery_11.jpg",
-    "ManchesterRoadExmouth_Gallery_12.jpg"
-   ],
-   "floorplans": [],
-   "checklist": {
-    "ocean": "yes",
-    "trainStation": "yes",
-    "poolSwimTeam": "yes",
-    "private": "no",
-    "mtbTrails": "partial",
-    "character": "partial",
-    "garden": "no",
-    "garageWorkspace": "no",
-    "closeToFamily": "yes",
-    "groundFloorLongTerm": "no",
-    "uniqueFeature": "Two completely independent one-bedroom flats sold as a single lot, with the main title freehold — so you can live in one and let the other, or reunite them into one house.",
-    "tenure": "freehold"
-   },
-   "aiRating": 6,
-   "aiTake": "Two self-contained flats in central Exmouth for a £130,000 auction guide with the main title freehold — a genuinely interesting live-in-one-let-the-other play, but it is sold as a tenanted investment, all rooms are upstairs in both, and there is no parking.",
-   "parking": {
-    "status": "unknown",
-    "note": "The particulars do not mention parking at all, which for a town-centre address of this type almost certainly means there is none with the property. Manchester Road sits in central Exmouth, inside the area Devon County Council covers with its residents’ parking permit scheme run through MiPermit, where a first band A permit is roughly £35 a year — cheap if this street falls inside a live zone, but the zones were drawn street by street and a permit gives priority rather than a reserved bay. East Devon District Council also sells a virtual monthly permit for its Exmouth town car parks, and the Imperial Road and Elizabeth Hall car parks are both a short level walk away. Confirm the zone for this exact address with Devon County Council before bidding, and note that a lot with two flats may generate demand for two vehicles."
-   },
-   "town": "Exmouth",
-   "lat": 50.620066,
-   "lng": -3.415179,
-   "geocodeSource": "Rightmove listing coordinates",
-   "research": [
-    {
-     "date": "2026-09-19",
-     "question": "Automated re-check — did this go at auction?",
-     "findings": "The Rightmove listing (92357522) now returns HTTP 404, and the auction date it was advertised for, 17 September 2026, passed two days ago. Those two facts together are about as clear as this gets without a Land Registry entry: the lot went under the hammer and the listing has been taken down. Flagged rather than deleted this sweep, because the standing rule is to confirm a disappearance on a second sweep before removing an entry — a single failed fetch can be a site hiccup. If it is still gone next sweep, the entry will be deleted. The sale price is not published by the auctioneer on the public listing, so there is no figure to record.",
-     "sources": [
-      {
-       "label": "Rightmove listing 92357522 (now 404)",
-       "url": "https://www.rightmove.co.uk/properties/92357522"
-      }
-     ]
-    }
-   ]
   },
   {
    "id": "forestreetbudleighflat",
@@ -12310,7 +12302,7 @@
   },
   {
    "id": "ashleyhouseexmouth",
-   "section": "new",
+   "section": "still",
    "title": "Flat 3 Ashley House, Raddenstile Lane, Exmouth (ground-floor two-bed flat, back on the market after auction at £130,000)",
    "price": "£130,000",
    "agent": "Your Move, Exmouth",
