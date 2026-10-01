@@ -1,6 +1,190 @@
 {
- "lastUpdated": "2026-09-28",
+ "lastUpdated": "2026-10-01",
  "properties": [
+  {
+   "section": "new",
+   "dateAdded": "2026-10-01",
+   "town": "Exmouth",
+   "id": "poundlanebungalow",
+   "title": "Pound Lane, Exmouth (detached 2-bed bungalow for updating, garage, driveway for three cars, loft conversion potential, no chain)",
+   "price": "£270,000",
+   "agent": "Links Estate Agents, Exmouth",
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "link": "https://www.rightmove.co.uk/properties/88504347",
+   "linkLabel": "rightmove.co.uk — listing 88504347",
+   "lat": 50.635108,
+   "lng": -3.403148,
+   "photos": [
+    "PoundLaneBungalow_Gallery_1.jpeg",
+    "PoundLaneBungalow_Gallery_2.jpeg",
+    "PoundLaneBungalow_Gallery_3.jpeg",
+    "PoundLaneBungalow_Gallery_4.jpeg",
+    "PoundLaneBungalow_Gallery_5.jpeg",
+    "PoundLaneBungalow_Gallery_6.jpeg",
+    "PoundLaneBungalow_Gallery_7.jpeg",
+    "PoundLaneBungalow_Gallery_8.jpeg",
+    "PoundLaneBungalow_Gallery_9.jpeg",
+    "PoundLaneBungalow_Gallery_10.jpeg",
+    "PoundLaneBungalow_Gallery_11.jpeg"
+   ],
+   "floorplans": [
+    "PoundLaneBungalow_Floorplan_1.jpeg"
+   ],
+   "flags": [
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "HAS PARKING (driveway for up to 3 cars plus garage)",
+     "color": "#1E88E5"
+    },
+    {
+     "text": "GARAGE WITH POWER AND LIGHT",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "DETACHED BUNGALOW, ALL ON ONE LEVEL",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NO ONWARD CHAIN",
+     "color": "#1565C0"
+    },
+    {
+     "text": "LOFT CONVERSION POTENTIAL (STP)",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "PRICE REDUCED",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "NEEDS UPDATING",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "£100K ABOVE YOUR £170K TARGET",
+     "color": "#EF6C00"
+    }
+   ],
+   "parking": {
+    "status": "has",
+    "note": "Level driveway to the side for up to three vehicles, leading to a single garage with power and light."
+   },
+   "body": "A freehold detached two-bedroom bungalow on Pound Lane, on the east side of Exmouth towards Woodbury. Living room with an open fireplace, a 14ft10 kitchen, two double bedrooms, a modern shower room and a separate cloakroom. Electric central heating and double glazing throughout, but the whole thing needs modernising. Good-sized front and rear gardens (lawn and decking at the back), a level driveway for three cars and an 18ft garage. The agent notes potential for a loft conversion, subject to consents. Council tax band D, no onward chain.",
+   "why": "A project bungalow with the practical boxes ticked: detached, on one level so it works if stairs become a problem, a proper garage for a workshop, space for several vehicles and a decent garden. The price has already come down. It is not characterful and Bro 3 will mentally add the refurbishment cost to £270k, so it is only worth it if you want a blank canvas to do up. It sits on the Woodbury side of Exmouth, handy for the Common and both brothers.",
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "partial",
+    "poolSwimTeam": "yes",
+    "private": "partial",
+    "mtbTrails": "partial",
+    "character": "no",
+    "garden": "yes",
+    "garageWorkspace": "yes",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "yes",
+    "uniqueFeature": null,
+    "tenure": "freehold"
+   },
+   "aiRating": 5,
+   "aiTake": "Detached, single-storey, garage plus three-car drive and no chain are real practical wins, but it is bland, needs a full refurb and sits £100k above target."
+  },
+  {
+   "section": "new",
+   "dateAdded": "2026-10-01",
+   "town": "Exton",
+   "id": "iddesleighterraceexton",
+   "title": "Iddesleigh Terrace, Exton (freehold end-terrace cottage, wood burner, south-west garden, walk to Exton station and the Exe cycle path)",
+   "price": "£300,000",
+   "agent": "Butt Estates, Exeter",
+   "bedrooms": 3,
+   "bathrooms": 1,
+   "link": "https://www.rightmove.co.uk/properties/92420970",
+   "linkLabel": "rightmove.co.uk — listing 92420970",
+   "lat": 50.668833,
+   "lng": -3.438734,
+   "photos": [
+    "IddesleighTerraceExton_Gallery_1.jpeg",
+    "IddesleighTerraceExton_Gallery_2.jpeg",
+    "IddesleighTerraceExton_Gallery_3.jpeg",
+    "IddesleighTerraceExton_Gallery_4.jpeg",
+    "IddesleighTerraceExton_Gallery_5.jpeg",
+    "IddesleighTerraceExton_Gallery_6.jpeg",
+    "IddesleighTerraceExton_Gallery_7.jpeg",
+    "IddesleighTerraceExton_Gallery_8.jpeg",
+    "IddesleighTerraceExton_Gallery_9.jpeg",
+    "IddesleighTerraceExton_Gallery_10.jpeg",
+    "IddesleighTerraceExton_Gallery_11.jpeg",
+    "IddesleighTerraceExton_Gallery_12.jpeg",
+    "IddesleighTerraceExton_Gallery_13.jpeg"
+   ],
+   "floorplans": [
+    "IddesleighTerraceExton_Floorplan_1.jpeg"
+   ],
+   "flags": [
+    {
+     "text": "FREEHOLD",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "PARKING UNKNOWN (informal church car park arrangement, transferable)",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "WOOD-BURNING STOVE",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "WALK TO EXTON TRAIN STATION",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "EXE CYCLE PATH THROUGH THE VILLAGE",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "SOUTH-WEST FACING PRIVATE GARDEN",
+     "color": "#2E7D32"
+    },
+    {
+     "text": "AT YOUR £300K CEILING, £130K ABOVE TARGET",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "RIGHT OF WAY THROUGH NEIGHBOURS' GARDENS",
+     "color": "#EF6C00"
+    },
+    {
+     "text": "ALL BEDROOMS UPSTAIRS OVER TWO FLOORS",
+     "color": "#EF6C00"
+    }
+   ],
+   "parking": {
+    "status": "unknown",
+    "note": "No driveway. The listing says the current owners have an arrangement with the church to park in its car park, and that this can pass to a new owner. Worth getting that in writing before offering, since it is an informal arrangement rather than a title right. Terrace streets in Exton are narrow, so on-street space is limited."
+   },
+   "body": "An end-of-terrace freehold cottage on Iddesleigh Terrace in Exton, a small village on the Exe estuary between Topsham and Woodbury. Three floors: a living room with high ceilings and a wood burner opening to a newly fitted kitchen/diner with sliding doors to the garden; a double bedroom, single room and four-piece bathroom on the first floor; and a top-floor double with a Velux and eaves storage. The south-west rear garden is private, with a vegetable patch and patio, and there is a large shed at the front. Exton station is a walk away, as are the Puffing Billy pub and the church, and the Exe cycle path runs through the village. Council tax band C.",
+   "why": "This is the closest thing to a characterful cottage in the latest results. Exton gives you a train station on foot, the estuary cycle path on the doorstep, and Woodbury (and your brother there) only a few miles away, while still feeling like a quiet village rather than a town. The wood burner and the garden suit you. The catches are the price, which sits right at your ceiling and well above £170k, the informal church-car-park parking, a right of way through neighbouring gardens, and sleeping accommodation spread over two upper floors, so no easy long-term ground-floor living.",
+   "checklist": {
+    "ocean": "partial",
+    "trainStation": "yes",
+    "poolSwimTeam": "partial",
+    "private": "partial",
+    "mtbTrails": "partial",
+    "character": "yes",
+    "garden": "yes",
+    "garageWorkspace": "partial",
+    "closeToFamily": "yes",
+    "groundFloorLongTerm": "no",
+    "uniqueFeature": "Village cottage with its own station and the Exe cycle path on the doorstep",
+    "tenure": "freehold"
+   },
+   "aiRating": 6,
+   "aiTake": "A genuine village cottage with station, cycle path, wood burner and garden near Woodbury, held back by a £300k price, informal parking and upstairs-only bedrooms."
+  },
   {
    "section": "new",
    "dateAdded": "2026-09-28",
@@ -5496,18 +5680,22 @@
   },
   {
    "id": "louisaterrace",
-   "section": "still",
+   "section": "new",
    "town": "Exmouth",
    "title": "Louisa Terrace, Exmouth (Grade II Georgian 2-bed lower ground floor, 999-yr lease + share of freehold, sea views)",
-   "price": "£250,000",
-   "agent": "Hall & Scott, Exmouth",
+   "price": "Guide Price £150,000 (auction 3 November 2026)",
+   "agent": "Fulfords, Exmouth (auction)",
    "flags": [
+    {
+     "text": "AUCTION 3 NOV 2026, GUIDE £150,000 (WAS £250,000)",
+     "color": "#C62828"
+    },
     {
      "text": "IN BUDGET",
      "color": "#2E7D32"
     },
     {
-     "text": "NO PARKING INFO",
+     "text": "PARKING UNKNOWN (one space potential, subject to planning)",
      "color": "#EF6C00"
     },
     {
@@ -5521,10 +5709,6 @@
     {
      "text": "SEA VIEWS FROM FRONT GARDEN",
      "color": "#00695C"
-    },
-    {
-     "text": "NO ONWARD CHAIN",
-     "color": "#1565C0"
     },
     {
      "text": "REQUIRES MODERNISATION",
@@ -5549,13 +5733,13 @@
    ],
    "bedrooms": 2,
    "bathrooms": 1,
-   "link": "https://www.rightmove.co.uk/properties/173755259",
-   "linkLabel": "rightmove.co.uk — Louisa Terrace, Exmouth",
+   "link": "https://www.rightmove.co.uk/properties/93782763",
+   "linkLabel": "rightmove.co.uk — listing 93782763 (also 93684093, Countrywide Property Auctions)",
    "body": "A Grade II listed Georgian two-bedroom lower ground floor apartment on Louisa Terrace, a short walk above Exmouth seafront. Around 860 sq ft — generous for the money — comprising a good-sized sitting room, a kitchen/dining room opening onto a small internal courtyard, two double bedrooms, a bathroom and a separate WC, plus two external store rooms. Gas central heating. The flat has a lawned front garden of its own with sea views, and Louisa Terrace is set back and slightly raised from the promenade rather than on it, which keeps it quieter than a seafront address usually is. Sold with no onward chain and with a brand-new 999-year lease and a share of the freehold, so in practical terms it behaves close to freehold. It does require a degree of updating.",
    "why": "Georgian, listed, 860 sq ft, sea views and a private front garden, a couple of minutes from the beach, for £250,000 — and the new 999-year lease with share of freehold removes most of what Bro 3 dislikes about leasehold. It needs modernising, which is really the reason it's this price. The obvious gap is parking: there's none with the flat, and access is down external steps, which matters for the long-term stairs question.",
    "parking": {
-    "status": "none",
-    "note": "No parking comes with the flat. Louisa Terrace sits in central Exmouth, which has had a residents' parking permit scheme since 2023 — Devon County Council runs it through MiPermit, with first residents' permits around £35 a year for band A vehicles, so a permit is realistically obtainable and cheap if the address qualifies for its zone. Worth confirming with Devon CC which zone this end of Louisa Terrace falls in before committing, since the seafront streets carry heavy pay-and-display and summer visitor pressure and permit zones here were drawn street by street. Failing a permit, the Queen's Drive and seafront car parks are a short walk but are priced for tourists rather than residents."
+    "status": "unknown",
+    "note": "The auction particulars mention a lawned front garden with \"potential for one parking space STPP\", so there is no parking now and a space would need planning permission. Otherwise the earlier research stands: Exmouth residents permits via Devon CC / MiPermit are cheap if the street qualifies, and the seafront car parks are a short walk."
    },
    "research": [
     {
@@ -5576,6 +5760,21 @@
        "url": "https://www.exmouthjournal.co.uk/news/23186907.exmouth-residents-parking-permit-scheme-approved/"
       }
      ]
+    },
+    {
+     "date": "2026-10-01",
+     "question": "Sweep note: listing change",
+     "findings": "The flat has been re-listed for auction on 3 November 2026 with a guide price of £150,000, down from £250,000 at private sale. It appears under Fulfords (Rightmove 93782763) and under Countrywide Property Auctions as Flat 1 Beacon Court (93684093). Same flat: garden floor, two double bedrooms, Grade II listed Beacon Court, 999-year lease with share of freehold, EPC D, council tax B. An auction guide is a minimum indication rather than a ceiling, so it may sell higher. Read the legal pack before bidding, since auction purchases are unconditional with a quick completion.",
+     "sources": [
+      {
+       "label": "Rightmove listing 93782763",
+       "url": "https://www.rightmove.co.uk/properties/93782763"
+      },
+      {
+       "label": "Rightmove listing 93684093",
+       "url": "https://www.rightmove.co.uk/properties/93684093"
+      }
+     ]
     }
    ],
    "checklist": {
@@ -5593,8 +5792,8 @@
     "tenure": "leasehold",
     "leaseYears": 999
    },
-   "aiRating": 7,
-   "aiTake": "Listed Georgian character, 860 sq ft, sea views and a private front garden two minutes from Exmouth beach at £250,000, with a 999-year lease and share of freehold that neutralises most leasehold objections — docked for having no parking, needing modernisation, and being reached down external steps.",
+   "aiRating": 9,
+   "aiTake": "Listed Georgian character, 860 sq ft, sea views and a private front garden two minutes from Exmouth beach at £250,000, with a 999-year lease and share of freehold that neutralises most leasehold objections — docked for having no parking, needing modernisation, and being reached down external steps. Update 1 Oct: now going to auction on 3 Nov with a £150k guide, which lifts the budget score sharply.",
    "dateAdded": "2026-08-16"
   },
   {
