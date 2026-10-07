@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-10-05",
+ "lastUpdated": "2026-10-07",
  "properties": [
   {
    "section": "new",
@@ -1124,6 +1124,10 @@
    "agent": "Signature Property Concierge, Hampshire",
    "flags": [
     {
+     "text": "LIKELY SOLD/WITHDRAWN",
+     "color": "#8D6E63"
+    },
+    {
      "text": "ONLY £20,000 — BY FAR THE CHEAPEST THING TRACKED",
      "color": "#2E7D32"
     },
@@ -2226,6 +2230,10 @@
    "price": "Guide Price £195,000",
    "agent": "Auction House, South West",
    "flags": [
+    {
+     "text": "LIKELY SOLD/WITHDRAWN",
+     "color": "#8D6E63"
+    },
     {
      "text": "⏳ AUCTION ENDS 29 SEPTEMBER 2026 — 10 DAYS LEFT",
      "color": "#C62828"
