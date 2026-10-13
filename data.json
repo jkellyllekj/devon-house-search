@@ -1,6 +1,86 @@
 {
-  "lastUpdated": "2026-10-10",
+  "lastUpdated": "2026-10-13",
   "properties": [
+    {
+      "id": "clintonsquarecottage",
+      "section": "new",
+      "town": "Exmouth",
+      "dateAdded": "2026-10-13",
+      "title": "Clinton Square, Exmouth (freehold two-double-bedroom terraced cottage, level walk to seafront and station, residents' parking, no chain)",
+      "price": "£300,000",
+      "agent": "Links Estate Agents, Exmouth",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (residents' parking)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "LEVEL WALK TO SEAFRONT, MARINA AND TRAIN STATION",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "COURTYARD GARDEN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "AT THE £300K CEILING",
+          "color": "#EF6C00"
+        }
+      ],
+      "link": "https://www.rightmove.co.uk/properties/94048308",
+      "linkLabel": "rightmove.co.uk — listing 94048308",
+      "lat": 50.617609,
+      "lng": -3.416827,
+      "photos": [
+        "ClintonSquareCottage_Gallery_1.jpeg",
+        "ClintonSquareCottage_Gallery_2.jpeg",
+        "ClintonSquareCottage_Gallery_3.jpeg",
+        "ClintonSquareCottage_Gallery_4.jpeg",
+        "ClintonSquareCottage_Gallery_5.jpeg",
+        "ClintonSquareCottage_Gallery_6.jpeg",
+        "ClintonSquareCottage_Gallery_7.jpeg",
+        "ClintonSquareCottage_Gallery_8.jpeg",
+        "ClintonSquareCottage_Gallery_9.jpeg",
+        "ClintonSquareCottage_Gallery_10.jpeg",
+        "ClintonSquareCottage_Gallery_11.jpeg",
+        "ClintonSquareCottage_Gallery_12.jpeg"
+      ],
+      "floorplans": [
+        "ClintonSquareCottage_Floorplan_1.jpeg"
+      ],
+      "parking": {
+        "status": "has",
+        "note": "The particulars list residents' parking for the square, so there is a permitted space rather than a private driveway. It is worth confirming with the agent whether the space is allocated to this house or a permit-based bay in the shared square, but the location is a level walk from the seafront and station so a second car is much less necessary."
+      },
+      "body": "A two-double-bedroom, two-reception-room terraced cottage on Clinton Square in Exmouth, recently updated by the current owner. Sitting room with fireplace feature, separate dining room, modern kitchen/breakfast room with integrated appliances, and a fitted bathroom upstairs. Gas central heating, double glazing, courtyard garden, residents' parking and no onward chain. Freehold, council tax band B.",
+      "why": "This is the town-centre convenience option done well: a level walk to the seafront, marina, town and train station, freehold, move-in condition so no refurbishment to add to the price, and chain-free. It sits right at the £300,000 ceiling, well above your £170,000 target, so it has to earn that on value, and a terraced cottage with a courtyard rather than a proper garden is on the modest side for the money. It is also not a ground-floor option as the bedrooms are upstairs. Bro 3 has said he can be softened on price by a genuinely good town location, and this is that, but his usual test is whether it is too expensive for what it is.",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "partial",
+        "mtbTrails": "no",
+        "character": "partial",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "groundFloorLongTerm": "no",
+        "closeToFamily": "yes",
+        "tenure": "freehold",
+        "uniqueFeature": null
+      },
+      "aiRating": 5,
+      "aiTake": "Immaculate freehold town cottage with sea, station and parking in easy reach, but it is priced at the ceiling, has only a courtyard, and has stairs."
+    },
     {
       "section": "new",
       "dateAdded": "2026-10-01",
@@ -12748,7 +12828,7 @@
       "id": "stjohnsfarmmews",
       "section": "still",
       "title": "St. Johns Farm Mews, Exmouth",
-      "price": "Offers over £295,000",
+      "price": "£285,000",
       "agent": "Rightmove listing",
       "flags": [
         {
