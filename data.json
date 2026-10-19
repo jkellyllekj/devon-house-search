@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-16",
+  "lastUpdated": "2026-10-19",
   "properties": [
     {
       "id": "clintonsquarecottage",
@@ -147,6 +147,10 @@
         {
           "text": "£100K ABOVE YOUR £170K TARGET",
           "color": "#EF6C00"
+        },
+        {
+          "text": "LIKELY SOLD/WITHDRAWN",
+          "color": "#8D6E63"
         }
       ],
       "parking": {
