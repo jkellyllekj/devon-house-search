@@ -1,6 +1,331 @@
 {
-  "lastUpdated": "2026-10-25",
+  "lastUpdated": "2026-10-28",
   "properties": [
+    {
+      "section": "new",
+      "town": "Exmouth",
+      "dateAdded": "2026-10-28",
+      "id": "shutemeadowstreetexmouth",
+      "title": "Shute Meadow Street, Exmouth (freehold two-bed terrace, ground-floor bathroom, courtyard garden)",
+      "price": "£192,500",
+      "agent": "Pennys, Exmouth",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "£22,500 ABOVE YOUR £170K TARGET",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "GROUND-FLOOR BATHROOM",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "BOARDED LOFT",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "ORDINARY TERRACE — LITTLE CHARACTER",
+          "color": "#EF6C00"
+        }
+      ],
+      "link": "https://www.rightmove.co.uk/properties/90736260",
+      "linkLabel": "rightmove.co.uk — listing 90736260",
+      "photos": [
+        "ShuteMeadowStreet_Gallery_1.jpeg",
+        "ShuteMeadowStreet_Gallery_2.jpeg",
+        "ShuteMeadowStreet_Gallery_3.jpeg",
+        "ShuteMeadowStreet_Gallery_4.jpeg",
+        "ShuteMeadowStreet_Gallery_5.jpeg",
+        "ShuteMeadowStreet_Gallery_6.jpeg",
+        "ShuteMeadowStreet_Gallery_7.jpeg",
+        "ShuteMeadowStreet_Gallery_8.jpeg",
+        "ShuteMeadowStreet_Gallery_9.jpeg",
+        "ShuteMeadowStreet_Gallery_10.jpeg"
+      ],
+      "floorplans": [
+        "ShuteMeadowStreet_Floorplan_1.jpeg"
+      ],
+      "parking": {
+        "status": "unknown",
+        "note": "The listing says nothing about parking and the street is a tight town-centre terrace, so assume on-street only until proven otherwise. Worth asking Pennys whether there is any off-road space, and checking the residents' permit position for the street before offering. Town-centre car parks are a short walk."
+      },
+      "body": "A freehold two-bedroom terrace in central Exmouth with a sitting room, kitchen, ground-floor bathroom and a rear courtyard garden. Two good bedrooms upstairs, a spacious fully boarded loft, gas central heating and double glazing. Sold with no ongoing chain. Council tax band B.",
+      "why": "At £192,500 it is just above your £170,000 target, freehold with no service charges, and the bathroom is on the ground floor, which helps if stairs ever become an issue. It is a plain terrace without much character and parking is unconfirmed, so it is a sensible cheap fallback rather than a stand-out.",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "partial",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "groundFloorLongTerm": "adaptable",
+        "closeToFamily": "yes",
+        "tenure": "freehold",
+        "uniqueFeature": null
+      },
+      "aiRating": 6,
+      "aiTake": "Cheap, freehold and town-centre with a ground-floor bathroom, but ordinary character and no parking information."
+    },
+    {
+      "section": "new",
+      "town": "Exmouth",
+      "dateAdded": "2026-10-28",
+      "id": "woodvilleroadexmouth",
+      "title": "Woodville Road, Exmouth (older-style terrace with large walled garden and vehicle access, town centre)",
+      "price": "£285,000",
+      "agent": "Hall & Scott, Exmouth",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (hardstanding at the rear)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "LARGE WALLED REAR GARDEN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "ROOM FOR A WORKSHOP OR OUTBUILDING",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NEEDS MODERNISATION",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "£115,000 ABOVE YOUR £170K TARGET",
+          "color": "#EF6C00"
+        }
+      ],
+      "link": "https://www.rightmove.co.uk/properties/94471746",
+      "linkLabel": "rightmove.co.uk — listing 94471746",
+      "photos": [
+        "WoodvilleRoadExmouth_Gallery_1.jpeg",
+        "WoodvilleRoadExmouth_Gallery_2.jpeg",
+        "WoodvilleRoadExmouth_Gallery_3.jpeg",
+        "WoodvilleRoadExmouth_Gallery_4.jpeg",
+        "WoodvilleRoadExmouth_Gallery_5.jpeg",
+        "WoodvilleRoadExmouth_Gallery_6.jpeg",
+        "WoodvilleRoadExmouth_Gallery_7.jpeg",
+        "WoodvilleRoadExmouth_Gallery_8.jpeg",
+        "WoodvilleRoadExmouth_Gallery_9.jpeg",
+        "WoodvilleRoadExmouth_Gallery_10.jpeg",
+        "WoodvilleRoadExmouth_Gallery_11.jpeg",
+        "WoodvilleRoadExmouth_Gallery_12.jpeg",
+        "WoodvilleRoadExmouth_Gallery_13.jpeg",
+        "WoodvilleRoadExmouth_Gallery_14.jpeg",
+        "WoodvilleRoadExmouth_Gallery_15.jpeg",
+        "WoodvilleRoadExmouth_Gallery_16.jpeg"
+      ],
+      "floorplans": [
+        "WoodvilleRoadExmouth_Floorplan_1.jpeg"
+      ],
+      "parking": {
+        "status": "has",
+        "note": "Hardstanding at the bottom of the large walled rear garden, with vehicular access, for a car or an outbuilding."
+      },
+      "body": "An attractive older-style terrace in a convenient town-centre location with an open outlook. Sitting room, separate dining room, fitted kitchen, utility, two generous bedrooms and a modern bathroom with separate shower. The large walled rear garden has a shed and vehicle access, and there is loft conversion potential subject to consents. In need of modernisation. Council tax band B, EPC D.",
+      "why": "The big walled garden with vehicle access and room for a workshop is the draw, within easy reach of the station and town. It needs modernising and at £285,000 it is well above your target, so it comes down to whether the garden and plot justify it.",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "yes",
+        "mtbTrails": "no",
+        "character": "partial",
+        "garden": "yes",
+        "garageWorkspace": "partial",
+        "groundFloorLongTerm": "no",
+        "closeToFamily": "yes",
+        "tenure": "freehold",
+        "uniqueFeature": null
+      },
+      "aiRating": 6,
+      "aiTake": "Large walled garden with vehicle access and room for a workshop in a central spot, but it needs work and sits £115k over target."
+    },
+    {
+      "section": "new",
+      "town": "Exmouth",
+      "dateAdded": "2026-10-28",
+      "id": "bictonvillasexmouth",
+      "title": "Bicton Villas, Exmouth (cheap freehold one-bed ground-floor flat near the town centre)",
+      "price": "£110,000",
+      "agent": "Redferns, Sidmouth",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "🌟 £60,000 UNDER YOUR £170K TARGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "ENTIRELY GROUND FLOOR",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "COUNCIL TAX BAND A",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "ONLY THREE PHOTOS",
+          "color": "#EF6C00"
+        }
+      ],
+      "link": "https://www.rightmove.co.uk/properties/94352949",
+      "linkLabel": "rightmove.co.uk — listing 94352949",
+      "photos": [
+        "BictonVillas_Gallery_1.jpeg",
+        "BictonVillas_Gallery_2.jpeg",
+        "BictonVillas_Gallery_3.jpeg"
+      ],
+      "floorplans": [
+        "BictonVillas_Floorplan_1.jpeg"
+      ],
+      "parking": {
+        "status": "unknown",
+        "note": "The listing does not mention parking. It is a town-centre villa conversion, so assume on-street or nearby public parking only, and ask the agent. As with South Street, a freehold flat can be hard to mortgage, so check lender appetite before bidding."
+      },
+      "body": "A one-bedroom ground-floor flat close to Exmouth town centre with a living room, fitted kitchen, double bedroom and bathroom. Sold with no onward chain. Council tax band A, EPC D.",
+      "why": "At £110,000 it is the cheapest thing on the list by a distance, ground floor, and shown as freehold, so no service charges or lease worries. The catch is a thin listing: three photos, no parking information, and a freehold flat may be hard to mortgage.",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "partial",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": null,
+        "garageWorkspace": "no",
+        "groundFloorLongTerm": "yes",
+        "closeToFamily": "yes",
+        "tenure": "freehold",
+        "uniqueFeature": null
+      },
+      "aiRating": 7,
+      "aiTake": "Rock-bottom price, freehold and fully ground floor, but a one-bed with a sparse listing, no parking information and possible mortgage trouble."
+    },
+    {
+      "section": "new",
+      "town": "Exmouth",
+      "dateAdded": "2026-10-28",
+      "id": "brooklynparkexmouth",
+      "title": "Brooklyn Park, Exmouth (ground-floor two-bed flat with its own garden area, Withycombe)",
+      "price": "£170,000",
+      "agent": "Links Estate Agents, Exmouth",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "🌟 AT YOUR £170,000 TARGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "ENTIRELY GROUND FLOOR",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "OWN GARDEN AREA PLUS COMMUNAL LAWNS",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "SERVICE CHARGE ONLY ABOUT £360 A YEAR",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (limited, first come first served)",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "LEASEHOLD — YEARS NOT STATED",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "EDDC IS FREEHOLDER — CHECK FOR A LOCAL-CONNECTION COVENANT",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "ELECTRIC HEATING ONLY",
+          "color": "#EF6C00"
+        }
+      ],
+      "link": "https://www.rightmove.co.uk/properties/94679103",
+      "linkLabel": "rightmove.co.uk — listing 94679103",
+      "photos": [
+        "BrooklynParkExmouth_Gallery_1.jpeg",
+        "BrooklynParkExmouth_Gallery_2.jpeg",
+        "BrooklynParkExmouth_Gallery_3.jpeg",
+        "BrooklynParkExmouth_Gallery_4.jpeg",
+        "BrooklynParkExmouth_Gallery_5.jpeg",
+        "BrooklynParkExmouth_Gallery_6.jpeg",
+        "BrooklynParkExmouth_Gallery_7.jpeg",
+        "BrooklynParkExmouth_Gallery_8.jpeg",
+        "BrooklynParkExmouth_Gallery_9.jpeg",
+        "BrooklynParkExmouth_Gallery_10.jpeg",
+        "BrooklynParkExmouth_Gallery_11.jpeg"
+      ],
+      "floorplans": [
+        "BrooklynParkExmouth_Floorplan_1.jpeg"
+      ],
+      "parking": {
+        "status": "has",
+        "note": "A shared parking area with limited space on a first come, first served basis, so a space is not guaranteed. Worth asking how tight it gets in the evenings."
+      },
+      "body": "A well-presented ground-floor two-bedroom flat in a purpose-built block standing in mature communal grounds in Withycombe, with its own area of garden. Lounge/dining room, kitchen, shower room, two bedrooms with fitted wardrobes, double glazing and electric heating. Leasehold, East Devon District Council is the freeholder and the service charge is about £360 a year. Council tax band B.",
+      "why": "Two bedrooms, fully ground floor, with its own garden and a very low service charge at exactly your £170,000 target. Two things to pin down: the lease length, which is not stated, and whether the council-owned lease carries a local-connection or age restriction (the listing text mentions neither). Parking is shared and not guaranteed.",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "partial",
+        "poolSwimTeam": "yes",
+        "private": "partial",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "groundFloorLongTerm": "yes",
+        "closeToFamily": "yes",
+        "tenure": "leasehold",
+        "leaseYears": null,
+        "uniqueFeature": null
+      },
+      "aiRating": 7,
+      "aiTake": "Ground-floor two-bed with its own garden and tiny service charge at target price, held back by an unstated lease, shared parking and distance from the sea."
+    },
     {
       "id": "littlehamroadauction",
       "section": "new",
