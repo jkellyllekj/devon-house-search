@@ -1,6 +1,160 @@
 {
-  "lastUpdated": "2026-10-28",
+  "lastUpdated": "2026-10-31",
   "properties": [
+    {
+      "section": "new",
+      "town": "Exmouth",
+      "dateAdded": "2026-10-31",
+      "id": "sturgesroadexmouth",
+      "title": "Sturges Road, Exmouth (freehold three-bed terrace, sunny garden, allocated parking, no chain)",
+      "price": "£210,000",
+      "agent": "Pennys, Exmouth",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "£40,000 ABOVE YOUR £170K TARGET",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "SMALL THIRD BEDROOM",
+          "color": "#EF6C00"
+        }
+      ],
+      "link": "https://www.rightmove.co.uk/properties/88528632",
+      "linkLabel": "rightmove.co.uk — listing 88528632",
+      "photos": [
+        "SturgesRoad_Gallery_1.jpeg",
+        "SturgesRoad_Gallery_2.jpeg",
+        "SturgesRoad_Gallery_3.jpeg",
+        "SturgesRoad_Gallery_4.jpeg",
+        "SturgesRoad_Gallery_5.jpeg",
+        "SturgesRoad_Gallery_6.jpeg",
+        "SturgesRoad_Gallery_7.jpeg",
+        "SturgesRoad_Gallery_8.jpeg",
+        "SturgesRoad_Gallery_9.jpeg",
+        "SturgesRoad_Gallery_10.jpeg",
+        "SturgesRoad_Gallery_11.jpeg",
+        "SturgesRoad_Gallery_12.jpeg",
+        "SturgesRoad_Gallery_13.jpeg"
+      ],
+      "floorplans": [
+        "SturgesRoad_Floorplan_1.jpeg"
+      ],
+      "parking": {
+        "status": "has",
+        "note": "An allocated parking space close by is included. There is a yearly ground maintenance charge of about £600 via a residents association for the communal grassed areas."
+      },
+      "body": "A freehold three-bedroom terrace in Exmouth with a reception hall, ground-floor cloakroom, lounge opening to a dining room, kitchen, and three bedrooms upstairs (the third is small). Good storage, gas central heating, double glazing and a good-size sunny enclosed rear garden. Recently redecorated, no onward chain, council tax band B. Reduced in price.",
+      "why": "A move-in-ready freehold three-bed with its own parking space and a proper sunny garden for £210,000, with no chain. The extra £600 a year communal charge and ordinary character keep it a practical fallback rather than something special.",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "partial",
+        "poolSwimTeam": "yes",
+        "private": "partial",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "no",
+        "groundFloorLongTerm": "adaptable",
+        "closeToFamily": "yes",
+        "tenure": "freehold",
+        "uniqueFeature": null
+      },
+      "aiRating": 6,
+      "aiTake": "Solid freehold three-bed with parking, garden and no chain, but plain and a bit above target with a small annual communal charge."
+    },
+    {
+      "section": "new",
+      "town": "Exmouth",
+      "dateAdded": "2026-10-31",
+      "id": "perrimansrowexmouth",
+      "title": "Perrimans Row, Exmouth (freehold two-bed mid-terrace to update, courtyard garden, near the seafront, no chain)",
+      "price": "£185,000",
+      "agent": "Bradleys, Exmouth",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "£15,000 ABOVE YOUR £170K TARGET",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NEEDS UPDATING",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "PARKING UNKNOWN",
+          "color": "#EF6C00"
+        }
+      ],
+      "link": "https://www.rightmove.co.uk/properties/172677674",
+      "linkLabel": "rightmove.co.uk — listing 172677674",
+      "photos": [
+        "PerrimansRow_Gallery_1.jpeg",
+        "PerrimansRow_Gallery_2.jpeg",
+        "PerrimansRow_Gallery_3.jpeg",
+        "PerrimansRow_Gallery_4.jpeg",
+        "PerrimansRow_Gallery_5.jpeg",
+        "PerrimansRow_Gallery_6.jpeg",
+        "PerrimansRow_Gallery_7.jpeg",
+        "PerrimansRow_Gallery_8.jpeg",
+        "PerrimansRow_Gallery_9.jpeg",
+        "PerrimansRow_Gallery_10.jpeg",
+        "PerrimansRow_Gallery_11.jpeg",
+        "PerrimansRow_Gallery_12.jpeg",
+        "PerrimansRow_Gallery_13.jpeg",
+        "PerrimansRow_Gallery_14.jpeg",
+        "PerrimansRow_Gallery_15.jpeg",
+        "PerrimansRow_Gallery_16.jpeg",
+        "PerrimansRow_Gallery_17.jpeg"
+      ],
+      "floorplans": [
+        "PerrimansRow_Floorplan_1.jpeg"
+      ],
+      "parking": {
+        "status": "unknown",
+        "note": "The listing is silent on parking and this is a central terrace close to the seafront, so assume on-street only. Exmouth has public car parks within walking distance of the centre, but ask Bradleys about any off-road space and check the residents permit position on the street before offering. Not researched in depth this sweep."
+      },
+      "body": "A freehold two-bedroom mid-terrace in Exmouth with two double bedrooms, a living room, kitchen and a small enclosed courtyard garden. Close to local amenities and the seafront, offered with no onward chain and described as having strong potential for updating. Council tax band not yet confirmed.",
+      "why": "At £185,000 it is only £15,000 over your £170,000 target, freehold with no ground rent or service charge, and close to the seafront. It needs modernising and parking is unconfirmed, so it is a cheap project rather than a character find.",
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "partial",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "groundFloorLongTerm": null,
+        "closeToFamily": "yes",
+        "tenure": "freehold",
+        "uniqueFeature": null
+      },
+      "aiRating": 6,
+      "aiTake": "Cheap freehold terrace near the seafront with no chain, but it needs work, has only a courtyard and no parking information."
+    },
     {
       "section": "new",
       "town": "Exmouth",
