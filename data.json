@@ -1,6 +1,83 @@
 {
-  "lastUpdated": "2026-10-31",
+  "lastUpdated": "2026-11-01",
   "properties": [
+    {
+      "id": "flowerstreetwoodbury",
+      "section": "new",
+      "title": "Flower Street, Woodbury (Grade II Listed two-bed cottage, 2 Fernlea Cottages)",
+      "price": "£285,000",
+      "agent": "Stags",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "GRADE II LISTED",
+          "color": "#6D4C41"
+        },
+        {
+          "text": "ON-STREET PARKING ONLY",
+          "color": "#757575"
+        }
+      ],
+      "photos": [
+        "FlowerStreetWoodbury_Gallery_1.jpg",
+        "FlowerStreetWoodbury_Gallery_2.jpg",
+        "FlowerStreetWoodbury_Gallery_3.jpg",
+        "FlowerStreetWoodbury_Gallery_4.jpg",
+        "FlowerStreetWoodbury_Gallery_5.jpg",
+        "FlowerStreetWoodbury_Gallery_6.jpg",
+        "FlowerStreetWoodbury_Gallery_7.jpg",
+        "FlowerStreetWoodbury_Gallery_8.jpg",
+        "FlowerStreetWoodbury_Gallery_9.jpg",
+        "FlowerStreetWoodbury_Gallery_10.jpg",
+        "FlowerStreetWoodbury_Gallery_11.jpg",
+        "FlowerStreetWoodbury_Gallery_12.jpg",
+        "FlowerStreetWoodbury_Gallery_13.jpg",
+        "FlowerStreetWoodbury_Gallery_14.jpg",
+        "FlowerStreetWoodbury_Gallery_15.jpg",
+        "FlowerStreetWoodbury_Gallery_16.jpg",
+        "FlowerStreetWoodbury_Gallery_17.jpg",
+        "FlowerStreetWoodbury_Gallery_18.jpg",
+        "FlowerStreetWoodbury_Gallery_19.jpg",
+        "FlowerStreetWoodbury_Gallery_20.jpg"
+      ],
+      "floorplans": [
+        "FlowerStreetWoodbury_Floorplan_1.jpg"
+      ],
+      "link": "https://www.rightmove.co.uk/properties/94744062",
+      "linkLabel": "rightmove.co.uk/properties/94744062",
+      "body": "A Grade II Listed two-bedroom cottage in the centre of Woodbury, about 885 sq ft over two floors: sitting room with wood burner, kitchen/dining room, two double bedrooms and a first-floor bathroom with separate shower. Enclosed courtyard garden with summer house and shed. Freehold. Marketed by Stags.",
+      "why": "Characterful, freehold and in the heart of Woodbury close to Bro 2 and the Common trails; top of budget and no off-street parking, so it is a charm-for-convenience trade.",
+      "dateAdded": "2026-11-01",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": null,
+        "private": "partial",
+        "groundFloorLongTerm": "no",
+        "mtbTrails": "yes",
+        "character": "yes",
+        "garden": "partial",
+        "garageWorkspace": "partial",
+        "uniqueFeature": "Courtyard summer house and wood burner in a listed village-centre cottage",
+        "closeToFamily": "yes",
+        "tenure": "freehold"
+      },
+      "aiRating": 7,
+      "aiTake": "A genuinely characterful freehold Grade II cottage in Woodbury near Bro 2, but at the top of budget with street parking only and bedrooms upstairs.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": {
+        "status": "onstreet",
+        "note": "On-street parking at the front. Woodbury has a small free short-stay car park on Flower Street itself a couple of minutes away, the same fallback noted for the other Woodbury village-centre cottages; worth confirming overnight options before offering."
+      },
+      "town": "Woodbury",
+      "lat": 50.675872,
+      "lng": -3.401258,
+      "geocodeSource": "Rightmove listing coordinates"
+    },
     {
       "section": "new",
       "town": "Exmouth",
