@@ -1,6 +1,223 @@
 {
-  "lastUpdated": "2026-11-01",
+  "lastUpdated": "2026-11-04",
   "properties": [
+    {
+      "section": "new",
+      "town": "Exmouth",
+      "dateAdded": "2026-11-04",
+      "id": "clistonavenueexmouth",
+      "title": "Cliston Avenue, Exmouth (freehold two-bed semi-detached bungalow, garage, sun room, no chain)",
+      "price": "£285,000",
+      "agent": "Pennys, Exmouth",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "£115,000 ABOVE YOUR £170K TARGET",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "BUNGALOW",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#2E7D32"
+        }
+      ],
+      "link": "https://www.rightmove.co.uk/properties/94379847",
+      "linkLabel": "rightmove.co.uk — listing 94379847",
+      "photos": [
+        "ClistonAvenue_Gallery_1.jpeg",
+        "ClistonAvenue_Gallery_2.jpeg",
+        "ClistonAvenue_Gallery_3.jpeg",
+        "ClistonAvenue_Gallery_4.jpeg",
+        "ClistonAvenue_Gallery_5.jpeg",
+        "ClistonAvenue_Gallery_6.jpeg",
+        "ClistonAvenue_Gallery_7.jpeg",
+        "ClistonAvenue_Gallery_8.jpeg",
+        "ClistonAvenue_Gallery_9.jpeg"
+      ],
+      "floorplans": [
+        "ClistonAvenue_Floorplan_1.jpeg"
+      ],
+      "parking": {
+        "status": "has",
+        "note": "Long patio driveway leading to a 16ft garage with electric roller door, power and light."
+      },
+      "body": "A freehold semi-detached bungalow in Exmouth with a bowed-window lounge, kitchen, a large garden room, two bedrooms and a bathroom, gas central heating, some double glazing, an enclosed lawned rear garden with a shed, and a good boarded loft. No onward chain, council tax band C.",
+      "why": "Already single-storey, so it works for the long term, with a garage, driveway and garden. It is plain and over target, so a practical rather than characterful option.",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "partial",
+        "poolSwimTeam": "yes",
+        "private": "partial",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "yes",
+        "groundFloorLongTerm": "yes",
+        "closeToFamily": "yes",
+        "tenure": "freehold",
+        "uniqueFeature": null
+      },
+      "aiRating": 6,
+      "aiTake": "Single-storey freehold with garage, driveway and garden, no chain, but ordinary in character and £115k above target."
+    },
+    {
+      "section": "new",
+      "town": "Exmouth",
+      "dateAdded": "2026-11-04",
+      "id": "churchillroadexmouth",
+      "title": "Churchill Road, Exmouth (freehold three-bed terrace to update, rear garage, no chain)",
+      "price": "£240,000",
+      "agent": "Links Estate Agents, Exmouth",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "£70,000 ABOVE YOUR £170K TARGET",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NEEDS UPDATING",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "NO ONWARD CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#2E7D32"
+        }
+      ],
+      "link": "https://www.rightmove.co.uk/properties/94797870",
+      "linkLabel": "rightmove.co.uk — listing 94797870",
+      "photos": [
+        "ChurchillRoad_Gallery_1.jpeg",
+        "ChurchillRoad_Gallery_2.jpeg",
+        "ChurchillRoad_Gallery_3.jpeg",
+        "ChurchillRoad_Gallery_4.jpeg",
+        "ChurchillRoad_Gallery_5.jpeg",
+        "ChurchillRoad_Gallery_6.jpeg",
+        "ChurchillRoad_Gallery_7.jpeg",
+        "ChurchillRoad_Gallery_8.jpeg",
+        "ChurchillRoad_Gallery_9.jpeg",
+        "ChurchillRoad_Gallery_10.jpeg",
+        "ChurchillRoad_Gallery_11.jpeg",
+        "ChurchillRoad_Gallery_12.jpeg",
+        "ChurchillRoad_Gallery_13.jpeg"
+      ],
+      "floorplans": [
+        "ChurchillRoad_Floorplan_1.jpeg"
+      ],
+      "parking": {
+        "status": "has",
+        "note": "Garage to the rear, plus on-street parking at the front and rear according to the listing."
+      },
+      "body": "A freehold three-bedroom terrace with two reception rooms, a ground-floor cloakroom, gas central heating, double glazing, a small enclosed rear garden and a garage, near Brixington shops and bus routes. Needs cosmetic updating. No onward chain, council tax band B.",
+      "why": "A freehold house with a garage for £240,000 and room to add value, but an ordinary estate setting away from the seafront.",
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "no",
+        "poolSwimTeam": "yes",
+        "private": "partial",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "yes",
+        "groundFloorLongTerm": "adaptable",
+        "closeToFamily": "partial",
+        "tenure": "freehold",
+        "uniqueFeature": null
+      },
+      "aiRating": 5,
+      "aiTake": "Freehold with garage and no chain, but plain, needs work and sits away from the sea and station."
+    },
+    {
+      "section": "new",
+      "town": "Exmouth",
+      "dateAdded": "2026-11-04",
+      "id": "chestnutcloseexmouth",
+      "title": "Chestnut Close, Exmouth (freehold two-bed end of terrace, estuary views, garden, block garage)",
+      "price": "£250,000",
+      "agent": "Belvoir, Exmouth",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "flags": [
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "£80,000 ABOVE YOUR £170K TARGET",
+          "color": "#EF6C00"
+        },
+        {
+          "text": "ESTUARY VIEWS",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING",
+          "color": "#2E7D32"
+        }
+      ],
+      "link": "https://www.rightmove.co.uk/properties/94301568",
+      "linkLabel": "rightmove.co.uk — listing 94301568",
+      "photos": [
+        "ChestnutClose_Gallery_1.jpeg",
+        "ChestnutClose_Gallery_2.jpeg",
+        "ChestnutClose_Gallery_3.jpeg",
+        "ChestnutClose_Gallery_4.jpeg",
+        "ChestnutClose_Gallery_5.jpeg",
+        "ChestnutClose_Gallery_6.jpeg",
+        "ChestnutClose_Gallery_7.jpeg",
+        "ChestnutClose_Gallery_8.jpeg",
+        "ChestnutClose_Gallery_9.jpeg",
+        "ChestnutClose_Gallery_10.jpeg",
+        "ChestnutClose_Gallery_11.jpeg",
+        "ChestnutClose_Gallery_12.jpeg",
+        "ChestnutClose_Gallery_13.jpeg"
+      ],
+      "floorplans": [
+        "ChestnutClose_Floorplan_1.jpeg"
+      ],
+      "parking": {
+        "status": "has",
+        "note": "Garage in a nearby block, reached by a pedestrian gate from the rear garden."
+      },
+      "body": "A freehold two-bedroom end-of-terrace house in a quiet cul-de-sac with elevated views toward the Exe Estuary, a kitchen/dining room, a conservatory/utility, a refitted bathroom and front and rear gardens. Council tax band B.",
+      "why": "Estuary outlook, a good garden and a garage nearby in a quiet cul-de-sac, though it is a standard house and £80k above target.",
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "partial",
+        "poolSwimTeam": "yes",
+        "private": "partial",
+        "mtbTrails": "no",
+        "character": "no",
+        "garden": "yes",
+        "garageWorkspace": "partial",
+        "groundFloorLongTerm": "adaptable",
+        "closeToFamily": "yes",
+        "tenure": "freehold",
+        "uniqueFeature": null
+      },
+      "aiRating": 6,
+      "aiTake": "Quiet cul-de-sac with estuary views, garden and garage, but ordinary and above target."
+    },
     {
       "id": "flowerstreetwoodbury",
       "section": "new",
