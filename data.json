@@ -1,6 +1,83 @@
 {
-  "lastUpdated": "2026-11-04",
+  "lastUpdated": "2026-11-07",
   "properties": [
+    {
+      "id": "wallsclosebungalow",
+      "section": "new",
+      "town": "Exmouth",
+      "title": "Walls Close, Exmouth (2-bed detached link bungalow, garage + driveway, cul-de-sac)",
+      "price": "£275,000",
+      "agent": "Stags, Exeter",
+      "flags": [
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "HAS PARKING (driveway + garage + carport)",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "BUNGALOW — ALL ON ONE LEVEL",
+          "color": "#1565C0"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "QUIET CUL-DE-SAC",
+          "color": "#2E7D32"
+        }
+      ],
+      "photos": [
+        "WallsCloseBungalow_Gallery_1.jpeg",
+        "WallsCloseBungalow_Gallery_2.jpeg",
+        "WallsCloseBungalow_Gallery_3.jpeg",
+        "WallsCloseBungalow_Gallery_4.jpeg",
+        "WallsCloseBungalow_Gallery_5.jpeg",
+        "WallsCloseBungalow_Gallery_6.jpeg",
+        "WallsCloseBungalow_Gallery_7.jpeg",
+        "WallsCloseBungalow_Gallery_8.jpeg",
+        "WallsCloseBungalow_Gallery_9.jpeg",
+        "WallsCloseBungalow_Gallery_10.jpeg",
+        "WallsCloseBungalow_Gallery_11.jpeg",
+        "WallsCloseBungalow_Gallery_12.jpeg",
+        "WallsCloseBungalow_Gallery_13.jpeg",
+        "WallsCloseBungalow_Gallery_14.jpeg",
+        "WallsCloseBungalow_Gallery_15.jpeg"
+      ],
+      "floorplans": [
+        "WallsCloseBungalow_Floorplan_1.jpeg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.rightmove.co.uk/properties/95164638",
+      "linkLabel": "rightmove.co.uk — Walls Close, Exmouth",
+      "body": "A two-bedroom link-detached bungalow at the end of a quiet cul-de-sac in Exmouth. A paved driveway for a couple of cars leads to a garage under a carport. Inside: hallway, living room with an electric feature fireplace, kitchen, shower room and two double bedrooms, one opening into a rear conservatory and the enclosed paved garden. Gravelled front garden with shrubs, gated side access. Freehold, council tax band D, EPC D.",
+      "why": "Fully ground-floor, freehold, with a garage and driveway on a quiet cul-de-sac in Exmouth itself, at £275,000. It settles the long-term stairs question and gives workshop space, but it is a plain bungalow with no real character and sits at the upper end of the budget.",
+      "parking": {
+        "status": "has",
+        "note": "Paved driveway for a couple of vehicles, plus a garage under a carport."
+      },
+      "checklist": {
+        "ocean": "no",
+        "trainStation": "partial",
+        "poolSwimTeam": "yes",
+        "private": "partial",
+        "mtbTrails": "partial",
+        "character": "no",
+        "garden": "partial",
+        "garageWorkspace": "yes",
+        "closeToFamily": "yes",
+        "groundFloorLongTerm": "yes",
+        "uniqueFeature": null,
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "Practical freehold bungalow with garage and driveway in Exmouth, ideal for the stairs question, but characterless and priced near the top of the budget.",
+      "dateAdded": "2026-11-07"
+    },
     {
       "section": "new",
       "town": "Exmouth",
