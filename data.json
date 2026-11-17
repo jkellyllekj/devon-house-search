@@ -1,6 +1,70 @@
 {
-  "lastUpdated": "2026-11-07",
+  "lastUpdated": "2026-11-17",
   "properties": [
+    {
+      "id": "westbourneterraceplot",
+      "section": "new",
+      "town": "Budleigh Salterton",
+      "title": "Westbourne Terrace, Budleigh Salterton (freehold building plot with planning, 4-bed ground-floor design, auction 9 Dec)",
+      "price": "Guide Price £230,000 (plus fees)",
+      "agent": "Auction House South West",
+      "flags": [
+        {
+          "text": "AUCTION 9 DEC 2026 (22 days)",
+          "color": "#C62828"
+        },
+        {
+          "text": "SELF-BUILD PLOT, PLANNING GRANTED",
+          "color": "#6A1B9A"
+        },
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "PARKING: INTEGRAL GARAGE + SHARED DRIVEWAY IN APPROVED PLANS",
+          "color": "#2E7D32"
+        }
+      ],
+      "photos": [
+        "WestbourneTerracePlot_Gallery_1.png",
+        "WestbourneTerracePlot_Gallery_2.jpeg",
+        "WestbourneTerracePlot_Gallery_3.jpeg",
+        "WestbourneTerracePlot_Gallery_4.jpeg",
+        "WestbourneTerracePlot_Gallery_5.png"
+      ],
+      "floorplans": [],
+      "bedrooms": 4,
+      "link": "https://www.rightmove.co.uk/properties/95330850",
+      "linkLabel": "rightmove.co.uk · Westbourne Terrace plot",
+      "body": "A freehold building plot in Budleigh Salterton with planning permission (EDDC ref 25/1288/FUL) for a substantial four-bedroom dwelling with integral garage and shared driveway. The approved scheme has the bedrooms on one floor (two en-suite) and the open-plan kitchen/dining/family room, living room, utility, games room and atrium on the lower floor. Unconditional livestream auction on Wednesday 9 December 2026 at 11am; guide £230,000 plus £1,200 admin fee and £1,200 buyer's premium (inc VAT), exchange immediately on the hammer. Legal pack free to download.",
+      "why": "A self-build plot with planning already granted, in Budleigh Salterton, freehold and inside budget, so he could design around his own needs. The catch is the build cost on top of £230,000, and the approved design is a large house, not a modest one.",
+      "parking": {
+        "status": "has",
+        "note": "Approved plans include an integral garage and a shared driveway."
+      },
+      "checklist": {
+        "ocean": "partial",
+        "trainStation": "no",
+        "poolSwimTeam": "partial",
+        "private": "partial",
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": null,
+        "garageWorkspace": "yes",
+        "closeToFamily": "partial",
+        "groundFloorLongTerm": "yes",
+        "uniqueFeature": "Self-build plot with full planning permission",
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "Rare chance to own a permissioned plot near the coast at a sub-£300k guide, but the build bill and auction timetable make it a bigger commitment than a finished house.",
+      "dateAdded": "2026-11-17"
+    },
     {
       "id": "wallsclosebungalow",
       "section": "new",
