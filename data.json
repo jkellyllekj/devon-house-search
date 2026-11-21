@@ -1,6 +1,76 @@
 {
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-21",
   "properties": [
+    {
+      "id": "poundstreetterrace",
+      "section": "new",
+      "town": "Exmouth",
+      "title": "Pound Street, Exmouth (charming freehold terraced cottage, two double bedrooms, courtyard garden, no chain)",
+      "price": "£240,000",
+      "agent": "Hall & Scott",
+      "flags": [
+        {
+          "text": "NO CHAIN",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "FREEHOLD",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "IN BUDGET",
+          "color": "#2E7D32"
+        },
+        {
+          "text": "NO PARKING INFO",
+          "color": "#8D6E63"
+        }
+      ],
+      "photos": [
+        "PoundStreetTerrace_Gallery_1.jpeg",
+        "PoundStreetTerrace_Gallery_2.jpeg",
+        "PoundStreetTerrace_Gallery_3.jpeg",
+        "PoundStreetTerrace_Gallery_4.png",
+        "PoundStreetTerrace_Gallery_5.jpeg",
+        "PoundStreetTerrace_Gallery_6.jpeg",
+        "PoundStreetTerrace_Gallery_7.jpeg",
+        "PoundStreetTerrace_Gallery_8.jpeg",
+        "PoundStreetTerrace_Gallery_9.jpeg",
+        "PoundStreetTerrace_Gallery_10.jpeg",
+        "PoundStreetTerrace_Gallery_11.jpeg",
+        "PoundStreetTerrace_Gallery_12.jpeg"
+      ],
+      "floorplans": [
+        "PoundStreetTerrace_Floorplan_1.jpeg"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "link": "https://www.rightmove.co.uk/properties/95583696",
+      "linkLabel": "rightmove.co.uk · Pound Street cottage",
+      "body": "A terraced cottage in the town centre of Exmouth on a quiet road, with a sitting room and a separate dining room (both with period features), a kitchen/breakfast room and a rear porch. Upstairs are two double bedrooms, one with a feature fireplace, and a bathroom with both bath and shower cubicle. There is an enclosed courtyard garden, double glazing and central heating. Freehold, council tax band B, no onward chain. Listed 17 November 2026 by Hall & Scott.",
+      "why": "A characterful freehold cottage within walking distance of the seafront and station, under budget and with no chain. The gap is parking, which the listing does not mention, and it sits close to the one-bed Sixpence Cottage on the same street at a higher price.",
+      "parking": {
+        "status": "unknown",
+        "note": "The listing does not mention parking. Pound Street is a town-centre terrace, so expect on-street parking or a residents permit; this has not been checked against the Devon County Council permit zone for the street."
+      },
+      "checklist": {
+        "ocean": "yes",
+        "trainStation": "yes",
+        "poolSwimTeam": "yes",
+        "private": "partial",
+        "mtbTrails": "partial",
+        "character": "yes",
+        "garden": "partial",
+        "garageWorkspace": "no",
+        "closeToFamily": "yes",
+        "groundFloorLongTerm": "adaptable",
+        "uniqueFeature": null,
+        "tenure": "freehold"
+      },
+      "aiRating": 6,
+      "aiTake": "Freehold, no-chain and characterful in the heart of Exmouth at a mid-budget price, but parking is unconfirmed and the courtyard garden is small.",
+      "dateAdded": "2026-11-21"
+    },
     {
       "id": "westbourneterraceplot",
       "section": "new",
@@ -67,7 +137,7 @@
     },
     {
       "id": "wallsclosebungalow",
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "title": "Walls Close, Exmouth (2-bed detached link bungalow, garage + driveway, cul-de-sac)",
       "price": "£275,000",
@@ -143,7 +213,7 @@
       "dateAdded": "2026-11-07"
     },
     {
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "dateAdded": "2026-11-04",
       "id": "clistonavenueexmouth",
@@ -214,7 +284,7 @@
       "aiTake": "Single-storey freehold with garage, driveway and garden, no chain, but ordinary in character and £115k above target."
     },
     {
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "dateAdded": "2026-11-04",
       "id": "churchillroadexmouth",
@@ -289,7 +359,7 @@
       "aiTake": "Freehold with garage and no chain, but plain, needs work and sits away from the sea and station."
     },
     {
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "dateAdded": "2026-11-04",
       "id": "chestnutcloseexmouth",
@@ -361,7 +431,7 @@
     },
     {
       "id": "flowerstreetwoodbury",
-      "section": "new",
+      "section": "still",
       "title": "Flower Street, Woodbury (Grade II Listed two-bed cottage, 2 Fernlea Cottages)",
       "price": "£285,000",
       "agent": "Stags",
@@ -437,7 +507,7 @@
       "geocodeSource": "Rightmove listing coordinates"
     },
     {
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "dateAdded": "2026-10-31",
       "id": "sturgesroadexmouth",
@@ -512,7 +582,7 @@
       "aiTake": "Solid freehold three-bed with parking, garden and no chain, but plain and a bit above target with a small annual communal charge."
     },
     {
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "dateAdded": "2026-10-31",
       "id": "perrimansrowexmouth",
@@ -591,7 +661,7 @@
       "aiTake": "Cheap freehold terrace near the seafront with no chain, but it needs work, has only a courtyard and no parking information."
     },
     {
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "dateAdded": "2026-10-28",
       "id": "shutemeadowstreetexmouth",
@@ -671,7 +741,7 @@
       "aiTake": "Cheap, freehold and town-centre with a ground-floor bathroom, but ordinary character and no parking information."
     },
     {
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "dateAdded": "2026-10-28",
       "id": "woodvilleroadexmouth",
@@ -757,7 +827,7 @@
       "aiTake": "Large walled garden with vehicle access and room for a workshop in a central spot, but it needs work and sits £115k over target."
     },
     {
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "dateAdded": "2026-10-28",
       "id": "bictonvillasexmouth",
@@ -830,7 +900,7 @@
       "aiTake": "Rock-bottom price, freehold and fully ground floor, but a one-bed with a sparse listing, no parking information and possible mortgage trouble."
     },
     {
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "dateAdded": "2026-10-28",
       "id": "brooklynparkexmouth",
@@ -917,7 +987,7 @@
     },
     {
       "id": "littlehamroadauction",
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "title": "Littleham Road, Exmouth (three-bed semi for modernisation with large gardens and a driveway, online auction closing 26 November)",
       "price": "Guide £200,000",
@@ -1003,7 +1073,7 @@
     },
     {
       "id": "sixpencecottageexmouth",
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "title": "Sixpence Cottage, Pound Street, Exmouth (character one-bed cottage with private south-facing terrace, five minutes from the town centre)",
       "price": "£160,000",
@@ -1086,7 +1156,7 @@
     },
     {
       "id": "raleighroadexmouthdetached",
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "dateAdded": "2026-10-22",
       "title": "Raleigh Road, Exmouth (quirky tucked-away detached 2-bed, 2-bath house with garage, level walk to town and station, no chain)",
@@ -1163,7 +1233,7 @@
     },
     {
       "id": "woodburyterracecottage",
-      "section": "new",
+      "section": "still",
       "town": "Woodbury",
       "dateAdded": "2026-10-22",
       "title": "Woodbury village (freehold two-double-bedroom terraced cottage with beams, open fire and south-west front garden, free public car park 100m away, no chain)",
@@ -1236,7 +1306,7 @@
     },
     {
       "id": "clintonsquarecottage",
-      "section": "new",
+      "section": "still",
       "town": "Exmouth",
       "dateAdded": "2026-10-13",
       "title": "Clinton Square, Exmouth (freehold two-double-bedroom terraced cottage, level walk to seafront and station, residents' parking, no chain)",
@@ -1315,7 +1385,7 @@
       "aiTake": "Immaculate freehold town cottage with sea, station and parking in easy reach, but it is priced at the ceiling, has only a courtyard, and has stairs."
     },
     {
-      "section": "new",
+      "section": "still",
       "dateAdded": "2026-10-01",
       "town": "Exton",
       "id": "iddesleighterraceexton",
